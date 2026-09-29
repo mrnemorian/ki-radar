@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>KI-Governance Radar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0}
+[hidden]{display:none!important}
+/* Layout: single reading column (max 680px), daily briefing on top, filter chips, then a ledger of news cards with impact stripe-free pills */
+:root {
+  --bg: #F4F6F5;
+  --surface: #FFFFFF;
+  --ink: #16201E;
+  --muted: #5B6966;
+  --line: #DCE3E1;
+  --accent: #0E6B63;
+  --accent-soft: #E1F0EE;
+  --hi: #B42318; --hi-soft: #FDE8E6;
+  --mid: #9A5B00; --mid-soft: #FDF1DC;
+  --info: #4A5754; --info-soft: #ECF0EF;
+  --font-display: "IBM Plex Sans Condensed", "Arial Narrow", Arial, sans-serif;
+  --font-body: "IBM Plex Sans", "Segoe UI", Arial, sans-serif;
+  --font-mono: "IBM Plex Mono", Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #101614; --surface: #18201E; --ink: #E7EEEC; --muted: #9AAAA6; --line: #2A3532;
+  --accent: #5CC6BB; --accent-soft: #173330;
+  --hi: #FF8A7E; --hi-soft: #3A1D1A; --mid: #F2B45A; --mid-soft: #3A2B12; --info: #B3C0BC; --info-soft: #232D2A;
+  color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #101614; --surface: #18201E; --ink: #E7EEEC; --muted: #9AAAA6; --line: #2A3532;
+  --accent: #5CC6BB; --accent-soft: #173330;
+  --hi: #FF8A7E; --hi-soft: #3A1D1A; --mid: #F2B45A; --mid-soft: #3A2B12; --info: #B3C0BC; --info-soft: #232D2A;
+  color-scheme: dark }
+body { background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 15px; line-height: 1.5; }
+.wrap { max-width: 680px; margin: 0 auto; padding-inline: 16px; padding-block: 20px 48px; display: flex; flex-direction: column; gap: 18px; }
+header { display: flex; flex-direction: column; gap: 4px; }
+.eyebrow { font-family: var(--font-mono); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+h1 { font-family: var(--font-display); font-size: 30px; line-height: 1.1; margin: 0; text-wrap: balance; }
+.meta { color: var(--muted); font-size: 13px; }
+.brief { background: var(--accent-soft); border-radius: 14px; padding: 16px; display: flex; flex-direction: column; gap: 8px; }
+.brief h2 { font-family: var(--font-display); font-size: 19px; margin: 0; line-height: 1.25; text-wrap: balance; }
+.brief ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; }
+.brief .date { font-family: var(--font-mono); font-size: 12px; color: var(--accent); }
+.controls { display: flex; flex-direction: column; gap: 10px; position: sticky; top: env(safe-area-inset-top, 0px); background: var(--bg); padding-block: 8px; z-index: 2; }
+.chips { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 2px; scrollbar-width: none; }
+.chip { flex: none; border: 1px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 999px; padding: 6px 12px; font: 500 13px var(--font-body); cursor: pointer; }
+.chip[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.chip:focus-visible, .toggle:focus-visible, a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.row { display: flex; gap: 12px; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+.toggle { display: flex; align-items: center; gap: 6px; font-size: 13px; color: var(--muted); }
+.count { font-family: var(--font-mono); font-size: 12px; color: var(--muted); }
+.list { display: flex; flex-direction: column; gap: 12px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.card.read { opacity: .62; }
+.tags { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+.pill { font-size: 11px; font-weight: 600; border-radius: 6px; padding: 2px 8px; letter-spacing: .02em; }
+.pill.hoch { background: var(--hi-soft); color: var(--hi); }
+.pill.mittel { background: var(--mid-soft); color: var(--mid); }
+.pill.info { background: var(--info-soft); color: var(--info); }
+.pill.topic { background: transparent; color: var(--muted); border: 1px solid var(--line); font-weight: 500; }
+.card h3 { font-family: var(--font-display); font-size: 18px; line-height: 1.25; margin: 0; text-wrap: balance; }
+.card p { margin: 0; }
+.why { font-size: 14px; border-top: 1px dashed var(--line); padding-top: 8px; }
+.why b { color: var(--accent); }
+.foot { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; font-size: 13px; color: var(--muted); }
+.foot .src { font-family: var(--font-mono); font-size: 12px; }
+.foot a { color: var(--accent); font-weight: 600; text-decoration: none; }
+.mark { background: none; border: 1px solid var(--line); color: var(--muted); border-radius: 8px; padding: 4px 10px; font: 500 12px var(--font-body); cursor: pointer; }
+.empty { background: var(--surface); border: 1px dashed var(--line); border-radius: 12px; padding: 20px; color: var(--muted); }
+@media (prefers-reduced-motion: no-preference) { .card { transition: opacity .2s; } }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <span class="eyebrow">AI Act · ISO 42001 · KI-Sicherheit · Prüfung</span>
+    <h1>KI-Governance Radar</h1>
+    <span class="meta" id="updated">Wird geladen …</span>
+  </header>
+
+  <section class="brief" id="brief" aria-live="polite">
+    <span class="date">Tages-Briefing</span>
+    <h2>Noch kein Briefing</h2>
+    <p>Jeden Morgen gegen 7 Uhr erscheint hier eine Zusammenfassung der wichtigsten Meldungen – eingeordnet für IT-GRC und Prüfung.</p>
+  </section>
+
+  <div class="controls">
+    <div class="chips" id="chips" role="toolbar" aria-label="Themen filtern"></div>
+    <div class="row">
+      <label class="toggle" for="unread"><input type="checkbox" id="unread"> Nur ungelesene</label>
+      <span class="count" id="count"></span>
+    </div>
+  </div>
+
+  <div class="list" id="list">
+    <div class="empty">Die Meldungen erscheinen hier, sobald der tägliche Agent sie gesammelt hat.</div>
+  </div>
+  <p class="meta">Automatisch zusammengestellt mit Claude (Anthropic). Zusammenfassungen können Fehler enthalten – im Zweifel die verlinkte Quelle lesen.</p>
+</div>
+
+<script>
+const TOPICS = ["Alle", "AI Act & Regulierung", "Deutschland & Aufsicht", "Standards & Zertifizierung", "KI-Sicherheit", "Prüfung & Assurance", "Datenschutz & Recht"];
+const IMPACT = { hoch: "Hoch relevant", mittel: "Relevant", info: "Zur Info" };
+let items = [], topic = "Alle", onlyUnread = false, readSet = new Set();
+
+try { readSet = new Set(JSON.parse(localStorage.getItem("radar-read") || "[]")); } catch (e) {}
+try { onlyUnread = localStorage.getItem("radar-unread") === "1"; } catch (e) {}
+const saveRead = () => { try { localStorage.setItem("radar-read", JSON.stringify([...readSet].slice(-500))); } catch (e) {} };
+
+const $ = (id) => document.getElementById(id);
+const el = (tag, cls, text) => { const n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; };
+const fmt = (iso) => { if (/^\d{4}-\d{2}$/.test(iso || "")) return iso.slice(5) + "/" + iso.slice(0, 4); if (/^\d{4}$/.test(iso || "")) return iso; try { return new Date(iso).toLocaleDateString("de-DE", { day: "2-digit", month: "2-digit", year: "numeric" }); } catch (e) { return iso; } };
+
+function renderChips() {
+  const box = $("chips"); box.textContent = "";
+  TOPICS.forEach(t => {
+    const b = el("button", "chip", t); b.type = "button"; b.setAttribute("aria-pressed", String(t === topic));
+    b.addEventListener("click", () => { topic = t; renderChips(); renderList(); });
+    box.appendChild(b);
+  });
+}
+
+function renderList() {
+  const list = $("list"); list.textContent = "";
+  const shown = items.filter(i => (topic === "Alle" || i.topic === topic) && (!onlyUnread || !readSet.has(i.id)));
+  $("count").textContent = shown.length + " von " + items.length + " Meldungen";
+  if (!items.length) { list.appendChild(el("div", "empty", "Die Meldungen erscheinen hier, sobald der tägliche Agent sie gesammelt hat.")); return; }
+  if (!shown.length) { list.appendChild(el("div", "empty", "Keine Meldungen für diesen Filter.")); return; }
+  shown.forEach(i => {
+    const c = el("article", "card" + (readSet.has(i.id) ? " read" : ""));
+    const tags = el("div", "tags");
+    tags.appendChild(el("span", "pill " + (IMPACT[i.impact] ? i.impact : "info"), IMPACT[i.impact] || "Zur Info"));
+    if (i.topic) tags.appendChild(el("span", "pill topic", i.topic));
+    c.appendChild(tags);
+    c.appendChild(el("h3", null, i.title || "Ohne Titel"));
+    if (i.summary) c.appendChild(el("p", null, i.summary));
+    if (i.relevance) { const w = el("p", "why"); const b = el("b", null, "Für dich: "); w.appendChild(b); w.appendChild(document.createTextNode(i.relevance)); c.appendChild(w); }
+    const f = el("div", "foot");
+    f.appendChild(el("span", "src", (i.source || "Quelle") + " · " + fmt(i.published || i.added)));
+    const act = el("div", "tags");
+    const m = el("button", "mark", readSet.has(i.id) ? "Ungelesen" : "Gelesen"); m.type = "button";
+    m.addEventListener("click", () => { readSet.has(i.id) ? readSet.delete(i.id) : readSet.add(i.id); saveRead(); renderList(); });
+    act.appendChild(m);
+    if (/^https:\/\//.test(i.url || "")) { const a = el("a", null, "Quelle öffnen ↗"); a.href = i.url; a.target = "_blank"; a.rel = "noopener"; a.addEventListener("click", () => { readSet.add(i.id); saveRead(); setTimeout(renderList, 300); }); act.appendChild(a); }
+    f.appendChild(act); c.appendChild(f);
+    list.appendChild(c);
+  });
+}
+
+function renderBrief(b) {
+  const box = $("brief"); box.textContent = "";
+  box.appendChild(el("span", "date", "Tages-Briefing · " + fmt(b.date)));
+  box.appendChild(el("h2", null, b.headline || "Briefing"));
+  if (Array.isArray(b.points) && b.points.length) {
+    const ul = el("ul"); b.points.forEach(p => ul.appendChild(el("li", null, p))); box.appendChild(ul);
+  }
+}
+
+$("unread").checked = onlyUnread;
+$("unread").addEventListener("change", e => { onlyUnread = e.target.checked; try { localStorage.setItem("radar-unread", onlyUnread ? "1" : "0"); } catch (x) {} renderList(); });
+renderChips(); renderList();
+
+fetch("data.json?v=" + Date.now(), { cache: "no-store" }).then(r => r.json()).then(d => {
+  items = (d.news || []).map(n => Object.assign({}, n));
+  $("updated").textContent = d.updated ? "Zuletzt aktualisiert: " + new Date(d.updated).toLocaleString("de-DE", { dateStyle: "medium", timeStyle: "short" }) : "Noch keine Meldungen";
+  if (d.briefings && d.briefings.length) renderBrief(d.briefings[0]);
+  renderList();
+}).catch(() => { $("updated").textContent = "Meldungen konnten nicht geladen werden. Seite neu laden."; });
+</script>
+
+</body>
+</html>
