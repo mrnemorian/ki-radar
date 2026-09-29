@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>KI-Governance Radar</title>
+<title>IT-GRC Radar</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
@@ -80,15 +80,15 @@ h1 { font-family: var(--font-display); font-size: 30px; line-height: 1.1; margin
 
 <div class="wrap">
   <header>
-    <span class="eyebrow">AI Act · ISO 42001 · KI-Sicherheit · Prüfung</span>
-    <h1>KI-Governance Radar</h1>
+    <span class="eyebrow">IT-Governance · IT-Compliance · AI-Governance</span>
+    <h1>IT-GRC Radar</h1>
     <span class="meta" id="updated">Wird geladen …</span>
   </header>
 
   <section class="brief" id="brief" aria-live="polite">
     <span class="date">Tages-Briefing</span>
     <h2>Noch kein Briefing</h2>
-    <p>Jeden Morgen gegen 7 Uhr erscheint hier eine Zusammenfassung der wichtigsten Meldungen – eingeordnet für IT-GRC und Prüfung.</p>
+    <p>Jeden Morgen gegen 7 Uhr erscheint hier eine Zusammenfassung der wichtigsten Meldungen zu IT-Governance, IT-Compliance und AI-Governance – eingeordnet für IT-GRC in einem großen Handels- und Touristikkonzern.</p>
   </section>
 
   <div class="controls">
@@ -106,7 +106,7 @@ h1 { font-family: var(--font-display); font-size: 30px; line-height: 1.1; margin
 </div>
 
 <script>
-const TOPICS = ["Alle", "AI Act & Regulierung", "Deutschland & Aufsicht", "Standards & Zertifizierung", "KI-Sicherheit", "Prüfung & Assurance", "Datenschutz & Recht"];
+const TOPICS = ["Alle", "AI-Governance", "Cyber- & IT-Regulierung", "Datenschutz & Datenrecht", "IT-Governance & Risiko", "Standards & Zertifizierung", "Prüfung & Assurance", "Handel & Branche"];
 const IMPACT = { hoch: "Hoch relevant", mittel: "Relevant", info: "Zur Info" };
 let items = [], topic = "Alle", onlyUnread = false, readSet = new Set();
 
@@ -141,7 +141,7 @@ function renderList() {
     c.appendChild(tags);
     c.appendChild(el("h3", null, i.title || "Ohne Titel"));
     if (i.summary) c.appendChild(el("p", null, i.summary));
-    if (i.relevance) { const w = el("p", "why"); const b = el("b", null, "Für dich: "); w.appendChild(b); w.appendChild(document.createTextNode(i.relevance)); c.appendChild(w); }
+    if (i.relevance) { const w = el("p", "why"); const b = el("b", null, "Für IT-GRC: "); w.appendChild(b); w.appendChild(document.createTextNode(i.relevance)); c.appendChild(w); }
     const f = el("div", "foot");
     f.appendChild(el("span", "src", (i.source || "Quelle") + " · " + fmt(i.published || i.added)));
     const act = el("div", "tags");
