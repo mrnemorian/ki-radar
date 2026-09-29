@@ -1,17 +1,17 @@
 {
- "updated": "2026-09-29T22:03:17Z",
+ "updated": "2026-09-29T22:11:14Z",
  "briefings": [
   {
    "date": "2026-09-30",
-   "headline": "Ruhige Woche: Keine großen Neuerungen beim AI Act, dafür nachgeholte Grundlagen für Prüfung, Agenten-Sicherheit und Datenschutz.",
+   "headline": "Datenabfluss beim Lieferdienst Flink und ein Drittanbieter-Leck im E-Commerce zeigen, wie verwundbar der Onlinehandel ist; neu gelten die CRA-Meldepflichten, und PCI SSC hat einen Leitfaden zu KI-Syst",
    "points": [
-    "IDW-Prüfungshinweise PH 9.315DE.2 und .3 regeln KI in der Abschlussprüfung, darunter KI-Systeme beim Mandanten unter ISA [DE] 315",
-    "Die EDPB-Konsultation zu Anonymisierung und Web-Scraping für generative KI läuft noch bis 30.10.2026",
-    "Die MCP-Kampagne „Deadbugz“ zeigt, dass ein genehmigter Agenten-Server später bösartig werden kann",
-    "Das BSI schreibt das Projekt PRAKI aus: Prüfanforderungen für agentische KI, die in Grundschutz++ einfließen sollen",
-    "Die DSK hält KI-Gesichtserkennung mit Smart Glasses im öffentlichen Raum für unzulässig"
+    "Flink: Angreifer kamen über kompromittierte Zugangsdaten an Kundendaten, Kunden werden Berichten zufolge erpresst",
+    "Cyber Resilience Act: Seit 11.09. müssen Hersteller aktiv ausgenutzte Schwachstellen über die ENISA-Plattform melden, Eigenmarken im Blick behalten",
+    "BigCommerce/Ribon: Ein gestohlener App-Schlüssel eines Drittanbieters legte Kundendaten vieler Onlineshops offen",
+    "PCI SSC: Neuer, unverbindlicher Leitfaden zu KI in Zahlungsumgebungen und KMO-Standard v1.0",
+    "Data Act: Seit 12.09. gilt „Access by Design“ für neu in Verkehr gebrachte vernetzte Produkte"
    ],
-   "count": 5
+   "count": 6
   },
   {
    "date": "2026-09-29",
@@ -27,6 +27,18 @@
   }
  ],
  "news": [
+  {
+   "title": "Lieferdienst Flink: Kundendaten über kompromittierte Zugangsdaten abgeflossen",
+   "summary": "Flink hat am 25.09.2026 seine Kunden informiert: Eine unbefugte Person verschaffte sich mit kompromittierten Zugangsdaten Zugang zu internen Systemen. Betroffen sind unter anderem Name, E-Mail, Anschrift, Telefonnummer sowie möglicherweise Lieferhinweise und Bestelldetails; Passwörter und Zahlungsdaten sollen nicht betroffen sein. Flink hat die Datenschutzbehörden informiert und Anzeige erstattet; laut Berichten werden Kunden inzwischen erpresst.",
+   "relevance": "Der Vorfall betrifft einen direkten Wettbewerber im Lebensmittel-Lieferservice und ist ein typisches Muster über Zugangsdaten. Anlass, MFA-Abdeckung, Überwachung privilegierter und externer Zugänge sowie die Abläufe für Meldungen nach Art. 33/34 DSGVO und NIS2 zu überprüfen.",
+   "source": "Borns IT- und Windows-Blog",
+   "url": "https://borncity.com/blog/2026/09/26/cybervorfaelle-flink-lieferservice-entega-energieversorger-cleanfix-reinigungstechnik/",
+   "id": "2026-09-26-flink-datenabfluss-kompromittierte-zugangsdaten",
+   "topic": "Handel & Branche",
+   "impact": "hoch",
+   "published": "2026-09-26",
+   "added": "2026-09-29T22:11:14Z"
+  },
   {
    "title": "DSK zu Smart Glasses: KI-Gesichtserkennung im öffentlichen Raum unzulässig",
    "summary": "Auf ihrer Zwischenkonferenz am 23. September 2026 hat die Datenschutzkonferenz einen Prüfbericht der Hamburger Aufsicht zu Smart Glasses zur Kenntnis genommen. Danach ist KI-gestützte Gesichtserkennung im öffentlichen Raum unzulässig. Für KI-Training mit Daten Dritter fehlt in der Regel eine Rechtsgrundlage.",
@@ -52,6 +64,18 @@
    "added": "2026-09-29T22:03:17Z"
   },
   {
+   "title": "BigCommerce: Gestohlener App-Schlüssel eines Drittanbieters legt Shop-Kundendaten offen",
+   "summary": "Vom 13. bis 17.09.2026 hatten Angreifer über einen gestohlenen Zugriffsschlüssel der Drittanbieter-App Ribon Zugriff auf Kundendaten von Onlineshops auf BigCommerce. Betroffen waren Namen, E-Mail-Adressen, Telefonnummern und Postanschriften; Passwörter und Kartendaten sollen getrennt gespeichert und nicht betroffen gewesen sein. BigCommerce hat die App am 17.09. deinstalliert.",
+   "relevance": "Das Beispiel zeigt das Risiko durch Plugins und Integrationen in E-Commerce-Plattformen. Handlungsbedarf besteht bei der Inventarisierung von Drittanbieter-Apps und ihrer API-Schlüssel, bei minimalen Berechtigungen, bei der Rotation von Schlüsseln und bei der Bewertung solcher Anbieter im Lieferanten-Risikomanagement.",
+   "source": "Borns IT- und Windows-Blog",
+   "url": "https://borncity.com/blog/en/2026/09/19/ecommerce-plattform-bigcommerce-wohl-ueber-drittanbieter-ribon-gehackt/",
+   "id": "2026-09-19-bigcommerce-ribon-drittanbieter-leck",
+   "topic": "IT-Governance & Risiko",
+   "impact": "mittel",
+   "published": "2026-09-19",
+   "added": "2026-09-29T22:11:14Z"
+  },
+  {
    "id": "2026-09-17-audit-gap-ai-agents",
    "title": "KI-Agenten reißen Lücken in den Prüfpfad",
    "summary": "Prüfungsteams stellen fest, dass ihr gewohnter Nachweispfad bei KI-Agenten nicht mehr trägt: Die Daten liegen weiter in ERP- und HR-Systemen, aber Ermessensentscheidungen, die früher in E-Mails dokumentiert waren, trifft zunehmend Software – schneller, als ein Prüfer folgen kann.",
@@ -62,6 +86,42 @@
    "url": "https://siliconangle.com/2026/09/17/netsuite-ai-agents-new-audit-assurance-gap-amplify/",
    "published": "2026-09-17",
    "added": "2026-09-29T09:00:00Z"
+  },
+  {
+   "title": "PCI SSC veröffentlicht Leitfaden „Security Considerations for AI Systems“",
+   "summary": "Der PCI Security Standards Council hat ein Informationspapier zur Sicherheit von KI-Systemen in Zahlungsumgebungen veröffentlicht. Es behandelt Einsatzmodelle, Folgenabschätzung, die Abwehr KI-gestützter Angriffe und die Anwendung bestehender PCI-Standards. Der Leitfaden ist ausdrücklich unverbindlich: KI ist beim Scoping wie jede andere Technologie zu behandeln.",
+   "relevance": "KI-Komponenten mit Zugriff auf Karteninhaberdaten, etwa im Kundenservice oder Checkout, gehören in den PCI-DSS-Scope. Der Leitfaden hilft bei der Abstimmung mit QSA und bei den Kontrollen für KI-Anwendungsfälle im Zahlungsverkehr.",
+   "source": "PCI Security Standards Council",
+   "url": "https://blog.pcisecuritystandards.org/just-published-security-considerations-for-ai-systems",
+   "id": "2026-09-15-pci-ssc-leitfaden-ki-systeme",
+   "topic": "Standards & Zertifizierung",
+   "impact": "mittel",
+   "published": "2026-09-15",
+   "added": "2026-09-29T22:11:14Z"
+  },
+  {
+   "title": "PCI SSC: Neuer Standard für Schlüsselmanagement (KMO) v1.0",
+   "summary": "Der PCI SSC hat den Standard „PCI Key Management and Operations (KMO)“ in Version 1.0 veröffentlicht. Er richtet sich an Stellen, die kryptografische Schlüssel im Zahlungsumfeld verwalten.",
+   "relevance": "Vor allem relevant für die Abstimmung mit Zahlungsdienstleistern und Acquirern sowie für eigene Aufgaben im Schlüsselmanagement. Es lohnt sich zu prüfen, ob Dienstleister im Zahlungsverkehr den neuen Standard nachweisen werden.",
+   "source": "PCI Security Standards Council",
+   "url": "https://blog.pcisecuritystandards.org/just-published-pci-key-management-operations-kmo-standard-v1.0",
+   "id": "2026-09-14-pci-kmo-standard-v1",
+   "topic": "Standards & Zertifizierung",
+   "impact": "info",
+   "published": "2026-09-14",
+   "added": "2026-09-29T22:11:14Z"
+  },
+  {
+   "title": "Cyber Resilience Act: Meldepflicht für ausgenutzte Schwachstellen gilt seit 11. September",
+   "summary": "Seit dem 11.09.2026 müssen Hersteller von Produkten mit digitalen Elementen aktiv ausgenutzte Schwachstellen und schwerwiegende Sicherheitsvorfälle melden. Gemeldet wird über die Single Reporting Platform (CRA-SRP) der ENISA; in Deutschland ist CERT-Bund im BSI das koordinierende CSIRT. Die Pflicht gilt auch für Produkte, die bereits auf dem Markt sind.",
+   "relevance": "Händler und Importeure haben eigene CRA-Pflichten. Wer vernetzte Produkte unter eigener Marke vertreibt, gilt als Hersteller und ist damit selbst meldepflichtig. Deshalb sollte man das Sortiment vernetzter Produkte und Eigenmarken erfassen, die Meldewege mit den Lieferanten vertraglich regeln und die Zuständigkeiten für die ENISA-Plattform festlegen.",
+   "source": "BSI",
+   "url": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Pressemitteilungen/Presse2026/260911_CRA_Meldepflicht_Schwachstellen.html",
+   "id": "2026-09-11-cra-meldepflicht-startet",
+   "topic": "Cyber- & IT-Regulierung",
+   "impact": "hoch",
+   "published": "2026-09-11",
+   "added": "2026-09-29T22:11:14Z"
   },
   {
    "title": "„Deadbugz“: Bösartiger MCP-Server schaltet erst nach drei Tool-Aufrufen um",
