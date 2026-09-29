@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-29T22:22:07Z",
+ "updated": "2026-09-29T22:54:12Z",
  "topics": [
   "IT-Governance & Risiko",
   "Cyber- & IT-Regulierung",
@@ -13,13 +13,13 @@
  "briefings": [
   {
    "date": "2026-09-30",
-   "headline": "Heute geht es um Angriffe über Dienstleister und automatisierte Angriffe auf Onlineshops, während die Datenschutzaufsicht ihre Bußgeldpraxis vereinheitlicht und das BSI die Umsetzung des CRA vorantreibt.",
+   "headline": "Citrix-Zero-Days erzwingen sofortiges Patchen, das Kabinett beschließt E-Bon und Kassenpflicht ab 2028, und ENISA sieht KI zunehmend in der Angriffskette.",
    "points": [
-    "Mit KI-Agenten automatisierte Angriffswelle auf Onlineshops: Mindestens 27 Unternehmen kompromittiert, Daten von 600.000 Kreditkarten abgeflossen",
-    "Carrefour France: Kundendaten über den Versand-Tracking-Dienstleister Shipup offengelegt, weitere französische Händler betroffen",
-    "EDPB führt ein Fünf-Schritte-Schema für die Entscheidung über DSGVO-Bußgelder ein, Konsultation bis 13.11.2026",
-    "Irische DPC verhängt 403 Mio. Euro gegen Google wegen Standortdaten",
-    "BSI: Erstes Zertifikat nach TR-03185 (sicherer Software-Lebenszyklus) und erweiterte Vereinbarung mit der DAkkS für CRA-Prüfstellen"
+    "Citrix NetScaler: zwei kritische Zero-Days werden aktiv ausgenutzt, Patches sind seit 27.09. verfügbar",
+    "Bundeskabinett: digitale Belege ersetzen ab 2028 den Papierbon, elektronische Kassenpflicht ab 100.000 Euro Umsatz",
+    "ENISA Threat Landscape 2026: Abhängigkeiten vergrößern die Angriffsfläche, KI unterstützt immer mehr Phasen von Angriffen",
+    "NIST legt einen Entwurf für die OT-Sicherheitsrichtlinie SP 800-82r4 vor, jetzt auch für Lebensmittel und Landwirtschaft; Kommentare bis 30.11.",
+    "Beazley bietet Deckung für das Abschalten fehlerhafter KI und für KI-Bußgelder – KI-Risiken werden versicherbar"
    ],
    "count": 6
   },
@@ -39,11 +39,12 @@
  "signals": [
   {
    "theme": "Post-Quanten-Kryptografie-Migration",
-   "why": "Nach dem EU-Fahrplan sollen die Mitgliedstaaten bis Ende 2026 nationale PQC-Pläne vorlegen, hochriskante Systeme etwa in kritischen Infrastrukturen sollen bis spätestens 2030 umgestellt sein. Kryptoinventar und Abhängigkeiten, auch bei Zahlungsdienstleistern, werden damit zum Thema für Prüfung und Steuerung.",
+   "why": "Das BSI empfiehlt, sensible Anwendungen bis Ende 2030 auf quantensichere Verfahren umzustellen. Die EU erwartet, dass die Migration bis Ende 2026 beginnt. Ohne ein Krypto-Inventar lassen sich Zahlungs-, Kunden- und Lieferantenschnittstellen nicht rechtzeitig planen.",
    "count": 1,
    "first_seen": "2026-09-30",
    "last_seen": "2026-09-30",
    "evidence": [
+    "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Informationen-und-Empfehlungen/Quantentechnologien-und-Post-Quanten-Kryptografie/quantentechnologien-und-quantensichere-kryptografie_node.html",
     "https://digital-strategy.ec.europa.eu/en/news/eu-reinforces-its-cybersecurity-post-quantum-cryptography"
    ]
   },
@@ -66,9 +67,36 @@
    "evidence": [
     "https://www.asscompact.de/nachrichten/cyberversicherung-stand-der-dinge-bei-den-kriegsklauseln"
    ]
+  },
+  {
+   "theme": "Digital Fairness Act",
+   "why": "Die Kommission plant ihren Vorschlag für das vierte Quartal 2026. Er zielt auf Dark Patterns, suchterzeugendes Design und unfaire Personalisierung. Das betrifft Onlineshops, Apps und Kundenbindungsprogramme und damit auch personalisierte Preisgestaltung.",
+   "count": 1,
+   "first_seen": "2026-09-30",
+   "last_seen": "2026-09-30",
+   "evidence": [
+    "https://www.europarl.europa.eu/legislative-train/theme-protecting-our-democracy-upholding-our-values/file-digital-fairness-act"
+   ]
   }
  ],
  "news": [
+  {
+   "title": "Österreichischer Reiseverband veröffentlicht Cybersicherheits-Leitfaden für Reisebüros",
+   "summary": "Der Österreichische Reiseverband ÖRV hat am 29. September gemeinsam mit ÖHV und SEC Consult einen Leitfaden zur Cybersicherheit für Reiseunternehmen vorgestellt. Er begründet die besondere Gefährdung der Branche mit Kunden-, Zahlungs- und Buchungsdaten sowie vielen externen Partnern. Empfohlen wird ein stufenweises Vorgehen mit MFA, Updates, restriktiven Berechtigungen, Netzsegmentierung und Backups. Zudem warnt der Leitfaden vor KI-gestütztem, sprachlich fehlerfreiem Phishing.",
+   "relevance": "Der Leitfaden unterstreicht, wie stark die Touristik bedroht ist, gerade an den Schnittstellen zu Reisebüros und Buchungspartnern. Er kann als Mindeststandard für Anforderungen an kleinere Vertriebspartner im Drittparteienmanagement dienen.",
+   "source": "ÖRV via APA-OTS",
+   "url": "https://www.ots.at/presseaussendung/OTS_20260929_OTS0084/oerv-cyberangriffe-treffen-reisebueros-ins-herz",
+   "id": "2026-09-29-oerv-cyberleitfaden-reisebueros",
+   "topic": "Handel & Branche",
+   "impact": "info",
+   "published": "2026-09-29",
+   "tags": [
+    "Touristik",
+    "Drittparteien",
+    "Phishing"
+   ],
+   "added": "2026-09-29T22:54:12Z"
+  },
   {
    "title": "Carrefour France: Kundendaten über Versand-Tracking-Dienstleister Shipup offengelegt",
    "summary": "Carrefour hat Kundinnen und Kunden in Frankreich über einen Angriff auf den Dienstleister Shipup informiert, dessen Plattform die Sendungsverfolgung übernimmt. Betroffen sind Namen, E-Mail-Adressen und Telefonnummern. Passwörter und Bankdaten sind laut Carrefour nicht betroffen, die eigenen Systeme seien nicht kompromittiert worden. Shipup wird von über 700 Marken genutzt, auch Printemps und Aroma-Zone waren betroffen.",
@@ -85,6 +113,23 @@
     "Datenleck"
    ],
    "added": "2026-09-29T22:22:07Z"
+  },
+  {
+   "title": "Citrix NetScaler: Zwei kritische Zero-Days werden aktiv ausgenutzt",
+   "summary": "Citrix bestätigt, dass zwei Schwachstellen in NetScaler ADC und Gateway (CVE-2026-88771 und CVE-2026-88772, CVSS 9.5) bei mehreren Kunden weltweit ausgenutzt werden. Die erste Lücke erlaubt ohne Anmeldung und ohne besondere Konfiguration das Ausführen von Befehlen aus der Ferne. Patches für die Versionen 14.1 und 13.1 gibt es seit dem 27. September. Nationale Cybersicherheitsbehörden hatten Betreiber vorab gewarnt.",
+   "relevance": "Remote-Access- und Load-Balancer-Appliances sind typische Einfallstore in Filial-, Logistik- und Buchungsnetze. Deshalb sollten Patch-Nachweise und eine Kompromittierungsprüfung jetzt dokumentiert werden. Bei einer Ausnutzung kann eine Meldepflicht nach NIS2 greifen.",
+   "source": "BleepingComputer",
+   "url": "https://www.bleepingcomputer.com/news/security/citrix-admins-warned-to-shut-down-netscalers-over-2-exploited-zero-days/",
+   "id": "2026-09-27-citrix-netscaler-zero-days",
+   "topic": "IT-Governance & Risiko",
+   "impact": "hoch",
+   "published": "2026-09-27",
+   "tags": [
+    "Schwachstellenmanagement",
+    "Zero-Day",
+    "Remote Access"
+   ],
+   "added": "2026-09-29T22:54:12Z"
   },
   {
    "title": "Lieferdienst Flink: Kundendaten über kompromittierte Zugangsdaten abgeflossen",
@@ -115,6 +160,22 @@
    "added": "2026-09-29T22:22:07Z"
   },
   {
+   "title": "Cyberversicherung: Beazley deckt Abschaltung fehlerhafter KI und KI-Bußgelder",
+   "summary": "Der Versicherer Beazley hat am 24. September zwei neue Zusatzklauseln für Cyberpolicen vorgestellt. Die erste deckt Schäden, wenn ein Unternehmen ein fehlerhaftes KI-System vorsorglich abschaltet. Die zweite übernimmt Verteidigungskosten und Strafen bei Verfahren wegen unbeabsichtigten KI-Fehlgebrauchs. Zuvor hatte Beazley klargestellt, dass KI-bezogene Schäden ausdrücklich unter die Cyber- und Tech-E&O-Deckung fallen. Das Angebot richtet sich zunächst an den US-Markt.",
+   "relevance": "Damit werden KI-Betriebsrisiken wie Preis- oder Prognosemodelle, die sich falsch verhalten, erstmals ausdrücklich versicherbar. Es lohnt sich zu prüfen, wie die eigene Cyberpolice KI-Vorfälle behandelt und ob es einen dokumentierten Abschaltprozess für KI-Systeme gibt.",
+   "source": "Beazley",
+   "url": "https://www.beazley.com/en-US/news-and-events/beazley-expands-cyber-protection/",
+   "id": "2026-09-24-beazley-ki-cyberversicherung",
+   "topic": "Weitere Themen",
+   "impact": "info",
+   "published": "2026-09-24",
+   "tags": [
+    "Cyberversicherung",
+    "KI-Risiko"
+   ],
+   "added": "2026-09-29T22:54:12Z"
+  },
+  {
    "title": "KI-Agenten greifen Hunderte Onlineshops an: 600.000 Kreditkartendaten erbeutet",
    "summary": "Laut heise haben Angreifer vom 10. bis 15. September 2026 mit drei Open-Source-KI-Agenten (für Schwachstellensuche, Exploits und Steuerung) 105 Angriffsprojekte gegen Hunderte Onlinehändler gestartet. Mindestens 27 Unternehmen wurden kompromittiert, bei zwei davon wurden Daten von mindestens 600.000 gültigen Kreditkarten kopiert. Die Einbrüche dauerten oft nur Stunden. Aufgedeckt hat das Gambit Security. Anthropic und Cloudflare sperrten die zugehörigen Konten und Infrastruktur.",
    "relevance": "Die Zeit zwischen Veröffentlichung einer Schwachstelle und ihrer Ausnutzung sinkt bei Shops mit Kartenzahlung deutlich. Patch-Management, Angriffsflächen-Management und Kontrollen nach PCI DSS 4.x (z. B. Schutz der Zahlungsseiten, Überwachung) sollten auf automatisierte Angreifer ausgelegt sein.",
@@ -142,6 +203,40 @@
    "impact": "info",
    "published": "2026-09-24",
    "added": "2026-09-29T22:03:17Z"
+  },
+  {
+   "title": "Kabinett: Digitaler Beleg ersetzt Papierbon ab 2028, elektronische Kassen werden Pflicht",
+   "summary": "Das Bundeskabinett hat am 23. September den Gesetzentwurf des BMF zu digitalen Belegen und Kassen beschlossen. Ab 2028 sollen digitale Belege den Papierbon ersetzen. Unternehmen mit mehr als 100.000 Euro Jahresumsatz müssen dann elektronische Kassensysteme nutzen. Ausgenommen sind Betriebe mit weniger als 12.000 Euro Barumsatz, betroffen sind rund 115.000 offene Ladenkassen.",
+   "relevance": "Für einen Filialhändler ändern sich damit Kassenprozesse, Belegausgabe, Aufbewahrung und Kundendatenflüsse beim E-Bon. Das betrifft GoBD- und Kassenkontrollen, den Datenschutz und das ITGC-Umfeld der Jahresabschlussprüfung.",
+   "source": "Bundesministerium der Finanzen",
+   "url": "https://www.bundesfinanzministerium.de/Content/DE/Pressemitteilungen/Finanzpolitik/2026/09/2026-09-23-digitale-belege-und-digitale-kassen.html",
+   "id": "2026-09-23-kabinett-e-bon-kassenpflicht",
+   "topic": "Handel & Branche",
+   "impact": "hoch",
+   "published": "2026-09-23",
+   "tags": [
+    "E-Bon",
+    "Kassen",
+    "GoBD"
+   ],
+   "added": "2026-09-29T22:54:12Z"
+  },
+  {
+   "title": "NIST: Entwurf der OT-Sicherheitsrichtlinie SP 800-82r4, jetzt auch für Lebensmittelsektor",
+   "summary": "NIST hat am 23. September den ersten öffentlichen Entwurf von SP 800-82 Revision 4 zur Sicherheit operativer Technologie vorgelegt. Die Richtlinie folgt nun dem CSF 2.0 und verknüpft das OT-Risikomanagement mit dem Risikomanagement des Unternehmens. Neu sind unter anderem Zero-Trust-Prinzipien sowie Gebäudeautomation und der Sektor Lebensmittel und Landwirtschaft. Kommentare sind bis 30. November 2026 möglich.",
+   "relevance": "Kühlketten, Logistikzentren und Gebäudetechnik im Lebensmittelhandel sind OT-Umgebungen mit KRITIS-Bezug. Der Entwurf taugt als Referenz, um OT-Risiken ins Enterprise-Risikomanagement und ins Kontrollframework einzubinden.",
+   "source": "Security Today",
+   "url": "https://securitytoday.com/articles/2026/09/23/nist-releases-draft-guide-to-operational-technology-security.aspx",
+   "id": "2026-09-23-nist-sp-800-82r4-ot-security",
+   "topic": "Standards & Zertifizierung",
+   "impact": "mittel",
+   "published": "2026-09-23",
+   "tags": [
+    "OT-Sicherheit",
+    "NIST",
+    "KRITIS"
+   ],
+   "added": "2026-09-29T22:54:12Z"
   },
   {
    "title": "Irische DPC verhängt 403 Mio. Euro gegen Google wegen Standortdaten",
@@ -176,6 +271,23 @@
     "Lieferanten"
    ],
    "added": "2026-09-29T22:22:07Z"
+  },
+  {
+   "title": "ENISA Threat Landscape 2026: Abhängigkeiten vergrößern die Angriffsfläche, KI im Aufwind",
+   "summary": "ENISA hat am 22. September ihren Lagebericht zur Bedrohungslage in der EU veröffentlicht. Er wertet Vorfälle des Jahres 2025 aus. Laut Bericht vergrößern digitale Abhängigkeiten die Angriffsfläche. 51 Prozent der erfassten Vorfälle waren DDoS-Angriffe, meist von Hacktivisten und oft mit geopolitischem Bezug. ENISA erwartet, dass KI immer mehr Phasen der Angriffskette direkt unterstützt.",
+   "relevance": "Der Bericht ist eine belastbare Quelle für die Risikoanalyse nach NIS2 und für Berichte an die Geschäftsleitung. Seine Schwerpunkte Drittparteien-Abhängigkeiten und KI-gestützte Angriffe passen zur aktuellen Vorfallserie bei Händlern über Dienstleister.",
+   "source": "ENISA",
+   "url": "https://www.enisa.europa.eu/publications/enisa-threat-landscape-2026",
+   "id": "2026-09-22-enisa-threat-landscape-2026",
+   "topic": "IT-Governance & Risiko",
+   "impact": "mittel",
+   "published": "2026-09-22",
+   "tags": [
+    "Bedrohungslage",
+    "ENISA",
+    "Lieferkette"
+   ],
+   "added": "2026-09-29T22:54:12Z"
   },
   {
    "title": "EDPB vereinheitlicht die Entscheidung über DSGVO-Bußgelder: Konsultation bis 13. November",

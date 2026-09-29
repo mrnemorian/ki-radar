@@ -1,0 +1,17 @@
+Guten Morgen, heute ist Mittwoch, der dreißigste September.
+
+Dieser Überblick wird automatisch mit K I erstellt.
+
+Wir beginnen mit einer dringenden Warnung. Citrix bestätigt zwei kritische Schwachstellen in NetScaler A D C und NetScaler Gateway. Beide werden bereits aktiv ausgenutzt. Die schwerere Lücke erlaubt Angreifern, ohne Anmeldung Befehle auszuführen. Eine besondere Konfiguration ist dafür nicht nötig. Seit dem siebenundzwanzigsten September gibt es Patches. Für I T G R C heißt das: Patch-Stand nachweisen, auf Spuren einer Kompromittierung prüfen und alles sauber dokumentieren. Kommt es zu einem erheblichen Vorfall, kann eine Meldepflicht nach N I S 2 greifen.
+
+Das zweite Thema betrifft jede Filiale. Das Bundeskabinett hat einen Gesetzentwurf zu digitalen Belegen und Kassen beschlossen. Ab zweitausendachtundzwanzig soll der digitale Beleg den Papierbon ersetzen. Wer mehr als hunderttausend Euro Jahresumsatz macht, muss dann eine elektronische Kasse nutzen. Betroffen sind rund hundertfünfzehntausend offene Ladenkassen. Für große Händler geht es um Kassenprozesse, Aufbewahrung und Datenschutz beim E-Bon. Und um die I T Kontrollen, auf die der Abschlussprüfer schaut.
+
+Drittens hat die EU-Agentur ENISA ihren Lagebericht zur Bedrohungslage zweitausendsechsundzwanzig veröffentlicht. Die Kernaussage: Digitale Abhängigkeiten vergrößern die Angriffsfläche. Rund die Hälfte der erfassten Vorfälle waren Überlastungsangriffe von Hacktivisten, oft mit geopolitischem Hintergrund. ENISA erwartet außerdem, dass K I immer mehr Schritte eines Angriffs unterstützt. Das passt zur Serie von Vorfällen bei Händlern, die über Dienstleister angegriffen wurden. Der Bericht ist eine gute Grundlage für die Risikoanalyse und für den Bericht an die Geschäftsleitung.
+
+Viertens ein Blick auf Standards. Das amerikanische N I S T hat einen Entwurf für die überarbeitete Richtlinie zur Sicherheit operativer Technik vorgelegt. Sie orientiert sich jetzt am Cybersecurity Framework zwei null und bezieht erstmals auch den Sektor Lebensmittel und Landwirtschaft ein. Kühlketten, Logistikzentren und Gebäudetechnik gehören genau dazu. Kommentare sind bis zum dreißigsten November möglich.
+
+Und zum Schluss noch etwas aus der Versicherungswelt. Der Versicherer Beazley bietet neue Bausteine für Cyberpolicen an. Versichert ist zum einen der Schaden, wenn ein Unternehmen ein fehlerhaftes K I System vorsorglich abschaltet. Zum anderen deckt Beazley Verteidigungskosten und Strafen, wenn K I unbeabsichtigt falsch eingesetzt wurde. Das Angebot gilt zunächst in den USA. Es zeigt aber, wohin sich der Markt bewegt. Eine gute Gelegenheit, die eigene Police auf K I Risiken hin anzusehen.
+
+Auf dem Radar haben wir heute den geplanten Digital Fairness Act. Die EU-Kommission will ihren Vorschlag noch in diesem Quartal vorlegen. Er soll manipulative Gestaltung, suchterzeugendes Design und unfaire Personalisierung in Onlineshops und Apps eindämmen.
+
+Das war der Überblick für heute. Alle Quellen und Details finden Sie wie immer auf der Webseite. Einen guten Tag und bis morgen.
