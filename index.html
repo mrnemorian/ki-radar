@@ -72,6 +72,16 @@ h1 { font-family: var(--font-display); font-size: 30px; line-height: 1.1; margin
 .foot .src { font-family: var(--font-mono); font-size: 12px; }
 .foot a { color: var(--accent); font-weight: 600; text-decoration: none; }
 .mark { background: none; border: 1px solid var(--line); color: var(--muted); border-radius: 8px; padding: 4px 10px; font: 500 12px var(--font-body); cursor: pointer; }
+.signals { display: flex; flex-direction: column; gap: 10px; }
+.signals h2 { font-family: var(--font-display); font-size: 19px; margin: 0; }
+.signals .hint { color: var(--muted); font-size: 13px; margin: 0; }
+.sig { border: 1px solid var(--line); background: var(--surface); border-radius: 12px; padding: 12px 14px; display: flex; flex-direction: column; gap: 4px; }
+.sig .head { display: flex; justify-content: space-between; gap: 10px; align-items: baseline; }
+.sig b { font-family: var(--font-display); font-size: 16px; }
+.sig .n { font-family: var(--font-mono); font-size: 12px; color: var(--accent); white-space: nowrap; }
+.sig p { margin: 0; font-size: 14px; }
+.sig a { color: var(--accent); font-size: 13px; font-weight: 600; text-decoration: none; }
+.tag { font-size: 11px; color: var(--accent); background: var(--accent-soft); border-radius: 6px; padding: 2px 8px; }
 .empty { background: var(--surface); border: 1px dashed var(--line); border-radius: 12px; padding: 20px; color: var(--muted); }
 @media (prefers-reduced-motion: no-preference) { .card { transition: opacity .2s; } }
 </style>
@@ -91,6 +101,12 @@ h1 { font-family: var(--font-display); font-size: 30px; line-height: 1.1; margin
     <p>Jeden Morgen gegen 7 Uhr erscheint hier eine Zusammenfassung der wichtigsten Meldungen zu IT-Governance, IT-Compliance und AI-Governance – eingeordnet für IT-GRC in einem großen Handels- und Touristikkonzern.</p>
   </section>
 
+  <section class="signals" id="signals" hidden>
+    <h2>Auf dem Radar</h2>
+    <p class="hint">Aufkommende Themen, die noch keine konkrete Pflicht sind. Die Zahl zeigt, an wie vielen Tagen das Thema aufgetaucht ist.</p>
+    <div id="siglist" class="list"></div>
+  </section>
+
   <div class="controls">
     <div class="chips" id="chips" role="toolbar" aria-label="Themen filtern"></div>
     <div class="row">
@@ -106,7 +122,7 @@ h1 { font-family: var(--font-display); font-size: 30px; line-height: 1.1; margin
 </div>
 
 <script>
-const TOPICS = ["Alle", "AI-Governance", "Cyber- & IT-Regulierung", "Datenschutz & Datenrecht", "IT-Governance & Risiko", "Standards & Zertifizierung", "Prüfung & Assurance", "Handel & Branche"];
+let TOPICS = ["Alle", "AI-Governance", "Cyber- & IT-Regulierung", "Datenschutz & Datenrecht", "IT-Governance & Risiko", "Standards & Zertifizierung", "Prüfung & Assurance", "Handel & Branche"];
 const IMPACT = { hoch: "Hoch relevant", mittel: "Relevant", info: "Zur Info" };
 let items = [], topic = "Alle", onlyUnread = false, readSet = new Set();
 
@@ -138,6 +154,7 @@ function renderList() {
     const tags = el("div", "tags");
     tags.appendChild(el("span", "pill " + (IMPACT[i.impact] ? i.impact : "info"), IMPACT[i.impact] || "Zur Info"));
     if (i.topic) tags.appendChild(el("span", "pill topic", i.topic));
+    (i.tags || []).forEach(t => tags.appendChild(el("span", "tag", t)));
     c.appendChild(tags);
     c.appendChild(el("h3", null, i.title || "Ohne Titel"));
     if (i.summary) c.appendChild(el("p", null, i.summary));
@@ -151,6 +168,23 @@ function renderList() {
     if (/^https:\/\//.test(i.url || "")) { const a = el("a", null, "Quelle öffnen ↗"); a.href = i.url; a.target = "_blank"; a.rel = "noopener"; a.addEventListener("click", () => { readSet.add(i.id); saveRead(); setTimeout(renderList, 300); }); act.appendChild(a); }
     f.appendChild(act); c.appendChild(f);
     list.appendChild(c);
+  });
+}
+
+function renderSignals(list) {
+  const box = $("siglist"); box.textContent = "";
+  const top = list.slice(0, 6);
+  $("signals").hidden = !top.length;
+  top.forEach(s => {
+    const c = el("div", "sig");
+    const head = el("div", "head");
+    head.appendChild(el("b", null, s.theme));
+    head.appendChild(el("span", "n", s.count + "× · seit " + fmt(s.first_seen)));
+    c.appendChild(head);
+    if (s.why) c.appendChild(el("p", null, s.why));
+    const u = (s.evidence || [])[0];
+    if (/^https:\/\//.test(u || "")) { const a = el("a", null, "Beleg ↗"); a.href = u; a.target = "_blank"; a.rel = "noopener"; c.appendChild(a); }
+    box.appendChild(c);
   });
 }
 
@@ -171,6 +205,10 @@ fetch("data.json?v=" + Date.now(), { cache: "no-store" }).then(r => r.json()).th
   items = (d.news || []).map(n => Object.assign({}, n));
   $("updated").textContent = d.updated ? "Zuletzt aktualisiert: " + new Date(d.updated).toLocaleString("de-DE", { dateStyle: "medium", timeStyle: "short" }) : "Noch keine Meldungen";
   if (d.briefings && d.briefings.length) renderBrief(d.briefings[0]);
+  const extra = [...new Set(items.map(i => i.topic).filter(t => t && !(d.topics || TOPICS).includes(t)))];
+  TOPICS = ["Alle"].concat((d.topics || TOPICS.slice(1)).filter(t => t === "Weitere Themen" ? items.some(i => i.topic === t) : true), extra);
+  renderChips();
+  renderSignals(d.signals || []);
   renderList();
 }).catch(() => { $("updated").textContent = "Meldungen konnten nicht geladen werden. Seite neu laden."; });
 </script>
