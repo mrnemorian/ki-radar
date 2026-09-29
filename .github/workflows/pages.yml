@@ -4,6 +4,11 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+    inputs:
+      send_telegram:
+        description: "Neueste Folge jetzt an Telegram senden (Test)"
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -54,9 +59,9 @@ jobs:
         run: python scripts/build_site.py
 
       - name: Neue Folge an Telegram senden
-        if: steps.build.outputs.new_episode != '' && env.TELEGRAM_BOT_TOKEN != '' && env.TELEGRAM_CHAT_IDS != ''
+        if: (steps.build.outputs.new_episode != '' || inputs.send_telegram) && env.TELEGRAM_BOT_TOKEN != '' && env.TELEGRAM_CHAT_IDS != ''
         env:
-          NEW: ${{ steps.build.outputs.new_episode }}
+          NEW: ${{ steps.build.outputs.new_episode || steps.build.outputs.latest_episode }}
         run: |
           for id in $(echo "$TELEGRAM_CHAT_IDS" | tr ',;' '  '); do
             if curl -sS -f -o /dev/null                  -F chat_id="$id"                  -F audio=@"_site/audio/${NEW}.mp3"                  -F caption="$(cat telegram_caption.txt)"                  -F title="IT-GRC Radar ${NEW}"                  -F performer="IT-GRC Radar"                  "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendAudio"; then

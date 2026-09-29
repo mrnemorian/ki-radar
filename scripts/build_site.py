@@ -144,10 +144,14 @@ def main():
     # Tell the workflow which episode is new today, so Telegram gets it exactly once.
     today = dt.datetime.now(ZoneInfo("Europe/Berlin")).date().isoformat()
     newest = episodes[0] if episodes else None
-    if newest and newest["date"] in synthesized and newest["date"] >= (
-            dt.date.fromisoformat(today) - dt.timedelta(days=1)).isoformat():
+    if newest:
         caption = f"🎧 {newest['title']}\n\nQuellen und alle Meldungen: {SITE_URL}/"
         (ROOT / "telegram_caption.txt").write_text(caption[:1000], encoding="utf-8")
+        if os.environ.get("GITHUB_OUTPUT"):
+            with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as f:
+                f.write(f"latest_episode={newest['date']}\n")
+    if newest and newest["date"] in synthesized and newest["date"] >= (
+            dt.date.fromisoformat(today) - dt.timedelta(days=1)).isoformat():
         if os.environ.get("GITHUB_OUTPUT"):
             with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as f:
                 f.write(f"new_episode={newest['date']}\n")
