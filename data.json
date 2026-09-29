@@ -1,17 +1,187 @@
 {
- "updated": "2026-09-29T09:00:00Z",
+ "updated": "2026-09-29T22:03:17Z",
  "briefings": [
-  {"date": "2026-09-29", "headline": "Startbestand: Die Regeln haben sich im Sommer verschoben", "points": ["Digital Omnibus in Kraft (27.07.): Hochrisiko nach Anhang III erst ab 02.12.2027, Anhang I ab 02.08.2028.", "Art. 4 KI-Kompetenz ist jetzt eine Bemühenspflicht – Team-Befähigung über Risiko und Prüfungsqualität begründen.", "Art. 50 Transparenzpflichten gelten seit 02.08.2026; Bundesnetzagentur ist seit 29.07. deutsche KI-Aufsicht (KI-MIG).", "KI-Sicherheit: OWASP Top 10 2026 und Agent Control Standard veröffentlicht; BSI mit neuem Infopaket zu generativer KI.", "Prüfung: KI-Agenten schaffen Lücken im Prüfpfad – Kernthema für KI-Prüfleitfäden."], "count": 9}
+  {
+   "date": "2026-09-30",
+   "headline": "Ruhige Woche: Keine großen Neuerungen beim AI Act, dafür nachgeholte Grundlagen für Prüfung, Agenten-Sicherheit und Datenschutz.",
+   "points": [
+    "IDW-Prüfungshinweise PH 9.315DE.2 und .3 regeln KI in der Abschlussprüfung, darunter KI-Systeme beim Mandanten unter ISA [DE] 315",
+    "Die EDPB-Konsultation zu Anonymisierung und Web-Scraping für generative KI läuft noch bis 30.10.2026",
+    "Die MCP-Kampagne „Deadbugz“ zeigt, dass ein genehmigter Agenten-Server später bösartig werden kann",
+    "Das BSI schreibt das Projekt PRAKI aus: Prüfanforderungen für agentische KI, die in Grundschutz++ einfließen sollen",
+    "Die DSK hält KI-Gesichtserkennung mit Smart Glasses im öffentlichen Raum für unzulässig"
+   ],
+   "count": 5
+  },
+  {
+   "date": "2026-09-29",
+   "headline": "Startbestand: Die Regeln haben sich im Sommer verschoben",
+   "points": [
+    "Digital Omnibus in Kraft (27.07.): Hochrisiko nach Anhang III erst ab 02.12.2027, Anhang I ab 02.08.2028.",
+    "Art. 4 KI-Kompetenz ist jetzt eine Bemühenspflicht – Team-Befähigung über Risiko und Prüfungsqualität begründen.",
+    "Art. 50 Transparenzpflichten gelten seit 02.08.2026; Bundesnetzagentur ist seit 29.07. deutsche KI-Aufsicht (KI-MIG).",
+    "KI-Sicherheit: OWASP Top 10 2026 und Agent Control Standard veröffentlicht; BSI mit neuem Infopaket zu generativer KI.",
+    "Prüfung: KI-Agenten schaffen Lücken im Prüfpfad – Kernthema für KI-Prüfleitfäden."
+   ],
+   "count": 9
+  }
  ],
  "news": [
-  {"id": "2026-09-17-audit-gap-ai-agents", "title": "KI-Agenten reißen Lücken in den Prüfpfad", "summary": "Prüfungsteams stellen fest, dass ihr gewohnter Nachweispfad bei KI-Agenten nicht mehr trägt: Die Daten liegen weiter in ERP- und HR-Systemen, aber Ermessensentscheidungen, die früher in E-Mails dokumentiert waren, trifft zunehmend Software – schneller, als ein Prüfer folgen kann.", "relevance": "Genau der Blickwinkel „KI wird Prüfungsgegenstand“: Protokollierung von Agenten-Entscheidungen und Freigaben gehört in den KI-Prüfleitfaden und ins Prüfer-Briefing.", "topic": "Prüfung & Assurance", "impact": "hoch", "source": "SiliconANGLE", "url": "https://siliconangle.com/2026/09/17/netsuite-ai-agents-new-audit-assurance-gap-amplify/", "published": "2026-09-17", "added": "2026-09-29T09:00:00Z"},
-  {"id": "2026-09-04-aisi-deutschland", "title": "AISI Deutschland: KI-Sicherheitsinstitut des Bundes startet in Berlin", "summary": "Digital- und Innenministerium haben das German AI Security Institute gegründet. Es soll Fähigkeiten und Risiken fortgeschrittener KI-Modelle bewerten; BSI und Bundesnetzagentur bilden in der ersten Phase den Kern.", "relevance": "Mittelfristig eine weitere deutsche Referenz für Bewertungsmethoden und Testergebnisse zu Modellen – beobachten, noch keine direkten Pflichten.", "topic": "Deutschland & Aufsicht", "impact": "info", "source": "KIPODE", "url": "https://kipode.de/ki-radar/2026-09-04-aisi-deutschland-berlin.html", "published": "2026-09-04", "added": "2026-09-29T09:00:00Z"},
-  {"id": "2026-09-bsi-infopaket-generative-ki", "title": "BSI-Informationspaket zum sicheren Einsatz generativer KI im Unternehmen", "summary": "Der Expertenkreis KI-Sicherheit der Allianz für Cyber-Sicherheit beim BSI hat ein Informationspaket veröffentlicht. Schwerpunkt sind organisatorische Schutzmaßnahmen für den Einsatz generativer KI im Betrieb. Zuvor erschien u. a. eine BSI-Publikation zum Basisschutz gegen indirekte Prompt Injection in dokumentbasierten LLM-Chats.", "relevance": "Direkt verwertbar für KI-Richtlinie und Kontrollkatalog – deutsche Behördenquelle, die sich in Prüfungen gut als Referenz eignet.", "topic": "KI-Sicherheit", "impact": "mittel", "source": "datenschutzticker.de", "url": "https://www.datenschutzticker.de/2026/09/bsi-informationspaket-zum-sicheren-einsatz-generativer-ki-im-unternehmen/", "published": "2026-09", "added": "2026-09-29T09:00:00Z"},
-  {"id": "2026-08-03-owasp-top10-2026", "title": "OWASP veröffentlicht Top 10 für LLM-Anwendungen 2026 und Agent Control Standard", "summary": "Das OWASP GenAI Security Project hat am 3. August 2026 die neue Ausgabe seiner LLM-Top-10 veröffentlicht und einen gespendeten Agent Control Standard vorgestellt. Ergänzend gibt es seit Dezember 2025 die Top 10 für agentische Anwendungen (ASI01–ASI10, z. B. Agent Goal Hijack, Tool Misuse, Identity & Privilege Abuse).", "relevance": "Lernmaterial auf die Ausgabe 2026 umstellen. Der Agent Control Standard ist ein Kandidat für einen Agenten-Kontrollkatalog.", "topic": "KI-Sicherheit", "impact": "mittel", "source": "Cloud Security Alliance", "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-owasp-genai-top10-2026-agent-control-stand/", "published": "2026-08-03", "added": "2026-09-29T09:00:00Z"},
-  {"id": "2026-08-02-art50-transparenz-gilt", "title": "Transparenzpflichten nach Art. 50 gelten seit 2. August 2026", "summary": "Chatbots müssen offenlegen, dass sie KI sind; Deepfakes sind zu kennzeichnen; KI-generierte Inhalte brauchen maschinenlesbare Markierungen. Die Kommission hat dazu am 20. Juli 2026 Leitlinien veröffentlicht. Seit 2. August sind AI Office und nationale Behörden für die Durchsetzung zuständig.", "relevance": "Prüfen, welche Chatbots und Content-Tools kundennah eingesetzt werden und ob Hinweise und Kennzeichnung umgesetzt sind – ein guter erster Prüfschritt für einen KI-Prüfleitfaden.", "topic": "AI Act & Regulierung", "impact": "hoch", "source": "EU-Kommission", "url": "https://digital-strategy.ec.europa.eu/en/news/commission-starts-enforcing-ai-act-rules-and-new-transparency-requirements-2-august", "published": "2026-08-02", "added": "2026-09-29T09:00:00Z"},
-  {"id": "2026-07-29-ki-mig-bundesnetzagentur", "title": "KI-MIG in Kraft: Bundesnetzagentur ist Deutschlands KI-Aufsicht", "summary": "Das Gesetz zur Marktüberwachung und Innovationsförderung von KI (KI-MIG) ist am 29. Juli 2026 in Kraft getreten. Die Bundesnetzagentur wird zentrale Marktüberwachungsbehörde, Anlaufstelle und Beschwerdestelle; sie soll beraten und mindestens ein KI-Reallabor betreiben.", "relevance": "Klare Ansprechstelle für Auslegungsfragen und künftige Aufsichtsanfragen. Für regulierte Tochtergesellschaften zusätzlich prüfen, welche Rolle die jeweilige Fachaufsicht behält.", "topic": "Deutschland & Aufsicht", "impact": "hoch", "source": "datenschutzticker.de", "url": "https://www.datenschutzticker.de/2026/07/bundestag-beschliesst-ki-durchfuehrungsgesetz/", "published": "2026-07-29", "added": "2026-09-29T09:00:00Z"},
-  {"id": "2026-07-27-digital-omnibus-in-kraft", "title": "Digital Omnibus in Kraft: Hochrisiko-Pflichten nach Anhang III erst ab 2. Dezember 2027", "summary": "Die Verordnung (EU) 2026/1744 ist seit 27. Juli 2026 in Kraft. Die Pflichten für eigenständige Hochrisiko-KI (Anhang III, z. B. Beschäftigung, Kreditwürdigkeit) gelten nun ab 2. Dezember 2027, für KI in regulierten Produkten (Anhang I) ab 2. August 2028. Neu verboten sind u. a. Systeme zur Erzeugung nicht-einvernehmlicher intimer Bilder.", "relevance": "Mehr Zeit für Personal- und Scoring-Anwendungen – aber kein Freifahrtschein: Inventar und Einstufung jetzt aufbauen, damit 2027 nicht wieder knapp wird.", "topic": "AI Act & Regulierung", "impact": "hoch", "source": "White & Case", "url": "https://www.whitecase.com/insight-alert/eu-ai-omnibus-enters-force-amending-ai-act", "published": "2026-07-27", "added": "2026-09-29T09:00:00Z"},
-  {"id": "2026-07-27-art4-ki-kompetenz-neu", "title": "Art. 4 neu gefasst: KI-Kompetenz wird zur Bemühenspflicht", "summary": "Statt „nach besten Kräften ein ausreichendes Niveau sicherzustellen“ müssen Anbieter und Betreiber nun Maßnahmen ergreifen, um die Entwicklung von KI-Kompetenz zu unterstützen. Ein bestimmtes Kompetenzniveau einzelner Personen muss ausdrücklich nicht garantiert werden.", "relevance": "Das Argument „gesetzlich gefordertes Niveau“ trägt nicht mehr. Team-Befähigung besser über Prüfungsqualität, Risiko und dokumentierte, kontextbezogene Maßnahmen begründen.", "topic": "AI Act & Regulierung", "impact": "hoch", "source": "lawandtechnology.eu", "url": "https://lawandtechnology.eu/en/ai-literacy-digital-omnibus-article-4-ai-act/", "published": "2026-07-27", "added": "2026-09-29T09:00:00Z"},
-  {"id": "2026-05-07-ms-semantic-kernel-rce", "title": "Microsoft: Prompt Injection führt zu Codeausführung in Agenten-Frameworks", "summary": "Microsoft beschreibt zwei kritische Schwachstellen im Semantic Kernel (CVE-2026-25592, CVE-2026-26030), über die gezielte Injection-Angriffe auf Agenten zu nicht autorisierter Codeausführung führen konnten.", "relevance": "Konkretes Beispiel für den Schritt von „Chatbot sagt Unsinn“ zu „Agent führt Code aus“. Gut für Schulungen und als Prüffrage: Werden Agenten-Frameworks gepatcht und in ihren Rechten begrenzt?", "topic": "KI-Sicherheit", "impact": "mittel", "source": "Microsoft Security Blog", "url": "https://www.microsoft.com/en-us/security/blog/2026/05/07/prompts-become-shells-rce-vulnerabilities-ai-agent-frameworks/", "published": "2026-05-07", "added": "2026-09-29T09:00:00Z"}
+  {
+   "title": "DSK zu Smart Glasses: KI-Gesichtserkennung im öffentlichen Raum unzulässig",
+   "summary": "Auf ihrer Zwischenkonferenz am 23. September 2026 hat die Datenschutzkonferenz einen Prüfbericht der Hamburger Aufsicht zu Smart Glasses zur Kenntnis genommen. Danach ist KI-gestützte Gesichtserkennung im öffentlichen Raum unzulässig. Für KI-Training mit Daten Dritter fehlt in der Regel eine Rechtsgrundlage.",
+   "relevance": "Das ist relevant für den Handel, etwa bei Pilotprojekten mit Wearables im Laden, in der Logistik oder im Kundenservice. Solche Vorhaben sollten eine Datenschutz-Folgenabschätzung durchlaufen, und Fragen des KI-Trainings sollten früh geklärt werden.",
+   "source": "Sächsische Datenschutz- und Transparenzbeauftragte",
+   "url": "https://www.datenschutz.sachsen.de/ergebnisse-der-3-zwischenkonferenz-der-dsk-am-23-september-2026-8068.html",
+   "id": "2026-09-24-dsk-smart-glasses-ki",
+   "topic": "Datenschutz & Recht",
+   "impact": "info",
+   "published": "2026-09-24",
+   "added": "2026-09-29T22:03:17Z"
+  },
+  {
+   "title": "BSI schreibt Projekt PRAKI aus: Prüfanforderungen für agentische KI",
+   "summary": "Das BSI hat das Projekt „PRAKI – Prüfanforderungen für LLM-basierte agentische KI“ mit einer Laufzeit von 18 Monaten ausgeschrieben. Angebote waren bis zum 21. September 2026 möglich. Begründung ist, dass die bestehenden Prüfkataloge des BSI für agentische KI nicht ausreichen. Die Ergebnisse sollen über die Bibliothek „Stand der Technik“ in Grundschutz++ einfließen.",
+   "relevance": "Ein BSI-Prüfkatalog für KI-Agenten wird mittelfristig zum Referenzrahmen für interne Kontrollen und Prüfungen. Bis dahin sollten Agenten-Identitäten, Berechtigungen und die Protokollierung ihrer Aktionen bereits nach dem Muster von ITGCs gestaltet werden.",
+   "source": "IT-Dock",
+   "url": "https://it-dock.de/blog/news/bsi-ki-agenten-sicherheit/",
+   "id": "2026-09-21-bsi-praki-pruefanforderungen-agentische-ki",
+   "topic": "Deutschland & Aufsicht",
+   "impact": "info",
+   "published": "2026-09-21",
+   "added": "2026-09-29T22:03:17Z"
+  },
+  {
+   "id": "2026-09-17-audit-gap-ai-agents",
+   "title": "KI-Agenten reißen Lücken in den Prüfpfad",
+   "summary": "Prüfungsteams stellen fest, dass ihr gewohnter Nachweispfad bei KI-Agenten nicht mehr trägt: Die Daten liegen weiter in ERP- und HR-Systemen, aber Ermessensentscheidungen, die früher in E-Mails dokumentiert waren, trifft zunehmend Software – schneller, als ein Prüfer folgen kann.",
+   "relevance": "Genau der Blickwinkel „KI wird Prüfungsgegenstand“: Protokollierung von Agenten-Entscheidungen und Freigaben gehört in den KI-Prüfleitfaden und ins Prüfer-Briefing.",
+   "topic": "Prüfung & Assurance",
+   "impact": "hoch",
+   "source": "SiliconANGLE",
+   "url": "https://siliconangle.com/2026/09/17/netsuite-ai-agents-new-audit-assurance-gap-amplify/",
+   "published": "2026-09-17",
+   "added": "2026-09-29T09:00:00Z"
+  },
+  {
+   "title": "„Deadbugz“: Bösartiger MCP-Server schaltet erst nach drei Tool-Aufrufen um",
+   "summary": "Nach einer Analyse von Pillar Security reichte ein einzelnes GitHub-Konto innerhalb von 74 Minuten 23 Pull Requests in verschiedenen KI- und Entwicklerprojekten ein, die einen MCP-Server einschleusten. Der Server verhält sich zunächst unauffällig. Nach genau drei Tool-Aufrufen schreibt er seine Tool-Metadaten jedoch in Anweisungen um, SSH-Schlüssel, AWS-Zugangsdaten und Kubernetes-Konfigurationen zu suchen. Außerdem wurden im August drei neue CVEs in MCP-Servern gemeldet, darunter ein Path-Traversal im Atlassian-MCP (CVSS 7,7).",
+   "relevance": "Eine einmalige Freigabe von Agenten-Tools reicht nicht aus. Nötig sind laufende Überwachung von Metadaten-Änderungen, Allowlists und eng begrenzte Berechtigungen. Das ist ein gutes Beispiel für Kontrollen im Change- und Zugriffsmanagement bei KI-Agenten.",
+   "source": "Adversa AI (Analyse von Pillar Security)",
+   "url": "https://adversa.ai/blog/top-mcp-security-resources-september-2026/",
+   "id": "2026-09-07-deadbugz-mcp-supply-chain",
+   "topic": "KI-Sicherheit",
+   "impact": "mittel",
+   "published": "2026-09-07",
+   "added": "2026-09-29T22:03:17Z"
+  },
+  {
+   "id": "2026-09-04-aisi-deutschland",
+   "title": "AISI Deutschland: KI-Sicherheitsinstitut des Bundes startet in Berlin",
+   "summary": "Digital- und Innenministerium haben das German AI Security Institute gegründet. Es soll Fähigkeiten und Risiken fortgeschrittener KI-Modelle bewerten; BSI und Bundesnetzagentur bilden in der ersten Phase den Kern.",
+   "relevance": "Mittelfristig eine weitere deutsche Referenz für Bewertungsmethoden und Testergebnisse zu Modellen – beobachten, noch keine direkten Pflichten.",
+   "topic": "Deutschland & Aufsicht",
+   "impact": "info",
+   "source": "KIPODE",
+   "url": "https://kipode.de/ki-radar/2026-09-04-aisi-deutschland-berlin.html",
+   "published": "2026-09-04",
+   "added": "2026-09-29T09:00:00Z"
+  },
+  {
+   "id": "2026-09-bsi-infopaket-generative-ki",
+   "title": "BSI-Informationspaket zum sicheren Einsatz generativer KI im Unternehmen",
+   "summary": "Der Expertenkreis KI-Sicherheit der Allianz für Cyber-Sicherheit beim BSI hat ein Informationspaket veröffentlicht. Schwerpunkt sind organisatorische Schutzmaßnahmen für den Einsatz generativer KI im Betrieb. Zuvor erschien u. a. eine BSI-Publikation zum Basisschutz gegen indirekte Prompt Injection in dokumentbasierten LLM-Chats.",
+   "relevance": "Direkt verwertbar für KI-Richtlinie und Kontrollkatalog – deutsche Behördenquelle, die sich in Prüfungen gut als Referenz eignet.",
+   "topic": "KI-Sicherheit",
+   "impact": "mittel",
+   "source": "datenschutzticker.de",
+   "url": "https://www.datenschutzticker.de/2026/09/bsi-informationspaket-zum-sicheren-einsatz-generativer-ki-im-unternehmen/",
+   "published": "2026-09",
+   "added": "2026-09-29T09:00:00Z"
+  },
+  {
+   "id": "2026-08-03-owasp-top10-2026",
+   "title": "OWASP veröffentlicht Top 10 für LLM-Anwendungen 2026 und Agent Control Standard",
+   "summary": "Das OWASP GenAI Security Project hat am 3. August 2026 die neue Ausgabe seiner LLM-Top-10 veröffentlicht und einen gespendeten Agent Control Standard vorgestellt. Ergänzend gibt es seit Dezember 2025 die Top 10 für agentische Anwendungen (ASI01–ASI10, z. B. Agent Goal Hijack, Tool Misuse, Identity & Privilege Abuse).",
+   "relevance": "Lernmaterial auf die Ausgabe 2026 umstellen. Der Agent Control Standard ist ein Kandidat für einen Agenten-Kontrollkatalog.",
+   "topic": "KI-Sicherheit",
+   "impact": "mittel",
+   "source": "Cloud Security Alliance",
+   "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-owasp-genai-top10-2026-agent-control-stand/",
+   "published": "2026-08-03",
+   "added": "2026-09-29T09:00:00Z"
+  },
+  {
+   "id": "2026-08-02-art50-transparenz-gilt",
+   "title": "Transparenzpflichten nach Art. 50 gelten seit 2. August 2026",
+   "summary": "Chatbots müssen offenlegen, dass sie KI sind; Deepfakes sind zu kennzeichnen; KI-generierte Inhalte brauchen maschinenlesbare Markierungen. Die Kommission hat dazu am 20. Juli 2026 Leitlinien veröffentlicht. Seit 2. August sind AI Office und nationale Behörden für die Durchsetzung zuständig.",
+   "relevance": "Prüfen, welche Chatbots und Content-Tools kundennah eingesetzt werden und ob Hinweise und Kennzeichnung umgesetzt sind – ein guter erster Prüfschritt für einen KI-Prüfleitfaden.",
+   "topic": "AI Act & Regulierung",
+   "impact": "hoch",
+   "source": "EU-Kommission",
+   "url": "https://digital-strategy.ec.europa.eu/en/news/commission-starts-enforcing-ai-act-rules-and-new-transparency-requirements-2-august",
+   "published": "2026-08-02",
+   "added": "2026-09-29T09:00:00Z"
+  },
+  {
+   "id": "2026-07-29-ki-mig-bundesnetzagentur",
+   "title": "KI-MIG in Kraft: Bundesnetzagentur ist Deutschlands KI-Aufsicht",
+   "summary": "Das Gesetz zur Marktüberwachung und Innovationsförderung von KI (KI-MIG) ist am 29. Juli 2026 in Kraft getreten. Die Bundesnetzagentur wird zentrale Marktüberwachungsbehörde, Anlaufstelle und Beschwerdestelle; sie soll beraten und mindestens ein KI-Reallabor betreiben.",
+   "relevance": "Klare Ansprechstelle für Auslegungsfragen und künftige Aufsichtsanfragen. Für regulierte Tochtergesellschaften zusätzlich prüfen, welche Rolle die jeweilige Fachaufsicht behält.",
+   "topic": "Deutschland & Aufsicht",
+   "impact": "hoch",
+   "source": "datenschutzticker.de",
+   "url": "https://www.datenschutzticker.de/2026/07/bundestag-beschliesst-ki-durchfuehrungsgesetz/",
+   "published": "2026-07-29",
+   "added": "2026-09-29T09:00:00Z"
+  },
+  {
+   "id": "2026-07-27-digital-omnibus-in-kraft",
+   "title": "Digital Omnibus in Kraft: Hochrisiko-Pflichten nach Anhang III erst ab 2. Dezember 2027",
+   "summary": "Die Verordnung (EU) 2026/1744 ist seit 27. Juli 2026 in Kraft. Die Pflichten für eigenständige Hochrisiko-KI (Anhang III, z. B. Beschäftigung, Kreditwürdigkeit) gelten nun ab 2. Dezember 2027, für KI in regulierten Produkten (Anhang I) ab 2. August 2028. Neu verboten sind u. a. Systeme zur Erzeugung nicht-einvernehmlicher intimer Bilder.",
+   "relevance": "Mehr Zeit für Personal- und Scoring-Anwendungen – aber kein Freifahrtschein: Inventar und Einstufung jetzt aufbauen, damit 2027 nicht wieder knapp wird.",
+   "topic": "AI Act & Regulierung",
+   "impact": "hoch",
+   "source": "White & Case",
+   "url": "https://www.whitecase.com/insight-alert/eu-ai-omnibus-enters-force-amending-ai-act",
+   "published": "2026-07-27",
+   "added": "2026-09-29T09:00:00Z"
+  },
+  {
+   "id": "2026-07-27-art4-ki-kompetenz-neu",
+   "title": "Art. 4 neu gefasst: KI-Kompetenz wird zur Bemühenspflicht",
+   "summary": "Statt „nach besten Kräften ein ausreichendes Niveau sicherzustellen“ müssen Anbieter und Betreiber nun Maßnahmen ergreifen, um die Entwicklung von KI-Kompetenz zu unterstützen. Ein bestimmtes Kompetenzniveau einzelner Personen muss ausdrücklich nicht garantiert werden.",
+   "relevance": "Das Argument „gesetzlich gefordertes Niveau“ trägt nicht mehr. Team-Befähigung besser über Prüfungsqualität, Risiko und dokumentierte, kontextbezogene Maßnahmen begründen.",
+   "topic": "AI Act & Regulierung",
+   "impact": "hoch",
+   "source": "lawandtechnology.eu",
+   "url": "https://lawandtechnology.eu/en/ai-literacy-digital-omnibus-article-4-ai-act/",
+   "published": "2026-07-27",
+   "added": "2026-09-29T09:00:00Z"
+  },
+  {
+   "title": "EDPB-Leitlinien zu Anonymisierung und Web-Scraping für KI: Konsultation bis 30.10.",
+   "summary": "Der Europäische Datenschutzausschuss hat Leitlinien zur Anonymisierung (02/2026) und zum Web-Scraping für generative KI angenommen. Für Anonymisierung gilt danach ein Drei-Kriterien-Test: keine Isolierung einzelner Datensätze, keine Verknüpfung, keine Rückschlüsse. Beide Leitlinien sind bis zum 30. Oktober 2026 zur Stellungnahme offen.",
+   "relevance": "Der Test ist relevant, wenn Trainings-, Test- oder RAG-Daten als „anonymisiert“ gelten und damit außerhalb der DSGVO behandelt werden sollen. Diese Einstufungen sollten gemeinsam mit dem Datenschutz überprüft werden. Wer eine Stellungnahme abgeben will, hat dafür noch einen Monat Zeit.",
+   "source": "EDPB",
+   "url": "https://www.edpb.europa.eu/news/edpb-sheds-light-on-anonymisation-and-web-scraping-for-generative-ai-and-adopts-final-version_en",
+   "id": "2026-07-edpb-anonymisierung-web-scraping-konsultation",
+   "topic": "Datenschutz & Recht",
+   "impact": "mittel",
+   "published": "2026-07-08",
+   "added": "2026-09-29T22:03:17Z"
+  },
+  {
+   "title": "IDW: Zwei Prüfungshinweise zu KI in der Abschlussprüfung (PH 9.315DE.2 und .3)",
+   "summary": "Das IDW hat im Juli 2026 zwei Prüfungshinweise veröffentlicht. IDW PH 9.315DE.2 regelt, wie Abschlussprüfer generative KI in der eigenen Prüfung einsetzen dürfen. IDW PH 9.315DE.3 beschreibt, wie Prüfer KI-Systeme beim geprüften Unternehmen im Rahmen von ISA [DE] 315 (Revised 2019) und ISA [DE] 330 berücksichtigen. Beide betonen, dass KI das pflichtgemäße Ermessen und die abschließende Beurteilung durch Menschen nicht ersetzt.",
+   "relevance": "Mit PH 9.315DE.3 werden Abschlussprüfer KI-gestützte Prozesse in Rechnungswesen und IKS künftig gezielt abfragen. IT-GRC sollte vor der nächsten Jahresabschlussprüfung ein Inventar der Prozesse mit KI-Bezug sowie die zugehörige Kontroll- und ITGC-Dokumentation bereithalten. Für das Team eignet sich der Hinweis gut als Schulungsgrundlage.",
+   "source": "IDW",
+   "url": "https://www.idw.de/themen/digitalisierung/kuenstliche-intelligenz/",
+   "id": "2026-07-idw-ph-9315de-ki-abschlusspruefung",
+   "topic": "Prüfung & Assurance",
+   "impact": "hoch",
+   "published": "2026-07",
+   "added": "2026-09-29T22:03:17Z"
+  }
  ]
 }
