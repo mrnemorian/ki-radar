@@ -13,13 +13,13 @@
  "briefings": [
   {
    "date": "2026-09-30",
-   "headline": "Citrix-Zero-Days erzwingen sofortiges Patchen, das Kabinett beschließt E-Bon und Kassenpflicht ab 2028, und ENISA sieht KI zunehmend in der Angriffskette.",
+   "headline": "Die Zero-Day-Schwachstellen bei Citrix erzwingen sofortige Sicherheitsupdates, das Kabinett beschließt den elektronischen Kassenbeleg und die Kassenpflicht ab 2028, und die Agentur der Europäischen Union für Cybersicherheit sieht Künstliche Intelligenz zunehmend in der Angriffskette.",
    "points": [
-    "Citrix NetScaler: zwei kritische Zero-Days werden aktiv ausgenutzt, Patches sind seit 27.09. verfügbar",
+    "Citrix NetScaler: zwei kritische Zero-Day-Schwachstellen werden aktiv ausgenutzt, Sicherheitsupdates sind seit 27.09. verfügbar",
     "Bundeskabinett: digitale Belege ersetzen ab 2028 den Papierbon, elektronische Kassenpflicht ab 100.000 Euro Umsatz",
-    "ENISA Threat Landscape 2026: Abhängigkeiten vergrößern die Angriffsfläche, KI unterstützt immer mehr Phasen von Angriffen",
-    "NIST legt einen Entwurf für die OT-Sicherheitsrichtlinie SP 800-82r4 vor, jetzt auch für Lebensmittel und Landwirtschaft; Kommentare bis 30.11.",
-    "Beazley bietet Deckung für das Abschalten fehlerhafter KI und für KI-Bußgelder – KI-Risiken werden versicherbar"
+    "Lagebericht Threat Landscape 2026 der Agentur der Europäischen Union für Cybersicherheit: Abhängigkeiten vergrößern die Angriffsfläche, Künstliche Intelligenz unterstützt immer mehr Phasen von Angriffen",
+    "Das National Institute of Standards and Technology der Vereinigten Staaten legt einen Entwurf für die Sicherheitsrichtlinie für operative Technologie Special Publication 800-82 Revision 4 vor, jetzt auch für Lebensmittel und Landwirtschaft; Kommentare bis 30.11.",
+    "Beazley bietet Deckung für das Abschalten fehlerhafter Künstlicher Intelligenz und für Bußgelder im Zusammenhang mit Künstlicher Intelligenz – Risiken Künstlicher Intelligenz werden versicherbar"
    ],
    "count": 6
   },
@@ -28,10 +28,10 @@
    "headline": "Startbestand: Die Regeln haben sich im Sommer verschoben",
    "points": [
     "Digital Omnibus in Kraft (27.07.): Hochrisiko nach Anhang III erst ab 02.12.2027, Anhang I ab 02.08.2028.",
-    "Art. 4 KI-Kompetenz ist jetzt eine Bemühenspflicht – Maßnahmen kontextbezogen dokumentieren.",
-    "Art. 50 Transparenzpflichten gelten seit 02.08.2026; Bundesnetzagentur ist seit 29.07. deutsche KI-Aufsicht (KI-MIG).",
-    "KI-Sicherheit: OWASP Top 10 2026 und Agent Control Standard veröffentlicht; BSI mit neuem Infopaket zu generativer KI.",
-    "Prüfung: KI-Agenten schaffen Lücken im Prüfpfad – Kernthema für KI-Prüfleitfäden."
+    "Artikel 4, Kompetenz im Umgang mit Künstlicher Intelligenz, ist jetzt eine Bemühenspflicht – Maßnahmen kontextbezogen dokumentieren.",
+    "Transparenzpflichten nach Artikel 50 gelten seit 02.08.2026; die Bundesnetzagentur ist seit 29.07. deutsche Aufsicht für Künstliche Intelligenz (Gesetz zur Marktüberwachung und Innovationsförderung von Künstlicher Intelligenz).",
+    "Sicherheit Künstlicher Intelligenz: Top 10 2026 des Open Worldwide Application Security Project und Agent Control Standard veröffentlicht; Bundesamt für Sicherheit in der Informationstechnik mit neuem Informationspaket zu generativer Künstlicher Intelligenz.",
+    "Prüfung: Agenten mit Künstlicher Intelligenz schaffen Lücken im Prüfpfad – Kernthema für Prüfleitfäden zu Künstlicher Intelligenz."
    ],
    "count": 9
   }
@@ -39,7 +39,7 @@
  "signals": [
   {
    "theme": "Post-Quanten-Kryptografie-Migration",
-   "why": "Das BSI empfiehlt, sensible Anwendungen bis Ende 2030 auf quantensichere Verfahren umzustellen. Die EU erwartet, dass die Migration bis Ende 2026 beginnt. Ohne ein Krypto-Inventar lassen sich Zahlungs-, Kunden- und Lieferantenschnittstellen nicht rechtzeitig planen.",
+   "why": "Das Bundesamt für Sicherheit in der Informationstechnik empfiehlt, sensible Anwendungen bis Ende 2030 auf quantensichere Verfahren umzustellen. Die Europäische Union erwartet, dass die Migration bis Ende 2026 beginnt. Ohne ein Inventar der eingesetzten kryptografischen Verfahren lassen sich Zahlungs-, Kunden- und Lieferantenschnittstellen nicht rechtzeitig planen.",
    "count": 1,
    "first_seen": "2026-09-30",
    "last_seen": "2026-09-30",
@@ -49,7 +49,7 @@
    ]
   },
   {
-   "theme": "Cloud-Souveränität und CADA",
+   "theme": "Cloud-Souveränität und Cloud and AI Development Act",
    "why": "Der Cloud and AI Development Act schlägt vier Sicherheitsstufen (Union Assurance Levels) und Risikoanalysen zur Souveränität von Cloud-Diensten vor. Das könnte künftig auch Anforderungen an die Cloud-Strategie privater Betreiber kritischer Infrastrukturen prägen.",
    "count": 1,
    "first_seen": "2026-09-30",
@@ -60,7 +60,7 @@
   },
   {
    "theme": "Kriegsausschluss in Cyberversicherungen",
-   "why": "Versicherer übernehmen erweiterte Ausschlüsse für staatliche Cyberangriffe, sobald kritische Infrastruktur beeinträchtigt ist. Das ist gerade für KRITIS-relevante Händler ein Punkt bei der Versicherbarkeit und der Planung der Risikotragfähigkeit.",
+   "why": "Versicherer übernehmen erweiterte Ausschlüsse für staatliche Cyberangriffe, sobald kritische Infrastruktur beeinträchtigt ist. Das ist gerade für Händler mit Bezug zu kritischen Infrastrukturen ein Punkt bei der Versicherbarkeit und der Planung der Risikotragfähigkeit.",
    "count": 1,
    "first_seen": "2026-09-30",
    "last_seen": "2026-09-30",
@@ -70,7 +70,7 @@
   },
   {
    "theme": "Digital Fairness Act",
-   "why": "Die Kommission plant ihren Vorschlag für das vierte Quartal 2026. Er zielt auf Dark Patterns, suchterzeugendes Design und unfaire Personalisierung. Das betrifft Onlineshops, Apps und Kundenbindungsprogramme und damit auch personalisierte Preisgestaltung.",
+   "why": "Die Kommission plant ihren Vorschlag für das vierte Quartal 2026. Er zielt auf manipulative Gestaltungsmuster (Dark Patterns), suchterzeugendes Design und unfaire Personalisierung. Das betrifft Onlineshops, Apps und Kundenbindungsprogramme und damit auch personalisierte Preisgestaltung.",
    "count": 1,
    "first_seen": "2026-09-30",
    "last_seen": "2026-09-30",
@@ -82,7 +82,7 @@
  "news": [
   {
    "title": "Österreichischer Reiseverband veröffentlicht Cybersicherheits-Leitfaden für Reisebüros",
-   "summary": "Der Österreichische Reiseverband ÖRV hat am 29. September gemeinsam mit ÖHV und SEC Consult einen Leitfaden zur Cybersicherheit für Reiseunternehmen vorgestellt. Er begründet die besondere Gefährdung der Branche mit Kunden-, Zahlungs- und Buchungsdaten sowie vielen externen Partnern. Empfohlen wird ein stufenweises Vorgehen mit MFA, Updates, restriktiven Berechtigungen, Netzsegmentierung und Backups. Zudem warnt der Leitfaden vor KI-gestütztem, sprachlich fehlerfreiem Phishing.",
+   "summary": "Der Österreichische Reiseverband hat am 29. September gemeinsam mit der Österreichischen Hoteliervereinigung und dem Sicherheitsberatungsunternehmen SEC Consult einen Leitfaden zur Cybersicherheit für Reiseunternehmen vorgestellt. Er begründet die besondere Gefährdung der Branche mit Kunden-, Zahlungs- und Buchungsdaten sowie vielen externen Partnern. Empfohlen wird ein stufenweises Vorgehen mit Mehr-Faktor-Authentifizierung, Updates, restriktiven Berechtigungen, Netzsegmentierung und Datensicherungen. Zudem warnt der Leitfaden vor Phishing, das mit Künstlicher Intelligenz erstellt wird und sprachlich fehlerfrei ist.",
    "relevance": "Der Leitfaden unterstreicht, wie stark die Touristik bedroht ist, gerade an den Schnittstellen zu Reisebüros und Buchungspartnern. Er kann als Mindeststandard für Anforderungen an kleinere Vertriebspartner im Drittparteienmanagement dienen.",
    "source": "ÖRV via APA-OTS",
    "url": "https://www.ots.at/presseaussendung/OTS_20260929_OTS0084/oerv-cyberangriffe-treffen-reisebueros-ins-herz",
@@ -100,7 +100,7 @@
   {
    "title": "Carrefour France: Kundendaten über Versand-Tracking-Dienstleister Shipup offengelegt",
    "summary": "Carrefour hat Kundinnen und Kunden in Frankreich über einen Angriff auf den Dienstleister Shipup informiert, dessen Plattform die Sendungsverfolgung übernimmt. Betroffen sind Namen, E-Mail-Adressen und Telefonnummern. Passwörter und Bankdaten sind laut Carrefour nicht betroffen, die eigenen Systeme seien nicht kompromittiert worden. Shipup wird von über 700 Marken genutzt, auch Printemps und Aroma-Zone waren betroffen.",
-   "relevance": "Das zeigt ein typisches Konzentrationsrisiko: Kleine SaaS-Dienstleister in der Kundenkommunikation nach dem Kauf haben Zugriff auf große Mengen Kundendaten. Drittparteien-Inventar, Datenminimierung gegenüber solchen Diensten und Vorlagen für die Kundenkommunikation (Phishing-Warnung) gehören ins Risikomanagement.",
+   "relevance": "Das zeigt ein typisches Konzentrationsrisiko: Kleine Anbieter von Cloud-Software (Software as a Service) in der Kundenkommunikation nach dem Kauf haben Zugriff auf große Mengen Kundendaten. Drittparteien-Inventar, Datenminimierung gegenüber solchen Diensten und Vorlagen für die Kundenkommunikation (Phishing-Warnung) gehören ins Risikomanagement.",
    "source": "RetailDetail EU",
    "url": "https://www.retaildetail.eu/news/food/data-breach-at-supplier-affects-carrefour-france/",
    "id": "2026-09-29-carrefour-shipup-dienstleister-datenleck",
@@ -115,9 +115,9 @@
    "added": "2026-09-29T22:22:07Z"
   },
   {
-   "title": "Citrix NetScaler: Zwei kritische Zero-Days werden aktiv ausgenutzt",
-   "summary": "Citrix bestätigt, dass zwei Schwachstellen in NetScaler ADC und Gateway (CVE-2026-88771 und CVE-2026-88772, CVSS 9.5) bei mehreren Kunden weltweit ausgenutzt werden. Die erste Lücke erlaubt ohne Anmeldung und ohne besondere Konfiguration das Ausführen von Befehlen aus der Ferne. Patches für die Versionen 14.1 und 13.1 gibt es seit dem 27. September. Nationale Cybersicherheitsbehörden hatten Betreiber vorab gewarnt.",
-   "relevance": "Remote-Access- und Load-Balancer-Appliances sind typische Einfallstore in Filial-, Logistik- und Buchungsnetze. Deshalb sollten Patch-Nachweise und eine Kompromittierungsprüfung jetzt dokumentiert werden. Bei einer Ausnutzung kann eine Meldepflicht nach NIS2 greifen.",
+   "title": "Citrix NetScaler: Zwei kritische Zero-Day-Schwachstellen werden aktiv ausgenutzt",
+   "summary": "Citrix bestätigt, dass zwei Schwachstellen in den Produkten NetScaler ADC und NetScaler Gateway für Anwendungsbereitstellung und Fernzugriff bei mehreren Kunden weltweit ausgenutzt werden. Sie tragen die Schwachstellen-Kennungen CVE-2026-88771 und CVE-2026-88772 und haben einen Schweregrad von 9.5 nach dem Common Vulnerability Scoring System, der gängigen Bewertungsskala für Schwachstellen. Die erste Lücke erlaubt ohne Anmeldung und ohne besondere Konfiguration das Ausführen von Befehlen aus der Ferne. Sicherheitsupdates für die Versionen 14.1 und 13.1 gibt es seit dem 27. September. Nationale Cybersicherheitsbehörden hatten Betreiber vorab gewarnt.",
+   "relevance": "Geräte für Fernzugriff und Lastverteilung sind typische Einfallstore in Filial-, Logistik- und Buchungsnetze. Deshalb sollten Nachweise über eingespielte Sicherheitsupdates und eine Kompromittierungsprüfung jetzt dokumentiert werden. Bei einer Ausnutzung kann eine Meldepflicht nach der NIS-2-Richtlinie (Richtlinie über Netz- und Informationssicherheit) greifen.",
    "source": "BleepingComputer",
    "url": "https://www.bleepingcomputer.com/news/security/citrix-admins-warned-to-shut-down-netscalers-over-2-exploited-zero-days/",
    "id": "2026-09-27-citrix-netscaler-zero-days",
@@ -126,15 +126,15 @@
    "published": "2026-09-27",
    "tags": [
     "Schwachstellenmanagement",
-    "Zero-Day",
-    "Remote Access"
+    "Zero-Day-Schwachstelle",
+    "Fernzugriff"
    ],
    "added": "2026-09-29T22:54:12Z"
   },
   {
    "title": "Lieferdienst Flink: Kundendaten über kompromittierte Zugangsdaten abgeflossen",
    "summary": "Flink hat am 25.09.2026 seine Kunden informiert: Eine unbefugte Person verschaffte sich mit kompromittierten Zugangsdaten Zugang zu internen Systemen. Betroffen sind unter anderem Name, E-Mail, Anschrift, Telefonnummer sowie möglicherweise Lieferhinweise und Bestelldetails; Passwörter und Zahlungsdaten sollen nicht betroffen sein. Flink hat die Datenschutzbehörden informiert und Anzeige erstattet; laut Berichten werden Kunden inzwischen erpresst.",
-   "relevance": "Der Vorfall betrifft einen direkten Wettbewerber im Lebensmittel-Lieferservice und ist ein typisches Muster über Zugangsdaten. Anlass, MFA-Abdeckung, Überwachung privilegierter und externer Zugänge sowie die Abläufe für Meldungen nach Art. 33/34 DSGVO und NIS2 zu überprüfen.",
+   "relevance": "Der Vorfall betrifft einen direkten Wettbewerber im Lebensmittel-Lieferservice und ist ein typisches Muster über Zugangsdaten. Anlass, die Abdeckung mit Mehr-Faktor-Authentifizierung, die Überwachung privilegierter und externer Zugänge sowie die Abläufe für Meldungen nach Artikel 33 und 34 der Datenschutz-Grundverordnung und nach der NIS-2-Richtlinie (Richtlinie über Netz- und Informationssicherheit) zu überprüfen.",
    "source": "Borns IT- und Windows-Blog",
    "url": "https://borncity.com/blog/2026/09/26/cybervorfaelle-flink-lieferservice-entega-energieversorger-cleanfix-reinigungstechnik/",
    "id": "2026-09-26-flink-datenabfluss-kompromittierte-zugangsdaten",
@@ -144,9 +144,9 @@
    "added": "2026-09-29T22:11:14Z"
   },
   {
-   "title": "CRA: BSI und DAkkS erweitern Zusammenarbeit bei der Akkreditierung von Prüfstellen",
-   "summary": "BSI und DAkkS haben ihre Verwaltungsvereinbarung erneuert und erweitert. Sie regelt, wie BSI-Fachleute an der Akkreditierung von Konformitätsbewertungsstellen für Cybersicherheit mitwirken, nun auch für den Cyber Resilience Act. Für bestimmte Produkte verlangt der CRA eine Prüfung durch Dritte. Die Stellen brauchen dafür eine DAkkS-Akkreditierung und anschließend eine Notifizierung durch das BSI. Die Produktanforderungen des CRA gelten ab Ende 2027.",
-   "relevance": "Die Prüfkapazitäten für den CRA werden gerade erst aufgebaut, das kann Lieferketten bei vernetzten Produkten (z. B. Kassen-, Scanner- und IoT-Hardware) verzögern. In der Beschaffung sollte man frühzeitig nach dem Stand der CRA-Konformität fragen.",
+   "title": "Cyber Resilience Act: Bundesamt für Sicherheit in der Informationstechnik und Deutsche Akkreditierungsstelle erweitern Zusammenarbeit bei der Akkreditierung von Prüfstellen",
+   "summary": "Das Bundesamt für Sicherheit in der Informationstechnik und die Deutsche Akkreditierungsstelle haben ihre Verwaltungsvereinbarung erneuert und erweitert. Sie regelt, wie Fachleute des Bundesamts an der Akkreditierung von Konformitätsbewertungsstellen für Cybersicherheit mitwirken, nun auch für den Cyber Resilience Act, die Cyberresilienz-Verordnung der Europäischen Union. Für bestimmte Produkte verlangt der Cyber Resilience Act eine Prüfung durch Dritte. Die Stellen brauchen dafür eine Akkreditierung durch die Deutsche Akkreditierungsstelle und anschließend eine Notifizierung durch das Bundesamt. Die Produktanforderungen des Cyber Resilience Act gelten ab Ende 2027.",
+   "relevance": "Die Prüfkapazitäten für den Cyber Resilience Act werden gerade erst aufgebaut, das kann Lieferketten bei vernetzten Produkten (zum Beispiel Kassen, Scanner und vernetzte Geräte aus dem Internet der Dinge) verzögern. In der Beschaffung sollte man frühzeitig nach dem Stand der Konformität mit dem Cyber Resilience Act fragen.",
    "source": "BSI",
    "url": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Alle-Meldungen-News/Meldungen/2026/CRA-Konformitaet_BSI_DAkkS_260925.html",
    "id": "2026-09-25-bsi-dakks-cra-pruefstellen",
@@ -160,9 +160,9 @@
    "added": "2026-09-29T22:22:07Z"
   },
   {
-   "title": "Cyberversicherung: Beazley deckt Abschaltung fehlerhafter KI und KI-Bußgelder",
-   "summary": "Der Versicherer Beazley hat am 24. September zwei neue Zusatzklauseln für Cyberpolicen vorgestellt. Die erste deckt Schäden, wenn ein Unternehmen ein fehlerhaftes KI-System vorsorglich abschaltet. Die zweite übernimmt Verteidigungskosten und Strafen bei Verfahren wegen unbeabsichtigten KI-Fehlgebrauchs. Zuvor hatte Beazley klargestellt, dass KI-bezogene Schäden ausdrücklich unter die Cyber- und Tech-E&O-Deckung fallen. Das Angebot richtet sich zunächst an den US-Markt.",
-   "relevance": "Damit werden KI-Betriebsrisiken wie Preis- oder Prognosemodelle, die sich falsch verhalten, erstmals ausdrücklich versicherbar. Es lohnt sich zu prüfen, wie die eigene Cyberpolice KI-Vorfälle behandelt und ob es einen dokumentierten Abschaltprozess für KI-Systeme gibt.",
+   "title": "Cyberversicherung: Beazley deckt Abschaltung fehlerhafter Künstlicher Intelligenz und Bußgelder im Zusammenhang mit Künstlicher Intelligenz",
+   "summary": "Der Versicherer Beazley hat am 24. September zwei neue Zusatzklauseln für Cyberpolicen vorgestellt. Die erste deckt Schäden, wenn ein Unternehmen ein fehlerhaftes System der Künstlichen Intelligenz vorsorglich abschaltet. Die zweite übernimmt Verteidigungskosten und Strafen bei Verfahren wegen unbeabsichtigten Fehlgebrauchs Künstlicher Intelligenz. Zuvor hatte Beazley klargestellt, dass Schäden im Zusammenhang mit Künstlicher Intelligenz ausdrücklich unter die Cyberdeckung und die Berufshaftpflichtdeckung für Technologieunternehmen (Technology Errors and Omissions) fallen. Das Angebot richtet sich zunächst an den Markt der Vereinigten Staaten.",
+   "relevance": "Damit werden Betriebsrisiken Künstlicher Intelligenz wie Preis- oder Prognosemodelle, die sich falsch verhalten, erstmals ausdrücklich versicherbar. Es lohnt sich zu prüfen, wie die eigene Cyberpolice Vorfälle mit Künstlicher Intelligenz behandelt und ob es einen dokumentierten Abschaltprozess für Systeme der Künstlichen Intelligenz gibt.",
    "source": "Beazley",
    "url": "https://www.beazley.com/en-US/news-and-events/beazley-expands-cyber-protection/",
    "id": "2026-09-24-beazley-ki-cyberversicherung",
@@ -171,14 +171,14 @@
    "published": "2026-09-24",
    "tags": [
     "Cyberversicherung",
-    "KI-Risiko"
+    "Risiko Künstlicher Intelligenz"
    ],
    "added": "2026-09-29T22:54:12Z"
   },
   {
-   "title": "KI-Agenten greifen Hunderte Onlineshops an: 600.000 Kreditkartendaten erbeutet",
-   "summary": "Laut heise haben Angreifer vom 10. bis 15. September 2026 mit drei Open-Source-KI-Agenten (für Schwachstellensuche, Exploits und Steuerung) 105 Angriffsprojekte gegen Hunderte Onlinehändler gestartet. Mindestens 27 Unternehmen wurden kompromittiert, bei zwei davon wurden Daten von mindestens 600.000 gültigen Kreditkarten kopiert. Die Einbrüche dauerten oft nur Stunden. Aufgedeckt hat das Gambit Security. Anthropic und Cloudflare sperrten die zugehörigen Konten und Infrastruktur.",
-   "relevance": "Die Zeit zwischen Veröffentlichung einer Schwachstelle und ihrer Ausnutzung sinkt bei Shops mit Kartenzahlung deutlich. Patch-Management, Angriffsflächen-Management und Kontrollen nach PCI DSS 4.x (z. B. Schutz der Zahlungsseiten, Überwachung) sollten auf automatisierte Angreifer ausgelegt sein.",
+   "title": "Agenten mit Künstlicher Intelligenz greifen Hunderte Onlineshops an: 600.000 Kreditkartendaten erbeutet",
+   "summary": "Laut dem Technik-Nachrichtenportal heise haben Angreifer vom 10. bis 15. September 2026 mit drei quelloffenen Agenten auf Basis Künstlicher Intelligenz (für Schwachstellensuche, Angriffscode und Steuerung) 105 Angriffsprojekte gegen Hunderte Onlinehändler gestartet. Mindestens 27 Unternehmen wurden kompromittiert, bei zwei davon wurden Daten von mindestens 600.000 gültigen Kreditkarten kopiert. Die Einbrüche dauerten oft nur Stunden. Aufgedeckt hat das das Sicherheitsunternehmen Gambit Security. Die Unternehmen Anthropic und Cloudflare sperrten die zugehörigen Konten und Infrastruktur.",
+   "relevance": "Die Zeit zwischen Veröffentlichung einer Schwachstelle und ihrer Ausnutzung sinkt bei Shops mit Kartenzahlung deutlich. Das Einspielen von Sicherheitsupdates, das Angriffsflächen-Management und Kontrollen nach dem Datensicherheitsstandard der Kartenzahlungsbranche PCI DSS 4.x (zum Beispiel Schutz der Zahlungsseiten, Überwachung) sollten auf automatisierte Angreifer ausgelegt sein.",
    "source": "heise online",
    "url": "https://www.heise.de/en/news/Attack-with-AI-agents-on-hundreds-of-shops-600-000-credit-card-details-stolen-11464745.html",
    "id": "2026-09-24-ki-agenten-angriff-onlineshops-kreditkarten",
@@ -186,16 +186,16 @@
    "impact": "mittel",
    "published": "2026-09-24",
    "tags": [
-    "KI-Angriffe",
-    "PCI DSS",
-    "E-Commerce"
+    "Angriffe mit Künstlicher Intelligenz",
+    "Kartendatenstandard PCI DSS",
+    "Onlinehandel"
    ],
    "added": "2026-09-29T22:22:07Z"
   },
   {
-   "title": "DSK zu Smart Glasses: KI-Gesichtserkennung im öffentlichen Raum unzulässig",
-   "summary": "Auf ihrer Zwischenkonferenz am 23. September 2026 hat die Datenschutzkonferenz einen Prüfbericht der Hamburger Aufsicht zu Smart Glasses zur Kenntnis genommen. Danach ist KI-gestützte Gesichtserkennung im öffentlichen Raum unzulässig. Für KI-Training mit Daten Dritter fehlt in der Regel eine Rechtsgrundlage.",
-   "relevance": "Das ist relevant für den Handel, etwa bei Pilotprojekten mit Wearables im Laden, in der Logistik oder im Kundenservice. Solche Vorhaben sollten eine Datenschutz-Folgenabschätzung durchlaufen, und Fragen des KI-Trainings sollten früh geklärt werden.",
+   "title": "Datenschutzkonferenz zu Datenbrillen: Gesichtserkennung mit Künstlicher Intelligenz im öffentlichen Raum unzulässig",
+   "summary": "Auf ihrer Zwischenkonferenz am 23. September 2026 hat die Datenschutzkonferenz einen Prüfbericht der Hamburger Aufsicht zu Datenbrillen (Smart Glasses) zur Kenntnis genommen. Danach ist Gesichtserkennung mit Künstlicher Intelligenz im öffentlichen Raum unzulässig. Für das Training Künstlicher Intelligenz mit Daten Dritter fehlt in der Regel eine Rechtsgrundlage.",
+   "relevance": "Das ist relevant für den Handel, etwa bei Pilotprojekten mit am Körper getragenen Geräten im Laden, in der Logistik oder im Kundenservice. Solche Vorhaben sollten eine Datenschutz-Folgenabschätzung durchlaufen, und Fragen zum Training Künstlicher Intelligenz sollten früh geklärt werden.",
    "source": "Sächsische Datenschutz- und Transparenzbeauftragte",
    "url": "https://www.datenschutz.sachsen.de/ergebnisse-der-3-zwischenkonferenz-der-dsk-am-23-september-2026-8068.html",
    "id": "2026-09-24-dsk-smart-glasses-ki",
@@ -206,8 +206,8 @@
   },
   {
    "title": "Kabinett: Digitaler Beleg ersetzt Papierbon ab 2028, elektronische Kassen werden Pflicht",
-   "summary": "Das Bundeskabinett hat am 23. September den Gesetzentwurf des BMF zu digitalen Belegen und Kassen beschlossen. Ab 2028 sollen digitale Belege den Papierbon ersetzen. Unternehmen mit mehr als 100.000 Euro Jahresumsatz müssen dann elektronische Kassensysteme nutzen. Ausgenommen sind Betriebe mit weniger als 12.000 Euro Barumsatz, betroffen sind rund 115.000 offene Ladenkassen.",
-   "relevance": "Für einen Filialhändler ändern sich damit Kassenprozesse, Belegausgabe, Aufbewahrung und Kundendatenflüsse beim E-Bon. Das betrifft GoBD- und Kassenkontrollen, den Datenschutz und das ITGC-Umfeld der Jahresabschlussprüfung.",
+   "summary": "Das Bundeskabinett hat am 23. September den Gesetzentwurf des Bundesministeriums der Finanzen zu digitalen Belegen und Kassen beschlossen. Ab 2028 sollen digitale Belege den Papierbon ersetzen. Unternehmen mit mehr als 100.000 Euro Jahresumsatz müssen dann elektronische Kassensysteme nutzen. Ausgenommen sind Betriebe mit weniger als 12.000 Euro Barumsatz, betroffen sind rund 115.000 offene Ladenkassen.",
+   "relevance": "Für einen Filialhändler ändern sich damit Kassenprozesse, Belegausgabe, Aufbewahrung und Kundendatenflüsse beim elektronischen Kassenbeleg. Das betrifft die Kontrollen nach den Grundsätzen zur ordnungsmäßigen Führung und Aufbewahrung von Büchern, Aufzeichnungen und Unterlagen in elektronischer Form sowie zum Datenzugriff, die Kassenkontrollen, den Datenschutz und das Umfeld der allgemeinen Kontrollen der Informationstechnik in der Jahresabschlussprüfung.",
    "source": "Bundesministerium der Finanzen",
    "url": "https://www.bundesfinanzministerium.de/Content/DE/Pressemitteilungen/Finanzpolitik/2026/09/2026-09-23-digitale-belege-und-digitale-kassen.html",
    "id": "2026-09-23-kabinett-e-bon-kassenpflicht",
@@ -215,16 +215,16 @@
    "impact": "hoch",
    "published": "2026-09-23",
    "tags": [
-    "E-Bon",
+    "Elektronischer Kassenbeleg",
     "Kassen",
-    "GoBD"
+    "Ordnungsmäßige elektronische Buchführung"
    ],
    "added": "2026-09-29T22:54:12Z"
   },
   {
-   "title": "NIST: Entwurf der OT-Sicherheitsrichtlinie SP 800-82r4, jetzt auch für Lebensmittelsektor",
-   "summary": "NIST hat am 23. September den ersten öffentlichen Entwurf von SP 800-82 Revision 4 zur Sicherheit operativer Technologie vorgelegt. Die Richtlinie folgt nun dem CSF 2.0 und verknüpft das OT-Risikomanagement mit dem Risikomanagement des Unternehmens. Neu sind unter anderem Zero-Trust-Prinzipien sowie Gebäudeautomation und der Sektor Lebensmittel und Landwirtschaft. Kommentare sind bis 30. November 2026 möglich.",
-   "relevance": "Kühlketten, Logistikzentren und Gebäudetechnik im Lebensmittelhandel sind OT-Umgebungen mit KRITIS-Bezug. Der Entwurf taugt als Referenz, um OT-Risiken ins Enterprise-Risikomanagement und ins Kontrollframework einzubinden.",
+   "title": "Standardisierungsinstitut der Vereinigten Staaten: Entwurf der Sicherheitsrichtlinie für operative Technologie Special Publication 800-82 Revision 4, jetzt auch für Lebensmittelsektor",
+   "summary": "Das National Institute of Standards and Technology, das nationale Standardisierungsinstitut der Vereinigten Staaten, hat am 23. September den ersten öffentlichen Entwurf der Special Publication 800-82 Revision 4 zur Sicherheit operativer Technologie vorgelegt. Die Richtlinie folgt nun dem Cybersecurity Framework 2.0, dem Rahmenwerk des Instituts für Cybersicherheit, und verknüpft das Risikomanagement für operative Technologie mit dem Risikomanagement des Unternehmens. Neu sind unter anderem Zero-Trust-Prinzipien sowie Gebäudeautomation und der Sektor Lebensmittel und Landwirtschaft. Kommentare sind bis 30. November 2026 möglich.",
+   "relevance": "Kühlketten, Logistikzentren und Gebäudetechnik im Lebensmittelhandel sind Umgebungen operativer Technologie mit Bezug zu kritischen Infrastrukturen. Der Entwurf taugt als Referenz, um Risiken der operativen Technologie ins unternehmensweite Risikomanagement und ins Kontrollframework einzubinden.",
    "source": "Security Today",
    "url": "https://securitytoday.com/articles/2026/09/23/nist-releases-draft-guide-to-operational-technology-security.aspx",
    "id": "2026-09-23-nist-sp-800-82r4-ot-security",
@@ -232,15 +232,15 @@
    "impact": "mittel",
    "published": "2026-09-23",
    "tags": [
-    "OT-Sicherheit",
-    "NIST",
-    "KRITIS"
+    "Sicherheit operativer Technologie",
+    "National Institute of Standards and Technology",
+    "Kritische Infrastrukturen"
    ],
    "added": "2026-09-29T22:54:12Z"
   },
   {
-   "title": "Irische DPC verhängt 403 Mio. Euro gegen Google wegen Standortdaten",
-   "summary": "Die irische Datenschutzbehörde hat Google mit 403 Mio. Euro belegt. Grund ist die Verarbeitung von Standortdaten in „Web- & App-Aktivitäten“, „Standortverlauf“ und „Standortgenauigkeit“. Festgestellt wurden Verstöße gegen Art. 5, 6, 12 und 13 DSGVO: fehlende Rechtsgrundlage, mangelnde Transparenz und zu lange Speicherung. Google muss die Verarbeitung binnen sechs Monaten rechtskonform gestalten. Das Verfahren ging auf Beschwerden von Verbraucherverbänden (u. a. BEUC) zurück.",
+   "title": "Irische Datenschutzkommission verhängt 403 Millionen Euro gegen Google wegen Standortdaten",
+   "summary": "Die irische Datenschutzbehörde hat Google mit 403 Millionen Euro belegt. Grund ist die Verarbeitung von Standortdaten in „Web- & App-Aktivitäten“, „Standortverlauf“ und „Standortgenauigkeit“. Festgestellt wurden Verstöße gegen Artikel 5, 6, 12 und 13 der Datenschutz-Grundverordnung: fehlende Rechtsgrundlage, mangelnde Transparenz und zu lange Speicherung. Google muss die Verarbeitung binnen sechs Monaten rechtskonform gestalten. Das Verfahren ging auf Beschwerden von Verbraucherverbänden (unter anderem dem Europäischen Verbraucherverband) zurück.",
    "relevance": "Standortdaten aus Liefer-, Kundenbindungs- und Reise-Apps sind ein Schwerpunkt der Aufsicht. Rechtsgrundlagen, Einwilligungstexte und Löschfristen für Standortfunktionen sollten regelmäßig überprüft werden.",
    "source": "EDPB / Data Protection Commission",
    "url": "https://www.edpb.europa.eu/news/the-irish-data-protection-commission-fines-google-403-000-000-eur-following-inquiry_en",
@@ -256,9 +256,9 @@
    "added": "2026-09-29T22:22:07Z"
   },
   {
-   "title": "BSI vergibt erstes Zertifikat nach TR-03185 „Sicherer Software-Lebenszyklus“",
-   "summary": "Das BSI hat das erste Zertifikat nach der Technischen Richtlinie TR-03185 vergeben, an einen Softwarehersteller aus Karlsruhe. Die TR bewertet den gesamten Entwicklungsprozess des Herstellers, von den Anforderungen über Test und Auslieferung bis zum Schwachstellenmanagement. Teil 1 betrifft proprietäre Software, Teil 2 Open-Source-Entwicklung. Zertifizierte Hersteller sollen Updates für zertifizierte Produkte künftig einfacher bereitstellen können.",
-   "relevance": "Mit TR-03185 gibt es einen neuen Nachweis, den man bei Softwarelieferanten verlangen oder in Due-Diligence-Fragebögen berücksichtigen kann, gerade mit Blick auf die CRA-Pflichten der Hersteller. Für die eigene Softwareentwicklung taugt die Richtlinie als Referenzrahmen.",
+   "title": "Bundesamt für Sicherheit in der Informationstechnik vergibt erstes Zertifikat nach Technischer Richtlinie TR-03185 „Sicherer Software-Lebenszyklus“",
+   "summary": "Das Bundesamt für Sicherheit in der Informationstechnik hat das erste Zertifikat nach der Technischen Richtlinie TR-03185 vergeben, an einen Softwarehersteller aus Karlsruhe. Die Richtlinie bewertet den gesamten Entwicklungsprozess des Herstellers, von den Anforderungen über Test und Auslieferung bis zum Schwachstellenmanagement. Teil 1 betrifft proprietäre Software, Teil 2 Open-Source-Entwicklung. Zertifizierte Hersteller sollen Updates für zertifizierte Produkte künftig einfacher bereitstellen können.",
+   "relevance": "Mit der Technischen Richtlinie TR-03185 gibt es einen neuen Nachweis, den man bei Softwarelieferanten verlangen oder in Fragebögen zur Sorgfaltsprüfung von Lieferanten berücksichtigen kann, gerade mit Blick auf die Pflichten der Hersteller nach dem Cyber Resilience Act, der Cyberresilienz-Verordnung der Europäischen Union. Für die eigene Softwareentwicklung taugt die Richtlinie als Referenzrahmen.",
    "source": "BSI",
    "url": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Alle-Meldungen-News/Meldungen/2026/Zertifzierung_TR-03185_260923.html",
    "id": "2026-09-23-bsi-tr-03185-erstes-zertifikat",
@@ -266,16 +266,16 @@
    "impact": "mittel",
    "published": "2026-09-23",
    "tags": [
-    "Secure SDLC",
-    "BSI",
+    "Sicherer Software-Lebenszyklus",
+    "Bundesamt für Sicherheit in der Informationstechnik",
     "Lieferanten"
    ],
    "added": "2026-09-29T22:22:07Z"
   },
   {
-   "title": "ENISA Threat Landscape 2026: Abhängigkeiten vergrößern die Angriffsfläche, KI im Aufwind",
-   "summary": "ENISA hat am 22. September ihren Lagebericht zur Bedrohungslage in der EU veröffentlicht. Er wertet Vorfälle des Jahres 2025 aus. Laut Bericht vergrößern digitale Abhängigkeiten die Angriffsfläche. 51 Prozent der erfassten Vorfälle waren DDoS-Angriffe, meist von Hacktivisten und oft mit geopolitischem Bezug. ENISA erwartet, dass KI immer mehr Phasen der Angriffskette direkt unterstützt.",
-   "relevance": "Der Bericht ist eine belastbare Quelle für die Risikoanalyse nach NIS2 und für Berichte an die Geschäftsleitung. Seine Schwerpunkte Drittparteien-Abhängigkeiten und KI-gestützte Angriffe passen zur aktuellen Vorfallserie bei Händlern über Dienstleister.",
+   "title": "Lagebericht Threat Landscape 2026 der Agentur der Europäischen Union für Cybersicherheit: Abhängigkeiten vergrößern die Angriffsfläche, Künstliche Intelligenz im Aufwind",
+   "summary": "Die Agentur der Europäischen Union für Cybersicherheit hat am 22. September ihren Lagebericht zur Bedrohungslage in der Europäischen Union veröffentlicht. Er wertet Vorfälle des Jahres 2025 aus. Laut Bericht vergrößern digitale Abhängigkeiten die Angriffsfläche. 51 Prozent der erfassten Vorfälle waren verteilte Überlastungsangriffe (Distributed Denial of Service), meist von Hacktivisten und oft mit geopolitischem Bezug. Die Agentur erwartet, dass Künstliche Intelligenz immer mehr Phasen der Angriffskette direkt unterstützt.",
+   "relevance": "Der Bericht ist eine belastbare Quelle für die Risikoanalyse nach der NIS-2-Richtlinie (Richtlinie über Netz- und Informationssicherheit) und für Berichte an die Geschäftsleitung. Seine Schwerpunkte Drittparteien-Abhängigkeiten und durch Künstliche Intelligenz gestützte Angriffe passen zur aktuellen Vorfallserie bei Händlern über Dienstleister.",
    "source": "ENISA",
    "url": "https://www.enisa.europa.eu/publications/enisa-threat-landscape-2026",
    "id": "2026-09-22-enisa-threat-landscape-2026",
@@ -284,15 +284,15 @@
    "published": "2026-09-22",
    "tags": [
     "Bedrohungslage",
-    "ENISA",
+    "Agentur der Europäischen Union für Cybersicherheit",
     "Lieferkette"
    ],
    "added": "2026-09-29T22:54:12Z"
   },
   {
-   "title": "EDPB vereinheitlicht die Entscheidung über DSGVO-Bußgelder: Konsultation bis 13. November",
-   "summary": "Der Europäische Datenschutzausschuss hat Leitlinien zur Verhängung von Geldbußen angenommen. Sie ersetzen die alten WP29-Leitlinien und legen ein Fünf-Schritte-Schema fest: Bußgeldfähigkeit, verantwortliche Partei, Vorsatz oder Fahrlässigkeit, erschwerende und mildernde Umstände, Wirksamkeit und Verhältnismäßigkeit. Bei geringfügigen Verstößen kann statt eines Bußgelds eine Verwarnung genügen. Zusätzlich hat der EDPB die endgültigen Leitlinien zum Zusammenspiel von DSA und DSGVO verabschiedet.",
-   "relevance": "Die Leitlinien zeigen, welche Umstände Aufsichtsbehörden als mildernd werten, etwa nachweisbare Rechenschaft und Zusammenarbeit. Das hilft, Datenschutzkontrollen und Dokumentation zu priorisieren. Eine Stellungnahme, z. B. über Verbände, ist bis 13.11.2026 möglich.",
+   "title": "Europäischer Datenschutzausschuss vereinheitlicht die Entscheidung über Bußgelder nach der Datenschutz-Grundverordnung: Konsultation bis 13. November",
+   "summary": "Der Europäische Datenschutzausschuss hat Leitlinien zur Verhängung von Geldbußen angenommen. Sie ersetzen die alten Leitlinien der früheren Artikel-29-Datenschutzgruppe und legen ein Fünf-Schritte-Schema fest: Bußgeldfähigkeit, verantwortliche Partei, Vorsatz oder Fahrlässigkeit, erschwerende und mildernde Umstände, Wirksamkeit und Verhältnismäßigkeit. Bei geringfügigen Verstößen kann statt eines Bußgelds eine Verwarnung genügen. Zusätzlich hat der Ausschuss die endgültigen Leitlinien zum Zusammenspiel des Gesetzes über digitale Dienste (Digital Services Act) und der Datenschutz-Grundverordnung verabschiedet.",
+   "relevance": "Die Leitlinien zeigen, welche Umstände Aufsichtsbehörden als mildernd werten, etwa nachweisbare Rechenschaft und Zusammenarbeit. Das hilft, Datenschutzkontrollen und Dokumentation zu priorisieren. Eine Stellungnahme, zum Beispiel über Verbände, ist bis 13.11.2026 möglich.",
    "source": "EDPB",
    "url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en",
    "id": "2026-09-21-edpb-leitlinien-bussgeldverhaengung",
@@ -300,16 +300,16 @@
    "impact": "mittel",
    "published": "2026-09-21",
    "tags": [
-    "DSGVO-Bußgelder",
-    "EDPB",
+    "Bußgelder nach der Datenschutz-Grundverordnung",
+    "Europäischer Datenschutzausschuss",
     "Konsultation"
    ],
    "added": "2026-09-29T22:22:07Z"
   },
   {
-   "title": "BSI schreibt Projekt PRAKI aus: Prüfanforderungen für agentische KI",
-   "summary": "Das BSI hat das Projekt „PRAKI – Prüfanforderungen für LLM-basierte agentische KI“ mit einer Laufzeit von 18 Monaten ausgeschrieben. Angebote waren bis zum 21. September 2026 möglich. Begründung ist, dass die bestehenden Prüfkataloge des BSI für agentische KI nicht ausreichen. Die Ergebnisse sollen über die Bibliothek „Stand der Technik“ in Grundschutz++ einfließen.",
-   "relevance": "Ein BSI-Prüfkatalog für KI-Agenten wird mittelfristig zum Referenzrahmen für interne Kontrollen und Prüfungen. Bis dahin sollten Agenten-Identitäten, Berechtigungen und die Protokollierung ihrer Aktionen bereits nach dem Muster von ITGCs gestaltet werden.",
+   "title": "Bundesamt für Sicherheit in der Informationstechnik schreibt Projekt PRAKI aus: Prüfanforderungen für agentische Künstliche Intelligenz",
+   "summary": "Das Bundesamt für Sicherheit in der Informationstechnik hat das Projekt „PRAKI – Prüfanforderungen für agentische Künstliche Intelligenz auf Basis großer Sprachmodelle“ mit einer Laufzeit von 18 Monaten ausgeschrieben. Angebote waren bis zum 21. September 2026 möglich. Begründung ist, dass die bestehenden Prüfkataloge des Bundesamts für agentische Künstliche Intelligenz nicht ausreichen. Die Ergebnisse sollen über die Bibliothek „Stand der Technik“ in Grundschutz++, das Grundschutz-Regelwerk des Bundesamts, einfließen.",
+   "relevance": "Ein Prüfkatalog des Bundesamts für Agenten mit Künstlicher Intelligenz wird mittelfristig zum Referenzrahmen für interne Kontrollen und Prüfungen. Bis dahin sollten Agenten-Identitäten, Berechtigungen und die Protokollierung ihrer Aktionen bereits nach dem Muster allgemeiner Kontrollen der Informationstechnik gestaltet werden.",
    "source": "IT-Dock",
    "url": "https://it-dock.de/blog/news/bsi-ki-agenten-sicherheit/",
    "id": "2026-09-21-bsi-praki-pruefanforderungen-agentische-ki",
@@ -321,7 +321,7 @@
   {
    "title": "BigCommerce: Gestohlener App-Schlüssel eines Drittanbieters legt Shop-Kundendaten offen",
    "summary": "Vom 13. bis 17.09.2026 hatten Angreifer über einen gestohlenen Zugriffsschlüssel der Drittanbieter-App Ribon Zugriff auf Kundendaten von Onlineshops auf BigCommerce. Betroffen waren Namen, E-Mail-Adressen, Telefonnummern und Postanschriften; Passwörter und Kartendaten sollen getrennt gespeichert und nicht betroffen gewesen sein. BigCommerce hat die App am 17.09. deinstalliert.",
-   "relevance": "Das Beispiel zeigt das Risiko durch Plugins und Integrationen in E-Commerce-Plattformen. Handlungsbedarf besteht bei der Inventarisierung von Drittanbieter-Apps und ihrer API-Schlüssel, bei minimalen Berechtigungen, bei der Rotation von Schlüsseln und bei der Bewertung solcher Anbieter im Lieferanten-Risikomanagement.",
+   "relevance": "Das Beispiel zeigt das Risiko durch Erweiterungen und Integrationen in Plattformen für den Onlinehandel. Handlungsbedarf besteht bei der Inventarisierung von Drittanbieter-Apps und ihrer Schlüssel für Programmierschnittstellen, bei minimalen Berechtigungen, bei der Rotation von Schlüsseln und bei der Bewertung solcher Anbieter im Lieferanten-Risikomanagement.",
    "source": "Borns IT- und Windows-Blog",
    "url": "https://borncity.com/blog/en/2026/09/19/ecommerce-plattform-bigcommerce-wohl-ueber-drittanbieter-ribon-gehackt/",
    "id": "2026-09-19-bigcommerce-ribon-drittanbieter-leck",
@@ -332,9 +332,9 @@
   },
   {
    "id": "2026-09-17-audit-gap-ai-agents",
-   "title": "KI-Agenten reißen Lücken in den Prüfpfad",
-   "summary": "Prüfungsteams stellen fest, dass ihr gewohnter Nachweispfad bei KI-Agenten nicht mehr trägt: Die Daten liegen weiter in ERP- und HR-Systemen, aber Ermessensentscheidungen, die früher in E-Mails dokumentiert waren, trifft zunehmend Software – schneller, als ein Prüfer folgen kann.",
-   "relevance": "KI-Agenten werden Prüfungsgegenstand: Protokollierung von Agenten-Entscheidungen und Freigaben gehört in den ITGC-Rahmen und in die Vorbereitung der Jahresabschlussprüfung.",
+   "title": "Agenten mit Künstlicher Intelligenz reißen Lücken in den Prüfpfad",
+   "summary": "Prüfungsteams stellen fest, dass ihr gewohnter Nachweispfad bei Agenten mit Künstlicher Intelligenz nicht mehr trägt: Die Daten liegen weiter in Systemen für Unternehmensressourcenplanung und Personalwesen, aber Ermessensentscheidungen, die früher in E-Mails dokumentiert waren, trifft zunehmend Software – schneller, als ein Prüfer folgen kann.",
+   "relevance": "Agenten mit Künstlicher Intelligenz werden Prüfungsgegenstand: Protokollierung von Agenten-Entscheidungen und Freigaben gehört in den Rahmen der allgemeinen Kontrollen der Informationstechnik und in die Vorbereitung der Jahresabschlussprüfung.",
    "topic": "Prüfung & Assurance",
    "impact": "hoch",
    "source": "SiliconANGLE",
@@ -343,9 +343,9 @@
    "added": "2026-09-29T09:00:00Z"
   },
   {
-   "title": "PCI SSC veröffentlicht Leitfaden „Security Considerations for AI Systems“",
-   "summary": "Der PCI Security Standards Council hat ein Informationspapier zur Sicherheit von KI-Systemen in Zahlungsumgebungen veröffentlicht. Es behandelt Einsatzmodelle, Folgenabschätzung, die Abwehr KI-gestützter Angriffe und die Anwendung bestehender PCI-Standards. Der Leitfaden ist ausdrücklich unverbindlich: KI ist beim Scoping wie jede andere Technologie zu behandeln.",
-   "relevance": "KI-Komponenten mit Zugriff auf Karteninhaberdaten, etwa im Kundenservice oder Checkout, gehören in den PCI-DSS-Scope. Der Leitfaden hilft bei der Abstimmung mit QSA und bei den Kontrollen für KI-Anwendungsfälle im Zahlungsverkehr.",
+   "title": "PCI Security Standards Council veröffentlicht Leitfaden zu Sicherheitsaspekten von Systemen Künstlicher Intelligenz",
+   "summary": "Der PCI Security Standards Council, das Standardisierungsgremium der Kartenzahlungsbranche, hat ein Informationspapier zur Sicherheit von Systemen Künstlicher Intelligenz in Zahlungsumgebungen veröffentlicht. Es behandelt Einsatzmodelle, Folgenabschätzung, die Abwehr von Angriffen mit Unterstützung Künstlicher Intelligenz und die Anwendung bestehender Standards des Gremiums. Der Leitfaden ist ausdrücklich unverbindlich: Künstliche Intelligenz ist bei der Festlegung des Prüfungsumfangs wie jede andere Technologie zu behandeln.",
+   "relevance": "Komponenten Künstlicher Intelligenz mit Zugriff auf Karteninhaberdaten, etwa im Kundenservice oder im Bezahlvorgang, gehören in den Geltungsbereich des Datensicherheitsstandards der Kartenzahlungsbranche PCI DSS. Der Leitfaden hilft bei der Abstimmung mit qualifizierten Sicherheitsprüfern (Qualified Security Assessors) und bei den Kontrollen für Anwendungsfälle Künstlicher Intelligenz im Zahlungsverkehr.",
    "source": "PCI Security Standards Council",
    "url": "https://blog.pcisecuritystandards.org/just-published-security-considerations-for-ai-systems",
    "id": "2026-09-15-pci-ssc-leitfaden-ki-systeme",
@@ -355,8 +355,8 @@
    "added": "2026-09-29T22:11:14Z"
   },
   {
-   "title": "PCI SSC: Neuer Standard für Schlüsselmanagement (KMO) v1.0",
-   "summary": "Der PCI SSC hat den Standard „PCI Key Management and Operations (KMO)“ in Version 1.0 veröffentlicht. Er richtet sich an Stellen, die kryptografische Schlüssel im Zahlungsumfeld verwalten.",
+   "title": "PCI Security Standards Council: Neuer Standard für Schlüsselmanagement „Key Management and Operations“ Version 1.0",
+   "summary": "Der PCI Security Standards Council, das Standardisierungsgremium der Kartenzahlungsbranche, hat den Standard „PCI Key Management and Operations“ in Version 1.0 veröffentlicht. Er richtet sich an Stellen, die kryptografische Schlüssel im Zahlungsumfeld verwalten.",
    "relevance": "Vor allem relevant für die Abstimmung mit Zahlungsdienstleistern und Acquirern sowie für eigene Aufgaben im Schlüsselmanagement. Es lohnt sich zu prüfen, ob Dienstleister im Zahlungsverkehr den neuen Standard nachweisen werden.",
    "source": "PCI Security Standards Council",
    "url": "https://blog.pcisecuritystandards.org/just-published-pci-key-management-operations-kmo-standard-v1.0",
@@ -368,8 +368,8 @@
   },
   {
    "title": "Cyber Resilience Act: Meldepflicht für ausgenutzte Schwachstellen gilt seit 11. September",
-   "summary": "Seit dem 11.09.2026 müssen Hersteller von Produkten mit digitalen Elementen aktiv ausgenutzte Schwachstellen und schwerwiegende Sicherheitsvorfälle melden. Gemeldet wird über die Single Reporting Platform (CRA-SRP) der ENISA; in Deutschland ist CERT-Bund im BSI das koordinierende CSIRT. Die Pflicht gilt auch für Produkte, die bereits auf dem Markt sind.",
-   "relevance": "Händler und Importeure haben eigene CRA-Pflichten. Wer vernetzte Produkte unter eigener Marke vertreibt, gilt als Hersteller und ist damit selbst meldepflichtig. Deshalb sollte man das Sortiment vernetzter Produkte und Eigenmarken erfassen, die Meldewege mit den Lieferanten vertraglich regeln und die Zuständigkeiten für die ENISA-Plattform festlegen.",
+   "summary": "Seit dem 11.09.2026 müssen Hersteller von Produkten mit digitalen Elementen aktiv ausgenutzte Schwachstellen und schwerwiegende Sicherheitsvorfälle melden. Gemeldet wird über die zentrale Meldeplattform (Single Reporting Platform) der Agentur der Europäischen Union für Cybersicherheit; in Deutschland ist CERT-Bund, das Computer-Notfallteam des Bundes im Bundesamt für Sicherheit in der Informationstechnik, das koordinierende Notfallteam für Sicherheitsvorfälle. Die Pflicht gilt auch für Produkte, die bereits auf dem Markt sind.",
+   "relevance": "Händler und Importeure haben eigene Pflichten nach dem Cyber Resilience Act, der Cyberresilienz-Verordnung der Europäischen Union. Wer vernetzte Produkte unter eigener Marke vertreibt, gilt als Hersteller und ist damit selbst meldepflichtig. Deshalb sollte man das Sortiment vernetzter Produkte und Eigenmarken erfassen, die Meldewege mit den Lieferanten vertraglich regeln und die Zuständigkeiten für die Meldeplattform der Agentur der Europäischen Union für Cybersicherheit festlegen.",
    "source": "BSI",
    "url": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Pressemitteilungen/Presse2026/260911_CRA_Meldepflicht_Schwachstellen.html",
    "id": "2026-09-11-cra-meldepflicht-startet",
@@ -379,9 +379,9 @@
    "added": "2026-09-29T22:11:14Z"
   },
   {
-   "title": "„Deadbugz“: Bösartiger MCP-Server schaltet erst nach drei Tool-Aufrufen um",
-   "summary": "Nach einer Analyse von Pillar Security reichte ein einzelnes GitHub-Konto innerhalb von 74 Minuten 23 Pull Requests in verschiedenen KI- und Entwicklerprojekten ein, die einen MCP-Server einschleusten. Der Server verhält sich zunächst unauffällig. Nach genau drei Tool-Aufrufen schreibt er seine Tool-Metadaten jedoch in Anweisungen um, SSH-Schlüssel, AWS-Zugangsdaten und Kubernetes-Konfigurationen zu suchen. Außerdem wurden im August drei neue CVEs in MCP-Servern gemeldet, darunter ein Path-Traversal im Atlassian-MCP (CVSS 7,7).",
-   "relevance": "Eine einmalige Freigabe von Agenten-Tools reicht nicht aus. Nötig sind laufende Überwachung von Metadaten-Änderungen, Allowlists und eng begrenzte Berechtigungen. Das ist ein gutes Beispiel für Kontrollen im Change- und Zugriffsmanagement bei KI-Agenten.",
+   "title": "„Deadbugz“: Bösartiger Server für das Model Context Protocol schaltet erst nach drei Tool-Aufrufen um",
+   "summary": "Nach einer Analyse des Sicherheitsunternehmens Pillar Security reichte ein einzelnes GitHub-Konto innerhalb von 74 Minuten 23 Pull Requests in verschiedenen Projekten rund um Künstliche Intelligenz und Softwareentwicklung ein, die einen Server für das Model Context Protocol einschleusten, ein Protokoll zur Anbindung von Werkzeugen an Modelle Künstlicher Intelligenz. Der Server verhält sich zunächst unauffällig. Nach genau drei Tool-Aufrufen schreibt er seine Tool-Metadaten jedoch in Anweisungen um, Schlüssel für Secure-Shell-Zugänge, Zugangsdaten für Amazon Web Services und Kubernetes-Konfigurationen zu suchen. Außerdem wurden im August drei neue Schwachstellen mit öffentlicher CVE-Kennung in Servern für das Model Context Protocol gemeldet, darunter eine Pfadmanipulations-Schwachstelle (Path Traversal) im entsprechenden Server von Atlassian (Schweregrad 7,7 nach dem Common Vulnerability Scoring System).",
+   "relevance": "Eine einmalige Freigabe von Agenten-Tools reicht nicht aus. Nötig sind laufende Überwachung von Metadaten-Änderungen, Positivlisten und eng begrenzte Berechtigungen. Das ist ein gutes Beispiel für Kontrollen im Change- und Zugriffsmanagement bei Agenten mit Künstlicher Intelligenz.",
    "source": "Adversa AI (Analyse von Pillar Security)",
    "url": "https://adversa.ai/blog/top-mcp-security-resources-september-2026/",
    "id": "2026-09-07-deadbugz-mcp-supply-chain",
@@ -392,8 +392,8 @@
   },
   {
    "id": "2026-09-04-aisi-deutschland",
-   "title": "AISI Deutschland: KI-Sicherheitsinstitut des Bundes startet in Berlin",
-   "summary": "Digital- und Innenministerium haben das German AI Security Institute gegründet. Es soll Fähigkeiten und Risiken fortgeschrittener KI-Modelle bewerten; BSI und Bundesnetzagentur bilden in der ersten Phase den Kern.",
+   "title": "German AI Security Institute: Institut des Bundes für die Sicherheit Künstlicher Intelligenz startet in Berlin",
+   "summary": "Digital- und Innenministerium haben das German AI Security Institute gegründet. Es soll Fähigkeiten und Risiken fortgeschrittener Modelle Künstlicher Intelligenz bewerten; das Bundesamt für Sicherheit in der Informationstechnik und die Bundesnetzagentur bilden in der ersten Phase den Kern.",
    "relevance": "Mittelfristig eine weitere deutsche Referenz für Bewertungsmethoden und Testergebnisse zu Modellen – beobachten, noch keine direkten Pflichten.",
    "topic": "AI-Governance",
    "impact": "info",
@@ -404,9 +404,9 @@
   },
   {
    "id": "2026-09-bsi-infopaket-generative-ki",
-   "title": "BSI-Informationspaket zum sicheren Einsatz generativer KI im Unternehmen",
-   "summary": "Der Expertenkreis KI-Sicherheit der Allianz für Cyber-Sicherheit beim BSI hat ein Informationspaket veröffentlicht. Schwerpunkt sind organisatorische Schutzmaßnahmen für den Einsatz generativer KI im Betrieb. Zuvor erschien u. a. eine BSI-Publikation zum Basisschutz gegen indirekte Prompt Injection in dokumentbasierten LLM-Chats.",
-   "relevance": "Direkt verwertbar für KI-Richtlinie und Kontrollkatalog – deutsche Behördenquelle, die sich in Prüfungen gut als Referenz eignet.",
+   "title": "Informationspaket des Bundesamts für Sicherheit in der Informationstechnik zum sicheren Einsatz generativer Künstlicher Intelligenz im Unternehmen",
+   "summary": "Der Expertenkreis für die Sicherheit Künstlicher Intelligenz der Allianz für Cyber-Sicherheit beim Bundesamt für Sicherheit in der Informationstechnik hat ein Informationspaket veröffentlicht. Schwerpunkt sind organisatorische Schutzmaßnahmen für den Einsatz generativer Künstlicher Intelligenz im Betrieb. Zuvor erschien unter anderem eine Publikation des Bundesamts zum Basisschutz gegen das indirekte Einschleusen von Anweisungen (Prompt Injection) in dokumentbasierten Chats mit großen Sprachmodellen.",
+   "relevance": "Direkt verwertbar für die Richtlinie zu Künstlicher Intelligenz und den Kontrollkatalog – deutsche Behördenquelle, die sich in Prüfungen gut als Referenz eignet.",
    "topic": "AI-Governance",
    "impact": "mittel",
    "source": "datenschutzticker.de",
@@ -416,9 +416,9 @@
   },
   {
    "id": "2026-08-03-owasp-top10-2026",
-   "title": "OWASP veröffentlicht Top 10 für LLM-Anwendungen 2026 und Agent Control Standard",
-   "summary": "Das OWASP GenAI Security Project hat am 3. August 2026 die neue Ausgabe seiner LLM-Top-10 veröffentlicht und einen gespendeten Agent Control Standard vorgestellt. Ergänzend gibt es seit Dezember 2025 die Top 10 für agentische Anwendungen (ASI01–ASI10, z. B. Agent Goal Hijack, Tool Misuse, Identity & Privilege Abuse).",
-   "relevance": "Referenzen in Richtlinien, Kontrollkatalogen und Prüfprogrammen auf die Ausgabe 2026 aktualisieren. Der Agent Control Standard ist ein Kandidat für Kontrollen zu KI-Agenten.",
+   "title": "Open Worldwide Application Security Project veröffentlicht Top 10 für Anwendungen mit großen Sprachmodellen 2026 und Agent Control Standard",
+   "summary": "Das Projekt für die Sicherheit generativer Künstlicher Intelligenz (GenAI Security Project) der gemeinnützigen Sicherheitsorganisation Open Worldwide Application Security Project hat am 3. August 2026 die neue Ausgabe seiner Top 10 für Anwendungen mit großen Sprachmodellen veröffentlicht und einen gespendeten Agent Control Standard vorgestellt. Ergänzend gibt es seit Dezember 2025 die Top 10 für agentische Anwendungen (Kennungen ASI01 bis ASI10, zum Beispiel Agent Goal Hijack, Tool Misuse, Identity & Privilege Abuse).",
+   "relevance": "Referenzen in Richtlinien, Kontrollkatalogen und Prüfprogrammen auf die Ausgabe 2026 aktualisieren. Der Agent Control Standard ist ein Kandidat für Kontrollen zu Agenten mit Künstlicher Intelligenz.",
    "topic": "AI-Governance",
    "impact": "mittel",
    "source": "Cloud Security Alliance",
@@ -428,8 +428,8 @@
   },
   {
    "id": "2026-08-02-art50-transparenz-gilt",
-   "title": "Transparenzpflichten nach Art. 50 gelten seit 2. August 2026",
-   "summary": "Chatbots müssen offenlegen, dass sie KI sind; Deepfakes sind zu kennzeichnen; KI-generierte Inhalte brauchen maschinenlesbare Markierungen. Die Kommission hat dazu am 20. Juli 2026 Leitlinien veröffentlicht. Seit 2. August sind AI Office und nationale Behörden für die Durchsetzung zuständig.",
+   "title": "Transparenzpflichten nach Artikel 50 der Verordnung über Künstliche Intelligenz gelten seit 2. August 2026",
+   "summary": "Chatbots müssen offenlegen, dass sie Künstliche Intelligenz sind; Deepfakes sind zu kennzeichnen; mit Künstlicher Intelligenz erzeugte Inhalte brauchen maschinenlesbare Markierungen. Die Kommission hat dazu am 20. Juli 2026 Leitlinien veröffentlicht. Seit 2. August sind das Büro für Künstliche Intelligenz der Europäischen Kommission und nationale Behörden für die Durchsetzung zuständig.",
    "relevance": "Prüfen, welche Chatbots und Content-Tools kundennah eingesetzt werden (Onlineshop, Kundenservice, Reisebuchung) und ob Hinweise und Kennzeichnung umgesetzt sind.",
    "topic": "AI-Governance",
    "impact": "hoch",
@@ -440,8 +440,8 @@
   },
   {
    "id": "2026-07-29-ki-mig-bundesnetzagentur",
-   "title": "KI-MIG in Kraft: Bundesnetzagentur ist Deutschlands KI-Aufsicht",
-   "summary": "Das Gesetz zur Marktüberwachung und Innovationsförderung von KI (KI-MIG) ist am 29. Juli 2026 in Kraft getreten. Die Bundesnetzagentur wird zentrale Marktüberwachungsbehörde, Anlaufstelle und Beschwerdestelle; sie soll beraten und mindestens ein KI-Reallabor betreiben.",
+   "title": "Gesetz zur Marktüberwachung und Innovationsförderung von Künstlicher Intelligenz in Kraft: Bundesnetzagentur ist Deutschlands Aufsicht für Künstliche Intelligenz",
+   "summary": "Das Gesetz zur Marktüberwachung und Innovationsförderung von Künstlicher Intelligenz ist am 29. Juli 2026 in Kraft getreten. Die Bundesnetzagentur wird zentrale Marktüberwachungsbehörde, Anlaufstelle und Beschwerdestelle; sie soll beraten und mindestens ein Reallabor für Künstliche Intelligenz betreiben.",
    "relevance": "Klare Ansprechstelle für Auslegungsfragen und künftige Aufsichtsanfragen. Für regulierte Tochtergesellschaften zusätzlich prüfen, welche Rolle die jeweilige Fachaufsicht behält.",
    "topic": "AI-Governance",
    "impact": "hoch",
@@ -453,7 +453,7 @@
   {
    "id": "2026-07-27-digital-omnibus-in-kraft",
    "title": "Digital Omnibus in Kraft: Hochrisiko-Pflichten nach Anhang III erst ab 2. Dezember 2027",
-   "summary": "Die Verordnung (EU) 2026/1744 ist seit 27. Juli 2026 in Kraft. Die Pflichten für eigenständige Hochrisiko-KI (Anhang III, z. B. Beschäftigung, Kreditwürdigkeit) gelten nun ab 2. Dezember 2027, für KI in regulierten Produkten (Anhang I) ab 2. August 2028. Neu verboten sind u. a. Systeme zur Erzeugung nicht-einvernehmlicher intimer Bilder.",
+   "summary": "Die Verordnung 2026/1744 der Europäischen Union ist seit 27. Juli 2026 in Kraft. Die Pflichten für eigenständige Hochrisiko-Systeme Künstlicher Intelligenz (Anhang III, zum Beispiel Beschäftigung, Kreditwürdigkeit) gelten nun ab 2. Dezember 2027, für Künstliche Intelligenz in regulierten Produkten (Anhang I) ab 2. August 2028. Neu verboten sind unter anderem Systeme zur Erzeugung nicht-einvernehmlicher intimer Bilder.",
    "relevance": "Mehr Zeit für Personal- und Scoring-Anwendungen – aber kein Freifahrtschein: Inventar und Einstufung jetzt aufbauen, damit 2027 nicht wieder knapp wird.",
    "topic": "AI-Governance",
    "impact": "hoch",
@@ -464,9 +464,9 @@
   },
   {
    "id": "2026-07-27-art4-ki-kompetenz-neu",
-   "title": "Art. 4 neu gefasst: KI-Kompetenz wird zur Bemühenspflicht",
-   "summary": "Statt „nach besten Kräften ein ausreichendes Niveau sicherzustellen“ müssen Anbieter und Betreiber nun Maßnahmen ergreifen, um die Entwicklung von KI-Kompetenz zu unterstützen. Ein bestimmtes Kompetenzniveau einzelner Personen muss ausdrücklich nicht garantiert werden.",
-   "relevance": "Die Pflicht bleibt, ist aber kontextbezogen: Schulungsmaßnahmen am tatsächlichen KI-Einsatz ausrichten und dokumentieren – der Nachweis eines Mindestniveaus je Person entfällt.",
+   "title": "Artikel 4 der Verordnung über Künstliche Intelligenz neu gefasst: Kompetenz im Umgang mit Künstlicher Intelligenz wird zur Bemühenspflicht",
+   "summary": "Statt „nach besten Kräften ein ausreichendes Niveau sicherzustellen“ müssen Anbieter und Betreiber nun Maßnahmen ergreifen, um die Entwicklung von Kompetenz im Umgang mit Künstlicher Intelligenz zu unterstützen. Ein bestimmtes Kompetenzniveau einzelner Personen muss ausdrücklich nicht garantiert werden.",
+   "relevance": "Die Pflicht bleibt, ist aber kontextbezogen: Schulungsmaßnahmen am tatsächlichen Einsatz Künstlicher Intelligenz ausrichten und dokumentieren – der Nachweis eines Mindestniveaus je Person entfällt.",
    "topic": "AI-Governance",
    "impact": "hoch",
    "source": "lawandtechnology.eu",
@@ -475,9 +475,9 @@
    "added": "2026-09-29T09:00:00Z"
   },
   {
-   "title": "EDPB-Leitlinien zu Anonymisierung und Web-Scraping für KI: Konsultation bis 30.10.",
-   "summary": "Der Europäische Datenschutzausschuss hat Leitlinien zur Anonymisierung (02/2026) und zum Web-Scraping für generative KI angenommen. Für Anonymisierung gilt danach ein Drei-Kriterien-Test: keine Isolierung einzelner Datensätze, keine Verknüpfung, keine Rückschlüsse. Beide Leitlinien sind bis zum 30. Oktober 2026 zur Stellungnahme offen.",
-   "relevance": "Der Test ist relevant, wenn Trainings-, Test- oder RAG-Daten als „anonymisiert“ gelten und damit außerhalb der DSGVO behandelt werden sollen. Diese Einstufungen sollten gemeinsam mit dem Datenschutz überprüft werden. Wer eine Stellungnahme abgeben will, hat dafür noch einen Monat Zeit.",
+   "title": "Leitlinien des Europäischen Datenschutzausschusses zu Anonymisierung und Web-Scraping für Künstliche Intelligenz: Konsultation bis 30.10.",
+   "summary": "Der Europäische Datenschutzausschuss hat Leitlinien zur Anonymisierung (02/2026) und zum Web-Scraping für generative Künstliche Intelligenz angenommen. Für Anonymisierung gilt danach ein Drei-Kriterien-Test: keine Isolierung einzelner Datensätze, keine Verknüpfung, keine Rückschlüsse. Beide Leitlinien sind bis zum 30. Oktober 2026 zur Stellungnahme offen.",
+   "relevance": "Der Test ist relevant, wenn Trainings- und Testdaten oder Daten für abrufgestützte Generierung (Retrieval-Augmented Generation) als „anonymisiert“ gelten und damit außerhalb der Datenschutz-Grundverordnung behandelt werden sollen. Diese Einstufungen sollten gemeinsam mit dem Datenschutz überprüft werden. Wer eine Stellungnahme abgeben will, hat dafür noch einen Monat Zeit.",
    "source": "EDPB",
    "url": "https://www.edpb.europa.eu/news/edpb-sheds-light-on-anonymisation-and-web-scraping-for-generative-ai-and-adopts-final-version_en",
    "id": "2026-07-edpb-anonymisierung-web-scraping-konsultation",
@@ -487,9 +487,9 @@
    "added": "2026-09-29T22:03:17Z"
   },
   {
-   "title": "IDW: Zwei Prüfungshinweise zu KI in der Abschlussprüfung (PH 9.315DE.2 und .3)",
-   "summary": "Das IDW hat im Juli 2026 zwei Prüfungshinweise veröffentlicht. IDW PH 9.315DE.2 regelt, wie Abschlussprüfer generative KI in der eigenen Prüfung einsetzen dürfen. IDW PH 9.315DE.3 beschreibt, wie Prüfer KI-Systeme beim geprüften Unternehmen im Rahmen von ISA [DE] 315 (Revised 2019) und ISA [DE] 330 berücksichtigen. Beide betonen, dass KI das pflichtgemäße Ermessen und die abschließende Beurteilung durch Menschen nicht ersetzt.",
-   "relevance": "Mit PH 9.315DE.3 werden Abschlussprüfer KI-gestützte Prozesse in Rechnungswesen und IKS gezielt abfragen. IT-GRC sollte vor der nächsten Jahresabschlussprüfung ein Inventar der Prozesse mit KI-Bezug sowie die zugehörige Kontroll- und ITGC-Dokumentation bereithalten.",
+   "title": "Institut der Wirtschaftsprüfer: Zwei Prüfungshinweise zu Künstlicher Intelligenz in der Abschlussprüfung (Prüfungshinweise 9.315DE.2 und 9.315DE.3)",
+   "summary": "Das Institut der Wirtschaftsprüfer hat im Juli 2026 zwei Prüfungshinweise veröffentlicht. Prüfungshinweis 9.315DE.2 regelt, wie Abschlussprüfer generative Künstliche Intelligenz in der eigenen Prüfung einsetzen dürfen. Prüfungshinweis 9.315DE.3 beschreibt, wie Prüfer Systeme Künstlicher Intelligenz beim geprüften Unternehmen im Rahmen der internationalen Prüfungsstandards in deutscher Fassung ISA [DE] 315 (Revised 2019) und ISA [DE] 330 berücksichtigen. Beide betonen, dass Künstliche Intelligenz das pflichtgemäße Ermessen und die abschließende Beurteilung durch Menschen nicht ersetzt.",
+   "relevance": "Mit Prüfungshinweis 9.315DE.3 werden Abschlussprüfer durch Künstliche Intelligenz gestützte Prozesse in Rechnungswesen und internem Kontrollsystem gezielt abfragen. Der Bereich Governance, Risiko und Compliance der Informationstechnik sollte vor der nächsten Jahresabschlussprüfung ein Inventar der Prozesse mit Bezug zu Künstlicher Intelligenz sowie die zugehörige Dokumentation der Kontrollen und der allgemeinen Kontrollen der Informationstechnik bereithalten.",
    "source": "IDW",
    "url": "https://www.idw.de/themen/digitalisierung/kuenstliche-intelligenz/",
    "id": "2026-07-idw-ph-9315de-ki-abschlusspruefung",

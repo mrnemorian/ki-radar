@@ -171,7 +171,7 @@ function renderList() {
     c.appendChild(tags);
     c.appendChild(el("h3", null, i.title || "Ohne Titel"));
     if (i.summary) c.appendChild(el("p", null, i.summary));
-    if (i.relevance) { const w = el("p", "why"); const b = el("b", null, "Für IT-GRC: "); w.appendChild(b); w.appendChild(document.createTextNode(i.relevance)); c.appendChild(w); }
+    if (i.relevance) { const w = el("p", "why"); const b = el("b", null, "Einordnung: "); w.appendChild(b); w.appendChild(document.createTextNode(i.relevance)); c.appendChild(w); }
     const f = el("div", "foot");
     f.appendChild(el("span", "src", (i.source || "Quelle") + " · " + fmt(i.published || i.added)));
     const act = el("div", "tags");
