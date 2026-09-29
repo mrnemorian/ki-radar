@@ -1,15 +1,25 @@
 {
- "updated": "2026-09-29T22:11:14Z",
+ "updated": "2026-09-29T22:22:07Z",
+ "topics": [
+  "IT-Governance & Risiko",
+  "Cyber- & IT-Regulierung",
+  "Datenschutz & Datenrecht",
+  "AI-Governance",
+  "Standards & Zertifizierung",
+  "Prüfung & Assurance",
+  "Handel & Branche",
+  "Weitere Themen"
+ ],
  "briefings": [
   {
    "date": "2026-09-30",
-   "headline": "Datenabfluss beim Lieferdienst Flink und ein Drittanbieter-Leck im E-Commerce zeigen, wie verwundbar der Onlinehandel ist; neu gelten die CRA-Meldepflichten, und PCI SSC hat einen Leitfaden zu KI-Syst",
+   "headline": "Heute geht es um Angriffe über Dienstleister und automatisierte Angriffe auf Onlineshops, während die Datenschutzaufsicht ihre Bußgeldpraxis vereinheitlicht und das BSI die Umsetzung des CRA vorantreibt.",
    "points": [
-    "Flink: Angreifer kamen über kompromittierte Zugangsdaten an Kundendaten, Kunden werden Berichten zufolge erpresst",
-    "Cyber Resilience Act: Seit 11.09. müssen Hersteller aktiv ausgenutzte Schwachstellen über die ENISA-Plattform melden, Eigenmarken im Blick behalten",
-    "BigCommerce/Ribon: Ein gestohlener App-Schlüssel eines Drittanbieters legte Kundendaten vieler Onlineshops offen",
-    "PCI SSC: Neuer, unverbindlicher Leitfaden zu KI in Zahlungsumgebungen und KMO-Standard v1.0",
-    "Data Act: Seit 12.09. gilt „Access by Design“ für neu in Verkehr gebrachte vernetzte Produkte"
+    "Mit KI-Agenten automatisierte Angriffswelle auf Onlineshops: Mindestens 27 Unternehmen kompromittiert, Daten von 600.000 Kreditkarten abgeflossen",
+    "Carrefour France: Kundendaten über den Versand-Tracking-Dienstleister Shipup offengelegt, weitere französische Händler betroffen",
+    "EDPB führt ein Fünf-Schritte-Schema für die Entscheidung über DSGVO-Bußgelder ein, Konsultation bis 13.11.2026",
+    "Irische DPC verhängt 403 Mio. Euro gegen Google wegen Standortdaten",
+    "BSI: Erstes Zertifikat nach TR-03185 (sicherer Software-Lebenszyklus) und erweiterte Vereinbarung mit der DAkkS für CRA-Prüfstellen"
    ],
    "count": 6
   },
@@ -26,7 +36,56 @@
    "count": 9
   }
  ],
+ "signals": [
+  {
+   "theme": "Post-Quanten-Kryptografie-Migration",
+   "why": "Nach dem EU-Fahrplan sollen die Mitgliedstaaten bis Ende 2026 nationale PQC-Pläne vorlegen, hochriskante Systeme etwa in kritischen Infrastrukturen sollen bis spätestens 2030 umgestellt sein. Kryptoinventar und Abhängigkeiten, auch bei Zahlungsdienstleistern, werden damit zum Thema für Prüfung und Steuerung.",
+   "count": 1,
+   "first_seen": "2026-09-30",
+   "last_seen": "2026-09-30",
+   "evidence": [
+    "https://digital-strategy.ec.europa.eu/en/news/eu-reinforces-its-cybersecurity-post-quantum-cryptography"
+   ]
+  },
+  {
+   "theme": "Cloud-Souveränität und CADA",
+   "why": "Der Cloud and AI Development Act schlägt vier Sicherheitsstufen (Union Assurance Levels) und Risikoanalysen zur Souveränität von Cloud-Diensten vor. Das könnte künftig auch Anforderungen an die Cloud-Strategie privater Betreiber kritischer Infrastrukturen prägen.",
+   "count": 1,
+   "first_seen": "2026-09-30",
+   "last_seen": "2026-09-30",
+   "evidence": [
+    "https://netzpolitik.org/2026/cloud-and-ai-development-act-eu-kommission-greift-bei-us-cloud-anbietern-kaum-durch/"
+   ]
+  },
+  {
+   "theme": "Kriegsausschluss in Cyberversicherungen",
+   "why": "Versicherer übernehmen erweiterte Ausschlüsse für staatliche Cyberangriffe, sobald kritische Infrastruktur beeinträchtigt ist. Das ist gerade für KRITIS-relevante Händler ein Punkt bei der Versicherbarkeit und der Planung der Risikotragfähigkeit.",
+   "count": 1,
+   "first_seen": "2026-09-30",
+   "last_seen": "2026-09-30",
+   "evidence": [
+    "https://www.asscompact.de/nachrichten/cyberversicherung-stand-der-dinge-bei-den-kriegsklauseln"
+   ]
+  }
+ ],
  "news": [
+  {
+   "title": "Carrefour France: Kundendaten über Versand-Tracking-Dienstleister Shipup offengelegt",
+   "summary": "Carrefour hat Kundinnen und Kunden in Frankreich über einen Angriff auf den Dienstleister Shipup informiert, dessen Plattform die Sendungsverfolgung übernimmt. Betroffen sind Namen, E-Mail-Adressen und Telefonnummern. Passwörter und Bankdaten sind laut Carrefour nicht betroffen, die eigenen Systeme seien nicht kompromittiert worden. Shipup wird von über 700 Marken genutzt, auch Printemps und Aroma-Zone waren betroffen.",
+   "relevance": "Das zeigt ein typisches Konzentrationsrisiko: Kleine SaaS-Dienstleister in der Kundenkommunikation nach dem Kauf haben Zugriff auf große Mengen Kundendaten. Drittparteien-Inventar, Datenminimierung gegenüber solchen Diensten und Vorlagen für die Kundenkommunikation (Phishing-Warnung) gehören ins Risikomanagement.",
+   "source": "RetailDetail EU",
+   "url": "https://www.retaildetail.eu/news/food/data-breach-at-supplier-affects-carrefour-france/",
+   "id": "2026-09-29-carrefour-shipup-dienstleister-datenleck",
+   "topic": "IT-Governance & Risiko",
+   "impact": "mittel",
+   "published": "2026-09-29",
+   "tags": [
+    "Drittparteienrisiko",
+    "Wettbewerber",
+    "Datenleck"
+   ],
+   "added": "2026-09-29T22:22:07Z"
+  },
   {
    "title": "Lieferdienst Flink: Kundendaten über kompromittierte Zugangsdaten abgeflossen",
    "summary": "Flink hat am 25.09.2026 seine Kunden informiert: Eine unbefugte Person verschaffte sich mit kompromittierten Zugangsdaten Zugang zu internen Systemen. Betroffen sind unter anderem Name, E-Mail, Anschrift, Telefonnummer sowie möglicherweise Lieferhinweise und Bestelldetails; Passwörter und Zahlungsdaten sollen nicht betroffen sein. Flink hat die Datenschutzbehörden informiert und Anzeige erstattet; laut Berichten werden Kunden inzwischen erpresst.",
@@ -40,6 +99,39 @@
    "added": "2026-09-29T22:11:14Z"
   },
   {
+   "title": "CRA: BSI und DAkkS erweitern Zusammenarbeit bei der Akkreditierung von Prüfstellen",
+   "summary": "BSI und DAkkS haben ihre Verwaltungsvereinbarung erneuert und erweitert. Sie regelt, wie BSI-Fachleute an der Akkreditierung von Konformitätsbewertungsstellen für Cybersicherheit mitwirken, nun auch für den Cyber Resilience Act. Für bestimmte Produkte verlangt der CRA eine Prüfung durch Dritte. Die Stellen brauchen dafür eine DAkkS-Akkreditierung und anschließend eine Notifizierung durch das BSI. Die Produktanforderungen des CRA gelten ab Ende 2027.",
+   "relevance": "Die Prüfkapazitäten für den CRA werden gerade erst aufgebaut, das kann Lieferketten bei vernetzten Produkten (z. B. Kassen-, Scanner- und IoT-Hardware) verzögern. In der Beschaffung sollte man frühzeitig nach dem Stand der CRA-Konformität fragen.",
+   "source": "BSI",
+   "url": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Alle-Meldungen-News/Meldungen/2026/CRA-Konformitaet_BSI_DAkkS_260925.html",
+   "id": "2026-09-25-bsi-dakks-cra-pruefstellen",
+   "topic": "Cyber- & IT-Regulierung",
+   "impact": "info",
+   "published": "2026-09-25",
+   "tags": [
+    "Cyber Resilience Act",
+    "Akkreditierung"
+   ],
+   "added": "2026-09-29T22:22:07Z"
+  },
+  {
+   "title": "KI-Agenten greifen Hunderte Onlineshops an: 600.000 Kreditkartendaten erbeutet",
+   "summary": "Laut heise haben Angreifer vom 10. bis 15. September 2026 mit drei Open-Source-KI-Agenten (für Schwachstellensuche, Exploits und Steuerung) 105 Angriffsprojekte gegen Hunderte Onlinehändler gestartet. Mindestens 27 Unternehmen wurden kompromittiert, bei zwei davon wurden Daten von mindestens 600.000 gültigen Kreditkarten kopiert. Die Einbrüche dauerten oft nur Stunden. Aufgedeckt hat das Gambit Security. Anthropic und Cloudflare sperrten die zugehörigen Konten und Infrastruktur.",
+   "relevance": "Die Zeit zwischen Veröffentlichung einer Schwachstelle und ihrer Ausnutzung sinkt bei Shops mit Kartenzahlung deutlich. Patch-Management, Angriffsflächen-Management und Kontrollen nach PCI DSS 4.x (z. B. Schutz der Zahlungsseiten, Überwachung) sollten auf automatisierte Angreifer ausgelegt sein.",
+   "source": "heise online",
+   "url": "https://www.heise.de/en/news/Attack-with-AI-agents-on-hundreds-of-shops-600-000-credit-card-details-stolen-11464745.html",
+   "id": "2026-09-24-ki-agenten-angriff-onlineshops-kreditkarten",
+   "topic": "Handel & Branche",
+   "impact": "mittel",
+   "published": "2026-09-24",
+   "tags": [
+    "KI-Angriffe",
+    "PCI DSS",
+    "E-Commerce"
+   ],
+   "added": "2026-09-29T22:22:07Z"
+  },
+  {
    "title": "DSK zu Smart Glasses: KI-Gesichtserkennung im öffentlichen Raum unzulässig",
    "summary": "Auf ihrer Zwischenkonferenz am 23. September 2026 hat die Datenschutzkonferenz einen Prüfbericht der Hamburger Aufsicht zu Smart Glasses zur Kenntnis genommen. Danach ist KI-gestützte Gesichtserkennung im öffentlichen Raum unzulässig. Für KI-Training mit Daten Dritter fehlt in der Regel eine Rechtsgrundlage.",
    "relevance": "Das ist relevant für den Handel, etwa bei Pilotprojekten mit Wearables im Laden, in der Logistik oder im Kundenservice. Solche Vorhaben sollten eine Datenschutz-Folgenabschätzung durchlaufen, und Fragen des KI-Trainings sollten früh geklärt werden.",
@@ -50,6 +142,57 @@
    "impact": "info",
    "published": "2026-09-24",
    "added": "2026-09-29T22:03:17Z"
+  },
+  {
+   "title": "Irische DPC verhängt 403 Mio. Euro gegen Google wegen Standortdaten",
+   "summary": "Die irische Datenschutzbehörde hat Google mit 403 Mio. Euro belegt. Grund ist die Verarbeitung von Standortdaten in „Web- & App-Aktivitäten“, „Standortverlauf“ und „Standortgenauigkeit“. Festgestellt wurden Verstöße gegen Art. 5, 6, 12 und 13 DSGVO: fehlende Rechtsgrundlage, mangelnde Transparenz und zu lange Speicherung. Google muss die Verarbeitung binnen sechs Monaten rechtskonform gestalten. Das Verfahren ging auf Beschwerden von Verbraucherverbänden (u. a. BEUC) zurück.",
+   "relevance": "Standortdaten aus Liefer-, Kundenbindungs- und Reise-Apps sind ein Schwerpunkt der Aufsicht. Rechtsgrundlagen, Einwilligungstexte und Löschfristen für Standortfunktionen sollten regelmäßig überprüft werden.",
+   "source": "EDPB / Data Protection Commission",
+   "url": "https://www.edpb.europa.eu/news/the-irish-data-protection-commission-fines-google-403-000-000-eur-following-inquiry_en",
+   "id": "2026-09-23-dpc-google-403-mio-standortdaten",
+   "topic": "Datenschutz & Datenrecht",
+   "impact": "info",
+   "published": "2026-09-23",
+   "tags": [
+    "Standortdaten",
+    "Bußgeld",
+    "Transparenz"
+   ],
+   "added": "2026-09-29T22:22:07Z"
+  },
+  {
+   "title": "BSI vergibt erstes Zertifikat nach TR-03185 „Sicherer Software-Lebenszyklus“",
+   "summary": "Das BSI hat das erste Zertifikat nach der Technischen Richtlinie TR-03185 vergeben, an einen Softwarehersteller aus Karlsruhe. Die TR bewertet den gesamten Entwicklungsprozess des Herstellers, von den Anforderungen über Test und Auslieferung bis zum Schwachstellenmanagement. Teil 1 betrifft proprietäre Software, Teil 2 Open-Source-Entwicklung. Zertifizierte Hersteller sollen Updates für zertifizierte Produkte künftig einfacher bereitstellen können.",
+   "relevance": "Mit TR-03185 gibt es einen neuen Nachweis, den man bei Softwarelieferanten verlangen oder in Due-Diligence-Fragebögen berücksichtigen kann, gerade mit Blick auf die CRA-Pflichten der Hersteller. Für die eigene Softwareentwicklung taugt die Richtlinie als Referenzrahmen.",
+   "source": "BSI",
+   "url": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Alle-Meldungen-News/Meldungen/2026/Zertifzierung_TR-03185_260923.html",
+   "id": "2026-09-23-bsi-tr-03185-erstes-zertifikat",
+   "topic": "Standards & Zertifizierung",
+   "impact": "mittel",
+   "published": "2026-09-23",
+   "tags": [
+    "Secure SDLC",
+    "BSI",
+    "Lieferanten"
+   ],
+   "added": "2026-09-29T22:22:07Z"
+  },
+  {
+   "title": "EDPB vereinheitlicht die Entscheidung über DSGVO-Bußgelder: Konsultation bis 13. November",
+   "summary": "Der Europäische Datenschutzausschuss hat Leitlinien zur Verhängung von Geldbußen angenommen. Sie ersetzen die alten WP29-Leitlinien und legen ein Fünf-Schritte-Schema fest: Bußgeldfähigkeit, verantwortliche Partei, Vorsatz oder Fahrlässigkeit, erschwerende und mildernde Umstände, Wirksamkeit und Verhältnismäßigkeit. Bei geringfügigen Verstößen kann statt eines Bußgelds eine Verwarnung genügen. Zusätzlich hat der EDPB die endgültigen Leitlinien zum Zusammenspiel von DSA und DSGVO verabschiedet.",
+   "relevance": "Die Leitlinien zeigen, welche Umstände Aufsichtsbehörden als mildernd werten, etwa nachweisbare Rechenschaft und Zusammenarbeit. Das hilft, Datenschutzkontrollen und Dokumentation zu priorisieren. Eine Stellungnahme, z. B. über Verbände, ist bis 13.11.2026 möglich.",
+   "source": "EDPB",
+   "url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en",
+   "id": "2026-09-21-edpb-leitlinien-bussgeldverhaengung",
+   "topic": "Datenschutz & Datenrecht",
+   "impact": "mittel",
+   "published": "2026-09-21",
+   "tags": [
+    "DSGVO-Bußgelder",
+    "EDPB",
+    "Konsultation"
+   ],
+   "added": "2026-09-29T22:22:07Z"
   },
   {
    "title": "BSI schreibt Projekt PRAKI aus: Prüfanforderungen für agentische KI",
