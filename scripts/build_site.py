@@ -14,6 +14,7 @@ import shutil
 import subprocess
 import urllib.request
 from xml.sax.saxutils import escape
+from zoneinfo import ZoneInfo
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 OUT = ROOT / "_site"
@@ -113,13 +114,14 @@ def main():
     data = json.loads((ROOT / "data.json").read_text(encoding="utf-8"))
     headlines = {b["date"]: b for b in data.get("briefings", [])}
     scripts = sorted((ROOT / "episodes").glob("*.txt"), reverse=True)[:KEEP]
-    episodes = []
+    episodes, synthesized = [], []
     for txt in scripts:
         date = txt.stem
         mp3 = OUT / "audio" / f"{date}.mp3"
         if not fetch_existing(date, mp3):
             print(f"Synthetisiere Folge {date}")
             synthesize(txt, mp3)
+            synthesized.append(date)
         else:
             print(f"Folge {date} vom Live-Stand übernommen")
         b = headlines.get(date, {})
@@ -138,6 +140,18 @@ def main():
         [{"date": e["date"], "title": e["title"], "seconds": int(e["seconds"]),
           "url": f"audio/{e['date']}.mp3"} for e in episodes], ensure_ascii=False), encoding="utf-8")
     print(f"{len(episodes)} Folgen im Feed")
+
+    # Tell the workflow which episode is new today, so Telegram gets it exactly once.
+    today = dt.datetime.now(ZoneInfo("Europe/Berlin")).date().isoformat()
+    newest = episodes[0] if episodes else None
+    if newest and newest["date"] in synthesized and newest["date"] >= (
+            dt.date.fromisoformat(today) - dt.timedelta(days=1)).isoformat():
+        caption = f"🎧 {newest['title']}\n\nQuellen und alle Meldungen: {SITE_URL}/"
+        (ROOT / "telegram_caption.txt").write_text(caption[:1000], encoding="utf-8")
+        if os.environ.get("GITHUB_OUTPUT"):
+            with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as f:
+                f.write(f"new_episode={newest['date']}\n")
+        print(f"Neue Folge für Telegram: {newest['date']}")
 
 
 if __name__ == "__main__":
