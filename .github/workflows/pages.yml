@@ -1,0 +1,67 @@
+name: Seite und Podcast bauen
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      SITE_URL: https://mrnemorian.github.io/ki-radar
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Stimme aus dem Cache laden
+        id: voice-cache
+        uses: actions/cache@v4
+        with:
+          path: voices
+          key: piper-de_DE-thorsten-high-v1
+
+      - name: Stimme herunterladen
+        if: steps.voice-cache.outputs.cache-hit != 'true'
+        run: |
+          mkdir -p voices
+          base=https://huggingface.co/rhasspy/piper-voices/resolve/main/de/de_DE/thorsten/high
+          curl -fsSL -o voices/de_DE-thorsten-high.onnx "$base/de_DE-thorsten-high.onnx"
+          curl -fsSL -o voices/de_DE-thorsten-high.onnx.json "$base/de_DE-thorsten-high.onnx.json"
+
+      - name: Werkzeuge installieren
+        run: |
+          pip install --quiet piper-tts pillow
+          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core >/dev/null
+
+      - name: Seite, Folgen und Feed bauen
+        run: python scripts/build_site.py
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

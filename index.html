@@ -72,6 +72,12 @@ h1 { font-family: var(--font-display); font-size: 30px; line-height: 1.1; margin
 .foot .src { font-family: var(--font-mono); font-size: 12px; }
 .foot a { color: var(--accent); font-weight: 600; text-decoration: none; }
 .mark { background: none; border: 1px solid var(--line); color: var(--muted); border-radius: 8px; padding: 4px 10px; font: 500 12px var(--font-body); cursor: pointer; }
+.pod { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; display: flex; flex-direction: column; gap: 10px; }
+.pod h2 { font-family: var(--font-display); font-size: 19px; margin: 0; }
+.pod audio { width: 100%; }
+.pod .ep { font-size: 14px; margin: 0; }
+.pod .sub { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; font-size: 13px; color: var(--muted); }
+.pod code { font-family: var(--font-mono); font-size: 12px; background: var(--bg); border: 1px solid var(--line); border-radius: 6px; padding: 3px 6px; overflow-wrap: anywhere; }
 .signals { display: flex; flex-direction: column; gap: 10px; }
 .signals h2 { font-family: var(--font-display); font-size: 19px; margin: 0; }
 .signals .hint { color: var(--muted); font-size: 13px; margin: 0; }
@@ -94,6 +100,13 @@ h1 { font-family: var(--font-display); font-size: 30px; line-height: 1.1; margin
     <h1>IT-GRC Radar</h1>
     <span class="meta" id="updated">Wird geladen …</span>
   </header>
+
+  <section class="pod" id="pod" hidden>
+    <h2>Podcast des Tages</h2>
+    <audio id="audio" controls preload="none"></audio>
+    <p class="ep" id="eptitle"></p>
+    <div class="sub">Abonnieren in der Podcast-App: <code id="feedurl"></code> <button class="mark" id="copyfeed" type="button">Kopieren</button></div>
+  </section>
 
   <section class="brief" id="brief" aria-live="polite">
     <span class="date">Tages-Briefing</span>
@@ -200,6 +213,22 @@ function renderBrief(b) {
 $("unread").checked = onlyUnread;
 $("unread").addEventListener("change", e => { onlyUnread = e.target.checked; try { localStorage.setItem("radar-unread", onlyUnread ? "1" : "0"); } catch (x) {} renderList(); });
 renderChips(); renderList();
+
+fetch("episodes.json?v=" + Date.now(), { cache: "no-store" }).then(r => r.ok ? r.json() : []).then(eps => {
+  if (!eps.length) return;
+  const e = eps[0];
+  $("audio").src = e.url;
+  const m = Math.floor(e.seconds / 60), s = String(e.seconds % 60).padStart(2, "0");
+  $("eptitle").textContent = e.title + " · " + m + ":" + s + " Min.";
+  const feed = new URL("podcast.xml", location.href).href;
+  $("feedurl").textContent = feed;
+  $("copyfeed").addEventListener("click", () => {
+    navigator.clipboard.writeText(feed).then(() => { $("copyfeed").textContent = "Kopiert"; }).catch(() => {
+      const r = document.createRange(); r.selectNodeContents($("feedurl")); const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r);
+    });
+  });
+  $("pod").hidden = false;
+}).catch(() => {});
 
 fetch("data.json?v=" + Date.now(), { cache: "no-store" }).then(r => r.json()).then(d => {
   items = (d.news || []).map(n => Object.assign({}, n));
