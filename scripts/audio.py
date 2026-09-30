@@ -143,12 +143,16 @@ def render_episode(episode_file, out_mp3, piper_voice):
     speech, intro, outro = (work / f"{out_mp3.stem}.{n}.wav" for n in ("speech", "intro", "outro"))
     turns = load_turns(episode_file)
     key, region = os.environ.get("AZURE_SPEECH_KEY"), os.environ.get("AZURE_SPEECH_REGION")
+    engine = None
     if key and region:
         print("Sprachsynthese: Azure (zwei Stimmen)")
-        azure_speech(turns, speech, key, region.strip().lower())
-        engine = "Azure"
-    else:
-        print("Sprachsynthese: Piper (Rückfallebene, keine Azure-Secrets gesetzt)")
+        try:
+            azure_speech(turns, speech, key, region.strip().lower())
+            engine = "Azure"
+        except Exception as e:  # keep the podcast alive, but make the failure visible
+            print(f"::warning::Azure-Sprachsynthese fehlgeschlagen, nutze Piper: {e}")
+    if engine is None:
+        print("Sprachsynthese: Piper (Rückfallebene)")
         piper_speech(turns, speech, piper_voice)
         engine = "Piper"
     jingle(intro, INTRO, 3.2)

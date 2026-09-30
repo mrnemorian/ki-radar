@@ -47,10 +47,10 @@ def script_hash(path):
 
 
 def live_hashes():
-    """Script hashes of the episodes currently published (date -> hash)."""
+    """Episodes currently published (date -> entry with hash and voice)."""
     try:
         with urllib.request.urlopen(f"{SITE_URL}/episodes.json", timeout=30) as r:
-            return {e["date"]: e.get("hash") for e in json.load(r)}
+            return {e["date"]: e for e in json.load(r)}
     except Exception:
         return {}
 
@@ -134,9 +134,11 @@ def main():
         digest = script_hash(txt)
         mp3 = OUT / "audio" / f"{date}.mp3"
         # Reuse published audio only if it was made from exactly this script.
-        if published.get(date) != digest or not fetch_existing(date, mp3):
+        live = published.get(date) or {}
+        engine = live.get("voice", "Piper")
+        if live.get("hash") != digest or not fetch_existing(date, mp3):
             print(f"Synthetisiere Folge {date} (Skript {digest})")
-            audio.render_episode(txt, mp3, VOICE)
+            engine = audio.render_episode(txt, mp3, VOICE)
             synthesized.append(date)
         else:
             print(f"Folge {date} vom Live-Stand übernommen")
@@ -145,6 +147,7 @@ def main():
         episodes.append({
             "date": date,
             "hash": digest,
+            "voice": engine,
             "title": shorten(f"{day.strftime('%d.%m.%Y')}: {b.get('headline', 'IT-GRC Radar')}", 240),
             "description": " · ".join(b.get("points", [])) or "Tägliches IT-GRC Radar",
             "pubdate": email.utils.format_datetime(dt.datetime(day.year, day.month, day.day, 7, 15,
@@ -154,7 +157,7 @@ def main():
         })
     (OUT / "podcast.xml").write_text(rss(episodes), encoding="utf-8")
     (OUT / "episodes.json").write_text(json.dumps(
-        [{"date": e["date"], "hash": e["hash"], "title": e["title"], "seconds": int(e["seconds"]),
+        [{"date": e["date"], "hash": e["hash"], "voice": e["voice"], "title": e["title"], "seconds": int(e["seconds"]),
           "url": f"audio/{e['date']}.mp3?v={e['hash']}"} for e in episodes], ensure_ascii=False), encoding="utf-8")
     print(f"{len(episodes)} Folgen im Feed")
 
