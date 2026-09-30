@@ -231,7 +231,11 @@ fetch("episodes.json?v=" + Date.now(), { cache: "no-store" }).then(r => r.ok ? r
 }).catch(() => {});
 
 fetch("data.json?v=" + Date.now(), { cache: "no-store" }).then(r => r.json()).then(d => {
-  items = (d.news || []).map(n => Object.assign({}, n));
+  // Newest run first; within a run, IT-GRC priority (1 = most important) first.
+  items = (d.news || []).map(n => Object.assign({}, n)).sort((a, b) =>
+    (b.added || "").slice(0, 10).localeCompare((a.added || "").slice(0, 10)) ||
+    (a.priority || 5) - (b.priority || 5) ||
+    (b.published || "").localeCompare(a.published || ""));
   $("updated").textContent = d.updated ? "Zuletzt aktualisiert: " + new Date(d.updated).toLocaleString("de-DE", { dateStyle: "medium", timeStyle: "short" }) : "Noch keine Meldungen";
   if (d.briefings && d.briefings.length) renderBrief(d.briefings[0]);
   const extra = [...new Set(items.map(i => i.topic).filter(t => t && !(d.topics || TOPICS).includes(t)))];

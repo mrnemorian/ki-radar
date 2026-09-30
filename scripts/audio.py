@@ -77,16 +77,37 @@ def load_turns(path):
     return [(HOSTS[1], path.read_text(encoding="utf-8"))]
 
 
+BRAND = re.compile(r"IT-GRC(?: Radar)?")
+
+
+def _mark_brand(text):
+    """Speak 'IT-GRC Radar' fully in English, with IT-GRC spelled letter by letter."""
+    out, pos = [], 0
+    for m in EN_TAG.finditer(text):  # leave already-marked English untouched
+        out.append(BRAND.sub(lambda b: f"[en]{b.group(0)}[/en]", text[pos:m.start()]))
+        out.append(m.group(0))
+        pos = m.end()
+    out.append(BRAND.sub(lambda b: f"[en]{b.group(0)}[/en]", text[pos:]))
+    return "".join(out)
+
+
+def _english(fragment, rate):
+    spoken = escape(fragment).replace(
+        "IT-GRC", '<say-as interpret-as="characters">ITGRC</say-as>')
+    return f'<lang xml:lang="en-US"><prosody rate="{rate}">{spoken}</prosody></lang>'
+
+
 def _ssml(turns):
     """One <voice> per turn; English terms become <lang> children of <voice>, and every
     text segment carries its own <prosody> so no element is nested inside <prosody>."""
     body = []
     for host, text in turns:
         rate, segments, pos = AZURE_RATES[host], [], 0
+        text = _mark_brand(text)
         for m in EN_TAG.finditer(text):
             if m.start() > pos:
                 segments.append(f'<prosody rate="{rate}">{escape(text[pos:m.start()])}</prosody>')
-            segments.append(f'<lang xml:lang="en-US"><prosody rate="{rate}">{escape(m.group(1))}</prosody></lang>')
+            segments.append(_english(m.group(1), rate))
             pos = m.end()
         if pos < len(text):
             segments.append(f'<prosody rate="{rate}">{escape(text[pos:])}</prosody>')
