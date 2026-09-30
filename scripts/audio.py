@@ -78,11 +78,19 @@ def load_turns(path):
 
 
 def _ssml(turns):
+    """One <voice> per turn; English terms become <lang> children of <voice>, and every
+    text segment carries its own <prosody> so no element is nested inside <prosody>."""
     body = []
     for host, text in turns:
-        spoken = EN_TAG.sub(lambda m: f'<lang xml:lang="en-US">{m.group(1)}</lang>', escape(text))
-        body.append(f'<voice name="{AZURE_VOICES[host]}"><prosody rate="{AZURE_RATES[host]}">'
-                    f'{spoken}</prosody><break time="300ms"/></voice>')
+        rate, segments, pos = AZURE_RATES[host], [], 0
+        for m in EN_TAG.finditer(text):
+            if m.start() > pos:
+                segments.append(f'<prosody rate="{rate}">{escape(text[pos:m.start()])}</prosody>')
+            segments.append(f'<lang xml:lang="en-US"><prosody rate="{rate}">{escape(m.group(1))}</prosody></lang>')
+            pos = m.end()
+        if pos < len(text):
+            segments.append(f'<prosody rate="{rate}">{escape(text[pos:])}</prosody>')
+        body.append(f'<voice name="{AZURE_VOICES[host]}">{"".join(segments)}<break time="300ms"/></voice>')
     return ('<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" '
             'xmlns:mstts="https://www.w3.org/2001/mstts" xml:lang="de-DE">' + "".join(body) + "</speak>")
 
