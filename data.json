@@ -111,6 +111,17 @@
    "checked": true
   },
   {
+   "date": "2027-01-01",
+   "title": "Österreich: Registrierung im Unternehmensserviceportal abgeschlossen",
+   "detail": "Betroffene Einrichtungen registrieren sich über die Anwendung NIS2 Services im Unternehmensserviceportal; die Behördenquelle nennt „bis zum 1. Jänner 2027“.",
+   "scope": "AT",
+   "url": "https://www.usp.gv.at/aktuelles/newsliste/NIS-2.html",
+   "primary": true,
+   "checked": true,
+   "dossier": "nis2-umsetzung",
+   "added": "2026-09-30"
+  },
+  {
    "date": "2027-09-30",
    "title": "Österreich: Selbstdeklaration zu Risikomanagementmaßnahmen fällig",
    "detail": "Wesentliche und wichtige Einrichtungen nach dem Netz- und Informationssystemsicherheitsgesetz 2026 müssen einmalig eine Selbstdeklaration zu ihren umgesetzten Risikomanagementmaßnahmen beim Bundesamt für Cybersicherheit einreichen.",
