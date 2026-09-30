@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-30T05:05:06Z",
+ "updated": "2026-09-30T09:04:28Z",
  "topics": [
   "IT-Governance & Risiko",
   "Cyber- & IT-Regulierung",
@@ -13,13 +13,12 @@
  "briefings": [
   {
    "date": "2026-09-30",
-   "headline": "Österreich startet morgen mit seinem neuen Cybersicherheitsgesetz, bei der Hotelbuchungssoftware iHotelier sind Reservierungsdaten abgeflossen und die Datenschutzreform stockt.",
+   "headline": "Angriffe auf SharePoint-Server, Phishing mit echten Hotelbuchungsdaten und neue Signale der Europäischen Union zu Urheberrecht, Künstlicher Intelligenz und Cloud-Souveränität",
    "points": [
-    "Österreich: Das Netz- und Informationssystemsicherheitsgesetz 2026 gilt ab 1. Oktober, die Registrierung läuft bis 31. Dezember",
-    "Amadeus iHotelier: Angreifer greifen über eine Programmierschnittstelle Buchungsdaten ab, darunter bei der Hotelgruppe Maritim. Danach folgt Phishing über WhatsApp",
-    "Interne Revision: Die Themenanforderung des Institute of Internal Auditors zu Drittparteien ist seit 15. September verbindlich",
-    "Roundcube-Webmail: Eine Schwachstelle wird aktiv ausgenutzt, rund 16.000 erreichbare Instanzen stehen in Deutschland",
-    "Digital Omnibus: Der Rat der Europäischen Union hat noch kein Mandat für die Reform der Datenschutz-Grundverordnung"
+    "Microsoft SharePoint: Schwachstelle CVE-2026-65660 in lokal betriebenen Servern wird aktiv angegriffen, der Patch ist seit August verfügbar",
+    "Buchungsdienstleister HotelNetSolutions: Über eine Schnittstelle abgeflossene Gästedaten werden für gezieltes Phishing genutzt",
+    "Europäische Kommission startet Konsultation zu Urheberrecht und Künstlicher Intelligenz, Frist 3. November",
+    "Europäischer Wirtschafts- und Sozialausschuss fordert Nachbesserungen am Cloud and AI Development Act"
    ],
    "count": 4
   },
@@ -39,11 +38,12 @@
  "signals": [
   {
    "theme": "Post-Quanten-Kryptografie-Migration",
-   "why": "Nach dem Fahrplan der Europäischen Union sollen bis Ende 2026 die ersten Schritte wie Kryptografie-Inventare beginnen. Systeme mit hohem Risiko, auch in kritischen Sektoren, sollen bis Ende 2030 umgestellt sein.",
+   "why": "Nach dem Fahrplan der Europäischen Union sollen die Mitgliedstaaten bis Ende 2026 erste nationale Übergangspläne vorlegen; Anforderungen an Kryptografie-Inventare dürften danach auch bei Unternehmen und Lieferanten ankommen.",
    "count": 1,
    "first_seen": "2026-09-30",
    "last_seen": "2026-09-30",
    "evidence": [
+    "https://www.ncsc.gov.uk/guidance/pqc-migration-timelines",
     "https://digital-strategy.ec.europa.eu/en/policies/post-quantum-cryptography",
     "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Informationen-und-Empfehlungen/Quantentechnologien-und-Post-Quanten-Kryptografie/quantentechnologien-und-quantensichere-kryptografie_node.html",
     "https://digital-strategy.ec.europa.eu/en/news/eu-reinforces-its-cybersecurity-post-quantum-cryptography"
@@ -51,11 +51,12 @@
   },
   {
    "theme": "Cloud-Souveränität und Cloud and AI Development Act",
-   "why": "Der Entwurf der Kommission sieht vier Stufen für die Souveränität von Cloud-Diensten mit Prüfung durch Dritte vor. Verbände fordern längere Übergangsfristen. Das könnte Kriterien für die Auswahl von Cloud-Anbietern und Anforderungen an Nachweise prägen.",
+   "why": "Mit der Stellungnahme des Wirtschafts- und Sozialausschusses geht das Verfahren weiter; Anforderungen an Cloud-Anbieter und öffentliche Förderung könnten Anbieterlandschaft und Exit-Strategien verändern.",
    "count": 1,
    "first_seen": "2026-09-30",
    "last_seen": "2026-09-30",
    "evidence": [
+    "https://www.eesc.europa.eu/en/our-work/opinions-information-reports/opinions/cloud-and-ai-development-act",
     "https://www.datenschutzticker.de/2026/09/cada-europas-cloud-und-ki-infrastruktur-im-fokus/",
     "https://netzpolitik.org/2026/cloud-and-ai-development-act-eu-kommission-greift-bei-us-cloud-anbietern-kaum-durch/"
    ]
@@ -82,16 +83,34 @@
   },
   {
    "theme": "Rechtsverordnung zum Dachgesetz Kritische Infrastrukturen",
-   "why": "Laut Bundesamt für Bevölkerungsschutz und Katastrophenhilfe besteht noch keine Registrierungspflicht nach dem Dachgesetz zum Schutz kritischer Infrastrukturen, weil die Rechtsverordnung fehlt. Sobald sie verkündet ist, laufen die Fristen für Registrierung, Risikoanalyse und Resilienzplan. Das betrifft auch die Lebensmittelversorgung.",
+   "why": "Die Verordnung zur Bestimmung kritischer Anlagen liegt seit Mai nur als Referentenentwurf vor; erst sie legt fest, welche Anlagen der Lebensmittelversorgung unter die Pflichten zur physischen Resilienz fallen.",
    "count": 1,
    "first_seen": "2026-09-30",
    "last_seen": "2026-09-30",
    "evidence": [
+    "https://ag.kritis.info/2026/05/28/referentenentwurf-des-bmi-verordnung-zur-bestimmung-kritischer-anlagen-nach-dem-kritis-dachgesetz-kritisverordnung-kritisv/",
     "https://christopher-helm.com/kritis-dachgesetz-registrierungsfrist-gestrichen/"
    ]
   }
  ],
  "news": [
+  {
+   "title": "Europäische Kommission startet Konsultation zu Urheberrecht und Künstlicher Intelligenz",
+   "summary": "Die Europäische Kommission hat am 29. September eine Konsultation dazu gestartet, wie Urheberrechte besser gegen technologische Entwicklungen, insbesondere Künstliche Intelligenz, geschützt werden können. Themen sind unter anderem die Nutzung urheberrechtlich geschützter Inhalte in Systemen Künstlicher Intelligenz und die Bekämpfung von Online-Piraterie; die Frist endet am 3. November. Für das erste Quartal 2027 plant die Kommission eine Strategie für Künstliche Intelligenz im Kultur- und Kreativsektor.",
+   "relevance": "Wer generative Künstliche Intelligenz für Marketing, Produkttexte oder Werbebilder einsetzt, sollte mögliche neue Pflichten zu Trainingsdaten und Rechteklärung beobachten. Das betrifft Lieferantenverträge mit Anbietern Künstlicher Intelligenz und die Freigabeprozesse für erzeugte Inhalte.",
+   "source": "Agence Europe",
+   "url": "https://agenceurope.eu/en/bulletin/article/13948/16/european-commission-launches-consultation-on-better-protecting-copyright-against-ai-developments",
+   "id": "2026-09-29-konsultation-urheberrecht-kuenstliche-intelligenz",
+   "topic": "AI-Governance",
+   "impact": "info",
+   "published": "2026-09-29",
+   "tags": [
+    "Urheberrecht",
+    "Generative Künstliche Intelligenz",
+    "Konsultation"
+   ],
+   "added": "2026-09-30T09:04:28Z"
+  },
   {
    "title": "Österreichischer Reiseverband veröffentlicht Cybersicherheits-Leitfaden für Reisebüros",
    "summary": "Der Österreichische Reiseverband hat am 29. September gemeinsam mit der Österreichischen Hoteliervereinigung und dem Sicherheitsberatungsunternehmen SEC Consult einen Leitfaden zur Cybersicherheit für Reiseunternehmen vorgestellt. Er begründet die besondere Gefährdung der Branche mit Kunden-, Zahlungs- und Buchungsdaten sowie vielen externen Partnern. Empfohlen wird ein stufenweises Vorgehen mit Mehr-Faktor-Authentifizierung, Updates, restriktiven Berechtigungen, Netzsegmentierung und Datensicherungen. Zudem warnt der Leitfaden vor Phishing, das mit Künstlicher Intelligenz erstellt wird und sprachlich fehlerfrei ist.",
@@ -127,6 +146,23 @@
    "added": "2026-09-29T22:22:07Z"
   },
   {
+   "title": "Microsoft SharePoint: Schwachstelle CVE-2026-65660 wird aktiv ausgenutzt",
+   "summary": "Angreifer nutzen eine im August gepatchte Schwachstelle in lokal betriebenen Installationen von SharePoint Enterprise Server 2016, SharePoint Server 2019 und SharePoint Server Subscription Edition aus. Angemeldete Angreifer können über manipulierte Anfragen Schadcode einschleusen (Schweregrad 8,8 von 10). Die Cybersicherheitsbehörde der Vereinigten Staaten hat die Lücke in ihren Katalog aktiv ausgenutzter Schwachstellen aufgenommen; Microsoft hatte die Ausnutzungswahrscheinlichkeit zunächst niedrig eingestuft.",
+   "relevance": "Lokale SharePoint-Server enthalten in großen Konzernen oft Projekt-, Personal- und Vertragsdokumente. Das Patch-Management und die Nachverfolgung von Ausnahmen gehören zu den allgemeinen IT-Kontrollen und sind hier kurzfristig zu belegen, zumal die Hersteller-Einstufung sich als zu optimistisch erwiesen hat.",
+   "source": "heise online",
+   "url": "https://www.heise.de/news/Angriffe-auf-Microsoft-SharePoint-Schwachstelle-11468081.html",
+   "id": "2026-09-28-sharepoint-cve-2026-65660-angriffe",
+   "topic": "Weitere Themen",
+   "impact": "hoch",
+   "published": "2026-09-28",
+   "tags": [
+    "Patch-Management",
+    "Schwachstellen",
+    "Bedrohungslage"
+   ],
+   "added": "2026-09-30T09:04:28Z"
+  },
+  {
    "title": "Citrix NetScaler: Zwei kritische Zero-Day-Schwachstellen werden aktiv ausgenutzt",
    "summary": "Citrix bestätigt, dass zwei Schwachstellen in den Produkten NetScaler ADC und NetScaler Gateway für Anwendungsbereitstellung und Fernzugriff bei mehreren Kunden weltweit ausgenutzt werden. Sie tragen die Schwachstellen-Kennungen CVE-2026-88771 und CVE-2026-88772 und haben einen Schweregrad von 9.5 nach dem Common Vulnerability Scoring System, der gängigen Bewertungsskala für Schwachstellen. Die erste Lücke erlaubt ohne Anmeldung und ohne besondere Konfiguration das Ausführen von Befehlen aus der Ferne. Sicherheitsupdates für die Versionen 14.1 und 13.1 gibt es seit dem 27. September. Nationale Cybersicherheitsbehörden hatten Betreiber vorab gewarnt.",
    "relevance": "Geräte für Fernzugriff und Lastverteilung sind typische Einfallstore in Filial-, Logistik- und Buchungsnetze. Deshalb sollten Nachweise über eingespielte Sicherheitsupdates und eine Kompromittierungsprüfung jetzt dokumentiert werden. Bei einer Ausnutzung kann eine Meldepflicht nach der NIS-2-Richtlinie (Richtlinie über Netz- und Informationssicherheit) greifen.",
@@ -154,6 +190,23 @@
    "impact": "hoch",
    "published": "2026-09-26",
    "added": "2026-09-29T22:11:14Z"
+  },
+  {
+   "title": "Phishing mit echten Hotelbuchungsdaten: Schnittstellenlücke bei HotelNetSolutions",
+   "summary": "Über eine Sicherheitslücke in einer Schnittstelle zwischen HotelControl und angebundenen Hotelsystemen konnten Kriminelle Buchungsdaten abgreifen: Namen, E-Mail-Adressen, Telefonnummern, Hotel, Buchungsnummer, Reisedaten und Buchungsbetrag. Die Buchungsplattform OnePageBooking wird von über 2.500 Hotels und Hotelgruppen genutzt; betroffen ist der Zeitraum Januar bis 13. September 2026. Mit den Daten wurden bereits glaubwürdige Zahlungsaufforderungen verschickt, durch die Gäste Geld verloren haben.",
+   "relevance": "Für Touristikanbieter zeigt der Fall, dass Schnittstellen von Hotel- und Buchungsdienstleistern Teil der eigenen Angriffsfläche sind und Kunden über echte Buchungsdetails getäuscht werden. Drittparteien-Bewertung, Anforderungen an Schnittstellen-Sicherheit und abgestimmte Kundenwarnungen gehören in die Vertrags- und Notfallplanung.",
+   "source": "heise online",
+   "url": "https://www.heise.de/news/Phishing-Angriffe-mit-echten-Hotel-Buchungsdaten-11466446.html",
+   "id": "2026-09-25-hotelnetsolutions-phishing-buchungsdaten",
+   "topic": "Handel & Branche",
+   "impact": "mittel",
+   "published": "2026-09-25",
+   "tags": [
+    "Touristik",
+    "Drittparteienrisiko",
+    "Phishing"
+   ],
+   "added": "2026-09-30T09:04:28Z"
   },
   {
    "title": "Amadeus iHotelier: Reservierungsdaten von Hotelgästen über Drittanbieter abgeflossen",
@@ -248,6 +301,22 @@
    "impact": "info",
    "published": "2026-09-24",
    "added": "2026-09-29T22:03:17Z"
+  },
+  {
+   "title": "Europäischer Wirtschafts- und Sozialausschuss fordert Änderungen am Cloud and AI Development Act",
+   "summary": "Der Europäische Wirtschafts- und Sozialausschuss hat am 23. September mit 212 zu 0 Stimmen bei 3 Enthaltungen seine Stellungnahme zum Cloud and AI Development Act verabschiedet. Er unterstützt das Ziel, das europäische Cloud-Ökosystem und das Ökosystem für Künstliche Intelligenz zu stärken und die Abhängigkeit von außereuropäischen Anbietern zu verringern. Änderungen verlangt er bei der Finanzierung und Umsetzung des Infrastrukturausbaus, etwa als geschützte Priorität im nächsten mehrjährigen Finanzrahmen.",
+   "relevance": "Die Verordnung ist ein Baustein der europäischen Souveränitätspolitik und kann Cloud-Strategie, Anbieterauswahl und Ausstiegsplanung großer Konzerne beeinflussen. Für die Steuerung von Drittparteien- und Konzentrationsrisiken lohnt es sich, das Gesetzgebungsverfahren zu verfolgen.",
+   "source": "Europäischer Wirtschafts- und Sozialausschuss",
+   "url": "https://www.eesc.europa.eu/en/our-work/opinions-information-reports/opinions/cloud-and-ai-development-act",
+   "id": "2026-09-23-ewsa-stellungnahme-cloud-and-ai-development-act",
+   "topic": "IT-Governance & Risiko",
+   "impact": "info",
+   "published": "2026-09-23",
+   "tags": [
+    "Cloud-Souveränität",
+    "Gesetzgebung"
+   ],
+   "added": "2026-09-30T09:04:28Z"
   },
   {
    "title": "Kabinett: Digitaler Beleg ersetzt Papierbon ab 2028, elektronische Kassen werden Pflicht",
