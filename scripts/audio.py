@@ -18,9 +18,9 @@ AZURE_VOICES = {
     "Seraphina": os.environ.get("AZURE_VOICE_A", "de-DE-SeraphinaMultilingualNeural"),
     "Florian": os.environ.get("AZURE_VOICE_B", "de-DE-FlorianMultilingualNeural"),
 }
-# Speaking rate per host (SSML prosody); Seraphina was perceived as slightly slow.
-AZURE_RATES = {"Seraphina": os.environ.get("AZURE_RATE_A", "+15%"),
-               "Florian": os.environ.get("AZURE_RATE_B", "+0%")}
+# Speaking rate per host (SSML prosody), tuned by listener feedback.
+AZURE_RATES = {"Seraphina": os.environ.get("AZURE_RATE_A", "+20%"),
+               "Florian": os.environ.get("AZURE_RATE_B", "+10%")}
 EN_TAG = re.compile(r"\[en\](.+?)\[/en\]", re.S)
 
 
