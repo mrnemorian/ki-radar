@@ -82,28 +82,43 @@ def cover(path):
     img.save(path, "PNG")
 
 
+def fetch_json(url):
+    try:
+        with urllib.request.urlopen(url, timeout=30) as r:
+            return json.load(r)
+    except Exception:
+        return None
+
+
+def mmss(seconds):
+    return f"{int(seconds) // 60}:{int(seconds) % 60:02d}"
+
+
 def rss(episodes):
     items = []
     for e in episodes:
         items.append(f"""  <item>
    <title>{escape(e['title'])}</title>
    <description>{escape(e['description'])}</description>
+   <link>{SITE_URL}/episode.html?d={e['date']}</link>
    <pubDate>{e['pubdate']}</pubDate>
    <guid isPermaLink="false">it-grc-radar-{e['date']}-{e['hash']}</guid>
    <enclosure url="{SITE_URL}/audio/{e['date']}.mp3?v={e['hash']}" length="{e['size']}" type="audio/mpeg"/>
    <itunes:duration>{int(e['seconds'])}</itunes:duration>
    <itunes:explicit>false</itunes:explicit>
+   <podcast:chapters url="{SITE_URL}/chapters/{e['date']}.json" type="application/json+chapters"/>
+   <podcast:transcript url="{SITE_URL}/episode.html?d={e['date']}" type="text/html"/>
   </item>""")
     return f"""<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:podcast="https://podcastindex.org/namespace/1.0">
  <channel>
   <title>IT-GRC Radar</title>
   <link>{SITE_URL}/</link>
   <atom:link href="{SITE_URL}/podcast.xml" rel="self" type="application/rss+xml"/>
   <language>de-de</language>
-  <description>Täglich 3–5 Minuten IT-Governance, IT-Compliance und AI-Governance – automatisch recherchiert und gesprochen mit Künstlicher Intelligenz (Claude, Azure-Stimmen). Keine Rechtsberatung; im Zweifel die Quellen auf der Webseite lesen.</description>
+  <description>Täglich IT-Governance, IT-Compliance und AI-Governance aus Sicht von IT-GRC in einem großen Handels- und Touristikkonzern – freitags mit Tiefgang. Automatisch recherchiert und gesprochen mit Künstlicher Intelligenz (Claude, Azure-Stimmen). Keine Rechtsberatung; im Zweifel die Quellen auf der Webseite lesen.</description>
   <itunes:author>IT-GRC Radar</itunes:author>
-  <itunes:summary>Täglich 3–5 Minuten IT-Governance, IT-Compliance und AI-Governance, mit Künstlicher Intelligenz erstellt.</itunes:summary>
+  <itunes:summary>Täglich IT-Governance, IT-Compliance und AI-Governance, mit Künstlicher Intelligenz erstellt.</itunes:summary>
   <itunes:image href="{SITE_URL}/cover.png"/>
   <itunes:category text="Technology"/>
   <itunes:explicit>false</itunes:explicit>
@@ -113,60 +128,99 @@ def rss(episodes):
 """
 
 
+def transcript_doc(path):
+    """Normalise any episode file to {"format", "chapters": [{"title", "news_id", "turns"}]}."""
+    if path.suffix != ".json":
+        return {"format": "tag", "chapters": [{"title": "Folge", "news_id": None,
+                                               "turns": [{"speaker": "Florian", "text": path.read_text(encoding="utf-8")}]}]}
+    doc = json.loads(path.read_text(encoding="utf-8"))
+    if "chapters" not in doc:
+        doc = {"format": "tag", "chapters": [{"title": "Folge", "news_id": None, "turns": doc.get("turns", [])}]}
+    return doc
+
+
 def main():
     if OUT.exists():
         shutil.rmtree(OUT)
-    (OUT / "audio").mkdir(parents=True)
-    for name in ("index.html", "data.json"):
-        shutil.copy(ROOT / name, OUT / name)
+    for sub in ("audio", "chapters", "episodes"):
+        (OUT / sub).mkdir(parents=True)
+    for name in ("index.html", "episode.html", "data.json", "status.json"):
+        if (ROOT / name).exists():
+            shutil.copy(ROOT / name, OUT / name)
     cover(OUT / "cover.png")
 
     data = json.loads((ROOT / "data.json").read_text(encoding="utf-8"))
     headlines = {b["date"]: b for b in data.get("briefings", [])}
+    news_by_id = {n["id"]: n for n in data.get("news", [])}
     by_date = {}
     for f in sorted((ROOT / "episodes").glob("*.txt")) + sorted((ROOT / "episodes").glob("*.json")):
         by_date[f.stem] = f  # a dialogue (.json) wins over a legacy monologue (.txt)
     scripts = [by_date[d] for d in sorted(by_date, reverse=True)[:KEEP]]
     episodes, synthesized = [], []
     published = live_hashes()
-    for txt in scripts:
-        date = txt.stem
-        digest = script_hash(txt)
+    for script in scripts:
+        date = script.stem
+        digest = script_hash(script)
         mp3 = OUT / "audio" / f"{date}.mp3"
-        # Reuse published audio only if it was made from exactly this script.
+        doc = transcript_doc(script)
         live = published.get(date) or {}
         engine = live.get("voice", "Piper")
-        if live.get("hash") != digest or not fetch_existing(date, mp3):
-            print(f"Synthetisiere Folge {date} (Skript {digest})")
-            engine = audio.render_episode(txt, mp3, VOICE)
-            synthesized.append(date)
-        else:
+        marks = None
+        # Reuse published audio only if it was made from exactly this script.
+        if live.get("hash") == digest and fetch_existing(date, mp3):
             print(f"Folge {date} vom Live-Stand übernommen")
+            ch = fetch_json(f"{SITE_URL}/chapters/{date}.json")
+            marks = [{"startTime": c["startTime"], "title": c["title"], "news_id": c.get("news_id")}
+                     for c in (ch or {}).get("chapters", [])] or None
+        else:
+            print(f"Synthetisiere Folge {date} (Skript {digest})")
+            engine, marks = audio.render_episode(script, mp3, VOICE)
+            synthesized.append(date)
+        marks = marks or [{"startTime": 0, "title": "Folge", "news_id": None}]
+        seconds = duration(mp3)
+        chapters = []
+        for m in marks:
+            c = {"startTime": m["startTime"], "title": m["title"], "news_id": m.get("news_id")}
+            n = news_by_id.get(m.get("news_id") or "")
+            if n:
+                c["url"] = n["url"]
+            chapters.append(c)
+        (OUT / "chapters" / f"{date}.json").write_text(json.dumps(
+            {"version": "1.2.0", "chapters": chapters}, ensure_ascii=False), encoding="utf-8")
+        (OUT / "episodes" / f"{date}.json").write_text(json.dumps(doc, ensure_ascii=False), encoding="utf-8")
         b = headlines.get(date, {})
         day = dt.date.fromisoformat(date)
+        notes = [" · ".join(b.get("points", [])) or "Tägliches IT-GRC Radar", "", "Kapitel:"]
+        notes += [f"{mmss(c['startTime'])} {c['title']}" + (f" – {c['url']}" if c.get("url") else "") for c in chapters]
+        notes += ["", f"Transkript und Quellen: {SITE_URL}/episode.html?d={date}"]
         episodes.append({
-            "date": date,
-            "hash": digest,
-            "voice": engine,
+            "date": date, "hash": digest, "voice": engine, "format": doc.get("format", "tag"),
             "title": shorten(f"{day.strftime('%d.%m.%Y')}: {b.get('headline', 'IT-GRC Radar')}", 240),
-            "description": " · ".join(b.get("points", [])) or "Tägliches IT-GRC Radar",
+            "description": "\n".join(notes), "points": b.get("points", []),
             "pubdate": email.utils.format_datetime(dt.datetime(day.year, day.month, day.day, 7, 15,
                                                                tzinfo=dt.timezone.utc)),
-            "size": mp3.stat().st_size,
-            "seconds": duration(mp3),
+            "size": mp3.stat().st_size, "seconds": seconds, "chapters": chapters,
         })
     (OUT / "podcast.xml").write_text(rss(episodes), encoding="utf-8")
     (OUT / "episodes.json").write_text(json.dumps(
-        [{"date": e["date"], "hash": e["hash"], "voice": e["voice"], "title": e["title"], "seconds": int(e["seconds"]),
-          "url": f"audio/{e['date']}.mp3?v={e['hash']}"} for e in episodes], ensure_ascii=False), encoding="utf-8")
+        [{"date": e["date"], "hash": e["hash"], "voice": e["voice"], "format": e["format"], "title": e["title"],
+          "seconds": int(e["seconds"]), "url": f"audio/{e['date']}.mp3?v={e['hash']}",
+          "chapters": [{"startTime": c["startTime"], "title": c["title"]} for c in e["chapters"]]}
+         for e in episodes], ensure_ascii=False), encoding="utf-8")
     print(f"{len(episodes)} Folgen im Feed")
 
-    # Tell the workflow which episode is new today, so Telegram gets it exactly once.
-    today = dt.datetime.now(ZoneInfo("Europe/Berlin")).date().isoformat()
+    # Telegram: caption = title + the three most important points; new episode is sent exactly once.
+    try:
+        today = dt.datetime.now(ZoneInfo("Europe/Berlin")).date().isoformat()
+    except Exception:  # no tz database available (e.g. local Windows test)
+        today = dt.date.today().isoformat()
     newest = episodes[0] if episodes else None
     if newest:
-        caption = f"🎧 {newest['title']}\n\nQuellen und alle Meldungen: {SITE_URL}/"
-        (ROOT / "telegram_caption.txt").write_text(caption[:1000], encoding="utf-8")
+        label = {"tiefgang": "🎧 Freitags-Tiefgang", "blitz": "⚡ Radar-Blitz"}.get(newest["format"], "🎧 IT-GRC Radar")
+        lines = [f"{label} · {newest['title']}", ""]
+        lines += [f"{i}. {p}" for i, p in enumerate(newest["points"][:3], 1)]
+        lines += ["", f"Kapitel, Transkript und Quellen: {SITE_URL}/episode.html?d={newest['date']}"]
+        (ROOT / "telegram_caption.txt").write_text("\n".join(lines)[:1000], encoding="utf-8")
         if os.environ.get("GITHUB_OUTPUT"):
             with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as f:
                 f.write(f"latest_episode={newest['date']}\n")

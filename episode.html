@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>IT-GRC Radar – Folge</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout: single column; player + chapter list on top, transcript grouped by chapter below */
+:root { --bg: #F4F6F5; --surface: #FFFFFF; --ink: #16201E; --muted: #5B6966; --line: #DCE3E1; --accent: #0E6B63; --accent-soft: #E1F0EE; --sera: #7A3E9D;
+  --font-display: "IBM Plex Sans Condensed", "Arial Narrow", Arial, sans-serif; --font-body: "IBM Plex Sans", "Segoe UI", Arial, sans-serif; --font-mono: "IBM Plex Mono", Consolas, monospace; color-scheme: light; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #101614; --surface: #18201E; --ink: #E7EEEC; --muted: #9AAAA6; --line: #2A3532; --accent: #5CC6BB; --accent-soft: #173330; --sera: #C99BE6; color-scheme: dark } }
+:root[data-theme="dark"] { --bg: #101614; --surface: #18201E; --ink: #E7EEEC; --muted: #9AAAA6; --line: #2A3532; --accent: #5CC6BB; --accent-soft: #173330; --sera: #C99BE6; color-scheme: dark }
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 16px; line-height: 1.6; }
+.wrap { max-width: 720px; margin: 0 auto; padding-inline: 16px; padding-block: 16px 56px; display: flex; flex-direction: column; gap: 18px; }
+a { color: var(--accent); }
+.back { font-size: 14px; text-decoration: none; }
+h1 { font-family: var(--font-display); font-size: 26px; line-height: 1.2; margin: 0; text-wrap: balance; }
+h2 { font-family: var(--font-display); font-size: 20px; margin: 18px 0 6px; }
+.meta { color: var(--muted); font-size: 13px; margin: 0; }
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; display: flex; flex-direction: column; gap: 10px; position: sticky; top: env(safe-area-inset-top, 0px); z-index: 2; }
+audio { width: 100%; }
+ul.ch { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 2px; max-height: 30vh; overflow-y: auto; }
+ul.ch button { all: unset; cursor: pointer; display: flex; gap: 10px; padding: 4px; border-radius: 6px; font-size: 14px; }
+ul.ch button.now { background: var(--accent-soft); }
+ul.ch .t { font-family: var(--font-mono); font-size: 12px; color: var(--muted); min-width: 40px; font-variant-numeric: tabular-nums; }
+.turn { margin: 0 0 10px; }
+.who { font-weight: 600; font-size: 13px; margin-right: 6px; }
+.who.Seraphina { color: var(--sera); } .who.Florian { color: var(--accent); }
+.srcl { font-size: 13px; }
+.empty { color: var(--muted); }
+button:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="./">← IT-GRC Radar</a>
+  <h1 id="title">Folge wird geladen …</h1>
+  <p class="meta" id="meta"></p>
+  <div class="panel">
+    <audio id="audio" controls preload="metadata"></audio>
+    <ul class="ch" id="chapters"></ul>
+  </div>
+  <div id="transcript"><p class="empty">Transkript wird geladen …</p></div>
+</div>
+<script>
+const $ = id => document.getElementById(id);
+const el = (tag, cls, text) => { const n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; };
+const mmss = s => Math.floor(s / 60) + ":" + String(Math.floor(s % 60)).padStart(2, "0");
+const date = (new URLSearchParams(location.search).get("d") || "").replace(/[^0-9-]/g, "");
+const get = u => fetch(u + "?v=" + Date.now(), { cache: "no-store" }).then(r => r.ok ? r.json() : null).catch(() => null);
+Promise.all([get("episodes.json"), get("episodes/" + date + ".json"), get("data.json")]).then(([eps, doc, data]) => {
+  const ep = (eps || []).find(e => e.date === date);
+  if (!ep || !doc) { $("title").textContent = "Folge nicht gefunden"; $("transcript").textContent = ""; return; }
+  document.title = "IT-GRC Radar – " + date.split("-").reverse().join(".");
+  $("title").textContent = ep.title;
+  $("meta").textContent = ({ tiefgang: "Freitags-Tiefgang", blitz: "Radar-Blitz" }[ep.format] || "Tagesfolge") + " · " + mmss(ep.seconds) + " Min. · gesprochen mit " + (ep.voice === "Azure" ? "Azure-Stimmen" : "Piper");
+  const audio = $("audio"); audio.src = ep.url;
+  const news = {}; ((data || {}).news || []).forEach(n => { news[n.id] = n; });
+  const marks = ep.chapters || [];
+  const ul = $("chapters"), buttons = [];
+  marks.forEach(c => {
+    const li = el("li"), b = el("button"); b.type = "button";
+    b.appendChild(el("span", "t", mmss(c.startTime))); b.appendChild(el("span", null, c.title));
+    b.addEventListener("click", () => { audio.currentTime = c.startTime; audio.play().catch(() => {}); });
+    li.appendChild(b); ul.appendChild(li); buttons.push(b);
+  });
+  audio.addEventListener("timeupdate", () => {
+    let cur = 0; marks.forEach((c, i) => { if (audio.currentTime >= c.startTime) cur = i; });
+    buttons.forEach((b, i) => b.classList.toggle("now", i === cur));
+  });
+  const box = $("transcript"); box.textContent = "";
+  (doc.chapters || []).forEach((ch, i) => {
+    const h = el("h2", null, ch.title); box.appendChild(h);
+    const mark = marks[i];
+    if (mark) { const b = el("a", "srcl", "▶ ab " + mmss(mark.startTime) + " hören"); b.href = "#"; b.addEventListener("click", e => { e.preventDefault(); audio.currentTime = mark.startTime; audio.play().catch(() => {}); }); box.appendChild(b); }
+    (ch.turns || []).forEach(t => {
+      const p = el("p", "turn"); p.appendChild(el("span", "who " + t.speaker, t.speaker));
+      p.appendChild(document.createTextNode(String(t.text).replace(/\[\/?en\]/g, ""))); box.appendChild(p);
+    });
+    const n = news[ch.news_id];
+    if (n && /^https:\/\//.test(n.url)) { const a = el("a", "srcl", "Quelle: " + (n.source || n.url) + " ↗"); a.href = n.url; a.target = "_blank"; a.rel = "noopener"; box.appendChild(a); }
+  });
+});
+</script>
+</body>
+</html>

@@ -67,14 +67,23 @@ OUTRO = [(0.0, A5, 1.2, 0.4), (0.16, FS5, 1.2, 0.4), (0.32, D3, 2.2, 0.35), (0.3
 
 
 # ---------------------------------------------------------------- speech
-def load_turns(path):
-    """Episode file -> [(host, text)]. .json = dialogue, .txt = legacy monologue."""
+def load_chapters(path):
+    """Episode file -> [{"title", "news_id", "turns": [(host, text)]}].
+    Supports chapters (.json with "chapters"), flat dialogue (.json with "turns") and legacy .txt."""
+    import json
     path = pathlib.Path(path)
-    if path.suffix == ".json":
-        import json
-        turns = json.loads(path.read_text(encoding="utf-8"))["turns"]
-        return [(t["speaker"] if t["speaker"] in HOSTS else HOSTS[0], t["text"]) for t in turns]
-    return [(HOSTS[1], path.read_text(encoding="utf-8"))]
+    if path.suffix != ".json":
+        return [{"title": "Folge", "news_id": None, "turns": [(HOSTS[1], path.read_text(encoding="utf-8"))]}]
+    doc = json.loads(path.read_text(encoding="utf-8"))
+    raw = doc.get("chapters") or [{"title": "Folge", "news_id": None, "turns": doc.get("turns", [])}]
+    return [{"title": c.get("title") or "Kapitel", "news_id": c.get("news_id"),
+             "turns": [(t["speaker"] if t["speaker"] in HOSTS else HOSTS[0], t["text"]) for t in c["turns"]]}
+            for c in raw if c.get("turns")]
+
+
+def wav_seconds(path):
+    with wave.open(str(path), "rb") as w:
+        return w.getnframes() / float(w.getframerate())
 
 
 BRAND = re.compile(r"IT-GRC(?: Radar)?")
@@ -119,7 +128,7 @@ def _ssml(turns):
 def _concat(parts, out_wav):
     with tempfile.NamedTemporaryFile("w", suffix=".txt", delete=False) as f:
         for p in parts:
-            f.write(f"file '{p}'\n")
+            f.write(f"file '{pathlib.Path(p).resolve().as_posix()}'\n")
         listing = f.name
     ffmpeg("-f", "concat", "-safe", "0", "-i", listing, "-ar", str(SR), "-ac", "1", str(out_wav))
     os.unlink(listing)
@@ -169,36 +178,60 @@ def piper_speech(turns, out_wav, voice):
 
 
 # ---------------------------------------------------------------- episode
-def render_episode(episode_file, out_mp3, piper_voice):
-    """Speech (Azure if configured, else Piper) + intro/outro jingle, loudness-normalised MP3."""
-    out_mp3 = pathlib.Path(out_mp3)
-    work = out_mp3.parent
-    speech, intro, outro = (work / f"{out_mp3.stem}.{n}.wav" for n in ("speech", "intro", "outro"))
-    turns = load_turns(episode_file)
+def _speak(turns, out_wav, piper_voice, engine_state):
     key, region = os.environ.get("AZURE_SPEECH_KEY"), os.environ.get("AZURE_SPEECH_REGION")
-    engine = None
-    if key and region:
-        print("Sprachsynthese: Azure (zwei Stimmen)")
+    if key and region and engine_state.get("engine") != "Piper":
         try:
-            azure_speech(turns, speech, key, region.strip().lower())
-            engine = "Azure"
+            azure_speech(turns, out_wav, key, region.strip().lower())
+            engine_state["engine"] = "Azure"
+            return
         except Exception as e:  # keep the podcast alive, but make the failure visible
             print(f"::warning::Azure-Sprachsynthese fehlgeschlagen, nutze Piper: {e}")
-    if engine is None:
-        print("Sprachsynthese: Piper (Rückfallebene)")
-        piper_speech(turns, speech, piper_voice)
-        engine = "Piper"
+    piper_speech(turns, out_wav, piper_voice)
+    wav = out_wav.with_suffix(".tmp.wav")  # normalise Piper output to the common sample rate
+    ffmpeg("-i", str(out_wav), "-ar", str(SR), "-ac", "1", str(wav))
+    wav.replace(out_wav)
+    engine_state["engine"] = "Piper"
+
+
+def render_episode(episode_file, out_mp3, piper_voice):
+    """Speak each chapter (Azure if configured, else Piper), join them with intro/outro jingle,
+    write a loudness-normalised MP3 with ID3 chapter marks. Returns (engine, chapters)."""
+    out_mp3 = pathlib.Path(out_mp3)
+    work = out_mp3.parent
+    stem = out_mp3.stem
+    intro, outro, speech = (work / f"{stem}.{n}.wav" for n in ("intro", "outro", "speech"))
+    chapters = load_chapters(episode_file)
+    state = {}
+    print("Sprachsynthese: " + ("Azure (zwei Stimmen)" if os.environ.get("AZURE_SPEECH_KEY") else "Piper"))
+    parts, marks = [], []
+    lead_in = 3.2 - 0.8  # intro jingle length minus crossfade: where speech starts
+    t = lead_in
+    for i, ch in enumerate(chapters):
+        part = work / f"{stem}.ch{i}.wav"
+        _speak(ch["turns"], part, piper_voice, state)
+        marks.append({"startTime": 0.0 if i == 0 else round(t, 2), "title": ch["title"], "news_id": ch["news_id"]})
+        t += wav_seconds(part)
+        parts.append(part)
+    _concat(parts, speech)
     jingle(intro, INTRO, 3.2)
     jingle(outro, OUTRO, 2.8)
+    total = t + 2.8 - 0.4
+    meta = work / f"{stem}.chapters.txt"
+    lines = [";FFMETADATA1", f"title=IT-GRC Radar {stem}", "artist=IT-GRC Radar"]
+    for i, m in enumerate(marks):
+        end = marks[i + 1]["startTime"] if i + 1 < len(marks) else total
+        lines += ["[CHAPTER]", "TIMEBASE=1/1000", f"START={int(m['startTime'] * 1000)}",
+                  f"END={int(end * 1000)}", "title=" + m["title"].replace("=", "-").replace(";", ",")]
+    meta.write_text("\n".join(lines) + "\n", encoding="utf-8")
     graph = ("[0]aresample=44100,aformat=channel_layouts=mono[a0];"
              "[1]aresample=44100,aformat=channel_layouts=mono[a1];"
              "[2]aresample=44100,aformat=channel_layouts=mono[a2];"
              "[a0][a1]acrossfade=d=0.8:c1=tri:c2=tri[x];"
              "[x][a2]acrossfade=d=0.4:c1=tri:c2=tri,loudnorm=I=-16:TP=-1.5[out]")
-    ffmpeg("-i", str(intro), "-i", str(speech), "-i", str(outro), "-filter_complex", graph,
-           "-map", "[out]", "-ac", "1", "-ar", "44100", "-b:a", "96k", "-id3v2_version", "3",
-           "-metadata", f"title=IT-GRC Radar {out_mp3.stem}", "-metadata", "artist=IT-GRC Radar",
-           str(out_mp3))
-    for f in (speech, intro, outro):
+    ffmpeg("-i", str(intro), "-i", str(speech), "-i", str(outro), "-f", "ffmetadata", "-i", str(meta),
+           "-filter_complex", graph, "-map", "[out]", "-map_metadata", "3", "-map_chapters", "3",
+           "-ac", "1", "-ar", "44100", "-b:a", "96k", "-id3v2_version", "3", str(out_mp3))
+    for f in parts + [speech, intro, outro, meta]:
         f.unlink()
-    return engine
+    return state.get("engine", "Piper"), marks

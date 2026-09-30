@@ -7,244 +7,450 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<link rel="alternate" type="application/rss+xml" title="IT-GRC Radar Podcast" href="podcast.xml">
 <style>
-*,*::before,*::after{box-sizing:border-box}
-body{margin:0}
-[hidden]{display:none!important}
-/* Layout: single reading column (max 680px), daily briefing on top, filter chips, then a ledger of news cards with impact stripe-free pills */
+/* Layout: one reading column (max 720px); sticky section nav; sections: Heute, Radar, Fristen, Dossiers, Meldungen, Monat */
 :root {
-  --bg: #F4F6F5;
-  --surface: #FFFFFF;
-  --ink: #16201E;
-  --muted: #5B6966;
-  --line: #DCE3E1;
-  --accent: #0E6B63;
-  --accent-soft: #E1F0EE;
-  --hi: #B42318; --hi-soft: #FDE8E6;
-  --mid: #9A5B00; --mid-soft: #FDF1DC;
-  --info: #4A5754; --info-soft: #ECF0EF;
+  --bg: #F4F6F5; --surface: #FFFFFF; --ink: #16201E; --muted: #5B6966; --line: #DCE3E1;
+  --accent: #0E6B63; --accent-soft: #E1F0EE;
+  --hi: #B42318; --hi-soft: #FDE8E6; --mid: #9A5B00; --mid-soft: #FDF1DC; --info: #4A5754; --info-soft: #ECF0EF;
+  --ring1: #F6DDD9; --ring2: #F8ECD6; --ring3: #E6EEEC; --ring4: #F1F4F3;
   --font-display: "IBM Plex Sans Condensed", "Arial Narrow", Arial, sans-serif;
   --font-body: "IBM Plex Sans", "Segoe UI", Arial, sans-serif;
   --font-mono: "IBM Plex Mono", Consolas, monospace;
+  color-scheme: light;
 }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
   --bg: #101614; --surface: #18201E; --ink: #E7EEEC; --muted: #9AAAA6; --line: #2A3532;
-  --accent: #5CC6BB; --accent-soft: #173330;
-  --hi: #FF8A7E; --hi-soft: #3A1D1A; --mid: #F2B45A; --mid-soft: #3A2B12; --info: #B3C0BC; --info-soft: #232D2A;
+  --accent: #5CC6BB; --accent-soft: #173330; --hi: #FF8A7E; --hi-soft: #3A1D1A; --mid: #F2B45A; --mid-soft: #3A2B12;
+  --info: #B3C0BC; --info-soft: #232D2A; --ring1: #3A2220; --ring2: #342A18; --ring3: #1F2B28; --ring4: #1A2220;
   color-scheme: dark } }
 :root[data-theme="dark"] {
   --bg: #101614; --surface: #18201E; --ink: #E7EEEC; --muted: #9AAAA6; --line: #2A3532;
-  --accent: #5CC6BB; --accent-soft: #173330;
-  --hi: #FF8A7E; --hi-soft: #3A1D1A; --mid: #F2B45A; --mid-soft: #3A2B12; --info: #B3C0BC; --info-soft: #232D2A;
+  --accent: #5CC6BB; --accent-soft: #173330; --hi: #FF8A7E; --hi-soft: #3A1D1A; --mid: #F2B45A; --mid-soft: #3A2B12;
+  --info: #B3C0BC; --info-soft: #232D2A; --ring1: #3A2220; --ring2: #342A18; --ring3: #1F2B28; --ring4: #1A2220;
   color-scheme: dark }
-body { background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 15px; line-height: 1.5; }
-.wrap { max-width: 680px; margin: 0 auto; padding-inline: 16px; padding-block: 20px 48px; display: flex; flex-direction: column; gap: 18px; }
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 15px; line-height: 1.5; }
+[hidden] { display: none !important; }
+a { color: var(--accent); }
+.wrap { max-width: 720px; margin: 0 auto; padding-inline: 16px; padding-block: 16px 56px; display: flex; flex-direction: column; gap: 22px; }
 header { display: flex; flex-direction: column; gap: 4px; }
 .eyebrow { font-family: var(--font-mono); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
-h1 { font-family: var(--font-display); font-size: 30px; line-height: 1.1; margin: 0; text-wrap: balance; }
-.meta { color: var(--muted); font-size: 13px; }
+h1 { font-family: var(--font-display); font-size: 30px; line-height: 1.1; margin: 0; }
+h2 { font-family: var(--font-display); font-size: 22px; margin: 0; text-wrap: balance; }
+.meta, .hint { color: var(--muted); font-size: 13px; margin: 0; }
+h3.hint { font-weight: 500; }
+nav { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bg); padding-block: 8px; display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; border-bottom: 1px solid var(--line); }
+nav a { flex: none; text-decoration: none; color: var(--ink); font: 600 13px var(--font-body); padding: 6px 12px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); }
+section { display: flex; flex-direction: column; gap: 12px; scroll-margin-top: 60px; }
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
 .brief { background: var(--accent-soft); border-radius: 14px; padding: 16px; display: flex; flex-direction: column; gap: 8px; }
-.brief h2 { font-family: var(--font-display); font-size: 19px; margin: 0; line-height: 1.25; text-wrap: balance; }
-.brief ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; }
-.brief .date { font-family: var(--font-mono); font-size: 12px; color: var(--accent); }
-.controls { display: flex; flex-direction: column; gap: 10px; position: sticky; top: env(safe-area-inset-top, 0px); background: var(--bg); padding-block: 8px; z-index: 2; }
-.chips { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 2px; scrollbar-width: none; }
-.chip { flex: none; border: 1px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 999px; padding: 6px 12px; font: 500 13px var(--font-body); cursor: pointer; }
+.brief h3 { font-family: var(--font-display); font-size: 19px; margin: 0; line-height: 1.25; text-wrap: balance; }
+.brief ol { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 6px; }
+.date { font-family: var(--font-mono); font-size: 12px; color: var(--accent); }
+audio { width: 100%; }
+.chapters { display: flex; flex-direction: column; gap: 2px; margin: 0; padding: 0; list-style: none; }
+.chapters button { all: unset; cursor: pointer; display: flex; gap: 10px; padding: 5px 4px; border-radius: 6px; font-size: 14px; }
+.chapters button:hover, .chapters button:focus-visible { background: var(--accent-soft); outline: none; }
+.chapters .t { font-family: var(--font-mono); font-size: 12px; color: var(--muted); min-width: 40px; font-variant-numeric: tabular-nums; }
+.row { display: flex; gap: 8px; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+.btn { background: none; border: 1px solid var(--line); color: var(--ink); border-radius: 8px; padding: 5px 10px; font: 500 12px var(--font-body); cursor: pointer; text-decoration: none; }
+code { font-family: var(--font-mono); font-size: 12px; overflow-wrap: anywhere; }
+.radar-wrap { display: flex; flex-direction: column; gap: 10px; }
+.radar-wrap svg { width: 100%; max-width: 520px; align-self: center; height: auto; }
+.radar-legend { display: grid; grid-template-columns: 1fr; gap: 6px; }
+.rl { display: flex; gap: 8px; align-items: baseline; font-size: 14px; flex-wrap: wrap; }
+.rl .n { font-family: var(--font-mono); font-size: 12px; min-width: 22px; color: var(--accent); }
+.rl a { color: var(--ink); text-decoration: none; }
+.move { font-size: 11px; font-weight: 600; border-radius: 6px; padding: 1px 6px; }
+.move.in { background: var(--hi-soft); color: var(--hi); } .move.out { background: var(--info-soft); color: var(--info); }
+.pill { font-size: 11px; font-weight: 600; border-radius: 6px; padding: 2px 8px; white-space: nowrap; }
+.pill.hoch, .pill.r0 { background: var(--hi-soft); color: var(--hi); }
+.pill.mittel, .pill.r1 { background: var(--mid-soft); color: var(--mid); }
+.pill.info, .pill.r2 { background: var(--info-soft); color: var(--info); }
+.pill.line { border: 1px solid var(--line); color: var(--muted); font-weight: 500; }
+.pill.ok { background: var(--accent-soft); color: var(--accent); }
+.tags { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+.ctl { font-size: 11px; color: var(--ink); background: var(--bg); border: 1px dashed var(--line); border-radius: 6px; padding: 2px 7px; text-decoration: none; }
+.tbl-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th { text-align: left; font: 600 11px var(--font-body); text-transform: uppercase; letter-spacing: .06em; color: var(--muted); padding: 6px 8px; border-bottom: 1px solid var(--line); }
+td { padding: 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+td.d { font-family: var(--font-mono); font-size: 12px; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.sub { color: var(--muted); font-size: 13px; }
+tr.past td { opacity: .55; }
+.due { font-size: 11px; font-weight: 600; white-space: nowrap; }
+.due.soon { color: var(--hi); }
+.dossier h3, .card h3 { font-family: var(--font-display); font-size: 18px; margin: 0; line-height: 1.25; text-wrap: balance; }
+.dossier p, .card p { margin: 0; }
+.dossier dl { margin: 0; display: grid; grid-template-columns: 1fr; gap: 8px; font-size: 14px; }
+.dossier dt { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.dossier dd { margin: 0; }
+details summary { cursor: pointer; font-size: 13px; color: var(--accent); font-weight: 600; }
+.timeline { list-style: none; margin: 8px 0 0; padding: 0; display: flex; flex-direction: column; gap: 6px; font-size: 14px; }
+.timeline .date { margin-right: 6px; }
+.filters { display: flex; flex-direction: column; gap: 8px; }
+.chips { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 2px; scrollbar-width: none; }
+.chip { flex: none; border: 1px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 999px; padding: 5px 11px; font: 500 13px var(--font-body); cursor: pointer; }
 .chip[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
-.chip:focus-visible, .toggle:focus-visible, a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-.row { display: flex; gap: 12px; align-items: center; justify-content: space-between; flex-wrap: wrap; }
-.toggle { display: flex; align-items: center; gap: 6px; font-size: 13px; color: var(--muted); }
-.count { font-family: var(--font-mono); font-size: 12px; color: var(--muted); }
+input[type="search"] { width: 100%; font: 400 15px var(--font-body); padding: 8px 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); color: var(--ink); }
 .list { display: flex; flex-direction: column; gap: 12px; }
 .card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
 .card.read { opacity: .62; }
-.tags { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
-.pill { font-size: 11px; font-weight: 600; border-radius: 6px; padding: 2px 8px; letter-spacing: .02em; }
-.pill.hoch { background: var(--hi-soft); color: var(--hi); }
-.pill.mittel { background: var(--mid-soft); color: var(--mid); }
-.pill.info { background: var(--info-soft); color: var(--info); }
-.pill.topic { background: transparent; color: var(--muted); border: 1px solid var(--line); font-weight: 500; }
-.card h3 { font-family: var(--font-display); font-size: 18px; line-height: 1.25; margin: 0; text-wrap: balance; }
-.card p { margin: 0; }
 .why { font-size: 14px; border-top: 1px dashed var(--line); padding-top: 8px; }
 .why b { color: var(--accent); }
+.check-note { font-size: 12px; color: var(--mid); }
 .foot { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; font-size: 13px; color: var(--muted); }
-.foot .src { font-family: var(--font-mono); font-size: 12px; }
-.foot a { color: var(--accent); font-weight: 600; text-decoration: none; }
-.mark { background: none; border: 1px solid var(--line); color: var(--muted); border-radius: 8px; padding: 4px 10px; font: 500 12px var(--font-body); cursor: pointer; }
-.pod { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; display: flex; flex-direction: column; gap: 10px; }
-.pod h2 { font-family: var(--font-display); font-size: 19px; margin: 0; }
-.pod audio { width: 100%; }
-.pod .ep { font-size: 14px; margin: 0; }
-.pod .sub { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; font-size: 13px; color: var(--muted); }
-.pod code { font-family: var(--font-mono); font-size: 12px; background: var(--bg); border: 1px solid var(--line); border-radius: 6px; padding: 3px 6px; overflow-wrap: anywhere; }
-.signals { display: flex; flex-direction: column; gap: 10px; }
-.signals h2 { font-family: var(--font-display); font-size: 19px; margin: 0; }
-.signals .hint { color: var(--muted); font-size: 13px; margin: 0; }
+.src { font-family: var(--font-mono); font-size: 12px; }
+.empty { background: var(--surface); border: 1px dashed var(--line); border-radius: 12px; padding: 18px; color: var(--muted); }
 .sig { border: 1px solid var(--line); background: var(--surface); border-radius: 12px; padding: 12px 14px; display: flex; flex-direction: column; gap: 4px; }
 .sig .head { display: flex; justify-content: space-between; gap: 10px; align-items: baseline; }
 .sig b { font-family: var(--font-display); font-size: 16px; }
 .sig .n { font-family: var(--font-mono); font-size: 12px; color: var(--accent); white-space: nowrap; }
 .sig p { margin: 0; font-size: 14px; }
-.sig a { color: var(--accent); font-size: 13px; font-weight: 600; text-decoration: none; }
-.tag { font-size: 11px; color: var(--accent); background: var(--accent-soft); border-radius: 6px; padding: 2px 8px; }
-.empty { background: var(--surface); border: 1px dashed var(--line); border-radius: 12px; padding: 20px; color: var(--muted); }
-@media (prefers-reduced-motion: no-preference) { .card { transition: opacity .2s; } }
+.month ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 4px; }
+.month h3 { font-family: var(--font-display); font-size: 19px; margin: 0; }
+.month h4 { margin: 6px 0 2px; font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+footer { font-size: 12px; color: var(--muted); display: flex; flex-direction: column; gap: 6px; border-top: 1px solid var(--line); padding-top: 12px; }
+.ok-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); margin-right: 6px; }
+.ok-dot.bad { background: var(--hi); }
+button:focus-visible, a:focus-visible, input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+@media (min-width: 640px) { .radar-legend { grid-template-columns: 1fr 1fr; } .dossier dl { grid-template-columns: 1fr 1fr; } }
 </style>
 </head>
 <body>
-
 <div class="wrap">
   <header>
     <span class="eyebrow">IT-Governance · IT-Compliance · AI-Governance</span>
     <h1>IT-GRC Radar</h1>
-    <span class="meta" id="updated">Wird geladen …</span>
+    <p class="meta" id="updated">Wird geladen …</p>
   </header>
 
-  <section class="pod" id="pod" hidden>
-    <h2>Podcast des Tages</h2>
-    <audio id="audio" controls preload="none"></audio>
-    <p class="ep" id="eptitle"></p>
-    <div class="sub">Abonnieren in der Podcast-App: <code id="feedurl"></code> <button class="mark" id="copyfeed" type="button">Kopieren</button></div>
-  </section>
+  <nav aria-label="Bereiche">
+    <a href="#heute">Heute</a><a href="#radar">Radar</a><a href="#fristen">Fristen</a>
+    <a href="#dossiers">Dossiers</a><a href="#meldungen">Meldungen</a><a href="#monat" id="nav-month" hidden>Monat</a>
+  </nav>
 
-  <section class="brief" id="brief" aria-live="polite">
-    <span class="date">Tages-Briefing</span>
-    <h2>Noch kein Briefing</h2>
-    <p>Jeden Morgen gegen 7 Uhr erscheint hier eine Zusammenfassung der wichtigsten Meldungen zu IT-Governance, IT-Compliance und AI-Governance – eingeordnet für IT-GRC in einem großen Handels- und Touristikkonzern.</p>
-  </section>
-
-  <section class="signals" id="signals" hidden>
-    <h2>Auf dem Radar</h2>
-    <p class="hint">Aufkommende Themen, die noch keine konkrete Pflicht sind. Die Zahl zeigt, an wie vielen Tagen das Thema aufgetaucht ist.</p>
-    <div id="siglist" class="list"></div>
-  </section>
-
-  <div class="controls">
-    <div class="chips" id="chips" role="toolbar" aria-label="Themen filtern"></div>
-    <div class="row">
-      <label class="toggle" for="unread"><input type="checkbox" id="unread"> Nur ungelesene</label>
-      <span class="count" id="count"></span>
+  <section id="heute">
+    <div class="panel" id="pod" hidden>
+      <div class="row"><h2 id="podtitle">Podcast des Tages</h2><a class="btn" id="eplink" href="#">Transkript</a></div>
+      <audio id="audio" controls preload="metadata"></audio>
+      <p class="hint" id="eptitle"></p>
+      <ul class="chapters" id="chapters"></ul>
+      <div class="row"><span class="hint">Abonnieren: <code id="feedurl"></code></span><button class="btn" id="copyfeed" type="button">Feed kopieren</button></div>
     </div>
-  </div>
+    <div class="brief" id="brief">
+      <span class="date">Tages-Briefing</span>
+      <h3>Noch kein Briefing</h3>
+      <p>Jeden Morgen gegen 7 Uhr erscheinen hier die wichtigsten Meldungen zu IT-Governance, IT-Compliance und AI-Governance – priorisiert aus Sicht von IT-GRC in einem großen Handels- und Touristikkonzern.</p>
+    </div>
+  </section>
 
-  <div class="list" id="list">
-    <div class="empty">Die Meldungen erscheinen hier, sobald der tägliche Agent sie gesammelt hat.</div>
-  </div>
-  <p class="meta">Automatisch zusammengestellt mit Claude (Anthropic). Zusammenfassungen können Fehler enthalten – im Zweifel die verlinkte Quelle lesen.</p>
+  <section id="radar">
+    <h2>Radar</h2>
+    <p class="hint">Dauerthemen nach Dringlichkeit: innen „jetzt handeln“, dann „vorbereiten“, „beobachten“, außen aufkommende Signale. Markierungen zeigen Bewegungen der letzten 30 Tage.</p>
+    <div class="panel radar-wrap">
+      <svg id="radarsvg" viewBox="0 0 400 400" role="img" aria-label="Radar der Dauerthemen"></svg>
+      <div class="radar-legend" id="radarlegend"></div>
+    </div>
+    <div class="list" id="siglist"></div>
+  </section>
+
+  <section id="fristen">
+    <h2>Fristen</h2>
+    <p class="hint">Nur Fristen mit Wirkung für IT-GRC: Anwendungsbeginn, Registrierungs- und Meldepflichten, Übergangsenden, relevante Konsultationen.</p>
+    <div class="panel tbl-wrap"><table>
+      <thead><tr><th>Datum</th><th>Frist</th><th>Geltung</th></tr></thead>
+      <tbody id="deadlines"><tr><td colspan="3" class="sub">Noch keine Fristen erfasst.</td></tr></tbody>
+    </table></div>
+  </section>
+
+  <section id="dossiers">
+    <h2>Dossiers</h2>
+    <p class="hint">Lebende Übersicht je Dauerthema: Stand, nächster Schritt, offene Fragen, Kontrollbezug und Verlauf.</p>
+    <div class="list" id="dossierlist"><div class="empty">Dossiers entstehen mit den nächsten Läufen.</div></div>
+  </section>
+
+  <section id="meldungen">
+    <h2>Meldungen</h2>
+    <div class="filters">
+      <input type="search" id="q" placeholder="Suchen, z. B. NIS 2, Österreich, Lieferkette" aria-label="Meldungen durchsuchen">
+      <div class="chips" id="roles" role="toolbar" aria-label="Sicht"></div>
+      <div class="chips" id="topics" role="toolbar" aria-label="Themen"></div>
+      <div class="row"><label class="hint" for="unread"><input type="checkbox" id="unread"> Nur ungelesene</label><span class="hint" id="count"></span></div>
+    </div>
+    <div class="list" id="list"><div class="empty">Die Meldungen erscheinen hier nach dem ersten Lauf.</div></div>
+  </section>
+
+  <section id="monat" hidden>
+    <h2>Monatlicher Radar-Bericht</h2>
+    <div class="panel month" id="monthly"></div>
+  </section>
+
+  <footer>
+    <span id="status"></span>
+    <span>Automatisch recherchiert, geprüft und gesprochen mit Künstlicher Intelligenz (Claude, Azure-Stimmen). Keine Rechtsberatung – im Zweifel die verlinkte Quelle lesen. ✅ Faktencheck bestanden · ⚠️ Abweichung gefunden · 🏛️ Primärquelle.</span>
+  </footer>
 </div>
 
 <script>
-let TOPICS = ["Alle", "AI-Governance", "Cyber- & IT-Regulierung", "Datenschutz & Datenrecht", "IT-Governance & Risiko", "Standards & Zertifizierung", "Prüfung & Assurance", "Handel & Branche"];
+const RINGS = ["jetzt handeln", "vorbereiten", "beobachten"];
+const ROLES = ["Alle Sichten", "IT-Risiko", "Datenschutz", "Revision & Prüfung", "Einkauf & Drittparteien", "Management"];
 const IMPACT = { hoch: "Hoch relevant", mittel: "Relevant", info: "Zur Info" };
-let items = [], topic = "Alle", onlyUnread = false, readSet = new Set();
-
+const CHECK = { ok: ["✅ geprüft", "ok"], abweichung: ["⚠️ Abweichung", "mittel"], "nicht prüfbar": ["❔ nicht geprüft", "line"] };
+let D = { news: [], dossiers: [], deadlines: [], signals: [], briefings: [], monthly: [], topics: [] };
+let topic = "Alle", role = "Alle Sichten", query = "", onlyUnread = false, readSet = new Set();
 try { readSet = new Set(JSON.parse(localStorage.getItem("radar-read") || "[]")); } catch (e) {}
 try { onlyUnread = localStorage.getItem("radar-unread") === "1"; } catch (e) {}
-const saveRead = () => { try { localStorage.setItem("radar-read", JSON.stringify([...readSet].slice(-500))); } catch (e) {} };
-
-const $ = (id) => document.getElementById(id);
+const saveRead = () => { try { localStorage.setItem("radar-read", JSON.stringify([...readSet].slice(-800))); } catch (e) {} };
+const $ = id => document.getElementById(id);
 const el = (tag, cls, text) => { const n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; };
-const fmt = (iso) => { if (/^\d{4}-\d{2}$/.test(iso || "")) return iso.slice(5) + "/" + iso.slice(0, 4); if (/^\d{4}$/.test(iso || "")) return iso; try { return new Date(iso).toLocaleDateString("de-DE", { day: "2-digit", month: "2-digit", year: "numeric" }); } catch (e) { return iso; } };
+const link = (href, text, cls) => {
+  const a = el("a", cls, text);
+  if (/^https:\/\//.test(href || "")) { a.href = href; a.target = "_blank"; a.rel = "noopener"; }
+  else if (/^#[a-z0-9-]+$/.test(href || "")) a.href = href;
+  return a;
+};
+const fmt = iso => { if (/^\d{4}-\d{2}$/.test(iso || "")) return iso.slice(5) + "/" + iso.slice(0, 4); try { return new Date(iso).toLocaleDateString("de-DE", { day: "2-digit", month: "2-digit", year: "numeric" }); } catch (e) { return iso; } };
+const mmss = s => Math.floor(s / 60) + ":" + String(Math.floor(s % 60)).padStart(2, "0");
+const daysUntil = iso => Math.round((new Date(iso + "T00:00:00") - new Date(new Date().toDateString())) / 86400000);
+const getJSON = url => fetch(url + "?v=" + Date.now(), { cache: "no-store" }).then(r => r.ok ? r.json() : null).catch(() => null);
 
-function renderChips() {
-  const box = $("chips"); box.textContent = "";
-  TOPICS.forEach(t => {
-    const b = el("button", "chip", t); b.type = "button"; b.setAttribute("aria-pressed", String(t === topic));
-    b.addEventListener("click", () => { topic = t; renderChips(); renderList(); });
-    box.appendChild(b);
+/* Heute */
+function renderPodcast(eps) {
+  if (!eps || !eps.length) return;
+  const e = eps[0];
+  $("podtitle").textContent = { tiefgang: "Freitags-Tiefgang", blitz: "Radar-Blitz" }[e.format] || "Podcast des Tages";
+  $("audio").src = e.url;
+  $("eptitle").textContent = e.title + " · " + mmss(e.seconds) + " Min.";
+  $("eplink").href = "episode.html?d=" + e.date;
+  const ul = $("chapters"); ul.textContent = "";
+  (e.chapters || []).forEach(c => {
+    const li = el("li"), b = el("button"); b.type = "button";
+    b.appendChild(el("span", "t", mmss(c.startTime))); b.appendChild(el("span", null, c.title));
+    b.addEventListener("click", () => { const a = $("audio"); a.currentTime = c.startTime; a.play().catch(() => {}); });
+    li.appendChild(b); ul.appendChild(li);
+  });
+  const feed = new URL("podcast.xml", location.href).href;
+  $("feedurl").textContent = feed;
+  $("copyfeed").onclick = () => navigator.clipboard.writeText(feed).then(() => { $("copyfeed").textContent = "Kopiert"; }).catch(() => {
+    const r = document.createRange(); r.selectNodeContents($("feedurl")); const s = getSelection(); s.removeAllRanges(); s.addRange(r); });
+  $("pod").hidden = false;
+}
+function renderBrief(b) {
+  if (!b) return;
+  const box = $("brief"); box.textContent = "";
+  box.appendChild(el("span", "date", "Tages-Briefing · " + fmt(b.date)));
+  box.appendChild(el("h3", null, b.headline));
+  if (b.points && b.points.length) { const ol = el("ol"); b.points.forEach(p => ol.appendChild(el("li", null, p))); box.appendChild(ol); }
+}
+
+/* Radar */
+function movement(d) {
+  const h = d.ring_history || [];
+  if (h.length < 2) return null;
+  const last = h[h.length - 1], prev = h[h.length - 2];
+  if ((Date.now() - new Date(last.date)) / 86400000 > 30) return null;
+  const a = RINGS.indexOf(prev.ring), b = RINGS.indexOf(last.ring);
+  return b < a ? "in" : b > a ? "out" : null;
+}
+function renderRadar() {
+  const svg = $("radarsvg"), NS = "http://www.w3.org/2000/svg", C = 200, R = [62, 112, 158, 192];
+  const mk = (tag, attrs) => { const n = document.createElementNS(NS, tag); for (const k in attrs) n.setAttribute(k, attrs[k]); return n; };
+  svg.textContent = "";
+  const fills = ["var(--ring1)", "var(--ring2)", "var(--ring3)", "var(--ring4)"];
+  [3, 2, 1, 0].forEach(i => svg.appendChild(mk("circle", { cx: C, cy: C, r: R[i], fill: fills[i], stroke: "var(--line)" })));
+  const sectors = D.topics.length ? D.topics : ["Weitere Themen"];
+  const step = 2 * Math.PI / sectors.length;
+  sectors.forEach((t, i) => {
+    const a = i * step - Math.PI / 2;
+    svg.appendChild(mk("line", { x1: C, y1: C, x2: C + R[3] * Math.cos(a), y2: C + R[3] * Math.sin(a), stroke: "var(--line)" }));
+  });
+  [["jetzt handeln", 50], ["vorbereiten", 100], ["beobachten", 146], ["Signale", 180]].forEach(([t, r]) => {
+    const tx = mk("text", { x: C + 4, y: C - r + 4, "font-size": 9, fill: "var(--muted)", "font-family": "IBM Plex Mono, monospace" });
+    tx.textContent = t; svg.appendChild(tx);
+  });
+  const legend = $("radarlegend"); legend.textContent = "";
+  const bySector = {};
+  D.dossiers.forEach((d, idx) => { (bySector[d.sector] = bySector[d.sector] || []).push(idx); });
+  D.dossiers.forEach((d, idx) => {
+    const si = Math.max(0, sectors.indexOf(d.sector)), group = bySector[d.sector], k = group.indexOf(idx);
+    const ri = Math.max(0, RINGS.indexOf(d.ring)), inner = ri === 0 ? 16 : R[ri - 1] + 11, outer = R[ri] - 11;
+    const a = si * step - Math.PI / 2 + step * (k + 1) / (group.length + 1);
+    const rad = inner + (outer - inner) * (0.3 + 0.4 * ((k % 3) / 2));
+    const x = C + rad * Math.cos(a), y = C + rad * Math.sin(a), n = idx + 1;
+    const g = mk("a", { href: "#d-" + d.slug });
+    g.appendChild(mk("circle", { cx: x, cy: y, r: 10, fill: ri === 0 ? "var(--hi)" : ri === 1 ? "var(--mid)" : "var(--accent)" }));
+    const tx = mk("text", { x, y: y + 3.5, "text-anchor": "middle", "font-size": 10, "font-weight": 700, fill: "var(--surface)", "font-family": "IBM Plex Mono, monospace" });
+    tx.textContent = n; g.appendChild(tx);
+    const tt = mk("title", {}); tt.textContent = d.title + " – " + d.ring; g.appendChild(tt); svg.appendChild(g);
+    const row = el("div", "rl"); row.appendChild(el("span", "n", String(n)));
+    row.appendChild(link("#d-" + d.slug, d.title));
+    const mv = movement(d); if (mv) row.appendChild(el("span", "move " + mv, mv === "in" ? "↑ dringender" : "↓ entspannt"));
+    legend.appendChild(row);
+  });
+  const sigs = D.signals.slice(0, 10);
+  sigs.forEach((s, i) => {
+    const a = (i + 0.5) * (2 * Math.PI / sigs.length) - Math.PI / 2, rad = 176;
+    const c = mk("circle", { cx: C + rad * Math.cos(a), cy: C + rad * Math.sin(a), r: 4 + Math.min(4, s.count), fill: "none", stroke: "var(--accent)", "stroke-width": 2 });
+    const tt = mk("title", {}); tt.textContent = "Signal: " + s.theme + " (" + s.count + "×)"; c.appendChild(tt); svg.appendChild(c);
+  });
+  if (!D.dossiers.length) legend.appendChild(el("p", "hint", "Die Radar-Punkte entstehen, sobald die ersten Dossiers angelegt sind."));
+  const sl = $("siglist"); sl.textContent = "";
+  if (D.signals.length) sl.appendChild(el("h3", "hint", "Signale (Zahl = Tage, an denen das Thema auftauchte)"));
+  D.signals.slice(0, 6).forEach(s => {
+    const c = el("div", "sig"), head = el("div", "head");
+    head.appendChild(el("b", null, s.theme)); head.appendChild(el("span", "n", s.count + "× · seit " + fmt(s.first_seen)));
+    c.appendChild(head); if (s.why) c.appendChild(el("p", null, s.why));
+    if ((s.evidence || [])[0]) c.appendChild(link(s.evidence[0], "Beleg ↗"));
+    sl.appendChild(c);
   });
 }
 
-function renderList() {
-  const list = $("list"); list.textContent = "";
-  const shown = items.filter(i => (topic === "Alle" || i.topic === topic) && (!onlyUnread || !readSet.has(i.id)));
-  $("count").textContent = shown.length + " von " + items.length + " Meldungen";
-  if (!items.length) { list.appendChild(el("div", "empty", "Die Meldungen erscheinen hier, sobald der tägliche Agent sie gesammelt hat.")); return; }
-  if (!shown.length) { list.appendChild(el("div", "empty", "Keine Meldungen für diesen Filter.")); return; }
-  shown.forEach(i => {
-    const c = el("article", "card" + (readSet.has(i.id) ? " read" : ""));
+/* Fristen */
+function renderDeadlines() {
+  const tb = $("deadlines"); tb.textContent = "";
+  if (!D.deadlines.length) { const tr = el("tr"), td = el("td", "sub", "Noch keine Fristen erfasst."); td.colSpan = 3; tr.appendChild(td); tb.appendChild(tr); return; }
+  [...D.deadlines].sort((a, b) => a.date.localeCompare(b.date)).forEach(f => {
+    const n = daysUntil(f.date), tr = el("tr", n < 0 ? "past" : "");
+    const td1 = el("td", "d", fmt(f.date)); td1.appendChild(el("br"));
+    td1.appendChild(el("span", "due" + (n >= 0 && n <= 30 ? " soon" : ""), n === 0 ? "heute" : n > 0 ? "in " + n + " Tagen" : "vor " + (-n) + " Tagen"));
+    const td2 = el("td"); td2.appendChild(link(f.url, f.title));
+    if (f.detail) { td2.appendChild(el("br")); td2.appendChild(el("span", "sub", f.detail)); }
+    const ds = D.dossiers.find(d => d.slug === f.dossier);
+    if (ds) { td2.appendChild(el("br")); td2.appendChild(link("#d-" + ds.slug, "Dossier: " + ds.title, "sub")); }
+    tr.appendChild(td1); tr.appendChild(td2); tr.appendChild(el("td", "sub", f.scope || ""));
+    tb.appendChild(tr);
+  });
+}
+
+/* Dossiers */
+function renderDossiers() {
+  const box = $("dossierlist"); box.textContent = "";
+  if (!D.dossiers.length) { box.appendChild(el("div", "empty", "Dossiers entstehen mit den nächsten Läufen.")); return; }
+  D.dossiers.forEach((d, idx) => {
+    const c = el("article", "panel dossier"); c.id = "d-" + d.slug;
     const tags = el("div", "tags");
-    tags.appendChild(el("span", "pill " + (IMPACT[i.impact] ? i.impact : "info"), IMPACT[i.impact] || "Zur Info"));
-    if (i.topic) tags.appendChild(el("span", "pill topic", i.topic));
-    (i.tags || []).forEach(t => tags.appendChild(el("span", "tag", t)));
-    c.appendChild(tags);
-    c.appendChild(el("h3", null, i.title || "Ohne Titel"));
-    if (i.summary) c.appendChild(el("p", null, i.summary));
-    if (i.relevance) { const w = el("p", "why"); const b = el("b", null, "Einordnung: "); w.appendChild(b); w.appendChild(document.createTextNode(i.relevance)); c.appendChild(w); }
-    const f = el("div", "foot");
-    f.appendChild(el("span", "src", (i.source || "Quelle") + " · " + fmt(i.published || i.added)));
-    const act = el("div", "tags");
-    const m = el("button", "mark", readSet.has(i.id) ? "Ungelesen" : "Gelesen"); m.type = "button";
-    m.addEventListener("click", () => { readSet.has(i.id) ? readSet.delete(i.id) : readSet.add(i.id); saveRead(); renderList(); });
-    act.appendChild(m);
-    if (/^https:\/\//.test(i.url || "")) { const a = el("a", null, "Quelle öffnen ↗"); a.href = i.url; a.target = "_blank"; a.rel = "noopener"; a.addEventListener("click", () => { readSet.add(i.id); saveRead(); setTimeout(renderList, 300); }); act.appendChild(a); }
-    f.appendChild(act); c.appendChild(f);
-    list.appendChild(c);
-  });
-}
-
-function renderSignals(list) {
-  const box = $("siglist"); box.textContent = "";
-  const top = list.slice(0, 6);
-  $("signals").hidden = !top.length;
-  top.forEach(s => {
-    const c = el("div", "sig");
-    const head = el("div", "head");
-    head.appendChild(el("b", null, s.theme));
-    head.appendChild(el("span", "n", s.count + "× · seit " + fmt(s.first_seen)));
-    c.appendChild(head);
-    if (s.why) c.appendChild(el("p", null, s.why));
-    const u = (s.evidence || [])[0];
-    if (/^https:\/\//.test(u || "")) { const a = el("a", null, "Beleg ↗"); a.href = u; a.target = "_blank"; a.rel = "noopener"; c.appendChild(a); }
+    tags.appendChild(el("span", "pill r" + Math.max(0, RINGS.indexOf(d.ring)), d.ring));
+    tags.appendChild(el("span", "pill line", d.sector));
+    const mv = movement(d); if (mv) tags.appendChild(el("span", "move " + mv, mv === "in" ? "↑ dringender" : "↓ entspannt"));
+    tags.appendChild(el("span", "hint", "Nr. " + (idx + 1) + " · Stand " + fmt(d.updated)));
+    c.appendChild(tags); c.appendChild(el("h3", null, d.title));
+    if (d.status) c.appendChild(el("p", null, d.status));
+    const dl = el("dl");
+    const add = (t, v) => {
+      if (!v || (Array.isArray(v) && !v.length)) return;
+      const w = el("div"); w.appendChild(el("dt", null, t)); const dd = el("dd");
+      if (Array.isArray(v)) v.forEach(x => dd.appendChild(el("div", null, "• " + x))); else dd.textContent = v;
+      w.appendChild(dd); dl.appendChild(w);
+    };
+    add("Nächster Schritt", d.next_step); add("Offene Fragen", d.open_questions);
+    const next = D.deadlines.filter(f => f.dossier === d.slug && daysUntil(f.date) >= 0).sort((a, b) => a.date.localeCompare(b.date))[0];
+    if (next) add("Nächste Frist", fmt(next.date) + " – " + next.title);
+    c.appendChild(dl);
+    if ((d.controls || []).length) { const ct = el("div", "tags"); d.controls.forEach(x => ct.appendChild(el("span", "ctl", x))); c.appendChild(ct); }
+    const items = D.news.filter(n => n.dossier === d.slug).sort((a, b) => (b.published || "").localeCompare(a.published || ""));
+    if (items.length) {
+      const det = el("details"); det.appendChild(el("summary", null, "Verlauf: " + items.length + " Meldung" + (items.length > 1 ? "en" : "")));
+      const ul = el("ul", "timeline");
+      items.forEach(n => { const li = el("li"); li.appendChild(el("span", "date", fmt(n.published))); li.appendChild(link(n.url, n.title)); ul.appendChild(li); });
+      det.appendChild(ul); c.appendChild(det);
+    }
     box.appendChild(c);
   });
 }
 
-function renderBrief(b) {
-  const box = $("brief"); box.textContent = "";
-  box.appendChild(el("span", "date", "Tages-Briefing · " + fmt(b.date)));
-  box.appendChild(el("h2", null, b.headline || "Briefing"));
-  if (Array.isArray(b.points) && b.points.length) {
-    const ul = el("ul"); b.points.forEach(p => ul.appendChild(el("li", null, p))); box.appendChild(ul);
+/* Meldungen */
+function chipRow(boxId, values, current, onPick) {
+  const box = $(boxId); box.textContent = "";
+  values.forEach(v => { const b = el("button", "chip", v); b.type = "button"; b.setAttribute("aria-pressed", String(v === current));
+    b.addEventListener("click", () => onPick(v)); box.appendChild(b); });
+}
+function renderFilters() {
+  const present = [...new Set(D.news.map(n => n.topic))];
+  const topics = ["Alle"].concat(D.topics.filter(t => present.includes(t)), present.filter(t => !D.topics.includes(t)));
+  chipRow("topics", topics, topic, v => { topic = v; renderFilters(); renderList(); });
+  chipRow("roles", ROLES, role, v => { role = v; renderFilters(); renderList(); });
+}
+function matches(n) {
+  if (topic !== "Alle" && n.topic !== topic) return false;
+  if (role !== "Alle Sichten" && !(n.roles || []).includes(role)) return false;
+  if (onlyUnread && readSet.has(n.id)) return false;
+  if (query) {
+    const hay = [n.title, n.summary, n.relevance, n.source, (n.tags || []).join(" "), (n.controls || []).join(" "), (n.countries || []).join(" ")].join(" ").toLowerCase();
+    if (!query.toLowerCase().split(/\s+/).every(w => hay.includes(w))) return false;
   }
+  return true;
+}
+function renderList() {
+  const list = $("list"); list.textContent = "";
+  const items = [...D.news].sort((a, b) => (b.added || "").slice(0, 10).localeCompare((a.added || "").slice(0, 10)) ||
+    (a.priority || 5) - (b.priority || 5) || (b.published || "").localeCompare(a.published || ""));
+  const shown = items.filter(matches);
+  $("count").textContent = shown.length + " von " + items.length + " Meldungen";
+  if (!shown.length) { list.appendChild(el("div", "empty", items.length ? "Keine Meldungen für diesen Filter." : "Die Meldungen erscheinen hier nach dem ersten Lauf.")); return; }
+  shown.forEach(n => {
+    const c = el("article", "card" + (readSet.has(n.id) ? " read" : ""));
+    const tags = el("div", "tags");
+    if (n.priority) tags.appendChild(el("span", "pill line", "P" + n.priority));
+    tags.appendChild(el("span", "pill " + (IMPACT[n.impact] ? n.impact : "info"), IMPACT[n.impact] || "Zur Info"));
+    if (n.topic) tags.appendChild(el("span", "pill line", n.topic));
+    const ck = CHECK[(n.check || {}).verdict]; if (ck) tags.appendChild(el("span", "pill " + ck[1], ck[0]));
+    if (n.primary) tags.appendChild(el("span", "pill line", "🏛️ Primärquelle"));
+    (n.countries || []).forEach(x => tags.appendChild(el("span", "pill line", x)));
+    c.appendChild(tags);
+    c.appendChild(el("h3", null, n.title));
+    if (n.summary) c.appendChild(el("p", null, n.summary));
+    if (n.check && n.check.verdict === "abweichung" && n.check.note) c.appendChild(el("p", "check-note", "Faktencheck: " + n.check.note));
+    if (n.relevance) { const w = el("p", "why"); w.appendChild(el("b", null, "Einordnung: ")); w.appendChild(document.createTextNode(n.relevance)); c.appendChild(w); }
+    const ext = el("div", "tags");
+    (n.controls || []).forEach(x => ext.appendChild(el("span", "ctl", x)));
+    const ds = D.dossiers.find(d => d.slug === n.dossier); if (ds) ext.appendChild(link("#d-" + ds.slug, "Dossier: " + ds.title, "ctl"));
+    if (ext.childNodes.length) c.appendChild(ext);
+    const f = el("div", "foot");
+    f.appendChild(el("span", "src", (n.source || "Quelle") + " · " + fmt(n.published || n.added)));
+    const act = el("div", "tags");
+    const m = el("button", "btn", readSet.has(n.id) ? "Ungelesen" : "Gelesen"); m.type = "button";
+    m.addEventListener("click", () => { readSet.has(n.id) ? readSet.delete(n.id) : readSet.add(n.id); saveRead(); renderList(); });
+    act.appendChild(m);
+    const a = link(n.url, "Quelle öffnen ↗"); a.addEventListener("click", () => { readSet.add(n.id); saveRead(); setTimeout(renderList, 300); }); act.appendChild(a);
+    f.appendChild(act); c.appendChild(f); list.appendChild(c);
+  });
+}
+
+/* Monat, Status */
+function renderMonthly() {
+  const m = (D.monthly || [])[0]; if (!m) return;
+  const box = $("monthly"); box.textContent = "";
+  box.appendChild(el("span", "date", "Berichtsmonat " + fmt(m.month)));
+  box.appendChild(el("h3", null, m.headline));
+  [["Jetzt handeln", m.act_now], ["Bewegung im Radar", m.moved], ["Neu", m.new], ["Ausblick", m.outlook]].forEach(([t, v]) => {
+    if (!v || !v.length) return; box.appendChild(el("h4", null, t)); const ul = el("ul"); v.forEach(x => ul.appendChild(el("li", null, x))); box.appendChild(ul);
+  });
+  $("monat").hidden = false; $("nav-month").hidden = false;
+}
+function renderStatus(s) {
+  const box = $("status"); box.textContent = "";
+  const r = s && s.last_run; if (!r) return;
+  box.appendChild(el("span", "ok-dot" + (r.ok ? "" : " bad")));
+  box.appendChild(document.createTextNode("Letzter Lauf " + new Date(r.end).toLocaleString("de-DE", { dateStyle: "medium", timeStyle: "short" }) +
+    (r.ok ? " erfolgreich" : " mit Fehler") + (r.summary ? " – " + r.summary : "")));
 }
 
 $("unread").checked = onlyUnread;
 $("unread").addEventListener("change", e => { onlyUnread = e.target.checked; try { localStorage.setItem("radar-unread", onlyUnread ? "1" : "0"); } catch (x) {} renderList(); });
-renderChips(); renderList();
+$("q").addEventListener("input", e => { query = e.target.value.trim(); renderList(); });
 
-fetch("episodes.json?v=" + Date.now(), { cache: "no-store" }).then(r => r.ok ? r.json() : []).then(eps => {
-  if (!eps.length) return;
-  const e = eps[0];
-  $("audio").src = e.url;
-  const m = Math.floor(e.seconds / 60), s = String(e.seconds % 60).padStart(2, "0");
-  $("eptitle").textContent = e.title + " · " + m + ":" + s + " Min.";
-  const feed = new URL("podcast.xml", location.href).href;
-  $("feedurl").textContent = feed;
-  $("copyfeed").addEventListener("click", () => {
-    navigator.clipboard.writeText(feed).then(() => { $("copyfeed").textContent = "Kopiert"; }).catch(() => {
-      const r = document.createRange(); r.selectNodeContents($("feedurl")); const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r);
-    });
-  });
-  $("pod").hidden = false;
-}).catch(() => {});
-
-fetch("data.json?v=" + Date.now(), { cache: "no-store" }).then(r => r.json()).then(d => {
-  // Newest run first; within a run, IT-GRC priority (1 = most important) first.
-  items = (d.news || []).map(n => Object.assign({}, n)).sort((a, b) =>
-    (b.added || "").slice(0, 10).localeCompare((a.added || "").slice(0, 10)) ||
-    (a.priority || 5) - (b.priority || 5) ||
-    (b.published || "").localeCompare(a.published || ""));
-  $("updated").textContent = d.updated ? "Zuletzt aktualisiert: " + new Date(d.updated).toLocaleString("de-DE", { dateStyle: "medium", timeStyle: "short" }) : "Noch keine Meldungen";
-  if (d.briefings && d.briefings.length) renderBrief(d.briefings[0]);
-  const extra = [...new Set(items.map(i => i.topic).filter(t => t && !(d.topics || TOPICS).includes(t)))];
-  TOPICS = ["Alle"].concat((d.topics || TOPICS.slice(1)).filter(t => t === "Weitere Themen" ? items.some(i => i.topic === t) : true), extra);
-  renderChips();
-  renderSignals(d.signals || []);
-  renderList();
-}).catch(() => { $("updated").textContent = "Meldungen konnten nicht geladen werden. Seite neu laden."; });
+Promise.all([getJSON("data.json"), getJSON("episodes.json"), getJSON("status.json")]).then(([d, eps, st]) => {
+  if (d) {
+    D = Object.assign(D, d);
+    $("updated").textContent = d.updated ? "Zuletzt aktualisiert: " + new Date(d.updated).toLocaleString("de-DE", { dateStyle: "medium", timeStyle: "short" }) : "";
+    renderBrief((d.briefings || [])[0]); renderRadar(); renderDeadlines(); renderDossiers(); renderFilters(); renderList(); renderMonthly();
+  } else { $("updated").textContent = "Daten konnten nicht geladen werden. Seite neu laden."; }
+  renderPodcast(eps); renderStatus(st);
+  if (location.hash) { const t = document.querySelector(location.hash); if (t) t.scrollIntoView(); }
+});
 </script>
-
 </body>
 </html>
