@@ -1056,30 +1056,5 @@
    "added": "2026-09-29T22:03:17Z"
   }
  ],
- "monthly": [
-  {
-   "month": "2026-08",
-   "headline": "Die NIS-2-Umsetzung bleibt das einzige Thema im Ring „jetzt handeln“: In Österreich gilt das Gesetz ab 1. Oktober 2026 mit sofortiger Meldepflicht, in Deutschland ist die Registrierungsfrist bereits abgelaufen.",
-   "act_now": [
-    "NIS-2 Österreich: Das Netz- und Informationssystemsicherheitsgesetz 2026 gilt ab 1. Oktober 2026 und die Meldepflicht beginnt sofort. Meldewege und Zuständigkeiten für Sicherheitsvorfälle müssen bis zu diesem Datum einsatzbereit sein.",
-    "NIS-2 Deutschland: Das Umsetzungsgesetz gilt seit 6. Dezember 2025 und die Frist zur Registrierung beim Bundesamt für Sicherheit in der Informationstechnik ist abgelaufen. Anlass ist die Prüfung, ob alle betroffenen Gesellschaften vollständig registriert sind.",
-    "NIS-2 in weiteren Ländern von REWE International: Der Umsetzungsstand ist dort unterschiedlich. Anlass ist eine Übersicht nach Ländern über geltende Pflichten und Fristen."
-   ],
-   "moved": [],
-   "new": [
-    "Post-Quanten-Kryptografie-Migration: erstmals als Signal erfasst",
-    "Cloud-Souveränität und Cloud and AI Development Act: erstmals als Signal erfasst",
-    "Kriegsausschluss in Cyberversicherungen: erstmals als Signal erfasst",
-    "Rechtsverordnung zum Dachgesetz Kritische Infrastrukturen: erstmals als Signal erfasst",
-    "Weitere neue Signale: Digital Fairness Act, neue Prüfungsstandards für Prüfungsnachweise und ein zweiter Anlauf für das Beschäftigtendatengesetz"
-   ],
-   "outlook": [
-    "1. Oktober 2026: Das österreichische Cybersicherheitsgesetz tritt in Kraft und die Meldepflicht startet.",
-    "Bis Jahresende 2026: Registrierung nach dem österreichischen NIS-2-Gesetz",
-    "2. Dezember 2026: Bei der Verordnung über Künstliche Intelligenz endet die Übergangsfrist für die Kennzeichnung synthetischer Inhalte.",
-    "Beobachten, ob sich die neuen Signale verdichten, vor allem die Rechtsverordnung zum Dachgesetz Kritische Infrastrukturen und der Kriegsausschluss in Cyberversicherungen"
-   ],
-   "created": "2026-09-30"
-  }
- ]
+ "monthly": []
 }
