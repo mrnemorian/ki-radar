@@ -318,6 +318,10 @@ function renderDeadlines() {
     td1.appendChild(el("span", "due" + (n >= 0 && n <= 30 ? " soon" : ""), n === 0 ? "heute" : n > 0 ? "in " + n + " Tagen" : "vor " + (-n) + " Tagen"));
     const td2 = el("td"); td2.appendChild(link(f.url, f.title));
     if (f.detail) { td2.appendChild(el("br")); td2.appendChild(el("span", "sub", f.detail)); }
+    const badges = el("div", "tags");
+    badges.appendChild(el("span", "pill " + (f.checked ? "ok" : "line"), f.checked ? "✅ geprüft" : "❔ ungeprüft"));
+    if (f.primary) badges.appendChild(el("span", "pill line", "🏛️ Primärquelle"));
+    td2.appendChild(badges);
     const ds = D.dossiers.find(d => d.slug === f.dossier);
     if (ds) { td2.appendChild(el("br")); td2.appendChild(link("#d-" + ds.slug, "Dossier: " + ds.title, "sub")); }
     tr.appendChild(td1); tr.appendChild(td2); tr.appendChild(el("td", "sub", f.scope || ""));

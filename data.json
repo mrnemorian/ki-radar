@@ -95,7 +95,9 @@
    "scope": "AT",
    "url": "https://www.usp.gv.at/aktuelles/newsliste/NIS-2.html",
    "dossier": "nis2-umsetzung",
-   "added": "2026-09-30"
+   "added": "2026-09-30",
+   "primary": true,
+   "checked": true
   },
   {
    "date": "2026-12-02",
@@ -104,16 +106,9 @@
    "scope": "EU",
    "url": "https://www.rtr.at/rtr/service/ki-servicestelle/ai-act/Zeitplan.de.html",
    "dossier": null,
-   "added": "2026-09-30"
-  },
-  {
-   "date": "2026-12-31",
-   "title": "Österreich: Ende der Registrierungsfrist",
-   "detail": "Betroffene Einrichtungen müssen sich innerhalb von drei Monaten nach Inkrafttreten bei der Cybersicherheitsbehörde registrieren.",
-   "scope": "AT",
-   "url": "https://senn-tech.com/de/blog/nisg-registrierung-31-12-2026",
-   "dossier": "nis2-umsetzung",
-   "added": "2026-09-30"
+   "added": "2026-09-30",
+   "primary": true,
+   "checked": true
   },
   {
    "date": "2027-09-30",
@@ -122,7 +117,9 @@
    "scope": "AT",
    "url": "https://www.secjur.com/blog/nisg-2026",
    "dossier": "nis2-umsetzung",
-   "added": "2026-09-30"
+   "added": "2026-09-30",
+   "primary": false,
+   "checked": true
   }
  ],
  "signals": [
