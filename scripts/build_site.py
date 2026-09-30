@@ -34,6 +34,12 @@ def duration(path):
     return float(out.stdout.strip() or 0)
 
 
+def shorten(text, limit):
+    if len(text) <= limit:
+        return text
+    return text[:limit - 1].rsplit(" ", 1)[0].rstrip(" ,;:–-") + "…"
+
+
 def script_hash(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()[:16]
 
@@ -146,7 +152,7 @@ def main():
         episodes.append({
             "date": date,
             "hash": digest,
-            "title": f"{day.strftime('%d.%m.%Y')}: {b.get('headline', 'IT-GRC Radar')}"[:180],
+            "title": shorten(f"{day.strftime('%d.%m.%Y')}: {b.get('headline', 'IT-GRC Radar')}", 240),
             "description": " · ".join(b.get("points", [])) or "Tägliches IT-GRC Radar",
             "pubdate": email.utils.format_datetime(dt.datetime(day.year, day.month, day.day, 7, 15,
                                                                tzinfo=dt.timezone.utc)),
