@@ -18,6 +18,9 @@ AZURE_VOICES = {
     "Seraphina": os.environ.get("AZURE_VOICE_A", "de-DE-SeraphinaMultilingualNeural"),
     "Florian": os.environ.get("AZURE_VOICE_B", "de-DE-FlorianMultilingualNeural"),
 }
+# Speaking rate per host (SSML prosody); Seraphina was perceived as slightly slow.
+AZURE_RATES = {"Seraphina": os.environ.get("AZURE_RATE_A", "+15%"),
+               "Florian": os.environ.get("AZURE_RATE_B", "+0%")}
 EN_TAG = re.compile(r"\[en\](.+?)\[/en\]", re.S)
 
 
@@ -78,7 +81,8 @@ def _ssml(turns):
     body = []
     for host, text in turns:
         spoken = EN_TAG.sub(lambda m: f'<lang xml:lang="en-US">{m.group(1)}</lang>', escape(text))
-        body.append(f'<voice name="{AZURE_VOICES[host]}">{spoken}<break time="300ms"/></voice>')
+        body.append(f'<voice name="{AZURE_VOICES[host]}"><prosody rate="{AZURE_RATES[host]}">'
+                    f'{spoken}</prosody><break time="300ms"/></voice>')
     return ('<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" '
             'xmlns:mstts="https://www.w3.org/2001/mstts" xml:lang="de-DE">' + "".join(body) + "</speak>")
 
