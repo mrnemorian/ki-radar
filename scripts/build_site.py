@@ -7,6 +7,7 @@ live site instead of being re-synthesized, so audio never enters git history.
 """
 import datetime as dt
 import email.utils
+import hashlib
 import json
 import os
 import pathlib
@@ -31,6 +32,19 @@ def duration(path):
     out = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration",
                           "-of", "csv=p=0", str(path)], capture_output=True, text=True, check=True)
     return float(out.stdout.strip() or 0)
+
+
+def script_hash(path):
+    return hashlib.sha256(path.read_bytes()).hexdigest()[:16]
+
+
+def live_hashes():
+    """Script hashes of the episodes currently published (date -> hash)."""
+    try:
+        with urllib.request.urlopen(f"{SITE_URL}/episodes.json", timeout=30) as r:
+            return {e["date"]: e.get("hash") for e in json.load(r)}
+    except Exception:
+        return {}
 
 
 def fetch_existing(date, target):
@@ -79,8 +93,8 @@ def rss(episodes):
    <title>{escape(e['title'])}</title>
    <description>{escape(e['description'])}</description>
    <pubDate>{e['pubdate']}</pubDate>
-   <guid isPermaLink="false">it-grc-radar-{e['date']}</guid>
-   <enclosure url="{SITE_URL}/audio/{e['date']}.mp3" length="{e['size']}" type="audio/mpeg"/>
+   <guid isPermaLink="false">it-grc-radar-{e['date']}-{e['hash']}</guid>
+   <enclosure url="{SITE_URL}/audio/{e['date']}.mp3?v={e['hash']}" length="{e['size']}" type="audio/mpeg"/>
    <itunes:duration>{int(e['seconds'])}</itunes:duration>
    <itunes:explicit>false</itunes:explicit>
   </item>""")
@@ -115,11 +129,14 @@ def main():
     headlines = {b["date"]: b for b in data.get("briefings", [])}
     scripts = sorted((ROOT / "episodes").glob("*.txt"), reverse=True)[:KEEP]
     episodes, synthesized = [], []
+    published = live_hashes()
     for txt in scripts:
         date = txt.stem
+        digest = script_hash(txt)
         mp3 = OUT / "audio" / f"{date}.mp3"
-        if not fetch_existing(date, mp3):
-            print(f"Synthetisiere Folge {date}")
+        # Reuse published audio only if it was made from exactly this script.
+        if published.get(date) != digest or not fetch_existing(date, mp3):
+            print(f"Synthetisiere Folge {date} (Skript {digest})")
             synthesize(txt, mp3)
             synthesized.append(date)
         else:
@@ -128,6 +145,7 @@ def main():
         day = dt.date.fromisoformat(date)
         episodes.append({
             "date": date,
+            "hash": digest,
             "title": f"{day.strftime('%d.%m.%Y')}: {b.get('headline', 'IT-GRC Radar')}"[:180],
             "description": " · ".join(b.get("points", [])) or "Tägliches IT-GRC Radar",
             "pubdate": email.utils.format_datetime(dt.datetime(day.year, day.month, day.day, 7, 15,
@@ -137,8 +155,8 @@ def main():
         })
     (OUT / "podcast.xml").write_text(rss(episodes), encoding="utf-8")
     (OUT / "episodes.json").write_text(json.dumps(
-        [{"date": e["date"], "title": e["title"], "seconds": int(e["seconds"]),
-          "url": f"audio/{e['date']}.mp3"} for e in episodes], ensure_ascii=False), encoding="utf-8")
+        [{"date": e["date"], "hash": e["hash"], "title": e["title"], "seconds": int(e["seconds"]),
+          "url": f"audio/{e['date']}.mp3?v={e['hash']}"} for e in episodes], ensure_ascii=False), encoding="utf-8")
     print(f"{len(episodes)} Folgen im Feed")
 
     # Tell the workflow which episode is new today, so Telegram gets it exactly once.
