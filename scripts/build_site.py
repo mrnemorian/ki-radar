@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Build the GitHub Pages site: copy page + data, synthesize missing podcast
-episodes with Piper, write the podcast RSS feed and cover image.
+episodes (Azure dialogue, Piper fallback), write the podcast RSS feed and cover image.
 
 Runs in GitHub Actions. Episodes already published are downloaded from the
 live site instead of being re-synthesized, so audio never enters git history.
@@ -16,6 +16,8 @@ import subprocess
 import urllib.request
 from xml.sax.saxutils import escape
 from zoneinfo import ZoneInfo
+
+import audio
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 OUT = ROOT / "_site"
@@ -64,18 +66,6 @@ def fetch_existing(date, target):
     return False
 
 
-def synthesize(text_file, target):
-    wav = target.with_suffix(".wav")
-    with open(text_file, encoding="utf-8") as f:
-        subprocess.run(["piper", "-m", VOICE, "-f", str(wav), "--sentence-silence", "0.35"],
-                       stdin=f, check=True)
-    sh("ffmpeg", "-y", "-loglevel", "error", "-i", str(wav), "-af", "loudnorm=I=-16:TP=-1.5",
-       "-ac", "1", "-ar", "44100", "-b:a", "64k", "-id3v2_version", "3",
-       "-metadata", "title=IT-GRC Radar " + target.stem, "-metadata", "artist=IT-GRC Radar",
-       str(target))
-    wav.unlink()
-
-
 def cover(path):
     from PIL import Image, ImageDraw, ImageFont
     img = Image.new("RGB", (1400, 1400), (16, 22, 20))
@@ -111,9 +101,9 @@ def rss(episodes):
   <link>{SITE_URL}/</link>
   <atom:link href="{SITE_URL}/podcast.xml" rel="self" type="application/rss+xml"/>
   <language>de-de</language>
-  <description>Täglich 3–5 Minuten IT-Governance, IT-Compliance und AI-Governance – automatisch recherchiert und gesprochen mit KI (Claude und Piper). Keine Rechtsberatung; im Zweifel die Quellen auf der Webseite lesen.</description>
+  <description>Täglich 3–5 Minuten IT-Governance, IT-Compliance und AI-Governance – automatisch recherchiert und gesprochen mit Künstlicher Intelligenz (Claude, Azure-Stimmen). Keine Rechtsberatung; im Zweifel die Quellen auf der Webseite lesen.</description>
   <itunes:author>IT-GRC Radar</itunes:author>
-  <itunes:summary>Täglich 3–5 Minuten IT-Governance, IT-Compliance und AI-Governance, KI-generiert.</itunes:summary>
+  <itunes:summary>Täglich 3–5 Minuten IT-Governance, IT-Compliance und AI-Governance, mit Künstlicher Intelligenz erstellt.</itunes:summary>
   <itunes:image href="{SITE_URL}/cover.png"/>
   <itunes:category text="Technology"/>
   <itunes:explicit>false</itunes:explicit>
@@ -133,7 +123,10 @@ def main():
 
     data = json.loads((ROOT / "data.json").read_text(encoding="utf-8"))
     headlines = {b["date"]: b for b in data.get("briefings", [])}
-    scripts = sorted((ROOT / "episodes").glob("*.txt"), reverse=True)[:KEEP]
+    by_date = {}
+    for f in sorted((ROOT / "episodes").glob("*.txt")) + sorted((ROOT / "episodes").glob("*.json")):
+        by_date[f.stem] = f  # a dialogue (.json) wins over a legacy monologue (.txt)
+    scripts = [by_date[d] for d in sorted(by_date, reverse=True)[:KEEP]]
     episodes, synthesized = [], []
     published = live_hashes()
     for txt in scripts:
@@ -143,7 +136,7 @@ def main():
         # Reuse published audio only if it was made from exactly this script.
         if published.get(date) != digest or not fetch_existing(date, mp3):
             print(f"Synthetisiere Folge {date} (Skript {digest})")
-            synthesize(txt, mp3)
+            audio.render_episode(txt, mp3, VOICE)
             synthesized.append(date)
         else:
             print(f"Folge {date} vom Live-Stand übernommen")
