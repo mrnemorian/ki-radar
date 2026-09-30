@@ -1,11 +1,17 @@
 {
  "last_run": {
-  "start": "2026-09-30T13:03:40+02:00",
-  "end": "2026-09-30T13:10:23+02:00",
+  "start": "2026-09-30T13:17:20+02:00",
+  "end": "2026-09-30T13:23:35+02:00",
   "ok": true,
-  "summary": "4 neue Meldungen: P1 Update: Österreich – neues Cybersicherheitsgesetz gilt ab morgen, Meldepflicht ab dem ersten Tag; P2 Kiteworks: Kunden sollten Server vorsorglich abschalten, kritische Lücke g"
+  "summary": "4 neue Meldungen: P1 Update: Österreichs Cybersicherheitsgesetz startet, Selbstdeklaration bis September 2027; P2 Autonomer Agent mit Künstlicher Intelligenz steuert Angriff auf niederländische Sic"
  },
  "history": [
+  {
+   "start": "2026-09-30T13:17:20+02:00",
+   "end": "2026-09-30T13:23:35+02:00",
+   "ok": true,
+   "summary": "4 neue Meldungen: P1 Update: Österreichs Cybersicherheitsgesetz startet, Selbstdeklaration bis September 2027; P2 Autonomer Agent mit Künstlicher Intelligenz steuert Angriff auf niederländische Sic"
+  },
   {
    "start": "2026-09-30T13:03:40+02:00",
    "end": "2026-09-30T13:10:23+02:00",

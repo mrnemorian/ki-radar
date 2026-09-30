@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-30T11:09:57Z",
+ "updated": "2026-09-30T11:23:35Z",
  "topics": [
   "IT-Governance & Risiko",
   "Cyber- & IT-Regulierung",
@@ -13,12 +13,12 @@
  "briefings": [
   {
    "date": "2026-09-30",
-   "headline": "Österreich startet morgen mit der Umsetzung der NIS-2-Richtlinie, Dateiaustauschdienste und Agenten mit Künstlicher Intelligenz bleiben Einfallstore",
+   "headline": "Österreich startet morgen mit dem neuen Cybersicherheitsgesetz, ein Agent mit Künstlicher Intelligenz führt einen Angriff autonom aus, Beschäftigte erkennen Deepfakes kaum.",
    "points": [
-    "Österreich: Netz- und Informationssystemsicherheitsgesetz 2026 gilt ab 1. Oktober, Meldepflicht ab dem ersten Tag, Registrierung über das Unternehmensserviceportal",
-    "Kiteworks: Kunden sollten Server vorsorglich abschalten, kritische Lücke im Wartungsfenster geschlossen",
-    "Model Context Protocol: Lücke im offiziellen Python-Software-Development-Kit gibt Anmeldedaten an bösartige Server preis",
-    "Supabase: Über 16.000 falsch konfigurierte Datenbanken, oft mit Künstlicher Intelligenz erstellt, legen personenbezogene Daten offen"
+    "Österreich: Netz- und Informationssystemsicherheitsgesetz 2026 gilt ab 1. Oktober ohne Übergangsfrist, Selbstdeklaration bis 30. September 2027, Schulungspflicht der Geschäftsleitung strafbewehrt",
+    "Niederländisches Institut für die Offenlegung von Schwachstellen: autonomer Agent mit Künstlicher Intelligenz steuert Angriff nach dem Einbruch",
+    "Eurobarometer: drei von vier Beschäftigten in der Europäischen Union erhalten verdächtige Nachrichten, nur 48 Prozent erkennen Deepfake-Videos",
+    "Aktiv ausgenutzte Schwachstelle in mehreren Apple-Produkten: Updates auf mobilen Geräten prüfen"
    ],
    "count": 4
   },
@@ -48,16 +48,41 @@
    "title": "NIS-2-Umsetzung",
    "sector": "Cyber- & IT-Regulierung",
    "ring": "jetzt handeln",
-   "status": "In Deutschland gilt das Umsetzungsgesetz seit 6. Dezember 2025, die Registrierungsfrist beim Bundesamt für Sicherheit in der Informationstechnik ist abgelaufen. In Österreich gilt das Netz- und Informationssystemsicherheitsgesetz 2026 ab 1. Oktober 2026 mit sofortiger Meldepflicht und Registrierung bis Jahresende; in weiteren Ländern von REWE International ist der Umsetzungsstand unterschiedlich.",
-   "next_step": "Meldewege und Portalzugänge je Land prüfen, Registrierung in Österreich vorbereiten und Länderübersicht der Melde- und Registrierungspflichten aktuell halten.",
+   "status": "In Deutschland gilt das Umsetzungsgesetz seit 6. Dezember 2025. In Österreich gilt das Netz- und Informationssystemsicherheitsgesetz 2026 ab 1. Oktober 2026 ohne Übergangsfrist, mit Registrierung bis 31. Dezember 2026, Selbstdeklaration bis 30. September 2027 und strafbewehrter Schulungspflicht der Leitungsorgane; in weiteren Ländern von REWE International ist der Umsetzungsstand unterschiedlich.",
+   "next_step": "Meldeketten für österreichische Gesellschaften ab 1. Oktober scharf schalten, Betroffenheit und Registrierung bis Jahresende abschließen und Nachweise für die Selbstdeklaration sowie Schulungsnachweise der Geschäftsleitung zentral sammeln.",
    "open_questions": [
-    "Wie werden Konzerngesellschaften mit Tätigkeit in mehreren Ländern bei Registrierung und Meldung abgegrenzt?",
-    "Wie verzahnt sich die Meldung an die österreichische Behörde mit dem konzernweiten Incident-Prozess?"
+    "Welche Nachweise verlangt das österreichische Bundesamt für Cybersicherheit konkret für die Selbstdeklaration?",
+    "Wie werden Meldungen in mehreren Ländern bei einem grenzüberschreitenden Vorfall koordiniert?"
    ],
    "controls": [
     "NIS-2-Richtlinie Art. 20 – Governance",
     "NIS-2-Richtlinie Art. 21 – Risikomanagementmaßnahmen",
     "NIS-2-Richtlinie Art. 23 – Berichtspflichten"
+   ],
+   "updated": "2026-09-30"
+  },
+  {
+   "slug": "agentische-ki-sicherheit",
+   "created": "2026-09-30",
+   "ring_history": [
+    {
+     "date": "2026-09-30",
+     "ring": "vorbereiten"
+    }
+   ],
+   "title": "Sicherheit agentischer Künstlicher Intelligenz",
+   "sector": "AI-Governance",
+   "ring": "vorbereiten",
+   "status": "Agenten mit Künstlicher Intelligenz tauchen zunehmend auf beiden Seiten auf: Angreifer setzen sie autonom nach einem Einbruch ein, zuletzt beim niederländischen Institut für die Offenlegung von Schwachstellen; zugleich entstehen Schwachstellen im Model Context Protocol und erste Prüfanforderungen wie das Projekt des Bundesamts für Sicherheit in der Informationstechnik zu agentischer Künstlicher…",
+   "next_step": "Eingesetzte Agenten und deren Berechtigungen inventarisieren, Prüfpfade und Freigaben für Agentenaktionen festlegen und Notfallübungen um schnelle, agentengesteuerte Angriffe erweitern.",
+   "open_questions": [
+    "Wer ist Owner für Agenten, die bereichsübergreifend handeln?",
+    "Welche Prüfanforderungen werden Behörden und Abschlussprüfer an agentische Systeme stellen?"
+   ],
+   "controls": [
+    "ISO/IEC 42001 – Managementsystem für Künstliche Intelligenz",
+    "ISO/IEC 27001 Anhang A 8.2 – Privilegierte Zugangsrechte",
+    "ISO/IEC 27001 Anhang A 8.16 – Überwachungstätigkeiten"
    ],
    "updated": "2026-09-30"
   }
@@ -87,6 +112,15 @@
    "detail": "Betroffene Einrichtungen müssen sich innerhalb von drei Monaten nach Inkrafttreten bei der Cybersicherheitsbehörde registrieren.",
    "scope": "AT",
    "url": "https://senn-tech.com/de/blog/nisg-registrierung-31-12-2026",
+   "dossier": "nis2-umsetzung",
+   "added": "2026-09-30"
+  },
+  {
+   "date": "2027-09-30",
+   "title": "Österreich: Selbstdeklaration zu Risikomanagementmaßnahmen fällig",
+   "detail": "Wesentliche und wichtige Einrichtungen nach dem Netz- und Informationssystemsicherheitsgesetz 2026 müssen einmalig eine Selbstdeklaration zu ihren umgesetzten Risikomanagementmaßnahmen beim Bundesamt für Cybersicherheit einreichen.",
+   "scope": "AT",
+   "url": "https://www.secjur.com/blog/nisg-2026",
    "dossier": "nis2-umsetzung",
    "added": "2026-09-30"
   }
@@ -152,11 +186,12 @@
   },
   {
    "theme": "Neue Prüfungsstandards für Prüfungsnachweise",
-   "why": "Der internationale Standardsetzer für Prüfung und Assurance überarbeitet die Standards zu Prüfungsnachweisen, Reaktionen auf Risiken und analytischen Prüfungshandlungen für das digitale Umfeld; Stellungnahmen sind bis 15. Dezember 2026 möglich. Das dürfte mittelfristig die Anforderungen an Datenqualität und Nachweise aus Systemen in der Abschlussprüfung verändern.",
+   "why": "Der internationale Standardsetzer für Abschlussprüfungen modernisiert die Standards zu Prüfungsnachweisen, Reaktionen auf Risiken und analytischen Prüfungshandlungen mit Blick auf Technologie; Kommentare sind bis 15. Dezember 2026 möglich. Strengere Anforderungen an die Verlässlichkeit von Systeminformationen dürften die allgemeinen IT-Kontrollen in der Abschlussprüfung betreffen.",
    "count": 1,
    "first_seen": "2026-09-30",
    "last_seen": "2026-09-30",
    "evidence": [
+    "https://www.accountingtoday.com/news/iaasb-proposes-to-revise-audit-standards-for-new-risks-and-tech",
     "https://ifacweb.blob.core.windows.net/publicfiles/2026-08/IAASB-Audit-Evidence-Risk-Response-ISA-500-Exposure-Draft.pdf"
    ]
   },
@@ -169,9 +204,123 @@
    "evidence": [
     "https://riehnlegal.blog/content/artikel/?item=beschaeftigtendatenschutz-2026-der-zweite-anlauf-zum-eigenen-gesetz-und-was-er-fuer-dich-bedeutet"
    ]
+  },
+  {
+   "theme": "Autonome Angriffe durch Agenten",
+   "why": "Der Fall des niederländischen Instituts für die Offenlegung von Schwachstellen zeigt, dass Angreifer Agenten mit Künstlicher Intelligenz autonom im Netz agieren lassen; das verkürzt Reaktionszeiten und verändert Annahmen in Notfall- und Erkennungskonzepten.",
+   "count": 1,
+   "first_seen": "2026-09-30",
+   "last_seen": "2026-09-30",
+   "evidence": [
+    "https://www.bleepingcomputer.com/news/security/automated-ai-agent-used-to-breach-cybersecurity-nonprofit-divd/"
+   ]
   }
  ],
  "news": [
+  {
+   "title": "Eurobarometer: Drei von vier Beschäftigten erhalten verdächtige Nachrichten, Deepfakes kaum erkannt",
+   "summary": "Laut einer am 30. September veröffentlichten Eurobarometer-Umfrage der Europäischen Kommission hatten 75 Prozent der Beschäftigten in der Europäischen Union bei der Arbeit mit verdächtigen E-Mails, Nachrichten oder Links zu tun; 39 Prozent berichten von Phishing, 15 Prozent von Betrugsversuchen, die mit Künstlicher Intelligenz erstellt wurden. 83 Prozent halten die Folgen von Cyberangriffen für ernst, aber nur 48 Prozent trauen sich zu, ein mit Künstlicher Intelligenz erzeugtes Fake-Video zu erkennen.",
+   "relevance": "Die Zahlen belegen, dass Awareness-Programme für eine große, verteilte Belegschaft um Deepfakes und Betrug mit Künstlicher Intelligenz erweitert werden sollten, und liefern eine belastbare Referenz für Budget- und Vorstandsdiskussionen.",
+   "source": "Europäische Kommission",
+   "url": "https://digital-strategy.ec.europa.eu/en/news/three-four-eu-employees-faced-cyber-threats-work-new-eurobarometer-finds",
+   "id": "2026-09-30-eurobarometer-cyberbedrohungen-arbeitsplatz",
+   "topic": "IT-Governance & Risiko",
+   "impact": "mittel",
+   "published": "2026-09-30",
+   "tags": [
+    "Awareness",
+    "Deepfake",
+    "Phishing"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 6.3 – Informationssicherheitsbewusstsein, -ausbildung und -schulung",
+    "NIS-2-Richtlinie Art. 21 – Schulungen im Bereich der Cybersicherheit"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Management"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": null,
+   "priority": 3,
+   "primary": true,
+   "added": "2026-09-30T11:23:35Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Alle Prozentwerte und das Datum stimmen. Die Zahl von 25.747 Befragten steht nicht auf der Quellseite."
+   }
+  },
+  {
+   "title": "Autonomer Agent mit Künstlicher Intelligenz steuert Angriff auf niederländische Sicherheitsorganisation",
+   "summary": "Das niederländische Institut für die Offenlegung von Schwachstellen, eine gemeinnützige Sicherheitsorganisation, wurde über eine technische Schwachstelle in einem nicht genannten System angegriffen; danach führte ein autonomer Agent mit Künstlicher Intelligenz die weiteren Schritte im Netz selbstständig und in hohem Tempo aus. Der Agent agierte laut Organisation laut und unordentlich, störte etwa mit Password Spraying seinen eigenen Man-in-the-Middle-Angriff und hinterließ viele Spuren. Datenschutzbehörde und nationales Cybersicherheitszentrum wurden informiert, weitere Details sind für den 1. Oktober angekündigt.",
+   "relevance": "Agentengesteuerte Angriffe verkürzen die Zeit zwischen Einbruch und Schaden; Erkennungs- und Reaktionsprozesse sowie Notfallübungen sollten dieses Tempo berücksichtigen.",
+   "source": "BleepingComputer",
+   "url": "https://www.bleepingcomputer.com/news/security/automated-ai-agent-used-to-breach-cybersecurity-nonprofit-divd/",
+   "id": "2026-09-30-divd-autonomer-ki-agent-angriff",
+   "topic": "IT-Governance & Risiko",
+   "impact": "mittel",
+   "published": "2026-09-29",
+   "tags": [
+    "agentische Künstliche Intelligenz",
+    "Bedrohungslage",
+    "Incident Response"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 8.16 – Überwachungstätigkeiten",
+    "NIS-2-Richtlinie Art. 21 – Bewältigung von Sicherheitsvorfällen"
+   ],
+   "roles": [
+    "IT-Risiko"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "agentische-ki-sicherheit",
+   "priority": 2,
+   "primary": false,
+   "added": "2026-09-30T11:23:35Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum, Einbruch über eine nicht genannte Schwachstelle, autonomer Agent, Password Spraying gegen den eigenen Man-in-the-Middle-Angriff, viele Spuren, Information von Datenschutzbehörde und nationalem Cybersicherheitszentrum sowie Ankündigung für den 1. Oktober sind belegt."
+   }
+  },
+  {
+   "title": "Apple: Schwachstelle CVE-2026-86950 in mehreren Produkten wird aktiv ausgenutzt",
+   "summary": "Die amerikanische Behörde für Cybersicherheit und Infrastruktursicherheit hat am 29. September einen Speicherfehler (Out-of-Bounds Write) in mehreren Apple-Produkten mit der Kennung CVE-2026-86950 in ihren Katalog aktiv ausgenutzter Schwachstellen aufgenommen.",
+   "relevance": "Aktiv ausgenutzte Lücken in mobilen Endgeräten gehören in das priorisierte Patch-Management; der Nachweis, dass Updates auf verwalteten Geräten ankommen, ist eine prüfbare Kontrolle.",
+   "source": "Cybersecurity and Infrastructure Security Agency",
+   "url": "https://www.cisa.gov/news-events/alerts/2026/09/29/cisa-adds-one-known-exploited-vulnerability-catalog",
+   "id": "2026-09-30-apple-schwachstelle-aktiv-ausgenutzt",
+   "topic": "IT-Governance & Risiko",
+   "impact": "info",
+   "published": "2026-09-29",
+   "tags": [
+    "Schwachstelle",
+    "Patch-Management",
+    "Mobile Geräte"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 8.8 – Handhabung von technischen Schwachstellen"
+   ],
+   "roles": [
+    "IT-Risiko"
+   ],
+   "countries": [
+    "EU",
+    "DE",
+    "AT"
+   ],
+   "dossier": null,
+   "priority": 4,
+   "primary": true,
+   "added": "2026-09-30T11:23:35Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum 29. September, Kennung CVE-2026-86950 und Out-of-Bounds Write in mehreren Apple-Produkten sind belegt."
+   }
+  },
   {
    "title": "Kiteworks: Kunden sollten Server vorsorglich abschalten, kritische Lücke geschlossen",
    "summary": "Der Anbieter von Software für den sicheren Dateiaustausch Kiteworks hat Kunden weltweit gebeten, ihre Server am 26. September vorsorglich abzuschalten, in Mitteleuropa von 4 bis 10 Uhr. Auslöser war eine Warnung von Bundesbehörden der Vereinigten Staaten, dass ein Angreifer Kiteworks-Systeme ins Visier nehmen könnte. Während des Fensters wurde eine kritische Lücke in einer Funktion geschlossen, die laut Hersteller weniger als ein Prozent der Kunden nutzt; Hinweise auf Ausnutzung gibt es nach Herstellerangaben nicht, eine Schwachstellen-Kennung fehlt bisher.",
@@ -726,6 +875,42 @@
     "Lieferanten"
    ],
    "added": "2026-09-29T22:22:07Z"
+  },
+  {
+   "title": "Update: Österreichs Cybersicherheitsgesetz startet, Selbstdeklaration bis September 2027",
+   "summary": "Ab 1. Oktober 2026 gelten in Österreich mit dem Netz- und Informationssystemsicherheitsgesetz 2026 neue Registrierungs- und Meldepflichten für Unternehmen und Behörden; zuständig ist das neue Bundesamt für Cybersicherheit beim Innenministerium, nationales Computer-Notfallteam für die Privatwirtschaft ist CERT.at. Strafen drohen unter anderem bei Verstößen gegen Registrierungs- oder Meldepflichten und wenn Leitungsorgane die vorgeschriebenen Schulungen zur IT-Sicherheit nicht fristgerecht absolvieren. Unternehmen müssen laut Bericht selbst prüfen, ob sie betroffen sind.",
+   "relevance": "Für einen Konzern mit österreichischen Gesellschaften müssen ab morgen Meldeketten mit 24-Stunden-Frühwarnung funktionieren; parallel sollten Nachweise für die Selbstdeklaration und Schulungsnachweise der Geschäftsleitung strukturiert gesammelt werden.",
+   "source": "heise online",
+   "url": "https://www.heise.de/en/news/From-Oct-1-IT-incident-reporting-obligation-in-Austria-11462461.html",
+   "id": "2026-09-30-update-oesterreich-nisg-start-selbstdeklaration",
+   "topic": "Cyber- & IT-Regulierung",
+   "impact": "hoch",
+   "published": "2026-09-22",
+   "tags": [
+    "NIS-2",
+    "Österreich",
+    "Meldepflicht"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 20 – Governance und Schulung der Leitungsorgane",
+    "NIS-2-Richtlinie Art. 23 – Berichtspflichten",
+    "ISO/IEC 27001 Anhang A 5.24 – Planung und Vorbereitung der Handhabung von Informationssicherheitsvorfällen"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Management"
+   ],
+   "countries": [
+    "AT"
+   ],
+   "dossier": "nis2-umsetzung",
+   "priority": 1,
+   "primary": false,
+   "added": "2026-09-30T11:23:35Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Datum, Inkrafttreten, Bundesamt, CERT.at, Strafen bei versäumten Schulungen und Pflicht zur Selbstprüfung sind belegt. Nicht in der Quelle stehen: Registrierung bis 31. Dezember 2026, einmalige Selbstdeklaration bis 30. September 2027 und fehlende Übergangsfrist. Damit ist gerade das als neu…"
+   }
   },
   {
    "title": "Lagebericht Threat Landscape 2026 der Agentur der Europäischen Union für Cybersicherheit: Abhängigkeiten vergrößern die Angriffsfläche, Künstliche Intelligenz im Aufwind",

@@ -7,123 +7,111 @@
    "turns": [
     {
      "speaker": "Seraphina",
-     "text": "Guten Morgen, liebe IT-GRC-Kolleginnen und -Kollegen, und willkommen beim IT-GRC Radar. Heute ist Mittwoch, der dreißigste September 2026, und morgen wird es in Österreich ernst."
+     "text": "Guten Morgen, liebe IT-GRC-Kolleginnen und -Kollegen, willkommen beim IT-GRC Radar. Heute ist Mittwoch, der dreißigste September 2026, und in Österreich ist das der letzte Tag vor einem Stichtag."
     },
     {
      "speaker": "Florian",
-     "text": "Ernst im Sinne von Pflicht, nicht im Sinne von Kaffeemaschine kaputt. Wobei ich ehrlich gesagt nicht weiß, was die Kollegen mehr trifft."
+     "text": "Letzter Tag vor dem Stichtag klingt nach Audit-Saison. Nur dass diesmal kein Prüfer vor der Tür steht, sondern ein Gesetz."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Außerdem heute: ein Angriff, bei dem ein [en]AI Agent[/en] selbstständig durchs Netz gezogen ist, frische Zahlen zur Wachsamkeit von Beschäftigten und eine aktiv ausgenutzte Lücke bei Apple."
     }
    ]
   },
   {
    "title": "Österreich startet",
-   "news_id": "2026-09-30-update-oesterreich-nisg-start-meldepflicht",
+   "news_id": "2026-09-30-update-oesterreich-nisg-start-selbstdeklaration",
    "turns": [
     {
      "speaker": "Seraphina",
-     "text": "Da gibt es Neues zu einem Thema, das wir schon hatten. Ab morgen, dem ersten Oktober, gilt in Österreich das Netz- und Informationssystemsicherheitsgesetz 2026, also die Umsetzung der NIS-2-Richtlinie, der Richtlinie über Netz- und Informationssicherheit. Neu ist: Das Unternehmensserviceportal schaltet ab morgen eine eigene Anwendung für Registrierung und Vorfallmeldungen frei."
+     "text": "Da gibt es Neues zu Österreich. Ab morgen gilt dort das Netz- und Informationssystemsicherheitsgesetz 2026, die Umsetzung der NIS-2-Richtlinie, also der Richtlinie über Netz- und Informationssicherheit. Zuständig ist ein neues Bundesamt für Cybersicherheit beim Innenministerium."
     },
     {
      "speaker": "Florian",
-     "text": "Und das Entscheidende steht im Kleingedruckten. Die Registrierung hat bis Jahresende Zeit, die Meldepflicht für erhebliche Cybervorfälle gilt aber ab dem ersten Tag."
+     "text": "Und es gibt keine Übergangsfrist. Die Meldepflicht für erhebliche Vorfälle läuft ab dem ersten Tag: Frühwarnung binnen 24 Stunden, Meldung binnen 72 Stunden, Abschlussbericht nach einem Monat."
     },
     {
      "speaker": "Seraphina",
-     "text": "Moment, heißt das, man muss melden können, bevor man überhaupt registriert ist?"
+     "text": "Moment, registrieren muss man sich aber trotzdem erst bis Jahresende?"
     },
     {
      "speaker": "Florian",
-     "text": "So lese ich das, ja. Deshalb rät das Portal, jetzt zu klären, wer Zugang hat, und dass die berechtigten Personen eine ID Austria besitzen. Es gibt sogar getrennte Rollen nur für die Registrierung oder nur für Meldungen."
+     "text": "Genau, bis zum einunddreißigsten Dezember 2026. Neu ist die zweite Etappe: Bis zum dreißigsten September 2027 ist eine einmalige Selbstdeklaration zu den umgesetzten Risikomanagementmaßnahmen fällig. Wer das ernst nimmt, sammelt die Nachweise jetzt so, dass sie später nicht aus fünf Excel-Listen zusammengeklebt werden müssen."
     },
     {
      "speaker": "Seraphina",
-     "text": "Also wieder die Klassikerfrage: Wer ist eigentlich Owner des Meldewegs?"
+     "text": "Was mich überrascht hat: Wenn die Geschäftsleitung ihre Schulung versäumt, ist das ein eigener Verwaltungsstraftatbestand."
     },
     {
      "speaker": "Florian",
-     "text": "Genau die. Und bitte nicht beim ersten Vorfall am Sonntagabend feststellen, dass die einzige berechtigte Person gerade im Urlaub ist. Zuständig ist übrigens ein neues Bundesamt für Cybersicherheit beim Innenministerium, das muss man auch erst einmal in die Kontaktliste eintragen."
+     "text": "Ja, und das ist ein Governance-Thema, kein Technikthema. Die Leitungsorgane müssen selbst an passenden Schulungen teilnehmen. Da hilft es wenig, wenn die Teilnahmeliste irgendwo liegt und niemand weiß, wer eigentlich [en]Owner[/en] ist. Und laut Bericht muss jedes Unternehmen selbst herausfinden, ob es betroffen ist."
     }
    ]
   },
   {
-   "title": "Kiteworks schaltet ab",
-   "news_id": "2026-09-30-kiteworks-vorsorgliche-abschaltung",
+   "title": "Agent greift an",
+   "news_id": "2026-09-30-divd-autonomer-ki-agent-angriff",
    "turns": [
     {
      "speaker": "Seraphina",
-     "text": "Zweites Thema, und das war ein ungewöhnliches Wochenende. Der Anbieter Kiteworks, der Software für den sicheren Austausch großer Dateien herstellt, hat seine Kunden weltweit gebeten, die Server vorsorglich abzuschalten, bei uns am Samstag von vier bis zehn Uhr morgens."
+     "text": "Zum zweiten Thema. Das niederländische Institut für die Offenlegung von Schwachstellen, eine gemeinnützige Sicherheitsorganisation, wurde angegriffen. Nach dem Einbruch über eine technische Schwachstelle hat ein autonomer [en]AI Agent[/en] die weiteren Schritte im Netz übernommen."
     },
     {
      "speaker": "Florian",
-     "text": "Auslöser war eine Warnung von Bundesbehörden der Vereinigten Staaten, dass ein Angreifer Kiteworks-Systeme ins Visier nehmen könnte. Im Wartungsfenster wurde eine kritische Lücke in einer Funktion geschlossen, die laut Hersteller weniger als ein Prozent der Kunden nutzt. Hinweise auf eine Ausnutzung gibt es nach Herstellerangaben keine."
+     "text": "Und zwar, laut der Organisation selbst, laut und sehr unordentlich. Der Agent hat mit [en]Password Spraying[/en] seinen eigenen [en]Man-in-the-Middle[/en]-Angriff gestört und jede Menge Spuren hinterlassen."
     },
     {
      "speaker": "Seraphina",
-     "text": "Einen Hersteller, der sagt, bitte einfach alles ausschalten, erlebt man nicht oft."
+     "text": "Also eher Entwarnung?"
     },
     {
      "speaker": "Florian",
-     "text": "Selten, aber lehrreich. Gestern hatten wir schon den Vorfall bei FTAPI, jetzt Kiteworks. Dateiaustauschdienste sind beliebte Ziele, weil dort sensible Daten gebündelt liegen. Die Frage für einen Konzern ist also: Weiß ich, welche Fachbereiche solche Dienste nutzen, und steht im Vertrag, wie schnell mich der Anbieter warnt?"
+     "text": "Ehrlich gesagt nein. Dieser Agent war ungeschickt, der nächste wird es nicht sein. Entscheidend ist das Tempo: Wenn ein Agent in Minuten selbst entscheidet, was als Nächstes kommt, müssen Erkennung und [en]Incident Response[/en] mithalten. Das gehört in die nächste Notfallübung."
     },
     {
      "speaker": "Seraphina",
-     "text": "Und ob jemand nachts um vier überhaupt einen Server abschalten darf."
+     "text": "Immerhin protokolliert der Angreifer gründlich."
     },
     {
      "speaker": "Florian",
-     "text": "Das ist die eigentliche Notfallübung. Die Excel-Liste mit den Ansprechpartnern hilft nur, wenn sie aktueller ist als die letzte Audit-Saison."
+     "text": "Eine [en]Logging[/en]-Disziplin, die man sich intern manchmal auch wünschen würde. Weitere Details hat die Organisation für den ersten Oktober angekündigt."
     }
    ]
   },
   {
-   "title": "Lücke für Agenten",
-   "news_id": "2026-09-30-mcp-python-sdk-oauth-luecke",
+   "title": "Beschäftigte und Deepfakes",
+   "news_id": "2026-09-30-eurobarometer-cyberbedrohungen-arbeitsplatz",
    "turns": [
     {
      "speaker": "Seraphina",
-     "text": "Weiter mit Agenten. Im offiziellen [en]Software Development Kit[/en] für Python zum [en]Model Context Protocol[/en], über das Agenten mit Künstlicher Intelligenz an Werkzeuge angebunden werden, steckt eine Lücke."
+     "text": "Passend dazu eine heute veröffentlichte Umfrage der Europäischen Kommission. Drei von vier Beschäftigten in der Europäischen Union hatten bei der Arbeit mit verdächtigen Mails, Nachrichten oder Links zu tun."
     },
     {
      "speaker": "Florian",
-     "text": "Ein bösartiger Server kann eine Anwendung dazu bringen, ihre Anmeldedaten für das Verfahren [en]OAuth[/en] herauszugeben, also etwa das [en]Client Secret[/en] und den Autorisierungscode. Damit holt sich der Angreifer echte Zugriffstoken mit allen Rechten der Anwendung. Behoben ist das in den aktuellen Versionen beider Entwicklungslinien."
+     "text": "Mich beschäftigt eine andere Zahl mehr: Nur 48 Prozent trauen sich zu, ein mit Künstlicher Intelligenz erzeugtes Video als Fälschung zu erkennen. Und 15 Prozent berichten schon von Betrugsversuchen, die mit Künstlicher Intelligenz erstellt wurden."
     },
     {
      "speaker": "Seraphina",
-     "text": "Also der Agent vertraut dem falschen Werkzeug und gibt den Hausschlüssel ab."
+     "text": "Heißt das, die klassische Phishing-Schulung ist überholt?"
     },
     {
      "speaker": "Florian",
-     "text": "So ungefähr. Für die Governance heißt das: Gibt es überhaupt ein Inventar, welche Agenten mit welchen Servern sprechen? Ohne das kann man nicht einmal sagen, ob man betroffen ist. Und die Rechte einer Anwendung sollten so knapp sein, dass ein gestohlener Token nicht gleich die halbe Landschaft öffnet."
+     "text": "Nicht überholt, aber unvollständig. Bei einer großen Belegschaft in Märkten, Lagern und Reisebüros muss [en]Awareness[/en] auch [en]Deepfakes[/en] und gefälschte Anrufe angeblicher Vorgesetzter abdecken. Und die Zahlen sind eine gute Antwort, wenn im Vorstand gefragt wird, wofür das Schulungsbudget eigentlich gebraucht wird."
     }
    ]
   },
   {
-   "title": "Offene Datenbanken",
-   "news_id": "2026-09-30-supabase-fehlkonfigurierte-datenbanken",
+   "title": "Apple-Lücke",
+   "news_id": "2026-09-30-apple-schwachstelle-aktiv-ausgenutzt",
    "turns": [
     {
      "speaker": "Seraphina",
-     "text": "Dazu passt das nächste Thema. Das Unternehmen UpGuard hat über 16.000 falsch konfigurierte Datenbanken beim Anbieter Supabase gefunden, frei lesbar, mit personenbezogenen Daten, Zugriffstoken und teils Passwörtern im Klartext."
+     "text": "Kurz noch: Die amerikanische Cybersicherheitsbehörde hat eine Apple-Schwachstelle in ihren Katalog aktiv ausgenutzter Lücken aufgenommen, einen Speicherfehler in mehreren Apple-Produkten."
     },
     {
      "speaker": "Florian",
-     "text": "Ursache war meist fehlende oder unwirksame [en]Row Level Security[/en] und falsch eingesetzte öffentliche Schlüssel. Laut Bericht entstehen inzwischen mehr als 60 Prozent der neu angelegten Datenbanken mit Unterstützung Künstlicher Intelligenz. Die Forscher betonen aber, dass sich nicht jeder Fall eindeutig auf generierten Code zurückführen lässt."
-    },
-    {
-     "speaker": "Seraphina",
-     "text": "Das klingt nach der Aktionsseite, die jemand am Freitagnachmittag mal eben baut."
-    },
-    {
-     "speaker": "Florian",
-     "text": "Genau dieses Muster ist das Risiko. Wenn Fachbereiche oder Dienstleister mit [en]Coding Agents[/en] eigene Anwendungen bauen, gehören die trotzdem ins Anwendungsinventar, in die Freigabe und in die Datenschutzprüfung. Datenschutz durch Technikgestaltung gilt auch dann, wenn ein Agent die Technik gestaltet hat."
-    },
-    {
-     "speaker": "Seraphina",
-     "text": "Und da schließt sich der Kreis zum Agenten-Inventar von eben."
-    },
-    {
-     "speaker": "Florian",
-     "text": "Ja, eigentlich ist es dasselbe Inventar, nur mit mehr Zeilen."
+     "text": "Pflichtprogramm für das [en]Mobile Device Management[/en]: prüfen, ob die Updates auf Diensthandys und Tablets angekommen sind. Nicht spektakulär, aber genau solche Routinen fallen in der Prüfung auf, wenn sie fehlen."
     }
    ]
   },
@@ -133,11 +121,11 @@
    "turns": [
     {
      "speaker": "Seraphina",
-     "text": "Auf dem Radar heute die Post-Quanten-Kryptografie."
+     "text": "Und was steht heute auf dem Radar?"
     },
     {
      "speaker": "Florian",
-     "text": "Nach dem Fahrplan der Europäischen Union sollen bis Ende 2026 nationale Übergangspläne stehen und die Inventur kryptografischer Verfahren beginnen, kritische Anwendungsfälle sollen bis 2030 umgestellt sein. Für Unternehmen ist das noch keine Pflicht, aber wer jetzt ein Kryptoinventar anlegt, hat später deutlich weniger Stress. Das ist ausnahmsweise eine Liste, die sich wirklich lohnt."
+     "text": "Der internationale Standardsetzer für Abschlussprüfungen will die Standards zu Prüfungsnachweisen modernisieren, ausdrücklich mit Blick auf Technologie. Kommentare sind bis zum fünfzehnten Dezember 2026 möglich. Wenn Prüfer die Verlässlichkeit von Systemdaten noch genauer unter die Lupe nehmen, landet das früher oder später bei den allgemeinen Kontrollen der Informationstechnik."
     }
    ]
   },
@@ -147,11 +135,15 @@
    "turns": [
     {
      "speaker": "Seraphina",
-     "text": "Das war das IT-GRC Radar für heute. Alle Quellen findet ihr wie immer auf der Webseite."
+     "text": "Das war der IT-GRC Radar für heute. Alle Quellen findet ihr wie immer auf der Webseite."
     },
     {
      "speaker": "Florian",
-     "text": "Und denkt an Österreich: Ab morgen zählt der Meldeweg. Bis morgen."
+     "text": "Und an alle mit österreichischen Gesellschaften: Heute noch einmal die Meldekette durchspielen. Ab morgen ist es ernst."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Bis morgen!"
     }
    ]
   }
