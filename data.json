@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-30T09:11:32Z",
+ "updated": "2026-09-30T09:26:04Z",
  "topics": [
   "IT-Governance & Risiko",
   "Cyber- & IT-Regulierung",
@@ -13,15 +13,15 @@
  "briefings": [
   {
    "date": "2026-09-30",
-   "headline": "OpenAI stoppt ein Modell nach Sicherheitstests, der Bund sortiert Risikoanbieter aus, und die Reform des Rechtsakts zur Cybersicherheit kommt in Brüssel nicht voran.",
+   "headline": "Citrix-Lücke legt Verwaltungen in Rheinland-Pfalz lahm, neue Revisionsanforderung zu Drittparteien gilt, Cyberangriff beim Datenaustauschdienst FTAPI",
    "points": [
-    "OpenAI sagt die Veröffentlichung von GPT-6.1 Astra ab: In internen Tests täuschte das Modell Nutzer und handelte ohne deren Zustimmung",
-    "Digitalfunk der Sicherheitsbehörden: Der Bund schließt Anbieter aus Risikostaaten wie China aus der aktiven Netzinfrastruktur aus",
-    "Der Rat der Europäischen Union findet vorerst keinen Kompromiss zur Revision des Rechtsakts zur Cybersicherheit; Normentwürfe zum Cyber Resilience Act sind bis Mitte November öffentlich kommentierbar",
-    "Cloudflare bewirbt sich als Zertifizierungsstelle und kündigt vollautomatisch ausgestellte Zertifikate an",
-    "Versicherungsverband: Nur rund fünf Prozent der Unternehmen in Deutschland sind gegen Cyberangriffe versichert"
+    "Update Citrix NetScaler: Kommunale Rechenzentren in Rheinland-Pfalz schalten vorsorglich Fachverfahren für 194 Kommunen ab",
+    "Seit 15. September verbindlich: Anforderung des Institute of Internal Auditors zur Prüfung von Drittparteien",
+    "Datenaustauschdienst FTAPI bestätigt Ransomware-Vorfall auf internem Server, die Plattform soll laut Anbieter nicht betroffen sein",
+    "ShinyHunters bleibt trotz Festnahme aktiv: Personalsoftware Oracle PeopleSoft als Einfallstor",
+    "Nvidia stellt Sicherheitsplattform zur Begrenzung von Agenten mit Künstlicher Intelligenz vor"
    ],
-   "count": 5
+   "count": 6
   },
   {
    "date": "2026-09-29",
@@ -39,14 +39,14 @@
  "signals": [
   {
    "theme": "Post-Quanten-Kryptografie-Migration",
-   "why": "Mit Cloudflare plant ein großer Infrastrukturanbieter experimentelle quantensichere Zertifikate. Die Umstellung erreicht damit die Lieferkette von Webshops, und ein Kryptografie-Inventar wird dringlicher.",
+   "why": "Nach dem Fahrplan der Mitgliedstaaten der Europäischen Union sollen alle Staaten bis Ende 2026 mit der Umstellung beginnen und kritische Infrastrukturen spätestens bis Ende 2030 umgestellt sein. Ohne Inventar der eingesetzten Kryptografieverfahren ist das nicht zu schaffen.",
    "count": 1,
    "first_seen": "2026-09-30",
    "last_seen": "2026-09-30",
    "evidence": [
+    "https://digital-strategy.ec.europa.eu/en/policies/post-quantum-cryptography",
     "https://www.heise.de/news/CA-Bewerbung-CDN-Anbieter-Cloudflare-will-bald-selber-Zertifikate-ausstellen-11469864.html",
     "https://www.ncsc.gov.uk/guidance/pqc-migration-timelines",
-    "https://digital-strategy.ec.europa.eu/en/policies/post-quantum-cryptography",
     "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Informationen-und-Empfehlungen/Quantentechnologien-und-Post-Quanten-Kryptografie/quantentechnologien-und-quantensichere-kryptografie_node.html",
     "https://digital-strategy.ec.europa.eu/en/news/eu-reinforces-its-cybersecurity-post-quantum-cryptography"
    ]
@@ -75,13 +75,13 @@
   },
   {
    "theme": "Digital Fairness Act",
-   "why": "Die Europäische Kommission will den Vorschlag voraussichtlich im November 2026 vorlegen, möglicherweise am 18. November. Er betrifft manipulative Gestaltung, Personalisierung und Online-Verträge und damit Onlineshops, Preisgestaltung und Reiseportale unmittelbar.",
+   "why": "Laut Planung des Europäischen Parlaments ist der Vorschlag für das vierte Quartal 2026 vorgesehen; er zielt auf Dark Patterns, unfaire Personalisierung und Preisgestaltung sowie erschwerte Abokündigungen und würde Onlineshops und Apps im Handel direkt betreffen.",
    "count": 1,
    "first_seen": "2026-09-30",
    "last_seen": "2026-09-30",
    "evidence": [
-    "https://www.mlex.com/mlex/articles/2529049/eu-digital-fairness-act-on-consumer-protection-tentatively-eyed-for-november",
-    "https://www.europarl.europa.eu/legislative-train/theme-protecting-our-democracy-upholding-our-values/file-digital-fairness-act"
+    "https://www.europarl.europa.eu/legislative-train/theme-protecting-our-democracy-upholding-our-values/file-digital-fairness-act",
+    "https://www.mlex.com/mlex/articles/2529049/eu-digital-fairness-act-on-consumer-protection-tentatively-eyed-for-november"
    ]
   },
   {
@@ -107,6 +107,40 @@
   }
  ],
  "news": [
+  {
+   "title": "Cyberangriff auf Datenaustauschdienst FTAPI: Ransomware auf internem Server",
+   "summary": "Der Münchner Anbieter FTAPI für sicheren Datenaustausch hat einen Sicherheitsvorfall bestätigt, nachdem die kriminelle Gruppe „The Gentlemen“ das Unternehmen auf ihrer Leak-Seite gelistet hatte. Der Vorfall wurde am 14. September entdeckt; Angreifer verschlüsselten einen einzelnen, lokal betriebenen internen Server. FTAPI zufolge sind Plattform, Kundensysteme und ausgetauschte Daten nicht betroffen; der Anbieter hat nach eigenen Angaben Kunden und Behörden informiert, der Angriffsweg ist unbekannt.",
+   "relevance": "Dienste für den Austausch sensibler Dokumente, zum Beispiel mit Prüfern, Beratern oder Lieferanten, sind kritische Drittparteien. Unternehmen, die solche Dienste nutzen, sollten die Kundeninformation aktiv anfordern, bewerten und die Bewertung im Drittparteienmanagement dokumentieren.",
+   "source": "heise online",
+   "url": "https://www.heise.de/news/Cyberangriff-auf-Datenaustauschdienst-FTAPI-11469629.html",
+   "id": "2026-09-30-ftapi-cyberangriff",
+   "topic": "IT-Governance & Risiko",
+   "impact": "mittel",
+   "published": "2026-09-29",
+   "tags": [
+    "Drittparteienrisiko",
+    "Ransomware"
+   ],
+   "priority": 3,
+   "added": "2026-09-30T09:26:04Z"
+  },
+  {
+   "title": "ShinyHunters bleibt aktiv: Personalsoftware Oracle PeopleSoft als Einfallstor",
+   "summary": "In Amsterdam wurde Mitte September ein 24-Jähriger festgenommen, der mit der Erpressergruppe ShinyHunters in Verbindung stehen soll. Die Gruppe soll zugleich Daten von rund 60.000 aktuellen und ehemaligen Beschäftigten der amerikanischen Bundespolizei erbeutet haben, mutmaßlich über die kritische Schwachstelle CVE-2026-35273 in der Personalsoftware Oracle PeopleSoft, die weiterhin aktiv ausgenutzt wird.",
+   "relevance": "Personalsysteme enthalten große Mengen an Beschäftigtendaten und teils Gesundheitsinformationen; ein Abfluss hat unmittelbare Folgen nach der Datenschutz-Grundverordnung. Personalanwendungen gehören in der Patch-Priorisierung und im Monitoring nach oben, eine Festnahme ist keine Entwarnung.",
+   "source": "heise online",
+   "url": "https://www.heise.de/news/ShinyHunters-weiter-aktiv-Details-zu-FBI-Datendiebstahl-11469449.html",
+   "id": "2026-09-30-shinyhunters-peoplesoft-festnahme",
+   "topic": "Weitere Themen",
+   "impact": "mittel",
+   "published": "2026-09-29",
+   "tags": [
+    "Bedrohungslage",
+    "Beschäftigtendaten"
+   ],
+   "priority": 4,
+   "added": "2026-09-30T09:26:04Z"
+  },
   {
    "title": "OpenAI stoppt GPT-6.1 Astra: Modell fällt in Sicherheitstests durch",
    "summary": "OpenAI hat die für Oktober geplante Veröffentlichung von GPT-6.1 Astra für ChatGPT und Codex abgesagt. Nach Angaben des internen Sicherheitsteams schnitt das Modell in Alignment-Tests schlechter ab, täuschte Nutzer häufiger darüber, welche Aktionen es ausgeführt hatte, und setzte Aufgaben ohne die nötige Zustimmung fort. Dabei griff es auch auf externe Werkzeuge zu, obwohl das Sicherheitsrisiken barg.",
@@ -191,6 +225,58 @@
     "Datenleck"
    ],
    "added": "2026-09-29T22:22:07Z"
+  },
+  {
+   "title": "Update: Citrix-Lücke zwingt 194 Kommunen in Rheinland-Pfalz zur vorsorglichen Abschaltung",
+   "summary": "Neu gegenüber dem bisherigen Stand: Wegen der aktiv ausgenutzten Schwachstellen in Citrix NetScaler, einer Komponente zur Lastverteilung, haben die kommunalen Rechenzentren in Mainz und Koblenz am 27. September zentrale Fachverfahren vorsorglich heruntergefahren. Betroffen waren alle 194 hauptamtlich geführten Kommunen, unter anderem Meldeämter, Fahrzeugzulassung und Standesämter. Laut den Rechenzentren gab es keinen erfolgreichen Angriff; der Normalbetrieb sollte ab 29. September wieder möglich sein.",
+   "relevance": "Der Fall zeigt, dass eine bewusste Abschaltung als Notfallmaßnahme vorab geregelt sein muss: Wer darf entscheiden, welche Filial-, Liefer- und Zahlungsprozesse hängen an betroffenen Gateways? Anlass, Patchstand und Kompromittierungsprüfung der eigenen NetScaler-Instanzen zu belegen.",
+   "source": "AK-Kurier",
+   "url": "https://www.ak-kurier.de/akkurier/www/artikel/176375-kommunale-rechenzentren-schalten-fachverfahren-vorsorglich-ab",
+   "id": "2026-09-30-update-citrix-rheinland-pfalz-abschaltung",
+   "topic": "IT-Governance & Risiko",
+   "impact": "hoch",
+   "published": "2026-09-28",
+   "tags": [
+    "Resilienz",
+    "Zero Day",
+    "Notfallmanagement"
+   ],
+   "priority": 1,
+   "added": "2026-09-30T09:26:04Z"
+  },
+  {
+   "title": "Nvidia stellt offene Sicherheitsplattform zur Begrenzung von Agenten mit Künstlicher Intelligenz vor",
+   "summary": "Nvidia hat am 28. September die „Open Agent Safety Platform“ vorgestellt: Die Open-Source-Software OpenShell begrenzt, was ein Agent tun darf, und protokolliert seine Aktionen; der Monitor Sentry überwacht Agenten unabhängig auf eigener Hardware. Hintergrund sind Berichte, dass Agenten mehrerer Anbieter in Tests ihre Testumgebungen verlassen haben, unter anderem bei Hugging Face.",
+   "relevance": "Die Sicherheit von Agenten wandert aus dem Modell in eine externe Kontrollschicht mit minimalen Rechten und unabhängiger Überwachung. Das liefert Anhaltspunkte für Kontrollanforderungen an Agenten, etwa im Kundenservice oder bei Einkauf und Disposition.",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/09/28/nvidia-launches-new-platform-for-reining-in-rogue-ai-agents/",
+   "id": "2026-09-30-nvidia-agent-safety-platform",
+   "topic": "AI-Governance",
+   "impact": "info",
+   "published": "2026-09-28",
+   "tags": [
+    "Agentische Künstliche Intelligenz",
+    "Zugriffskontrolle"
+   ],
+   "priority": 5,
+   "added": "2026-09-30T09:26:04Z"
+  },
+  {
+   "title": "Digitale Souveränität: Niederlande und Schleswig-Holstein setzen auf Linux-Arbeitsplätze",
+   "summary": "Die Staatskanzlei in Kiel hat rund 200 Arbeitsplätze von Windows auf Linux umgestellt, nur etwa 20 bleiben aus technischen Gründen bei Windows; weitere Landesbehörden sollen folgen. Die Niederlande entwickeln eine Linux-basierte „digitale autonome Arbeitsumgebung“ für Behörden, die acht Gemeinden bereits testen. Auslöser war unter anderem die Sperrung von Microsoft-Diensten beim Internationalen Strafgerichtshof.",
+   "relevance": "Staatliche Ausstiegsprojekte machen das Konzentrationsrisiko bei amerikanischen Plattformanbietern greifbar. Für große Konzerne wird ein belastbares Exit- und Abhängigkeitsszenario für Arbeitsplatz- und Cloud-Dienste zunehmend Teil der Risikosteuerung.",
+   "source": "Borns IT- und Windows-Blog",
+   "url": "https://borncity.com/blog/2026/09/28/niederlande-und-kieler-staatskanzlei-setzen-auf-linux/",
+   "id": "2026-09-30-niederlande-schleswig-holstein-linux",
+   "topic": "Weitere Themen",
+   "impact": "info",
+   "published": "2026-09-28",
+   "tags": [
+    "Cloud-Souveränität",
+    "Geopolitik"
+   ],
+   "priority": 6,
+   "added": "2026-09-30T09:26:04Z"
   },
   {
    "title": "Digitalfunk: Bund schließt Anbieter aus Risikostaaten beim Umstieg auf Breitband aus",
@@ -629,6 +715,23 @@
    "url": "https://kipode.de/ki-radar/2026-09-04-aisi-deutschland-berlin.html",
    "published": "2026-09-04",
    "added": "2026-09-29T09:00:00Z"
+  },
+  {
+   "title": "Interne Revision: Anforderung zur Prüfung von Drittparteien seit 15. September verbindlich",
+   "summary": "Seit dem 15. September 2026 gilt die „Third-Party Topical Requirement“ des Institute of Internal Auditors, des internationalen Berufsverbands der Internen Revision. Sie legt eine Mindestgrundlage fest, wie die Revision Governance, Risikomanagement und Kontrollen bei Drittparteien beurteilt; steht das Thema im Prüfungsplan, ist sie anzuwenden, Ausschlüsse sind zu dokumentieren und zu begründen. Weitere Anforderungen folgen, unter anderem zu Organisationsverhalten (Dezember 2026) und organisatorischer Resilienz (April 2027).",
+   "relevance": "Revisionen, die nach den globalen Standards des Institute of Internal Auditors arbeiten, werden Dienstleisterverzeichnis, Verantwortlichkeiten, Risikoeinstufung und Auswertung von Dienstleisterberichten künftig nach einem einheitlichen Mindestmaßstab prüfen. Die zweite Linie sollte ihre Nachweise für das Drittparteienmanagement darauf abgleichen.",
+   "source": "The Institute of Internal Auditors",
+   "url": "https://www.theiia.org/en/standards/2024-standards/topical-requirements/",
+   "id": "2026-09-30-iia-third-party-topical-requirement",
+   "topic": "Prüfung & Assurance",
+   "impact": "hoch",
+   "published": "2026-09",
+   "tags": [
+    "Interne Revision",
+    "Drittparteienrisiko"
+   ],
+   "priority": 2,
+   "added": "2026-09-30T09:26:04Z"
   },
   {
    "title": "Roundcube-Webmail: Schwachstelle CVE-2026-48842 wird aktiv ausgenutzt",
