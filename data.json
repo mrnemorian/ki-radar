@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-29T22:54:12Z",
+ "updated": "2026-09-30T05:05:06Z",
  "topics": [
   "IT-Governance & Risiko",
   "Cyber- & IT-Regulierung",
@@ -13,15 +13,15 @@
  "briefings": [
   {
    "date": "2026-09-30",
-   "headline": "Die Zero-Day-Schwachstellen bei Citrix erzwingen sofortige Sicherheitsupdates, das Kabinett beschließt den elektronischen Kassenbeleg und die Kassenpflicht ab 2028, und die Agentur der Europäischen Union für Cybersicherheit sieht Künstliche Intelligenz zunehmend in der Angriffskette.",
+   "headline": "Österreich startet morgen mit seinem neuen Cybersicherheitsgesetz, bei der Hotelbuchungssoftware iHotelier sind Reservierungsdaten abgeflossen und die Datenschutzreform stockt.",
    "points": [
-    "Citrix NetScaler: zwei kritische Zero-Day-Schwachstellen werden aktiv ausgenutzt, Sicherheitsupdates sind seit 27.09. verfügbar",
-    "Bundeskabinett: digitale Belege ersetzen ab 2028 den Papierbon, elektronische Kassenpflicht ab 100.000 Euro Umsatz",
-    "Lagebericht Threat Landscape 2026 der Agentur der Europäischen Union für Cybersicherheit: Abhängigkeiten vergrößern die Angriffsfläche, Künstliche Intelligenz unterstützt immer mehr Phasen von Angriffen",
-    "Das National Institute of Standards and Technology der Vereinigten Staaten legt einen Entwurf für die Sicherheitsrichtlinie für operative Technologie Special Publication 800-82 Revision 4 vor, jetzt auch für Lebensmittel und Landwirtschaft; Kommentare bis 30.11.",
-    "Beazley bietet Deckung für das Abschalten fehlerhafter Künstlicher Intelligenz und für Bußgelder im Zusammenhang mit Künstlicher Intelligenz – Risiken Künstlicher Intelligenz werden versicherbar"
+    "Österreich: Das Netz- und Informationssystemsicherheitsgesetz 2026 gilt ab 1. Oktober, die Registrierung läuft bis 31. Dezember",
+    "Amadeus iHotelier: Angreifer greifen über eine Programmierschnittstelle Buchungsdaten ab, darunter bei der Hotelgruppe Maritim. Danach folgt Phishing über WhatsApp",
+    "Interne Revision: Die Themenanforderung des Institute of Internal Auditors zu Drittparteien ist seit 15. September verbindlich",
+    "Roundcube-Webmail: Eine Schwachstelle wird aktiv ausgenutzt, rund 16.000 erreichbare Instanzen stehen in Deutschland",
+    "Digital Omnibus: Der Rat der Europäischen Union hat noch kein Mandat für die Reform der Datenschutz-Grundverordnung"
    ],
-   "count": 6
+   "count": 4
   },
   {
    "date": "2026-09-29",
@@ -39,22 +39,24 @@
  "signals": [
   {
    "theme": "Post-Quanten-Kryptografie-Migration",
-   "why": "Das Bundesamt für Sicherheit in der Informationstechnik empfiehlt, sensible Anwendungen bis Ende 2030 auf quantensichere Verfahren umzustellen. Die Europäische Union erwartet, dass die Migration bis Ende 2026 beginnt. Ohne ein Inventar der eingesetzten kryptografischen Verfahren lassen sich Zahlungs-, Kunden- und Lieferantenschnittstellen nicht rechtzeitig planen.",
+   "why": "Nach dem Fahrplan der Europäischen Union sollen bis Ende 2026 die ersten Schritte wie Kryptografie-Inventare beginnen. Systeme mit hohem Risiko, auch in kritischen Sektoren, sollen bis Ende 2030 umgestellt sein.",
    "count": 1,
    "first_seen": "2026-09-30",
    "last_seen": "2026-09-30",
    "evidence": [
+    "https://digital-strategy.ec.europa.eu/en/policies/post-quantum-cryptography",
     "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Informationen-und-Empfehlungen/Quantentechnologien-und-Post-Quanten-Kryptografie/quantentechnologien-und-quantensichere-kryptografie_node.html",
     "https://digital-strategy.ec.europa.eu/en/news/eu-reinforces-its-cybersecurity-post-quantum-cryptography"
    ]
   },
   {
    "theme": "Cloud-Souveränität und Cloud and AI Development Act",
-   "why": "Der Cloud and AI Development Act schlägt vier Sicherheitsstufen (Union Assurance Levels) und Risikoanalysen zur Souveränität von Cloud-Diensten vor. Das könnte künftig auch Anforderungen an die Cloud-Strategie privater Betreiber kritischer Infrastrukturen prägen.",
+   "why": "Der Entwurf der Kommission sieht vier Stufen für die Souveränität von Cloud-Diensten mit Prüfung durch Dritte vor. Verbände fordern längere Übergangsfristen. Das könnte Kriterien für die Auswahl von Cloud-Anbietern und Anforderungen an Nachweise prägen.",
    "count": 1,
    "first_seen": "2026-09-30",
    "last_seen": "2026-09-30",
    "evidence": [
+    "https://www.datenschutzticker.de/2026/09/cada-europas-cloud-und-ki-infrastruktur-im-fokus/",
     "https://netzpolitik.org/2026/cloud-and-ai-development-act-eu-kommission-greift-bei-us-cloud-anbietern-kaum-durch/"
    ]
   },
@@ -76,6 +78,16 @@
    "last_seen": "2026-09-30",
    "evidence": [
     "https://www.europarl.europa.eu/legislative-train/theme-protecting-our-democracy-upholding-our-values/file-digital-fairness-act"
+   ]
+  },
+  {
+   "theme": "Rechtsverordnung zum Dachgesetz Kritische Infrastrukturen",
+   "why": "Laut Bundesamt für Bevölkerungsschutz und Katastrophenhilfe besteht noch keine Registrierungspflicht nach dem Dachgesetz zum Schutz kritischer Infrastrukturen, weil die Rechtsverordnung fehlt. Sobald sie verkündet ist, laufen die Fristen für Registrierung, Risikoanalyse und Resilienzplan. Das betrifft auch die Lebensmittelversorgung.",
+   "count": 1,
+   "first_seen": "2026-09-30",
+   "last_seen": "2026-09-30",
+   "evidence": [
+    "https://christopher-helm.com/kritis-dachgesetz-registrierungsfrist-gestrichen/"
    ]
   }
  ],
@@ -144,6 +156,23 @@
    "added": "2026-09-29T22:11:14Z"
   },
   {
+   "title": "Amadeus iHotelier: Reservierungsdaten von Hotelgästen über Drittanbieter abgeflossen",
+   "summary": "Bei der Buchungsplattform iHotelier des Reisetechnologie-Anbieters Amadeus haben Angreifer über einen Drittanbieter auf Reservierungsdaten zugegriffen. Betroffen sind unter anderem die Hotelgruppe Maritim und ein Hotel in Frankreich. Abgeflossen sind Namen, Kontaktdaten, Buchungsnummern, Reisedaten und Preise für Aufenthalte von August 2026 bis September 2027. Zahlungsdaten, Passwörter und Passdaten waren laut den Hotels nicht betroffen. Gäste erhielten danach gezielte Phishing-Nachrichten.",
+   "relevance": "Für Touristikanbieter zeigt der Fall, dass Buchungsdaten mit echten Reisedetails ein idealer Köder für Betrug sind. Programmierschnittstellen von Dienstleistern im Buchungsprozess gehören ins Drittparteien-Risikomanagement, und für die Kommunikation mit Kunden nach einem Vorfall sollte es vorbereitete Abläufe geben.",
+   "source": "Travel Extra",
+   "url": "https://www.travelextra.ie/amadeus-ihotelier-booking-platform-suffers-security-breach/",
+   "id": "2026-09-30-amadeus-ihotelier-datenabfluss",
+   "topic": "Handel & Branche",
+   "impact": "mittel",
+   "published": "2026-09-25",
+   "tags": [
+    "Touristik",
+    "Supply Chain",
+    "Phishing"
+   ],
+   "added": "2026-09-30T05:05:06Z"
+  },
+  {
    "title": "Cyber Resilience Act: Bundesamt für Sicherheit in der Informationstechnik und Deutsche Akkreditierungsstelle erweitern Zusammenarbeit bei der Akkreditierung von Prüfstellen",
    "summary": "Das Bundesamt für Sicherheit in der Informationstechnik und die Deutsche Akkreditierungsstelle haben ihre Verwaltungsvereinbarung erneuert und erweitert. Sie regelt, wie Fachleute des Bundesamts an der Akkreditierung von Konformitätsbewertungsstellen für Cybersicherheit mitwirken, nun auch für den Cyber Resilience Act, die Cyberresilienz-Verordnung der Europäischen Union. Für bestimmte Produkte verlangt der Cyber Resilience Act eine Prüfung durch Dritte. Die Stellen brauchen dafür eine Akkreditierung durch die Deutsche Akkreditierungsstelle und anschließend eine Notifizierung durch das Bundesamt. Die Produktanforderungen des Cyber Resilience Act gelten ab Ende 2027.",
    "relevance": "Die Prüfkapazitäten für den Cyber Resilience Act werden gerade erst aufgebaut, das kann Lieferketten bei vernetzten Produkten (zum Beispiel Kassen, Scanner und vernetzte Geräte aus dem Internet der Dinge) verzögern. In der Beschaffung sollte man frühzeitig nach dem Stand der Konformität mit dem Cyber Resilience Act fragen.",
@@ -158,6 +187,22 @@
     "Akkreditierung"
    ],
    "added": "2026-09-29T22:22:07Z"
+  },
+  {
+   "title": "Digital Omnibus: Reform der Datenschutz-Grundverordnung stockt, Rat ohne Verhandlungsmandat",
+   "summary": "Die Reform der Datenschutz-Grundverordnung und der Cookie-Regeln im Rahmen des Digital Omnibus kommt nicht voran. Eine Abstimmung im Ausschuss der Ständigen Vertreter über das Verhandlungsmandat des Rates wurde abgebrochen, weil sich die Mitgliedstaaten nicht einigen konnten. Im Europäischen Parlament liegen mehr als 1.750 Änderungsanträge vor. Eine Verabschiedung wird frühestens Ende 2026 erwartet.",
+   "relevance": "Erleichterungen, zum Beispiel beim Training Künstlicher Intelligenz oder bei Cookies, sollten nicht in die Planung eingehen. Die Datenschutz-Grundverordnung gilt bis auf Weiteres unverändert, auch für laufende Projekte mit Künstlicher Intelligenz.",
+   "source": "Acompli",
+   "url": "https://acompli.ie/news/digital-omnibus-gdpr-cookies-status-september-2026/",
+   "id": "2026-09-30-digital-omnibus-datenschutz-stockt",
+   "topic": "Datenschutz & Datenrecht",
+   "impact": "info",
+   "published": "2026-09-24",
+   "tags": [
+    "Digital Omnibus",
+    "Gesetzgebung"
+   ],
+   "added": "2026-09-30T05:05:06Z"
   },
   {
    "title": "Cyberversicherung: Beazley deckt Abschaltung fehlerhafter Künstlicher Intelligenz und Bußgelder im Zusammenhang mit Künstlicher Intelligenz",
@@ -290,6 +335,23 @@
    "added": "2026-09-29T22:54:12Z"
   },
   {
+   "title": "Österreich: Neues Cybersicherheitsgesetz gilt ab 1. Oktober, Registrierung bis Jahresende",
+   "summary": "Am 1. Oktober 2026 tritt in Österreich das Netz- und Informationssystemsicherheitsgesetz 2026 in Kraft. Es setzt die NIS-2-Richtlinie um, die Richtlinie der Europäischen Union über Netz- und Informationssicherheit. Rund 4.000 mittlere und große Einrichtungen aus 18 Sektoren müssen ab diesem Tag Risikomanagement betreiben, Vorfälle melden (Frühwarnung binnen 24 Stunden, ausführliche Meldung binnen 72 Stunden) und ihre Geschäftsleitungen schulen. Die Registrierung bei der Cybersicherheitsbehörde ist bis 31. Dezember 2026 möglich. Laut Wirtschaftskammer Österreich ist das ausdrücklich keine Nachfrist für die Umsetzung. Bußgelder reichen bis 10 Millionen Euro oder 2 Prozent des weltweiten Jahresumsatzes.",
+   "relevance": "Für Handelskonzerne mit Gesellschaften in Österreich gelten ab morgen zusätzlich zu den deutschen Pflichten eigene Meldewege, Registrierungspflichten und Pflichten der Leitung. Konzernweite Prozesse für Meldungen und Nachweise sollten beide Rechtsordnungen abdecken.",
+   "source": "Wirtschaftskammer Österreich",
+   "url": "https://marie.wko.at/digitalisierung/nisg-2026-nis2-start-1-oktober-letzter-check.html",
+   "id": "2026-09-30-oesterreich-nisg-2026-start",
+   "topic": "Cyber- & IT-Regulierung",
+   "impact": "hoch",
+   "published": "2026-09-21",
+   "tags": [
+    "NIS-2-Richtlinie",
+    "Österreich",
+    "Meldepflichten"
+   ],
+   "added": "2026-09-30T05:05:06Z"
+  },
+  {
    "title": "Europäischer Datenschutzausschuss vereinheitlicht die Entscheidung über Bußgelder nach der Datenschutz-Grundverordnung: Konsultation bis 13. November",
    "summary": "Der Europäische Datenschutzausschuss hat Leitlinien zur Verhängung von Geldbußen angenommen. Sie ersetzen die alten Leitlinien der früheren Artikel-29-Datenschutzgruppe und legen ein Fünf-Schritte-Schema fest: Bußgeldfähigkeit, verantwortliche Partei, Vorsatz oder Fahrlässigkeit, erschwerende und mildernde Umstände, Wirksamkeit und Verhältnismäßigkeit. Bei geringfügigen Verstößen kann statt eines Bußgelds eine Verwarnung genügen. Zusätzlich hat der Ausschuss die endgültigen Leitlinien zum Zusammenspiel des Gesetzes über digitale Dienste (Digital Services Act) und der Datenschutz-Grundverordnung verabschiedet.",
    "relevance": "Die Leitlinien zeigen, welche Umstände Aufsichtsbehörden als mildernd werten, etwa nachweisbare Rechenschaft und Zusammenarbeit. Das hilft, Datenschutzkontrollen und Dokumentation zu priorisieren. Eine Stellungnahme, zum Beispiel über Verbände, ist bis 13.11.2026 möglich.",
@@ -401,6 +463,22 @@
    "url": "https://kipode.de/ki-radar/2026-09-04-aisi-deutschland-berlin.html",
    "published": "2026-09-04",
    "added": "2026-09-29T09:00:00Z"
+  },
+  {
+   "title": "Roundcube-Webmail: Schwachstelle CVE-2026-48842 wird aktiv ausgenutzt",
+   "summary": "Angreifer nutzen die als hoch eingestufte Schwachstelle CVE-2026-48842 in der Webmail-Software Roundcube aus. Es handelt sich um eine SQL Injection, also eine Injection-Lücke in Datenbankabfragen. Sie ist ohne Anmeldung ausnutzbar, wenn das Plugin virtuser_query aktiv ist. Laut Shadowserver sind weltweit über 520.000 Roundcube-Instanzen öffentlich erreichbar, davon rund 16.000 in Deutschland. Die abgesicherten Versionen sind 1.6.19 und 1.7.4.",
+   "relevance": "Die Lücke ist seit Ende Mai bekannt und zeigt, wie wichtig ein vollständiges Inventar auch kleinerer Webanwendungen bei Tochtergesellschaften und Dienstleistern ist. Die Fristen im Patch-Management sollten sich nach der aktiven Ausnutzung richten.",
+   "source": "heise online",
+   "url": "https://www.heise.de/news/Jetzt-updaten-Attacken-auf-Roundcube-Webmail-Instanzen-beobachtet-11465379.html",
+   "id": "2026-09-30-roundcube-luecke-ausgenutzt",
+   "topic": "IT-Governance & Risiko",
+   "impact": "mittel",
+   "published": "2026-09",
+   "tags": [
+    "Schwachstellenmanagement",
+    "Bedrohungslage"
+   ],
+   "added": "2026-09-30T05:05:06Z"
   },
   {
    "id": "2026-09-bsi-infopaket-generative-ki",
