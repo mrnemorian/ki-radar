@@ -1,116 +1,159 @@
 {
- "turns": [
+ "format": "tag",
+ "chapters": [
   {
-   "speaker": "Seraphina",
-   "text": "Guten Morgen, liebe IT-GRC-Kolleginnen und -Kollegen, willkommen beim IT-GRC Radar. Heute ist Mittwoch, der dreißigste September 2026, und damit ganz nebenbei der letzte Tag des Quartals."
+   "title": "Begrüßung",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Guten Morgen, liebe IT-GRC-Kolleginnen und -Kollegen, und willkommen beim IT-GRC Radar. Heute ist Mittwoch, der dreißigste September 2026, und morgen wird es in Österreich ernst."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ernst im Sinne von Pflicht, nicht im Sinne von Kaffeemaschine kaputt. Wobei ich ehrlich gesagt nicht weiß, was die Kollegen mehr trifft."
+    }
+   ]
   },
   {
-   "speaker": "Florian",
-   "text": "Also der Tag, an dem überall noch schnell Maßnahmen auf erledigt gesetzt werden. Ich hole mir schon mal einen zweiten Kaffee."
+   "title": "Österreich startet",
+   "news_id": "2026-09-30-update-oesterreich-nisg-start-meldepflicht",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Da gibt es Neues zu einem Thema, das wir schon hatten. Ab morgen, dem ersten Oktober, gilt in Österreich das Netz- und Informationssystemsicherheitsgesetz 2026, also die Umsetzung der NIS-2-Richtlinie, der Richtlinie über Netz- und Informationssicherheit. Neu ist: Das Unternehmensserviceportal schaltet ab morgen eine eigene Anwendung für Registrierung und Vorfallmeldungen frei."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und das Entscheidende steht im Kleingedruckten. Die Registrierung hat bis Jahresende Zeit, die Meldepflicht für erhebliche Cybervorfälle gilt aber ab dem ersten Tag."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Moment, heißt das, man muss melden können, bevor man überhaupt registriert ist?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "So lese ich das, ja. Deshalb rät das Portal, jetzt zu klären, wer Zugang hat, und dass die berechtigten Personen eine ID Austria besitzen. Es gibt sogar getrennte Rollen nur für die Registrierung oder nur für Meldungen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Also wieder die Klassikerfrage: Wer ist eigentlich Owner des Meldewegs?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Genau die. Und bitte nicht beim ersten Vorfall am Sonntagabend feststellen, dass die einzige berechtigte Person gerade im Urlaub ist. Zuständig ist übrigens ein neues Bundesamt für Cybersicherheit beim Innenministerium, das muss man auch erst einmal in die Kontaktliste eintragen."
+    }
+   ]
   },
   {
-   "speaker": "Seraphina",
-   "text": "Den wirst du brauchen. Wir starten mit einem Update. Da gibt es Neues zu den beiden aktiv ausgenutzten [en]Zero Days[/en] in Citrix NetScaler. In Rheinland-Pfalz haben die kommunalen Rechenzentren am Sonntag, dem siebenundzwanzigsten September, zentrale Fachverfahren vorsorglich heruntergefahren. Betroffen waren alle 194 hauptamtlich geführten Kommunen, also Meldeämter, Fahrzeugzulassung und Standesämter."
+   "title": "Kiteworks schaltet ab",
+   "news_id": "2026-09-30-kiteworks-vorsorgliche-abschaltung",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Zweites Thema, und das war ein ungewöhnliches Wochenende. Der Anbieter Kiteworks, der Software für den sicheren Austausch großer Dateien herstellt, hat seine Kunden weltweit gebeten, die Server vorsorglich abzuschalten, bei uns am Samstag von vier bis zehn Uhr morgens."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Auslöser war eine Warnung von Bundesbehörden der Vereinigten Staaten, dass ein Angreifer Kiteworks-Systeme ins Visier nehmen könnte. Im Wartungsfenster wurde eine kritische Lücke in einer Funktion geschlossen, die laut Hersteller weniger als ein Prozent der Kunden nutzt. Hinweise auf eine Ausnutzung gibt es nach Herstellerangaben keine."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Einen Hersteller, der sagt, bitte einfach alles ausschalten, erlebt man nicht oft."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Selten, aber lehrreich. Gestern hatten wir schon den Vorfall bei FTAPI, jetzt Kiteworks. Dateiaustauschdienste sind beliebte Ziele, weil dort sensible Daten gebündelt liegen. Die Frage für einen Konzern ist also: Weiß ich, welche Fachbereiche solche Dienste nutzen, und steht im Vertrag, wie schnell mich der Anbieter warnt?"
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und ob jemand nachts um vier überhaupt einen Server abschalten darf."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Das ist die eigentliche Notfallübung. Die Excel-Liste mit den Ansprechpartnern hilft nur, wenn sie aktueller ist als die letzte Audit-Saison."
+    }
+   ]
   },
   {
-   "speaker": "Florian",
-   "text": "Wichtig dabei: Laut den Rechenzentren gab es keinen erfolgreichen Angriff, und personenbezogene Daten sollen nicht gefährdet sein. Das war eine bewusste Abschaltung, um in Ruhe die Updates einzuspielen."
+   "title": "Lücke für Agenten",
+   "news_id": "2026-09-30-mcp-python-sdk-oauth-luecke",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Weiter mit Agenten. Im offiziellen [en]Software Development Kit[/en] für Python zum [en]Model Context Protocol[/en], über das Agenten mit Künstlicher Intelligenz an Werkzeuge angebunden werden, steckt eine Lücke."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ein bösartiger Server kann eine Anwendung dazu bringen, ihre Anmeldedaten für das Verfahren [en]OAuth[/en] herauszugeben, also etwa das [en]Client Secret[/en] und den Autorisierungscode. Damit holt sich der Angreifer echte Zugriffstoken mit allen Rechten der Anwendung. Behoben ist das in den aktuellen Versionen beider Entwicklungslinien."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Also der Agent vertraut dem falschen Werkzeug und gibt den Hausschlüssel ab."
+    },
+    {
+     "speaker": "Florian",
+     "text": "So ungefähr. Für die Governance heißt das: Gibt es überhaupt ein Inventar, welche Agenten mit welchen Servern sprechen? Ohne das kann man nicht einmal sagen, ob man betroffen ist. Und die Rechte einer Anwendung sollten so knapp sein, dass ein gestohlener Token nicht gleich die halbe Landschaft öffnet."
+    }
+   ]
   },
   {
-   "speaker": "Seraphina",
-   "text": "Moment, heißt das, das ist eigentlich eine gute Nachricht?"
+   "title": "Offene Datenbanken",
+   "news_id": "2026-09-30-supabase-fehlkonfigurierte-datenbanken",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Dazu passt das nächste Thema. Das Unternehmen UpGuard hat über 16.000 falsch konfigurierte Datenbanken beim Anbieter Supabase gefunden, frei lesbar, mit personenbezogenen Daten, Zugriffstoken und teils Passwörtern im Klartext."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ursache war meist fehlende oder unwirksame [en]Row Level Security[/en] und falsch eingesetzte öffentliche Schlüssel. Laut Bericht entstehen inzwischen mehr als 60 Prozent der neu angelegten Datenbanken mit Unterstützung Künstlicher Intelligenz. Die Forscher betonen aber, dass sich nicht jeder Fall eindeutig auf generierten Code zurückführen lässt."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Das klingt nach der Aktionsseite, die jemand am Freitagnachmittag mal eben baut."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Genau dieses Muster ist das Risiko. Wenn Fachbereiche oder Dienstleister mit [en]Coding Agents[/en] eigene Anwendungen bauen, gehören die trotzdem ins Anwendungsinventar, in die Freigabe und in die Datenschutzprüfung. Datenschutz durch Technikgestaltung gilt auch dann, wenn ein Agent die Technik gestaltet hat."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und da schließt sich der Kreis zum Agenten-Inventar von eben."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ja, eigentlich ist es dasselbe Inventar, nur mit mehr Zeilen."
+    }
+   ]
   },
   {
-   "speaker": "Florian",
-   "text": "Ehrlich gesagt, in gewisser Weise ja. Da hat jemand entschieden und dafür Ausfall in Kauf genommen. Für einen Handelskonzern ist die Frage: Wer darf bei uns ein [en]Gateway[/en] am Wochenende vom Netz nehmen, und wissen wir, welche Filial- und Lieferprozesse daran hängen?"
+   "title": "Auf dem Radar",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Auf dem Radar heute die Post-Quanten-Kryptografie."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Nach dem Fahrplan der Europäischen Union sollen bis Ende 2026 nationale Übergangspläne stehen und die Inventur kryptografischer Verfahren beginnen, kritische Anwendungsfälle sollen bis 2030 umgestellt sein. Für Unternehmen ist das noch keine Pflicht, aber wer jetzt ein Kryptoinventar anlegt, hat später deutlich weniger Stress. Das ist ausnahmsweise eine Liste, die sich wirklich lohnt."
+    }
+   ]
   },
   {
-   "speaker": "Seraphina",
-   "text": "Und ob das irgendwo steht, außer in einer Excel-Liste, die zuletzt vor drei Jahren jemand angefasst hat."
-  },
-  {
-   "speaker": "Florian",
-   "text": "Genau. Ein Notfallplan, der nur im Kopf eines Administrators existiert, ist kein Kontrollnachweis."
-  },
-  {
-   "speaker": "Seraphina",
-   "text": "Zweites Thema, für alle, die mit der Internen Revision zu tun haben. Seit dem fünfzehnten September gilt die neue Anforderung des [en]Institute of Internal Auditors[/en] zu Drittparteien, im Original die [en]Third-Party Topical Requirement[/en]. Sie legt einen Mindeststandard fest, wie die Revision Governance, Risikomanagement und Kontrollen rund um Dienstleister beurteilt."
-  },
-  {
-   "speaker": "Florian",
-   "text": "Und der Clou: Steht das Thema im Prüfungsplan, muss die Anforderung angewendet werden. Wer einzelne Punkte ausschließt, muss das dokumentieren und begründen. Man kann sich also nicht mehr elegant um die unbequemen Fragen herumprüfen."
-  },
-  {
-   "speaker": "Seraphina",
-   "text": "Welche unbequemen Fragen meinst du?"
-  },
-  {
-   "speaker": "Florian",
-   "text": "Na, die Klassiker. Haben wir ein vollständiges Dienstleisterverzeichnis? Wer ist eigentlich [en]Owner[/en] für den Vertrag? Und wann hat zuletzt jemand den Prüfbericht des Dienstleisters gelesen, statt ihn nur abzulegen? Die zweite Linie sollte davon ausgehen, dass genau diese Fragen im nächsten Prüfzyklus kommen."
-  },
-  {
-   "speaker": "Seraphina",
-   "text": "Passt gut zur nächsten Meldung. Der Münchner Datenaustauschdienst FTAPI hat gegenüber heise online einen Sicherheitsvorfall bestätigt. Die kriminelle Gruppe The Gentlemen hatte das Unternehmen auf ihrer [en]Leak[/en]-Seite gelistet. Entdeckt wurde der Vorfall am vierzehnten September, die Angreifer hatten einen einzelnen, lokal betriebenen internen Server mit [en]Ransomware[/en] verschlüsselt."
-  },
-  {
-   "speaker": "Florian",
-   "text": "FTAPI betont, dass die Plattform selbst, Kundensysteme und die darüber ausgetauschten Daten nicht betroffen seien. Kunden und Behörden wurden nach eigenen Angaben informiert. Wie die Angreifer hineingekommen sind, ist allerdings offen."
-  },
-  {
-   "speaker": "Seraphina",
-   "text": "Und warum sollte uns das kümmern, wenn angeblich nichts Schlimmes passiert ist?"
-  },
-  {
-   "speaker": "Florian",
-   "text": "Weil über solche Dienste oft genau die sensiblen Dokumente laufen, zwischen Unternehmen, Prüfern und Beratern. Ein Anbieter mit über 2.000 Kundenunternehmen ist ein attraktives Ziel. Wer so einen Dienst nutzt, sollte die Kundeninformation aktiv anfordern und die Bewertung dokumentieren, statt auf den nächsten Fragebogen im Frühjahr zu warten."
-  },
-  {
-   "speaker": "Seraphina",
-   "text": "Also Drittparteienbewertung erledigen, bevor die Revision mit der neuen Anforderung vor der Tür steht."
-  },
-  {
-   "speaker": "Florian",
-   "text": "Du hast es erfasst. Die beiden Meldungen hätten sich absprechen können."
-  },
-  {
-   "speaker": "Seraphina",
-   "text": "Dann zur Bedrohungslage. Die Gruppe ShinyHunters bleibt aktiv. Laut heise wurde Mitte September in Amsterdam ein 24-Jähriger festgenommen, der mit der Gruppe in Verbindung stehen soll. Gleichzeitig soll sie Daten von rund 60.000 aktuellen und ehemaligen Beschäftigten der amerikanischen Bundespolizei erbeutet haben, mutmaßlich über eine kritische Schwachstelle in Oracle PeopleSoft."
-  },
-  {
-   "speaker": "Florian",
-   "text": "PeopleSoft ist Personalsoftware. Da liegen Beschäftigtendaten, teils sogar Gesundheitsinformationen. Die Lücke ist seit Juni bekannt, wird aber weiter ausgenutzt. Personalsysteme gehören in der [en]Patch[/en]-Priorisierung ganz nach oben, nicht irgendwo zwischen Kantinenplan und Intranet."
-  },
-  {
-   "speaker": "Seraphina",
-   "text": "Eine Festnahme heißt also nicht Entwarnung."
-  },
-  {
-   "speaker": "Florian",
-   "text": "Leider nein. Solche Gruppen funktionieren eher wie ein Franchise als wie eine einzelne Person."
-  },
-  {
-   "speaker": "Seraphina",
-   "text": "Kurz noch zur Künstlichen Intelligenz. Nvidia hat am achtundzwanzigsten September eine offene Sicherheitsplattform für [en]AI Agents[/en] vorgestellt, die die Rechte von Agenten begrenzt und ihr Verhalten unabhängig überwacht. Hintergrund sind Berichte, dass Agenten mehrerer Anbieter in Tests ihre Umgebung verlassen haben."
-  },
-  {
-   "speaker": "Florian",
-   "text": "Das Prinzip ist uralt: minimale Rechte, unabhängige Überwachung. Neu ist nur, dass der neue Kollege diesmal Software ist, die nicht vorher fragt."
-  },
-  {
-   "speaker": "Seraphina",
-   "text": "Auf dem Radar heute: die Migration zur Post-Quanten-Kryptografie. Nach dem Fahrplan der Mitgliedstaaten der Europäischen Union sollen alle Staaten bis Ende 2026 mit der Umstellung beginnen, kritische Infrastrukturen sollen spätestens bis Ende 2030 umgestellt sein."
-  },
-  {
-   "speaker": "Florian",
-   "text": "Für einen Konzern mit Lebensmittelversorgung und Kartenzahlung heißt das: jetzt mit dem Inventar der Kryptografieverfahren anfangen. Was man nicht kennt, kann man nicht migrieren, und das gilt ausnahmsweise nicht nur für Excel-Listen."
-  },
-  {
-   "speaker": "Seraphina",
-   "text": "Das war das IT-GRC Radar für heute. Alle Quellen findet ihr wie immer auf der Webseite. Einen guten Quartalsabschluss!"
-  },
-  {
-   "speaker": "Florian",
-   "text": "Und viel Erfolg bei der Suche nach dem [en]Owner[/en]. Bis morgen."
+   "title": "Abschied",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Das war das IT-GRC Radar für heute. Alle Quellen findet ihr wie immer auf der Webseite."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und denkt an Österreich: Ab morgen zählt der Meldeweg. Bis morgen."
+    }
+   ]
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-30T09:26:04Z",
+ "updated": "2026-09-30T11:09:57Z",
  "topics": [
   "IT-Governance & Risiko",
   "Cyber- & IT-Regulierung",
@@ -13,15 +13,14 @@
  "briefings": [
   {
    "date": "2026-09-30",
-   "headline": "Citrix-Lücke legt Verwaltungen in Rheinland-Pfalz lahm, neue Revisionsanforderung zu Drittparteien gilt, Cyberangriff beim Datenaustauschdienst FTAPI",
+   "headline": "Österreich startet morgen mit der Umsetzung der NIS-2-Richtlinie, Dateiaustauschdienste und Agenten mit Künstlicher Intelligenz bleiben Einfallstore",
    "points": [
-    "Update Citrix NetScaler: Kommunale Rechenzentren in Rheinland-Pfalz schalten vorsorglich Fachverfahren für 194 Kommunen ab",
-    "Seit 15. September verbindlich: Anforderung des Institute of Internal Auditors zur Prüfung von Drittparteien",
-    "Datenaustauschdienst FTAPI bestätigt Ransomware-Vorfall auf internem Server, die Plattform soll laut Anbieter nicht betroffen sein",
-    "ShinyHunters bleibt trotz Festnahme aktiv: Personalsoftware Oracle PeopleSoft als Einfallstor",
-    "Nvidia stellt Sicherheitsplattform zur Begrenzung von Agenten mit Künstlicher Intelligenz vor"
+    "Österreich: Netz- und Informationssystemsicherheitsgesetz 2026 gilt ab 1. Oktober, Meldepflicht ab dem ersten Tag, Registrierung über das Unternehmensserviceportal",
+    "Kiteworks: Kunden sollten Server vorsorglich abschalten, kritische Lücke im Wartungsfenster geschlossen",
+    "Model Context Protocol: Lücke im offiziellen Python-Software-Development-Kit gibt Anmeldedaten an bösartige Server preis",
+    "Supabase: Über 16.000 falsch konfigurierte Datenbanken, oft mit Künstlicher Intelligenz erstellt, legen personenbezogene Daten offen"
    ],
-   "count": 6
+   "count": 4
   },
   {
    "date": "2026-09-29",
@@ -36,10 +35,66 @@
    "count": 9
   }
  ],
+ "dossiers": [
+  {
+   "slug": "nis2-umsetzung",
+   "created": "2026-09-30",
+   "ring_history": [
+    {
+     "date": "2026-09-30",
+     "ring": "jetzt handeln"
+    }
+   ],
+   "title": "NIS-2-Umsetzung",
+   "sector": "Cyber- & IT-Regulierung",
+   "ring": "jetzt handeln",
+   "status": "In Deutschland gilt das Umsetzungsgesetz seit 6. Dezember 2025, die Registrierungsfrist beim Bundesamt für Sicherheit in der Informationstechnik ist abgelaufen. In Österreich gilt das Netz- und Informationssystemsicherheitsgesetz 2026 ab 1. Oktober 2026 mit sofortiger Meldepflicht und Registrierung bis Jahresende; in weiteren Ländern von REWE International ist der Umsetzungsstand unterschiedlich.",
+   "next_step": "Meldewege und Portalzugänge je Land prüfen, Registrierung in Österreich vorbereiten und Länderübersicht der Melde- und Registrierungspflichten aktuell halten.",
+   "open_questions": [
+    "Wie werden Konzerngesellschaften mit Tätigkeit in mehreren Ländern bei Registrierung und Meldung abgegrenzt?",
+    "Wie verzahnt sich die Meldung an die österreichische Behörde mit dem konzernweiten Incident-Prozess?"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 20 – Governance",
+    "NIS-2-Richtlinie Art. 21 – Risikomanagementmaßnahmen",
+    "NIS-2-Richtlinie Art. 23 – Berichtspflichten"
+   ],
+   "updated": "2026-09-30"
+  }
+ ],
+ "deadlines": [
+  {
+   "date": "2026-10-01",
+   "title": "Österreich: Cybersicherheitsgesetz gilt, Meldepflicht startet",
+   "detail": "Betroffene Einrichtungen in Österreich müssen ab diesem Tag erhebliche Cybervorfälle über das Unternehmensserviceportal melden können.",
+   "scope": "AT",
+   "url": "https://www.usp.gv.at/aktuelles/newsliste/NIS-2.html",
+   "dossier": "nis2-umsetzung",
+   "added": "2026-09-30"
+  },
+  {
+   "date": "2026-12-02",
+   "title": "Verordnung über Künstliche Intelligenz: Übergang für Kennzeichnung synthetischer Inhalte endet",
+   "detail": "Systeme zur Erzeugung synthetischer Inhalte, die vor dem 2. August 2026 in Verkehr gebracht wurden, müssen bis dahin die Transparenzpflichten nach Artikel 50 Absatz 2 erfüllen.",
+   "scope": "EU",
+   "url": "https://www.rtr.at/rtr/service/ki-servicestelle/ai-act/Zeitplan.de.html",
+   "dossier": null,
+   "added": "2026-09-30"
+  },
+  {
+   "date": "2026-12-31",
+   "title": "Österreich: Ende der Registrierungsfrist",
+   "detail": "Betroffene Einrichtungen müssen sich innerhalb von drei Monaten nach Inkrafttreten bei der Cybersicherheitsbehörde registrieren.",
+   "scope": "AT",
+   "url": "https://senn-tech.com/de/blog/nisg-registrierung-31-12-2026",
+   "dossier": "nis2-umsetzung",
+   "added": "2026-09-30"
+  }
+ ],
  "signals": [
   {
    "theme": "Post-Quanten-Kryptografie-Migration",
-   "why": "Nach dem Fahrplan der Mitgliedstaaten der Europäischen Union sollen alle Staaten bis Ende 2026 mit der Umstellung beginnen und kritische Infrastrukturen spätestens bis Ende 2030 umgestellt sein. Ohne Inventar der eingesetzten Kryptografieverfahren ist das nicht zu schaffen.",
+   "why": "Nach dem Fahrplan der Europäischen Union sollen bis Ende 2026 nationale Übergangspläne vorliegen und die Inventur kryptografischer Verfahren beginnen, kritische Anwendungsfälle sollen bis 2030 umgestellt sein. Ein frühes Kryptoinventar wird damit zur Grundlage für spätere Pflichten und Prüfungen.",
    "count": 1,
    "first_seen": "2026-09-30",
    "last_seen": "2026-09-30",
@@ -104,9 +159,92 @@
    "evidence": [
     "https://ifacweb.blob.core.windows.net/publicfiles/2026-08/IAASB-Audit-Evidence-Risk-Response-ISA-500-Exposure-Draft.pdf"
    ]
+  },
+  {
+   "theme": "Beschäftigtendatengesetz zweiter Anlauf",
+   "why": "Die Bundesregierung bereitet einen neuen Entwurf für ein eigenes Gesetz zum Beschäftigtendatenschutz vor; der frühere Entwurf enthielt Regeln zu Überwachung und Künstlicher Intelligenz im Personalwesen, was Personaleinsatzplanung und Mitarbeiterüberwachung direkt betreffen würde.",
+   "count": 1,
+   "first_seen": "2026-09-30",
+   "last_seen": "2026-09-30",
+   "evidence": [
+    "https://riehnlegal.blog/content/artikel/?item=beschaeftigtendatenschutz-2026-der-zweite-anlauf-zum-eigenen-gesetz-und-was-er-fuer-dich-bedeutet"
+   ]
   }
  ],
  "news": [
+  {
+   "title": "Kiteworks: Kunden sollten Server vorsorglich abschalten, kritische Lücke geschlossen",
+   "summary": "Der Anbieter von Software für den sicheren Dateiaustausch Kiteworks hat Kunden weltweit gebeten, ihre Server am 26. September vorsorglich abzuschalten, in Mitteleuropa von 4 bis 10 Uhr. Auslöser war eine Warnung von Bundesbehörden der Vereinigten Staaten, dass ein Angreifer Kiteworks-Systeme ins Visier nehmen könnte. Während des Fensters wurde eine kritische Lücke in einer Funktion geschlossen, die laut Hersteller weniger als ein Prozent der Kunden nutzt; Hinweise auf Ausnutzung gibt es nach Herstellerangaben nicht, eine Schwachstellen-Kennung fehlt bisher.",
+   "relevance": "Nach FTAPI ist das der zweite Dateiaustauschdienst binnen weniger Tage mit Sicherheitsvorfall oder Notfallmaßnahme. Governance, Risiko und Compliance sollte prüfen, welche Fachbereiche solche Dienste nutzen, ob Verträge Warnpflichten des Anbieters regeln und wer eine kurzfristige Abschaltung entscheiden darf.",
+   "source": "BleepingComputer",
+   "url": "https://www.bleepingcomputer.com/news/security/kiteworks-lifts-shutdown-warning-after-patching-critical-flaw/",
+   "id": "2026-09-30-kiteworks-vorsorgliche-abschaltung",
+   "topic": "IT-Governance & Risiko",
+   "impact": "hoch",
+   "published": "2026-09-29",
+   "tags": [
+    "Drittparteien",
+    "Dateiaustausch",
+    "Notfallmanagement"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
+    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen",
+    "ISO/IEC 27001 Anhang A 8.8 – Handhabung technischer Schwachstellen"
+   ],
+   "roles": [
+    "Einkauf & Drittparteien",
+    "IT-Risiko"
+   ],
+   "countries": [
+    "EU",
+    "DE",
+    "AT"
+   ],
+   "dossier": null,
+   "priority": 2,
+   "primary": false,
+   "added": "2026-09-30T11:09:57Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Das Zeitfenster von 4 bis 10 Uhr mitteleuropäischer Zeit ist in der Quelle nicht belegt; dort stehen nur Samstag und eine Dauer von etwa sechs Stunden. Die Quelle spricht von einer Warnung von Bundesnachrichtendienstbehörden vor einem möglicherweise unmittelbar bevorstehenden Angriff und nennt…"
+   }
+  },
+  {
+   "title": "Model Context Protocol: Lücke im Python-Entwicklungspaket gibt Anmeldedaten preis",
+   "summary": "Im offiziellen Python-Software-Development-Kit für das Model Context Protocol, über das Agenten mit Künstlicher Intelligenz an Werkzeuge angebunden werden, kann ein bösartiger Server eine Anwendung dazu bringen, Client Secret, Autorisierungscode und Proof Key des Anmeldeverfahrens OAuth herauszugeben. Damit lassen sich gültige Zugriffstoken mit allen Rechten der Anwendung beschaffen. Betroffen sind die Versionen 1.9.1 bis 1.29.1 und 2.0.0 bis 2.1.1, behoben in 1.30.0 und 2.2.0; entdeckt hat die Lücke das Sicherheitsunternehmen Cycode.",
+   "relevance": "Agenten mit Künstlicher Intelligenz im Kundenservice oder in internen Prozessen hängen an solchen Bibliotheken; ohne Inventar der eingesetzten Agenten und angebundenen Server lässt sich die Betroffenheit nicht feststellen. Minimale Berechtigungen der Anwendungen begrenzen den Schaden gestohlener Token.",
+   "source": "The Hacker News",
+   "url": "https://thehackernews.com/2026/09/official-mcp-python-sdk-flaw-can-let.html",
+   "id": "2026-09-30-mcp-python-sdk-oauth-luecke",
+   "topic": "AI-Governance",
+   "impact": "mittel",
+   "published": "2026-09-29",
+   "tags": [
+    "Agenten",
+    "Model Context Protocol",
+    "Zugangsdaten"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 8.8 – Handhabung technischer Schwachstellen",
+    "ISO/IEC 27001 Anhang A 5.15 – Zugangssteuerung",
+    "ISO/IEC 42001 – Managementsystem für Künstliche Intelligenz"
+   ],
+   "roles": [
+    "IT-Risiko"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": null,
+   "priority": 3,
+   "primary": false,
+   "added": "2026-09-30T11:09:57Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum 29. September 2026 stimmt; offengelegte Anmeldedaten, betroffene und behobene Versionen und Entdeckung durch Cycode sind belegt."
+   }
+  },
   {
    "title": "Cyberangriff auf Datenaustauschdienst FTAPI: Ransomware auf internem Server",
    "summary": "Der Münchner Anbieter FTAPI für sicheren Datenaustausch hat einen Sicherheitsvorfall bestätigt, nachdem die kriminelle Gruppe „The Gentlemen“ das Unternehmen auf ihrer Leak-Seite gelistet hatte. Der Vorfall wurde am 14. September entdeckt; Angreifer verschlüsselten einen einzelnen, lokal betriebenen internen Server. FTAPI zufolge sind Plattform, Kundensysteme und ausgetauschte Daten nicht betroffen; der Anbieter hat nach eigenen Angaben Kunden und Behörden informiert, der Angriffsweg ist unbekannt.",
@@ -225,6 +363,42 @@
     "Datenleck"
    ],
    "added": "2026-09-29T22:22:07Z"
+  },
+  {
+   "title": "Über 16.000 falsch konfigurierte Supabase-Datenbanken legen personenbezogene Daten offen",
+   "summary": "Das Unternehmen UpGuard hat mehr als 16.000 Datenbanken beim Anbieter Supabase gefunden, deren Tabellen frei lesbar waren, darunter personenbezogene Daten, teils im Klartext gespeicherte Passwörter, Zugriffstoken und in geringerem Umfang Kreditkartendaten. Ursache waren meist fehlende oder unwirksame Row Level Security und falsch eingesetzte öffentliche Schlüssel. Laut Bericht entstehen mehr als 60 Prozent der neu angelegten Datenbanken mit Unterstützung Künstlicher Intelligenz, wobei sich nicht jeder Fall eindeutig generiertem Code zuordnen lässt.",
+   "relevance": "Wenn Fachbereiche oder Dienstleister mit Coding Agents schnell eigene Anwendungen bauen, etwa für Aktionen oder Umfragen, entsteht Schatten-Informationstechnik mit personenbezogenen Daten. Solche Anwendungen gehören in Anwendungsinventar, Freigabeprozess und Datenschutzprüfung.",
+   "source": "BleepingComputer",
+   "url": "https://www.bleepingcomputer.com/news/security/misconfigured-supabase-apps-expose-data-in-over-16-000-databases/",
+   "id": "2026-09-30-supabase-fehlkonfigurierte-datenbanken",
+   "topic": "Datenschutz & Datenrecht",
+   "impact": "mittel",
+   "published": "2026-09-28",
+   "tags": [
+    "Fehlkonfiguration",
+    "Schatten-IT",
+    "Vibe Coding"
+   ],
+   "controls": [
+    "DSGVO Art. 25 – Datenschutz durch Technikgestaltung",
+    "DSGVO Art. 32 – Sicherheit der Verarbeitung",
+    "ISO/IEC 27001 Anhang A 8.9 – Konfigurationsmanagement"
+   ],
+   "roles": [
+    "Datenschutz",
+    "IT-Risiko"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": null,
+   "priority": 4,
+   "primary": false,
+   "added": "2026-09-30T11:09:57Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Inhalt stimmt mit der Quelle überein: UpGuard, über 16.000 Datenbanken, offengelegte Datenarten, Ursachen und die Aussage zu über 60 Prozent mit Unterstützung Künstlicher Intelligenz. Das genaue Veröffentlichungsdatum ist der 28. September 2026."
+   }
   },
   {
    "title": "Update: Citrix-Lücke zwingt 194 Kommunen in Rheinland-Pfalz zur vorsorglichen Abschaltung",
@@ -693,6 +867,42 @@
    "added": "2026-09-29T22:11:14Z"
   },
   {
+   "title": "Update: Österreich – neues Cybersicherheitsgesetz gilt ab morgen, Meldepflicht ab dem ersten Tag",
+   "summary": "Ab 1. Oktober 2026 gilt in Österreich das Netz- und Informationssystemsicherheitsgesetz 2026, mit dem die NIS-2-Richtlinie (Richtlinie über Netz- und Informationssicherheit) umgesetzt wird. Neu gegenüber dem bisherigen Stand: Das Unternehmensserviceportal schaltet ab 1. Oktober eine eigene Anwendung für Registrierung und Vorfallmeldungen frei, die Meldepflicht für erhebliche Cybervorfälle gilt ab diesem Tag, und es gibt getrennte Benutzerrollen für Registrierung und Meldung. Zuständig ist ein neues Bundesamt für Cybersicherheit beim Bundesministerium für Inneres; berechtigte Personen benötigen eine ID Austria.",
+   "relevance": "Für einen Konzern mit österreichischen Gesellschaften muss der Meldeweg an die neue Behörde ab morgen funktionieren, auch wenn die Registrierung noch aussteht. Zu klären sind Portalzugang, Rollenvergabe, Vertretungen und die Verzahnung mit dem konzernweiten Incident-Prozess.",
+   "source": "Unternehmensserviceportal der Republik Österreich",
+   "url": "https://www.usp.gv.at/aktuelles/newsliste/NIS-2.html",
+   "id": "2026-09-30-update-oesterreich-nisg-start-meldepflicht",
+   "topic": "Cyber- & IT-Regulierung",
+   "impact": "hoch",
+   "published": "2026-09-08",
+   "tags": [
+    "NIS-2",
+    "Österreich",
+    "Meldepflicht"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 23 – Berichtspflichten",
+    "NIS-2-Richtlinie Art. 3 und Art. 27 – Registrierung",
+    "ISO/IEC 27001 Anhang A 5.24 – Planung und Vorbereitung des Managements von Informationssicherheitsvorfällen"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Management"
+   ],
+   "countries": [
+    "AT"
+   ],
+   "dossier": "nis2-umsetzung",
+   "priority": 1,
+   "primary": true,
+   "added": "2026-09-30T11:09:57Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum 8. September 2026 stimmt; Inkrafttreten am 1. Oktober 2026, neue Anwendung im Unternehmensserviceportal, sofortige Meldepflicht, getrennte Benutzerrollen, Bundesamt für Cybersicherheit beim Innenministerium und ID Austria sind belegt."
+   }
+  },
+  {
    "title": "„Deadbugz“: Bösartiger Server für das Model Context Protocol schaltet erst nach drei Tool-Aufrufen um",
    "summary": "Nach einer Analyse des Sicherheitsunternehmens Pillar Security reichte ein einzelnes GitHub-Konto innerhalb von 74 Minuten 23 Pull Requests in verschiedenen Projekten rund um Künstliche Intelligenz und Softwareentwicklung ein, die einen Server für das Model Context Protocol einschleusten, ein Protokoll zur Anbindung von Werkzeugen an Modelle Künstlicher Intelligenz. Der Server verhält sich zunächst unauffällig. Nach genau drei Tool-Aufrufen schreibt er seine Tool-Metadaten jedoch in Anweisungen um, Schlüssel für Secure-Shell-Zugänge, Zugangsdaten für Amazon Web Services und Kubernetes-Konfigurationen zu suchen. Außerdem wurden im August drei neue Schwachstellen mit öffentlicher CVE-Kennung in Servern für das Model Context Protocol gemeldet, darunter eine Pfadmanipulations-Schwachstelle (Path Traversal) im entsprechenden Server von Atlassian (Schweregrad 7,7 nach dem Common Vulnerability Scoring System).",
    "relevance": "Eine einmalige Freigabe von Agenten-Tools reicht nicht aus. Nötig sind laufende Überwachung von Metadaten-Änderungen, Positivlisten und eng begrenzte Berechtigungen. Das ist ein gutes Beispiel für Kontrollen im Change- und Zugriffsmanagement bei Agenten mit Künstlicher Intelligenz.",
@@ -844,6 +1054,32 @@
    "impact": "hoch",
    "published": "2026-07",
    "added": "2026-09-29T22:03:17Z"
+  }
+ ],
+ "monthly": [
+  {
+   "month": "2026-08",
+   "headline": "Die NIS-2-Umsetzung bleibt das einzige Thema im Ring „jetzt handeln“: In Österreich gilt das Gesetz ab 1. Oktober 2026 mit sofortiger Meldepflicht, in Deutschland ist die Registrierungsfrist bereits abgelaufen.",
+   "act_now": [
+    "NIS-2 Österreich: Das Netz- und Informationssystemsicherheitsgesetz 2026 gilt ab 1. Oktober 2026 und die Meldepflicht beginnt sofort. Meldewege und Zuständigkeiten für Sicherheitsvorfälle müssen bis zu diesem Datum einsatzbereit sein.",
+    "NIS-2 Deutschland: Das Umsetzungsgesetz gilt seit 6. Dezember 2025 und die Frist zur Registrierung beim Bundesamt für Sicherheit in der Informationstechnik ist abgelaufen. Anlass ist die Prüfung, ob alle betroffenen Gesellschaften vollständig registriert sind.",
+    "NIS-2 in weiteren Ländern von REWE International: Der Umsetzungsstand ist dort unterschiedlich. Anlass ist eine Übersicht nach Ländern über geltende Pflichten und Fristen."
+   ],
+   "moved": [],
+   "new": [
+    "Post-Quanten-Kryptografie-Migration: erstmals als Signal erfasst",
+    "Cloud-Souveränität und Cloud and AI Development Act: erstmals als Signal erfasst",
+    "Kriegsausschluss in Cyberversicherungen: erstmals als Signal erfasst",
+    "Rechtsverordnung zum Dachgesetz Kritische Infrastrukturen: erstmals als Signal erfasst",
+    "Weitere neue Signale: Digital Fairness Act, neue Prüfungsstandards für Prüfungsnachweise und ein zweiter Anlauf für das Beschäftigtendatengesetz"
+   ],
+   "outlook": [
+    "1. Oktober 2026: Das österreichische Cybersicherheitsgesetz tritt in Kraft und die Meldepflicht startet.",
+    "Bis Jahresende 2026: Registrierung nach dem österreichischen NIS-2-Gesetz",
+    "2. Dezember 2026: Bei der Verordnung über Künstliche Intelligenz endet die Übergangsfrist für die Kennzeichnung synthetischer Inhalte.",
+    "Beobachten, ob sich die neuen Signale verdichten, vor allem die Rechtsverordnung zum Dachgesetz Kritische Infrastrukturen und der Kriegsausschluss in Cyberversicherungen"
+   ],
+   "created": "2026-09-30"
   }
  ]
 }
