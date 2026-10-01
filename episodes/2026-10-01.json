@@ -1,0 +1,157 @@
+{
+ "format": "tag",
+ "chapters": [
+  {
+   "title": "Begrüßung",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Guten Morgen, liebe IT-GRC-Kolleginnen und -Kollegen, willkommen beim IT-GRC Radar. Heute ist Donnerstag, der erste Oktober 2026."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und damit ein Stichtag, der seit Wochen in jedem Kalender steht. In Österreich wird es heute ernst."
+    }
+   ]
+  },
+  {
+   "title": "Österreich: Gesetz gilt ab heute",
+   "news_id": "2026-10-01-update-oesterreich-nisg-start-kpmg-studie",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Genau, da gibt es Neues zur Richtlinie über Netz- und Informationssicherheit. Das österreichische Netz- und Informationssystemsicherheitsgesetz 2026 gilt ab heute. Pünktlich dazu hat KPMG Austria eine Befragung von 1.396 Unternehmen veröffentlicht."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und die Zahlen sind ernüchternd. Jeder achte registrierte Angriff kam durch die Schutzmaßnahmen, und 24 Prozent wissen nicht einmal, ob sie überhaupt betroffen sind."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Moment, ein Viertel weiß am Tag des Inkrafttretens nicht, ob das Gesetz für sie gilt?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ehrlich gesagt hätte ich erwartet, dass das früher geklärt ist. Noch spannender finde ich die Lieferkette: im Schnitt nur 2,03 von 5 Punkten, und jeder fünfte Angriff auf einen Dienstleister hat auch den Kunden getroffen. Für Konzerngesellschaften in Österreich heißt das: Die Meldewege müssen ab heute funktionieren, die Registrierung bis Jahresende erledigt sein, und die Steuerung der Lieferanten gehört ganz nach oben auf die Liste."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und die Selbstdeklaration?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Die ist bis Ende September 2027 fällig. Klingt weit weg, aber wer die Nachweise erst in der nächsten Audit-Saison zusammensucht, sitzt am Ende wieder vor drei Excel-Listen und hat keinen Owner."
+    }
+   ]
+  },
+  {
+   "title": "Cisco-Lücke wird ausgenutzt",
+   "news_id": "2026-10-01-cisco-sd-wan-manager-cve-2026-76504",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Zur Bedrohungslage. Die US-Cybersicherheitsbehörde hat gestern eine Lücke im Cisco Catalyst [en]SD-WAN Manager[/en] in ihren Katalog aktiv ausgenutzter Schwachstellen aufgenommen. Das ist die Verwaltungskonsole für softwaredefinierte Weitverkehrsnetze."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Die Lücke trägt die Kennung CVE-2026-76504 und hat 9,8 von 10 Punkten. Angreifer umgehen die Anmeldung an der Programmierschnittstelle und haben sofort Administratorrechte. Einen [en]Workaround[/en] gibt es nicht, nur Updates."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Also patchen und dann die Füße hochlegen?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Leider nicht. Weil die Lücke schon ausgenutzt wurde, raten Fachleute, die Systeme auf Kompromittierung zu prüfen. Und wer Standorte über solche Netze anbindet, sollte klären, warum die Verwaltungsoberfläche überhaupt aus dem Internet erreichbar ist."
+    }
+   ]
+  },
+  {
+   "title": "Bitget: Einbruch über Sicherheitsprodukte",
+   "news_id": "2026-10-01-bitget-zero-day-sicherheitsprodukte-drittanbieter",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Aus der offenen Recherche kommt ein Fall aus der Kryptowelt. Die Börse Bitget hat erklärt, wie Angreifer 387,5 Millionen US-Dollar erbeutet haben."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Der Weg führte über [en]Zero Days[/en] in Sicherheitsprodukten von Drittanbietern. Ausgerechnet die Geräte, die schützen sollten, waren die Eingangstür. Der erste Zugriff war am 31. August, der Diebstahl erst Ende September."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Fast vier Wochen unbemerkt im Netz. Das tut weh."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Die Lehre für uns ist: Auch Sicherheitsprodukte kommen von Drittparteien und gehören ins Risikomanagement für Lieferanten, samt Überwachung der Geräte selbst. Und das Datenbankpasswort lag übrigens in einer Umgebungsvariable. Das passt gut zum nächsten Thema."
+    }
+   ]
+  },
+  {
+   "title": "Offene Zugangsdaten auf GitHub",
+   "news_id": "2026-10-01-github-543000-gueltige-zugangsdaten",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Stimmt. Truffle Security hat öffentliche Projekte auf GitHub durchsucht und über 543.000 noch gültige Zugangsdaten gefunden."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und im Mittel lagen sie 784 Tage offen. Mehr als zwei Jahre liegt da ein funktionierender Schlüssel herum, und keiner merkt es."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Das ist länger, als manches Projekt lebt, zu dem der Schlüssel gehört."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Eben. Für die allgemeinen IT-Kontrollen heißt das: Technische Zugänge und [en]Secrets[/en] verdienen dieselbe Strenge wie Benutzerkonten. Also Ablaufdaten, regelmäßiger Wechsel und die Frage, ob Dienstleister in öffentlichen Projekten entwickeln."
+    }
+   ]
+  },
+  {
+   "title": "Prüfer und Künstliche Intelligenz",
+   "news_id": "2026-10-01-idw-wpg-ki-training-mandantendaten",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Zum Schluss ein Hinweis aus der Welt der Prüfer. Die heutige Ausgabe der Fachzeitschrift Die Wirtschaftsprüfung fragt, ob Prüfer Mandantendaten zum Training von Systemen mit Künstlicher Intelligenz nutzen dürfen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Das ist berufsrechtlich eine spannende Frage. Als geprüftes Unternehmen kann man beim nächsten Prüfungsauftrag ruhig nachfragen, was mit den übergebenen Daten passiert. Das ist kein Misstrauen, das ist Risikomanagement für Drittparteien."
+    }
+   ]
+  },
+  {
+   "title": "Auf dem Radar",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Was steht heute auf dem Radar?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Neue Prüfungsstandards für Prüfungsnachweise. Der internationale Standardsetzer für Abschlussprüfungen hat Entwürfe vorgelegt, Kommentare sind bis zum fünfzehnten Dezember 2026 möglich. Sie sollen technologiegestützte Prüfungen besser abbilden, und das wird früher oder später auch ändern, was Prüfer bei uns anfragen."
+    }
+   ]
+  },
+  {
+   "title": "Abschied",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Das war es für heute. Alle Quellen findet ihr wie immer auf der Webseite."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und allen, die heute für Österreich zuständig sind: Viel Erfolg am ersten Tag mit Meldepflicht. Bis morgen."
+    }
+   ]
+  }
+ ]
+}

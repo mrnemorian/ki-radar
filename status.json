@@ -1,11 +1,17 @@
 {
  "last_run": {
-  "start": "2026-09-30T13:17:20+02:00",
-  "end": "2026-09-30T13:23:35+02:00",
+  "start": "2026-10-01T07:00:02+02:00",
+  "end": "2026-10-01T07:06:47+02:00",
   "ok": true,
-  "summary": "4 neue Meldungen: P1 Update: Österreichs Cybersicherheitsgesetz startet, Selbstdeklaration bis September 2027; P2 Autonomer Agent mit Künstlicher Intelligenz steuert Angriff auf niederländische Sic"
+  "summary": "5 neue Meldungen: P1 Update: Österreichs Cybersicherheitsgesetz gilt ab heute, Befragung zeigt Lücken bei Lieferketten; P2 Cisco Catalyst SD-WAN Manager: Lücke CVE-2026-76504 wird aktiv ausgenutzt;"
  },
  "history": [
+  {
+   "start": "2026-10-01T07:00:02+02:00",
+   "end": "2026-10-01T07:06:47+02:00",
+   "ok": true,
+   "summary": "5 neue Meldungen: P1 Update: Österreichs Cybersicherheitsgesetz gilt ab heute, Befragung zeigt Lücken bei Lieferketten; P2 Cisco Catalyst SD-WAN Manager: Lücke CVE-2026-76504 wird aktiv ausgenutzt;"
+  },
   {
    "start": "2026-09-30T13:17:20+02:00",
    "end": "2026-09-30T13:23:35+02:00",

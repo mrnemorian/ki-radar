@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-30T11:23:35Z",
+ "updated": "2026-10-01T05:06:17Z",
  "topics": [
   "IT-Governance & Risiko",
   "Cyber- & IT-Regulierung",
@@ -11,6 +11,18 @@
   "Weitere Themen"
  ],
  "briefings": [
+  {
+   "date": "2026-10-01",
+   "headline": "Österreichs Cybersicherheitsgesetz gilt ab heute, und eine Befragung zeigt große Lücken bei der Lieferkette. Dazu Lehren aus Angriffen über Netzwerktechnik und Sicherheitsprodukte.",
+   "points": [
+    "Österreich: Das Netz- und Informationssystemsicherheitsgesetz 2026 gilt seit heute ohne Übergangsfrist. Laut KPMG Austria wissen 24 Prozent der Unternehmen nicht, ob sie betroffen sind.",
+    "Cisco Catalyst SD-WAN Manager: Kritische Lücke bei der Anmeldung wird aktiv ausgenutzt. Es gibt keinen Workaround, nur Updates und eine Prüfung auf Kompromittierung.",
+    "Bitget: 387,5 Millionen US-Dollar Schaden nach Zero Days in Sicherheitsprodukten von Drittanbietern, die Angreifer waren fast vier Wochen unbemerkt im Netz.",
+    "Über 543.000 noch gültige Zugangsdaten liegen offen auf GitHub, im Mittel 784 Tage lang.",
+    "Institut der Wirtschaftsprüfer: Fachbeitrag fragt, ob Prüfer Mandantendaten zum Training Künstlicher Intelligenz nutzen dürfen."
+   ],
+   "count": 5
+  },
   {
    "date": "2026-09-30",
    "headline": "Österreich startet morgen mit dem neuen Cybersicherheitsgesetz, ein Agent mit Künstlicher Intelligenz führt einen Angriff autonom aus, Beschäftigte erkennen Deepfakes kaum.",
@@ -37,6 +49,31 @@
  ],
  "dossiers": [
   {
+   "slug": "drittparteien-lieferkette",
+   "created": "2026-10-01",
+   "ring_history": [
+    {
+     "date": "2026-10-01",
+     "ring": "jetzt handeln"
+    }
+   ],
+   "title": "Drittparteien- und Lieferkettenrisiko",
+   "sector": "IT-Governance & Risiko",
+   "ring": "jetzt handeln",
+   "status": "Vorfälle über Dienstleister häufen sich, zuletzt beim Versand-Tracking-Dienstleister von Carrefour France, bei Amadeus iHotelier, beim Datenaustauschdienst FTAPI und bei Bitget über Sicherheitsprodukte von Drittanbietern. Laut KPMG Austria hat jeder fünfte Angriff auf einen Dienstleister auch dessen Kunden getroffen. Die NIS-2-Richtlinie verlangt Sicherheit in der Lieferkette, und seit 15.…",
+   "next_step": "Bestand kritischer Dienstleister einschließlich der Anbieter von Sicherheitsprodukten aktualisieren, Pflichten zur Meldung von Vorfällen vertraglich festlegen und Überwachung und Ausstiegspläne für Dienstleister mit großer Wirkung prüfen.",
+   "open_questions": [
+    "Wie lassen sich Sicherheitsgeräte von Drittanbietern selbst wirksam überwachen?",
+    "Welche Nachweise der Dienstleister reichen für die NIS-2-Richtlinie und für die Interne Revision?"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
+    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen",
+    "ISO/IEC 27001 Anhang A 5.22 – Überwachung, Überprüfung und Änderungsmanagement von Lieferantendienstleistungen"
+   ],
+   "updated": "2026-10-01"
+  },
+  {
    "slug": "nis2-umsetzung",
    "created": "2026-09-30",
    "ring_history": [
@@ -48,18 +85,18 @@
    "title": "NIS-2-Umsetzung",
    "sector": "Cyber- & IT-Regulierung",
    "ring": "jetzt handeln",
-   "status": "In Deutschland gilt das Umsetzungsgesetz seit 6. Dezember 2025. In Österreich gilt das Netz- und Informationssystemsicherheitsgesetz 2026 ab 1. Oktober 2026 ohne Übergangsfrist, mit Registrierung bis 31. Dezember 2026, Selbstdeklaration bis 30. September 2027 und strafbewehrter Schulungspflicht der Leitungsorgane; in weiteren Ländern von REWE International ist der Umsetzungsstand unterschiedlich.",
-   "next_step": "Meldeketten für österreichische Gesellschaften ab 1. Oktober scharf schalten, Betroffenheit und Registrierung bis Jahresende abschließen und Nachweise für die Selbstdeklaration sowie Schulungsnachweise der Geschäftsleitung zentral sammeln.",
+   "status": "In Deutschland gilt das Umsetzungsgesetz seit 6. Dezember 2025. In Österreich gilt das Netz- und Informationssystemsicherheitsgesetz 2026 seit 1. Oktober 2026 ohne Übergangsfrist: Die Registrierung ist bis 31. Dezember 2026 fällig, die Selbstdeklaration bis Ende September 2027. Laut einer Befragung von KPMG Austria kennt ein Viertel der Unternehmen die eigene Betroffenheit nicht, und die…",
+   "next_step": "Meldewege für die österreichischen Gesellschaften testen, Registrierung vor Jahresende abschließen, Nachweise für die Selbstdeklaration früh sammeln und die Steuerung der Lieferanten nachschärfen.",
    "open_questions": [
-    "Welche Nachweise verlangt das österreichische Bundesamt für Cybersicherheit konkret für die Selbstdeklaration?",
-    "Wie werden Meldungen in mehreren Ländern bei einem grenzüberschreitenden Vorfall koordiniert?"
+    "Wie prüft das österreichische Bundesamt für Cybersicherheit die Selbstdeklarationen in der Praxis?",
+    "Wie lassen sich die Pflichten in Deutschland, Österreich und den anderen Ländern von REWE International in einem gemeinsamen Kontrollrahmen bündeln?"
    ],
    "controls": [
     "NIS-2-Richtlinie Art. 20 – Governance",
     "NIS-2-Richtlinie Art. 21 – Risikomanagementmaßnahmen",
     "NIS-2-Richtlinie Art. 23 – Berichtspflichten"
    ],
-   "updated": "2026-09-30"
+   "updated": "2026-10-01"
   },
   {
    "slug": "agentische-ki-sicherheit",
@@ -122,6 +159,17 @@
    "added": "2026-09-30"
   },
   {
+   "date": "2027-01-12",
+   "title": "Datenverordnung: keine Gebühren mehr für den Wechsel des Cloud-Anbieters",
+   "detail": "Ab diesem Tag dürfen Anbieter von Datenverarbeitungsdiensten keine Gebühren mehr für den Wechsel erheben. Cloud-Kunden sollten ihre Ausstiegspläne und Verträge darauf prüfen.",
+   "scope": "EU",
+   "url": "https://eur-lex.europa.eu/eli/reg/2023/2854/oj",
+   "primary": true,
+   "checked": true,
+   "dossier": "drittparteien-lieferkette",
+   "added": "2026-10-01"
+  },
+  {
    "date": "2027-09-30",
    "title": "Österreich: Selbstdeklaration zu Risikomanagementmaßnahmen fällig",
    "detail": "Wesentliche und wichtige Einrichtungen nach dem Netz- und Informationssystemsicherheitsgesetz 2026 müssen einmalig eine Selbstdeklaration zu ihren umgesetzten Risikomanagementmaßnahmen beim Bundesamt für Cybersicherheit einreichen.",
@@ -136,16 +184,28 @@
  "signals": [
   {
    "theme": "Post-Quanten-Kryptografie-Migration",
-   "why": "Nach dem Fahrplan der Europäischen Union sollen bis Ende 2026 nationale Übergangspläne vorliegen und die Inventur kryptografischer Verfahren beginnen, kritische Anwendungsfälle sollen bis 2030 umgestellt sein. Ein frühes Kryptoinventar wird damit zur Grundlage für spätere Pflichten und Prüfungen.",
-   "count": 1,
+   "why": "Die US-Bundesverwaltung muss bis Ende Oktober 2026 vollständige Pläne für den Umstieg auf Post-Quanten-Kryptografie vorlegen. Solche festen Fristen werden sich über Hersteller und Dienstleister auch auf europäische Unternehmen auswirken.",
+   "count": 2,
    "first_seen": "2026-09-30",
-   "last_seen": "2026-09-30",
+   "last_seen": "2026-10-01",
    "evidence": [
+    "https://www.whitehouse.gov/wp-content/uploads/2026/06/M-26-15-Execution-of-the-Migration-to-Post-Quantum-Cryptography.pdf",
     "https://digital-strategy.ec.europa.eu/en/policies/post-quantum-cryptography",
     "https://www.heise.de/news/CA-Bewerbung-CDN-Anbieter-Cloudflare-will-bald-selber-Zertifikate-ausstellen-11469864.html",
     "https://www.ncsc.gov.uk/guidance/pqc-migration-timelines",
-    "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Informationen-und-Empfehlungen/Quantentechnologien-und-Post-Quanten-Kryptografie/quantentechnologien-und-quantensichere-kryptografie_node.html",
-    "https://digital-strategy.ec.europa.eu/en/news/eu-reinforces-its-cybersecurity-post-quantum-cryptography"
+    "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Informationen-und-Empfehlungen/Quantentechnologien-und-Post-Quanten-Kryptografie/quantentechnologien-und-quantensichere-kryptografie_node.html"
+   ]
+  },
+  {
+   "theme": "Neue Prüfungsstandards für Prüfungsnachweise",
+   "why": "Der internationale Standardsetzer für Abschlussprüfungen hat Entwürfe für überarbeitete Standards zu Prüfungsnachweisen und zur Reaktion auf Risiken vorgelegt, Kommentare sind bis 15. Dezember 2026 möglich. Sie sollen technologiegestützte Prüfungen besser abbilden und dürften verändern, welche Daten und Nachweise Prüfer anfordern.",
+   "count": 2,
+   "first_seen": "2026-09-30",
+   "last_seen": "2026-10-01",
+   "evidence": [
+    "https://www.iaasb.org/consultations-projects/audit-evidence-and-risk-response-isa-330-isa-500-isa-520",
+    "https://www.accountingtoday.com/news/iaasb-proposes-to-revise-audit-standards-for-new-risks-and-tech",
+    "https://ifacweb.blob.core.windows.net/publicfiles/2026-08/IAASB-Audit-Evidence-Risk-Response-ISA-500-Exposure-Draft.pdf"
    ]
   },
   {
@@ -193,17 +253,6 @@
    ]
   },
   {
-   "theme": "Neue Prüfungsstandards für Prüfungsnachweise",
-   "why": "Der internationale Standardsetzer für Abschlussprüfungen modernisiert die Standards zu Prüfungsnachweisen, Reaktionen auf Risiken und analytischen Prüfungshandlungen mit Blick auf Technologie; Kommentare sind bis 15. Dezember 2026 möglich. Strengere Anforderungen an die Verlässlichkeit von Systeminformationen dürften die allgemeinen IT-Kontrollen in der Abschlussprüfung betreffen.",
-   "count": 1,
-   "first_seen": "2026-09-30",
-   "last_seen": "2026-09-30",
-   "evidence": [
-    "https://www.accountingtoday.com/news/iaasb-proposes-to-revise-audit-standards-for-new-risks-and-tech",
-    "https://ifacweb.blob.core.windows.net/publicfiles/2026-08/IAASB-Audit-Evidence-Risk-Response-ISA-500-Exposure-Draft.pdf"
-   ]
-  },
-  {
    "theme": "Beschäftigtendatengesetz zweiter Anlauf",
    "why": "Die Bundesregierung bereitet einen neuen Entwurf für ein eigenes Gesetz zum Beschäftigtendatenschutz vor; der frühere Entwurf enthielt Regeln zu Überwachung und Künstlicher Intelligenz im Personalwesen, was Personaleinsatzplanung und Mitarbeiterüberwachung direkt betreffen würde.",
    "count": 1,
@@ -225,6 +274,184 @@
   }
  ],
  "news": [
+  {
+   "title": "Institut der Wirtschaftsprüfer: Dürfen Prüfer Mandantendaten zum Training Künstlicher Intelligenz nutzen?",
+   "summary": "Die Ausgabe 19/2026 der Fachzeitschrift Die Wirtschaftsprüfung vom 1. Oktober 2026 enthält einen Hauptbeitrag von Sabine Samtleben zum Training von Systemen mit Künstlicher Intelligenz. Der Beitrag fragt, ob Wirtschaftsprüfer dafür Daten ihrer Mandanten nutzen dürfen, und bewertet das aus Sicht des Berufsrechts.",
+   "relevance": "Geprüfte Unternehmen übergeben bei der Abschlussprüfung große Mengen an Daten. Es lohnt sich, im Prüfungsauftrag zu klären, ob und wie Prüfer diese Daten für Künstliche Intelligenz verwenden.",
+   "source": "Institut der Wirtschaftsprüfer",
+   "url": "https://www.idw.de/idw/idw-aktuell/",
+   "id": "2026-10-01-idw-wpg-ki-training-mandantendaten",
+   "topic": "Prüfung & Assurance",
+   "impact": "info",
+   "published": "2026-10-01",
+   "tags": [
+    "Abschlussprüfung",
+    "Künstliche Intelligenz",
+    "Mandantendaten"
+   ],
+   "controls": [
+    "DSGVO Art. 28 – Auftragsverarbeiter"
+   ],
+   "roles": [
+    "Revision & Prüfung",
+    "Datenschutz"
+   ],
+   "countries": [
+    "DE"
+   ],
+   "dossier": null,
+   "priority": 5,
+   "primary": true,
+   "added": "2026-10-01T05:06:17Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Der Newsletter des Instituts vom 1. Oktober 2026 nennt die Ausgabe 19/2026 mit dem Beitrag von Sabine Samtleben zur berufsrechtlichen Zulässigkeit, Mandantendaten zum Training von KI-Systemen zu nutzen."
+   }
+  },
+  {
+   "title": "Update: Österreichs Cybersicherheitsgesetz gilt ab heute, Befragung zeigt Lücken bei Lieferketten",
+   "summary": "Seit dem 1. Oktober 2026 gelten in Österreich die Pflichten aus dem Netz- und Informationssystemsicherheitsgesetz 2026. Dazu gehören das Melden erheblicher Sicherheitsvorfälle, die Registrierung bis 31. Dezember 2026 und die Selbstdeklaration bis Ende September 2027. Neu ist eine Befragung von KPMG Austria unter 1.396 Unternehmen: Jeder achte registrierte Angriff hat die Schutzmaßnahmen überwunden. 24 Prozent kennen ihre Betroffenheit nicht, und bei der Lieferkettensicherheit erreichen die Unternehmen im Schnitt nur 2,03 von 5 Punkten.",
+   "relevance": "Für österreichische Gesellschaften eines großen Handels- und Touristikkonzerns müssen die Meldewege ab heute funktionieren. Die Befragung zeigt die Steuerung der Lieferanten als größte Schwachstelle: Jeder fünfte Angriff auf einen Dienstleister hat auch dessen Kunden getroffen.",
+   "source": "KPMG Austria über APA-OTS",
+   "url": "https://www.ots.at/presseaussendung/OTS_20260930_OTS0028/nisg-2026-jeder-achte-cyberangriff-ist-erfolgreich-neues-gesetz-soll-unternehmen-besser-schuetzen",
+   "id": "2026-10-01-update-oesterreich-nisg-start-kpmg-studie",
+   "topic": "Cyber- & IT-Regulierung",
+   "impact": "hoch",
+   "published": "2026-09-30",
+   "tags": [
+    "Österreich",
+    "Meldepflicht",
+    "Lieferkette"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 20 – Governance",
+    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
+    "NIS-2-Richtlinie Art. 23 – Berichtspflichten"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Management",
+    "Einkauf & Drittparteien"
+   ],
+   "countries": [
+    "AT"
+   ],
+   "dossier": "nis2-umsetzung",
+   "priority": 1,
+   "primary": false,
+   "added": "2026-10-01T05:06:17Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Die Aussendung vom 30. September 2026 bestätigt: 1.396 befragte Unternehmen, jeder achte registrierte Angriff erfolgreich, 24 Prozent kennen ihre Betroffenheit nicht, Lieferkettensicherheit 2,03 von 5 Punkten. Auch die Fristen stimmen: Inkrafttreten und Meldepflicht ab 1. Oktober 2026…"
+   }
+  },
+  {
+   "title": "Cisco Catalyst SD-WAN Manager: Lücke CVE-2026-76504 wird aktiv ausgenutzt",
+   "summary": "Die US-Cybersicherheitsbehörde hat am 30. September 2026 die Lücke CVE-2026-76504 in ihren Katalog aktiv ausgenutzter Schwachstellen aufgenommen. Die Lücke steckt im Cisco Catalyst SD-WAN Manager, einer Verwaltungskonsole für softwaredefinierte Weitverkehrsnetze, und wird mit 9,8 von 10 Punkten bewertet. Angreifer können ohne Zugangsdaten die Anmeldung an der Programmierschnittstelle umgehen und erhalten Administratorrechte. Cisco nennt keinen Workaround, es gibt aber korrigierte Versionen.",
+   "relevance": "Weitverkehrsnetze verbinden oft Filialen, Lager und Rechenzentren. Wer die Konsole einsetzt, sollte sofort patchen, die Protokolle auf Kompromittierung prüfen und klären, warum die Verwaltungsoberfläche aus dem Internet erreichbar ist.",
+   "source": "Cybersecurity and Infrastructure Security Agency",
+   "url": "https://www.cisa.gov/news-events/alerts/2026/09/30/cisa-adds-one-known-exploited-vulnerability-catalog",
+   "id": "2026-10-01-cisco-sd-wan-manager-cve-2026-76504",
+   "topic": "Weitere Themen",
+   "impact": "hoch",
+   "published": "2026-09-30",
+   "tags": [
+    "Schwachstelle",
+    "Netzwerk",
+    "Zero Day"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
+    "ISO/IEC 27001 Anhang A 8.20 – Netzwerksicherheit"
+   ],
+   "roles": [
+    "IT-Risiko"
+   ],
+   "countries": [
+    "EU",
+    "DE",
+    "AT"
+   ],
+   "dossier": null,
+   "priority": 2,
+   "primary": true,
+   "added": "2026-10-01T05:06:17Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Die Seite der US-Behörde bestätigt nur die Aufnahme in den Katalog am 30. September 2026 und nennt keine technischen Details. Andere Berichte über die Sicherheitsmeldung von Cisco belegen den Rest: Bewertung 9,8, Umgehung der Anmeldung an der Programmierschnittstelle mit Administratorrechten…"
+   }
+  },
+  {
+   "title": "Bitget: Zero Days in Sicherheitsprodukten von Drittanbietern ermöglichen Diebstahl von 387,5 Millionen US-Dollar",
+   "summary": "Die Kryptobörse Bitget hat erklärt, dass Angreifer über Zero-Day-Lücken in Sicherheitsprodukten von Drittanbietern eingedrungen sind. Die Hersteller wurden nicht genannt. Der erste Zugriff erfolgte am 31. August: Die Angreifer lasen ein Datenbankpasswort aus einer Umgebungsvariable aus. Ende September installierten sie Schadsoftware auf einem Server für die Kryptowährungsbestände und erbeuteten 387,5 Millionen US-Dollar.",
+   "relevance": "Ausgerechnet die Schutzprodukte waren das Einfallstor. Auch Sicherheitsgeräte gehören deshalb in das Risikomanagement für Drittparteien und in die Überwachung. Die fast vier Wochen zwischen erstem Zugriff und Schaden zeigen außerdem, wie wichtig Erkennung ist und wie Zugangsdaten in Konfigurationen abgelegt werden.",
+   "source": "BleepingComputer",
+   "url": "https://bleepingcomputer.com/news/security/bitget-hacked-via-zero-day-in-third-party-security-products",
+   "id": "2026-10-01-bitget-zero-day-sicherheitsprodukte-drittanbieter",
+   "topic": "IT-Governance & Risiko",
+   "impact": "mittel",
+   "published": "2026-09-30",
+   "tags": [
+    "Drittparteien",
+    "Zero Day",
+    "Vorfall"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen",
+    "ISO/IEC 27001 Anhang A 8.16 – Überwachungstätigkeiten"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Einkauf & Drittparteien"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "drittparteien-lieferkette",
+   "priority": 3,
+   "primary": false,
+   "added": "2026-10-01T05:06:17Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Der Artikel vom 30. September 2026 bestätigt: 387,5 Millionen US-Dollar, frühester Zugriff am 31. August, Datenbankpasswort aus einer Umgebungsvariable gelesen, Schadsoftware auf dem Produktions-Wallet-Server, Diebstahl am 25. September, Hersteller nicht genannt."
+   }
+  },
+  {
+   "title": "Über 543.000 noch gültige Zugangsdaten liegen in öffentlichen GitHub-Projekten",
+   "summary": "Truffle Security hat 224 Millionen öffentliche GitHub-Projekte untersucht und 543.699 noch funktionierende Zugangsdaten gefunden, darunter Schlüssel für Programmierschnittstellen, Zugänge zur Google-Cloud und Verbindungsdaten für Datenbanken. Im Mittel lagen die Zugangsdaten 784 Tage offen. 51,8 Prozent der aktiven Zugangsdaten gehören zu Kategorien, die der automatische Schutz von GitHub nicht blockiert.",
+   "relevance": "Technische Zugänge und Schlüssel werden in den allgemeinen IT-Kontrollen oft weniger streng behandelt als Benutzerkonten. Die Studie spricht für Ablaufdaten, regelmäßigen Wechsel und die Suche nach Geheimnissen im Code, auch bei Entwicklungsdienstleistern.",
+   "source": "BleepingComputer",
+   "url": "https://bleepingcomputer.com/news/security/over-543-000-valid-credentials-exposed-in-public-github-repositories",
+   "id": "2026-10-01-github-543000-gueltige-zugangsdaten",
+   "topic": "Prüfung & Assurance",
+   "impact": "mittel",
+   "published": "2026-09-30",
+   "tags": [
+    "Zugangsdaten",
+    "Softwareentwicklung",
+    "allgemeine IT-Kontrollen"
+   ],
+   "controls": [
+    "IT-Kontrollen der Abschlussprüfung – Zugriffsverwaltung",
+    "ISO/IEC 27001 Anhang A 5.17 – Authentisierungsinformationen",
+    "ISO/IEC 27001 Anhang A 8.4 – Zugriff auf den Quellcode"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Revision & Prüfung"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": null,
+   "priority": 4,
+   "primary": false,
+   "added": "2026-10-01T05:06:17Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Der Artikel vom 30. September 2026 bestätigt: 224 Millionen Projekte, 543.699 gültige Zugangsdaten, Median 784 Tage, 51,8 Prozent in Kategorien, die der Standardschutz von GitHub nicht blockiert. Die Daten der Untersuchung reichen bis 7. August 2025."
+   }
+  },
   {
    "title": "Eurobarometer: Drei von vier Beschäftigten erhalten verdächtige Nachrichten, Deepfakes kaum erkannt",
    "summary": "Laut einer am 30. September veröffentlichten Eurobarometer-Umfrage der Europäischen Kommission hatten 75 Prozent der Beschäftigten in der Europäischen Union bei der Arbeit mit verdächtigen E-Mails, Nachrichten oder Links zu tun; 39 Prozent berichten von Phishing, 15 Prozent von Betrugsversuchen, die mit Künstlicher Intelligenz erstellt wurden. 83 Prozent halten die Folgen von Cyberangriffen für ernst, aber nur 48 Prozent trauen sich zu, ein mit Künstlicher Intelligenz erzeugtes Fake-Video zu erkennen.",
@@ -1249,5 +1476,29 @@
    "added": "2026-09-29T22:03:17Z"
   }
  ],
- "monthly": []
+ "monthly": [
+  {
+   "month": "2026-09",
+   "headline": "Seit 1. Oktober 2026 gilt das österreichische Netz- und Informationssystemsicherheitsgesetz 2026 zur NIS-2-Umsetzung ohne Übergangsfrist: Die Meldepflicht greift ab dem ersten Tag, und zugleich häufen sich Vorfälle über Dienstleister.",
+   "act_now": [
+    "NIS-2 Österreich: Das Gesetz gilt seit 1. Oktober 2026 ohne Übergangsfrist und mit Meldepflicht ab dem ersten Tag; die Registrierung ist bis 31. Dezember 2026 fällig, die Selbstdeklaration bis Ende September 2027. Laut KPMG Austria kennt ein Viertel der Unternehmen die eigene Betroffenheit nicht…",
+    "Drittparteien- und Lieferkettenrisiko: Im Monat gab es Vorfälle bei Shipup (Carrefour France), Amadeus iHotelier, FTAPI, HotelNetSolutions und BigCommerce. Seit 15. September ist die Anforderung der Internen Revision zur Prüfung von Drittparteien verbindlich. Kritische Dienstleister und deren…"
+   ],
+   "moved": [],
+   "new": [
+    "Aktiv ausgenutzte Schwachstellen: zwei kritische Zero-Day-Lücken in Citrix NetScaler (194 Kommunen in Rheinland-Pfalz vorsorglich abgeschaltet), außerdem Lücken in Microsoft SharePoint und Roundcube. Kiteworks rät Kunden, ihre Server vorsorglich abzuschalten.",
+    "Agentische Künstliche Intelligenz (Ring „vorbereiten“): Ein autonomer Agent steuerte einen Angriff auf eine niederländische Sicherheitsorganisation, Agenten erbeuteten 600.000 Kreditkartendaten aus Hunderten Onlineshops, und im Model Context Protocol wurden Lücken bekannt. Das Bundesamt für…",
+    "Cyber Resilience Act: Seit 11. September gilt die Meldepflicht für ausgenutzte Schwachstellen.",
+    "Handel: Laut Kabinettsbeschluss ersetzt der digitale Beleg ab 2028 den Papierbon, elektronische Kassen werden Pflicht.",
+    "Signale mit zwei Nennungen: Migration zur Post-Quanten-Kryptografie und neue Prüfungsstandards für Prüfungsnachweise; dazu passen zwei neue Prüfungshinweise des Instituts der Wirtschaftsprüfer zu Künstlicher Intelligenz in der Abschlussprüfung."
+   ],
+   "outlook": [
+    "Österreich: Die Registrierung nach dem neuen Cybersicherheitsgesetz im Oktober vorbereiten, damit die Frist 31. Dezember 2026 sicher gehalten wird.",
+    "30. Oktober: Die Konsultation des Europäischen Datenschutzausschusses zu Anonymisierung und Web-Scraping für Künstliche Intelligenz endet.",
+    "13. November: Die Konsultation des Europäischen Datenschutzausschusses zur einheitlichen Bemessung von Bußgeldern nach der DSGVO endet.",
+    "2. Dezember 2026: Die Übergangsfrist der Verordnung über Künstliche Intelligenz für die Kennzeichnung synthetischer Inhalte endet; die eigenen Inhalte auf Kennzeichnungsbedarf prüfen."
+   ],
+   "created": "2026-10-01"
+  }
+ ]
 }
