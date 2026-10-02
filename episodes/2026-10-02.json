@@ -1,0 +1,283 @@
+{
+ "format": "tiefgang",
+ "chapters": [
+  {
+   "title": "Begrüßung",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Guten Morgen, liebe IT-GRC-Kolleginnen und -Kollegen, willkommen beim IT-GRC Radar am Freitag, dem zweiten Oktober 2026. Freitag heißt Tiefgang, und heute geht es um ein Thema, das sich durch die ganze Woche zieht: Identitäten und Zugangsdaten."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Also das Thema, bei dem jede Prüfungssaison mit derselben Frage beginnt: Wer hat eigentlich noch Zugriff, und warum? Kaffee steht, wir können loslegen."
+    }
+   ]
+  },
+  {
+   "title": "FortiMail ohne Patch",
+   "news_id": "2026-10-02-fortimail-zero-day",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Zuerst das Dringende. Fortinet warnt vor einer kritischen Lücke in FortiMail, seinem [en]Gateway[/en] für E-Mail-Sicherheit. Sie wird bereits als [en]Zero Day[/en] ausgenutzt, Schweregrad 9,8 von 10, und für die meisten Versionen gibt es noch kein Update."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Das ist die unangenehmste Kombination überhaupt. Angreifer brauchen keine Anmeldung, sie schicken präparierte Anfragen an die Verwaltungsoberfläche und können dort beliebige Dateien schreiben. Und so ein [en]Gateway[/en] sieht nun mal die gesamte E-Mail-Kommunikation eines Hauses."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Was macht man denn, wenn es keinen Patch gibt?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Der Hersteller empfiehlt, die Funktion für identitätsbasierte Verschlüsselung abzuschalten oder die Verwaltungsoberfläche nur aus vertrauenswürdigen Netzen erreichbar zu machen. Die amerikanische Cybersicherheitsbehörde gibt ihren Bundesbehörden dafür Zeit bis zum vierten Oktober, also bis Sonntag. Ehrlich gesagt: Eine Verwaltungsoberfläche, die aus dem Internet erreichbar ist, sollte man sich auch ohne akute Lücke mal genauer anschauen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Also weniger die Frage, wie schnell wir patchen, sondern: Haben wir für den Fall ohne Patch überhaupt einen Plan?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Genau. Die NIS-2-Richtlinie, also die Richtlinie über Netz- und Informationssicherheit, verlangt einen Umgang mit Schwachstellen, nicht nur das Einspielen von Updates. Und wer nachts um zwei eine Funktion abschalten darf, sollte vorher geklärt sein, nicht erst im Krisenstab."
+    }
+   ]
+  },
+  {
+   "title": "Update Flink",
+   "news_id": "2026-10-02-update-flink-ehemalige-zugangsdaten",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Da gibt es Neues zum Lieferdienst Flink. Laut Berichten sind rund eine Million Kunden und 13.000 Beschäftigte betroffen, abgeflossen sind Namen, E-Mail-Adressen und Telefonnummern. Passwörter und Bankdaten nach Angaben des Unternehmens nicht."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und jetzt kommt der Teil, der mich hellhörig macht: Als Einfallstor dienten Zugangsdaten einer ehemals beschäftigten Person."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Moment, heißt das, der Zugang war nach dem Austritt einfach noch aktiv?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Das geht aus den Berichten nicht im Detail hervor, da sollten wir vorsichtig sein. Aber der Fall zeigt, warum die Entziehung von Zugängen beim Austritt zu den Klassikern der allgemeinen Kontrollen der Informationstechnik in der Abschlussprüfung gehört. Klingt langweilig, ist aber offenbar ein Einfallstor."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Neu ist auch die Masche. Die Täter schreiben Kunden direkt an und verlangen kleine Beträge in Kryptowährung, insgesamt geht es um 100 Ether. Flink verhandelt nicht und hat Strafanzeige erstattet."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Für jeden Händler mit eigenem Lieferservice heißt das: Der Vorfallplan braucht auch die Kommunikation an Kunden, die plötzlich Erpresserpost bekommen. Das steht in den wenigsten Notfallhandbüchern."
+    }
+   ]
+  },
+  {
+   "title": "Microsoft-Lagebericht",
+   "news_id": "2026-10-02-microsoft-digital-defense-report",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Dritte Meldung: Microsoft hat seinen [en]Digital Defense Report[/en] 2026 veröffentlicht, gestützt auf nach eigenen Angaben 165 Billionen Sicherheitssignale am Tag."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Billionen mit B. Da kommt selbst die schönste Risiko-Excel-Liste nicht mehr mit."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Die Kernbotschaft: Künstliche Intelligenz ist laut Microsoft die größte Umwälzung, Angreifer werden damit schneller und arbeiten in größerem Maßstab. In 63 Prozent der Einbrüche wurden Daten gestohlen, und offen erreichbare [en]Cloud[/en]-[en]Workloads[/en] wurden im Schnitt nach 5,3 Stunden angegriffen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Das passt direkt zu FortiMail. Wenn exponierte Systeme binnen Stunden angegriffen werden, sind monatliche Patchzyklen kein Risikoappetit mehr, sondern eine Wette. Und Identitäten bleiben laut Bericht ein Hauptweg nach drinnen, womit wir fast schon beim Tiefgang sind."
+    }
+   ]
+  },
+  {
+   "title": "KillSec zerschlagen",
+   "news_id": "2026-10-02-killsec-zerschlagen",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Kurz noch zwei Meldungen. Ermittler haben die [en]Ransomware[/en]-Gruppe KillSec zerschlagen. Ein 16-Jähriger wurde als mutmaßlicher Hauptbetreiber festgenommen, insgesamt gab es drei Festnahmen, Durchsuchungen liefen in Spanien, Griechenland, dem Vereinigten Königreich und Rumänien. Sichergestellt wurden über 110 Terabyte Daten und fünf Server."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ein schöner Erfolg. Die Gruppe kam laut Berichten über schlecht abgesicherte Zugänge rein, vor allem zu [en]Cloud[/en]-Speicher, also über Dinge, die in jedem Kontrollkatalog stehen. Und wenn bei den sichergestellten Daten die eigenen dabei sind, meldet sich womöglich die Polizei, bevor man es selbst merkt."
+    }
+   ]
+  },
+  {
+   "title": "Neuer Bundesdatenschutzbeauftragter",
+   "news_id": "2026-10-02-hennemann-bundesdatenschutzbeauftragter",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Und personell: Moritz Hennemann hat am ersten Oktober sein Amt als Bundesbeauftragter für den Datenschutz und die Informationsfreiheit angetreten. Seine Schwerpunkte will er am sechsten Oktober vorstellen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Für private Unternehmen sind meist die Landesbehörden zuständig. Aber der Bundesbeauftragte vertritt Deutschland im Europäischen Datenschutzausschuss, seine Linie zur Reform der Datenschutz-Grundverordnung lohnt sich also zu verfolgen."
+    }
+   ]
+  },
+  {
+   "title": "Tiefgang: Identitäten und Zugangsdaten",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Dann zum Tiefgang. Wir haben dafür ein neues Dossier angelegt: Identitäten und Zugangsdaten. Warum gerade jetzt?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Weil die Woche es uns quasi diktiert hat. Flink, Zugangsdaten einer ehemals beschäftigten Person. Über 543.000 noch gültige Zugangsdaten in öffentlichen GitHub-Projekten. Und die Gruppe ShinyHunters nutzt weiter die Personalsoftware Oracle PeopleSoft als Einfallstor. Der Angreifer bricht nicht mehr ein, er meldet sich an."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Den Satz leihe ich mir für die nächste Vorstandsvorlage. Aber im Ernst: Identitätsmanagement ist doch seit Jahren ein Pflichtthema. Was ist neu?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Neu ist die Menge. Früher ging es um Beschäftigte. Heute kommen technische Konten, Schnittstellenschlüssel, [en]Token[/en], Zugänge von Dienstleistern und jetzt auch Agenten mit Künstlicher Intelligenz dazu. Viele davon tauchen in keinem Austrittsprozess auf, weil sie nie eingetreten sind."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Dann mal die Gegenposition. Wir haben doch Rezertifizierungen, zweimal im Jahr bestätigen die Führungskräfte die Berechtigungen. Reicht das nicht?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Für die Prüfung vielleicht, für den Angreifer eher nicht. Wer zweihundert Zeilen bestätigen soll, klickt am Ende auf alle bestätigen. Und ein Zugang, der drei Monate zu lange lebt, reicht völlig."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Das klingt nach: alles automatisieren. Aber das hat auch Tücken. Wenn im Personalsystem ein Austritt falsch eingetragen ist, sperrt man womöglich die Filialleitung am Samstagvormittag aus."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Berechtigter Einwand. Deshalb nicht blind automatisieren, sondern sauber koppeln: Der Austritt im Personalsystem löst die Sperre im zentralen Verzeichnisdienst aus, mit einem klaren Ausnahmeprozess. Die eigentliche Lücke liegt oft woanders, nämlich in [en]Software as a Service[/en]-Anwendungen, die gar nicht am zentralen Login hängen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und bei den technischen Konten? Da ist die Frage nach dem Owner ja noch schwieriger."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Viel schwieriger, ein Dienstkonto hat keinen Austrittstermin. Mein Vorschlag: Jede nicht-menschliche Identität bekommt einen namentlich verantwortlichen Owner und ein Ablaufdatum. Wer verlängern will, muss begründen. Unbequem, aber es dreht die Beweislast um."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Da höre ich die Entwicklungsteams schon stöhnen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Zu Recht, wenn man es ohne Werkzeuge macht. Dazu gehört ein automatisches Scannen der Code-Repositories nach Zugangsdaten, bevor etwas veröffentlicht wird. Die 543.000 aus GitHub zeigen, dass es ohne nicht geht."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und die Anmeldung selbst? Gestohlene Passwörter sind ja der Klassiker."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Da ist der Hebel phishingresistente Anmeldung, zum Beispiel [en]Passkeys[/en] oder Hardware-Schlüssel, zumindest für privilegierte Konten und alles, was aus dem Internet erreichbar ist. Die NIS-2-Richtlinie nennt Multi-Faktor-Authentifizierung ausdrücklich. Das Contra: Es kostet Geld und Geduld, gerade bei Geräten, die sich in der Filiale viele teilen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Wenn ich zusammenfasse: Was sollte Governance, Risiko und Compliance jetzt konkret tun?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Erstens den Austrittsprozess nicht nur auf dem Papier, sondern stichprobenartig gegen echte Konten testen, auch in [en]Cloud[/en]-Anwendungen und bei Dienstleistern. Zweitens ein Inventar der nicht-menschlichen Identitäten mit Owner und Ablaufdatum. Drittens phishingresistente Anmeldung für privilegierte und exponierte Zugänge priorisieren. Das hilft übrigens auch in der Abschlussprüfung, denn Zugriffsverwaltung ist dort ohnehin Schwerpunkt."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und was bleibt offen?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Vor allem eine Frage: Wer ist Owner für die Identität eines Agenten mit Künstlicher Intelligenz, der im Namen eines Beschäftigten handelt? Darauf hat, glaube ich, noch niemand eine wirklich gute Antwort."
+    }
+   ]
+  },
+  {
+   "title": "Zahl der Woche",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Zeit für die Zahl der Woche."
+    },
+    {
+     "speaker": "Florian",
+     "text": "276 Prozent. Um so viel ist laut Microsoft die Zahl der beobachteten [en]Ransomware[/en]-Fälle in Deutschland gestiegen, von 59 auf 222. Deutschland ist damit das einzige Land der Europäischen Union unter den zehn am stärksten angegriffenen Ländern."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Mit der Einschränkung, dass Microsoft nur sieht, was bei seinen Kunden passiert."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Richtig, das ist keine amtliche Statistik. Aber als Richtung taugt sie, und sie passt leider zu allem anderen, was wir diese Woche gehört haben."
+    }
+   ]
+  },
+  {
+   "title": "Owner-Moment der Woche",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Und der Owner-Moment der Woche?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Geht an die über 543.000 gültigen Zugangsdaten in öffentlichen GitHub-Projekten. Jedes davon hat irgendwann jemand angelegt, der es eilig hatte, und dann vergessen. Kein Vorwurf an Einzelne, das passiert in jeder Organisation."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und die Lehre daraus?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ein Geheimnis ohne Owner ist kein Geheimnis, sondern eine Frage der Zeit. Wer einen Schlüssel erzeugt, ist für ihn verantwortlich, bis er widerrufen ist. Und das sollte nicht erst in der Excel-Liste der Prüfungsfeststellungen auffallen."
+    }
+   ]
+  },
+  {
+   "title": "Auf dem Radar",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Auf dem Radar haben wir heute Grundschutz plus plus. Die Pilotphase der neuen Methodik des Bundesamts für Sicherheit in der Informationstechnik ist am dreißigsten September zu Ende gegangen. Veröffentlicht werden soll sie Ende Oktober, zertifizierbar ab dem ersten Januar 2027."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Für alle, die heute nach der Norm ISO IEC 27001 für Informationssicherheits-Managementsysteme zertifiziert sind, keine Pflicht, aber ein Signal: Der Grundschutz wird modularer und maschinenlesbar. Wer ohnehin Kontrollkataloge zusammenführen will, sollte sich das anschauen."
+    }
+   ]
+  },
+  {
+   "title": "Abschied",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Das war das IT-GRC Radar für diese Woche. Alle Quellen findet ihr wie immer auf der Webseite."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und falls ihr am Wochenende ein FortiMail betreut: Schaut bitte vor Sonntag drauf. Schönes Wochenende!"
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Bis Montag!"
+    }
+   ]
+  }
+ ]
+}

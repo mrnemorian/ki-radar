@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-01T05:06:17Z",
+ "updated": "2026-10-02T05:08:41Z",
  "topics": [
   "IT-Governance & Risiko",
   "Cyber- & IT-Regulierung",
@@ -11,6 +11,18 @@
   "Weitere Themen"
  ],
  "briefings": [
+  {
+   "date": "2026-10-02",
+   "headline": "Kritische FortiMail-Lücke ohne Patch, Flink-Einbruch über alte Zugangsdaten: Angreifer brechen nicht mehr ein, sie melden sich an.",
+   "points": [
+    "Fortinet FortiMail: Kritische Zero-Day-Lücke wird ausgenutzt, für die meisten Versionen noch kein Update – Verwaltungsoberflächen abschotten.",
+    "Update Flink: Zugangsdaten einer ehemals beschäftigten Person als Einfallstor, rund eine Million Kunden und 13.000 Beschäftigte betroffen.",
+    "Microsoft-Lagebericht 2026: Ransomware-Fälle in Deutschland fast vervierfacht, Ausnutzung von Lücken in weniger als 24 Stunden.",
+    "Ransomware-Gruppe KillSec zerschlagen, über 110 Terabyte Daten sichergestellt.",
+    "Moritz Hennemann ist neuer Bundesbeauftragter für den Datenschutz, Schwerpunkte folgen am 6. Oktober."
+   ],
+   "count": 5
+  },
   {
    "date": "2026-10-01",
    "headline": "Österreichs Cybersicherheitsgesetz gilt ab heute, und eine Befragung zeigt große Lücken bei der Lieferkette. Dazu Lehren aus Angriffen über Netzwerktechnik und Sicherheitsprodukte.",
@@ -74,6 +86,32 @@
    "updated": "2026-10-01"
   },
   {
+   "slug": "identitaeten-zugangsdaten",
+   "created": "2026-10-02",
+   "ring_history": [
+    {
+     "date": "2026-10-02",
+     "ring": "jetzt handeln"
+    }
+   ],
+   "title": "Identitäten und Zugangsdaten",
+   "sector": "IT-Governance & Risiko",
+   "ring": "jetzt handeln",
+   "status": "Gestohlene oder liegengebliebene Zugangsdaten sind derzeit das häufigste Einfallstor: Beim Lieferdienst Flink dienten Zugangsdaten einer ehemals beschäftigten Person als Einstieg, in öffentlichen GitHub-Projekten lagen über 543.000 gültige Zugangsdaten, und die Gruppe ShinyHunters nutzt Personalsoftware als Einfallstor. Microsoft nennt Identitäten als zentralen Angriffsweg.",
+   "next_step": "Austritts- und Rezertifizierungsprozesse stichprobenartig gegen echte Konten testen, auch in Cloud-Anwendungen und bei Dienstleistern; Inventar nicht-menschlicher Identitäten mit Owner und Ablaufdatum aufbauen; phishingresistente Anmeldung für privilegierte und exponierte Zugänge priorisieren.",
+   "open_questions": [
+    "Werden Zugänge ehemaliger Beschäftigter auch in Software-as-a-Service-Anwendungen außerhalb des zentralen Verzeichnisdienstes zuverlässig entzogen?",
+    "Wer ist Owner für Dienstkonten, Schnittstellenschlüssel und Agenten mit Künstlicher Intelligenz?",
+    "Wie werden Zugangsdaten in Code-Repositories vor der Veröffentlichung erkannt?"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 5.18 – Zugangsrechte",
+    "IT-Kontrollen der Abschlussprüfung – Zugriffsverwaltung",
+    "NIS-2-Richtlinie Art. 21 – Zugriffskontrolle und Multi-Faktor-Authentifizierung"
+   ],
+   "updated": "2026-10-02"
+  },
+  {
    "slug": "nis2-umsetzung",
    "created": "2026-09-30",
    "ring_history": [
@@ -110,18 +148,17 @@
    "title": "Sicherheit agentischer Künstlicher Intelligenz",
    "sector": "AI-Governance",
    "ring": "vorbereiten",
-   "status": "Agenten mit Künstlicher Intelligenz tauchen zunehmend auf beiden Seiten auf: Angreifer setzen sie autonom nach einem Einbruch ein, zuletzt beim niederländischen Institut für die Offenlegung von Schwachstellen; zugleich entstehen Schwachstellen im Model Context Protocol und erste Prüfanforderungen wie das Projekt des Bundesamts für Sicherheit in der Informationstechnik zu agentischer Künstlicher…",
-   "next_step": "Eingesetzte Agenten und deren Berechtigungen inventarisieren, Prüfpfade und Freigaben für Agentenaktionen festlegen und Notfallübungen um schnelle, agentengesteuerte Angriffe erweitern.",
+   "status": "Agenten mit Künstlicher Intelligenz tauchen auf beiden Seiten auf: Nach dem Angriff auf das niederländische Institut für die Offenlegung von Schwachstellen berichten Medien über autonome Agenten, die Webseiten von Regierungen in den Vereinigten Staaten und Kanada angriffen. Der Microsoft Digital Defense Report 2026 sieht Angreifer beim Einsatz Künstlicher Intelligenz derzeit im Vorteil; parallel…",
+   "next_step": "Eingesetzte Agenten inventarisieren, ihnen eigene Identitäten mit minimalen Rechten und verantwortlichem Owner zuordnen und Patch- sowie Erkennungszeiten an die verkürzte Ausnutzungsdauer anpassen.",
    "open_questions": [
-    "Wer ist Owner für Agenten, die bereichsübergreifend handeln?",
-    "Welche Prüfanforderungen werden Behörden und Abschlussprüfer an agentische Systeme stellen?"
+    "Wie werden Handlungen von Agenten im Prüfpfad nachvollziehbar?",
+    "Welche Prüfanforderungen ergeben sich aus dem Projekt des Bundesamts?"
    ],
    "controls": [
     "ISO/IEC 42001 – Managementsystem für Künstliche Intelligenz",
-    "ISO/IEC 27001 Anhang A 8.2 – Privilegierte Zugangsrechte",
-    "ISO/IEC 27001 Anhang A 8.16 – Überwachungstätigkeiten"
+    "ISO/IEC 27001 Anhang A 8.2 – Privilegierte Zugangsrechte"
    ],
-   "updated": "2026-09-30"
+   "updated": "2026-10-02"
   }
  ],
  "deadlines": [
@@ -135,6 +172,28 @@
    "added": "2026-09-30",
    "primary": true,
    "checked": true
+  },
+  {
+   "date": "2026-10-03",
+   "title": "Cisco Catalyst SD-WAN Manager: Behördenfrist für CVE-2026-76504",
+   "detail": "Die amerikanische Cybersicherheitsbehörde verlangt von Bundesbehörden die Absicherung gegen die aktiv ausgenutzte Lücke; Betreiber sollten Patchstand und Protokolle auf verdächtige Anmeldeversuche prüfen.",
+   "scope": "US",
+   "url": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-new-sd-wan-authentication-bypass-zero-day-exploited-in-attacks/",
+   "primary": false,
+   "checked": true,
+   "dossier": null,
+   "added": "2026-10-02"
+  },
+  {
+   "date": "2026-10-04",
+   "title": "Fortinet FortiMail: Behördenfrist für CVE-2026-104286",
+   "detail": "Bundesbehörden der Vereinigten Staaten müssen die aktiv ausgenutzte Lücke untersuchen und entschärfen; Betreiber sollten bis zum Update die Funktion für identitätsbasierte Verschlüsselung abschalten oder die Verwaltungsoberfläche abschotten.",
+   "scope": "US",
+   "url": "https://www.bleepingcomputer.com/news/security/fortinet-warns-of-critical-fortimail-flaw-exploited-in-zero-day-attacks/",
+   "primary": false,
+   "checked": true,
+   "dossier": null,
+   "added": "2026-10-02"
   },
   {
    "date": "2026-12-02",
@@ -184,16 +243,27 @@
  "signals": [
   {
    "theme": "Post-Quanten-Kryptografie-Migration",
-   "why": "Die US-Bundesverwaltung muss bis Ende Oktober 2026 vollständige Pläne für den Umstieg auf Post-Quanten-Kryptografie vorlegen. Solche festen Fristen werden sich über Hersteller und Dienstleister auch auf europäische Unternehmen auswirken.",
-   "count": 2,
+   "why": "Nach dem europäischen Fahrplan sollen die Mitgliedstaaten bis Ende 2026 nationale Übergangspläne vorlegen und mit der Inventur kryptografischer Verfahren begonnen haben; für Hochrisiko-Anwendungen gilt 2030 als Zieljahr.",
+   "count": 3,
    "first_seen": "2026-09-30",
-   "last_seen": "2026-10-01",
+   "last_seen": "2026-10-02",
    "evidence": [
-    "https://www.whitehouse.gov/wp-content/uploads/2026/06/M-26-15-Execution-of-the-Migration-to-Post-Quantum-Cryptography.pdf",
     "https://digital-strategy.ec.europa.eu/en/policies/post-quantum-cryptography",
+    "https://www.whitehouse.gov/wp-content/uploads/2026/06/M-26-15-Execution-of-the-Migration-to-Post-Quantum-Cryptography.pdf",
     "https://www.heise.de/news/CA-Bewerbung-CDN-Anbieter-Cloudflare-will-bald-selber-Zertifikate-ausstellen-11469864.html",
     "https://www.ncsc.gov.uk/guidance/pqc-migration-timelines",
     "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Informationen-und-Empfehlungen/Quantentechnologien-und-Post-Quanten-Kryptografie/quantentechnologien-und-quantensichere-kryptografie_node.html"
+   ]
+  },
+  {
+   "theme": "Autonome Angriffe durch Agenten",
+   "why": "Nach dem Fall beim niederländischen Institut für die Offenlegung von Schwachstellen wird über autonome Agenten berichtet, die Regierungswebseiten in den Vereinigten Staaten und Kanada angriffen. Das verkürzt die Reaktionszeit, die Kontrollen einplanen müssen.",
+   "count": 2,
+   "first_seen": "2026-09-30",
+   "last_seen": "2026-10-02",
+   "evidence": [
+    "https://www.bleepingcomputer.com/news/security/autonomous-ai-agents-tried-to-hack-us-canadian-government-websites/",
+    "https://www.bleepingcomputer.com/news/security/automated-ai-agent-used-to-breach-cybersecurity-nonprofit-divd/"
    ]
   },
   {
@@ -206,6 +276,16 @@
     "https://www.iaasb.org/consultations-projects/audit-evidence-and-risk-response-isa-330-isa-500-isa-520",
     "https://www.accountingtoday.com/news/iaasb-proposes-to-revise-audit-standards-for-new-risks-and-tech",
     "https://ifacweb.blob.core.windows.net/publicfiles/2026-08/IAASB-Audit-Evidence-Risk-Response-ISA-500-Exposure-Draft.pdf"
+   ]
+  },
+  {
+   "theme": "Grundschutz++ zertifizierbar ab 2027",
+   "why": "Die Pilotphase der neuen Methodik des Bundesamts für Sicherheit in der Informationstechnik endete am 30. September 2026, die Veröffentlichung ist für Ende Oktober geplant und eine Zertifizierung soll ab 1. Januar 2027 möglich sein. Das kann die Zusammenführung von Kontrollkatalogen und die Nachweisführung gegenüber Aufsicht und Prüfern verändern.",
+   "count": 1,
+   "first_seen": "2026-10-02",
+   "last_seen": "2026-10-02",
+   "evidence": [
+    "https://sits.com/ch/blog/grundschutz-plus-plus-bsi-it-grundschutz/"
    ]
   },
   {
@@ -261,19 +341,143 @@
    "evidence": [
     "https://riehnlegal.blog/content/artikel/?item=beschaeftigtendatenschutz-2026-der-zweite-anlauf-zum-eigenen-gesetz-und-was-er-fuer-dich-bedeutet"
    ]
-  },
-  {
-   "theme": "Autonome Angriffe durch Agenten",
-   "why": "Der Fall des niederländischen Instituts für die Offenlegung von Schwachstellen zeigt, dass Angreifer Agenten mit Künstlicher Intelligenz autonom im Netz agieren lassen; das verkürzt Reaktionszeiten und verändert Annahmen in Notfall- und Erkennungskonzepten.",
-   "count": 1,
-   "first_seen": "2026-09-30",
-   "last_seen": "2026-09-30",
-   "evidence": [
-    "https://www.bleepingcomputer.com/news/security/automated-ai-agent-used-to-breach-cybersecurity-nonprofit-divd/"
-   ]
   }
  ],
  "news": [
+  {
+   "title": "Fortinet FortiMail: Kritische Zero-Day-Lücke wird ausgenutzt, Update fehlt noch",
+   "summary": "Fortinet warnt vor der Schwachstelle CVE-2026-104286 im E-Mail-Sicherheitsgateway FortiMail (Versionen 7.2.0 bis 8.0.1), die bereits in Zero-Day-Angriffen ausgenutzt wird; unauthentifizierte Angreifer können über präparierte Anfragen an die Verwaltungsoberfläche beliebige Dateien schreiben, Schweregrad 9,8 von 10. Bis zu den Updates 7.4.9, 7.6.7 und 8.0.2 empfiehlt der Hersteller, die Funktion für identitätsbasierte Verschlüsselung abzuschalten oder die Verwaltungsoberfläche auf vertrauenswürdige Netze zu beschränken. Die amerikanische Cybersicherheitsbehörde setzt ihren Bundesbehörden eine Frist bis 4. Oktober 2026.",
+   "relevance": "E-Mail-Gateways sehen die gesamte Kommunikation eines Konzerns, ein Einbruch dort berührt Vertraulichkeit und Meldepflichten zugleich. Entscheidend ist, ob Verwaltungsoberflächen solcher Geräte aus dem Internet erreichbar sind und ob das Schwachstellenmanagement Notfallmaßnahmen für Lücken ohne Herstellerupdate vorsieht.",
+   "source": "BleepingComputer",
+   "url": "https://www.bleepingcomputer.com/news/security/fortinet-warns-of-critical-fortimail-flaw-exploited-in-zero-day-attacks/",
+   "id": "2026-10-02-fortimail-zero-day",
+   "topic": "IT-Governance & Risiko",
+   "impact": "hoch",
+   "published": "2026-10-01",
+   "tags": [
+    "Zero Day",
+    "E-Mail-Sicherheit",
+    "Schwachstellenmanagement"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Umgang mit Schwachstellen",
+    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen"
+   ],
+   "roles": [
+    "IT-Risiko"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": null,
+   "priority": 1,
+   "primary": false,
+   "added": "2026-10-02T05:08:41Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum 1. Oktober 2026, Kennung CVE-2026-104286, Schweregrad 9,8, betroffene Versionen 7.2.0 bis 8.0.1, angekündigte Updates 7.4.9, 7.6.7 und 8.0.2, Gegenmaßnahmen und Frist der amerikanischen Cybersicherheitsbehörde bis 4. Oktober stimmen mit der Quelle überein. Die Updates sind laut Quelle noch…"
+   }
+  },
+  {
+   "title": "Microsoft-Lagebericht 2026: Ransomware in Deutschland fast vervierfacht",
+   "summary": "Der Microsoft Digital Defense Report 2026 stützt sich nach Unternehmensangaben auf 165 Billionen Sicherheitssignale pro Tag; Deutschland ist als einziges Land der Europäischen Union unter den zehn am stärksten angegriffenen Ländern, die beobachteten Ransomware-Fälle stiegen hier von 59 auf 222 (plus 276 Prozent). In 63 Prozent der Einbrüche wurden Daten gestohlen, offen erreichbare Cloud-Workloads wurden im Schnitt nach 5,3 Stunden angegriffen. Microsoft bezeichnet Künstliche Intelligenz als größte Umwälzung, weil Angreifer damit schneller und in größerem Maßstab vorgehen; gestohlene Zugangsdaten und Konten bleiben der wichtigste Einstiegsweg.",
+   "relevance": "Die Zahlen stützen kürzere Patchfristen für exponierte Systeme und eine Neubewertung des Ransomware-Risikos im Risikoregister. Einschränkung: Die Daten spiegeln nur Microsofts Kundenbasis wider, taugen aber als Richtungsindikator für Vorstandsberichte.",
+   "source": "Trending Topics",
+   "url": "https://www.trendingtopics.eu/microsoft-digital-defense-report-2026-en/",
+   "id": "2026-10-02-microsoft-digital-defense-report",
+   "topic": "Weitere Themen",
+   "impact": "mittel",
+   "published": "2026-10-01",
+   "tags": [
+    "Lagebild",
+    "Ransomware",
+    "Künstliche Intelligenz"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Risikoanalyse und Sicherheit von Informationssystemen",
+    "ISO/IEC 27001 Anhang A 5.7 – Informationen über Bedrohungen"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Management"
+   ],
+   "countries": [
+    "DE",
+    "EU"
+   ],
+   "dossier": "agentische-ki-sicherheit",
+   "priority": 3,
+   "primary": false,
+   "added": "2026-10-02T05:08:41Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Die Quelle sagt nicht, dass Angreifer Künstliche Intelligenz wirksamer nutzen als Verteidiger (beide Seiten nutzen sie), und nennt keine mittlere Zeit unter 24 Stunden von der Entdeckung bis zur Ausnutzung einer Schwachstelle. Das Datum war unvollständig, der Artikel stammt vom 1. Oktober 2026.…"
+   }
+  },
+  {
+   "title": "Operation KillSwitch: Ransomware-Gruppe KillSec zerschlagen",
+   "summary": "Bei einer internationalen Aktion gegen die Ransomware-Gruppe KillSec wurde ein 16-Jähriger als mutmaßlicher Hauptbetreiber festgenommen; insgesamt gab es drei Festnahmen, Durchsuchungen fanden in Spanien, Griechenland, dem Vereinigten Königreich und Rumänien statt. Die Gruppe soll fast 1.000 Angriffe verübt haben und über schlecht abgesicherte Zugänge, vor allem zu Cloud-Speicher, eingedrungen sein; sichergestellt wurden mindestens 110 Terabyte Daten, fünf Server und Domains der Gruppe.",
+   "relevance": "Die Einfallstore – ungepatchte Software und falsch konfigurierter Cloud-Speicher – sind klassische Kontrollthemen. Sichergestellte Datenbestände können später zu Hinweisen der Ermittlungsbehörden an Betroffene führen, Vorfallprozesse sollten solche externen Benachrichtigungen vorsehen.",
+   "source": "Help Net Security",
+   "url": "https://www.helpnetsecurity.com/2026/10/01/killsec-ransomware-16-year-old-main-operator-arrested/",
+   "id": "2026-10-02-killsec-zerschlagen",
+   "topic": "Weitere Themen",
+   "impact": "info",
+   "published": "2026-10-01",
+   "tags": [
+    "Strafverfolgung",
+    "Ransomware",
+    "Rumänien"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 5.24 – Planung und Vorbereitung der Handhabung von Informationssicherheitsvorfällen"
+   ],
+   "roles": [
+    "IT-Risiko"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": null,
+   "priority": 4,
+   "primary": false,
+   "added": "2026-10-02T05:08:41Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Die Quelle nennt weder den Namen Operation KillSwitch noch, dass die spanische Polizei den 16-Jährigen festgenommen hat; sie nennt drei Festnahmen ohne Länderzuordnung und Durchsuchungen in Spanien, Griechenland, dem Vereinigten Königreich und Rumänien. Das Eindringen über Softwareschwachstellen…"
+   }
+  },
+  {
+   "title": "Moritz Hennemann ist neuer Bundesbeauftragter für den Datenschutz",
+   "summary": "Der 41-jährige Rechtswissenschaftler Moritz Hennemann hat am 1. Oktober 2026 das Amt des Bundesbeauftragten für den Datenschutz und die Informationsfreiheit angetreten; er folgt auf Louisa Specht-Riemenschneider, die aus gesundheitlichen Gründen zurückgetreten war. Seine Schwerpunkte will er am 6. Oktober in der Bundespressekonferenz vorstellen.",
+   "relevance": "Für private Unternehmen sind meist die Landesdatenschutzbehörden zuständig, der Bundesbeauftragte vertritt Deutschland aber im Europäischen Datenschutzausschuss. Seine Linie zu Durchsetzung, Künstlicher Intelligenz und Reform der Datenschutz-Grundverordnung prägt damit die europäische Aufsichtspraxis mit.",
+   "source": "Der Bundesbeauftragte für den Datenschutz und die Informationsfreiheit",
+   "url": "https://www.bfdi.bund.de/SharedDocs/Pressemitteilungen/DE/2026/14_Amtsantritt_Hennemann.html",
+   "id": "2026-10-02-hennemann-bundesdatenschutzbeauftragter",
+   "topic": "Datenschutz & Datenrecht",
+   "impact": "info",
+   "published": "2026-10-01",
+   "tags": [
+    "Aufsicht",
+    "Personalie"
+   ],
+   "controls": [],
+   "roles": [
+    "Datenschutz",
+    "Management"
+   ],
+   "countries": [
+    "DE"
+   ],
+   "dossier": null,
+   "priority": 5,
+   "primary": true,
+   "added": "2026-10-02T05:08:41Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Die Pressemitteilung 14/2026 meldet den Amtsantritt seit heute. Der 1. Oktober 2026 ist durch weitere Berichte belegt. Alter 41, Rechtswissenschaftler, Nachfolge von Louisa Specht-Riemenschneider aus gesundheitlichen Gründen und die Bundespressekonferenz am 6. Oktober stimmen."
+   }
+  },
   {
    "title": "Institut der Wirtschaftsprüfer: Dürfen Prüfer Mandantendaten zum Training Künstlicher Intelligenz nutzen?",
    "summary": "Die Ausgabe 19/2026 der Fachzeitschrift Die Wirtschaftsprüfung vom 1. Oktober 2026 enthält einen Hauptbeitrag von Sabine Samtleben zum Training von Systemen mit Künstlicher Intelligenz. Der Beitrag fragt, ob Wirtschaftsprüfer dafür Daten ihrer Mandanten nutzen dürfen, und bewertet das aus Sicht des Berufsrechts.",
@@ -485,6 +689,43 @@
    "check": {
     "verdict": "abweichung",
     "note": "Alle Prozentwerte und das Datum stimmen. Die Zahl von 25.747 Befragten steht nicht auf der Quellseite."
+   }
+  },
+  {
+   "title": "Update: Flink – Zugangsdaten einer ehemals beschäftigten Person als Einfallstor",
+   "summary": "Beim Lebensmittel-Lieferdienst Flink sind nach Berichten Daten von rund einer Million Kunden und 13.000 Beschäftigten betroffen, darunter Namen, E-Mail-Adressen und Telefonnummern; Passwörter und Bankdaten nach Angaben des Unternehmens nicht. Neu gegenüber dem bisherigen Stand: Als Einfallstor dienten Zugangsdaten einer ehemals beschäftigten Person, und die Täter erpressen Kunden einzeln mit kleinen Beträgen in Kryptowährung, insgesamt geht es um 100 Ether. Flink lehnt Verhandlungen ab und hat Strafanzeige erstattet.",
+   "relevance": "Ein Wettbewerber im Lebensmittel-Lieferservice zeigt, wie ein Zugang aus einem beendeten Beschäftigungsverhältnis zum Einfallstor werden kann und dass dabei auch Beschäftigtendaten abfließen. Die Entziehung von Zugängen beim Austritt gehört zu den Kernkontrollen der allgemeinen Kontrollen der Informationstechnik in der Abschlussprüfung; Vorfallpläne sollten zudem die direkte Erpressung von Kunden abdecken.",
+   "source": "ad-hoc-news",
+   "url": "https://www.ad-hoc-news.de/wissenschaft/flink-datenleck-rund-eine-million-kunden-und-13-000-mitarbeitende/70196981",
+   "id": "2026-10-02-update-flink-ehemalige-zugangsdaten",
+   "topic": "Handel & Branche",
+   "impact": "hoch",
+   "published": "2026-09-29",
+   "tags": [
+    "Lieferdienst",
+    "Austrittsprozess",
+    "Erpressung"
+   ],
+   "controls": [
+    "IT-Kontrollen der Abschlussprüfung – Zugriffsverwaltung",
+    "ISO/IEC 27001 Anhang A 5.18 – Zugangsrechte",
+    "DSGVO Art. 33 und 34 – Meldung und Benachrichtigung bei Datenschutzverletzungen"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Datenschutz",
+    "Revision & Prüfung"
+   ],
+   "countries": [
+    "DE"
+   ],
+   "dossier": "identitaeten-zugangsdaten",
+   "priority": 2,
+   "primary": false,
+   "added": "2026-10-02T05:08:41Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum 29. September 2026, die Zahlen (rund eine Million Kunden, 13.000 Beschäftigte), die Datenarten, der Zugang einer ehemals beschäftigten Person, die Forderung von 0,005 Ether pro Person bei insgesamt 100 Ether, die Ablehnung von Verhandlungen und die Strafanzeige sind belegt."
    }
   },
   {
