@@ -1,11 +1,17 @@
 {
  "last_run": {
-  "start": "2026-10-02T07:00:01+02:00",
-  "end": "2026-10-02T07:08:41+02:00",
+  "start": "2026-10-03T07:00:01+02:00",
+  "end": "2026-10-03T07:07:15+02:00",
   "ok": true,
-  "summary": "5 neue Meldungen: P1 Fortinet FortiMail: Kritische Zero-Day-Lücke wird ausgenutzt, Update fehlt noch; P2 Update: Flink – Zugangsdaten einer ehemals beschäftigten Person als Einfallstor; P3 Microso"
+  "summary": "7 neue Meldungen: P1 Update: Ticketsystem Zammad – zwei aktiv ausgenutzte Zero Days im Behördenkatalog; P2 Italien: Grundlegende Sicherheitsmaßnahmen nach der NIS-2-Richtlinie bis 31. Oktober fäl"
  },
  "history": [
+  {
+   "start": "2026-10-03T07:00:01+02:00",
+   "end": "2026-10-03T07:07:15+02:00",
+   "ok": true,
+   "summary": "7 neue Meldungen: P1 Update: Ticketsystem Zammad – zwei aktiv ausgenutzte Zero Days im Behördenkatalog; P2 Italien: Grundlegende Sicherheitsmaßnahmen nach der NIS-2-Richtlinie bis 31. Oktober fäl"
+  },
   {
    "start": "2026-10-02T07:00:01+02:00",
    "end": "2026-10-02T07:08:41+02:00",

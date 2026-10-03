@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-02T05:08:41Z",
+ "updated": "2026-10-03T05:07:14Z",
  "topics": [
   "IT-Governance & Risiko",
   "Cyber- & IT-Regulierung",
@@ -11,6 +11,18 @@
   "Weitere Themen"
  ],
  "briefings": [
+  {
+   "date": "2026-10-03",
+   "headline": "Ausgenutzte Lücken im Ticketsystem Zammad, Italiens Frist nach der NIS-2-Richtlinie am 31. Oktober und lehrreiche Datenschutz-Bußgelder prägen den Feiertag.",
+   "points": [
+    "Zammad: Zwei Zero Days im Ticketsystem werden aktiv ausgenutzt, die Behörde der Vereinigten Staaten hat sie in ihren Katalog aufgenommen – Bestand prüfen, aktualisieren, nach Spuren einer Kompromittierung suchen.",
+    "Italien: Wer schon 2025 auf der nationalen Liste nach der NIS-2-Richtlinie stand, muss die grundlegenden Sicherheitsmaßnahmen bis 31. Oktober 2026 umgesetzt haben.",
+    "Datenschutz-Bußgelder im September: 5,5 Millionen Euro gegen BBVA Italia, weil Werbung trotz Widerspruch wegen nicht abgeglichener Systeme verschickt wurde.",
+    "Bundesamt für Sicherheit in der Informationstechnik rät bei neuen Entwicklungen vom Post-Quanten-Verfahren Classic McEliece ab, die Migration bleibt dringend.",
+    "PCI Security Standards Council veröffentlicht Version 2.0 des Standards für sicheren Software-Lebenszyklus, mit Anforderungen zu Künstlicher Intelligenz."
+   ],
+   "count": 7
+  },
   {
    "date": "2026-10-02",
    "headline": "Kritische FortiMail-Lücke ohne Patch, Flink-Einbruch über alte Zugangsdaten: Angreifer brechen nicht mehr ein, sie melden sich an.",
@@ -123,18 +135,18 @@
    "title": "NIS-2-Umsetzung",
    "sector": "Cyber- & IT-Regulierung",
    "ring": "jetzt handeln",
-   "status": "In Deutschland gilt das Umsetzungsgesetz seit 6. Dezember 2025. In Österreich gilt das Netz- und Informationssystemsicherheitsgesetz 2026 seit 1. Oktober 2026 ohne Übergangsfrist: Die Registrierung ist bis 31. Dezember 2026 fällig, die Selbstdeklaration bis Ende September 2027. Laut einer Befragung von KPMG Austria kennt ein Viertel der Unternehmen die eigene Betroffenheit nicht, und die…",
-   "next_step": "Meldewege für die österreichischen Gesellschaften testen, Registrierung vor Jahresende abschließen, Nachweise für die Selbstdeklaration früh sammeln und die Steuerung der Lieferanten nachschärfen.",
+   "status": "In Deutschland gilt das Umsetzungsgesetz seit 6. Dezember 2025, in Österreich das Netz- und Informationssystemsicherheitsgesetz 2026 seit 1. Oktober 2026 mit Registrierung bis 31. Dezember 2026 und Selbstdeklaration bis Ende September 2027. In Italien müssen bereits 2025 gelistete Einrichtungen die grundlegenden Sicherheitsmaßnahmen bis 31. Oktober 2026 umgesetzt haben, die Meldepflicht gilt…",
+   "next_step": "Länderübersicht für alle Gesellschaften führen: Betroffenheit, Registrierung, Meldewege und Fristen je Land; für Italien den Umsetzungsstand der grundlegenden Sicherheitsmaßnahmen vor dem 31. Oktober bestätigen lassen.",
    "open_questions": [
-    "Wie prüft das österreichische Bundesamt für Cybersicherheit die Selbstdeklarationen in der Praxis?",
-    "Wie lassen sich die Pflichten in Deutschland, Österreich und den anderen Ländern von REWE International in einem gemeinsamen Kontrollrahmen bündeln?"
+    "Wie lassen sich nationale Nachweise (Selbstdeklaration Österreich, Maßnahmenkatalog Italien, Nachweise Deutschland) aus einem gemeinsamen Kontrollrahmen bedienen?",
+    "Wie stimmen sich parallele Meldepflichten mehrerer Länder bei einem konzernweiten Vorfall ab?"
    ],
    "controls": [
-    "NIS-2-Richtlinie Art. 20 – Governance",
+    "NIS-2-Richtlinie Art. 20 – Governance und Verantwortung der Leitungsorgane",
     "NIS-2-Richtlinie Art. 21 – Risikomanagementmaßnahmen",
     "NIS-2-Richtlinie Art. 23 – Berichtspflichten"
    ],
-   "updated": "2026-10-01"
+   "updated": "2026-10-03"
   },
   {
    "slug": "agentische-ki-sicherheit",
@@ -148,17 +160,64 @@
    "title": "Sicherheit agentischer Künstlicher Intelligenz",
    "sector": "AI-Governance",
    "ring": "vorbereiten",
-   "status": "Agenten mit Künstlicher Intelligenz tauchen auf beiden Seiten auf: Nach dem Angriff auf das niederländische Institut für die Offenlegung von Schwachstellen berichten Medien über autonome Agenten, die Webseiten von Regierungen in den Vereinigten Staaten und Kanada angriffen. Der Microsoft Digital Defense Report 2026 sieht Angreifer beim Einsatz Künstlicher Intelligenz derzeit im Vorteil; parallel…",
-   "next_step": "Eingesetzte Agenten inventarisieren, ihnen eigene Identitäten mit minimalen Rechten und verantwortlichem Owner zuordnen und Patch- sowie Erkennungszeiten an die verkürzte Ausnutzungsdauer anpassen.",
+   "status": "Agenten mit Künstlicher Intelligenz tauchen auf beiden Seiten auf: Beim Angriff auf das niederländische Institut für die Offenlegung von Schwachstellen wurden zwei inzwischen behördlich gelistete Zero Days im Ticketsystem Zammad in Sekunden bis zu Root-Rechten verkettet. Der Microsoft Digital Defense Report 2026 sieht Angreifer beim Einsatz Künstlicher Intelligenz derzeit im Vorteil.",
+   "next_step": "Patch-Fristen für aus dem Internet erreichbare Systeme an verkürzte Ausnutzungszeiten anpassen und eigene Agenten-Anwendungen mit Berechtigungen, Protokollierung und Freigaben erfassen.",
    "open_questions": [
-    "Wie werden Handlungen von Agenten im Prüfpfad nachvollziehbar?",
-    "Welche Prüfanforderungen ergeben sich aus dem Projekt des Bundesamts?"
+    "Reichen bisherige Patch-Fristen, wenn Ausnutzung durch Agenten in Sekunden erfolgt?",
+    "Welche Prüfanforderungen für Agenten wird das Bundesamt für Sicherheit in der Informationstechnik im Projekt PRAKI festlegen?"
    ],
    "controls": [
-    "ISO/IEC 42001 – Managementsystem für Künstliche Intelligenz",
-    "ISO/IEC 27001 Anhang A 8.2 – Privilegierte Zugangsrechte"
+    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
+    "ISO/IEC 42001 – Managementsystem für Künstliche Intelligenz"
    ],
-   "updated": "2026-10-02"
+   "updated": "2026-10-03"
+  },
+  {
+   "slug": "post-quanten-kryptografie",
+   "created": "2026-10-03",
+   "ring_history": [
+    {
+     "date": "2026-10-03",
+     "ring": "beobachten"
+    }
+   ],
+   "title": "Post-Quanten-Kryptografie",
+   "sector": "Standards & Zertifizierung",
+   "ring": "beobachten",
+   "status": "Nach dem Fahrplan der Europäischen Union sollen die Mitgliedstaaten bis Ende 2026 mit der Umstellung beginnen und Hochrisiko-Anwendungen bis spätestens 2030 absichern; die europäischen Finanzaufsichtsbehörden unterstreichen das im Herbstbericht 2026. Das Bundesamt für Sicherheit in der Informationstechnik rät seit 1. Oktober 2026 bei neuen Entwicklungen von Classic McEliece ab und empfiehlt…",
+   "next_step": "Kryptografie-Inventar aufbauen (wo steckt welches Verfahren, wie lange müssen Daten vertraulich bleiben) und Krypto-Agilität als Anforderung in Architektur und Einkauf aufnehmen.",
+   "open_questions": [
+    "Welche Systeme mit langer Lebensdauer, etwa Kassen und Zahlungsterminals, lassen sich überhaupt auf neue Verfahren umstellen?",
+    "Wann ziehen Zahlungsnetzwerke und PCI-Standards mit verbindlichen Vorgaben nach?"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 8.24 – Verwendung von Kryptografie",
+    "NIS-2-Richtlinie Art. 21 – Kryptografie und Verschlüsselung"
+   ],
+   "updated": "2026-10-03"
+  },
+  {
+   "slug": "zahlungsverkehr-pci-dss",
+   "created": "2026-10-03",
+   "ring_history": [
+    {
+     "date": "2026-10-03",
+     "ring": "beobachten"
+    }
+   ],
+   "title": "Zahlungsverkehr und PCI DSS",
+   "sector": "Standards & Zertifizierung",
+   "ring": "beobachten",
+   "status": "Der PCI Security Standards Council hat im September 2026 den Schlüsselmanagement-Standard Key Management and Operations 1.0, einen Leitfaden zu Systemen Künstlicher Intelligenz und Version 2.0 des Standards für sicheren Software-Lebenszyklus veröffentlicht. Für den neuen Software-Standard beginnt eine zwölfmonatige Übergangszeit, sobald Schulungen verfügbar sind (geplant im vierten Quartal 2026).",
+   "next_step": "Bei Herstellern von Kassen-, Zahlungs- und Shopsoftware den Umstellungsplan auf die neuen Standards in die Lieferantenbewertung aufnehmen und den Einsatz Künstlicher Intelligenz in der Karten-Datenumgebung erfassen.",
+   "open_questions": [
+    "Welche eingesetzten Zahlungsanwendungen sind nach den Software-Standards des Councils gelistet, und bis wann stellen deren Hersteller um?"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen",
+    "ISO/IEC 27001 Anhang A 8.25 – Sicherer Entwicklungslebenszyklus"
+   ],
+   "updated": "2026-10-03"
   }
  ],
  "deadlines": [
@@ -196,6 +255,17 @@
    "added": "2026-10-02"
   },
   {
+   "date": "2026-10-31",
+   "title": "Italien: grundlegende Sicherheitsmaßnahmen nach NIS-2 umgesetzt",
+   "detail": "Wesentliche und wichtige Einrichtungen, die 2025 in die italienische Liste aufgenommen wurden, müssen die Maßnahmen nach den Vorgaben der nationalen Cybersicherheitsagentur umgesetzt und nachweisbar haben.",
+   "scope": "IT",
+   "url": "https://www.iusprivacy.eu/normativa/nis2-in-italia-tutti-gli-adempimenti-e-le-scadenze-per-le-imprese",
+   "primary": false,
+   "checked": true,
+   "dossier": "nis2-umsetzung",
+   "added": "2026-10-03"
+  },
+  {
    "date": "2026-12-02",
    "title": "Verordnung über Künstliche Intelligenz: Übergang für Kennzeichnung synthetischer Inhalte endet",
    "detail": "Systeme zur Erzeugung synthetischer Inhalte, die vor dem 2. August 2026 in Verkehr gebracht wurden, müssen bis dahin die Transparenzpflichten nach Artikel 50 Absatz 2 erfüllen.",
@@ -229,6 +299,17 @@
    "added": "2026-10-01"
   },
   {
+   "date": "2027-07-31",
+   "title": "Italien: Sicherheitsmaßnahmen für 2026 neu gelistete Einrichtungen",
+   "detail": "Einrichtungen, die 2026 erstmals in die italienische Liste nach der NIS-2-Richtlinie aufgenommen wurden, müssen bis dahin die grundlegenden Sicherheitsmaßnahmen umsetzen.",
+   "scope": "IT",
+   "url": "https://www.iusprivacy.eu/normativa/nis2-in-italia-tutti-gli-adempimenti-e-le-scadenze-per-le-imprese",
+   "primary": false,
+   "checked": true,
+   "dossier": "nis2-umsetzung",
+   "added": "2026-10-03"
+  },
+  {
    "date": "2027-09-30",
    "title": "Österreich: Selbstdeklaration zu Risikomanagementmaßnahmen fällig",
    "detail": "Wesentliche und wichtige Einrichtungen nach dem Netz- und Informationssystemsicherheitsgesetz 2026 müssen einmalig eine Selbstdeklaration zu ihren umgesetzten Risikomanagementmaßnahmen beim Bundesamt für Cybersicherheit einreichen.",
@@ -243,25 +324,26 @@
  "signals": [
   {
    "theme": "Post-Quanten-Kryptografie-Migration",
-   "why": "Nach dem europäischen Fahrplan sollen die Mitgliedstaaten bis Ende 2026 nationale Übergangspläne vorlegen und mit der Inventur kryptografischer Verfahren begonnen haben; für Hochrisiko-Anwendungen gilt 2030 als Zieljahr.",
-   "count": 3,
+   "why": "Das Bundesamt für Sicherheit in der Informationstechnik nimmt ein bisher empfohlenes Post-Quanten-Verfahren für neue Entwicklungen zurück, während die europäischen Finanzaufsichtsbehörden an den Fahrplan bis 2030 erinnern. Wer jetzt ohne Inventar und Krypto-Agilität umstellt, riskiert eine zweite Migration.",
+   "count": 4,
    "first_seen": "2026-09-30",
-   "last_seen": "2026-10-02",
+   "last_seen": "2026-10-03",
    "evidence": [
+    "https://www.bsi.bund.de/DE/Service-Navi/Presse/Alle-Meldungen-News/Meldungen/2026/Classic-McEliece_261001.html",
     "https://digital-strategy.ec.europa.eu/en/policies/post-quantum-cryptography",
     "https://www.whitehouse.gov/wp-content/uploads/2026/06/M-26-15-Execution-of-the-Migration-to-Post-Quantum-Cryptography.pdf",
     "https://www.heise.de/news/CA-Bewerbung-CDN-Anbieter-Cloudflare-will-bald-selber-Zertifikate-ausstellen-11469864.html",
-    "https://www.ncsc.gov.uk/guidance/pqc-migration-timelines",
-    "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Informationen-und-Empfehlungen/Quantentechnologien-und-Post-Quanten-Kryptografie/quantentechnologien-und-quantensichere-kryptografie_node.html"
+    "https://www.ncsc.gov.uk/guidance/pqc-migration-timelines"
    ]
   },
   {
    "theme": "Autonome Angriffe durch Agenten",
-   "why": "Nach dem Fall beim niederländischen Institut für die Offenlegung von Schwachstellen wird über autonome Agenten berichtet, die Regierungswebseiten in den Vereinigten Staaten und Kanada angriffen. Das verkürzt die Reaktionszeit, die Kontrollen einplanen müssen.",
-   "count": 2,
+   "why": "Beim Angriff auf das niederländische Institut für die Offenlegung von Schwachstellen wurde eine Kette aus zwei Zero Days in Sekunden ausgenutzt, mutmaßlich durch einen Agenten mit Künstlicher Intelligenz. Das verkürzt die Zeit zwischen Bekanntwerden und Ausnutzung weiter und stellt gängige Patch-Fristen infrage.",
+   "count": 3,
    "first_seen": "2026-09-30",
-   "last_seen": "2026-10-02",
+   "last_seen": "2026-10-03",
    "evidence": [
+    "https://www.securityweek.com/zammad-zero-days-exploited-in-ai-powered-divd-hack/",
     "https://www.bleepingcomputer.com/news/security/autonomous-ai-agents-tried-to-hack-us-canadian-government-websites/",
     "https://www.bleepingcomputer.com/news/security/automated-ai-agent-used-to-breach-cybersecurity-nonprofit-divd/"
    ]
@@ -344,6 +426,117 @@
   }
  ],
  "news": [
+  {
+   "title": "Update: Ticketsystem Zammad – zwei aktiv ausgenutzte Zero Days im Behördenkatalog",
+   "summary": "Die Cybersecurity and Infrastructure Security Agency der Vereinigten Staaten hat am 2. Oktober die Schwachstellen CVE-2026-102489 (Session Fixation) und CVE-2026-102490 (fehlerhafte Rechteverwaltung) im Open-Source-Ticketsystem Zammad in ihren Katalog aktiv ausgenutzter Schwachstellen aufgenommen. Über diese Kette wurde das niederländische Institut für die Offenlegung von Schwachstellen angegriffen: Übernahme der Session, Codeausführung und Ausweitung auf Root-Rechte, laut dem Institut in Sekunden und unter Beteiligung eines Agenten mit Künstlicher Intelligenz. Voll betroffen sind die Versionen 6.3.0 bis 6.5.4, das Institut empfiehlt das Update auf Version 7.",
+   "relevance": "Neu gegenüber dem bisherigen Stand: Die ausgenutzten Lücken sind jetzt benannt und behördlich bestätigt. Ticketsysteme im Kundenservice bündeln Kundendaten und interne Informationen und laufen oft bei Dienstleistern oder Tochtergesellschaften – Bestand, Aktualisierung und Suche nach Spuren einer Kompromittierung gehören deshalb auch in die Steuerung der Dienstleister.",
+   "source": "Cybersecurity and Infrastructure Security Agency",
+   "url": "https://www.cisa.gov/news-events/alerts/2026/10/02/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+   "id": "2026-10-03-zammad-zero-days-ausgenutzt",
+   "topic": "Handel & Branche",
+   "impact": "hoch",
+   "published": "2026-10-02",
+   "tags": [
+    "Zero Day",
+    "Kundenservice",
+    "Agenten"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
+    "NIS-2-Richtlinie Art. 21 – Umgang mit und Offenlegung von Schwachstellen",
+    "DSGVO Art. 32 – Sicherheit der Verarbeitung"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Einkauf & Drittparteien"
+   ],
+   "countries": [
+    "EU",
+    "DE",
+    "AT"
+   ],
+   "dossier": "agentische-ki-sicherheit",
+   "priority": 1,
+   "primary": true,
+   "added": "2026-10-03T05:07:14Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Die Meldung der US-Behörde bestätigt Datum, beide Kennungen und die Art der Schwachstellen. Der Angriff auf das niederländische Institut, die Rolle des KI-Agenten und die Versionen 6.3.0 bis 6.5.4 stehen nicht dort, sondern in der Fallbeschreibung des Instituts selbst (DIVD-2026-00015). Dort wird…"
+   }
+  },
+  {
+   "title": "Datenschutz-Bußgelder im September: Werbung trotz Widerspruch kostet BBVA Italia 5,5 Millionen",
+   "summary": "Eine Übersicht der größten Bußgelder nach der Datenschutz-Grundverordnung im September 2026 nennt neben 403 Millionen Euro gegen Google unter anderem 5,5 Millionen Euro der italienischen Datenschutzbehörde gegen BBVA Italia, weil Werbenachrichten wegen fehlender Synchronisierung zwischen Systemen trotz Widerspruch verschickt wurden. Die französische Datenschutzbehörde verhängte 500.000 Euro gegen eine Privatklinik, bei der unter anderem fehlende Mehr-Faktor-Authentifizierung Zugriff auf 524.867 Patientendatensätze ermöglichte, und 300.000 Euro gegen das Unternehmen EXTIA wegen unbearbeiteter Löschanträge.",
+   "relevance": "Im Handel laufen Werbe-Einwilligungen und Widersprüche über App, Newsletter, Kundenkarte und Onlineshop: Ein Widerspruch muss in allen Systemen ankommen, und genau dieser Datenabgleich ist eine prüfbare Kontrolle. Die anderen Fälle zeigen, dass Aufsichtsbehörden fehlende Mehr-Faktor-Authentifizierung und liegengebliebene Betroffenenanfragen konkret sanktionieren.",
+   "source": "Dr. Datenschutz",
+   "url": "https://www.dr-datenschutz.de/die-top-5-der-dsgvo-bussgelder-im-september-2026/",
+   "id": "2026-10-03-dsgvo-bussgelder-september",
+   "topic": "Datenschutz & Datenrecht",
+   "impact": "mittel",
+   "published": "2026-10-01",
+   "tags": [
+    "Bußgeld",
+    "Widerspruch",
+    "Betroffenenrechte"
+   ],
+   "controls": [
+    "DSGVO Art. 21 – Widerspruchsrecht",
+    "DSGVO Art. 17 – Recht auf Löschung",
+    "DSGVO Art. 32 – Sicherheit der Verarbeitung"
+   ],
+   "roles": [
+    "Datenschutz",
+    "IT-Risiko"
+   ],
+   "countries": [
+    "EU",
+    "IT",
+    "FR"
+   ],
+   "dossier": null,
+   "priority": 3,
+   "primary": false,
+   "added": "2026-10-03T05:07:14Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum 1. Oktober 2026 stimmt. Google 403 Millionen Euro, BBVA Italia 5.508.000 Euro wegen fehlender Synchronisierung der Systeme, Privatklinik 500.000 Euro mit 524.867 Patientendatensätzen und fehlender Mehr-Faktor-Authentifizierung, EXTIA 300.000 Euro wegen Löschanträgen: alles belegt."
+   }
+  },
+  {
+   "title": "Bundesamt rät bei neuen Entwicklungen vom Post-Quanten-Verfahren Classic McEliece ab",
+   "summary": "Das Bundesamt für Sicherheit in der Informationstechnik empfiehlt, das Post-Quanten-Verfahren Classic McEliece nicht mehr für neue Entwicklungen zu nutzen, weil neue Kryptoanalyse auf ein deutlich niedrigeres Sicherheitsniveau als angenommen hindeutet. Praktische Angriffe auf die empfohlenen Parameter gibt es nicht, im hybriden Einsatz mit klassischen Verfahren bleibt die Sicherheit ausreichend; empfohlen werden FrodoKEM und ML-KEM, später auch HQC, jeweils hybrid. Die Technische Richtlinie TR-02102-1 soll bis Anfang 2027 angepasst werden, an der Dringlichkeit der Migration ändert das laut Bundesamt nichts.",
+   "relevance": "Die Meldung zeigt, dass auch Post-Quanten-Verfahren wechseln können: Ein Kryptografie-Inventar und austauschbare Verfahren (Krypto-Agilität) sind die eigentliche Vorsorge, gerade bei langlebigen Systemen wie Kassen, Zahlungsterminals und Partneranbindungen.",
+   "source": "Bundesamt für Sicherheit in der Informationstechnik",
+   "url": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Alle-Meldungen-News/Meldungen/2026/Classic-McEliece_261001.html",
+   "id": "2026-10-03-bsi-classic-mceliece",
+   "topic": "Standards & Zertifizierung",
+   "impact": "mittel",
+   "published": "2026-10-01",
+   "tags": [
+    "Post-Quanten",
+    "Kryptografie",
+    "Krypto-Agilität"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 8.24 – Verwendung von Kryptografie",
+    "NIS-2-Richtlinie Art. 21 – Kryptografie und Verschlüsselung"
+   ],
+   "roles": [
+    "IT-Risiko"
+   ],
+   "countries": [
+    "DE",
+    "EU"
+   ],
+   "dossier": "post-quanten-kryptografie",
+   "priority": 4,
+   "primary": true,
+   "added": "2026-10-03T05:07:14Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum 1. Oktober 2026 stimmt. Abraten bei neuen Entwicklungen, kein praktischer Angriff, hybrider Einsatz, Alternativen FrodoKEM, ML-KEM und später HQC, Anpassung der Technischen Richtlinie Anfang 2027 und unveränderte Dringlichkeit der Migration: alles belegt."
+   }
+  },
   {
    "title": "Fortinet FortiMail: Kritische Zero-Day-Lücke wird ausgenutzt, Update fehlt noch",
    "summary": "Fortinet warnt vor der Schwachstelle CVE-2026-104286 im E-Mail-Sicherheitsgateway FortiMail (Versionen 7.2.0 bis 8.0.1), die bereits in Zero-Day-Angriffen ausgenutzt wird; unauthentifizierte Angreifer können über präparierte Anfragen an die Verwaltungsoberfläche beliebige Dateien schreiben, Schweregrad 9,8 von 10. Bis zu den Updates 7.4.9, 7.6.7 und 8.0.2 empfiehlt der Hersteller, die Funktion für identitätsbasierte Verschlüsselung abzuschalten oder die Verwaltungsoberfläche auf vertrauenswürdige Netze zu beschränken. Die amerikanische Cybersicherheitsbehörde setzt ihren Bundesbehörden eine Frist bis 4. Oktober 2026.",
@@ -990,6 +1183,41 @@
    "added": "2026-09-29T22:22:07Z"
   },
   {
+   "title": "PCI Security Standards Council: Version 2.0 des Standards für sicheren Software-Lebenszyklus",
+   "summary": "Der PCI Security Standards Council hat am 28. September die erste große Überarbeitung seines Standards für den sicheren Software-Lebenszyklus von Herstellern von Zahlungssoftware veröffentlicht. Neu sind unter anderem die Ausrichtung auf schützenswerte Daten und Funktionen nach dem Secure Software Standard 2.0 sowie Anforderungen zum Einsatz von Künstlicher Intelligenz im Entwicklungsprozess. Die zwölfmonatige Übergangszeit beginnt erst, wenn die Schulungen verfügbar sind, geplant im vierten Quartal 2026.",
+   "relevance": "Der Standard richtet sich an Softwarehersteller, betrifft Händler aber über Einkauf und Lieferantensteuerung bei Kassen-, Zahlungs- und Shopsoftware: Bei der nächsten Lieferantenbewertung lässt sich der Umstellungsplan abfragen.",
+   "source": "PCI Security Standards Council",
+   "url": "https://blog.pcisecuritystandards.org/pci-ssc-releases-version-2.0-of-the-secure-software-lifecycle-standard",
+   "id": "2026-10-03-pci-secure-slc-2-0",
+   "topic": "Standards & Zertifizierung",
+   "impact": "info",
+   "published": "2026-09-28",
+   "tags": [
+    "PCI",
+    "Zahlungssoftware",
+    "Lieferanten"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 8.25 – Sicherer Entwicklungslebenszyklus",
+    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen"
+   ],
+   "roles": [
+    "Einkauf & Drittparteien",
+    "IT-Risiko"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "zahlungsverkehr-pci-dss",
+   "priority": 5,
+   "primary": true,
+   "added": "2026-10-03T05:07:14Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum 28. September 2026 stimmt. Erste große Überarbeitung, Ausrichtung auf schützenswerte Daten und Funktionen nach Secure Software Standard 2.0, Anforderungen zu Künstlicher Intelligenz, zwölf Monate Übergang ab Verfügbarkeit der Schulungen im vierten Quartal 2026: alles belegt."
+   }
+  },
+  {
    "title": "Über 16.000 falsch konfigurierte Supabase-Datenbanken legen personenbezogene Daten offen",
    "summary": "Das Unternehmen UpGuard hat mehr als 16.000 Datenbanken beim Anbieter Supabase gefunden, deren Tabellen frei lesbar waren, darunter personenbezogene Daten, teils im Klartext gespeicherte Passwörter, Zugriffstoken und in geringerem Umfang Kreditkartendaten. Ursache waren meist fehlende oder unwirksame Row Level Security und falsch eingesetzte öffentliche Schlüssel. Laut Bericht entstehen mehr als 60 Prozent der neu angelegten Datenbanken mit Unterstützung Künstlicher Intelligenz, wobei sich nicht jeder Fall eindeutig generiertem Code zuordnen lässt.",
    "relevance": "Wenn Fachbereiche oder Dienstleister mit Coding Agents schnell eigene Anwendungen bauen, etwa für Aktionen oder Umfragen, entsteht Schatten-Informationstechnik mit personenbezogenen Daten. Solche Anwendungen gehören in Anwendungsinventar, Freigabeprozess und Datenschutzprüfung.",
@@ -1267,6 +1495,41 @@
    "impact": "info",
    "published": "2026-09-24",
    "added": "2026-09-29T22:03:17Z"
+  },
+  {
+   "title": "Europäische Finanzaufsicht warnt vor Abhängigkeit von Anbietern außerhalb Europas und Quantenrisiken",
+   "summary": "Die Europäische Bankenaufsichtsbehörde, die Europäische Wertpapier- und Marktaufsichtsbehörde und die Europäische Aufsichtsbehörde für das Versicherungswesen nennen in ihrem gemeinsamen Herbstbericht 2026 externe Abhängigkeiten, neue Technologien und Privatkredite als zentrale Verwundbarkeiten. Besonders betont werden die Abhängigkeit von Anbietern für Informations- und Kommunikationstechnik außerhalb des Europäischen Wirtschaftsraums, Cyberrisiken durch leistungsfähigere Modelle Künstlicher Intelligenz und die Gefahr, dass Quantenrechner heutige Kryptografie brechen.",
+   "relevance": "Für Finanztöchter zeigt der Bericht, worauf die Aufsicht im Rahmen der Verordnung über digitale operationale Resilienz schaut; für den gesamten Konzern liefert er Argumente für Konzentrations- und Ausstiegsszenarien bei großen Cloud-Anbietern.",
+   "source": "Europäische Bankenaufsichtsbehörde",
+   "url": "https://www.eba.europa.eu/publications-and-media/press-releases/esas-call-vigilance-over-external-dependencies-cyber-threats-and-private-credit-risks",
+   "id": "2026-10-03-esas-herbstbericht-abhaengigkeiten",
+   "topic": "IT-Governance & Risiko",
+   "impact": "info",
+   "published": "2026-09-23",
+   "tags": [
+    "Konzentrationsrisiko",
+    "Cloud",
+    "Finanzaufsicht"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
+    "ISO/IEC 27001 Anhang A 5.23 – Informationssicherheit für die Nutzung von Cloud-Diensten"
+   ],
+   "roles": [
+    "Management",
+    "Einkauf & Drittparteien"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "drittparteien-lieferkette",
+   "priority": 6,
+   "primary": true,
+   "added": "2026-10-03T05:07:14Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum 23. September 2026 stimmt. Externe Abhängigkeiten, neue Technologien und Privatkredite als zentrale Verwundbarkeiten sowie Risiken durch Künstliche Intelligenz und Quantenrechner sind belegt. Die Quelle spricht von Anbietern außerhalb der Europäischen Union statt außerhalb des Europäischen…"
+   }
   },
   {
    "title": "Europäischer Wirtschafts- und Sozialausschuss fordert Änderungen am Cloud and AI Development Act",
@@ -1633,6 +1896,40 @@
    "added": "2026-09-29T09:00:00Z"
   },
   {
+   "title": "Bundesamt führt verpflichtende Personenzertifizierung für Prüfer kritischer Infrastrukturen ein",
+   "summary": "Das Bundesamt für Sicherheit in der Informationstechnik führt eine verpflichtende Personenzertifizierung für Auditorinnen und Auditoren ein, die Nachweisprüfungen bei Betreibern kritischer Anlagen durchführen. Ein Schulungskonzept steht, die Anforderungen an prüfende Stellen sollen Anfang 2027 mit einer Aktualisierung der Vorgaben folgen; ein verbindliches Startdatum nennt das Bundesamt noch nicht.",
+   "relevance": "Betreiber kritischer Anlagen, etwa in der Lebensmittelversorgung, sollten bei der Planung künftiger Nachweisprüfungen klären, ob ihr Prüfdienstleister rechtzeitig zertifiziertes Personal hat, sonst drohen Engpässe in der Prüfungssaison.",
+   "source": "Bundesamt für Sicherheit in der Informationstechnik",
+   "url": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Alle-Meldungen-News/Meldungen/2026/KRITIS_Personenzertifizierung_260831.html",
+   "id": "2026-10-03-bsi-personenzertifizierung-kritis-pruefer",
+   "topic": "Prüfung & Assurance",
+   "impact": "info",
+   "published": "2026-08-31",
+   "tags": [
+    "KRITIS",
+    "Nachweisprüfung",
+    "Prüferqualifikation"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 32 – Aufsichts- und Durchsetzungsmaßnahmen für wesentliche Einrichtungen"
+   ],
+   "roles": [
+    "Revision & Prüfung",
+    "Einkauf & Drittparteien"
+   ],
+   "countries": [
+    "DE"
+   ],
+   "dossier": null,
+   "priority": 7,
+   "primary": true,
+   "added": "2026-10-03T05:07:14Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum 31. August 2026 stimmt. Verpflichtende Personenzertifizierung für Auditorinnen und Auditoren kritischer Infrastrukturen, fertiges Schulungskonzept und Anforderungen an prüfende Stellen voraussichtlich Anfang 2027 in Version 2.2 der Vorgaben zum Nachweisverfahren: alles belegt. Ein…"
+   }
+  },
+  {
    "id": "2026-08-03-owasp-top10-2026",
    "title": "Open Worldwide Application Security Project veröffentlicht Top 10 für Anwendungen mit großen Sprachmodellen 2026 und Agent Control Standard",
    "summary": "Das Projekt für die Sicherheit generativer Künstlicher Intelligenz (GenAI Security Project) der gemeinnützigen Sicherheitsorganisation Open Worldwide Application Security Project hat am 3. August 2026 die neue Ausgabe seiner Top 10 für Anwendungen mit großen Sprachmodellen veröffentlicht und einen gespendeten Agent Control Standard vorgestellt. Ergänzend gibt es seit Dezember 2025 die Top 10 für agentische Anwendungen (Kennungen ASI01 bis ASI10, zum Beispiel Agent Goal Hijack, Tool Misuse, Identity & Privilege Abuse).",
@@ -1691,6 +1988,42 @@
    "url": "https://lawandtechnology.eu/en/ai-literacy-digital-omnibus-article-4-ai-act/",
    "published": "2026-07-27",
    "added": "2026-09-29T09:00:00Z"
+  },
+  {
+   "title": "Italien: Grundlegende Sicherheitsmaßnahmen nach der NIS-2-Richtlinie bis 31. Oktober fällig",
+   "summary": "In Italien müssen wesentliche und wichtige Einrichtungen, die bereits 2025 in die nationale Liste aufgenommen wurden, bis 31. Oktober 2026 die grundlegenden Sicherheitsmaßnahmen umgesetzt haben: 87 Anforderungen für wichtige und 116 für wesentliche Einrichtungen, unter anderem zu Risikoanalyse, Vorfallbehandlung, Lieferkette und Schulung. Die Meldepflicht für erhebliche Vorfälle gilt seit Januar 2026 mit Vorabmeldung binnen 24 Stunden und vollständiger Meldung binnen 72 Stunden; erstmals 2026 aufgenommene Einrichtungen haben bis 31. Juli 2027 Zeit. Für wesentliche Einrichtungen drohen bis zu 10 Millionen Euro oder 2 Prozent des weltweiten Jahresumsatzes, Leitungsorgane haften persönlich.",
+   "relevance": "Für Konzerne mit Gesellschaften in mehreren Ländern von REWE International wächst die Zahl paralleler nationaler Fristen, Portale und Meldewege: Ein gemeinsamer Kontrollrahmen braucht Länderanhänge mit eigenen Nachweisen und Fristen.",
+   "source": "IusPrivacy",
+   "url": "https://www.iusprivacy.eu/normativa/nis2-in-italia-tutti-gli-adempimenti-e-le-scadenze-per-le-imprese",
+   "id": "2026-10-03-italien-nis2-frist-31-oktober",
+   "topic": "Cyber- & IT-Regulierung",
+   "impact": "hoch",
+   "published": "2026-07-08",
+   "tags": [
+    "NIS-2",
+    "Italien",
+    "Frist"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Risikomanagementmaßnahmen",
+    "NIS-2-Richtlinie Art. 23 – Berichtspflichten",
+    "NIS-2-Richtlinie Art. 20 – Governance und Verantwortung der Leitungsorgane"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Management"
+   ],
+   "countries": [
+    "IT"
+   ],
+   "dossier": "nis2-umsetzung",
+   "priority": 2,
+   "primary": false,
+   "added": "2026-10-03T05:07:14Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Der Inhalt stimmt mit der Quelle überein: 87 und 116 Anforderungen, Meldung binnen 24 und 72 Stunden, Fristen 31. Oktober 2026 und 31. Juli 2027, bis zu 10 Millionen Euro oder 2 Prozent. Als Datum war nur der Monat angegeben, die Quelle nennt den 8. Juli 2026."
+   }
   },
   {
    "title": "Leitlinien des Europäischen Datenschutzausschusses zu Anonymisierung und Web-Scraping für Künstliche Intelligenz: Konsultation bis 30.10.",

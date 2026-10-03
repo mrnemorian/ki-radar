@@ -1,0 +1,201 @@
+{
+ "format": "tag",
+ "chapters": [
+  {
+   "title": "Begrüßung",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Guten Morgen, liebe IT-GRC-Kolleginnen und -Kollegen, und willkommen beim IT-GRC Radar. Heute ist Samstag, der dritte Oktober 2026, Tag der Deutschen Einheit."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Feiertag, und wir sitzen trotzdem hier. Immerhin haben die Angreifer offenbar auch nicht frei genommen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Leider nein. Heute geht es um ein angegriffenes Ticketsystem, eine Frist in Italien, lehrreiche Bußgelder und ein bisschen Kryptografie fürs Wochenende."
+    }
+   ]
+  },
+  {
+   "title": "Zammad-Lücken",
+   "news_id": "2026-10-03-zammad-zero-days-ausgenutzt",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Da gibt es Neues zum Angriff auf das niederländische Institut für die Offenlegung von Schwachstellen. Inzwischen ist klar, welche Lücken genutzt wurden: zwei [en]Zero Days[/en] im Ticketsystem Zammad. Die Cybersicherheitsbehörde der Vereinigten Staaten hat beide am Freitag in ihren Katalog aktiv ausgenutzter Schwachstellen aufgenommen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Das ist unangenehm, weil im Ticketsystem Kundendaten und interne Notizen zusammenlaufen. Erst wird die [en]Session[/en] übernommen, dann Code ausgeführt, dann ist man [en]Root[/en]. Laut dem Institut hat das Sekunden gedauert."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Moment, Sekunden? Das war doch der Fall mit dem autonomen Agenten."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Genau, das Institut geht davon aus, dass ein Agent mit Künstlicher Intelligenz beteiligt war. Für uns heißt das: Das Fenster zwischen Bekanntwerden und Ausnutzung schrumpft, und ein [en]Patch[/en]-Zyklus von mehreren Wochen wird für erreichbare Systeme zum Luxus."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Was sollte man konkret tun?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Erst klären, ob Zammad irgendwo läuft, auch bei Tochterfirmen oder beim Dienstleister im Kundenservice. Voll betroffen sind die Versionen 6.3.0 bis 6.5.4. Und nicht nur aktualisieren, sondern auch nach Spuren suchen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Also die klassische Frage: Steht das überhaupt in der Systemliste?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Oder in der Excel-Tabelle, die jemand vor drei Jahren angelegt hat und die seitdem niemand gesehen hat."
+    }
+   ]
+  },
+  {
+   "title": "Italien: Frist 31. Oktober",
+   "news_id": "2026-10-03-italien-nis2-frist-31-oktober",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Nächstes Thema, mit harter Frist. In Italien müssen Unternehmen, die schon 2025 in die nationale Liste nach der NIS-2-Richtlinie, also der Richtlinie über Netz- und Informationssicherheit, aufgenommen wurden, bis zum einunddreißigsten Oktober 2026 grundlegende Sicherheitsmaßnahmen umgesetzt haben."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und das sind keine Kleinigkeiten: 87 Anforderungen für wichtige, 116 für wesentliche Einrichtungen, von Risikoanalyse über Lieferkette bis Schulung. Die Meldepflicht gilt dort schon seit Januar, mit 24 Stunden für die Vorabmeldung und 72 Stunden für die vollständige Meldung."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Deutschland, seit Donnerstag Österreich, jetzt Italien. Das wird langsam ein Fristenkalender."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ein Kontrollrahmen, viele Länderanhänge, so sollte es aussehen. In der Praxis sind es eher viele Kontrollrahmen und ein Ordner namens final, final zwei."
+    }
+   ]
+  },
+  {
+   "title": "Datenschutz-Bußgelder",
+   "news_id": "2026-10-03-dsgvo-bussgelder-september",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Zum Datenschutz. Eine Übersicht der größten Bußgelder im September zeigt neben den 403 Millionen Euro gegen Google ein paar kleinere, aber lehrreiche Fälle."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Mein Favorit für den Handel: 5,5 Millionen Euro gegen BBVA Italia, weil Werbung trotz Widerspruch verschickt wurde. Der Grund war fehlende Synchronisierung zwischen den Systemen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Also kein böser Wille, sondern Schnittstellen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und genau das ist das Risiko, wenn es App, Newsletter, Kundenkarte und Shop gibt. Der Widerspruch muss überall ankommen. Dazu kommen 500.000 Euro gegen eine französische Privatklinik, unter anderem wegen fehlender Mehr-Faktor-Authentifizierung, und 300.000 Euro gegen ein Unternehmen, das Löschanträge liegen ließ."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Betroffenenrechte als Prozess, nicht als Postfach."
+    }
+   ]
+  },
+  {
+   "title": "Classic McEliece",
+   "news_id": "2026-10-03-bsi-classic-mceliece",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Kurz zur Kryptografie. Das Bundesamt für Sicherheit in der Informationstechnik rät davon ab, das Post-Quanten-Verfahren Classic McEliece in neuen Entwicklungen einzusetzen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Neue Analysen deuten auf ein deutlich niedrigeres Sicherheitsniveau hin. Praktische Angriffe gibt es nicht, und hybrid eingesetzt bleibt es laut Bundesamt ausreichend sicher. Empfohlen werden stattdessen ML-KEM und FrodoKEM, ebenfalls hybrid."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Heißt das, man wartet lieber, bis sich alles sortiert hat?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ehrlich gesagt im Gegenteil, das Bundesamt betont ausdrücklich die Dringlichkeit. Die Lehre heißt austauschbare Verfahren, und dafür braucht man zuerst ein Inventar, wo welche Kryptografie steckt."
+    }
+   ]
+  },
+  {
+   "title": "Software-Standard für Zahlungen",
+   "news_id": "2026-10-03-pci-secure-slc-2-0",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Für alle mit Kartenzahlung: Der PCI Security Standards Council hat Version 2.0 seines Standards für den sicheren Software-Lebenszyklus veröffentlicht, inklusive Anforderungen zum Einsatz von Künstlicher Intelligenz in der Entwicklung."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Der richtet sich an Hersteller, die zwölfmonatige Übergangszeit beginnt erst mit den Schulungen im vierten Quartal. Für Händler ist es eine Zeile im Lieferantenfragebogen: Wann stellt ihr um?"
+    }
+   ]
+  },
+  {
+   "title": "Finanzaufsicht und Abhängigkeiten",
+   "news_id": "2026-10-03-esas-herbstbericht-abhaengigkeiten",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Die drei europäischen Finanzaufsichtsbehörden warnen im Herbstbericht vor Abhängigkeiten von Technologieanbietern außerhalb des Europäischen Wirtschaftsraums."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Geschrieben für Banken und Versicherer, aber die Argumente gelten für jeden großen [en]Cloud[/en]-Nutzer. Gutes Material für die nächste Diskussion über Ausstiegsszenarien."
+    }
+   ]
+  },
+  {
+   "title": "Prüfer für kritische Anlagen",
+   "news_id": "2026-10-03-bsi-personenzertifizierung-kritis-pruefer",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Und noch ein Prüfungsthema: Das Bundesamt führt eine verpflichtende Personenzertifizierung für Prüferinnen und Prüfer kritischer Infrastrukturen ein. Die Anforderungen sollen Anfang 2027 kommen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Also rechtzeitig beim Prüfdienstleister nachfragen. Sonst hat man in der Prüfungssaison alles vorbereitet, nur keinen Prüfer, der prüfen darf."
+    }
+   ]
+  },
+  {
+   "title": "Auf dem Radar",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Auf dem Radar bleibt die Migration zur Post-Quanten-Kryptografie. Laut Fahrplan der Europäischen Union sollen die Mitgliedstaaten bis Ende 2026 beginnen und Hochrisiko-Anwendungen bis 2030 absichern."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und die Geschichte von heute zeigt, warum Austauschbarkeit wichtiger ist als die perfekte Wahl. Wer jetzt sein Inventar aufbaut, muss bei der nächsten Empfehlung nicht wieder bei null anfangen."
+    }
+   ]
+  },
+  {
+   "title": "Abschied",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Das war das IT-GRC Radar zum Feiertag. Alle Quellen findet ihr wie immer auf der Webseite."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Schönes Wochenende, und vielleicht vor dem Grillen noch kurz die Zammad-Version prüfen."
+    }
+   ]
+  }
+ ]
+}
