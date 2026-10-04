@@ -1,0 +1,173 @@
+{
+ "format": "tag",
+ "chapters": [
+  {
+   "title": "Begrüßung",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Guten Morgen, liebe IT-GRC-Kolleginnen und -Kollegen, willkommen beim IT-GRC Radar am Sonntag, dem vierten Oktober 2026. Heute geht es um zwei Lücken, die nicht bis Montag warten, um die Sorgen der Revisionsleitungen in Europa, um Agenten auf dem Schreibtischrechner und um 2 Euro pro Paket in Österreich."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Sonntag und gleich zwei kritische Lücken. Angreifer haben eben keinen Feiertagskalender, und das lange Wochenende hatten sie offenbar fest eingeplant."
+    }
+   ]
+  },
+  {
+   "title": "Citrix NetScaler",
+   "news_id": "2026-10-04-update-citrix-netscaler-neuer-zero-day",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Da gibt es Neues zu Citrix NetScaler. Seit Freitagabend kursiert ein [en]Exploit[/en] für eine neue Lücke, und der funktioniert offenbar auch auf Geräten mit dem allerneuesten Stand. Administratoren berichten von massenhaften spontanen Neustarts."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Das ist bitter. Nach Einschätzung der Forscher umgeht der Angriff den Fix aus der Vorwoche. Wer brav gepatcht hat, ist also wieder verwundbar, und einen neuen [en]Patch[/en] gibt es noch nicht."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Moment, was macht man dann, außer nervös auf die Herstellerseite zu starren?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Überwachung hochfahren, den Support kontaktieren, wie Citrix es empfiehlt, und eine vorübergehende Abschaltung vorbereiten. Vor allem muss aber vorher klar sein, wer das entscheiden darf. Ein Gerät am Netzrand, das zweimal in einer Woche brennt, gehört ins Gespräch mit dem Management, nicht nur ins Ticketsystem."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Also wieder die Frage: Wer ist eigentlich [en]Owner[/en] des Abschaltknopfs?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Genau die. Und die Antwort sucht man besser nicht erst am Sonntagmorgen."
+    }
+   ]
+  },
+  {
+   "title": "SAP OVERPASS",
+   "news_id": "2026-10-04-update-sap-overpass-exploit-code",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Bleiben wir bei Lücken, aber im Herzen der Prozesse. Auch zur SAP-Lücke OVERPASS gibt es Neues. Sie steckt im SAP Kernel, ist ohne Anmeldung aus der Ferne ausnutzbar und hat die Höchstbewertung 10 von 10. Der [en]Patch[/en] kam schon im September."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Neu ist zweierlei. Forscher haben einen weiteren Angriffsweg über verschlüsselte Webverbindungen gezeigt, und die vorläufige Schutzmaßnahme deckt nur den Webverkehr ab, nicht die anderen Zugriffswege. Außerdem ist in einem öffentlichen Werkzeugkasten [en]Proof of Concept[/en] Code aufgetaucht."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Aber eine aktive Ausnutzung ist noch nicht beobachtet worden?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Bisher nicht. Wo SAP an Buchhaltung und Warenwirtschaft hängt, ist das aber auch Stoff für die Abschlussprüfung: Ein Notfall-Patch im Finanzsystem ist eine Änderung, die sauber dokumentiert sein will."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Also patchen und das Änderungsprotokoll nicht vergessen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und zwar nicht in der Excel-Liste, die nur eine einzige Person öffnen kann."
+    }
+   ]
+  },
+  {
+   "title": "Risk in Focus 2027",
+   "news_id": "2026-10-04-risk-in-focus-2027",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Zur Revision. Der Europäische Dachverband der Institute für Interne Revision hat [en]Risk in Focus[/en] 2027 veröffentlicht. 86 Prozent der Revisionsleitungen zählen Cybersicherheit und Datensicherheit zu den fünf größten Risiken."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Überrascht niemanden. Spannender finde ich Platz zwei: neue Technologien und Künstliche Intelligenz mit 52 Prozent. Und der Bericht sagt ziemlich offen, dass Governance, Reifegrad und Prüfung mit dem Tempo nicht mithalten."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und die Geopolitik?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Auf Platz drei aufgestiegen, aber Reifegrad und Prüfungsaufwand sind dort noch gering. Für die Planung 2027 heißt das: Künstliche Intelligenz und Abhängigkeiten von Anbietern gehören in den Prüfungsplan, und zwar nicht als Fußnote."
+    }
+   ]
+  },
+  {
+   "title": "Gemini auf dem Mac",
+   "news_id": "2026-10-04-gemini-mac-vollzugriff-agent",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Passend dazu: Google testet laut BleepingComputer, dass Gemini auf dem Mac auf alle Dateien zugreift, Programme wie Mail und Safari bedient und Dateien auch löscht. Freigeschaltet wird das über erweiterte [en]Sandbox[/en] Optionen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Vor Käufen oder Überweisungen soll Gemini weiter nachfragen, beim Löschen offenbar nicht unbedingt. Für uns heißt das: Agenten mit Vollzugriff kommen als Komfortfunktion durch die Hintertür. Die Regeln für Künstliche Intelligenz sollten das abdecken, bevor jemand auf dem Dienstrechner einfach ein Häkchen setzt."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Noch ist es aber ein Test, ohne Starttermin."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Eben. Jetzt ist die Zeit, die Regeln zu schreiben, und nicht erst, wenn der erste Agent die Ablage aufgeräumt hat."
+    }
+   ]
+  },
+  {
+   "title": "Paketabgabe und Prime-Urteil",
+   "news_id": "2026-10-04-oesterreich-paketabgabe-prime-urteil",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Ein Blick nach Österreich: Seit dem ersten Oktober zahlen Versandhändler mit über 100 Millionen Euro Versandumsatz im Vorjahr 2 Euro pro Sendung. Abholung im Geschäft ist ausgenommen. Und in Deutschland hat der Bundesgerichtshof die Prime-Preiserhöhung von Amazon aus 2022 gekippt, weil die Klausel zu unverständlich war."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Klingt nach Steuer- und Rechtsabteilung, landet aber in Systemen. Abgaben müssen im Shop richtig berechnet, ausgewiesen und gemeldet werden, und Preisklauseln in Abos müssen verständlich sein. Genau solche Kontrollen in den Anwendungen schauen sich Prüfer gern an."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Also wieder ein neues Feld in der Kontrollmatrix."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Mindestens eins. Die Matrix wächst zuverlässiger als jeder Warenkorb."
+    }
+   ]
+  },
+  {
+   "title": "Auf dem Radar",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Auf dem Radar: Grundschutz++ vom Bundesamt für Sicherheit in der Informationstechnik."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Die Pilotphase endete am dreißigsten September, Ende Oktober soll die Methodik auf der it-sa vorgestellt werden, und ab dem ersten Januar 2027 soll sie zertifizierbar sein. Wer nach der Norm ISO 27001 für Informationssicherheits-Managementsysteme zertifiziert ist, sollte sich das in Ruhe ansehen, bevor die nächste [en]Audit[/en] Saison beginnt."
+    }
+   ]
+  },
+  {
+   "title": "Abschied",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Das war das IT-GRC Radar für heute. Alle Quellen findet ihr wie immer auf der Webseite."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und falls heute jemand einen NetScaler abschalten muss: Vorher kurz die Freigabe holen. Einen schönen Sonntag!"
+    }
+   ]
+  }
+ ]
+}

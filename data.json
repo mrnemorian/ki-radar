@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-03T05:07:14Z",
+ "updated": "2026-10-04T05:06:24Z",
  "topics": [
   "IT-Governance & Risiko",
   "Cyber- & IT-Regulierung",
@@ -11,6 +11,18 @@
   "Weitere Themen"
  ],
  "briefings": [
+  {
+   "date": "2026-10-04",
+   "headline": "Neuer Zero Day bei Citrix NetScaler ohne Patch, öffentlicher Angriffscode zur SAP-Lücke OVERPASS, und die Revision sieht Künstliche Intelligenz als zweitgrößtes Risiko.",
+   "points": [
+    "Citrix NetScaler: Ein neuer Exploit umgeht offenbar den Fix der Vorwoche. Auch voll aktualisierte Geräte starten spontan neu, ein Patch fehlt.",
+    "SAP OVERPASS (Höchstwert 10 von 10): neuer Angriffsweg über WebSocket-basierte Fernaufrufe, Proof-of-Concept-Code öffentlich, die vorläufige Schutzmaßnahme deckt nur den Webverkehr ab.",
+    "Risk in Focus 2027: 86 Prozent der Revisionsleitungen sehen Cybersicherheit unter den fünf größten Risiken, Künstliche Intelligenz steigt mit 52 Prozent auf Platz zwei.",
+    "Google testet für Gemini auf dem Mac den Zugriff auf alle Dateien und Programme, inklusive Löschen.",
+    "Österreich: Paketabgabe von 2 Euro pro Sendung für große Versandhändler gilt seit 1. Oktober. Der Bundesgerichtshof kippt die Prime-Preiserhöhung von Amazon."
+   ],
+   "count": 5
+  },
   {
    "date": "2026-10-03",
    "headline": "Ausgenutzte Lücken im Ticketsystem Zammad, Italiens Frist nach der NIS-2-Richtlinie am 31. Oktober und lehrreiche Datenschutz-Bußgelder prägen den Feiertag.",
@@ -124,6 +136,31 @@
    "updated": "2026-10-02"
   },
   {
+   "slug": "kritische-schwachstellen-perimeter",
+   "created": "2026-10-04",
+   "ring_history": [
+    {
+     "date": "2026-10-04",
+     "ring": "jetzt handeln"
+    }
+   ],
+   "title": "Kritische Schwachstellen in Randsystemen und Kernanwendungen",
+   "sector": "IT-Governance & Risiko",
+   "ring": "jetzt handeln",
+   "status": "Aktiv ausgenutzte Lücken in Systemen am Netzrand folgen dicht aufeinander: Citrix NetScaler zweimal innerhalb einer Woche (zuletzt ohne Patch), Fortinet FortiMail und Cisco Catalyst SD-WAN Manager. Für die SAP-Lücke OVERPASS ist inzwischen Proof-of-Concept-Code öffentlich.",
+   "next_step": "Bestand der Systeme am Netzrand und der aus dem Internet erreichbaren SAP-Schnittstellen aktuell halten, vorab freigegebene Regeln für Notabschaltungen festlegen und Notfall-Patches im Änderungsmanagement nachvollziehbar dokumentieren.",
+   "open_questions": [
+    "Wer entscheidet am Wochenende verbindlich über die Abschaltung eines Fernzugangs?",
+    "Sind vorläufige Schutzmaßnahmen für alle Zugriffswege einer Anwendung geprüft oder nur für den Webverkehr?"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Umgang mit Schwachstellen und Sicherheitsvorfällen",
+    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
+    "IT-Kontrollen der Abschlussprüfung – Änderungsmanagement"
+   ],
+   "updated": "2026-10-04"
+  },
+  {
    "slug": "nis2-umsetzung",
    "created": "2026-09-30",
    "ring_history": [
@@ -149,6 +186,30 @@
    "updated": "2026-10-03"
   },
   {
+   "slug": "pruefung-it-ki",
+   "created": "2026-10-04",
+   "ring_history": [
+    {
+     "date": "2026-10-04",
+     "ring": "vorbereiten"
+    }
+   ],
+   "title": "Prüfung von Informationstechnik und Künstlicher Intelligenz",
+   "sector": "Prüfung & Assurance",
+   "ring": "vorbereiten",
+   "status": "Das Institut der Wirtschaftsprüfer hat zwei Prüfungshinweise zu Künstlicher Intelligenz in der Abschlussprüfung veröffentlicht, die Anforderung der Internen Revision zur Prüfung von Drittparteien ist seit 15. September 2026 verbindlich. Laut Risk in Focus 2027 hält die Prüfung mit dem Tempo der Künstlichen Intelligenz nicht Schritt.",
+   "next_step": "Prüfungsplanung 2027 mit der Revision abstimmen: Künstliche Intelligenz, Drittparteien und Notfalländerungen in rechnungslegungsrelevanten Systemen als Prüffelder aufnehmen.",
+   "open_questions": [
+    "Welche Nachweise erwarten Abschlussprüfer künftig für den Einsatz Künstlicher Intelligenz in rechnungslegungsrelevanten Prozessen?",
+    "Wie lässt sich ein lückenloser Prüfpfad für Agenten mit Künstlicher Intelligenz sicherstellen?"
+   ],
+   "controls": [
+    "ISA [DE] 315 – Verständnis der Informationstechnik",
+    "IT-Kontrollen der Abschlussprüfung – Änderungsmanagement"
+   ],
+   "updated": "2026-10-04"
+  },
+  {
    "slug": "agentische-ki-sicherheit",
    "created": "2026-09-30",
    "ring_history": [
@@ -160,17 +221,17 @@
    "title": "Sicherheit agentischer Künstlicher Intelligenz",
    "sector": "AI-Governance",
    "ring": "vorbereiten",
-   "status": "Agenten mit Künstlicher Intelligenz tauchen auf beiden Seiten auf: Beim Angriff auf das niederländische Institut für die Offenlegung von Schwachstellen wurden zwei inzwischen behördlich gelistete Zero Days im Ticketsystem Zammad in Sekunden bis zu Root-Rechten verkettet. Der Microsoft Digital Defense Report 2026 sieht Angreifer beim Einsatz Künstlicher Intelligenz derzeit im Vorteil.",
-   "next_step": "Patch-Fristen für aus dem Internet erreichbare Systeme an verkürzte Ausnutzungszeiten anpassen und eigene Agenten-Anwendungen mit Berechtigungen, Protokollierung und Freigaben erfassen.",
+   "status": "Agenten mit Künstlicher Intelligenz tauchen auf beiden Seiten auf: Angreifer verketten Zero Days in Sekunden, und Alltagssoftware bekommt immer mehr Rechte. Google testet für Gemini auf dem Mac den Zugriff auf alle Dateien und Programme einschließlich Löschen. Der Microsoft Digital Defense Report 2026 sieht Angreifer derzeit im Vorteil.",
+   "next_step": "Regeln für erlaubte Künstliche Intelligenz um Agenten mit Zugriff auf Endgeräte erweitern und klären, welche Agenten-Funktionen auf dienstlichen Geräten zentral gesperrt oder freigegeben werden.",
    "open_questions": [
-    "Reichen bisherige Patch-Fristen, wenn Ausnutzung durch Agenten in Sekunden erfolgt?",
-    "Welche Prüfanforderungen für Agenten wird das Bundesamt für Sicherheit in der Informationstechnik im Projekt PRAKI festlegen?"
+    "Welche Verwaltungsfunktionen für Unternehmen bieten Anbieter für Agenten mit Zugriff auf Endgeräte?",
+    "Wie werden Aktionen von Agenten protokolliert und einer verantwortlichen Person zugeordnet?"
    ],
    "controls": [
-    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
-    "ISO/IEC 42001 – Managementsystem für Künstliche Intelligenz"
+    "ISO/IEC 42001 – Steuerung des Einsatzes von Systemen Künstlicher Intelligenz",
+    "ISO/IEC 27001 Anhang A 8.2 – Privilegierte Zugriffsrechte"
    ],
-   "updated": "2026-10-03"
+   "updated": "2026-10-04"
   },
   {
    "slug": "post-quanten-kryptografie",
@@ -349,6 +410,28 @@
    ]
   },
   {
+   "theme": "Grundschutz++ zertifizierbar ab 2027",
+   "why": "Die Pilotphase des Bundesamts für Sicherheit in der Informationstechnik endete am 30. September 2026. Die Methodik soll auf der it-sa Ende Oktober vorgestellt werden und ab 1. Januar 2027 zertifizierbar sein. Das kann bestehende Zertifizierungs- und Kontrollrahmen verändern.",
+   "count": 2,
+   "first_seen": "2026-10-02",
+   "last_seen": "2026-10-04",
+   "evidence": [
+    "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/Grundschutz-in-der-Informationssicherheit/Grundschutz-Plus-Plus/grundschutz-plus-plus_node.html",
+    "https://sits.com/ch/blog/grundschutz-plus-plus-bsi-it-grundschutz/"
+   ]
+  },
+  {
+   "theme": "Digital Fairness Act",
+   "why": "Die Europäische Kommission will im vierten Quartal 2026 einen Vorschlag gegen manipulative Gestaltung, Abo-Fallen und unfaire Personalisierung vorlegen. Zusammen mit dem Prime-Urteil zeigt sich, dass Abo- und Preislogiken in Onlineshops zunehmend rechtlich geprüft werden.",
+   "count": 2,
+   "first_seen": "2026-09-30",
+   "last_seen": "2026-10-04",
+   "evidence": [
+    "https://www.europarl.europa.eu/legislative-train/theme-protecting-our-democracy-upholding-our-values/file-digital-fairness-act",
+    "https://www.mlex.com/mlex/articles/2529049/eu-digital-fairness-act-on-consumer-protection-tentatively-eyed-for-november"
+   ]
+  },
+  {
    "theme": "Neue Prüfungsstandards für Prüfungsnachweise",
    "why": "Der internationale Standardsetzer für Abschlussprüfungen hat Entwürfe für überarbeitete Standards zu Prüfungsnachweisen und zur Reaktion auf Risiken vorgelegt, Kommentare sind bis 15. Dezember 2026 möglich. Sie sollen technologiegestützte Prüfungen besser abbilden und dürften verändern, welche Daten und Nachweise Prüfer anfordern.",
    "count": 2,
@@ -358,16 +441,6 @@
     "https://www.iaasb.org/consultations-projects/audit-evidence-and-risk-response-isa-330-isa-500-isa-520",
     "https://www.accountingtoday.com/news/iaasb-proposes-to-revise-audit-standards-for-new-risks-and-tech",
     "https://ifacweb.blob.core.windows.net/publicfiles/2026-08/IAASB-Audit-Evidence-Risk-Response-ISA-500-Exposure-Draft.pdf"
-   ]
-  },
-  {
-   "theme": "Grundschutz++ zertifizierbar ab 2027",
-   "why": "Die Pilotphase der neuen Methodik des Bundesamts für Sicherheit in der Informationstechnik endete am 30. September 2026, die Veröffentlichung ist für Ende Oktober geplant und eine Zertifizierung soll ab 1. Januar 2027 möglich sein. Das kann die Zusammenführung von Kontrollkatalogen und die Nachweisführung gegenüber Aufsicht und Prüfern verändern.",
-   "count": 1,
-   "first_seen": "2026-10-02",
-   "last_seen": "2026-10-02",
-   "evidence": [
-    "https://sits.com/ch/blog/grundschutz-plus-plus-bsi-it-grundschutz/"
    ]
   },
   {
@@ -393,17 +466,6 @@
    ]
   },
   {
-   "theme": "Digital Fairness Act",
-   "why": "Laut Planung des Europäischen Parlaments ist der Vorschlag für das vierte Quartal 2026 vorgesehen; er zielt auf Dark Patterns, unfaire Personalisierung und Preisgestaltung sowie erschwerte Abokündigungen und würde Onlineshops und Apps im Handel direkt betreffen.",
-   "count": 1,
-   "first_seen": "2026-09-30",
-   "last_seen": "2026-09-30",
-   "evidence": [
-    "https://www.europarl.europa.eu/legislative-train/theme-protecting-our-democracy-upholding-our-values/file-digital-fairness-act",
-    "https://www.mlex.com/mlex/articles/2529049/eu-digital-fairness-act-on-consumer-protection-tentatively-eyed-for-november"
-   ]
-  },
-  {
    "theme": "Rechtsverordnung zum Dachgesetz Kritische Infrastrukturen",
    "why": "Die Verordnung zur Bestimmung kritischer Anlagen liegt seit Mai nur als Referentenentwurf vor; erst sie legt fest, welche Anlagen der Lebensmittelversorgung unter die Pflichten zur physischen Resilienz fallen.",
    "count": 1,
@@ -426,6 +488,111 @@
   }
  ],
  "news": [
+  {
+   "title": "Update: Citrix NetScaler – neuer Zero Day trifft auch voll aktualisierte Geräte",
+   "summary": "Seit dem Abend des 2. Oktober 2026 kursiert ein Exploit für eine neue Schwachstelle in Citrix NetScaler. Er funktioniert offenbar auch auf dem neuesten Softwarestand und umgeht nach Einschätzung von Sicherheitsforschern den Fix der Vorwoche. Administratoren berichten von massenhaften spontanen Neustarts, möglich sind auch Schadcode-Ausführung und das Eindringen ins Unternehmensnetz. Patches gibt es noch nicht, Citrix verweist Betroffene an den Support.",
+   "relevance": "Zum zweiten Mal in einer Woche brennt ein Randsystem für Fernzugriff, und diesmal nützt Patchen nicht. Ein Handels- und Touristikkonzern mit vielen Standorten und Fernzugängen braucht jetzt eine vorab freigegebene Entscheidung über verschärfte Überwachung oder vorübergehende Abschaltung, mit einem klar benannten Verantwortlichen.",
+   "source": "heise online",
+   "url": "https://heise.de/en/news/Netscaler-admins-beware-Zero-day-causes-crashes-and-code-execution-11474996.html",
+   "id": "2026-10-04-update-citrix-netscaler-neuer-zero-day",
+   "topic": "IT-Governance & Risiko",
+   "impact": "hoch",
+   "published": "2026-10-03",
+   "tags": [
+    "Zero Day",
+    "Citrix",
+    "Fernzugriff"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Umgang mit Schwachstellen und Sicherheitsvorfällen",
+    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Management"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "kritische-schwachstellen-perimeter",
+   "priority": 1,
+   "primary": false,
+   "added": "2026-10-04T05:06:24Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Quelle vom 3. Oktober 2026. Laut Quelle kursiert der Exploit seit dem Abend des 2. Oktober und trifft auch die neueste Version. Der Sicherheitsforscher Kevin Beaumont sieht darin eine Umgehung des Fixes der Vorwoche. Die Quelle nennt Abstürze und spontane Neustarts sowie Codeausführung. Patches…"
+   }
+  },
+  {
+   "title": "Google testet Vollzugriff für Gemini auf dem Mac: Dateien, Programme, Löschen",
+   "summary": "Google testet laut BleepingComputer, dass Gemini auf dem Mac Dateien überall lesen, anlegen, ändern und löschen sowie Programme wie Mail, Safari und Nachrichten bedienen kann. Dafür müssen Nutzer erweiterte Sandbox-Optionen aktivieren. Vor Käufen, Überweisungen, Kontoeröffnungen oder dem Akzeptieren rechtlicher Bedingungen soll Gemini weiter nachfragen. Die Funktion ist im Test, ein Starttermin ist nicht bekannt.",
+   "relevance": "Agenten mit weitreichendem Zugriff auf Endgeräte kommen als Komfortfunktion in Alltagssoftware. Die Regeln für erlaubte Künstliche Intelligenz, die Konfiguration von Endgeräten und der Schutz von Kunden- und Beschäftigtendaten sollten das abdecken, bevor Beschäftigte die Funktion selbst einschalten.",
+   "source": "BleepingComputer",
+   "url": "https://bleepingcomputer.com/news/google/google-gemini-could-soon-get-full-access-to-your-macs-files-apps-and-the-web",
+   "id": "2026-10-04-gemini-mac-vollzugriff-agent",
+   "topic": "AI-Governance",
+   "impact": "info",
+   "published": "2026-10-03",
+   "tags": [
+    "Agenten",
+    "Endgeräte",
+    "Schatten-KI"
+   ],
+   "controls": [
+    "ISO/IEC 42001 – Steuerung des Einsatzes von Systemen Künstlicher Intelligenz",
+    "DSGVO Art. 32 – Sicherheit der Verarbeitung"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Datenschutz"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "agentische-ki-sicherheit",
+   "priority": 4,
+   "primary": false,
+   "added": "2026-10-04T05:06:24Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Quelle vom 3. Oktober 2026. Folgende Angaben sind belegt: Dateizugriff überall inklusive Löschen, Mail, Safari und Nachrichten, die Einstellung mit erweiterten Sandbox-Optionen, Rückfragen vor Käufen, Überweisungen, Kontoeröffnungen und rechtlichen Bedingungen sowie die Testphase ohne Starttermin."
+   }
+  },
+  {
+   "title": "Onlinehandel: Österreichs Paketabgabe gilt, Bundesgerichtshof kippt Prime-Preiserhöhung",
+   "summary": "Seit 1. Oktober 2026 zahlen in Österreich Versandhändler mit mehr als 100 Millionen Euro Versandumsatz im Vorjahr 2 Euro pro Sendung. Zunächst sind rund 14 große Plattformen und Händler betroffen, Abholung im Geschäft ist unter anderem ausgenommen. Der Bundesgerichtshof hat außerdem die Prime-Preiserhöhung von Amazon aus dem Jahr 2022 für unwirksam erklärt, weil die Klausel in den Allgemeinen Geschäftsbedingungen für Verbraucher zu unverständlich war.",
+   "relevance": "Beide Themen landen in Systemen: Abgaben müssen in Shop- und Abrechnungssystemen richtig berechnet, ausgewiesen und gemeldet werden, und Preisanpassungsklauseln in Abo-Modellen brauchen geprüfte, verständliche Texte. Für Händler im österreichischen Onlinemarkt lohnt ein Blick auf die Kontrollen in den Anwendungen.",
+   "source": "heise online",
+   "url": "https://heise.de/news/Freitag-Prime-Preiserhoehung-unwirksam-Oesterreichs-Paketsteuer-rechtsgueltig-11473579.html",
+   "id": "2026-10-04-oesterreich-paketabgabe-prime-urteil",
+   "topic": "Handel & Branche",
+   "impact": "info",
+   "published": "2026-10-02",
+   "tags": [
+    "Österreich",
+    "Onlinehandel",
+    "Steuer-Compliance"
+   ],
+   "controls": [
+    "IT-Kontrollen der Abschlussprüfung – Anwendungskontrollen in rechnungslegungsrelevanten Systemen"
+   ],
+   "roles": [
+    "Revision & Prüfung",
+    "Management"
+   ],
+   "countries": [
+    "AT",
+    "DE"
+   ],
+   "dossier": null,
+   "priority": 5,
+   "primary": false,
+   "added": "2026-10-04T05:06:24Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Quelle vom 2. Oktober 2026. Belegt sind der Start am 1. Oktober 2026, 2 Euro pro Sendung, die Schwelle von 100 Millionen Euro, zunächst 14 Händler und die Ausnahme für Bestellungen im Geschäft. Ebenso belegt ist, dass der Bundesgerichtshof die Prime-Preiserhöhung vom September 2022 wegen einer…"
+   }
+  },
   {
    "title": "Update: Ticketsystem Zammad – zwei aktiv ausgenutzte Zero Days im Behördenkatalog",
    "summary": "Die Cybersecurity and Infrastructure Security Agency der Vereinigten Staaten hat am 2. Oktober die Schwachstellen CVE-2026-102489 (Session Fixation) und CVE-2026-102490 (fehlerhafte Rechteverwaltung) im Open-Source-Ticketsystem Zammad in ihren Katalog aktiv ausgenutzter Schwachstellen aufgenommen. Über diese Kette wurde das niederländische Institut für die Offenlegung von Schwachstellen angegriffen: Übernahme der Session, Codeausführung und Ausweitung auf Root-Rechte, laut dem Institut in Sekunden und unter Beteiligung eines Agenten mit Künstlicher Intelligenz. Voll betroffen sind die Versionen 6.3.0 bis 6.5.4, das Institut empfiehlt das Update auf Version 7.",
@@ -1369,6 +1536,41 @@
    "added": "2026-09-29T22:11:14Z"
   },
   {
+   "title": "Update: SAP-Lücke OVERPASS – neuer Angriffsweg und öffentlicher Angriffscode",
+   "summary": "Die SAP-Lücke CVE-2026-44756 („OVERPASS“) steckt im SAP Kernel, ist ohne Anmeldung aus der Ferne ausnutzbar und hat den Höchstwert 10 von 10. Laut SAPinsider haben Forscher einen weiteren Angriffsweg über WebSocket-basierte Fernaufrufe gezeigt, die über verschlüsselte Webverbindungen durch den Web Dispatcher laufen. Proof-of-Concept-Code ist in einem öffentlichen Werkzeugkasten aufgetaucht, und die vorläufige Schutzmaßnahme im Web Dispatcher schützt nur den Webverkehr. Der Patch steht mit Security Note 3747649 seit dem Patchday im September bereit.",
+   "relevance": "Wo SAP Buchhaltung und Warenwirtschaft trägt, ist ungepatchtes OVERPASS ein Risiko für den Betrieb und für die Abschlussprüfung zugleich. Notfall-Patches im Finanzsystem müssen als Änderungen sauber dokumentiert werden, und vorläufige Schutzmaßnahmen sind für jedes Protokoll einzeln zu prüfen.",
+   "source": "SAPinsider",
+   "url": "https://sapinsider.org/map/sap-overpass-vulnerability-new-attack-route-exploit-code",
+   "id": "2026-10-04-update-sap-overpass-exploit-code",
+   "topic": "Prüfung & Assurance",
+   "impact": "hoch",
+   "published": "2026-09-25",
+   "tags": [
+    "SAP",
+    "Patchmanagement",
+    "Exploit"
+   ],
+   "controls": [
+    "IT-Kontrollen der Abschlussprüfung – Änderungsmanagement",
+    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Revision & Prüfung"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "kritische-schwachstellen-perimeter",
+   "priority": 2,
+   "primary": false,
+   "added": "2026-10-04T05:06:24Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Quelle vom 25. September 2026. Folgende Angaben sind belegt: CVE-2026-44756, Bewertung 10.0, SAP Kernel, keine Anmeldung nötig, Next Generation RFC über WebSocket und HTTPS durch den Web Dispatcher, Proof-of-Concept-Code im öffentlichen Werkzeugkasten SAPMAP, Schutzmaßnahme nur für Webverkehr…"
+   }
+  },
+  {
    "title": "Revision des Rechtsakts zur Cybersicherheit stockt, Normentwürfe zum Cyber Resilience Act offen",
    "summary": "Laut dem September-Update der Europäischen Cybersicherheitsorganisation ist ein Kompromiss im Rat der Europäischen Union zur Revision des Rechtsakts zur Cybersicherheit bis Anfang Oktober 2026 unwahrscheinlich. Deutschland hat ein Papier eingebracht, das die Komplexität der Zertifizierung kritisiert und nationale Befugnisse zur Marktüberwachung vorschlägt. Das Europäische Institut für Telekommunikationsnormen hat 17 Entwürfe europäischer Normen zum Cyber Resilience Act in die öffentliche Umfrage gegeben, die bis Mitte November läuft.",
    "relevance": "Die europäischen Zertifizierungsanforderungen an Cloud- und Produktlieferanten bleiben vorerst in Bewegung. Verträge und Lieferantenanforderungen sollten Anpassungsklauseln vorsehen, statt auf fertige Zertifikate zu setzen. Die Normentwürfe lassen sich jetzt schon für Beschaffungskriterien nutzen.",
@@ -1849,6 +2051,40 @@
    "url": "https://kipode.de/ki-radar/2026-09-04-aisi-deutschland-berlin.html",
    "published": "2026-09-04",
    "added": "2026-09-29T09:00:00Z"
+  },
+  {
+   "title": "Risk in Focus 2027: Revision sieht Künstliche Intelligenz als zweitgrößtes Risiko",
+   "summary": "Der Europäische Dachverband der Institute für Interne Revision hat „Risk in Focus 2027“ veröffentlicht. 86 Prozent der Revisionsleitungen zählen Cybersicherheit und Datensicherheit zu den fünf größten Risiken. Digitale Disruption, neue Technologien und Künstliche Intelligenz steigen mit 52 Prozent auf Platz zwei, makroökonomische und geopolitische Unsicherheit auf Platz drei. Laut Bericht halten Governance, Risikoreife und Prüfung mit dem Tempo der Künstlichen Intelligenz nicht Schritt.",
+   "relevance": "Der Bericht liefert die Begründung für die Prüfungs- und Risikoplanung 2027: Künstliche Intelligenz und geopolitische Abhängigkeiten von Anbietern sollten im Plan stehen, gerade dort, wo Reifegrad und Prüfungsaufwand laut Studie noch gering sind.",
+   "source": "European Confederation of Institutes of Internal Auditing",
+   "url": "https://www.eciia.eu/2026/09/risk-in-focus-2027/",
+   "id": "2026-10-04-risk-in-focus-2027",
+   "topic": "Prüfung & Assurance",
+   "impact": "mittel",
+   "published": "2026-09",
+   "tags": [
+    "Interne Revision",
+    "Prüfungsplanung",
+    "Risikolandkarte"
+   ],
+   "controls": [
+    "Globale Standards der Internen Revision – risikoorientierte Prüfungsplanung"
+   ],
+   "roles": [
+    "Revision & Prüfung",
+    "Management"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "pruefung-it-ki",
+   "priority": 3,
+   "primary": false,
+   "added": "2026-10-04T05:06:24Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Veröffentlicht im September 2026. Belegt sind 86 Prozent für Cybersicherheit, Platz zwei mit 52 Prozent für Digitale Disruption und Künstliche Intelligenz sowie Platz drei für makroökonomische und geopolitische Unsicherheit. Auch die Aussage zu Governance, Risikoreife und Prüfung steht so in der…"
+   }
   },
   {
    "title": "Interne Revision: Anforderung zur Prüfung von Drittparteien seit 15. September verbindlich",
