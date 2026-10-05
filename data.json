@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-04T05:06:24Z",
+ "updated": "2026-10-05T05:07:33Z",
  "topics": [
   "IT-Governance & Risiko",
   "Cyber- & IT-Regulierung",
@@ -11,6 +11,18 @@
   "Weitere Themen"
  ],
  "briefings": [
+  {
+   "date": "2026-10-05",
+   "headline": "Citrix liefert Updates für die neue Lücke, Wien und die Technische Universität Dänemarks zeigen, wie gefährlich vergessene Altdaten und Testablagen sind.",
+   "points": [
+    "Update Citrix NetScaler: Seit der Nacht auf Sonntag gibt es Updates für die Lücke CVE-2026-88779 in der Single-Sign-on-Funktion. Die amerikanische Cybersicherheitsbehörde hat sie in ihren Katalog aktiv ausgenutzter Schwachstellen aufgenommen.",
+    "Stadt Wien: Über eine Lücke im Webzugang wurden 26.000 Dokumente aus einer internen Dokumentationsplattform kopiert, darunter Daten von 865 Auftragnehmern.",
+    "Technische Universität Dänemarks: Mit übernommenen Konten gelangten Angreifer in die Identitätsverwaltung, die Daten reichen bis 2003 zurück.",
+    "Handel: Beim französischen Elektronikhändler LDLC sind zum vierten Mal seit 2021 Kundendaten abgeflossen.",
+    "Apple will den Vollzugriff von Programmen auf dem Mac wegen Agenten mit Künstlicher Intelligenz einschränken."
+   ],
+   "count": 6
+  },
   {
    "date": "2026-10-04",
    "headline": "Neuer Zero Day bei Citrix NetScaler ohne Patch, öffentlicher Angriffscode zur SAP-Lücke OVERPASS, und die Revision sieht Künstliche Intelligenz als zweitgrößtes Risiko.",
@@ -121,19 +133,18 @@
    "title": "Identitäten und Zugangsdaten",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Gestohlene oder liegengebliebene Zugangsdaten sind derzeit das häufigste Einfallstor: Beim Lieferdienst Flink dienten Zugangsdaten einer ehemals beschäftigten Person als Einstieg, in öffentlichen GitHub-Projekten lagen über 543.000 gültige Zugangsdaten, und die Gruppe ShinyHunters nutzt Personalsoftware als Einfallstor. Microsoft nennt Identitäten als zentralen Angriffsweg.",
-   "next_step": "Austritts- und Rezertifizierungsprozesse stichprobenartig gegen echte Konten testen, auch in Cloud-Anwendungen und bei Dienstleistern; Inventar nicht-menschlicher Identitäten mit Owner und Ablaufdatum aufbauen; phishingresistente Anmeldung für privilegierte und exponierte Zugänge priorisieren.",
+   "status": "Übernommene Zugangsdaten bleiben das häufigste Einfallstor: An der Technischen Universität Dänemarks gelangten Angreifer mit gültigen Konten in die Identitätsverwaltung und erbeuteten Daten seit 2003, beim Lieferdienst Flink dienten Zugangsdaten einer ehemals beschäftigten Person als Einstieg. Gegen ShinyHunters, die Personalsoftware als Einfallstor nutzen, gibt es weitere Festnahmen.",
+   "next_step": "Prüfen, ob Identitätsverwaltung und Personalsysteme als Kronjuwelen mit starker Anmeldung und Überwachung auf Datenabflüsse eingestuft sind. Konten und Daten ausgeschiedener Personen nach dem Löschkonzept bereinigen.",
    "open_questions": [
-    "Werden Zugänge ehemaliger Beschäftigter auch in Software-as-a-Service-Anwendungen außerhalb des zentralen Verzeichnisdienstes zuverlässig entzogen?",
-    "Wer ist Owner für Dienstkonten, Schnittstellenschlüssel und Agenten mit Künstlicher Intelligenz?",
-    "Wie werden Zugangsdaten in Code-Repositories vor der Veröffentlichung erkannt?"
+    "Wie lange werden Identitätsdaten ehemaliger Beschäftigter tatsächlich aufbewahrt?",
+    "Werden Massenabfragen aus der Identitätsverwaltung erkannt und gemeldet?"
    ],
    "controls": [
+    "ISO/IEC 27001 Anhang A 5.16 – Identitätsmanagement",
     "ISO/IEC 27001 Anhang A 5.18 – Zugangsrechte",
-    "IT-Kontrollen der Abschlussprüfung – Zugriffsverwaltung",
-    "NIS-2-Richtlinie Art. 21 – Zugriffskontrolle und Multi-Faktor-Authentifizierung"
+    "IT-Kontrollen der Abschlussprüfung – Zugriffsverwaltung"
    ],
-   "updated": "2026-10-02"
+   "updated": "2026-10-05"
   },
   {
    "slug": "kritische-schwachstellen-perimeter",
@@ -147,18 +158,17 @@
    "title": "Kritische Schwachstellen in Randsystemen und Kernanwendungen",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Aktiv ausgenutzte Lücken in Systemen am Netzrand folgen dicht aufeinander: Citrix NetScaler zweimal innerhalb einer Woche (zuletzt ohne Patch), Fortinet FortiMail und Cisco Catalyst SD-WAN Manager. Für die SAP-Lücke OVERPASS ist inzwischen Proof-of-Concept-Code öffentlich.",
-   "next_step": "Bestand der Systeme am Netzrand und der aus dem Internet erreichbaren SAP-Schnittstellen aktuell halten, vorab freigegebene Regeln für Notabschaltungen festlegen und Notfall-Patches im Änderungsmanagement nachvollziehbar dokumentieren.",
+   "status": "Für die jüngste ausgenutzte Citrix-NetScaler-Lücke CVE-2026-88779 in der Single-Sign-on-Funktion gibt es seit dem 4. Oktober Updates, die amerikanische Cybersicherheitsbehörde listet sie als aktiv ausgenutzt. Zuvor wurden Fortinet FortiMail, Cisco Catalyst SD-WAN Manager und zwei weitere Citrix-Lücken angegriffen. Für die SAP-Lücke OVERPASS ist Angriffscode öffentlich.",
+   "next_step": "Einspielen der Citrix-Updates und eine Prüfung auf Kompromittierung nachhalten. Die Häufung bei Systemen am Netzrand als eigenes Risiko mit festen Patchfristen und Notfallabschaltung im Risikoregister führen.",
    "open_questions": [
-    "Wer entscheidet am Wochenende verbindlich über die Abschaltung eines Fernzugangs?",
-    "Sind vorläufige Schutzmaßnahmen für alle Zugriffswege einer Anwendung geprüft oder nur für den Webverkehr?"
+    "Reichen die bestehenden Patchfristen für Systeme am Netzrand, wenn zwischen Veröffentlichung und Ausnutzung nur Stunden liegen?",
+    "Ist eine Abschaltung als Ausweichplan für Systeme ohne verfügbares Update geregelt und freigegeben?"
    ],
    "controls": [
-    "NIS-2-Richtlinie Art. 21 – Umgang mit Schwachstellen und Sicherheitsvorfällen",
-    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
-    "IT-Kontrollen der Abschlussprüfung – Änderungsmanagement"
+    "ISO/IEC 27001 Anhang A 8.8 – Umgang mit technischen Schwachstellen",
+    "NIS-2-Richtlinie Art. 21 – Umgang mit und Offenlegung von Schwachstellen"
    ],
-   "updated": "2026-10-04"
+   "updated": "2026-10-05"
   },
   {
    "slug": "nis2-umsetzung",
@@ -221,17 +231,17 @@
    "title": "Sicherheit agentischer Künstlicher Intelligenz",
    "sector": "AI-Governance",
    "ring": "vorbereiten",
-   "status": "Agenten mit Künstlicher Intelligenz tauchen auf beiden Seiten auf: Angreifer verketten Zero Days in Sekunden, und Alltagssoftware bekommt immer mehr Rechte. Google testet für Gemini auf dem Mac den Zugriff auf alle Dateien und Programme einschließlich Löschen. Der Microsoft Digital Defense Report 2026 sieht Angreifer derzeit im Vorteil.",
-   "next_step": "Regeln für erlaubte Künstliche Intelligenz um Agenten mit Zugriff auf Endgeräte erweitern und klären, welche Agenten-Funktionen auf dienstlichen Geräten zentral gesperrt oder freigegeben werden.",
+   "status": "Die Anbieter von Betriebssystemen gehen auseinander: Google testet für Gemini auf dem Mac den Vollzugriff auf Dateien und Programme, Apple kündigt dagegen strengere Regeln für den Vollzugriff an und begründet das mit Agenten mit Künstlicher Intelligenz. Angreifer setzen Agenten bereits zum Verketten von Lücken und für Angriffe auf Onlineshops ein.",
+   "next_step": "Eine Vorgabe für Assistenten und Agenten mit Künstlicher Intelligenz auf Endgeräten festlegen: welche Berechtigungen erlaubt sind, wer sie freigibt und wie sie regelmäßig überprüft werden.",
    "open_questions": [
-    "Welche Verwaltungsfunktionen für Unternehmen bieten Anbieter für Agenten mit Zugriff auf Endgeräte?",
-    "Wie werden Aktionen von Agenten protokolliert und einer verantwortlichen Person zugeordnet?"
+    "Welche Agenten mit weitreichenden Rechten laufen heute schon auf Endgeräten der Beschäftigten?",
+    "Wie werden Handlungen von Agenten im Prüfpfad nachvollziehbar?"
    ],
    "controls": [
-    "ISO/IEC 42001 – Steuerung des Einsatzes von Systemen Künstlicher Intelligenz",
+    "ISO/IEC 42001 – Managementsystem für Künstliche Intelligenz",
     "ISO/IEC 27001 Anhang A 8.2 – Privilegierte Zugriffsrechte"
    ],
-   "updated": "2026-10-04"
+   "updated": "2026-10-05"
   },
   {
    "slug": "post-quanten-kryptografie",
@@ -398,6 +408,18 @@
    ]
   },
   {
+   "theme": "Neue Prüfungsstandards für Prüfungsnachweise",
+   "why": "Der internationale Standardsetzer für die Abschlussprüfung schlägt eine neue Definition von Prüfungsnachweisen für das digitale Umfeld vor und verschärft die Anforderungen an die Verlässlichkeit von Informationen. Kommentare sind bis 15. Dezember 2026 möglich. Das wird die Anforderungen an Datenqualität und allgemeine IT-Kontrollen erhöhen.",
+   "count": 3,
+   "first_seen": "2026-09-30",
+   "last_seen": "2026-10-05",
+   "evidence": [
+    "https://ifacweb.blob.core.windows.net/publicfiles/2026-08/IAASB-Audit-Evidence-Risk-Response-ISA-500-Exposure-Draft.pdf",
+    "https://www.iaasb.org/consultations-projects/audit-evidence-and-risk-response-isa-330-isa-500-isa-520",
+    "https://www.accountingtoday.com/news/iaasb-proposes-to-revise-audit-standards-for-new-risks-and-tech"
+   ]
+  },
+  {
    "theme": "Autonome Angriffe durch Agenten",
    "why": "Beim Angriff auf das niederländische Institut für die Offenlegung von Schwachstellen wurde eine Kette aus zwei Zero Days in Sekunden ausgenutzt, mutmaßlich durch einen Agenten mit Künstlicher Intelligenz. Das verkürzt die Zeit zwischen Bekanntwerden und Ausnutzung weiter und stellt gängige Patch-Fristen infrage.",
    "count": 3,
@@ -432,15 +454,13 @@
    ]
   },
   {
-   "theme": "Neue Prüfungsstandards für Prüfungsnachweise",
-   "why": "Der internationale Standardsetzer für Abschlussprüfungen hat Entwürfe für überarbeitete Standards zu Prüfungsnachweisen und zur Reaktion auf Risiken vorgelegt, Kommentare sind bis 15. Dezember 2026 möglich. Sie sollen technologiegestützte Prüfungen besser abbilden und dürften verändern, welche Daten und Nachweise Prüfer anfordern.",
-   "count": 2,
-   "first_seen": "2026-09-30",
-   "last_seen": "2026-10-01",
+   "theme": "Verbot personalisierter Preise",
+   "why": "Maryland schränkt als erster Bundesstaat der Vereinigten Staaten ein, dass Lebensmittelhändler und Lieferdienste Preise anhand persönlicher Daten individuell festlegen. Weitere Bundesstaaten ziehen nach. Wer Künstliche Intelligenz in der Preisgestaltung einsetzt, sollte damit rechnen, dass die Debatte über Transparenz und Grenzen auch in Europa ankommt.",
+   "count": 1,
+   "first_seen": "2026-10-05",
+   "last_seen": "2026-10-05",
    "evidence": [
-    "https://www.iaasb.org/consultations-projects/audit-evidence-and-risk-response-isa-330-isa-500-isa-520",
-    "https://www.accountingtoday.com/news/iaasb-proposes-to-revise-audit-standards-for-new-risks-and-tech",
-    "https://ifacweb.blob.core.windows.net/publicfiles/2026-08/IAASB-Audit-Evidence-Risk-Response-ISA-500-Exposure-Draft.pdf"
+    "https://www.skadden.com/insights/publications/2026/05/maryland-becomes-the-first-state-to-restrict-surveillance-pricing"
    ]
   },
   {
@@ -488,6 +508,142 @@
   }
  ],
  "news": [
+  {
+   "title": "Update: Citrix NetScaler – Updates für neue Zero-Day-Lücke, Behörde listet sie als ausgenutzt",
+   "summary": "Für die aktiv ausgenutzte Lücke CVE-2026-88779 in Citrix NetScaler gibt es seit der Nacht zum 4. Oktober Updates, zum Beispiel die Versionen 14.1-73.41 und 13.1-64.28 sowie die FIPS-Varianten. Betroffen sind Geräte, die als Dienstanbieter oder Identitätsanbieter für Single Sign-on über die Security Assertion Markup Language konfiguriert sind. Mit massenhaft gesendeten Anmeldeanfragen lösen Angreifer Abstürze aus und können Code ausführen.",
+   "relevance": "Systeme am Netzrand mit Single-Sign-on-Funktion sind ein typisches Einfallstor in Konzernnetze. Governance, Risiko und Compliance sollten nachhalten, dass die Updates eingespielt sind, und eine Prüfung auf Kompromittierung verlangen. Es ist die dritte ausgenutzte Citrix-Lücke in gut einer Woche, deshalb gehört die Häufung als eigenes Risiko ins Risikoregister.",
+   "source": "heise online",
+   "url": "https://heise.de/news/Netscaler-Admins-aufgepasst-Zero-Day-verursacht-Crashes-und-Codeausfuehrung-11474971.html",
+   "id": "2026-10-05-citrix-netscaler-update-single-sign-on",
+   "topic": "IT-Governance & Risiko",
+   "impact": "hoch",
+   "published": "2026-10-04",
+   "tags": [
+    "Citrix",
+    "Zero Day",
+    "Patchmanagement"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 8.8 – Umgang mit technischen Schwachstellen",
+    "NIS-2-Richtlinie Art. 21 – Umgang mit und Offenlegung von Schwachstellen"
+   ],
+   "roles": [
+    "IT-Risiko"
+   ],
+   "countries": [
+    "EU",
+    "DE",
+    "AT"
+   ],
+   "dossier": "kritische-schwachstellen-perimeter",
+   "priority": 1,
+   "primary": false,
+   "added": "2026-10-05T05:07:33Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Datum, Versionen, Konfiguration und Angriffsweise stimmen. Die Aufnahme in den Katalog der amerikanischen Cybersicherheitsbehörde am 4. Oktober steht nicht in der Quelle. Das behauptet auch der Titel."
+   }
+  },
+  {
+   "title": "ShinyHunters: Mutmaßliches Mitglied in Jordanien festgenommen, kooperiert mit Ermittlern",
+   "summary": "Ein mutmaßliches Mitglied der Gruppe ShinyHunters, das unter dem Pseudonym Rey auftrat, wurde in der Woche vor dem 4. Oktober 2026 in Jordanien festgenommen. Berichten zufolge gewährt es den Ermittlern Zugriff auf seine Geräte, damit sie die Infrastruktur der Gruppe untersuchen und weitere Mitglieder finden können. Die amerikanische Bundespolizei bestätigte den Bericht nicht direkt, sprach aber von mehreren Festnahmen in dem Fall.",
+   "relevance": "Festnahmen schwächen die Gruppe, beenden aber nicht die Kampagnen über Personal- und Unternehmenssoftware, bei denen die Täter arbeitsteilig vorgehen. Die Überwachung von Zugängen zu Personal- und Software-as-a-Service-Systemen bleibt wichtig.",
+   "source": "heise online",
+   "url": "https://www.heise.de/news/Bericht-FBI-Angreifer-von-ShinyHunters-gefasst-und-kooperativ-11475303.html",
+   "id": "2026-10-05-shinyhunters-festnahme-jordanien",
+   "topic": "Weitere Themen",
+   "impact": "info",
+   "published": "2026-10-04",
+   "tags": [
+    "ShinyHunters",
+    "Strafverfolgung",
+    "Personalsoftware"
+   ],
+   "controls": [],
+   "roles": [
+    "IT-Risiko"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "identitaeten-zugangsdaten",
+   "priority": 5,
+   "primary": false,
+   "added": "2026-10-05T05:07:33Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Das Veröffentlichungsdatum ist der 4. Oktober 2026. Nicht belegt sind das Festnahmedatum 29. September, die Datenmenge von 2 bis 3 Terabyte, Oracle PeopleSoft als Angriffsweg beim Angriff auf die Bundespolizei und die Ankündigung weiterer Festnahmen. Laut Quelle gab es schon mehrere Festnahmen."
+   }
+  },
+  {
+   "title": "Apple will den Vollzugriff auf Macs wegen Agenten mit Künstlicher Intelligenz einschränken",
+   "summary": "Apple hat angekündigt, die Berechtigung Full Disk Access unter macOS strenger zu regeln. Künftig soll ihre Vergabe eine sehr ausdrückliche Handlung der Nutzer erfordern. Zur Begründung verweist Apple darauf, dass die Berechtigung Zugriff auf Dateien, E-Mails, Nachrichten und den Browserverlauf gibt und dass immer selbstständigere Agenten mit Künstlicher Intelligenz das Risiko erhöhen. Als Beispiel wird Muse von Meta genannt. Wann die Änderung kommt, ist noch offen.",
+   "relevance": "Assistenten mit Künstlicher Intelligenz verlangen auf Endgeräten zunehmend weitreichende Rechte. Diese Berechtigungen gehören in das Berechtigungsmanagement und in die Vorgaben für Endgeräte, statt sie den Beschäftigten zu überlassen. Bis zur Änderung durch Apple sollten vergebene Vollzugriffe überprüft werden.",
+   "source": "iPhone in Canada",
+   "url": "https://www.iphoneincanada.ca/2026/10/04/apple-tightens-full-disk-access-on-mac-over-privacy-risks/",
+   "id": "2026-10-05-apple-vollzugriff-ki-agenten",
+   "topic": "AI-Governance",
+   "impact": "info",
+   "published": "2026-10-04",
+   "tags": [
+    "Agenten",
+    "Endgeräte",
+    "Berechtigungen"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 8.2 – Privilegierte Zugriffsrechte",
+    "ISO/IEC 42001 – Managementsystem für Künstliche Intelligenz"
+   ],
+   "roles": [
+    "IT-Risiko"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "agentische-ki-sicherheit",
+   "priority": 6,
+   "primary": false,
+   "added": "2026-10-05T05:07:33Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Ankündigung, die Forderung nach einer sehr ausdrücklichen Handlung der Nutzer, die Begründung, das Beispiel Muse von Meta und der offene Zeitplan stimmen mit der Quelle überein."
+   }
+  },
+  {
+   "title": "Französischer Elektronikhändler LDLC: Vierter Datenabfluss seit 2021",
+   "summary": "LDLC informiert seit dem 2. Oktober 2026 Kundinnen und Kunden, dass ein Angreifer Zugriff auf eines seiner Systeme hatte. Einsehen konnte er Namen, Adressen, E-Mail-Adressen, Telefonnummern, Kundennummern und das Datum der letzten Anmeldung. Passwörter und Bankdaten sollen nicht betroffen sein. Zeitpunkt, Angriffsweg und Zahl der Betroffenen nennt das Unternehmen nicht. Es ist der vierte Vorfall seit 2021, gemeldet wurde er an die französische Datenschutzbehörde.",
+   "relevance": "Für Onlinehändler zeigt der Fall, wie wiederholte Vorfälle und eine knappe Kundeninformation das Vertrauen beschädigen. Benachrichtigungen sollten vorbereitet sein, und nach einem Vorfall muss belegbar nachgesteuert werden. Die abgeflossenen Daten eignen sich außerdem für glaubwürdiges Phishing im Namen von Händlern und Paketdiensten.",
+   "source": "MacGeneration",
+   "url": "https://www.macg.co/ailleurs/2026/10/ldlc-victime-dun-quatrieme-piratage-les-donnees-personnelles-de-ses-clients-exposees-311405",
+   "id": "2026-10-05-ldlc-vierter-datenabfluss",
+   "topic": "Handel & Branche",
+   "impact": "mittel",
+   "published": "2026-10-03",
+   "tags": [
+    "Onlinehandel",
+    "Datenabfluss",
+    "Frankreich"
+   ],
+   "controls": [
+    "DSGVO Art. 34 – Benachrichtigung der betroffenen Person",
+    "ISO/IEC 27001 Anhang A 5.27 – Erkenntnisse aus Informationssicherheitsvorfällen"
+   ],
+   "roles": [
+    "Datenschutz",
+    "Management"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": null,
+   "priority": 4,
+   "primary": false,
+   "added": "2026-10-05T05:07:33Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Die Quelle nennt nur das Datum der letzten Anmeldung, keine Anmeldehistorie. Alles andere stimmt."
+   }
+  },
   {
    "title": "Update: Citrix NetScaler – neuer Zero Day trifft auch voll aktualisierte Geräte",
    "summary": "Seit dem Abend des 2. Oktober 2026 kursiert ein Exploit für eine neue Schwachstelle in Citrix NetScaler. Er funktioniert offenbar auch auf dem neuesten Softwarestand und umgeht nach Einschätzung von Sicherheitsforschern den Fix der Vorwoche. Administratoren berichten von massenhaften spontanen Neustarts, möglich sind auch Schadcode-Ausführung und das Eindringen ins Unternehmensnetz. Patches gibt es noch nicht, Citrix verweist Betroffene an den Support.",
@@ -556,6 +712,42 @@
    "check": {
     "verdict": "ok",
     "note": "Quelle vom 3. Oktober 2026. Folgende Angaben sind belegt: Dateizugriff überall inklusive Löschen, Mail, Safari und Nachrichten, die Einstellung mit erweiterten Sandbox-Optionen, Rückfragen vor Käufen, Überweisungen, Kontoeröffnungen und rechtlichen Bedingungen sowie die Testphase ohne Starttermin."
+   }
+  },
+  {
+   "title": "Technische Universität Dänemarks: Angriff auf Identitätsverwaltung trifft bis zu 200.000 Personen",
+   "summary": "Angreifer nutzten mehrere übernommene Benutzerkonten und gelangten so in die Benutzerdatenbank der Technischen Universität Dänemarks, deren Daten bis 2003 zurückreichen. Betroffen sein können bis zu 200.000 aktuelle und ehemalige Nutzer, darunter rund 160.000 Ehemalige, abgeflossen sind möglicherweise Namen, dänische Personennummern sowie bei aktiven Nutzern Adressen und Telefonnummern. Die Universität hat die dänische Datenschutzaufsicht und weitere zuständige Behörden eingeschaltet.",
+   "relevance": "Das System für die Identitätsverwaltung ist ein Kronjuwel und braucht starke Anmeldeverfahren und eine Überwachung auf ungewöhnliche Datenabflüsse. Daten ausgeschiedener Beschäftigter, die über Jahrzehnte aufbewahrt werden, erhöhen nur das Risiko. Ein Anlass, das eigene Löschkonzept in der Personal- und Identitätsverwaltung zu prüfen.",
+   "source": "The Copenhagen Post",
+   "url": "https://cphpost.dk/2026-10-02/life-in-denmark/dtu-data-breach-may-affect-personal-information-of-200000-current-and-former-users/",
+   "id": "2026-10-05-dtu-identitaetsverwaltung-altdaten",
+   "topic": "IT-Governance & Risiko",
+   "impact": "mittel",
+   "published": "2026-10-02",
+   "tags": [
+    "Identitäten",
+    "Zugangsdaten",
+    "Löschkonzept"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 5.16 – Identitätsmanagement",
+    "DSGVO Art. 5 Abs. 1 lit. e – Speicherbegrenzung",
+    "IT-Kontrollen der Abschlussprüfung – Zugriffsverwaltung"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Datenschutz"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "identitaeten-zugangsdaten",
+   "priority": 3,
+   "primary": false,
+   "added": "2026-10-05T05:07:33Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Laut Quelle ging es um die Benutzerdatenbank und nicht ausdrücklich um ein System zur Identitätsverwaltung. Fotos werden nicht erwähnt. Die Polizei wird nicht ausdrücklich genannt, nur weitere zuständige Behörden."
    }
   },
   {
@@ -629,6 +821,42 @@
    "check": {
     "verdict": "abweichung",
     "note": "Die Meldung der US-Behörde bestätigt Datum, beide Kennungen und die Art der Schwachstellen. Der Angriff auf das niederländische Institut, die Rolle des KI-Agenten und die Versionen 6.3.0 bis 6.5.4 stehen nicht dort, sondern in der Fallbeschreibung des Instituts selbst (DIVD-2026-00015). Dort wird…"
+   }
+  },
+  {
+   "title": "Stadt Wien: 26.000 Dokumente aus interner Dokumentationsplattform kopiert",
+   "summary": "Zwischen dem 3. und dem 11. September 2026 kopierte ein Angreifer über eine Lücke im Webzugang rund 26.000 Dokumente mit neun Gigabyte aus einer internen Dokumentationsplattform des Wiener Magistrats, darunter Testdaten, Schulungsunterlagen und Projektdateien. Betroffen sind 2.885 Bürgerinnen und Bürger, 2.083 Beschäftigte und 865 Auftragnehmer, zum Teil mit besonders geschützten Datenkategorien. Bemerkt wurde der Vorfall erst, als die Lücke in einem Onlineforum zum Verkauf angeboten wurde.",
+   "relevance": "Echte personenbezogene Daten in Testdaten und Projektablagen tauchen in keiner Liste der Kronjuwelen auf. Ein Handelskonzern mit vielen Kunden- und Beschäftigtendaten sollte prüfen, ob Produktivdaten in Test- und Dokumentationssystemen landen und wer für diese Ablagen verantwortlich ist.",
+   "source": "heise online",
+   "url": "https://www.heise.de/en/news/City-of-Vienna-discovers-intrusion-into-online-storage-11471914.html",
+   "id": "2026-10-05-stadt-wien-dokumentationsplattform",
+   "topic": "Datenschutz & Datenrecht",
+   "impact": "mittel",
+   "published": "2026-10-01",
+   "tags": [
+    "Testdaten",
+    "Österreich",
+    "Datenabfluss"
+   ],
+   "controls": [
+    "DSGVO Art. 25 – Datenschutz durch Technikgestaltung",
+    "ISO/IEC 27001 Anhang A 8.33 – Testdaten",
+    "DSGVO Art. 32 – Sicherheit der Verarbeitung"
+   ],
+   "roles": [
+    "Datenschutz",
+    "IT-Risiko"
+   ],
+   "countries": [
+    "AT"
+   ],
+   "dossier": null,
+   "priority": 2,
+   "primary": false,
+   "added": "2026-10-05T05:07:33Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Zeitraum, Dokumentenzahl, Datenmenge, Betroffenenzahlen, sensible Datenkategorien und Entdeckung über das Verkaufsangebot im Forum stimmen mit der Quelle überein."
    }
   },
   {

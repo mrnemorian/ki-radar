@@ -1,0 +1,201 @@
+{
+ "format": "tag",
+ "chapters": [
+  {
+   "title": "Begrüßung",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Guten Morgen, liebe IT-GRC-Kolleginnen und -Kollegen, willkommen beim IT-GRC Radar am Montag, dem fünften Oktober 2026."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Montag, und die erste Meldung ist schon wieder Citrix. Irgendwie beruhigend, dass sich manche Dinge nie ändern."
+    }
+   ]
+  },
+  {
+   "title": "Die Woche",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Bevor wir loslegen, wie immer der Blick auf die Woche. Welche Fristen stehen an?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ehrlich gesagt keine. In den nächsten sieben Tagen läuft aus unserer Liste nichts ab. Das ist so selten, dass man es fast im Kalender eintragen müsste."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Eine Frist der Woche brauchen wir trotzdem."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Dann nehmen wir die nächste, den einunddreißigsten Oktober. Bis dahin müssen in Italien die bereits 2025 gelisteten Einrichtungen die grundlegenden Sicherheitsmaßnahmen nach der NIS-2-Richtlinie umgesetzt haben, also der Richtlinie über Netz- und Informationssicherheit. Das sind knapp vier Wochen, und in Österreich läuft parallel die Registrierung bis Jahresende."
+    }
+   ]
+  },
+  {
+   "title": "Citrix: Updates sind da",
+   "news_id": "2026-10-05-citrix-netscaler-update-single-sign-on",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Da gibt es Neues zur Lücke in Citrix NetScaler. Am Samstag hieß es noch: neuer [en]Zero Day[/en], und betroffen sind auch voll aktualisierte Geräte."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Seit der Nacht auf Sonntag gibt es [en]Updates[/en]. Betroffen sind Geräte, auf denen die [en]Single-Sign-on[/en]-Funktion eingerichtet ist. Angreifer schicken massenhaft Anmeldeanfragen, die Geräte stürzen ab oder führen fremden Code aus."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und die Lücke wird bereits aktiv ausgenutzt."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Für uns heißt das: Das Patchen geht vor, danach wird auf Spuren einer Kompromittierung geprüft. Und weil es schon die dritte kritische Citrix-Lücke in kurzer Folge ist, sollte jemand im Risikoregister mal fragen, ob man da noch von Einzelfällen sprechen kann."
+    }
+   ]
+  },
+  {
+   "title": "Wien: Testdaten im Netz",
+   "news_id": "2026-10-05-stadt-wien-dokumentationsplattform",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Weiter nach Wien. Die Stadt meldet einen Einbruch in eine interne Dokumentationsplattform des Magistrats."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Zwischen dem dritten und dem elften September hat jemand über eine Lücke im Webzugang rund 26.000 Dokumente kopiert, neun Gigabyte. Betroffen sind gut 2.000 Beschäftigte, knapp 2.900 Bürgerinnen und Bürger und 865 Auftragnehmer."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Moment, auf einer Dokumentationsplattform lagen echte personenbezogene Daten?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Genau das ist der Punkt. Dort lagen unter anderem Testdaten, Schulungsunterlagen und Projektdateien, also nichts, was auf einer Liste der Kronjuwelen stehen würde. Aufgefallen ist es erst, als jemand die Lücke in einem Forum zum Verkauf angeboten hat."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Produktivdaten in der Testumgebung also. Der Klassiker."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Der Klassiker. Und wer bei der Projektablage eigentlich [en]Owner[/en] ist, klärt sich in solchen Fällen leider erst hinterher."
+    }
+   ]
+  },
+  {
+   "title": "Dänemark: Identitätsverwaltung",
+   "news_id": "2026-10-05-dtu-identitaetsverwaltung-altdaten",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Nach Dänemark. Bei der Technischen Universität Dänemarks haben Angreifer Daten von bis zu 200.000 Personen abgezogen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Hineingekommen sind sie mit übernommenen, gültigen Konten, und zwar direkt in die Benutzerdatenbank. Die Daten reichen bis 2003 zurück, darunter Personennummern und Adressen. Rund 160.000 Datensätze gehören zu ehemaligen Nutzern."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "160.000 Ehemalige. Da sah das Löschkonzept auf der Folie wohl besser aus als in der Datenbank."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Etwas spitz, aber berechtigt. Ich nehme zwei Lehren mit. Die Identitätsverwaltung ist ein Kronjuwel und muss auch so geschützt werden. Und alte Daten von Leuten, die längst weg sind, bringen nichts außer Risiko."
+    }
+   ]
+  },
+  {
+   "title": "LDLC: Vierter Vorfall",
+   "news_id": "2026-10-05-ldlc-vierter-datenabfluss",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Aus dem Handel: Der französische Elektronikhändler LDLC schreibt seit Freitag seine Kunden an, weil Daten abgeflossen sind."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Betroffen sind Namen, Adressen, E-Mail-Adressen, Telefonnummern, Kundennummern und das Datum der letzten Anmeldung, Passwörter und Bankdaten dagegen nicht. Es ist der vierte Vorfall seit 2021."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und was steht nicht in der Kundeninformation?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Fast alles, was Kunden wissen wollen: wann es passiert ist, wie die Angreifer hineinkamen und wie viele betroffen sind. Für einen Onlinehändler heißt das, die Benachrichtigung vorab vorzubereiten und nach einem Vorfall belegbar nachzusteuern. Sonst wird aus dem Einzelfall eine Serie."
+    }
+   ]
+  },
+  {
+   "title": "ShinyHunters: Festnahme",
+   "news_id": "2026-10-05-shinyhunters-festnahme-jordanien",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Kurz zu ShinyHunters. Ein mutmaßliches Mitglied mit dem Pseudonym Rey wurde in Jordanien festgenommen und soll mit der amerikanischen Bundespolizei zusammenarbeiten."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Die Festnahme ist eine gute Nachricht, aber kein Grund, die Überwachung der Zugänge herunterzufahren. Solche Gruppen arbeiten mit verteilten Rollen."
+    }
+   ]
+  },
+  {
+   "title": "Apple: Schloss für Agenten",
+   "news_id": "2026-10-05-apple-vollzugriff-ki-agenten",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Und dann noch Apple. Der Konzern will den Vollzugriff von Programmen auf dem Mac strenger regeln."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Als Grund nennt Apple Agenten mit Künstlicher Intelligenz, die mit dieser Berechtigung Dateien, E-Mails und Nachrichten lesen können. Einen Zeitplan gibt es noch nicht. Interessant ist der Zeitpunkt, denn am Samstag ging es bei uns noch um Gemini, das genau diesen Vollzugriff bekommen soll."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Der eine Anbieter öffnet die Tür, der andere baut ein Schloss ein."
+    },
+    {
+     "speaker": "Florian",
+     "text": "So ungefähr. Welche Rechte ein Assistent auf dem Endgerät bekommt, gehört ins Berechtigungsmanagement und ist keine Frage persönlicher Vorlieben."
+    }
+   ]
+  },
+  {
+   "title": "Auf dem Radar",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Was haben wir auf dem Radar?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Personalisierte Preise. In Maryland dürfen Lebensmittelhändler und Lieferdienste Preise per Gesetz nur noch eingeschränkt anhand persönlicher Daten festlegen, und weitere amerikanische Bundesstaaten ziehen nach. In Europa ist das noch keine Pflicht. Wer aber Künstliche Intelligenz in der Preisgestaltung einsetzt, sollte die Debatte im Blick behalten."
+    }
+   ]
+  },
+  {
+   "title": "Abschied",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Das war unser Montag. Alle Quellen findet ihr wie immer auf der Webseite."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und wer heute noch Citrix patcht, dem drücken wir die Daumen. Bis morgen."
+    }
+   ]
+  }
+ ]
+}

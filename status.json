@@ -1,11 +1,17 @@
 {
  "last_run": {
-  "start": "2026-10-04T07:00:01+02:00",
-  "end": "2026-10-04T07:06:25+02:00",
+  "start": "2026-10-05T07:00:01+02:00",
+  "end": "2026-10-05T07:07:33+02:00",
   "ok": true,
-  "summary": "5 neue Meldungen: P1 Update: Citrix NetScaler – neuer Zero Day trifft auch voll aktualisierte Geräte; P2 Update: SAP-Lücke OVERPASS – neuer Angriffsweg und öffentlicher Angriffscode; P3 Risk in"
+  "summary": "6 neue Meldungen: P1 Update: Citrix NetScaler – Updates für neue Zero-Day-Lücke, Behörde listet sie als ausgenutzt; P2 Stadt Wien: 26.000 Dokumente aus interner Dokumentationsplattform kopiert; P"
  },
  "history": [
+  {
+   "start": "2026-10-05T07:00:01+02:00",
+   "end": "2026-10-05T07:07:33+02:00",
+   "ok": true,
+   "summary": "6 neue Meldungen: P1 Update: Citrix NetScaler – Updates für neue Zero-Day-Lücke, Behörde listet sie als ausgenutzt; P2 Stadt Wien: 26.000 Dokumente aus interner Dokumentationsplattform kopiert; P"
+  },
   {
    "start": "2026-10-04T07:00:01+02:00",
    "end": "2026-10-04T07:06:25+02:00",
