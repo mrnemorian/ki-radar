@@ -1,0 +1,157 @@
+{
+ "format": "tag",
+ "chapters": [
+  {
+   "title": "Begrüßung",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Guten Morgen, liebe IT-GRC-Kolleginnen und -Kollegen, willkommen beim IT-GRC Radar am Dienstag, dem sechsten Oktober 2026. Heute geht es um ein nachgeliefertes Update, um unsichtbare Wasserzeichen, um Werbung im Chatfenster und um Passdaten in Postfächern."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Klingt nach einem Dienstag mit doppeltem Kaffee. Fang mit dem an, was heute noch jemand erledigen muss."
+    }
+   ]
+  },
+  {
+   "title": "Exchange-Update",
+   "news_id": "2026-10-06-exchange-server-cve-2026-96940",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Dann Exchange. Microsoft hat eine zweite Fassung der September-Updates für lokale Exchange-Server veröffentlicht. Sie schließt eine Lücke, mit der angemeldete Angreifer ihre Rechte ausweiten und in fremde Postfächer der eigenen Organisation schauen können."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Schweregrad 8,8 von 10, also knapp unter kritisch. Angriffe sind noch nicht bekannt, Microsoft hält eine Ausnutzung aber für eher wahrscheinlich."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Moment, heißt das, wer im September brav gepatcht hat, ist trotzdem nicht fertig?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Genau. In vielen Listen hat der September längst einen grünen Haken. Wenn das Schwachstellenmanagement die Nachlieferung nicht als neue Aufgabe erkennt, bleibt der Haken grün und das Postfach offen."
+    }
+   ]
+  },
+  {
+   "title": "Wasserzeichen für Texte",
+   "news_id": "2026-10-06-openai-wasserzeichen-texte-eu",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Zweites Thema. OpenAI versieht Texte von ChatGPT und Codex in der Europäischen Union mit einem unsichtbaren Wasserzeichen und beruft sich auf die Transparenzpflichten der Verordnung über Künstliche Intelligenz."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Für Anbieter, die schon am Markt sind, endet die Übergangsfrist am zweiten Dezember 2026. Bei längeren Texten findet der Detektor das Signal in rund 95 Prozent der Fälle. Ersetzt man ein Viertel der Wörter, sind es nur noch 17 Prozent."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Ein Wasserzeichen, das beim ersten Redigieren verblasst."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ehrlich gesagt, ja. Wichtiger ist etwas anderes: In der Programmierschnittstelle ist das Wasserzeichen standardmäßig aus. Wer darauf eigene Anwendungen baut, kann selbst Anbieter werden und muss das bewusst entscheiden. Das gehört mit Rolle und Kennzeichnungsstatus ins Inventar."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Noch eine Spalte in der Excel-Liste."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Die wichtigste Spalte heißt trotzdem [en]Owner[/en]."
+    }
+   ]
+  },
+  {
+   "title": "Werbung in ChatGPT",
+   "news_id": "2026-10-06-chatgpt-werbung-aufsicht-warnt",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Bleiben wir bei ChatGPT. Die Berliner Datenschutzbeauftragte warnt vor der personalisierten Werbung, die OpenAI in Europa einführt."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ausgewertet werden frühere und aktuelle Chats sowie Geräte- und Nutzungsdaten. Personalisiert wird nur mit Einwilligung, aber auch ohne bezieht sich die Werbung auf den laufenden Chat."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und warum ist das unser Thema und nicht nur eins für Verbraucher?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Wer dienstliche Texte in ein privates Gratiskonto kopiert, füttert künftig auch ein Werbeprofil. Klare Regeln, freigegebene Unternehmenszugänge und Schulungen werden damit dringlicher."
+    }
+   ]
+  },
+  {
+   "title": "Passdaten bei Wakacje.pl",
+   "news_id": "2026-10-06-wakacje-pl-passdaten",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Ein Vorfall aus der Touristik. Beim polnischen Reiseportal Wakacje.pl sind Angreifer in das Kundenmanagementsystem und in mehrere Postfächer von Beschäftigten eingedrungen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Abgeflossen sind unter anderem Adressen, Geburtsdaten und Passdaten. Wie viele Kunden betroffen sind, ist offen, ihnen wird geraten, die Pässe sperren zu lassen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Postfächer. Schon wieder."
+    },
+    {
+     "speaker": "Florian",
+     "text": "In der Touristik gehen Passkopien eben gern per E-Mail hin und her. Die Frage lautet also: Wo liegen Ausweisdaten außerhalb der Buchungssysteme, wie lange bleiben sie dort, und sind diese Postfächer mit Mehrfaktor-Anmeldung geschützt? Mit echten Daten lässt sich außerdem sehr glaubwürdiges [en]Phishing[/en] bauen."
+    }
+   ]
+  },
+  {
+   "title": "Google pausiert Prämienprogramm",
+   "news_id": "2026-10-06-google-pausiert-open-source-praemienprogramm",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Und noch etwas aus der offenen Suche: Google nimmt seit dem ersten Oktober keine neuen Meldungen mehr im Prämienprogramm für Open-Source-Software an, weil automatisch erzeugte, meist ungültige Meldungen die Prüfer überlasten."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Künstliche Intelligenz findet also mehr Lücken, als es gibt. Ernst gemeint: Wer eine Meldestelle betreibt, und Hersteller müssen das nach dem [en]Cyber Resilience Act[/en], sollte Personal für die Vorsortierung einplanen."
+    }
+   ]
+  },
+  {
+   "title": "Auf dem Radar",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Was hast du auf dem Radar?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Die neuen Prüfungsstandards für Prüfungsnachweise. Der internationale Standardsetzer für die Abschlussprüfung will klären, wie Prüfer technische Werkzeuge einsetzen. Kommentare sind bis zum fünfzehnten Dezember 2026 möglich. Damit wird die Datenqualität aus unseren Systemen selbst zum Prüfungsthema."
+    }
+   ]
+  },
+  {
+   "title": "Abschied",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Das war das IT-GRC Radar für heute. Alle Quellen findet ihr auf der Webseite."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und wer heute nur eine Sache schafft: die Exchange-Server prüfen. Bis morgen."
+    }
+   ]
+  }
+ ]
+}
