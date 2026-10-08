@@ -1,0 +1,181 @@
+{
+ "format": "tag",
+ "chapters": [
+  {
+   "title": "Begrüßung",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Guten Morgen, liebe IT-GRC-Kolleginnen und -Kollegen, willkommen beim IT-GRC Radar. Heute ist Donnerstag, der achte Oktober 2026."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Guten Morgen. Ich ahne schon, die Woche legt uns wieder [en]Patches[/en] auf den Tisch."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Richtig geahnt. Dazu eine Lehrstunde in Dienstleistersteuerung und Neues aus Brüssel."
+    }
+   ]
+  },
+  {
+   "title": "Atlassian wird angegriffen",
+   "news_id": "2026-10-08-atlassian-cve-2026-21589-angriffe",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Da gibt es Neues zur kritischen Atlassian-Lücke vom Montag. Nach der Veröffentlichung technischer Details sahen [en]Honeypots[/en] schon nach zwei Stunden erste Angriffsversuche."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Zwei Stunden. Das ist kürzer als manches Freigabemeeting für einen Notfall-[en]Change[/en]."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Betroffen sind alle selbst betriebenen [en]Data-Center[/en]-Produkte, also Jira, Confluence, Bitbucket und weitere. Was macht die Lücke so heikel?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Angreifer lesen ohne Anmeldung Dateien aus. Wo Crowd angebunden ist, liegen dort Zugangsdaten im Klartext, und damit lässt sich ein Jira-Administrator anlegen. Also sofort aktualisieren, Zugriff von außen einschränken und nachsehen, ob neue Administratorkonten aufgetaucht sind."
+    }
+   ]
+  },
+  {
+   "title": "FortiBleed sperrt Administratoren aus",
+   "news_id": "2026-10-08-fortibleed-fbi-warnung",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Bleiben wir an der Netzgrenze. Die amerikanische Bundespolizei warnt, dass die Angriffswelle [en]FortiBleed[/en] weiterläuft."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Moment, ist das nicht das Datenleck aus dem Juni?"
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Genau, inzwischen geht es um Zugangsdaten zu über 86.000 Fortinet-Geräten. Angreifer legen eigene Administratoren an, löschen die echten und sperren die Verantwortlichen aus."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und das ist laut Behörde der Einstieg für [en]Ransomware[/en]-Gruppen. Mehr-Faktor-Authentifizierung erzwingen, Sitzungen beenden, Protokolle prüfen. Wer im Juni nur abgehakt hat, dass er nicht auf der Liste steht, sollte ehrlicherweise noch mal schauen."
+    }
+   ]
+  },
+  {
+   "title": "Dienstleister verliert Auftrag",
+   "news_id": "2026-10-08-fbi-dienstleister-peoplesoft-patch",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Noch einmal die Bundespolizei, diesmal als Auftraggeber. Nach dem Datenabfluss aus ihrem Jobportal hat sie sich von dem Dienstleister getrennt, der die Personalplattform betreut hat."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Lass mich raten: [en]Patch[/en] nicht eingespielt?"
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Volltreffer. Für Oracle PeopleSoft gab es einen Notfall-[en]Patch[/en], der laut Behörde fehlte. ShinyHunters nutzte die Lücke schon seit Ende Mai."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Die Verantwortung bleibt beim Auftraggeber. Patch-Fristen im Vertrag sind gut, Nachweise im Quartal sind besser. Und dann wieder die ewige Frage, wer eigentlich [en]Owner[/en] dieser Kontrolle ist."
+    }
+   ]
+  },
+  {
+   "title": "Digital Omnibus verschoben",
+   "news_id": "2026-10-08-digital-omnibus-abstimmung-verschoben",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Da gibt es Neues zum Digital Omnibus. Die Mitgliedstaaten wollten am Mittwoch ihre Position zur Reform der Datenschutz-Grundverordnung beschließen. Die Abstimmung ist auf den elften Oktober verschoben."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Woran hakt es?"
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Deutschland und Frankreich wollen Geschäftsgeheimnisse beim Datenzugang besser schützen. Deutschland schlägt außerdem Erleichterungen für risikoarme Verantwortliche vor, gedacht für kleine Unternehmen und Vereine."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Großkonzerne betrifft das nicht. Und danach muss sich der Rat noch mit dem Parlament einigen. Also beobachten, aber kein Projekt anhalten, nur weil Brüssel vielleicht entlastet."
+    }
+   ]
+  },
+  {
+   "title": "Gekaperte Länderdomains",
+   "news_id": "2026-10-08-laenderdomains-gekapert-zertifikate",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Etwas Ungewöhnliches: Angreifer haben die Registrierungsstellen der Länderdomains von Ghana, Amerikanisch-Samoa und Sierra Leone übernommen und so echte Zertifikate für Google-Domains erhalten."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Für alle mit Länderseiten in vielen Staaten heißt das: Zertifikatstransparenz für das ganze Domain-Portfolio überwachen, auch geparkte Domains. Ein guter Anlass, die Domainliste aus der Excel-Datei mal mit der Wirklichkeit abzugleichen."
+    }
+   ]
+  },
+  {
+   "title": "Heimliche Lösegeldzahlungen",
+   "news_id": "2026-10-08-monstercloud-heimliche-loesegeldzahlungen",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "In New York ist der Chef des [en]Ransomware[/en]-Wiederherstellers MonsterCloud angeklagt. Er soll Kunden eigene Entschlüsselung vorgespielt, aber heimlich Lösegeld gezahlt haben: über 8 Millionen Dollar an Erpresser und mehr als 19 Millionen Dollar an Rechnungen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Notfalldienstleister prüft man also vorher, nicht in der Nacht des Angriffs. Und im Vertrag steht, dass ohne Freigabe der Geschäftsleitung nichts gezahlt wird."
+    }
+   ]
+  },
+  {
+   "title": "Drei Stufen für Cyberfähigkeiten",
+   "news_id": "2026-10-08-anthropic-cyberzugang-drei-stufen",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Und Anthropic bündelt seine Cyberprogramme in drei Zugriffsstufen, von der Verteidigung bis zu geprüften Tests an kritischer Infrastruktur."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Spannend ist die Zahl dahinter: über 129.000 verifizierte Schwachstellen zwischen April und Juli. Die Flut wird nicht kleiner, das Schwachstellenmanagement muss priorisieren lernen."
+    }
+   ]
+  },
+  {
+   "title": "Auf dem Radar",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Was hast du auf dem Radar?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Neue Prüfungsstandards für Prüfungsnachweise. Der internationale Entwurf verlangt mehr zur Verlässlichkeit von Informationen aus Systemen, Stellungnahmen sind bis Mitte Dezember möglich. Dann wird die Frage, woher ein Bericht seine Daten hat, zur Prüfungsfrage."
+    }
+   ]
+  },
+  {
+   "title": "Abschied",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Das war das IT-GRC Radar für heute. Alle Quellen findet ihr wie immer auf der Webseite."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und wer heute nur eines schafft: Jira und die Firewalls prüfen. Bis morgen."
+    }
+   ]
+  }
+ ]
+}

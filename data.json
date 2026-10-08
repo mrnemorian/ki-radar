@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-07T05:07:35Z",
+ "updated": "2026-10-08T05:07:25Z",
  "topics": [
   "IT-Governance & Risiko",
   "Cyber- & IT-Regulierung",
@@ -11,6 +11,18 @@
   "Weitere Themen"
  ],
  "briefings": [
+  {
+   "date": "2026-10-08",
+   "headline": "Atlassian-Lücke wird angegriffen, FortiBleed sperrt Administratoren aus, und ein ausgelassener Patch kostet einen Dienstleister den Auftrag der Bundespolizei.",
+   "points": [
+    "Atlassian: Die kritische Lücke CVE-2026-21589 in den Data-Center-Produkten wird seit der Veröffentlichung von Angriffscode aktiv ausgenutzt.",
+    "FortiBleed: Laut der amerikanischen Bundespolizei sperren Angreifer mit geleakten Zugangsdaten die Administratoren von Fortinet-Firewalls aus und bereiten so Ransomware vor.",
+    "Die amerikanische Bundespolizei beendet die Zusammenarbeit mit einem Dienstleister, der einen kritischen Patch für Oracle PeopleSoft nicht eingespielt hatte.",
+    "Digital Omnibus: Die Mitgliedstaaten verschieben ihre Position zur Reform der Datenschutz-Grundverordnung auf den 11. Oktober.",
+    "Gekaperte Registrierungsstellen für Länderdomains und ein angeklagter Ransomware-Wiederhersteller zeigen weitere Risiken bei Dienstleistern."
+   ],
+   "count": 7
+  },
   {
    "date": "2026-10-07",
    "headline": "Kritische Lücke in Atlassian-Produkten, Dienstleister als Einfallstor bei ASOS und Angriffe mit Künstlicher Intelligenz auf koreanische Banken",
@@ -132,17 +144,18 @@
    "title": "Drittparteien- und Lieferkettenrisiko",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Vorfälle über Dienstleister häufen sich: zuletzt bei ASOS über Plattformen für die Kundenkommunikation, davor beim Versand-Tracking-Dienstleister von Carrefour France, bei Amadeus iHotelier und beim Datenaustauschdienst FTAPI. Die NIS-2-Richtlinie verlangt Sicherheit in der Lieferkette, und seit 15. September 2026 ist die Anforderung der Internen Revision zur Prüfung von Drittparteien verbindlich.",
-   "next_step": "Marketing- und Kommunikationsplattformen mit Zugriff auf Kundendaten und Kundenkanäle in das Drittparteienregister aufnehmen und Zugangsschlüssel, Berechtigungen sowie Notabschaltung prüfen.",
+   "status": "Die amerikanische Bundespolizei beendet die Zusammenarbeit mit dem Dienstleister ihrer Personalplattform, weil ein kritischer PeopleSoft-Patch fehlte; in New York ist zudem der Chef eines Ransomware-Wiederherstellers wegen heimlicher Lösegeldzahlungen angeklagt. Davor häuften sich Vorfälle über Dienstleister bei ASOS, Carrefour France, Amadeus iHotelier und FTAPI; die Anforderung der Internen…",
+   "next_step": "Patch-Fristen und Nachweispflichten in Verträgen mit Betriebsdienstleistern prüfen und Notfalldienstleister vorab bewerten, einschließlich klarer Regeln zu Lösegeldzahlungen.",
    "open_questions": [
-    "Sind Plattformen, die Push-Nachrichten oder E-Mails an Kunden versenden, als kritische Dienstleister eingestuft?",
-    "Wer kann im Ernstfall missbräuchliche Nachrichten an die Kundschaft sofort stoppen?"
+    "Liegen für ausgelagerte Plattformen belastbare Nachweise zum Patchstand vor?",
+    "Wer entscheidet im Ernstfall über Zahlungen an Erpresser, und ist das vertraglich mit Dienstleistern geregelt?"
    ],
    "controls": [
     "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
-    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen"
+    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen",
+    "ISO/IEC 27001 Anhang A 5.22 – Überwachung von Lieferantendienstleistungen"
    ],
-   "updated": "2026-10-07"
+   "updated": "2026-10-08"
   },
   {
    "slug": "identitaeten-zugangsdaten",
@@ -156,18 +169,18 @@
    "title": "Identitäten und Zugangsdaten",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Übernommene Zugangsdaten bleiben das häufigste Einfallstor: An der Technischen Universität Dänemarks gelangten Angreifer mit gültigen Konten in die Identitätsverwaltung und erbeuteten Daten seit 2003, beim Lieferdienst Flink dienten Zugangsdaten einer ehemals beschäftigten Person als Einstieg. Gegen ShinyHunters, die Personalsoftware als Einfallstor nutzen, gibt es weitere Festnahmen.",
-   "next_step": "Prüfen, ob Identitätsverwaltung und Personalsysteme als Kronjuwelen mit starker Anmeldung und Überwachung auf Datenabflüsse eingestuft sind. Konten und Daten ausgeschiedener Personen nach dem Löschkonzept bereinigen.",
+   "status": "Die amerikanische Bundespolizei warnt am 7. Oktober vor der Angriffswelle FortiBleed: Mit geleakten Zugangsdaten zu über 86.000 Fortinet-Geräten sperren Angreifer Administratoren aus und bereiten Ransomware vor. Zuvor dienten gültige Konten bei der Technischen Universität Dänemarks und Zugangsdaten einer ehemals beschäftigten Person bei Flink als Einstieg.",
+   "next_step": "Administratorkonten und Hash-Verfahren der Firewalls prüfen, Mehr-Faktor-Authentifizierung für alle Fernzugänge belegen und den Entzug von Berechtigungen beim Austritt stichprobenhaft testen.",
    "open_questions": [
-    "Wie lange werden Identitätsdaten ehemaliger Beschäftigter tatsächlich aufbewahrt?",
-    "Werden Massenabfragen aus der Identitätsverwaltung erkannt und gemeldet?"
+    "Gibt es Fernzugänge oder Administrationsoberflächen ohne Mehr-Faktor-Authentifizierung?",
+    "Werden geleakte Zugangsdaten aus Infostealer-Logs systematisch überwacht?"
    ],
    "controls": [
-    "ISO/IEC 27001 Anhang A 5.16 – Identitätsmanagement",
+    "ISO/IEC 27001 Anhang A 5.17 – Authentisierungsinformationen",
     "ISO/IEC 27001 Anhang A 5.18 – Zugangsrechte",
     "IT-Kontrollen der Abschlussprüfung – Zugriffsverwaltung"
    ],
-   "updated": "2026-10-05"
+   "updated": "2026-10-08"
   },
   {
    "slug": "kritische-schwachstellen-perimeter",
@@ -181,17 +194,18 @@
    "title": "Kritische Schwachstellen in Randsystemen und Kernanwendungen",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Atlassian hat am 5. Oktober die kritische Dateizugriffslücke CVE-2026-21589 in allen selbst betriebenen Data-Center-Produkten wie Jira und Confluence geschlossen. Gleichzeitig gibt es Updates für die ausgenutzte Citrix-NetScaler-Lücke CVE-2026-88779, eine nachgeschobene Fassung der Exchange-Updates gegen CVE-2026-96940 und öffentlichen Angriffscode für die SAP-Lücke OVERPASS.",
-   "next_step": "Selbst betriebene Atlassian-Instanzen inventarisieren, aktualisieren oder vom Internet trennen und auf Spuren eines Einbruchs prüfen. Dabei belegen, dass die Nachweise zum Änderungsmanagement unversehrt sind.",
+   "status": "Die Atlassian-Lücke CVE-2026-21589 in allen selbst betriebenen Data-Center-Produkten wird seit der Veröffentlichung von Angriffscode am 5. Oktober aktiv ausgenutzt; bei angebundenem Crowd ist die Übernahme von Administratorkonten möglich. Daneben bleiben die ausgenutzte Citrix-NetScaler-Lücke CVE-2026-88779, die Exchange-Lücke CVE-2026-96940 und die SAP-Lücke OVERPASS mit öffentlichem…",
+   "next_step": "Patchstand der Atlassian-Instanzen belegen, Zugriff von außen einschränken und neu angelegte Administratorkonten seit 5. Oktober prüfen; Notfall-Patch-Prozess auf Reaktionszeiten von Stunden statt Wochen ausrichten.",
    "open_questions": [
-    "Gibt es Atlassian-Instanzen außerhalb des zentralen Bestandsverzeichnisses?",
-    "Wie schnell lassen sich kritische Lücken in Kernanwendungen patchen, wenn Angreifer Lücken mit Agenten automatisch suchen?"
+    "Wie schnell kann der Notfall-Change-Prozess eine kritische Lücke in selbst betriebenen Anwendungen schließen?",
+    "Ist für jede extern erreichbare Anwendung ein verantwortlicher Owner benannt?"
    ],
    "controls": [
-    "ISO/IEC 27001 Anhang A 8.8 – Handhabung technischer Schwachstellen",
+    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
+    "IT-Kontrollen der Abschlussprüfung – Änderungsmanagement",
     "NIS-2-Richtlinie Art. 21 – Umgang mit Schwachstellen"
    ],
-   "updated": "2026-10-07"
+   "updated": "2026-10-08"
   },
   {
    "slug": "nis2-umsetzung",
@@ -291,6 +305,30 @@
     "ISO/IEC 27001 Anhang A 5.24 – Planung und Vorbereitung der Handhabung von Informationssicherheitsvorfällen"
    ],
    "updated": "2026-10-07"
+  },
+  {
+   "slug": "dsgvo-reform-digital-omnibus",
+   "created": "2026-10-08",
+   "ring_history": [
+    {
+     "date": "2026-10-08",
+     "ring": "beobachten"
+    }
+   ],
+   "title": "Datenschutzreform und Digital Omnibus",
+   "sector": "Datenschutz & Datenrecht",
+   "ring": "beobachten",
+   "status": "Der Rat ringt um seine Position zum Digital Omnibus: Die Abstimmung der Ständigen Vertreter wurde vom 7. auf den 11. Oktober 2026 verschoben, Streitpunkte sind Geschäftsgeheimnisse in der Datenverordnung und eine deutsche Ausnahme für risikoarme Verantwortliche. Das Parlament will seine Position im Februar 2027 festlegen, danach folgt der Trilog.",
+   "next_step": "Ergebnis der Ratssitzung vom 11. Oktober auswerten und prüfen, welche Änderungen für Training Künstlicher Intelligenz, Cookies und den Datenzugang nach der Datenverordnung für einen Großkonzern tatsächlich gelten würden.",
+   "open_questions": [
+    "Wird berechtigtes Interesse als Rechtsgrundlage für das Training Künstlicher Intelligenz endgültig verankert?",
+    "Wie werden Geschäftsgeheimnisse beim Datenzugang nach der Datenverordnung geschützt?"
+   ],
+   "controls": [
+    "DSGVO Art. 6 – Rechtmäßigkeit der Verarbeitung",
+    "DSGVO Art. 24 – Verantwortung des Verantwortlichen"
+   ],
+   "updated": "2026-10-08"
   },
   {
    "slug": "post-quanten-kryptografie",
@@ -454,6 +492,19 @@
  ],
  "signals": [
   {
+   "theme": "Neue Prüfungsstandards für Prüfungsnachweise",
+   "why": "Der internationale Standardsetzer für die Abschlussprüfung schlägt einen überarbeiteten Standard zu Prüfungsnachweisen vor, der strengere Anforderungen an die Verlässlichkeit von Informationen aus Systemen stellt. Damit wird die Herkunft von Berichtsdaten stärker zur Prüfungsfrage für allgemeine IT-Kontrollen.",
+   "count": 5,
+   "first_seen": "2026-09-30",
+   "last_seen": "2026-10-08",
+   "evidence": [
+    "https://www.iaasb.org/publications/proposed-revisions-audit-evidence-risk-response-isa-330-isa-500-isa-520",
+    "https://ifacweb.blob.core.windows.net/publicfiles/2026-08/IAASB-Audit-Evidence-Risk-Response-ISA-500-Exposure-Draft.pdf",
+    "https://www.iaasb.org/consultations-projects/audit-evidence-and-risk-response-isa-330-isa-500-isa-520",
+    "https://www.accountingtoday.com/news/iaasb-proposes-to-revise-audit-standards-for-new-risks-and-tech"
+   ]
+  },
+  {
    "theme": "Post-Quanten-Kryptografie-Migration",
    "why": "Forscher haben Signaturen mit 1024-Bit-RSA-Schlüsseln ohne Faktorisierung gefälscht. Moderne Verfahren mit Padding sind nicht betroffen, doch der Fall ist ein weiterer Anlass, kurze Schlüssel und veraltete Verfahren im Kryptografie-Inventar zu suchen.",
    "count": 5,
@@ -481,16 +532,15 @@
    ]
   },
   {
-   "theme": "Neue Prüfungsstandards für Prüfungsnachweise",
-   "why": "Der internationale Standardsetzer für die Abschlussprüfung überarbeitet die Standards zu Prüfungsnachweisen, zur Reaktion auf Risiken und zu analytischen Prüfungshandlungen, damit Prüfer technische Werkzeuge einsetzen können. Kommentare sind bis 15. Dezember 2026 möglich. Damit werden Datenqualität und die Kontrollen an den Schnittstellen der eigenen Systeme selbst zum Prüfungsthema.",
-   "count": 4,
+   "theme": "Digital Fairness Act",
+   "why": "Der Vorschlag der Europäischen Kommission gegen Dark Patterns, personalisierte Preise und süchtig machendes Design wird bis Ende 2026 erwartet. Das betrifft Onlineshops, Apps und Preisalgorithmen im Handel direkt.",
+   "count": 3,
    "first_seen": "2026-09-30",
-   "last_seen": "2026-10-06",
+   "last_seen": "2026-10-08",
    "evidence": [
-    "https://www.iaasb.org/publications/proposed-revisions-audit-evidence-risk-response-isa-330-isa-500-isa-520",
-    "https://ifacweb.blob.core.windows.net/publicfiles/2026-08/IAASB-Audit-Evidence-Risk-Response-ISA-500-Exposure-Draft.pdf",
-    "https://www.iaasb.org/consultations-projects/audit-evidence-and-risk-response-isa-330-isa-500-isa-520",
-    "https://www.accountingtoday.com/news/iaasb-proposes-to-revise-audit-standards-for-new-risks-and-tech"
+    "https://www.privacylaws.com/news/eu-proposal-on-digital-fairness-act-expected-by-the-end-of-2026/",
+    "https://www.europarl.europa.eu/legislative-train/theme-protecting-our-democracy-upholding-our-values/file-digital-fairness-act",
+    "https://www.mlex.com/mlex/articles/2529049/eu-digital-fairness-act-on-consumer-protection-tentatively-eyed-for-november"
    ]
   },
   {
@@ -517,14 +567,13 @@
    ]
   },
   {
-   "theme": "Digital Fairness Act",
-   "why": "Die Europäische Kommission will im vierten Quartal 2026 einen Vorschlag gegen manipulative Gestaltung, Abo-Fallen und unfaire Personalisierung vorlegen. Zusammen mit dem Prime-Urteil zeigt sich, dass Abo- und Preislogiken in Onlineshops zunehmend rechtlich geprüft werden.",
-   "count": 2,
-   "first_seen": "2026-09-30",
-   "last_seen": "2026-10-04",
+   "theme": "Digitale Identitäts-Wallet der Europäischen Union",
+   "why": "Bei der Anhörung zur deutschen Wallet „d-you“ warnten Fachleute vor Identitätsbetrug über kompromittierte Smartphones, zum Beispiel bei Hotelbuchungen, und vor fehlender Prüfung der Dienstanbieter. Händler und Reiseanbieter, die die Wallet künftig akzeptieren, müssen diese Risiken bewerten.",
+   "count": 1,
+   "first_seen": "2026-10-08",
+   "last_seen": "2026-10-08",
    "evidence": [
-    "https://www.europarl.europa.eu/legislative-train/theme-protecting-our-democracy-upholding-our-values/file-digital-fairness-act",
-    "https://www.mlex.com/mlex/articles/2529049/eu-digital-fairness-act-on-consumer-protection-tentatively-eyed-for-november"
+    "https://www.heise.de/news/EUDI-Wallet-Anhoerung-mit-viel-Kritik-an-d-you-Planung-11477850.html"
    ]
   },
   {
@@ -581,6 +630,253 @@
   }
  ],
  "news": [
+  {
+   "title": "Update: Digital Omnibus – Mitgliedstaaten verschieben Position zur Datenschutzreform",
+   "summary": "Der Ausschuss der Ständigen Vertreter der Mitgliedstaaten sollte am 7. Oktober die Position des Rates zum Digital Omnibus beschließen. Auf Druck Deutschlands und Frankreichs wurde nur beraten, die Abstimmung ist auf den 11. Oktober verschoben. Streitpunkte sind der Schutz von Geschäftsgeheimnissen in der Datenverordnung und ein deutscher Vorschlag für risikoarme Verantwortliche, die als Kleinst-, kleine und mittlere Unternehmen oder gemeinnützige Organisationen von vielen Pflichten der Datenschutz-Grundverordnung befreit wären.",
+   "relevance": "Für einen Großkonzern ist kurzfristig keine Entlastung zu erwarten: Das Parlament will seine Position erst im Februar 2027 festlegen, danach beginnt der Trilog. Laufende Datenschutzprojekte sollten nicht wegen der Reform angehalten werden. Berechtigtes Interesse beim Training Künstlicher Intelligenz und neue Cookie-Regeln bleiben aber wichtig für die Planung.",
+   "source": "Agence Europe",
+   "url": "https://agenceurope.eu/en/bulletin/article/13954/5/vote-on-digital-omnibus-postponed-until-11-october-under-pressure-from-paris-and-berlin",
+   "id": "2026-10-08-digital-omnibus-abstimmung-verschoben",
+   "topic": "Datenschutz & Datenrecht",
+   "impact": "mittel",
+   "published": "2026-10-08",
+   "tags": [
+    "Digital Omnibus",
+    "Datenschutzreform",
+    "Datenverordnung"
+   ],
+   "controls": [
+    "DSGVO Art. 6 Abs. 1 lit. f – Berechtigtes Interesse",
+    "DSGVO Art. 24 – Verantwortung des Verantwortlichen"
+   ],
+   "roles": [
+    "Datenschutz",
+    "Management"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "dsgvo-reform-digital-omnibus",
+   "priority": 4,
+   "primary": false,
+   "added": "2026-10-08T05:07:25Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Termine und Streitpunkte sind belegt. Das Training Künstlicher Intelligenz auf Grundlage berechtigter Interessen und die vier Monate geltenden Cookie-Ablehnungen kommen im frei sichtbaren Teil der Quelle nicht vor (der Rest steht hinter einer Bezahlschranke)."
+   }
+  },
+  {
+   "title": "Update: Atlassian-Lücke CVE-2026-21589 wird nach Veröffentlichung von Angriffscode ausgenutzt",
+   "summary": "Nach der Veröffentlichung der Lücke am Montag legte die Sicherheitsfirma watchTowr technische Details samt Angriffscode offen, und Honeypots registrierten innerhalb von zwei Stunden erste Angriffsversuche. Ohne Anmeldung können Angreifer Dateien lesen, deren genauen Pfad sie kennen. Ist Crowd angebunden, liegen dort Zugangsdaten im Klartext, mit denen sich über die Schnittstelle von Crowd ein Jira-Administrator anlegen lässt. Betroffen sind selbst betriebene Data-Center-Produkte wie Jira, Confluence, Bitbucket, Bamboo und Crowd sowie Crucible und Fisheye.",
+   "relevance": "Seit dem Hinweis vom Montag ist aus dem regulären Patch ein Notfall geworden. Für Konzerne mit selbst betriebenen Atlassian-Instanzen heißt das: Updates sofort einspielen, Zugriff von außen einschränken und nachträglich prüfen, ob neue Administratorkonten angelegt wurden.",
+   "source": "BleepingComputer",
+   "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-atlassian-flaw-after-public-poc-release/",
+   "id": "2026-10-08-atlassian-cve-2026-21589-angriffe",
+   "topic": "IT-Governance & Risiko",
+   "impact": "hoch",
+   "published": "2026-10-07",
+   "tags": [
+    "Atlassian",
+    "Schwachstellenmanagement",
+    "Zero Day"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
+    "IT-Kontrollen der Abschlussprüfung – Zugriffsverwaltung",
+    "NIS-2-Richtlinie Art. 21 – Umgang mit Schwachstellen"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Revision & Prüfung"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "kritische-schwachstellen-perimeter",
+   "priority": 1,
+   "primary": false,
+   "added": "2026-10-08T05:07:25Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Datum, Lücke, Zwei-Stunden-Zeitfenster und Crowd-Angriffsweg stimmen. Die Details stammen von der Sicherheitsfirma watchTowr, nicht von einem einzelnen Sicherheitsforscher; dass sie nur wenige Stunden nach der Bekanntgabe kamen, steht so nicht in der Quelle."
+   }
+  },
+  {
+   "title": "FortiBleed: Angreifer sperren Administratoren aus Fortinet-Firewalls aus",
+   "summary": "Die amerikanische Bundespolizei (Federal Bureau of Investigation) warnt vor laufenden Angriffen der Welle FortiBleed. Grundlage ist ein im Juni entdecktes Datenleck mit Zugangsdaten zu inzwischen über 86.000 Fortinet-Geräten. Angreifer legen eigene Administratorkonten an, löschen die bestehenden, ändern Passwörter und knacken erbeutete Passwort-Hashes offline. Die Behörde sieht darin einen Einstieg für die Ransomware-Gruppen INC/Lynx und Payload und empfiehlt, den Zugriff von außen zu beschränken, laufende Virtual-Private-Network-Sitzungen zu beenden, Mehr-Faktor-Authentifizierung zu erzwingen und Protokolle auf unbefugte Änderungen zu prüfen.",
+   "relevance": "Wer im Juni nur geprüft hat, ob eigene Geräte in der Liste stehen, sollte Administratorkonten, Hash-Verfahren und Protokolle der Firewalls jetzt erneut kontrollieren. Ausgesperrte Administratoren an der Netzgrenze treffen Filialen und Logistik zugleich.",
+   "source": "BleepingComputer",
+   "url": "https://www.bleepingcomputer.com/news/security/fbi-ongoing-fortibleed-attacks-lock-out-fortigate-vpn-admins/",
+   "id": "2026-10-08-fortibleed-fbi-warnung",
+   "topic": "IT-Governance & Risiko",
+   "impact": "hoch",
+   "published": "2026-10-07",
+   "tags": [
+    "Fortinet",
+    "Zugangsdaten",
+    "Ransomware"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 5.17 – Authentisierungsinformationen",
+    "ISO/IEC 27001 Anhang A 8.5 – Sichere Authentisierung",
+    "NIS-2-Richtlinie Art. 21 – Mehr-Faktor-Authentifizierung"
+   ],
+   "roles": [
+    "IT-Risiko"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "identitaeten-zugangsdaten",
+   "priority": 2,
+   "primary": false,
+   "added": "2026-10-08T05:07:25Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum, 86.644 Geräte, Datenleck aus dem Juni, INC/Lynx und Payload sowie die Empfehlungen sind belegt."
+   }
+  },
+  {
+   "title": "Update: Ausgelassener Patch – Bundespolizei der Vereinigten Staaten trennt sich von Dienstleister",
+   "summary": "Nach dem Datenabfluss aus ihrem Jobportal hat die amerikanische Bundespolizei die Zusammenarbeit mit dem Dienstleister beendet, der die Personalplattform Oracle PeopleSoft betreute. Laut Bericht lag der Betrieb bei Accenture. Nach Angaben der Behörde hatte der Dienstleister einen ausdrücklich bereitgestellten Patch für die kritische Lücke CVE-2026-35273 (Schweregrad 9,8 von 10) nicht eingespielt. Die Gruppe ShinyHunters nutzte die Lücke seit Ende Mai 2026, also schon vor der Warnung und dem Notfall-Patch von Oracle im Juni.",
+   "relevance": "Ausgelagerter Betrieb verlagert die Verantwortung nicht. Patch-Fristen gehören in Verträge mit Dienstleistern, und ihre Einhaltung muss nachgewiesen und überwacht werden. Das zahlt direkt auf die seit September verbindliche Anforderung der Internen Revision zur Prüfung von Drittparteien ein.",
+   "source": "heise online",
+   "url": "https://www.heise.de/news/FBI-wirft-nach-Datenausleitung-aus-Jobportal-Dienstleister-raus-11479242.html",
+   "id": "2026-10-08-fbi-dienstleister-peoplesoft-patch",
+   "topic": "IT-Governance & Risiko",
+   "impact": "mittel",
+   "published": "2026-10-07",
+   "tags": [
+    "Auslagerung",
+    "Patch-Management",
+    "ShinyHunters"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
+    "ISO/IEC 27001 Anhang A 5.22 – Überwachung von Lieferantendienstleistungen",
+    "IT-Kontrollen der Abschlussprüfung – Dienstleisterüberwachung"
+   ],
+   "roles": [
+    "Einkauf & Drittparteien",
+    "Revision & Prüfung",
+    "Management"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "drittparteien-lieferkette",
+   "priority": 3,
+   "primary": false,
+   "added": "2026-10-08T05:07:25Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Accenture laut Reuters, CVE-2026-35273 mit Schweregrad 9,8, Ausnutzung seit Ende Mai und Notfall-Patch im Juni sind belegt."
+   }
+  },
+  {
+   "title": "Registrierungsstellen von Länderdomains gekapert: echte Zertifikate für Google-Domains",
+   "summary": "Angreifer haben die Registrierungsstellen der Länderdomains von Ghana, Amerikanisch-Samoa und Sierra Leone kompromittiert und die maßgeblichen Einträge im Domain Name System verändert. So bestanden sie die Domainprüfung von Zertifizierungsstellen und erhielten gültige Serverzertifikate, unter anderem für Google-Domains. Google sperrte die Zertifikate in Chrome. Empfohlen werden die Überwachung der Logs zur Zertifikatstransparenz für das gesamte Domain-Portfolio, auch für geparkte Domains, und einschränkende Einträge nach Certification Authority Authorization.",
+   "relevance": "Konzerne mit Marken- und Länderdomains in vielen Staaten tragen ein Risiko, das außerhalb ihres eigenen Einflusses liegt. Ein vollständiges Domain-Inventar mit Verantwortlichen und eine Überwachung neu ausgestellter Zertifikate sind einfache und prüfbare Kontrollen.",
+   "source": "BleepingComputer",
+   "url": "https://www.bleepingcomputer.com/news/security/hackers-hijack-google-domains-after-breaching-cctld-registries/",
+   "id": "2026-10-08-laenderdomains-gekapert-zertifikate",
+   "topic": "Weitere Themen",
+   "impact": "mittel",
+   "published": "2026-10-07",
+   "tags": [
+    "Domains",
+    "Zertifikate",
+    "Markenschutz"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 5.9 – Inventar der Informationen und anderen damit verbundenen Werte",
+    "ISO/IEC 27001 Anhang A 8.24 – Verwendung von Kryptografie"
+   ],
+   "roles": [
+    "IT-Risiko"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": null,
+   "priority": 5,
+   "primary": false,
+   "added": "2026-10-08T05:07:25Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Ghana, Amerikanisch-Samoa und Sierra Leone, die Sperre in Chrome sowie die Empfehlungen zu Zertifikatstransparenz und Certification Authority Authorization sind belegt."
+   }
+  },
+  {
+   "title": "Ransomware-Wiederhersteller angeklagt: Heimlich Lösegeld gezahlt statt entschlüsselt",
+   "summary": "In New York ist der Chef des Ransomware-Wiederherstellers MonsterCloud angeklagt. Er soll Kunden eigene Entschlüsselungsverfahren vorgespielt, tatsächlich aber Lösegeld an die Erpresser gezahlt und ein Vielfaches abgerechnet haben. Zwischen 2018 und 2023 sollen so über 8 Millionen Dollar an Erpresser geflossen und über 19 Millionen Dollar Hunderten Unternehmen in den Vereinigten Staaten und Kanada berechnet worden sein.",
+   "relevance": "Dienstleister für Notfälle gehören vor dem Ernstfall in die Sorgfaltsprüfung, nicht erst in der Nacht des Angriffs. Verträge sollten ausschließen, dass ohne ausdrückliche Freigabe der Geschäftsleitung Lösegeld fließt, schon wegen Sanktionsrecht und Aufsicht.",
+   "source": "BleepingComputer",
+   "url": "https://www.bleepingcomputer.com/news/security/ransomware-recovery-ceo-charged-over-secret-ransom-payments/",
+   "id": "2026-10-08-monstercloud-heimliche-loesegeldzahlungen",
+   "topic": "Weitere Themen",
+   "impact": "mittel",
+   "published": "2026-10-07",
+   "tags": [
+    "Notfallmanagement",
+    "Lösegeld",
+    "Dienstleister"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 5.26 – Reaktion auf Informationssicherheitsvorfälle",
+    "ISO/IEC 27001 Anhang A 5.20 – Behandlung von Informationssicherheit in Lieferantenvereinbarungen"
+   ],
+   "roles": [
+    "Einkauf & Drittparteien",
+    "Management"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "drittparteien-lieferkette",
+   "priority": 6,
+   "primary": false,
+   "added": "2026-10-08T05:07:25Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Anklage in New York (Eastern District), Zeitraum 2018 bis 2023, über 8 Millionen und über 19 Millionen Dollar sowie Hunderte Unternehmen in den Vereinigten Staaten und Kanada sind belegt."
+   }
+  },
+  {
+   "title": "Anthropic bündelt Zugang zu Cyberfähigkeiten in drei Stufen, über 129.000 Lücken gefunden",
+   "summary": "Anthropic hat seine Cyberprogramme Project Glasswing und Cyber Verification Program zusammengeführt. Es gibt nun drei Zugriffsstufen: Verteidigung, Red Teaming nur für Organisationen und einen besonders geprüften Zugang für Tests an kritischer Infrastruktur. Partner von Project Glasswing fanden von April bis Juli über 129.000 verifizierte Schwachstellen und bis Oktober weitere 5.500, davon mehr als 33.000 mit hohem oder kritischem Schweregrad.",
+   "relevance": "Die Zahlen zeigen, wie stark Künstliche Intelligenz die Zahl gefundener Schwachstellen erhöht. Patch- und Schwachstellenmanagement muss stärker priorisieren und mit kürzeren Zyklen rechnen. Zugleich braucht die Nutzung solcher Werkzeuge im eigenen Haus klare Regeln, wer sie wofür einsetzen darf.",
+   "source": "heise online",
+   "url": "https://www.heise.de/news/Anthropic-buendelt-Cyberprogramme-und-fuehrt-drei-Zugriffsstufen-ein-11478953.html",
+   "id": "2026-10-08-anthropic-cyberzugang-drei-stufen",
+   "topic": "AI-Governance",
+   "impact": "info",
+   "published": "2026-10-07",
+   "tags": [
+    "Künstliche Intelligenz",
+    "Schwachstellenflut",
+    "Red Teaming"
+   ],
+   "controls": [
+    "ISO/IEC 42001 – Managementsystem für Künstliche Intelligenz",
+    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Management"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": null,
+   "priority": 7,
+   "primary": false,
+   "added": "2026-10-08T05:07:25Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Zusammenlegung, drei Stufen, 129.000 Schwachstellen von April bis Juli, weitere 5.500 und über 33.000 mit hohem oder kritischem Schweregrad sind belegt."
+   }
+  },
   {
    "title": "Atlassian: Kritische Lücke in Jira, Confluence und weiteren Data-Center-Produkten",
    "summary": "Atlassian hat die Schwachstelle CVE-2026-21589 geschlossen. Mit ihr können Angreifer ohne Anmeldung beliebige Dateien auslesen, sofern sie den genauen Dateipfad kennen; der Schweregrad liegt bei 9,3 von 10. Betroffen sind alle Versionen der selbst betriebenen Data-Center-Produkte Bitbucket, Confluence, Jira Software, Jira Service Management, Bamboo, Crowd, Crucible und Fisheye. Eine Ausnutzung ist bisher nicht bekannt, die Cloud-Varianten sind bereits geschützt. Atlassian empfiehlt, sofort zu aktualisieren, Instanzen notfalls vorübergehend abzuschalten, den Zugriff aus dem Internet zu sperren und nach Spuren eines Einbruchs zu suchen.",
