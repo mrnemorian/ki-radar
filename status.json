@@ -1,11 +1,17 @@
 {
  "last_run": {
-  "start": "2026-10-08T07:00:01+02:00",
-  "end": "2026-10-08T07:07:25+02:00",
+  "start": "2026-10-09T07:00:01+02:00",
+  "end": "2026-10-09T07:08:39+02:00",
   "ok": true,
-  "summary": "7 neue Meldungen: P1 Update: Atlassian-Lücke CVE-2026-21589 wird nach Veröffentlichung von Angriffscode ausgenutzt; P2 FortiBleed: Angreifer sperren Administratoren aus Fortinet-Firewalls aus; P3 Up"
+  "summary": "6 neue Meldungen: P1 824,99 Millionen Euro gegen Uber wegen automatisierter Entscheidungen über Fahrer; P2 Ransomware legt japanische Cloud-Plattform von 495 Kunden lahm; P3 Schweden: Bußgeld trifft"
  },
  "history": [
+  {
+   "start": "2026-10-09T07:00:01+02:00",
+   "end": "2026-10-09T07:08:39+02:00",
+   "ok": true,
+   "summary": "6 neue Meldungen: P1 824,99 Millionen Euro gegen Uber wegen automatisierter Entscheidungen über Fahrer; P2 Ransomware legt japanische Cloud-Plattform von 495 Kunden lahm; P3 Schweden: Bußgeld trifft"
+  },
   {
    "start": "2026-10-08T07:00:01+02:00",
    "end": "2026-10-08T07:07:25+02:00",

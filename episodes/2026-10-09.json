@@ -1,0 +1,303 @@
+{
+ "format": "tiefgang",
+ "chapters": [
+  {
+   "title": "Begrüßung",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Guten Morgen, liebe IT-GRC-Kolleginnen und -Kollegen, willkommen beim IT-GRC Radar. Heute ist Freitag, der neunte Oktober 2026, und freitags nehmen wir uns bekanntlich etwas mehr Zeit."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Gut so, denn diese Woche hatte es in sich. Ein Bußgeld mit einer Acht vorne und ziemlich viele Dienstleister, die plötzlich selbst zum Risiko geworden sind."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Genau dahin geht heute auch unser Tiefgang. Aber zuerst die drei wichtigsten Meldungen."
+    }
+   ]
+  },
+  {
+   "title": "Bußgeld gegen Uber",
+   "news_id": "2026-10-09-uber-bussgeld-automatisierte-entscheidungen",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Die niederländische Datenschutzbehörde hat gegen Uber ein Bußgeld von 824,99 Millionen Euro verhängt, veröffentlicht am achten Oktober. Es geht um Fahrerinnen und Fahrer in Frankreich, deren Konten automatisch gesperrt wurden, wegen Betrugsverdacht oder schlechter Bewertungen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und zwar ohne dass ein Mensch wirklich entschieden hat. Das ist Artikel 22 der Datenschutz-Grundverordnung, also automatisierte Einzelentscheidungen. Dazu kommen fehlende Informationen über das [en]Profiling[/en] nach Artikel 13."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Moment, das ist ein Fahrdienst mit selbstständigen Fahrern. Warum soll uns das im Handel interessieren?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Weil die Logik übertragbar ist. Überall, wo ein System über Menschen entscheidet, bei der Schichtplanung, bei Leistungsbewertungen oder wenn ein Kundenkonto wegen Betrugsverdacht gesperrt wird, stellt sich dieselbe Frage: Entscheidet da noch ein Mensch, oder nickt er nur ab?"
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Also das berühmte [en]Human in the Loop[/en], das in Wahrheit ein [en]Human in the Lunch Break[/en] ist."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Trocken, aber leider nicht ganz falsch. Uber hat Rechtsmittel eingelegt, rechtskräftig ist das also noch nicht. Aber die Höhe zeigt, dass die Aufsicht automatisierte Entscheidungen nicht als Randthema sieht."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Was wäre dein erster Schritt?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ein Inventar aller Anwendungsfälle, in denen Algorithmen über Beschäftigte oder Kunden entscheiden oder Entscheidungen vorbereiten. Für jeden: Wer prüft wirklich, wie werden Betroffene informiert, und wer ist verantwortlich. Wir legen dafür heute übrigens ein neues Dossier an, automatisierte Entscheidungen und algorithmisches Management."
+    }
+   ]
+  },
+  {
+   "title": "Ransomware in japanischer Cloud",
+   "news_id": "2026-10-09-idcf-cloud-ransomware",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Zweites Thema, aus Japan. Beim [en]Cloud[/en]-Anbieter IDC Frontier, einer Tochter der SoftBank-Gruppe, hat am siebten Oktober ein [en]Ransomware[/en]-Angriff die Plattform gestört. Betroffen sind 495 Unternehmen und Kommunen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und die Angaben der Angreifer sind beunruhigend, auch wenn sie unbestätigt sind: angeblich 239 erreichte Hypervisoren, 16.000 verschlüsselte virtuelle Festplatten und über 550.000 gelöschte [en]Snapshots[/en]."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Moment, gelöschte [en]Snapshots[/en]? Das heißt, die Sicherungen lagen im selben Zugriffsbereich wie die Systeme selbst?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Das ist jedenfalls die naheliegende Lehre. Wer die Verwaltungsebene eines Anbieters übernimmt, nimmt im Zweifel die Sicherung gleich mit. Der Anbieter hat vorsorglich den Zugang zur Verwaltungskonsole in allen Regionen gesperrt."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Was heißt das für einen Konzern, der stark auf die [en]Cloud[/en] setzt?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Zwei Fragen an jeden kritischen Anbieter. Erstens: Sind die Sicherungen getrennt, unveränderbar und mit eigenen Zugangsdaten geschützt? Zweitens: Haben wir selbst eine Kopie außerhalb des Anbieters? Die NIS-2-Richtlinie, also die Richtlinie über Netz- und Informationssicherheit, nennt [en]Backup[/en]-Management übrigens ausdrücklich als Mindestmaßnahme."
+    }
+   ]
+  },
+  {
+   "title": "Bußgeld für Dienstleister Miljödata",
+   "news_id": "2026-10-09-miljoedata-bussgeld-auftragsverarbeiter",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Und das dritte Thema: Die schwedische Datenschutzbehörde hat den Dienstleister Miljödata mit rund 160.000 Euro belegt. Nach einem Angriff im August 2025 wurden Daten von 2,2 Millionen Menschen im [en]Darknet[/en] veröffentlicht, darunter Angaben zu Krankschreibungen und Rehabilitation."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Bemerkenswert ist der Adressat. Bestraft wird hier der Auftragsverarbeiter selbst, wegen unzureichender Sicherheit nach Artikel 32. Die Behörde nennt ganz konkret fehlende Kontrollen bei der Softwareinstallation und keine automatisierte Echtzeitüberwachung auf Eindringlinge."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Also genau die Punkte, die in jedem Lieferantenfragebogen stehen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und die in jedem Lieferantenfragebogen mit Ja beantwortet werden. Ein Häkchen ist eben kein Nachweis. Gerade bei Dienstleistern, die Beschäftigtendaten verarbeiten, lohnt sich ein zweiter Blick."
+    }
+   ]
+  },
+  {
+   "title": "Tiefgang: Drittparteien und Lieferkette",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Damit sind wir beim Tiefgang: Drittparteien und Lieferkette. Das Dossier steht bei uns seit Wochen auf jetzt handeln. Warum eigentlich?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Weil fast jeder größere Vorfall der letzten Wochen über einen Dritten lief. Japan und Schweden haben wir gerade gehört. Und da gibt es Neues zu ASOS."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Der britische Modehändler, bei dem Kunden diese unschöne [en]Push[/en]-Nachricht in der App bekommen haben."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Genau. ASOS hat inzwischen erklärt, dass sich Angreifer als vertrauenswürdiger Kontakt ausgegeben und so die Zugangsdaten eines Beschäftigten erschlichen haben, also klassisches [en]Social Engineering[/en]. Damit kamen sie an Plattformen von Drittanbietern. Betroffen sind Namen und Kontaktdaten, Zahlungsdaten laut Unternehmen nicht."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Dazu kamen in den Wochen davor Carrefour in Frankreich über einen Versanddienstleister, Amadeus iHotelier, der Datenaustauschdienst FTAPI. Ist das noch Pech oder schon ein Muster?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ein Muster. Angreifer gehen dahin, wo viele Kunden hinter einer einzigen Tür stehen. Ein [en]Cloud[/en]-Anbieter mit 495 Kunden ist schlicht effizienter als 495 einzelne Angriffe."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Dann spiele ich mal die Gegenseite. Ein Handelskonzern hat Tausende Lieferanten. Wir können doch nicht jeden prüfen wie eine eigene Tochtergesellschaft."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Richtig, und deshalb ist Vollständigkeit die falsche Messlatte. Die Kunst ist die Einstufung: Wer hat Kundendaten, wer hat privilegierten Zugang, und wessen Ausfall wäre geschäftskritisch, etwa für Kasse, Warenwirtschaft oder Buchung?"
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und dann? Noch ein Fragebogen mit 200 Fragen?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ehrlich gesagt eher weniger Fragen und dafür Nachweise. Bei den wirklich kritischen Dienstleistern drei Dinge: Wie sind Sicherungen getrennt, wer hat Administratorrechte, und wie schnell wird gepatcht. Denk an die amerikanische Bundespolizei, die sich gerade von ihrem Dienstleister getrennt hat, weil ein kritischer [en]Patch[/en] fehlte."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Das klingt nach viel Arbeit für Einkauf und Fachbereiche. Wer bezahlt das?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Das ist das ehrliche Contra. Tiefere Prüfungen kosten Zeit, und Lieferanten wehren sich gegen Prüfungsrechte, gerade die großen. Aber der Gegenposten ist ein Vorfall, nach dem man Aufsicht und Kunden erklären muss, warum man den Dienstleister nie wirklich angeschaut hat."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und die Revision schaut ja inzwischen auch genauer hin."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Seit dem fünfzehnten September ist die Anforderung des internationalen Berufsverbands der Internen Revision zur Prüfung von Drittparteien verbindlich. Spätestens in der nächsten Prüfung kommt also die Frage, wie wir Dienstleister steuern."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Gibt es auch ein Argument gegen das Ganze, das nicht nur Aufwand heißt?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ja, ein ernstzunehmendes: Zu viel Kontrolle auf dem Papier erzeugt falsche Sicherheit. Wenn in der Liste alle Lieferanten grün sind, schaut keiner mehr hin. Deshalb würde ich mit Szenarien arbeiten: Was passiert, wenn unser wichtigster [en]Cloud[/en]-Anbieter morgen so aussieht wie IDC Frontier diese Woche?"
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Also eine Übung statt einer Excel-Liste."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Beides, aber die Übung zuerst. Excel-Listen sind geduldig, Angreifer eher nicht."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Dann bitte konkret: Was sind die nächsten Schritte?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Erstens die kritischen Dienstleister nach Daten, Zugang und Ausfallwirkung neu einstufen. Zweitens für jeden davon die Frage nach getrennten, unveränderbaren Sicherungen beantworten lassen, mit Nachweis. Drittens Zugänge zu Plattformen von Drittanbietern, die wir im Kundengeschäft nutzen, mit phishingresistenter Anmeldung absichern, siehe ASOS. Und viertens den Ausfall eines [en]Cloud[/en]-Anbieters einmal wirklich durchspielen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und für jeden dieser Punkte einen [en]Owner[/en]."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Du nimmst mir das Stichwort für später vorweg."
+    }
+   ]
+  },
+  {
+   "title": "Zahl der Woche",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Zahl der Woche. Ich nehme die naheliegende: 824,99 Millionen Euro, das Bußgeld gegen Uber."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und mich beschäftigt daran vor allem der Zeitraum. Die Vorfälle liegen zwischen 2018 und 2022, das Bußgeld kommt 2026. Was wir heute bei automatisierten Entscheidungen einführen, wird vielleicht erst in vier, fünf Jahren geprüft."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Dokumentation ist also ein Brief an das zukünftige Ich."
+    },
+    {
+     "speaker": "Florian",
+     "text": "An das zukünftige Ich und an die Aufsichtsbehörde. Und beide lesen sehr genau."
+    }
+   ]
+  },
+  {
+   "title": "Owner-Moment der Woche",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Jetzt aber der [en]Owner[/en]-Moment der Woche."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Den liefert der Fall der amerikanischen Bundespolizei. Beim Dienstleister, der ihre Personalplattform betreibt, fehlte ein kritischer [en]Patch[/en] für Oracle PeopleSoft, und die Behörde beendet nun die Zusammenarbeit."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und welche Frage sollte sich jeder stellen?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Wer ist bei uns [en]Owner[/en] für [en]Patches[/en] in Systemen, die ein Dienstleister betreibt? Der Dienstleister sagt, der Kunde muss das Wartungsfenster freigeben. Der Kunde sagt, der Dienstleister patcht doch. Und dazwischen liegt eine Lücke, die niemandem gehört."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Das ewige Wer ist eigentlich [en]Owner[/en], diesmal mit Folgen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Genau. Die Lehre ist ganz sachlich: Die Verantwortung für [en]Patches[/en] gehört in den Vertrag und in die Rollenmatrix, mit Frist und Nachweis. Sonst gilt sie als erledigt, bis sie es plötzlich nicht mehr ist."
+    }
+   ]
+  },
+  {
+   "title": "Auf dem Radar",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Auf dem Radar heute: neue Prüfungsstandards für Prüfungsnachweise. Der internationale Standardsetzer für die Abschlussprüfung hat den Entwurf für den überarbeiteten Prüfungsstandard 500 veröffentlicht, Kommentare sind bis zum fünfzehnten Dezember 2026 möglich."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Der Kern: Prüfungsnachweise werden für eine digitale Umgebung neu definiert, und Prüfer sollen strenger testen, ob Informationen relevant und verlässlich sind. Für uns heißt das mittelfristig: Systemberichte, Schnittstellen und die Herkunft von Daten rücken noch stärker in die Prüfung der Informationstechnik."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Also noch mehr Fragen in der [en]Audit[/en]-Saison."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Mehr Fragen, ja. Aber auch die Chance, sauber dokumentierte Datenflüsse endlich einmal zu nutzen, statt sie nur zu pflegen."
+    }
+   ]
+  },
+  {
+   "title": "Abschied",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Das war unser Freitag. Alle Quellen findet ihr wie immer auf der Webseite, dazu die Dossiers mit dem aktuellen Stand."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Dort stehen auch die beiden Meldungen, die wir heute nicht besprochen haben: die Angriffe über Gastnetze in Hotels und die infizierten Server für Künstliche Intelligenz."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Schönes Wochenende und bis Montag."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Bis Montag. Und vorher vielleicht noch kurz nachschauen, wer eigentlich [en]Owner[/en] ist."
+    }
+   ]
+  }
+ ]
+}

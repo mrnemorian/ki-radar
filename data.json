@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-08T05:07:25Z",
+ "updated": "2026-10-09T05:08:39Z",
  "topics": [
   "IT-Governance & Risiko",
   "Cyber- & IT-Regulierung",
@@ -11,6 +11,18 @@
   "Weitere Themen"
  ],
  "briefings": [
+  {
+   "date": "2026-10-09",
+   "headline": "Bußgeld von 825 Millionen Euro gegen Uber für automatisierte Entscheidungen, Ransomware legt japanische Cloud lahm, Auftragsverarbeiter haftet selbst.",
+   "points": [
+    "Niederländische Datenschutzbehörde verhängt 824,99 Millionen Euro gegen Uber wegen automatischer Kontosperren ohne menschliche Entscheidung und fehlender Information über Profiling.",
+    "Ransomware trifft den japanischen Cloud-Anbieter IDC Frontier: 495 Unternehmen und Kommunen betroffen, Angreifer behaupten über 550.000 gelöschte Snapshots.",
+    "Schwedische Datenschutzbehörde bestraft den Dienstleister Miljödata direkt wegen unzureichender Sicherheit, nachdem Daten von 2,2 Millionen Menschen veröffentlicht wurden.",
+    "Update zu ASOS: Social Engineering gegen Beschäftigte öffnete den Zugang zu Kommunikationsplattformen von Drittanbietern.",
+    "Gastnetze in Hotels und offen erreichbare Server für Künstliche Intelligenz bleiben Einfallstore für Zugangsdaten und Schadsoftware."
+   ],
+   "count": 6
+  },
   {
    "date": "2026-10-08",
    "headline": "Atlassian-Lücke wird angegriffen, FortiBleed sperrt Administratoren aus, und ein ausgelassener Patch kostet einen Dienstleister den Auftrag der Bundespolizei.",
@@ -144,18 +156,18 @@
    "title": "Drittparteien- und Lieferkettenrisiko",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Die amerikanische Bundespolizei beendet die Zusammenarbeit mit dem Dienstleister ihrer Personalplattform, weil ein kritischer PeopleSoft-Patch fehlte; in New York ist zudem der Chef eines Ransomware-Wiederherstellers wegen heimlicher Lösegeldzahlungen angeklagt. Davor häuften sich Vorfälle über Dienstleister bei ASOS, Carrefour France, Amadeus iHotelier und FTAPI; die Anforderung der Internen…",
-   "next_step": "Patch-Fristen und Nachweispflichten in Verträgen mit Betriebsdienstleistern prüfen und Notfalldienstleister vorab bewerten, einschließlich klarer Regeln zu Lösegeldzahlungen.",
+   "status": "Beim japanischen Cloud-Anbieter IDC Frontier legte Ransomware am 7. Oktober 2026 die Plattform von 495 Kunden lahm, die Angreifer behaupten über 550.000 gelöschte Snapshots; die schwedische Datenschutzbehörde bestraft den Dienstleister Miljödata direkt wegen unzureichender Sicherheit. Zuvor trennte sich die amerikanische Bundespolizei wegen eines fehlenden PeopleSoft-Patches von ihrem…",
+   "next_step": "Kritische Dienstleister nach Datenzugriff, privilegiertem Zugang und Ausfallwirkung neu einstufen, für diese Nachweise zu getrennten, unveränderbaren Sicherungen und zur Patch-Verantwortung einholen und den Ausfall eines Cloud-Anbieters als Szenario üben.",
    "open_questions": [
-    "Liegen für ausgelagerte Plattformen belastbare Nachweise zum Patchstand vor?",
-    "Wer entscheidet im Ernstfall über Zahlungen an Erpresser, und ist das vertraglich mit Dienstleistern geregelt?"
+    "Halten die Sicherungen bei Cloud-Anbietern einer Übernahme der Verwaltungsebene stand?",
+    "Ist die Patch-Verantwortung für vom Dienstleister betriebene Systeme vertraglich und in der Rollenmatrix eindeutig geregelt?"
    ],
    "controls": [
     "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
     "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen",
-    "ISO/IEC 27001 Anhang A 5.22 – Überwachung von Lieferantendienstleistungen"
+    "DSGVO Art. 28 – Auftragsverarbeiter"
    ],
-   "updated": "2026-10-08"
+   "updated": "2026-10-09"
   },
   {
    "slug": "identitaeten-zugangsdaten",
@@ -169,18 +181,17 @@
    "title": "Identitäten und Zugangsdaten",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Die amerikanische Bundespolizei warnt am 7. Oktober vor der Angriffswelle FortiBleed: Mit geleakten Zugangsdaten zu über 86.000 Fortinet-Geräten sperren Angreifer Administratoren aus und bereiten Ransomware vor. Zuvor dienten gültige Konten bei der Technischen Universität Dänemarks und Zugangsdaten einer ehemals beschäftigten Person bei Flink als Einstieg.",
-   "next_step": "Administratorkonten und Hash-Verfahren der Firewalls prüfen, Mehr-Faktor-Authentifizierung für alle Fernzugänge belegen und den Entzug von Berechtigungen beim Austritt stichprobenhaft testen.",
+   "status": "ASOS bestätigt am 8. Oktober 2026, dass erschlichene Zugangsdaten eines Beschäftigten den Zugriff auf Kommunikationsplattformen von Drittanbietern ermöglichten; die staatliche Kampagne CaptiveCrunch stiehlt seit 29. September wieder über Gastnetze in Hotels Zugangstoken, unter anderem per Anmeldung mit Gerätecode. Parallel läuft die Angriffswelle FortiBleed mit geleakten Zugangsdaten zu über…",
+   "next_step": "Phishingresistente Anmeldung auch für Marketing- und Benachrichtigungsplattformen von Drittanbietern durchsetzen, die Anmeldung per Gerätecode dort sperren, wo sie nicht gebraucht wird, und Reiseregeln für Firmengeräte prüfen.",
    "open_questions": [
-    "Gibt es Fernzugänge oder Administrationsoberflächen ohne Mehr-Faktor-Authentifizierung?",
-    "Werden geleakte Zugangsdaten aus Infostealer-Logs systematisch überwacht?"
+    "Sind alle Konten auf Software-as-a-Service-Plattformen von Drittanbietern an das zentrale Identitätsmanagement angebunden?"
    ],
    "controls": [
     "ISO/IEC 27001 Anhang A 5.17 – Authentisierungsinformationen",
-    "ISO/IEC 27001 Anhang A 5.18 – Zugangsrechte",
-    "IT-Kontrollen der Abschlussprüfung – Zugriffsverwaltung"
+    "ISO/IEC 27001 Anhang A 8.5 – Sichere Authentisierung",
+    "NIS-2-Richtlinie Art. 21 – Multifaktor-Authentifizierung"
    ],
-   "updated": "2026-10-08"
+   "updated": "2026-10-09"
   },
   {
    "slug": "kritische-schwachstellen-perimeter",
@@ -259,6 +270,31 @@
    "updated": "2026-10-06"
   },
   {
+   "slug": "algorithmisches-management",
+   "created": "2026-10-09",
+   "ring_history": [
+    {
+     "date": "2026-10-09",
+     "ring": "vorbereiten"
+    }
+   ],
+   "title": "Automatisierte Entscheidungen und algorithmisches Management",
+   "sector": "Datenschutz & Datenrecht",
+   "ring": "vorbereiten",
+   "status": "Die niederländische Datenschutzbehörde hat am 8. Oktober 2026 gegen Uber 824,99 Millionen Euro wegen automatischer Kontosperren ohne menschliche Entscheidung und fehlender Information über Profiling verhängt, die Entscheidung ist noch nicht rechtskräftig. Systeme Künstlicher Intelligenz für Einstellung, Aufgabenverteilung und Leistungsüberwachung gelten nach dem Digital Omnibus ab 2. Dezember…",
+   "next_step": "Anwendungsfälle erfassen, in denen Algorithmen Entscheidungen über Beschäftigte oder Kunden treffen oder vorbereiten, und für jeden die menschliche Prüfung, die Information der Betroffenen und den Verantwortlichen dokumentieren.",
+   "open_questions": [
+    "Ab wann gilt eine von Menschen nur bestätigte Empfehlung als automatisierte Entscheidung?",
+    "Wie greifen Datenschutz-Grundverordnung und Hochrisiko-Pflichten der Verordnung über Künstliche Intelligenz bei Personalsystemen ineinander?"
+   ],
+   "controls": [
+    "DSGVO Art. 22 – Automatisierte Entscheidungen im Einzelfall einschließlich Profiling",
+    "DSGVO Art. 35 – Datenschutz-Folgenabschätzung",
+    "ISO/IEC 42001 – Managementsystem für Künstliche Intelligenz"
+   ],
+   "updated": "2026-10-09"
+  },
+  {
    "slug": "pruefung-it-ki",
    "created": "2026-10-04",
    "ring_history": [
@@ -294,17 +330,17 @@
    "title": "Sicherheit agentischer Künstlicher Intelligenz",
    "sector": "AI-Governance",
    "ring": "vorbereiten",
-   "status": "Agenten werden auf beiden Seiten zum Risiko: In Südkorea griffen Angreifer mutmaßlich mit Werkzeugen der Künstlichen Intelligenz mehrere Großbanken an, und OpenAI informierte über 100 Organisationen über fehlgeleitete eigene Agenten. Anbieter von Betriebssystemen gehen beim Vollzugriff durch Agenten unterschiedliche Wege.",
-   "next_step": "Einen Prozess festlegen, wie Hinweise von Anbietern Künstlicher Intelligenz angenommen und bewertet werden. Angriffe durch Agenten als eigenes Szenario in die Risikoanalyse aufnehmen.",
+   "status": "Die Schadsoftware PoeLLM hat über 3.400 offen erreichbare Server für Künstliche Intelligenz befallen, unter anderem über die Lücke CVE-2026-42271 im Model-Context-Protocol-Server von LiteLLM. Zuvor griffen Angreifer in Südkorea mutmaßlich mit Werkzeugen der Künstlichen Intelligenz Großbanken an, und OpenAI informierte über 100 Organisationen über fehlgeleitete eigene Agenten.",
+   "next_step": "Selbst betriebene Modell-Server, Vermittler und Model-Context-Protocol-Server inventarisieren, ins Schwachstellenmanagement aufnehmen und nicht direkt aus dem Internet erreichbar betreiben.",
    "open_questions": [
-    "Ab wann gilt Aktivität fremder Agenten als meldepflichtiger Sicherheitsvorfall?",
-    "Welche eigenen Agenten haben Zugriff auf Systeme mit Kunden- oder Beschäftigtendaten?"
+    "Wer ist Owner für Infrastruktur Künstlicher Intelligenz, die Fachbereiche selbst aufsetzen?"
    ],
    "controls": [
-    "ISO/IEC 42001 – Managementsystem für Künstliche Intelligenz",
-    "ISO/IEC 27001 Anhang A 5.24 – Planung und Vorbereitung der Handhabung von Informationssicherheitsvorfällen"
+    "ISO/IEC 27001 Anhang A 5.9 – Inventar der Informationen und anderen zugehörigen Werte",
+    "ISO/IEC 27001 Anhang A 8.8 – Handhabung von technischen Schwachstellen",
+    "ISO/IEC 42001 – Managementsystem für Künstliche Intelligenz"
    ],
-   "updated": "2026-10-07"
+   "updated": "2026-10-09"
   },
   {
    "slug": "dsgvo-reform-digital-omnibus",
@@ -493,13 +529,13 @@
  "signals": [
   {
    "theme": "Neue Prüfungsstandards für Prüfungsnachweise",
-   "why": "Der internationale Standardsetzer für die Abschlussprüfung schlägt einen überarbeiteten Standard zu Prüfungsnachweisen vor, der strengere Anforderungen an die Verlässlichkeit von Informationen aus Systemen stellt. Damit wird die Herkunft von Berichtsdaten stärker zur Prüfungsfrage für allgemeine IT-Kontrollen.",
-   "count": 5,
+   "why": "Der internationale Standardsetzer für Abschlussprüfung hat den Entwurf des überarbeiteten Prüfungsstandards 500 zur Kommentierung bis 15. Dezember 2026 veröffentlicht: Prüfungsnachweise werden für eine digitale Umgebung neu definiert, Relevanz und Verlässlichkeit von Informationen sind strenger zu testen. Systemberichte, Schnittstellen und Datenherkunft rücken damit stärker in die Prüfung der…",
+   "count": 6,
    "first_seen": "2026-09-30",
-   "last_seen": "2026-10-08",
+   "last_seen": "2026-10-09",
    "evidence": [
-    "https://www.iaasb.org/publications/proposed-revisions-audit-evidence-risk-response-isa-330-isa-500-isa-520",
     "https://ifacweb.blob.core.windows.net/publicfiles/2026-08/IAASB-Audit-Evidence-Risk-Response-ISA-500-Exposure-Draft.pdf",
+    "https://www.iaasb.org/publications/proposed-revisions-audit-evidence-risk-response-isa-330-isa-500-isa-520",
     "https://www.iaasb.org/consultations-projects/audit-evidence-and-risk-response-isa-330-isa-500-isa-520",
     "https://www.accountingtoday.com/news/iaasb-proposes-to-revise-audit-standards-for-new-risks-and-tech"
    ]
@@ -519,6 +555,18 @@
    ]
   },
   {
+   "theme": "Digital Fairness Act",
+   "why": "Die Europäische Kommission plant den Vorschlag laut Arbeitsprogramm im vierten Quartal 2026; er soll Dark Patterns, suchterzeugendes Design und unfaire Personalisierung regeln. Das kann Onlineshops, Apps und Preisgestaltung eines Handels- und Touristikkonzerns unmittelbar betreffen.",
+   "count": 4,
+   "first_seen": "2026-09-30",
+   "last_seen": "2026-10-09",
+   "evidence": [
+    "https://www.europarl.europa.eu/legislative-train/theme-protecting-our-democracy-upholding-our-values/file-digital-fairness-act",
+    "https://www.privacylaws.com/news/eu-proposal-on-digital-fairness-act-expected-by-the-end-of-2026/",
+    "https://www.mlex.com/mlex/articles/2529049/eu-digital-fairness-act-on-consumer-protection-tentatively-eyed-for-november"
+   ]
+  },
+  {
    "theme": "Autonome Angriffe durch Agenten",
    "why": "Die koreanischen Bankenangriffe zeigen, dass Angreifer mit Agenten systematisch nach Schwachstellen in Systemen für Beschäftigte suchen. Patch- und Erkennungszeiten werden dadurch kürzer, als es klassische Planungen annehmen.",
    "count": 4,
@@ -529,18 +577,6 @@
     "https://www.securityweek.com/zammad-zero-days-exploited-in-ai-powered-divd-hack/",
     "https://www.bleepingcomputer.com/news/security/autonomous-ai-agents-tried-to-hack-us-canadian-government-websites/",
     "https://www.bleepingcomputer.com/news/security/automated-ai-agent-used-to-breach-cybersecurity-nonprofit-divd/"
-   ]
-  },
-  {
-   "theme": "Digital Fairness Act",
-   "why": "Der Vorschlag der Europäischen Kommission gegen Dark Patterns, personalisierte Preise und süchtig machendes Design wird bis Ende 2026 erwartet. Das betrifft Onlineshops, Apps und Preisalgorithmen im Handel direkt.",
-   "count": 3,
-   "first_seen": "2026-09-30",
-   "last_seen": "2026-10-08",
-   "evidence": [
-    "https://www.privacylaws.com/news/eu-proposal-on-digital-fairness-act-expected-by-the-end-of-2026/",
-    "https://www.europarl.europa.eu/legislative-train/theme-protecting-our-democracy-upholding-our-values/file-digital-fairness-act",
-    "https://www.mlex.com/mlex/articles/2529049/eu-digital-fairness-act-on-consumer-protection-tentatively-eyed-for-november"
    ]
   },
   {
@@ -631,6 +667,154 @@
  ],
  "news": [
   {
+   "title": "824,99 Millionen Euro gegen Uber wegen automatisierter Entscheidungen über Fahrer",
+   "summary": "Die niederländische Datenschutzbehörde Autoriteit Persoonsgegevens hat gegen Uber ein Bußgeld von 824,99 Millionen Euro verhängt, weil Konten von Fahrerinnen und Fahrern in Frankreich wegen Betrugsverdachts oder schlechter Bewertungen automatisch gesperrt wurden. Verstoßen wurde gegen das Verbot automatisierter Einzelentscheidungen nach Artikel 22 und gegen die Informationspflichten nach Artikel 13 der Datenschutz-Grundverordnung; die Vorfälle stammen aus den Jahren 2018 bis 2022. Uber hat Rechtsmittel eingelegt, die Entscheidung ist nicht rechtskräftig.",
+   "relevance": "Jede algorithmische Entscheidung über Beschäftigte oder Kunden, etwa in der Personaleinsatzplanung, bei Leistungsbewertungen oder bei Sperren wegen Betrugsverdachts, braucht eine echte menschliche Prüfung und transparente Information. Die Höhe zeigt, dass Aufsichtsbehörden das als Kernthema behandeln, auch Jahre nach den Vorfällen.",
+   "source": "Europäischer Datenschutzausschuss",
+   "url": "https://www.edpb.europa.eu/news/dutch-dpa-fines-uber-eur-824-990-000-for-unlawful-automated-decision-making-and-insufficient_en",
+   "id": "2026-10-09-uber-bussgeld-automatisierte-entscheidungen",
+   "topic": "Datenschutz & Datenrecht",
+   "impact": "hoch",
+   "published": "2026-10-08",
+   "tags": [
+    "Automatisierte Entscheidungen",
+    "Bußgeld",
+    "Beschäftigtendaten"
+   ],
+   "controls": [
+    "DSGVO Art. 22 – Automatisierte Entscheidungen im Einzelfall einschließlich Profiling",
+    "DSGVO Art. 13 – Informationspflicht bei Erhebung",
+    "ISO/IEC 42001 – Managementsystem für Künstliche Intelligenz"
+   ],
+   "roles": [
+    "Datenschutz",
+    "Management",
+    "IT-Risiko"
+   ],
+   "countries": [
+    "NL",
+    "FR",
+    "EU"
+   ],
+   "dossier": "algorithmisches-management",
+   "priority": 1,
+   "primary": true,
+   "added": "2026-10-09T05:08:39Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Die Quelle nennt nur Beschwerden von 171 französischen Fahrerinnen und Fahrern. Die Niederlande werden nur als Sitz der Europazentrale von Uber und damit als zuständige Behörde genannt, nicht als Land betroffener Fahrer. Datum, Betrag, Artikel, Zeitraum und Rechtsmittel stimmen."
+   }
+  },
+  {
+   "title": "Ransomware legt japanische Cloud-Plattform von 495 Kunden lahm",
+   "summary": "Am 7. Oktober 2026 hat ein Ransomware-Angriff die Plattform IDCF Cloud des Anbieters IDC Frontier, einer Tochter der SoftBank-Gruppe, gestört; betroffen sind 495 Unternehmen und Kommunen. Die Angreifer behaupten, 239 Hypervisoren erreicht, 16.000 virtuelle Festplatten verschlüsselt und über 550.000 Snapshots gelöscht zu haben. Der Anbieter hat betroffene Systeme isoliert und den Zugang zur Verwaltungskonsole in allen Regionen gesperrt.",
+   "relevance": "Wer die Verwaltungsebene eines Cloud-Anbieters übernimmt, kann Produktivsysteme und Sicherungen zugleich treffen. Für einen Konzern mit vielen Cloud-Diensten stellt sich die Frage, ob Sicherungen getrennt und unveränderbar sind und ob eine Kopie außerhalb des Anbieters existiert.",
+   "source": "BleepingComputer",
+   "url": "https://www.bleepingcomputer.com/news/security/ransomware-attack-disrupts-japans-idcf-cloud-used-by-govt-clients/",
+   "id": "2026-10-09-idcf-cloud-ransomware",
+   "topic": "IT-Governance & Risiko",
+   "impact": "mittel",
+   "published": "2026-10-08",
+   "tags": [
+    "Cloud",
+    "Ransomware",
+    "Konzentrationsrisiko"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Backup-Management und Krisenmanagement",
+    "ISO/IEC 27001 Anhang A 8.13 – Sicherung von Information",
+    "ISO/IEC 27001 Anhang A 5.30 – Bereitschaft der Informations- und Kommunikationstechnik für Business Continuity"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Einkauf & Drittparteien"
+   ],
+   "countries": [
+    "JP"
+   ],
+   "dossier": "drittparteien-lieferkette",
+   "priority": 2,
+   "primary": false,
+   "added": "2026-10-09T05:08:39Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum 8. Oktober 2026, Angriff am 7. Oktober, 495 Unternehmen und Kommunen, Tochter der SoftBank-Gruppe, 239 Hypervisoren, 16.000 virtuelle Festplatten und 554.153 Snapshots laut Angreifern sowie Isolierung und gesperrte Verwaltungskonsolen: alles belegt."
+   }
+  },
+  {
+   "title": "Schweden: Bußgeld trifft Dienstleister Miljödata direkt wegen schwacher Sicherheit",
+   "summary": "Die schwedische Datenschutzbehörde hat den Dienstleister Miljödata mit 1,8 Millionen Kronen, rund 160.000 Euro, belegt. Bei einem Angriff im August 2025 wurden Daten von 2,2 Millionen Menschen veröffentlicht, darunter Angaben zu Krankschreibungen und Rehabilitation, betroffen waren die meisten schwedischen Kommunen und viele Unternehmen. Die Behörde rügt fehlende Kontrollen bei der Softwareinstallation und fehlende automatisierte Echtzeitüberwachung als Verstoß gegen Artikel 32 der Datenschutz-Grundverordnung.",
+   "relevance": "Auftragsverarbeiter haften selbst, doch der Schaden trifft die Auftraggeber und deren Beschäftigte. Die konkret benannten Mängel eignen sich als Prüfpunkte für Personal- und Gesundheitsdienstleister, die Beschäftigtendaten verarbeiten: Nachweise statt angekreuzter Fragebögen.",
+   "source": "Europäischer Datenschutzausschuss",
+   "url": "https://www.edpb.europa.eu/news/swedish-dpa-fines-miljodata-i-karlskrona-approximately-eur-160-000-for-insufficient-technical_en",
+   "id": "2026-10-09-miljoedata-bussgeld-auftragsverarbeiter",
+   "topic": "Datenschutz & Datenrecht",
+   "impact": "mittel",
+   "published": "2026-10-08",
+   "tags": [
+    "Auftragsverarbeitung",
+    "Bußgeld",
+    "Lieferantenprüfung"
+   ],
+   "controls": [
+    "DSGVO Art. 32 – Sicherheit der Verarbeitung",
+    "DSGVO Art. 28 – Auftragsverarbeiter",
+    "ISO/IEC 27001 Anhang A 8.16 – Überwachungstätigkeiten"
+   ],
+   "roles": [
+    "Datenschutz",
+    "Einkauf & Drittparteien"
+   ],
+   "countries": [
+    "SE",
+    "EU"
+   ],
+   "dossier": "drittparteien-lieferkette",
+   "priority": 3,
+   "primary": true,
+   "added": "2026-10-09T05:08:39Z",
+   "check": {
+    "verdict": "ok",
+    "note": "1,8 Millionen Kronen beziehungsweise rund 160.000 Euro, Angriff im August 2025, 2,2 Millionen Betroffene, Krankschreibungen und Rehabilitation, fehlende Installationskontrollen und Echtzeitüberwachung sowie Artikel 32: alles belegt. Datum 8. Oktober 2026 stimmt."
+   }
+  },
+  {
+   "title": "Update: ASOS – erschlichene Zugangsdaten öffneten Plattformen von Drittanbietern",
+   "summary": "Der britische Onlinehändler ASOS hat erklärt, dass sich Angreifer als vertrauenswürdiger Kontakt ausgaben, so die Zugangsdaten eines Beschäftigten erlangten und damit auf bestimmte Plattformen von Drittanbietern zugriffen. Neu gegenüber dem bisherigen Stand ist damit der Einstiegsweg: Social Engineering statt einer technischen Lücke; betroffen sind Namen und Kontaktdaten, Zahlungsdaten und Passwörter nach Angaben des Unternehmens nicht. ASOS arbeitet mit Strafverfolgung und Aufsichtsbehörden zusammen, eine Zahl der Betroffenen nennt das Unternehmen nicht.",
+   "relevance": "Marketing- und Benachrichtigungsplattformen von Drittanbietern hängen oft an einzelnen Konten von Beschäftigten und fallen aus dem Blick des Identitätsmanagements. Phishingresistente Anmeldung und zentrale Kontenverwaltung auch für diese Plattformen sind im Onlinehandel Pflichtprogramm.",
+   "source": "BleepingComputer",
+   "url": "https://www.bleepingcomputer.com/news/security/asos-links-data-breach-to-social-engineering-attack-credential-theft/",
+   "id": "2026-10-09-update-asos-social-engineering",
+   "topic": "Handel & Branche",
+   "impact": "mittel",
+   "published": "2026-10-08",
+   "tags": [
+    "Onlinehandel",
+    "Social Engineering",
+    "Drittplattformen"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 5.17 – Authentisierungsinformationen",
+    "ISO/IEC 27001 Anhang A 6.3 – Sensibilisierung, Ausbildung und Schulung",
+    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Einkauf & Drittparteien"
+   ],
+   "countries": [
+    "GB"
+   ],
+   "dossier": "identitaeten-zugangsdaten",
+   "priority": 4,
+   "primary": false,
+   "added": "2026-10-09T05:08:39Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Die Quelle spricht nur von bestimmten Plattformen von Drittanbietern, nicht von Kommunikationsplattformen. Dass ASOS die Erklärung am 8. Oktober abgegeben hat, ist nicht belegt; der 8. Oktober ist das Datum des Artikels. Die Push-Nachricht an Kunden haben die Angreifer am 6. Oktober über die App…"
+   }
+  },
+  {
    "title": "Update: Digital Omnibus – Mitgliedstaaten verschieben Position zur Datenschutzreform",
    "summary": "Der Ausschuss der Ständigen Vertreter der Mitgliedstaaten sollte am 7. Oktober die Position des Rates zum Digital Omnibus beschließen. Auf Druck Deutschlands und Frankreichs wurde nur beraten, die Abstimmung ist auf den 11. Oktober verschoben. Streitpunkte sind der Schutz von Geschäftsgeheimnissen in der Datenverordnung und ein deutscher Vorschlag für risikoarme Verantwortliche, die als Kleinst-, kleine und mittlere Unternehmen oder gemeinnützige Organisationen von vielen Pflichten der Datenschutz-Grundverordnung befreit wären.",
    "relevance": "Für einen Großkonzern ist kurzfristig keine Entlastung zu erwarten: Das Parlament will seine Position erst im Februar 2027 festlegen, danach beginnt der Trilog. Laufende Datenschutzprojekte sollten nicht wegen der Reform angehalten werden. Berechtigtes Interesse beim Training Künstlicher Intelligenz und neue Cookie-Regeln bleiben aber wichtig für die Planung.",
@@ -663,6 +847,40 @@
    "check": {
     "verdict": "abweichung",
     "note": "Termine und Streitpunkte sind belegt. Das Training Künstlicher Intelligenz auf Grundlage berechtigter Interessen und die vier Monate geltenden Cookie-Ablehnungen kommen im frei sichtbaren Teil der Quelle nicht vor (der Rest steht hinter einer Bezahlschranke)."
+   }
+  },
+  {
+   "title": "Schadsoftware PoeLLM befällt über 3.400 offen erreichbare Server für Künstliche Intelligenz",
+   "summary": "Die Schadsoftware PoeLLM hat über 3.400 Server kompromittiert, darunter Installationen des Modell-Vermittlers LiteLLM und der Modell-Laufzeitumgebung Ollama; an einem Tag waren bis zu 800 gleichzeitig aktiv. Ausgenutzt wird unter anderem die Lücke CVE-2026-42271 im Model-Context-Protocol-Server von LiteLLM, die zusammen mit CVE-2026-48710 Codeausführung ohne Anmeldung erlaubt. Die Angreifer nutzen Grafikprozessoren für Kryptomining, gespeicherte Programmierschnittstellen-Schlüssel und Zugangsdaten sind gefährdet.",
+   "relevance": "Server für Künstliche Intelligenz entstehen oft in Fachbereichen oder Projekten außerhalb des regulären Schwachstellen- und Asset-Managements. Ein Inventar dieser Systeme und das Verbot direkter Erreichbarkeit aus dem Internet gehören in die Governance für Künstliche Intelligenz.",
+   "source": "BleepingComputer",
+   "url": "https://www.bleepingcomputer.com/news/security/poellm-malware-infects-exposed-ai-servers-in-cryptomining-attacks/",
+   "id": "2026-10-09-poellm-ki-server",
+   "topic": "AI-Governance",
+   "impact": "mittel",
+   "published": "2026-10-07",
+   "tags": [
+    "Schatten-KI",
+    "Schwachstellen",
+    "Model Context Protocol"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 5.9 – Inventar der Informationen und anderen zugehörigen Werte",
+    "ISO/IEC 27001 Anhang A 8.8 – Handhabung von technischen Schwachstellen"
+   ],
+   "roles": [
+    "IT-Risiko"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "agentische-ki-sicherheit",
+   "priority": 6,
+   "primary": false,
+   "added": "2026-10-09T05:08:39Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum 7. Oktober 2026, über 3.400 Server, bis zu 800 an einem Tag aktiv, LiteLLM und Ollama, CVE-2026-42271 im Model-Context-Protocol-Server zusammen mit CVE-2026-48710 für Codeausführung ohne Anmeldung, Kryptomining mit Grafikprozessoren: alles belegt."
    }
   },
   {
@@ -1823,6 +2041,41 @@
    "check": {
     "verdict": "ok",
     "note": "Der Newsletter des Instituts vom 1. Oktober 2026 nennt die Ausgabe 19/2026 mit dem Beitrag von Sabine Samtleben zur berufsrechtlichen Zulässigkeit, Mandantendaten zum Training von KI-Systemen zu nutzen."
+   }
+  },
+  {
+   "title": "Staatliche Angreifer kapern wieder Gastnetze in Hotels, um Reisende anzugreifen",
+   "summary": "Nach Angaben von Microsoft vom 5. Oktober 2026 ist die Kampagne CaptiveCrunch der Gruppe Storm-2945, die dem russischen Auslandsgeheimdienst zugeordnet wird, seit 29. September wieder aktiv. Über manipulierte Anmeldeseiten in Gastnetzen von Hotels, Flughäfen und Konferenzzentren werden Reisenden falsche Updates untergeschoben oder Anmeldungen per Gerätecode erschlichen, um Zugangstoken für Microsoft 365 zu stehlen. Microsoft empfiehlt unter anderem, die Anmeldung per Gerätecode zu blockieren und öffentliche Gastnetze nach Möglichkeit zu meiden.",
+   "relevance": "Für einen Touristikkonzern betrifft das sowohl reisende Beschäftigte als auch Partnerhotels und deren Gäste. Bedingter Zugriff, gesperrte Anmeldung per Gerätecode und klare Reiseregeln für Firmengeräte sind schnell umsetzbare Kontrollen.",
+   "source": "Cybernews",
+   "url": "https://cybernews.com/security/microsoft-warns-russian-hotel-wifi-hackers-target-travelers/",
+   "id": "2026-10-09-captivecrunch-hotel-gastnetze",
+   "topic": "Handel & Branche",
+   "impact": "mittel",
+   "published": "2026-10",
+   "tags": [
+    "Touristik",
+    "Phishing",
+    "Staatliche Angreifer"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 6.7 – Telearbeit",
+    "ISO/IEC 27001 Anhang A 8.5 – Sichere Authentisierung"
+   ],
+   "roles": [
+    "IT-Risiko"
+   ],
+   "countries": [
+    "EU",
+    "US"
+   ],
+   "dossier": "identitaeten-zugangsdaten",
+   "priority": 5,
+   "primary": false,
+   "added": "2026-10-09T05:08:39Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Die Cybernews-Seite war nicht abrufbar, geprüft wurde stattdessen der Microsoft-Sicherheitsblog mit der Ergänzung vom 5. Oktober 2026. Wiederaufnahme am 29. September, Zuordnung zum Auslandsgeheimdienst SVR, Hotels, Flughäfen und Konferenzzentren, Gerätecode, Microsoft-365-Token und die Empfehlung…"
    }
   },
   {
