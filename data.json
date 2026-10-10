@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-09T05:08:39Z",
+ "updated": "2026-10-10T05:06:46Z",
  "topics": [
   "IT-Governance & Risiko",
   "Cyber- & IT-Regulierung",
@@ -11,6 +11,18 @@
   "Weitere Themen"
  ],
  "briefings": [
+  {
+   "date": "2026-10-10",
+   "headline": "Neue kritische Citrix-Lücke, Microsoft beendet Updates für veraltetes Windows 2027, und missbrauchte Dienstleisterzugänge legen Millionen Datensätze offen.",
+   "points": [
+    "Citrix: Die kritische NetScaler-Lücke CVE-2026-107406 betrifft Geräte mit Single Sign-on über Security Assertion Markup Language. Sie wird noch nicht ausgenutzt, sollte aber sofort gepatcht werden.",
+    "Microsoft tauscht die Zertifikate von Windows Update. Nicht unterstützte Windows-Versionen bekommen ab Mai beziehungsweise Juni 2027 keine Updates mehr; im Handel sollten Kassen und Geräte in Filiallagern geprüft werden.",
+    "Dänemark: Über den legalen Zugang eines kleinen Unternehmens wurden 8,8 Millionen Einträge im Personenregister abgefragt. Aufgefallen ist das erst bei der Rechnungsstellung.",
+    "Japan: Der Angriff auf den Cloud-Anbieter IDC Frontier trifft 6,09 Millionen Kundenkonten von JR East. Dazu kommen Datenabflüsse beim Reiseportal Skyticket und bei der Handelskette Bookoff.",
+    "Cloud-Souveränität: Ein Berichterstatter im Parlament will nur noch zwei Souveränitätsstufen und 80 Prozent der neuen Rechenzentrumskapazität für europäische Anbieter."
+   ],
+   "count": 6
+  },
   {
    "date": "2026-10-09",
    "headline": "Bußgeld von 825 Millionen Euro gegen Uber für automatisierte Entscheidungen, Ransomware legt japanische Cloud lahm, Auftragsverarbeiter haftet selbst.",
@@ -156,18 +168,17 @@
    "title": "Drittparteien- und Lieferkettenrisiko",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Beim japanischen Cloud-Anbieter IDC Frontier legte Ransomware am 7. Oktober 2026 die Plattform von 495 Kunden lahm, die Angreifer behaupten über 550.000 gelöschte Snapshots; die schwedische Datenschutzbehörde bestraft den Dienstleister Miljödata direkt wegen unzureichender Sicherheit. Zuvor trennte sich die amerikanische Bundespolizei wegen eines fehlenden PeopleSoft-Patches von ihrem…",
-   "next_step": "Kritische Dienstleister nach Datenzugriff, privilegiertem Zugang und Ausfallwirkung neu einstufen, für diese Nachweise zu getrennten, unveränderbaren Sicherungen und zur Patch-Verantwortung einholen und den Ausfall eines Cloud-Anbieters als Szenario üben.",
+   "status": "In Dänemark wurden über den legalen Suchzugang eines kleinen Unternehmens 14 Millionen Abfragen im Personenregister gestellt, betroffen sind 8,8 Millionen Menschen; aufgefallen ist das erst bei der Rechnungsstellung. In Japan trifft der Ransomware-Angriff auf IDC Frontier 6,09 Millionen Kundenkonten von JR East, weitere Datenabflüsse laufen über Dienstleistersysteme.",
+   "next_step": "Für Partner- und Dienstleisterzugänge auf Kunden- und Personaldaten Mengengrenzen und eine Erkennung auffälliger Nutzung einrichten. Für kritische Plattformanbieter Ausfallszenarien in die Notfallplanung aufnehmen.",
    "open_questions": [
-    "Halten die Sicherungen bei Cloud-Anbietern einer Übernahme der Verwaltungsebene stand?",
-    "Ist die Patch-Verantwortung für vom Dienstleister betriebene Systeme vertraglich und in der Rollenmatrix eindeutig geregelt?"
+    "Welche Dienstleister haben direkten Abfragezugang auf Kundendaten, und wer überwacht die Nutzung?",
+    "Gibt es Ausweichlösungen, wenn ein Cloud- oder Buchungsplattformanbieter tagelang ausfällt?"
    ],
    "controls": [
     "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
-    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen",
-    "DSGVO Art. 28 – Auftragsverarbeiter"
+    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen"
    ],
-   "updated": "2026-10-09"
+   "updated": "2026-10-10"
   },
   {
    "slug": "identitaeten-zugangsdaten",
@@ -205,18 +216,17 @@
    "title": "Kritische Schwachstellen in Randsystemen und Kernanwendungen",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Die Atlassian-Lücke CVE-2026-21589 in allen selbst betriebenen Data-Center-Produkten wird seit der Veröffentlichung von Angriffscode am 5. Oktober aktiv ausgenutzt; bei angebundenem Crowd ist die Übernahme von Administratorkonten möglich. Daneben bleiben die ausgenutzte Citrix-NetScaler-Lücke CVE-2026-88779, die Exchange-Lücke CVE-2026-96940 und die SAP-Lücke OVERPASS mit öffentlichem…",
-   "next_step": "Patchstand der Atlassian-Instanzen belegen, Zugriff von außen einschränken und neu angelegte Administratorkonten seit 5. Oktober prüfen; Notfall-Patch-Prozess auf Reaktionszeiten von Stunden statt Wochen ausrichten.",
+   "status": "Citrix meldet am 9. Oktober 2026 mit CVE-2026-107406 die nächste kritische NetScaler-Lücke (Schweregrad 9,5) für Geräte mit Anmeldung über Security Assertion Markup Language; eine Ausnutzung ist noch nicht bekannt, doch 2026 wurden bereits fünf NetScaler-Lücken angegriffen. Parallel wird die Atlassian-Lücke CVE-2026-21589 aktiv ausgenutzt, und die Lücken in Exchange und SAP (OVERPASS) bleiben…",
+   "next_step": "NetScaler-Geräte mit Single Sign-on sofort auf die korrigierten Versionen bringen, Patchstand von Randsystemen wöchentlich an das Management berichten und Ausnahmen mit Fristen und verantwortlicher Person dokumentieren.",
    "open_questions": [
-    "Wie schnell kann der Notfall-Change-Prozess eine kritische Lücke in selbst betriebenen Anwendungen schließen?",
-    "Ist für jede extern erreichbare Anwendung ein verantwortlicher Owner benannt?"
+    "Sind alle aus dem Internet erreichbaren Geräte samt Konfiguration im Inventar erfasst?",
+    "Wie schnell lassen sich Notfall-Patches außerhalb des regulären Änderungsfensters ausrollen?"
    ],
    "controls": [
-    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
-    "IT-Kontrollen der Abschlussprüfung – Änderungsmanagement",
-    "NIS-2-Richtlinie Art. 21 – Umgang mit Schwachstellen"
+    "NIS-2-Richtlinie Art. 21 – Umgang mit und Offenlegung von Schwachstellen",
+    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen"
    ],
-   "updated": "2026-10-08"
+   "updated": "2026-10-10"
   },
   {
    "slug": "nis2-umsetzung",
@@ -306,17 +316,17 @@
    "title": "Prüfung von Informationstechnik und Künstlicher Intelligenz",
    "sector": "Prüfung & Assurance",
    "ring": "vorbereiten",
-   "status": "Das Institut der Wirtschaftsprüfer hat zwei Prüfungshinweise zu Künstlicher Intelligenz in der Abschlussprüfung veröffentlicht, die Anforderung der Internen Revision zur Prüfung von Drittparteien ist seit 15. September 2026 verbindlich. Laut Risk in Focus 2027 hält die Prüfung mit dem Tempo der Künstlichen Intelligenz nicht Schritt.",
-   "next_step": "Prüfungsplanung 2027 mit der Revision abstimmen: Künstliche Intelligenz, Drittparteien und Notfalländerungen in rechnungslegungsrelevanten Systemen als Prüffelder aufnehmen.",
+   "status": "Das Institut der Wirtschaftsprüfer hat zwei Prüfungshinweise zu Künstlicher Intelligenz veröffentlicht, die Anforderung der Internen Revision zur Prüfung von Drittparteien gilt seit 15. September 2026. International läuft bis 15. Dezember 2026 die Konsultation zu neuen Standards für Prüfungsnachweise (ISA 330, 500 und 520), und die überarbeitete Norm ISA 240 zu Betrug tritt im Dezember 2026 in…",
+   "next_step": "Für wesentliche systemgenerierte Berichte belegen, woher die Daten kommen und dass sie vollständig sind. Mit dem Abschlussprüfer klären, wie sich die neuen Anforderungen an Prüfungsnachweise auf die Prüfung der allgemeinen IT-Kontrollen auswirken.",
    "open_questions": [
-    "Welche Nachweise erwarten Abschlussprüfer künftig für den Einsatz Künstlicher Intelligenz in rechnungslegungsrelevanten Prozessen?",
-    "Wie lässt sich ein lückenloser Prüfpfad für Agenten mit Künstlicher Intelligenz sicherstellen?"
+    "Wann und in welcher Form übernimmt das Institut der Wirtschaftsprüfer die neuen internationalen Anforderungen?",
+    "Wie werden Ergebnisse von Agenten Künstlicher Intelligenz als Prüfungsnachweis bewertet?"
    ],
    "controls": [
-    "ISA [DE] 315 – Verständnis der Informationstechnik",
-    "IT-Kontrollen der Abschlussprüfung – Änderungsmanagement"
+    "IT-Kontrollen der Abschlussprüfung – Verlässlichkeit systemgenerierter Informationen",
+    "ISA [DE] 315 – Verständnis der Informationstechnik"
    ],
-   "updated": "2026-10-04"
+   "updated": "2026-10-10"
   },
   {
    "slug": "agentische-ki-sicherheit",
@@ -341,6 +351,30 @@
     "ISO/IEC 42001 – Managementsystem für Künstliche Intelligenz"
    ],
    "updated": "2026-10-09"
+  },
+  {
+   "slug": "cloud-souveraenitaet",
+   "created": "2026-10-10",
+   "ring_history": [
+    {
+     "date": "2026-10-10",
+     "ring": "beobachten"
+    }
+   ],
+   "title": "Cloud-Souveränität und Abhängigkeiten",
+   "sector": "Cyber- & IT-Regulierung",
+   "ring": "beobachten",
+   "status": "Der Cloud and AI Development Act liegt seit 3. Juni 2026 als Vorschlag der Kommission vor. Im Parlament schlägt der Berichterstatter des Rechtsausschusses zwei statt vier Souveränitätsstufen und 80 Prozent der neuen Rechenzentrumskapazität für europäische Anbieter vor; der Berichtsentwurf wird für den 1. Dezember 2026 erwartet. Nach der Datenverordnung entfallen ab 12. Januar 2027 Gebühren für…",
+   "next_step": "Kritische Cloud-Abhängigkeiten nach Anbieter und Rechtsraum erfassen und in neuen Cloud-Verträgen Wechsel- und Ausstiegsklauseln verankern.",
+   "open_questions": [
+    "Wird die Souveränitätsstufe zum Kriterium für private Auftraggeber oder nur für öffentliche Vergaben?",
+    "Wie wirken sich die Pläne auf bestehende Verträge mit Hyperscalern aus?"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 5.23 – Informationssicherheit für die Nutzung von Cloud-Diensten",
+    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette"
+   ],
+   "updated": "2026-10-10"
   },
   {
    "slug": "dsgvo-reform-digital-omnibus",
@@ -504,6 +538,28 @@
    "added": "2026-10-01"
   },
   {
+   "date": "2027-05-17",
+   "title": "Windows Update: Zertifikatswechsel für Langzeitversionen und ältere Server",
+   "detail": "Auf Windows 10 Enterprise 2019 in der Langzeitversion sowie Windows Server 2016 und 2019 muss das Update von Juli 2026 oder ein neueres installiert sein, sonst kommen keine Updates mehr.",
+   "scope": "EU",
+   "url": "https://techcommunity.microsoft.com/blog/windows-itpro-blog/prepare-for-windows-update-certificate-rotation-in-2027/4562463",
+   "primary": false,
+   "checked": true,
+   "dossier": null,
+   "added": "2026-10-10"
+  },
+  {
+   "date": "2027-06-19",
+   "title": "Windows Update: Zertifikatswechsel für übrige Windows-Versionen",
+   "detail": "Windows 10, Windows 11 bis Version 24H2 sowie Windows Server 2022 und 2025 brauchen das jeweils genannte Mindest-Update. Nicht unterstützte Versionen müssen bis dahin ersetzt werden.",
+   "scope": "EU",
+   "url": "https://techcommunity.microsoft.com/blog/windows-itpro-blog/prepare-for-windows-update-certificate-rotation-in-2027/4562463",
+   "primary": false,
+   "checked": true,
+   "dossier": null,
+   "added": "2026-10-10"
+  },
+  {
    "date": "2027-07-31",
    "title": "Italien: Sicherheitsmaßnahmen für 2026 neu gelistete Einrichtungen",
    "detail": "Einrichtungen, die 2026 erstmals in die italienische Liste nach der NIS-2-Richtlinie aufgenommen wurden, müssen bis dahin die grundlegenden Sicherheitsmaßnahmen umsetzen.",
@@ -541,6 +597,18 @@
    ]
   },
   {
+   "theme": "Digital Fairness Act",
+   "why": "Die Kommission will den Vorschlag gegen manipulative Gestaltung von Webseiten und Apps und gegen unfaire Personalisierung voraussichtlich im vierten Quartal 2026 vorlegen. Betroffen wären Onlineshops, Apps und personalisierte Preise im Handel.",
+   "count": 5,
+   "first_seen": "2026-09-30",
+   "last_seen": "2026-10-10",
+   "evidence": [
+    "https://www.europarl.europa.eu/legislative-train/theme-protecting-our-democracy-upholding-our-values/file-digital-fairness-act",
+    "https://www.privacylaws.com/news/eu-proposal-on-digital-fairness-act-expected-by-the-end-of-2026/",
+    "https://www.mlex.com/mlex/articles/2529049/eu-digital-fairness-act-on-consumer-protection-tentatively-eyed-for-november"
+   ]
+  },
+  {
    "theme": "Post-Quanten-Kryptografie-Migration",
    "why": "Forscher haben Signaturen mit 1024-Bit-RSA-Schlüsseln ohne Faktorisierung gefälscht. Moderne Verfahren mit Padding sind nicht betroffen, doch der Fall ist ein weiterer Anlass, kurze Schlüssel und veraltete Verfahren im Kryptografie-Inventar zu suchen.",
    "count": 5,
@@ -555,18 +623,6 @@
    ]
   },
   {
-   "theme": "Digital Fairness Act",
-   "why": "Die Europäische Kommission plant den Vorschlag laut Arbeitsprogramm im vierten Quartal 2026; er soll Dark Patterns, suchterzeugendes Design und unfaire Personalisierung regeln. Das kann Onlineshops, Apps und Preisgestaltung eines Handels- und Touristikkonzerns unmittelbar betreffen.",
-   "count": 4,
-   "first_seen": "2026-09-30",
-   "last_seen": "2026-10-09",
-   "evidence": [
-    "https://www.europarl.europa.eu/legislative-train/theme-protecting-our-democracy-upholding-our-values/file-digital-fairness-act",
-    "https://www.privacylaws.com/news/eu-proposal-on-digital-fairness-act-expected-by-the-end-of-2026/",
-    "https://www.mlex.com/mlex/articles/2529049/eu-digital-fairness-act-on-consumer-protection-tentatively-eyed-for-november"
-   ]
-  },
-  {
    "theme": "Autonome Angriffe durch Agenten",
    "why": "Die koreanischen Bankenangriffe zeigen, dass Angreifer mit Agenten systematisch nach Schwachstellen in Systemen für Beschäftigte suchen. Patch- und Erkennungszeiten werden dadurch kürzer, als es klassische Planungen annehmen.",
    "count": 4,
@@ -577,6 +633,17 @@
     "https://www.securityweek.com/zammad-zero-days-exploited-in-ai-powered-divd-hack/",
     "https://www.bleepingcomputer.com/news/security/autonomous-ai-agents-tried-to-hack-us-canadian-government-websites/",
     "https://www.bleepingcomputer.com/news/security/automated-ai-agent-used-to-breach-cybersecurity-nonprofit-divd/"
+   ]
+  },
+  {
+   "theme": "Haftungsregeln für Künstliche Intelligenz",
+   "why": "Die Europäische Kommission schließt eine neue Haftungsrichtlinie für Künstliche Intelligenz derzeit aus. Wer haftet, bleibt damit vorerst Sache der Verträge mit Anbietern und des allgemeinen Produkthaftungsrechts.",
+   "count": 2,
+   "first_seen": "2026-10-07",
+   "last_seen": "2026-10-10",
+   "evidence": [
+    "https://www.techuk.org/insights/news/dispatch-from-brussels-updates-on-eu-tech-policy-09-10",
+    "https://www.politico.eu/article/eu-lawmakers-ai-apocalypse-warnings-brussels-scrambles-ai-rules-gaps/"
    ]
   },
   {
@@ -610,16 +677,6 @@
    "last_seen": "2026-10-08",
    "evidence": [
     "https://www.heise.de/news/EUDI-Wallet-Anhoerung-mit-viel-Kritik-an-d-you-Planung-11477850.html"
-   ]
-  },
-  {
-   "theme": "Haftungsregeln für Künstliche Intelligenz",
-   "why": "Abgeordnete des Europäischen Parlaments drängen auf ein Gesetz zur Haftung für Künstliche Intelligenz, das Schadensersatz leichter machen würde. Das könnte Verträge mit Anbietern und die Risikobewertung eigener Systeme verändern.",
-   "count": 1,
-   "first_seen": "2026-10-07",
-   "last_seen": "2026-10-07",
-   "evidence": [
-    "https://www.politico.eu/article/eu-lawmakers-ai-apocalypse-warnings-brussels-scrambles-ai-rules-gaps/"
    ]
   },
   {
@@ -666,6 +723,145 @@
   }
  ],
  "news": [
+  {
+   "title": "Update: Citrix NetScaler – nächste kritische Lücke bei Anmeldung über Single Sign-on",
+   "summary": "Citrix hat am 9. Oktober 2026 vor der kritischen Lücke CVE-2026-107406 in NetScaler ADC und NetScaler Gateway gewarnt. Betroffen sind Geräte, die für die Anmeldung über Security Assertion Markup Language als Identitäts- oder Dienstanbieter eingerichtet sind; ein Speicherüberlauf erlaubt Codeausführung oder Dienstausfall. Eine Ausnutzung ist noch nicht bekannt. 2026 wurden aber bereits fünf andere NetScaler-Lücken angegriffen, und rund 21.000 Geräte sind aus dem Internet erreichbar.",
+   "relevance": "Konzerne mit Fernzugang und Single Sign-on über NetScaler sollten sofort patchen und nicht auf einen Eintrag im Behördenkatalog warten. Außerdem zeigt sich, ob das Inventar die Konfiguration der Geräte überhaupt abbildet.",
+   "source": "BleepingComputer",
+   "url": "https://www.bleepingcomputer.com/news/security/citrix-warns-admins-to-patch-new-netscaler-rce-flaw-immediately/",
+   "id": "2026-10-10-citrix-netscaler-cve-2026-107406",
+   "topic": "IT-Governance & Risiko",
+   "impact": "hoch",
+   "published": "2026-10-09",
+   "tags": [
+    "Citrix",
+    "Patch-Management",
+    "Fernzugang"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Umgang mit und Offenlegung von Schwachstellen",
+    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen"
+   ],
+   "roles": [
+    "IT-Risiko"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "kritische-schwachstellen-perimeter",
+   "priority": 1,
+   "primary": false,
+   "added": "2026-10-10T05:06:46Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Der Schweregrad 9,5 von 10 steht nicht in der Quelle, dort heißt die Lücke nur „kritisch“. Auch eine Websuche hat keinen Beleg für den Wert gefunden. Datum, Betroffenheit, die fünf früher angegriffenen Lücken und die rund 21.000 erreichbaren Geräte stimmen."
+   }
+  },
+  {
+   "title": "Update: Japan – Cloud-Angriff trifft JR East, Reiseportal und Händler melden Millionen Betroffene",
+   "summary": "Beim Ransomware-Angriff auf den Cloud-Anbieter IDC Frontier sind allein beim Bahnkonzern JR East 6,09 Millionen Kundenkonten betroffen. Das Reiseportal Skyticket meldet nach einem Angriff auf Server und Buchungssysteme möglicherweise 14,64 Millionen betroffene Datensätze, die Second-Hand-Handelskette Bookoff bis zu 6,43 Millionen Kunden. Bei der Karaoke-Kette Big Echo sind rund 8,72 Millionen Kunden über das System eines Dienstleisters betroffen.",
+   "relevance": "Die Welle trifft genau die Systeme, die für Touristik und Handel zählen: Buchungsplattformen, Kundenkonten und die Infrastruktur von Dienstleistern. In Notfallplänen sollte stehen, was passiert, wenn die Plattform eines Anbieters ausfällt.",
+   "source": "Nippon.com (Jiji Press)",
+   "url": "https://www.nippon.com/en/news/yjj2026100900441/",
+   "id": "2026-10-10-japan-datenabfluesse-handel-reise",
+   "topic": "Handel & Branche",
+   "impact": "mittel",
+   "published": "2026-10-09",
+   "tags": [
+    "Ransomware",
+    "Reiseportal",
+    "Cloud-Anbieter"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
+    "ISO/IEC 27001 Anhang A 5.30 – Informations- und Kommunikationstechnik-Bereitschaft für Business Continuity"
+   ],
+   "roles": [
+    "Einkauf & Drittparteien",
+    "IT-Risiko"
+   ],
+   "countries": [
+    "JP"
+   ],
+   "dossier": "drittparteien-lieferkette",
+   "priority": 4,
+   "primary": false,
+   "added": "2026-10-10T05:06:46Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Alle Zahlen sind belegt: JR East 6,09 Millionen, Skyticket 14,64 Millionen, Bookoff 6,43 Millionen, Big Echo 8,72 Millionen. Auch die Angriffswege und das Datum 9. Oktober 2026 stimmen."
+   }
+  },
+  {
+   "title": "Cloud and AI Development Act: Berichterstatter will zwei statt vier Souveränitätsstufen",
+   "summary": "Im Rechtsausschuss des Europäischen Parlaments schlägt der Berichterstatter vor, die vier Souveränitätsstufen für Cloud-Dienste im Cloud and AI Development Act auf zwei zu verkürzen. Mindestens 80 Prozent der neuen Rechenzentrumskapazität in Beschleunigungszonen sollen europäischen Anbietern vorbehalten sein, und das Verfahren zur Prüfung von Anbietern aus Drittstaaten soll entfallen. Der gemeinsame Berichtsentwurf wird für den 1. Dezember 2026 erwartet.",
+   "relevance": "Souveränitätsstufen könnten später zum Kriterium beim Cloud-Einkauf und bei der Bewertung von Abhängigkeiten werden. Wer heute Cloud-Verträge verhandelt, sollte Ausstiegs- und Wechseloptionen einplanen.",
+   "source": "techUK – Dispatch from Brussels",
+   "url": "https://www.techuk.org/insights/news/dispatch-from-brussels-updates-on-eu-tech-policy-09-10",
+   "id": "2026-10-10-cada-zwei-souveraenitaetsstufen",
+   "topic": "Cyber- & IT-Regulierung",
+   "impact": "info",
+   "published": "2026-10-09",
+   "tags": [
+    "Cloud-Souveränität",
+    "Gesetzgebung",
+    "Rechenzentren"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 5.23 – Informationssicherheit für die Nutzung von Cloud-Diensten"
+   ],
+   "roles": [
+    "Einkauf & Drittparteien",
+    "Management"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "cloud-souveraenitaet",
+   "priority": 5,
+   "primary": false,
+   "added": "2026-10-10T05:06:46Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Die Quelle belegt den Stellungnahmeentwurf des Berichterstatters Sergey Lagodinsky im Rechtsausschuss: zwei statt vier Stufen, mindestens 80 Prozent für europäische Anbieter in Beschleunigungszonen, Wegfall der Prüfung von Anbietern aus Drittstaaten. Der gemeinsame Berichtsentwurf wird am 1.…"
+   }
+  },
+  {
+   "title": "Microsoft: Veraltete Windows-Geräte verlieren 2027 den Zugang zu Windows Update",
+   "summary": "Microsoft tauscht die Zertifikate, mit denen sich die Server von Windows Update ausweisen. Sie laufen am 17. Mai und am 19. Juni 2027 ab. Bei Windows 10 Enterprise 2019 in der Langzeitversion sowie Windows Server 2016 und 2019 muss das Update von Juli 2026 bis zum 17. Mai 2027 installiert sein, bei den übrigen unterstützten Versionen bis zum 19. Juni 2027. Nicht unterstützte Versionen bekommen danach keine Updates mehr; Geräte, die über Windows Server Update Services versorgt werden, sind laut Microsoft nicht betroffen.",
+   "relevance": "Im Handel laufen Kassen, Terminals und Geräte in Filialen und Lagern oft lange auf alten Windows-Versionen. Ohne vollständiges Inventar und dokumentierte Ausnahmen wird daraus eine Lücke im Patch-Management, die auch in der Prüfung der allgemeinen IT-Kontrollen auffällt.",
+   "source": "Microsoft Windows IT Pro Blog",
+   "url": "https://techcommunity.microsoft.com/blog/windows-itpro-blog/prepare-for-windows-update-certificate-rotation-in-2027/4562463",
+   "id": "2026-10-10-windows-update-zertifikatsrotation-2027",
+   "topic": "IT-Governance & Risiko",
+   "impact": "hoch",
+   "published": "2026-10-08",
+   "tags": [
+    "Windows",
+    "Lebenszyklus",
+    "Kassensysteme"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 5.9 – Inventar der Informationen und anderen damit verbundenen Werte",
+    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
+    "IT-Kontrollen der Abschlussprüfung – Änderungsmanagement"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Revision & Prüfung"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": null,
+   "priority": 2,
+   "primary": false,
+   "added": "2026-10-10T05:06:46Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum 8. Oktober 2026, beide Ablaufdaten, die betroffenen Versionen, die Folgen für nicht unterstützte Versionen und die Ausnahme für Windows Server Update Services stimmen mit der Quelle überein."
+   }
+  },
   {
    "title": "824,99 Millionen Euro gegen Uber wegen automatisierter Entscheidungen über Fahrer",
    "summary": "Die niederländische Datenschutzbehörde Autoriteit Persoonsgegevens hat gegen Uber ein Bußgeld von 824,99 Millionen Euro verhängt, weil Konten von Fahrerinnen und Fahrern in Frankreich wegen Betrugsverdachts oder schlechter Bewertungen automatisch gesperrt wurden. Verstoßen wurde gegen das Verbot automatisierter Einzelentscheidungen nach Artikel 22 und gegen die Informationspflichten nach Artikel 13 der Datenschutz-Grundverordnung; die Vorfälle stammen aus den Jahren 2018 bis 2022. Uber hat Rechtsmittel eingelegt, die Entscheidung ist nicht rechtskräftig.",
@@ -1093,6 +1289,78 @@
    "check": {
     "verdict": "ok",
     "note": "Zusammenlegung, drei Stufen, 129.000 Schwachstellen von April bis Juli, weitere 5.500 und über 33.000 mit hohem oder kritischem Schweregrad sind belegt."
+   }
+  },
+  {
+   "title": "Dänemark: Legaler Zugang eines Dienstleisters öffnet Daten von 8,8 Millionen Menschen",
+   "summary": "Unbekannte haben im September 2026 Namen, Adressen und Personennummern von rund 8,8 Millionen Menschen aus Dänemarks zentralem Personenregister abgefragt. Sie mussten nicht einbrechen, sondern nutzten den gesetzlich erlaubten Suchzugang eines kleinen privaten Unternehmens für 14 Millionen Abfragen in zehn Tagen. Aufgefallen ist das erst am 2. Oktober bei der Rechnungsstellung. Der Zugang ist gesperrt, und die Personennummer allein gilt nicht mehr als Identitätsnachweis.",
+   "relevance": "Berechtigte Zugänge von Partnern und Dienstleistern auf Kunden- oder Personaldaten brauchen Mengengrenzen und eine Überwachung von Auffälligkeiten in Echtzeit. Eine Kontrolle über die monatliche Abrechnung reicht nicht.",
+   "source": "The Next Web",
+   "url": "https://thenextweb.com/news/denmark-cpr-breach-8-8-million-records",
+   "id": "2026-10-10-daenemark-personenregister-drittzugang",
+   "topic": "Datenschutz & Datenrecht",
+   "impact": "mittel",
+   "published": "2026-10-06",
+   "tags": [
+    "Drittzugang",
+    "Missbrauchserkennung",
+    "Massenabfrage"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen",
+    "ISO/IEC 27001 Anhang A 8.16 – Überwachung von Aktivitäten",
+    "DSGVO Art. 32 – Sicherheit der Verarbeitung"
+   ],
+   "roles": [
+    "Einkauf & Drittparteien",
+    "Datenschutz",
+    "IT-Risiko"
+   ],
+   "countries": [
+    "DK"
+   ],
+   "dossier": "drittparteien-lieferkette",
+   "priority": 3,
+   "primary": false,
+   "added": "2026-10-10T05:06:46Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum, 8,8 Millionen Betroffene, legaler Zugang eines kleinen privaten Unternehmens, über 14 Millionen Abfragen in zehn Tagen, Entdeckung am 2. Oktober bei der Rechnungsstellung, Sperrung des Zugangs und Personennummer nicht mehr allein als Identitätsnachweis: alles belegt."
+   }
+  },
+  {
+   "title": "Prüfungsnachweise: Internationale Konsultation bis 15. Dezember, neuer Betrugsstandard ab Dezember",
+   "summary": "Der International Auditing and Assurance Standards Board, das internationale Gremium für Prüfungsstandards, sammelt bis zum 15. Dezember 2026 Stellungnahmen zu überarbeiteten Fassungen der Normen ISA 330 (Reaktion auf beurteilte Risiken), ISA 500 (Prüfungsnachweise) und ISA 520 (analytische Prüfungshandlungen). Ziel ist, den grundsatz- und risikoorientierten Prüfungsansatz zu stärken und den wachsenden Einsatz von Technologie in Unternehmen und Finanzberichterstattung zu berücksichtigen. Außerdem tritt im Dezember 2026 die überarbeitete Norm ISA 240 zur Verantwortung des Prüfers bei Betrug in Kraft.",
+   "relevance": "Systemgenerierte Berichte und Auswertungen aus Informationstechnik und Künstlicher Intelligenz werden in der Abschlussprüfung genauer geprüft. Wer Herkunft und Vollständigkeit solcher Daten früh belegen kann, hat in der Prüfungssaison weniger Arbeit.",
+   "source": "Generation Impact (IAASB eNews Oktober 2026)",
+   "url": "https://generationimpact.global/it/news/iaasb-enews-october-2026-handbook-sustainability-assurance/",
+   "id": "2026-10-10-iaasb-pruefungsnachweise-konsultation",
+   "topic": "Prüfung & Assurance",
+   "impact": "info",
+   "published": "2026-10-06",
+   "tags": [
+    "Abschlussprüfung",
+    "Prüfungsnachweise",
+    "Standardsetzung"
+   ],
+   "controls": [
+    "IT-Kontrollen der Abschlussprüfung – Verlässlichkeit systemgenerierter Informationen",
+    "ISA [DE] 500 – Prüfungsnachweise"
+   ],
+   "roles": [
+    "Revision & Prüfung"
+   ],
+   "countries": [
+    "EU",
+    "DE"
+   ],
+   "dossier": "pruefung-it-ki",
+   "priority": 6,
+   "primary": false,
+   "added": "2026-10-10T05:06:46Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Die Quelle sagt nicht, dass die Verlässlichkeit und Relevanz der Informationen im Mittelpunkt steht. Als Ziel nennt sie die Stärkung des grundsatz- und risikoorientierten Prüfungsansatzes und die Berücksichtigung des wachsenden Technologieeinsatzes. Das genaue Veröffentlichungsdatum ist der 6.…"
    }
   },
   {

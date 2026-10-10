@@ -1,0 +1,179 @@
+{
+ "format": "tag",
+ "chapters": [
+  {
+   "title": "Begrüßung",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Guten Morgen, liebe IT-GRC-Kolleginnen und -Kollegen, willkommen beim IT-GRC Radar am Samstag, dem zehnten Oktober 2026."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Samstag, und trotzdem hat Citrix wieder Hausaufgaben verteilt. Man könnte meinen, die haben ein Abo bei unseren Patch-Teams."
+    }
+   ]
+  },
+  {
+   "title": "Neue Citrix-Lücke",
+   "news_id": "2026-10-10-citrix-netscaler-cve-2026-107406",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Genau damit fangen wir an, denn es gibt Neues zu den NetScaler-Geräten. Citrix hat am Freitag eine weitere kritische Lücke gemeldet. Betroffen sind Geräte, über die die Anmeldung per [en]Single Sign-on[/en] läuft."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ausgenutzt wird sie laut Citrix noch nicht. Aber dieses Jahr wurden schon fünf NetScaler-Lücken angegriffen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Moment, also lieber jetzt patchen, statt auf den Eintrag im Behördenkatalog zu warten?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Genau. Und welche Geräte diese Anmeldefunktion überhaupt nutzen, sollte die Inventarliste beantworten. Sollte. Wenn sie es nicht kann, ist das der eigentliche Befund."
+    }
+   ]
+  },
+  {
+   "title": "Windows Update ab 2027",
+   "news_id": "2026-10-10-windows-update-zertifikatsrotation-2027",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Thema zwei kommt mit einer Frist. Microsoft tauscht 2027 die Zertifikate, mit denen sich die Server von Windows Update ausweisen. Wer nicht unterstützte Windows-Versionen betreibt, bekommt danach gar keine Updates mehr."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und im Handel ist das kein Randthema. Kassen, Waagen, Lagerterminals: Irgendwo steht immer ein Gerät, das seit Jahren keiner angefasst hat."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Welche Daten muss man sich merken?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Für Windows 10 Enterprise 2019 in der Langzeitversion und für Windows Server 2016 und 2019 muss das Update von Juli 2026 bis zum siebzehnten Mai 2027 installiert sein, für die übrigen unterstützten Versionen bis zum neunzehnten Juni 2027. Geräte, die über die Windows Server Update Services versorgt werden, sind laut Microsoft nicht betroffen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Also wieder die gute alte Frage: Wer ist eigentlich Owner der Kasse im Filiallager?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und steht die überhaupt in der Excel-Liste? Für die Prüfung der allgemeinen IT-Kontrollen ist das ein guter Anlass, das Patch-Management samt Ausnahmen einmal sauber zu belegen."
+    }
+   ]
+  },
+  {
+   "title": "Dänemarks Personenregister",
+   "news_id": "2026-10-10-daenemark-personenregister-drittzugang",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Dann nach Dänemark. Dort haben Unbekannte Namen, Adressen und Personennummern von rund 8,8 Millionen Menschen aus dem zentralen Personenregister abgefragt, und zwar über den völlig legalen Zugang eines kleinen Unternehmens."
+    },
+    {
+     "speaker": "Florian",
+     "text": "14 Millionen Abfragen in zehn Tagen. Aufgefallen ist das erst, als die Rechnung geschrieben wurde."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Die Buchhaltung als Angriffserkennung. Fast schon innovativ."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Gewissermaßen, ja. Die Lehre ist aber ernst: Wenn Dienstleister berechtigt auf Kundendaten zugreifen, braucht es Mengengrenzen und eine Überwachung in Echtzeit, nicht erst die Abrechnung am Monatsende."
+    }
+   ]
+  },
+  {
+   "title": "Datenabflüsse in Japan",
+   "news_id": "2026-10-10-japan-datenabfluesse-handel-reise",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Zum Ransomware-Angriff auf den japanischen Cloud-Anbieter IDC Frontier gibt es Neues. Allein beim Bahnkonzern JR East sind 6,09 Millionen Kundenkonten betroffen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und das ist nur ein Teil der Welle. Das Reiseportal Skyticket meldet möglicherweise 14,64 Millionen betroffene Datensätze, die Handelskette Bookoff bis zu 6,43 Millionen Kunden. Bei der Karaoke-Kette Big Echo lief der Angriff über das System eines Dienstleisters."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Ein Reiseportal und Händler, das ist ziemlich genau unser Feld."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Eben. Für eine Touristiksparte heißt das: Buchungsplattformen und ihre Betreiber gehören in die Risikobewertung, mit einem Notfallplan für den Fall, dass die Plattform tagelang ausfällt."
+    }
+   ]
+  },
+  {
+   "title": "Cloud-Souveränität",
+   "news_id": "2026-10-10-cada-zwei-souveraenitaetsstufen",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Kurz zur Cloud-Souveränität. Im Europäischen Parlament schlägt ein Berichterstatter vor, die geplanten Souveränitätsstufen im [en]Cloud and AI Development Act[/en] von vier auf zwei zu reduzieren."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Außerdem sollen mindestens 80 Prozent der neuen Rechenzentrumskapazität europäischen Anbietern vorbehalten sein. Das ist noch ein Entwurf, der Bericht wird für den ersten Dezember erwartet."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Also noch nichts für die Excel-Liste?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Für die Liste mit Themen zum Beobachten schon. Wer heute Cloud-Verträge verhandelt, sollte damit rechnen, dass Souveränitätsstufen später beim Einkauf eine Rolle spielen."
+    }
+   ]
+  },
+  {
+   "title": "Neue Regeln für Prüfungsnachweise",
+   "news_id": "2026-10-10-iaasb-pruefungsnachweise-konsultation",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Und für alle aus der Prüfung: Das internationale Gremium für Prüfungsstandards sammelt bis zum fünfzehnten Dezember Stellungnahmen zu neuen Regeln für Prüfungsnachweise."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Im Kern geht es darum, den risikoorientierten Prüfungsansatz zu stärken und den wachsenden Einsatz von Technologie zu berücksichtigen. Für uns heißt das: Berichte, die direkt aus Systemen kommen, werden noch genauer angeschaut. Kürzer wird die [en]Audit[/en]-Saison dadurch jedenfalls nicht."
+    }
+   ]
+  },
+  {
+   "title": "Auf dem Radar",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Was haben wir auf dem Radar?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Die Europäische Kommission will Haftungsregeln für Künstliche Intelligenz vorerst nicht wieder aufgreifen. Für Verträge mit Anbietern heißt das: Die Haftung muss man weiterhin selbst verhandeln."
+    }
+   ]
+  },
+  {
+   "title": "Abschied",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Das war das IT-GRC Radar für heute. Alle Quellen findet ihr wie immer auf der Webseite."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Schönes Wochenende. Und vielleicht schaut ihr am Montag mal nach der Kasse im Lager."
+    }
+   ]
+  }
+ ]
+}

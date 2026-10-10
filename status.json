@@ -1,11 +1,17 @@
 {
  "last_run": {
-  "start": "2026-10-09T07:00:01+02:00",
-  "end": "2026-10-09T07:08:39+02:00",
+  "start": "2026-10-10T07:00:01+02:00",
+  "end": "2026-10-10T07:06:46+02:00",
   "ok": true,
-  "summary": "6 neue Meldungen: P1 824,99 Millionen Euro gegen Uber wegen automatisierter Entscheidungen über Fahrer; P2 Ransomware legt japanische Cloud-Plattform von 495 Kunden lahm; P3 Schweden: Bußgeld trifft"
+  "summary": "6 neue Meldungen: P1 Update: Citrix NetScaler – nächste kritische Lücke bei Anmeldung über Single Sign-on; P2 Microsoft: Veraltete Windows-Geräte verlieren 2027 den Zugang zu Windows Update; P3 "
  },
  "history": [
+  {
+   "start": "2026-10-10T07:00:01+02:00",
+   "end": "2026-10-10T07:06:46+02:00",
+   "ok": true,
+   "summary": "6 neue Meldungen: P1 Update: Citrix NetScaler – nächste kritische Lücke bei Anmeldung über Single Sign-on; P2 Microsoft: Veraltete Windows-Geräte verlieren 2027 den Zugang zu Windows Update; P3 "
+  },
   {
    "start": "2026-10-09T07:00:01+02:00",
    "end": "2026-10-09T07:08:39+02:00",
