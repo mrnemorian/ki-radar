@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-10T05:06:46Z",
+ "updated": "2026-10-11T05:08:24Z",
  "topics": [
   "IT-Governance & Risiko",
   "Cyber- & IT-Regulierung",
@@ -11,6 +11,18 @@
   "Weitere Themen"
  ],
  "briefings": [
+  {
+   "date": "2026-10-11",
+   "headline": "Microsoft beendet im Oktober die letzten Sicherheitsupdates für Windows Server 2012 und Exchange 2016 und 2019, Altsysteme werden zum Prüfungsthema",
+   "points": [
+    "Windows Server 2012 und 2012 R2 erhalten am 13. Oktober die letzten Extended Security Updates, für Exchange Server 2016 und 2019 endet das Programm am 31. Oktober ohne weitere Verlängerung.",
+    "Update Südkorea: Angriffe auf Großbanken liefen über die Angriffssuite ARTEX mit Agenten, abgeleitete Versionen des Werkzeugs kursieren öffentlich.",
+    "Griechenland: Datenschutzbehörde belegt Ministerium und Auftragsverarbeiter wegen veralteter Systeme und fehlendem Vertrag zur Auftragsverarbeitung mit Bußgeldern.",
+    "Schweizer Marktplatz Ricardo: Namen, Adressen und Telefonnummern aus rund 890.000 Nutzerkonten abgeflossen.",
+    "Italien: Bußgeld wegen verschwiegener Fahrzeugortung und unbeantworteter Auskunftsanfragen von Beschäftigten; mutmaßliches Kernmitglied von Qilin in Deutschland festgenommen."
+   ],
+   "count": 6
+  },
   {
    "date": "2026-10-10",
    "headline": "Neue kritische Citrix-Lücke, Microsoft beendet Updates für veraltetes Windows 2027, und missbrauchte Dienstleisterzugänge legen Millionen Datensätze offen.",
@@ -168,17 +180,18 @@
    "title": "Drittparteien- und Lieferkettenrisiko",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "In Dänemark wurden über den legalen Suchzugang eines kleinen Unternehmens 14 Millionen Abfragen im Personenregister gestellt, betroffen sind 8,8 Millionen Menschen; aufgefallen ist das erst bei der Rechnungsstellung. In Japan trifft der Ransomware-Angriff auf IDC Frontier 6,09 Millionen Kundenkonten von JR East, weitere Datenabflüsse laufen über Dienstleistersysteme.",
-   "next_step": "Für Partner- und Dienstleisterzugänge auf Kunden- und Personaldaten Mengengrenzen und eine Erkennung auffälliger Nutzung einrichten. Für kritische Plattformanbieter Ausfallszenarien in die Notfallplanung aufnehmen.",
+   "status": "Aufsichtsbehörden nehmen Dienstleister direkt in Haftung: Nach Schweden (Miljödata) hat Griechenland einen Auftragsverarbeiter wegen veralteter Systeme mit 150.000 Euro und den Auftraggeber mit 200.000 Euro belegt. In Dänemark führte der legale Suchzugang eines kleinen Unternehmens zu Abfragen über 8,8 Millionen Menschen, in Japan trifft der Ransomware-Angriff auf IDC Frontier Millionen…",
+   "next_step": "Verträge zur Auftragsverarbeitung auf Vollständigkeit prüfen und bei kritischen Dienstleistern Nachweise zu Wartungsständen und Patch-Prozessen anfordern.",
    "open_questions": [
-    "Welche Dienstleister haben direkten Abfragezugang auf Kundendaten, und wer überwacht die Nutzung?",
-    "Gibt es Ausweichlösungen, wenn ein Cloud- oder Buchungsplattformanbieter tagelang ausfällt?"
+    "Wie werden Wartungsstände von Dienstleistern laufend überwacht statt nur jährlich abgefragt?",
+    "Wie lassen sich ungewöhnliche Abfragemengen über legale Zugänge erkennen?"
    ],
    "controls": [
+    "DSGVO Art. 28 – Auftragsverarbeiter",
     "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
     "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen"
    ],
-   "updated": "2026-10-10"
+   "updated": "2026-10-11"
   },
   {
    "slug": "identitaeten-zugangsdaten",
@@ -227,6 +240,30 @@
     "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen"
    ],
    "updated": "2026-10-10"
+  },
+  {
+   "slug": "lebenszyklus-altsysteme",
+   "created": "2026-10-11",
+   "ring_history": [
+    {
+     "date": "2026-10-11",
+     "ring": "jetzt handeln"
+    }
+   ],
+   "title": "Lebenszyklus und Altsysteme",
+   "sector": "IT-Governance & Risiko",
+   "ring": "jetzt handeln",
+   "status": "Windows Server 2012 und 2012 R2 erhalten am 13. Oktober 2026 die letzten Extended Security Updates, für Exchange Server 2016 und 2019 endet die bezahlte Verlängerung am 31. Oktober 2026 endgültig. 2027 folgt der Zertifikatswechsel bei Windows Update, ohne den veraltete Geräte keine Updates mehr erhalten.",
+   "next_step": "Inventar der betroffenen Systeme abgleichen, für jedes verbleibende System Ablösung, Abschottung oder formale Risikoakzeptanz mit verantwortlicher Person dokumentieren; Dienstleister nach ihren Wartungsständen fragen.",
+   "open_questions": [
+    "Welche Altsysteme laufen bei Dienstleistern und Auftragsverarbeitern?",
+    "Wie bewertet die Abschlussprüfung Systeme ohne Sicherheitsupdates in rechnungslegungsrelevanten Prozessen?"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
+    "IT-Kontrollen der Abschlussprüfung – IT-Betrieb"
+   ],
+   "updated": "2026-10-11"
   },
   {
    "slug": "nis2-umsetzung",
@@ -340,17 +377,17 @@
    "title": "Sicherheit agentischer Künstlicher Intelligenz",
    "sector": "AI-Governance",
    "ring": "vorbereiten",
-   "status": "Die Schadsoftware PoeLLM hat über 3.400 offen erreichbare Server für Künstliche Intelligenz befallen, unter anderem über die Lücke CVE-2026-42271 im Model-Context-Protocol-Server von LiteLLM. Zuvor griffen Angreifer in Südkorea mutmaßlich mit Werkzeugen der Künstlichen Intelligenz Großbanken an, und OpenAI informierte über 100 Organisationen über fehlgeleitete eigene Agenten.",
-   "next_step": "Selbst betriebene Modell-Server, Vermittler und Model-Context-Protocol-Server inventarisieren, ins Schwachstellenmanagement aufnehmen und nicht direkt aus dem Internet erreichbar betreiben.",
+   "status": "Die Angriffe auf südkoreanische Großbanken liefen nachweislich über die Angriffssuite ARTEX mit Agenten; das Werkzeug ist inzwischen geschlossen, Ableger kursieren aber öffentlich. Zuvor befiel die Schadsoftware PoeLLM über 3.400 offen erreichbare Server für Künstliche Intelligenz, und OpenAI informierte über 100 Organisationen über fehlgeleitete eigene Agenten.",
+   "next_step": "Patch-Fristen und Angriffsflächen-Inventar an die höhere Angriffsgeschwindigkeit anpassen; eigene Agenten mit minimalen Rechten, Protokollierung und menschlicher Freigabe kritischer Aktionen betreiben.",
    "open_questions": [
-    "Wer ist Owner für Infrastruktur Künstlicher Intelligenz, die Fachbereiche selbst aufsetzen?"
+    "Reichen bestehende Patch-Fristen, wenn Angriffscode in Stunden entsteht?",
+    "Wer ist verantwortlich für Agenten, die Fachbereiche selbst einsetzen?"
    ],
    "controls": [
-    "ISO/IEC 27001 Anhang A 5.9 – Inventar der Informationen und anderen zugehörigen Werte",
-    "ISO/IEC 27001 Anhang A 8.8 – Handhabung von technischen Schwachstellen",
-    "ISO/IEC 42001 – Managementsystem für Künstliche Intelligenz"
+    "ISO/IEC 42001 – Managementsystem für Künstliche Intelligenz",
+    "NIS-2-Richtlinie Art. 21 – Umgang mit Schwachstellen"
    ],
-   "updated": "2026-10-09"
+   "updated": "2026-10-11"
   },
   {
    "slug": "cloud-souveraenitaet",
@@ -483,6 +520,17 @@
    "added": "2026-10-02"
   },
   {
+   "date": "2026-10-13",
+   "title": "Windows Server 2012 und 2012 R2: letzte Extended Security Updates",
+   "detail": "Betreiber von Windows Server 2012 und 2012 R2 erhalten danach keine Sicherheitsupdates mehr und müssen Systeme ablösen, abschotten oder das Risiko formal akzeptieren.",
+   "scope": "global",
+   "url": "https://learn.microsoft.com/en-us/lifecycle/products/windows-server-2012-r2",
+   "primary": false,
+   "checked": true,
+   "dossier": "lebenszyklus-altsysteme",
+   "added": "2026-10-11"
+  },
+  {
    "date": "2026-10-31",
    "title": "Italien: grundlegende Sicherheitsmaßnahmen nach NIS-2 umgesetzt",
    "detail": "Wesentliche und wichtige Einrichtungen, die 2025 in die italienische Liste aufgenommen wurden, müssen die Maßnahmen nach den Vorgaben der nationalen Cybersicherheitsagentur umgesetzt und nachweisbar haben.",
@@ -492,6 +540,17 @@
    "checked": true,
    "dossier": "nis2-umsetzung",
    "added": "2026-10-03"
+  },
+  {
+   "date": "2026-10-31",
+   "title": "Exchange Server 2016 und 2019: Ende der Extended Security Updates",
+   "detail": "Betreiber von Exchange Server 2016 und 2019 erhalten nach Oktober 2026 keine Updates mehr, auch nicht mit bezahlter Verlängerung; Migration auf Subscription Edition oder Exchange Online abschließen.",
+   "scope": "global",
+   "url": "https://techcommunity.microsoft.com/blog/exchange/announcing-period-2-exchange-20162019-extended-security-update-esu-program/4511603",
+   "primary": false,
+   "checked": true,
+   "dossier": "lebenszyklus-altsysteme",
+   "added": "2026-10-11"
   },
   {
    "date": "2026-11-13",
@@ -597,6 +656,20 @@
    ]
   },
   {
+   "theme": "Autonome Angriffe durch Agenten",
+   "why": "Mit ARTEX ist ein Agenten-gestütztes Angriffswerkzeug im realen Einsatz belegt, und Ableger sind öffentlich verfügbar; die Einstiegshürde für schnelle, automatisierte Angriffe sinkt weiter.",
+   "count": 5,
+   "first_seen": "2026-09-30",
+   "last_seen": "2026-10-11",
+   "evidence": [
+    "https://bleepingcomputer.com/news/security/hacker-used-artex-ai-and-claude-agents-to-target-south-korean-banks",
+    "https://www.kedglobal.com/banking-finance/newsView/ked202610040005",
+    "https://www.securityweek.com/zammad-zero-days-exploited-in-ai-powered-divd-hack/",
+    "https://www.bleepingcomputer.com/news/security/autonomous-ai-agents-tried-to-hack-us-canadian-government-websites/",
+    "https://www.bleepingcomputer.com/news/security/automated-ai-agent-used-to-breach-cybersecurity-nonprofit-divd/"
+   ]
+  },
+  {
    "theme": "Digital Fairness Act",
    "why": "Die Kommission will den Vorschlag gegen manipulative Gestaltung von Webseiten und Apps und gegen unfaire Personalisierung voraussichtlich im vierten Quartal 2026 vorlegen. Betroffen wären Onlineshops, Apps und personalisierte Preise im Handel.",
    "count": 5,
@@ -620,19 +693,6 @@
     "https://digital-strategy.ec.europa.eu/en/policies/post-quantum-cryptography",
     "https://www.whitehouse.gov/wp-content/uploads/2026/06/M-26-15-Execution-of-the-Migration-to-Post-Quantum-Cryptography.pdf",
     "https://www.heise.de/news/CA-Bewerbung-CDN-Anbieter-Cloudflare-will-bald-selber-Zertifikate-ausstellen-11469864.html"
-   ]
-  },
-  {
-   "theme": "Autonome Angriffe durch Agenten",
-   "why": "Die koreanischen Bankenangriffe zeigen, dass Angreifer mit Agenten systematisch nach Schwachstellen in Systemen für Beschäftigte suchen. Patch- und Erkennungszeiten werden dadurch kürzer, als es klassische Planungen annehmen.",
-   "count": 4,
-   "first_seen": "2026-09-30",
-   "last_seen": "2026-10-07",
-   "evidence": [
-    "https://www.kedglobal.com/banking-finance/newsView/ked202610040005",
-    "https://www.securityweek.com/zammad-zero-days-exploited-in-ai-powered-divd-hack/",
-    "https://www.bleepingcomputer.com/news/security/autonomous-ai-agents-tried-to-hack-us-canadian-government-websites/",
-    "https://www.bleepingcomputer.com/news/security/automated-ai-agent-used-to-breach-cybersecurity-nonprofit-divd/"
    ]
   },
   {
@@ -667,6 +727,16 @@
    "evidence": [
     "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/Grundschutz-in-der-Informationssicherheit/Grundschutz-Plus-Plus/grundschutz-plus-plus_node.html",
     "https://sits.com/ch/blog/grundschutz-plus-plus-bsi-it-grundschutz/"
+   ]
+  },
+  {
+   "theme": "Normen zum Cyber Resilience Act",
+   "why": "Die produktspezifischen harmonisierten Normen sollen bis Ende Oktober 2026 geliefert werden, bisher ist keine im Amtsblatt veröffentlicht; sie bestimmen, worauf Hersteller sich künftig beim Einkauf von Produkten mit digitalen Elementen berufen.",
+   "count": 1,
+   "first_seen": "2026-10-11",
+   "last_seen": "2026-10-11",
+   "evidence": [
+    "https://www.cyberresilienceact.eu/state-of-play.html"
    ]
   },
   {
@@ -723,6 +793,147 @@
   }
  ],
  "news": [
+  {
+   "title": "Update: Angriffe auf Südkoreas Banken liefen über Angriffssuite ARTEX mit Agenten",
+   "summary": "Forschende haben die Werkzeuge hinter den Angriffen auf mindestens drei südkoreanische Großbanken (Shinhan, KB Kookmin, Hana) identifiziert: die Suite ARTEX für Penetrationstests mit Künstlicher Intelligenz, kombiniert mit Claude-Agenten, die mit Sprachmodellen anderer Anbieter betrieben wurden. In offenen Verzeichnissen des Angreifers fanden sich Sitzungsverläufe, Konfigurationsdateien und sein Lebenslauf. Neu gegenüber dem bisherigen Stand: Der Entwickler hat ARTEX inzwischen geschlossen, englische und koreanische Ableger kursieren aber öffentlich; abgeflossen sind Kundendaten und Kreditkartendaten, zudem kam es zu Ausfällen.",
+   "relevance": "Agenten-gestützte Angriffswerkzeuge werden frei verfügbar und verkürzen die Zeit zwischen Schwachstelle und Angriff. Patch-Fristen, Angriffsflächen-Inventar und Überwachung sollten an diese Geschwindigkeit angepasst werden.",
+   "source": "BleepingComputer",
+   "url": "https://bleepingcomputer.com/news/security/hacker-used-artex-ai-and-claude-agents-to-target-south-korean-banks",
+   "id": "2026-10-11-update-suedkorea-artex-agenten",
+   "topic": "AI-Governance",
+   "impact": "mittel",
+   "published": "2026-10-10",
+   "tags": [
+    "Agenten",
+    "Bedrohungslage",
+    "Finanzsektor"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 5.7 – Bedrohungsintelligenz",
+    "NIS-2-Richtlinie Art. 21 – Umgang mit Schwachstellen"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Management"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "agentische-ki-sicherheit",
+   "priority": 2,
+   "primary": false,
+   "added": "2026-10-11T05:08:24Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Banken, ARTEX, Claude-Code-Sitzungen mit DeepSeek, GLM und Grok, offene Verzeichnisse, Lebenslauf, geschlossenes Projekt mit englischen und koreanischen Ablegern, Kundendaten, Kreditkartendaten und Ausfälle sind alle in der Quelle belegt."
+   }
+  },
+  {
+   "title": "Letzte Sicherheitsupdates: Windows Server 2012 am 13. Oktober, Exchange 2016 und 2019 Ende Oktober",
+   "summary": "Mit dem Patchday am 13. Oktober 2026 liefert Microsoft die letzten Extended Security Updates für Windows Server 2012 und 2012 R2; das dreijährige Programm endet damit. Für Exchange Server 2016 und 2019 endet die bezahlte zweite Verlängerungsperiode am 31. Oktober 2026, Microsoft schließt eine weitere Verlängerung ausdrücklich aus. Für den Oktober-Patchday erwartet die Vorschau nach dem Rekordmonat September etwas weniger, aber weiterhin viele Korrekturen.",
+   "relevance": "Systeme ohne Sicherheitsupdates brauchen ab November eine dokumentierte Entscheidung: ablösen, abschotten oder das Risiko formal akzeptieren. In der Abschlussprüfung dürften solche Systeme in der Nähe rechnungslegungsrelevanter Prozesse bei den allgemeinen IT-Kontrollen (Betrieb und Änderungsmanagement) zur Sprache kommen.",
+   "source": "Help Net Security",
+   "url": "https://www.helpnetsecurity.com/2026/10/09/october-2026-patch-tuesday-forecast/",
+   "id": "2026-10-11-microsoft-server-2012-exchange-esu-ende",
+   "topic": "IT-Governance & Risiko",
+   "impact": "hoch",
+   "published": "2026-10-09",
+   "tags": [
+    "Lebenszyklus",
+    "Altsysteme",
+    "Microsoft"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
+    "NIS-2-Richtlinie Art. 21 – Umgang mit Schwachstellen",
+    "IT-Kontrollen der Abschlussprüfung – IT-Betrieb"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Revision & Prüfung",
+    "Management"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "lebenszyklus-altsysteme",
+   "priority": 1,
+   "primary": false,
+   "added": "2026-10-11T05:08:24Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Die Quelle erwartet für Oktober weiterhin viele Korrekturen nach dem Rekord von 973 Schwachstellen im September, nicht nur wenige. Die Angabe zu Azure steht nicht in der Quelle und wurde gestrichen. Das Ende von Windows Server 2012 (Ende von Jahr 3 am 14. Oktober 2026) ist auf der…"
+   }
+  },
+  {
+   "title": "Schweizer Marktplatz Ricardo: Daten aus rund 890.000 Nutzerkonten abgeflossen",
+   "summary": "Ricardo, ein Marktplatz der SMG Swiss Marketplace Group, hat am 7. Oktober 2026 verdächtige Aktivitäten auf seinen Servern entdeckt; über eine inzwischen geschlossene Sicherheitslücke wurden Namen, Postadressen und Telefonnummern von rund 890.000 Konten abgegriffen, bei Geschäftskonten auch Firmennamen. E-Mail-Adressen und Passwörter sind nach Angaben des Unternehmens nicht betroffen. Ricardo hat die Betroffenen informiert, den Eidgenössischen Datenschutz- und Öffentlichkeitsbeauftragten benachrichtigt und kündigt Strafanzeige an.",
+   "relevance": "Adress- und Telefondaten reichen für sehr glaubwürdige Phishing-Anrufe und Betrugsversuche gegen Kundschaft. Onlinehändler sollten Erkennung von Massenabrufen sowie vorbereitete Kundenkommunikation und Meldeprozesse prüfen.",
+   "source": "Netzwoche",
+   "url": "https://www.netzwoche.ch/news/2026-10-09/ricardo-meldet-datenabfluss-bei-890000-userkonten",
+   "id": "2026-10-11-ricardo-890000-konten",
+   "topic": "Handel & Branche",
+   "impact": "mittel",
+   "published": "2026-10-09",
+   "tags": [
+    "Onlinehandel",
+    "Datenabfluss",
+    "Schweiz"
+   ],
+   "controls": [
+    "DSGVO Art. 33 – Meldung von Verletzungen an die Aufsichtsbehörde",
+    "ISO/IEC 27001 Anhang A 8.16 – Überwachung von Aktivitäten"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Datenschutz"
+   ],
+   "countries": [
+    "CH"
+   ],
+   "dossier": null,
+   "priority": 4,
+   "primary": false,
+   "added": "2026-10-11T05:08:24Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Entdeckung am 7. Oktober, rund 890.000 Konten, Datenarten, nicht betroffene E-Mail-Adressen und Passwörter, Meldung an den Datenschutzbeauftragten und geplante Strafanzeige sind belegt."
+   }
+  },
+  {
+   "title": "Italien: Bußgeld wegen verschwiegener Fahrzeugortung und ignorierter Auskunftsanfragen",
+   "summary": "Die italienische Datenschutzbehörde hat das Sicherheitsunternehmen La Patria mit 39.000 Euro belegt. Es hatte Dienstfahrzeuge per Satellitenortung erfasst, ohne die Beschäftigten darüber zu informieren, Auskunftsanfragen eines ehemaligen Beschäftigten zu Disziplinarverfahren und Ortungsdaten nicht ausreichend beantwortet und in der Datenschutzinformation Verarbeitungen genannt, die gar nicht stattfanden. Die Behörde betont, dass ein Auskunftsersuchen nicht ausdrücklich auf die Datenschutz-Grundverordnung verweisen muss.",
+   "relevance": "Ortung von Fahrzeugen und Geräten in Logistik und Lieferdienst braucht eine zutreffende Information der Beschäftigten. Prozesse für Auskunftsersuchen sollten auch formlose Anfragen ehemaliger Beschäftigter erkennen.",
+   "source": "Europäischer Datenschutzausschuss",
+   "url": "https://www.edpb.europa.eu/news/italian-dpa-fines-security-company-eur-39-000-for-violations-concerning-employees-data_en",
+   "id": "2026-10-11-italien-ortung-beschaeftigte",
+   "topic": "Datenschutz & Datenrecht",
+   "impact": "info",
+   "published": "2026-10-09",
+   "tags": [
+    "Beschäftigtendaten",
+    "Ortung",
+    "Auskunftsrecht"
+   ],
+   "controls": [
+    "DSGVO Art. 13 – Informationspflicht",
+    "DSGVO Art. 15 – Auskunftsrecht"
+   ],
+   "roles": [
+    "Datenschutz"
+   ],
+   "countries": [
+    "IT"
+   ],
+   "dossier": null,
+   "priority": 5,
+   "primary": true,
+   "added": "2026-10-11T05:08:24Z",
+   "check": {
+    "verdict": "ok",
+    "note": "La Patria, 39.000 Euro (22.000 plus 17.000), alle drei Verstöße und der Hinweis zum Auskunftsersuchen ohne Bezug auf die Datenschutz-Grundverordnung sind belegt."
+   }
+  },
   {
    "title": "Update: Citrix NetScaler – nächste kritische Lücke bei Anmeldung über Single Sign-on",
    "summary": "Citrix hat am 9. Oktober 2026 vor der kritischen Lücke CVE-2026-107406 in NetScaler ADC und NetScaler Gateway gewarnt. Betroffen sind Geräte, die für die Anmeldung über Security Assertion Markup Language als Identitäts- oder Dienstanbieter eingerichtet sind; ein Speicherüberlauf erlaubt Codeausführung oder Dienstausfall. Eine Ausnutzung ist noch nicht bekannt. 2026 wurden aber bereits fünf andere NetScaler-Lücken angegriffen, und rund 21.000 Geräte sind aus dem Internet erreichbar.",
@@ -824,6 +1035,74 @@
    "check": {
     "verdict": "ok",
     "note": "Die Quelle belegt den Stellungnahmeentwurf des Berichterstatters Sergey Lagodinsky im Rechtsausschuss: zwei statt vier Stufen, mindestens 80 Prozent für europäische Anbieter in Beschleunigungszonen, Wegfall der Prüfung von Anbietern aus Drittstaaten. Der gemeinsame Berichtsentwurf wird am 1.…"
+   }
+  },
+  {
+   "title": "Griechenland: Bußgeld für Ministerium und Dienstleister wegen veralteter Systeme",
+   "summary": "Die griechische Datenschutzbehörde hat nach einem großen Datenabfluss mit Identifikations-, Finanz- und Gesundheitsdaten das Sozialministerium als Verantwortlichen mit 200.000 Euro und die Agentur E.E.T.A.A. als Auftragsverarbeiter mit 150.000 Euro belegt. Der Angriff hatte laut Behörde Erfolg, weil veraltete Systeme und unzureichende Sicherheitsmaßnahmen trotz bekannter Risiken weiterbetrieben wurden; zudem fehlte ein ordnungsgemäßer Vertrag zur Auftragsverarbeitung. Beide müssen nun einen solchen Vertrag abschließen und die Sicherheit verstärken.",
+   "relevance": "Nach dem schwedischen Fall Miljödata haftet erneut der Dienstleister direkt, der Auftraggeber aber ebenfalls. Für das Drittparteienmanagement heißt das: Verträge zur Auftragsverarbeitung, Kontrollrechte und Wissen über die Wartungsstände beim Dienstleister gehören zusammen.",
+   "source": "Europäischer Datenschutzausschuss",
+   "url": "https://www.edpb.europa.eu/news/hellenic-dpa-decision-on-a-data-breach-involving-eetaa-sa-as-processor-for-the-ministry-of_en",
+   "id": "2026-10-11-griechenland-auftragsverarbeiter-bussgeld",
+   "topic": "Datenschutz & Datenrecht",
+   "impact": "mittel",
+   "published": "2026-10-08",
+   "tags": [
+    "Auftragsverarbeitung",
+    "Bußgeld",
+    "Altsysteme"
+   ],
+   "controls": [
+    "DSGVO Art. 28 – Auftragsverarbeiter",
+    "DSGVO Art. 32 – Sicherheit der Verarbeitung",
+    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen"
+   ],
+   "roles": [
+    "Datenschutz",
+    "Einkauf & Drittparteien"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "drittparteien-lieferkette",
+   "priority": 3,
+   "primary": true,
+   "added": "2026-10-11T05:08:24Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum 8. Oktober 2026, Beträge 200.000 und 150.000 Euro, Datenarten, Begründung und angeordnete Maßnahmen stimmen mit der Quelle überein."
+   }
+  },
+  {
+   "title": "Mutmaßliches Kernmitglied der Ransomware-Gruppe Qilin in Deutschland festgenommen",
+   "summary": "Ein 28-jähriger Russe, der als Schlüsselfigur der Gruppe Qilin gilt, wurde in Deutschland festgenommen, nachdem japanische Behörden ihn im Mai in einem Hotel in Osaka aufgespürt hatten und das Obergericht Tokio die Auslieferung genehmigt hatte. Deutsche Behörden werfen ihm vor, deutsche Unternehmen angegriffen und Zahlungen in Kryptowährung gefordert zu haben. Qilin soll seit Oktober 2022 rund 4.000 Unternehmen angegriffen haben.",
+   "relevance": "Ermittlungserfolge treffen einzelne Personen, die Gruppe bleibt aktiv. Notfallübungen, Wiederherstellungstests und die Haltung zu Lösegeldzahlungen bleiben Pflichtprogramm.",
+   "source": "Nippon.com (Jiji Press)",
+   "url": "https://www.nippon.com/en/news/yjj2026100800838/",
+   "id": "2026-10-11-qilin-festnahme-deutschland",
+   "topic": "Weitere Themen",
+   "impact": "info",
+   "published": "2026-10-08",
+   "tags": [
+    "Ransomware",
+    "Strafverfolgung"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 5.29 – Informationssicherheit bei Störungen"
+   ],
+   "roles": [
+    "IT-Risiko"
+   ],
+   "countries": [
+    "DE"
+   ],
+   "dossier": null,
+   "priority": 6,
+   "primary": false,
+   "added": "2026-10-11T05:08:24Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Ein achtköpfiger Kern, ein Angriff auf ein deutsches Logistikunternehmen im September 2024 und über 160.000 US-Dollar Lösegeld stehen nicht in der Quelle. Die Quelle nennt nur allgemein Angriffe auf deutsche Unternehmen mit Forderungen in Kryptowährung."
    }
   },
   {

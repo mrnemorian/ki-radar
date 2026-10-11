@@ -1,11 +1,17 @@
 {
  "last_run": {
-  "start": "2026-10-10T07:00:01+02:00",
-  "end": "2026-10-10T07:06:46+02:00",
+  "start": "2026-10-11T07:00:02+02:00",
+  "end": "2026-10-11T07:08:24+02:00",
   "ok": true,
-  "summary": "6 neue Meldungen: P1 Update: Citrix NetScaler – nächste kritische Lücke bei Anmeldung über Single Sign-on; P2 Microsoft: Veraltete Windows-Geräte verlieren 2027 den Zugang zu Windows Update; P3 "
+  "summary": "6 neue Meldungen: P1 Letzte Sicherheitsupdates: Windows Server 2012 am 13. Oktober, Exchange 2016 und 2019 Ende Oktober; P2 Update: Angriffe auf Südkoreas Banken liefen über Angriffssuite ARTEX mit "
  },
  "history": [
+  {
+   "start": "2026-10-11T07:00:02+02:00",
+   "end": "2026-10-11T07:08:24+02:00",
+   "ok": true,
+   "summary": "6 neue Meldungen: P1 Letzte Sicherheitsupdates: Windows Server 2012 am 13. Oktober, Exchange 2016 und 2019 Ende Oktober; P2 Update: Angriffe auf Südkoreas Banken liefen über Angriffssuite ARTEX mit "
+  },
   {
    "start": "2026-10-10T07:00:01+02:00",
    "end": "2026-10-10T07:06:46+02:00",
