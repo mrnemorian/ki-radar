@@ -1,0 +1,175 @@
+{
+ "format": "tag",
+ "chapters": [
+  {
+   "title": "Begrüßung",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Guten Morgen, liebe IT-GRC-Kolleginnen und -Kollegen, willkommen beim IT-GRC Radar. Heute ist Montag, der zwölfte Oktober 2026."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Montag, der Kaffee steht, und ich ahne schon: Es geht wieder um [en]Patches[/en], die eigentlich längst eingespielt sein sollten."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Gut geahnt. Aber vorher der Blick auf die Woche."
+    }
+   ]
+  },
+  {
+   "title": "Die Woche",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Die Fristenliste für die nächsten sieben Tage ist erfreulich kurz. Genau ein Eintrag, und der ist schon morgen fällig."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Lass mich raten: Windows Server 2012."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Richtig. Am dreizehnten Oktober gibt es für Windows Server 2012 und 2012 R2 die letzten [en]Extended Security Updates[/en]. Das ist unsere Frist der Woche."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Danach kommt nichts mehr. Wer da noch Systeme hat, braucht jetzt eine dokumentierte Risikoakzeptanz mit einem Namen dran. Nicht die Informationstechnik, sondern eine Person. Und am einunddreißigsten Oktober folgen Exchange 2016 und 2019."
+    }
+   ]
+  },
+  {
+   "title": "AnyDesk unter Linux",
+   "news_id": "2026-10-12-anydesk-linux-exploit-stiller-fix",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Damit zur wichtigsten Meldung. Forscher haben am achten Oktober funktionierenden Angriffscode für eine Lücke in AnyDesk unter Linux veröffentlicht. Damit bekommt man volle Administratorrechte, und zwar bevor überhaupt jemand die Verbindung bestätigt."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Moment, vor der Anmeldung? Bei einem Fernwartungswerkzeug? Viel schlechter geht es kaum."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Betroffen sind Versionen bis 8.0.2, behoben ist das seit Version 8.0.3 vom Juni. Aber im Änderungsprotokoll stand nur, ein Fehler, der zu einem Absturz führen kann, sei behoben. Kein Sicherheitshinweis, keine Schwachstellen-Kennung."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und das ist der eigentliche Governance-Punkt. Unser Schwachstellenmanagement hängt an Kennungen und Herstellerhinweisen. Ein stiller [en]Fix[/en] taucht in keinem Scanner als kritisch auf. Wer nur Kennungen abarbeitet, hat diese Lücke schlicht nie gesehen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Was heißt das praktisch?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Erstens ein Inventar: Wo läuft Fernwartungssoftware, auch bei Dienstleistern, die auf Filialsysteme zugreifen? Zweitens auf mindestens 8.0.3 aktualisieren oder den Netzwerkport 7070 sperren. Und drittens in Verträgen festhalten, dass Sicherheitskorrekturen auch so heißen müssen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Also wieder die Frage: Wer ist eigentlich Owner der Fernwartung?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Die Frage, die nie stirbt. Meistens alle ein bisschen, also niemand."
+    }
+   ]
+  },
+  {
+   "title": "Alte Lücken, staatliche Angreifer",
+   "news_id": "2026-10-12-flax-typhoon-alte-schwachstellen",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Thema zwei passt dazu, nur mit älteren Jahrgängen. Die Cybersicherheitsbehörde der Vereinigten Staaten hat fünf Schwachstellen in ihren Katalog aktiv ausgenutzter Lücken aufgenommen. Dahinter steckt die chinesische Gruppe Flax Typhoon."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und die Pointe ist das Alter, oder?"
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Genau. Zwei Lücken stammen von 2015, eine von 2016, dazu je eine von 2021 und 2023. Betroffen sind unter anderem der Dateiübertragungsserver ProFTPD, das Webframework Apache Struts und der Namensdienst BIND. Bundesbehörden mussten bis gestern patchen oder abschalten."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ehrlich gesagt ist das die unbequemste Art von Bedrohung. Kein [en]Zero Day[/en], sondern Lücken, die älter sind als manche Excel-Liste, in der wir sie führen. Und die Behörde warnt ausdrücklich, dass sich staatliche Angreifer in kritischen Infrastrukturen festsetzen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Lebensmittelversorgung gehört dazu. Was nehmen wir mit?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Die fünf Produkte mit dem eigenen Inventar abgleichen, auch eingebaute Komponenten in Appliances. Und jede Ausnahme bekommt ein Ablaufdatum. Eine Ausnahme ohne Ablaufdatum ist ein Dauerzustand."
+    }
+   ]
+  },
+  {
+   "title": "Update Digital Omnibus",
+   "news_id": "2026-10-12-digital-omnibus-ratsentwurf-meldepflicht",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Da gibt es Neues zum Digital Omnibus, also zur Reform der Datenschutz-Grundverordnung. Inzwischen ist bekannt, was im 163 Seiten langen Entwurf des Rats vom zweiten Oktober steht."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und was davon betrifft uns direkt?"
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Datenschutzverletzungen müssten der Aufsicht nur noch bei hohem Risiko gemeldet werden, und zwar innerhalb von 96 Stunden. Nach einer abgelehnten Cookie-Einwilligung dürfte man schon nach vier Monaten erneut fragen. Und missbräuchliche Auskunftsanträge dürften abgelehnt werden."
+    },
+    {
+     "speaker": "Florian",
+     "text": "96 Stunden klingt entspannt, aber bitte nicht gleich den Meldeprozess lockern. Solange nichts beschlossen ist, gilt das heutige Recht unverändert."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Die Abstimmung war doch für gestern angesetzt?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ein Ergebnis war bei unserer Recherche noch nicht veröffentlicht. Und das Parlament hat seine Position noch gar nicht festgelegt, erst danach kommt der Trilog. Also durchdenken, ja, umbauen, nein."
+    }
+   ]
+  },
+  {
+   "title": "Auf dem Radar",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Auf dem Radar: die Normen zum [en]Cyber Resilience Act[/en]. Die Kommission will die Fristen verschieben, für die Normen zum Schwachstellenmanagement auf den einunddreißigsten Oktober 2026, für produktspezifische Normen auf den einunddreißigsten Dezember."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Für uns als Käufer heißt das: Herstellerzusagen zum Schwachstellenmanagement werden endlich messbar. Nach der AnyDesk-Geschichte von vorhin wäre das wirklich nötig."
+    }
+   ]
+  },
+  {
+   "title": "Abschied",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Das war es für heute. Alle Quellen findet ihr wie immer auf der Webseite."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und wer morgen noch Windows Server 2012 im Inventar findet: nicht verstecken, dokumentieren."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Bis morgen beim IT-GRC Radar."
+    }
+   ]
+  }
+ ]
+}

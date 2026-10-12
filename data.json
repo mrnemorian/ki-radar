@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-11T05:08:24Z",
+ "updated": "2026-10-12T05:06:47Z",
  "topics": [
   "IT-Governance & Risiko",
   "Cyber- & IT-Regulierung",
@@ -11,6 +11,17 @@
   "Weitere Themen"
  ],
  "briefings": [
+  {
+   "date": "2026-10-12",
+   "headline": "Stille Sicherheitskorrekturen und uralte Lücken fordern das Schwachstellenmanagement, der Entwurf zur Datenschutzreform wird konkret.",
+   "points": [
+    "AnyDesk unter Linux: Angriffscode veröffentlicht, der vor jeder Anmeldung volle Rechte verschafft – behoben ohne Sicherheitshinweis",
+    "Staatliche chinesische Angreifer nutzen Schwachstellen von 2015 bis 2023, die Cybersicherheitsbehörde der Vereinigten Staaten setzte eine Patch-Frist bis 11. Oktober",
+    "Update Digital Omnibus: Der Entwurf des Rats sieht Meldungen von Datenschutzverletzungen nur noch bei hohem Risiko und innerhalb von 96 Stunden vor",
+    "Frist der Woche: Am 13. Oktober erscheinen die letzten Sicherheitsupdates für Windows Server 2012 und 2012 R2"
+   ],
+   "count": 3
+  },
   {
    "date": "2026-10-11",
    "headline": "Microsoft beendet im Oktober die letzten Sicherheitsupdates für Windows Server 2012 und Exchange 2016 und 2019, Altsysteme werden zum Prüfungsthema",
@@ -229,17 +240,17 @@
    "title": "Kritische Schwachstellen in Randsystemen und Kernanwendungen",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Citrix meldet am 9. Oktober 2026 mit CVE-2026-107406 die nächste kritische NetScaler-Lücke (Schweregrad 9,5) für Geräte mit Anmeldung über Security Assertion Markup Language; eine Ausnutzung ist noch nicht bekannt, doch 2026 wurden bereits fünf NetScaler-Lücken angegriffen. Parallel wird die Atlassian-Lücke CVE-2026-21589 aktiv ausgenutzt, und die Lücken in Exchange und SAP (OVERPASS) bleiben…",
-   "next_step": "NetScaler-Geräte mit Single Sign-on sofort auf die korrigierten Versionen bringen, Patchstand von Randsystemen wöchentlich an das Management berichten und Ausnahmen mit Fristen und verantwortlicher Person dokumentieren.",
+   "status": "Für AnyDesk unter Linux ist seit 8. Oktober 2026 Angriffscode öffentlich, der vor jeder Anmeldung volle Rechte verschafft. Der Hersteller hatte die Lücke ohne Sicherheitshinweis behoben. Parallel bleiben die NetScaler-Lücke CVE-2026-107406, die aktiv ausgenutzte Atlassian-Lücke CVE-2026-21589 sowie die Lücken in Exchange und SAP (OVERPASS) offen.",
+   "next_step": "Fernwartungswerkzeuge bei eigenen Teams und Dienstleistern inventarisieren und auf aktuelle Versionen bringen. Das Schwachstellenmanagement so ergänzen, dass auch Herstellerkorrekturen ohne Schwachstellen-Kennung bewertet werden.",
    "open_questions": [
-    "Sind alle aus dem Internet erreichbaren Geräte samt Konfiguration im Inventar erfasst?",
-    "Wie schnell lassen sich Notfall-Patches außerhalb des regulären Änderungsfensters ausrollen?"
+    "Wie erfahren wir von stillen Sicherheitskorrekturen, die nicht als solche gekennzeichnet sind?",
+    "Welche Dienstleister nutzen eigene Fernwartungswerkzeuge mit Zugriff auf unsere Systeme?"
    ],
    "controls": [
-    "NIS-2-Richtlinie Art. 21 – Umgang mit und Offenlegung von Schwachstellen",
-    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen"
+    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
+    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette"
    ],
-   "updated": "2026-10-10"
+   "updated": "2026-10-12"
   },
   {
    "slug": "lebenszyklus-altsysteme",
@@ -253,17 +264,16 @@
    "title": "Lebenszyklus und Altsysteme",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Windows Server 2012 und 2012 R2 erhalten am 13. Oktober 2026 die letzten Extended Security Updates, für Exchange Server 2016 und 2019 endet die bezahlte Verlängerung am 31. Oktober 2026 endgültig. 2027 folgt der Zertifikatswechsel bei Windows Update, ohne den veraltete Geräte keine Updates mehr erhalten.",
-   "next_step": "Inventar der betroffenen Systeme abgleichen, für jedes verbleibende System Ablösung, Abschottung oder formale Risikoakzeptanz mit verantwortlicher Person dokumentieren; Dienstleister nach ihren Wartungsständen fragen.",
+   "status": "Windows Server 2012 und 2012 R2 erhalten am 13. Oktober 2026 die letzten Extended Security Updates, für Exchange Server 2016 und 2019 endet die Verlängerung am 31. Oktober 2026. Die chinesische Gruppe Flax Typhoon nutzt aktiv Lücken aus den Jahren 2015 bis 2023 in ProFTPD, BIND, Apache Struts, ONLYOFFICE und Strapi. 2027 folgt der Zertifikatswechsel bei Windows Update.",
+   "next_step": "Altkomponenten auch in Appliances und Anwendungen von Drittanbietern gegen die Liste ausgenutzter Lücken prüfen. Jede Risikoakzeptanz für Altsysteme mit Ablaufdatum und benannter Owner-Person versehen.",
    "open_questions": [
-    "Welche Altsysteme laufen bei Dienstleistern und Auftragsverarbeitern?",
-    "Wie bewertet die Abschlussprüfung Systeme ohne Sicherheitsupdates in rechnungslegungsrelevanten Prozessen?"
+    "Welche eingebetteten Altkomponenten stecken in Appliances, die nicht im zentralen Inventar stehen?"
    ],
    "controls": [
     "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
-    "IT-Kontrollen der Abschlussprüfung – IT-Betrieb"
+    "ISO/IEC 27001 Anhang A 5.9 – Inventar der Informationen und anderen zugehörigen Werte"
    ],
-   "updated": "2026-10-11"
+   "updated": "2026-10-12"
   },
   {
    "slug": "nis2-umsetzung",
@@ -425,17 +435,17 @@
    "title": "Datenschutzreform und Digital Omnibus",
    "sector": "Datenschutz & Datenrecht",
    "ring": "beobachten",
-   "status": "Der Rat ringt um seine Position zum Digital Omnibus: Die Abstimmung der Ständigen Vertreter wurde vom 7. auf den 11. Oktober 2026 verschoben, Streitpunkte sind Geschäftsgeheimnisse in der Datenverordnung und eine deutsche Ausnahme für risikoarme Verantwortliche. Das Parlament will seine Position im Februar 2027 festlegen, danach folgt der Trilog.",
-   "next_step": "Ergebnis der Ratssitzung vom 11. Oktober auswerten und prüfen, welche Änderungen für Training Künstlicher Intelligenz, Cookies und den Datenzugang nach der Datenverordnung für einen Großkonzern tatsächlich gelten würden.",
+   "status": "Der Mandatsentwurf des Rats vom 2. Oktober 2026 sieht Meldungen von Datenschutzverletzungen nur bei hohem Risiko und innerhalb von 96 Stunden vor, außerdem eine erneute Cookie-Abfrage nach vier Monaten, einen relativen Begriff personenbezogener Daten und die Ablehnung missbräuchlicher Auskunftsanträge. Die Abstimmung der Ständigen Vertreter war für den 11. Oktober angesetzt, ein Ergebnis ist…",
+   "next_step": "Ergebnis der Ratsabstimmung verfolgen und die Folgen für Meldekette, Cookie-Management und Bearbeitung von Auskunftsanträgen vorbereitend bewerten, ohne Prozesse vorzeitig umzustellen.",
    "open_questions": [
-    "Wird berechtigtes Interesse als Rechtsgrundlage für das Training Künstlicher Intelligenz endgültig verankert?",
-    "Wie werden Geschäftsgeheimnisse beim Datenzugang nach der Datenverordnung geschützt?"
+    "Hat der Rat sein Mandat am 11. Oktober beschlossen?",
+    "Übernimmt das Parlament die Schwelle von 96 Stunden und den Begriff des hohen Risikos?"
    ],
    "controls": [
-    "DSGVO Art. 6 – Rechtmäßigkeit der Verarbeitung",
-    "DSGVO Art. 24 – Verantwortung des Verantwortlichen"
+    "DSGVO Art. 33 – Meldung von Verletzungen an die Aufsichtsbehörde",
+    "DSGVO Art. 15 – Auskunftsrecht"
    ],
-   "updated": "2026-10-08"
+   "updated": "2026-10-12"
   },
   {
    "slug": "post-quanten-kryptografie",
@@ -643,6 +653,18 @@
  ],
  "signals": [
   {
+   "theme": "Digital Fairness Act",
+   "why": "Die Kommission plant den Gesetzesvorschlag für das vierte Quartal 2026. Er zielt auf Dark Patterns, süchtig machendes Design und unfaire Personalisierung und würde Onlineshops, Apps und Preisgestaltung im Handel direkt treffen.",
+   "count": 6,
+   "first_seen": "2026-09-30",
+   "last_seen": "2026-10-12",
+   "evidence": [
+    "https://www.europarl.europa.eu/legislative-train/theme-protecting-our-democracy-upholding-our-values/file-digital-fairness-act",
+    "https://www.privacylaws.com/news/eu-proposal-on-digital-fairness-act-expected-by-the-end-of-2026/",
+    "https://www.mlex.com/mlex/articles/2529049/eu-digital-fairness-act-on-consumer-protection-tentatively-eyed-for-november"
+   ]
+  },
+  {
    "theme": "Neue Prüfungsstandards für Prüfungsnachweise",
    "why": "Der internationale Standardsetzer für Abschlussprüfung hat den Entwurf des überarbeiteten Prüfungsstandards 500 zur Kommentierung bis 15. Dezember 2026 veröffentlicht: Prüfungsnachweise werden für eine digitale Umgebung neu definiert, Relevanz und Verlässlichkeit von Informationen sind strenger zu testen. Systemberichte, Schnittstellen und Datenherkunft rücken damit stärker in die Prüfung der…",
    "count": 6,
@@ -670,18 +692,6 @@
    ]
   },
   {
-   "theme": "Digital Fairness Act",
-   "why": "Die Kommission will den Vorschlag gegen manipulative Gestaltung von Webseiten und Apps und gegen unfaire Personalisierung voraussichtlich im vierten Quartal 2026 vorlegen. Betroffen wären Onlineshops, Apps und personalisierte Preise im Handel.",
-   "count": 5,
-   "first_seen": "2026-09-30",
-   "last_seen": "2026-10-10",
-   "evidence": [
-    "https://www.europarl.europa.eu/legislative-train/theme-protecting-our-democracy-upholding-our-values/file-digital-fairness-act",
-    "https://www.privacylaws.com/news/eu-proposal-on-digital-fairness-act-expected-by-the-end-of-2026/",
-    "https://www.mlex.com/mlex/articles/2529049/eu-digital-fairness-act-on-consumer-protection-tentatively-eyed-for-november"
-   ]
-  },
-  {
    "theme": "Post-Quanten-Kryptografie-Migration",
    "why": "Forscher haben Signaturen mit 1024-Bit-RSA-Schlüsseln ohne Faktorisierung gefälscht. Moderne Verfahren mit Padding sind nicht betroffen, doch der Fall ist ein weiterer Anlass, kurze Schlüssel und veraltete Verfahren im Kryptografie-Inventar zu suchen.",
    "count": 5,
@@ -693,6 +703,17 @@
     "https://digital-strategy.ec.europa.eu/en/policies/post-quantum-cryptography",
     "https://www.whitehouse.gov/wp-content/uploads/2026/06/M-26-15-Execution-of-the-Migration-to-Post-Quantum-Cryptography.pdf",
     "https://www.heise.de/news/CA-Bewerbung-CDN-Anbieter-Cloudflare-will-bald-selber-Zertifikate-ausstellen-11469864.html"
+   ]
+  },
+  {
+   "theme": "Normen zum Cyber Resilience Act",
+   "why": "Die Kommission will die Fristen für die Normen verschieben: horizontale Normen und Normen zum Schwachstellenmanagement bis 31. Oktober 2026, produktspezifische bis 31. Dezember 2026. Erst mit diesen Normen werden Herstellerzusagen zum Schwachstellenmanagement für Einkauf und Drittparteiensteuerung messbar.",
+   "count": 2,
+   "first_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
+   "evidence": [
+    "https://www.cyberresilienceact.eu/news/cra-standardisation-deadlines-pushed-back-two-months.html",
+    "https://www.cyberresilienceact.eu/state-of-play.html"
    ]
   },
   {
@@ -730,13 +751,13 @@
    ]
   },
   {
-   "theme": "Normen zum Cyber Resilience Act",
-   "why": "Die produktspezifischen harmonisierten Normen sollen bis Ende Oktober 2026 geliefert werden, bisher ist keine im Amtsblatt veröffentlicht; sie bestimmen, worauf Hersteller sich künftig beim Einkauf von Produkten mit digitalen Elementen berufen.",
+   "theme": "Pflicht zur digitalen Zahlungsoption",
+   "why": "Das Bundesfinanzministerium plant Medienberichten zufolge, dass Händler ab 2027 neben Bargeld mindestens eine digitale Zahlungsart anbieten müssen, ohne Zusatzgebühren. Beschlossen ist das noch nicht. Für Kassen-, Zahlungs- und Kartendatenumgebungen hätte es Folgen für Verfügbarkeit und Kontrollen.",
    "count": 1,
-   "first_seen": "2026-10-11",
-   "last_seen": "2026-10-11",
+   "first_seen": "2026-10-12",
+   "last_seen": "2026-10-12",
    "evidence": [
-    "https://www.cyberresilienceact.eu/state-of-play.html"
+    "https://ms-aktuell.de/finanzen/digitale-bezahlpflicht-04-10-2026/"
    ]
   },
   {
@@ -826,6 +847,113 @@
    "check": {
     "verdict": "ok",
     "note": "Banken, ARTEX, Claude-Code-Sitzungen mit DeepSeek, GLM und Grok, offene Verzeichnisse, Lebenslauf, geschlossenes Projekt mit englischen und koreanischen Ablegern, Kundendaten, Kreditkartendaten und Ausfälle sind alle in der Quelle belegt."
+   }
+  },
+  {
+   "title": "AnyDesk unter Linux: Angriffscode für Lücke vor der Anmeldung, behoben ohne Sicherheitshinweis",
+   "summary": "Forscher haben am 8. Oktober 2026 einen funktionierenden Angriffscode für eine Lücke in AnyDesk für Linux bis Version 8.0.2 veröffentlicht. Er verschafft volle Administratorrechte, bevor jemand die Verbindung bestätigt. Behoben ist die Lücke seit Version 8.0.3 vom Juni, im Änderungsprotokoll stand jedoch nur „Fehler behoben, der zu einem Absturz führen konnte“, ohne Sicherheitshinweis und ohne Schwachstellen-Kennung. Windows und macOS sind nicht betroffen. Wer nicht sofort aktualisieren kann, soll den Netzwerkport 7070 sperren.",
+   "relevance": "Fernwartungswerkzeuge bei eigenen Teams und bei Dienstleistern mit Zugriff auf Filial-, Kassen- oder Serversysteme gehören ins Inventar und müssen sofort geprüft werden. Der stille Fix zeigt eine Lücke im Schwachstellenmanagement: Prozesse, die nur Schwachstellen-Kennungen und Herstellerhinweise abarbeiten, übersehen solche Korrekturen. Das sollte in Lieferantenverträgen geregelt werden.",
+   "source": "The Hacker News",
+   "url": "https://thehackernews.com/2026/10/researchers-publish-working-exploit-for.html",
+   "id": "2026-10-12-anydesk-linux-exploit-stiller-fix",
+   "topic": "IT-Governance & Risiko",
+   "impact": "hoch",
+   "published": "2026-10-09",
+   "tags": [
+    "Fernwartung",
+    "Stiller Fix",
+    "Linux"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
+    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen",
+    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Einkauf & Drittparteien"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "kritische-schwachstellen-perimeter",
+   "priority": 1,
+   "primary": false,
+   "added": "2026-10-12T05:06:47Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Die Quelle bestätigt alles: Angriffscode am 8. Oktober 2026 veröffentlicht, betroffen Linux bis 8.0.2, behoben in 8.0.3 vom Juni 2026, im Änderungsprotokoll nur ein Absturz-Fehler erwähnt, keine Schwachstellen-Kennung, Windows und macOS nicht betroffen, Port 7070 sperren. Der Angreifer erhält…"
+   }
+  },
+  {
+   "title": "Staatliche Angreifer nutzen bis zu elf Jahre alte Lücken, Behörde setzt Patch-Frist",
+   "summary": "Die Cybersicherheitsbehörde der Vereinigten Staaten hat fünf Schwachstellen in ihren Katalog aktiv ausgenutzter Lücken aufgenommen, die die chinesische Gruppe Flax Typhoon angreift. Betroffen sind der Dateiübertragungsserver ProFTPD (2015), der Namensdienst ISC BIND (2015), das Webframework Apache Struts (2016), ONLYOFFICE Docs (2021) und das Content-Management-System Strapi (2023). Bundesbehörden mussten bis 11. Oktober 2026 patchen oder die Systeme abschalten. Die Behörde warnt, dass staatlich gesteuerte Angreifer sich in kritischen Infrastrukturen festsetzen, auch in operativer Technik.",
+   "relevance": "Die Gefahr geht hier nicht von neuen Zero Days aus, sondern von vergessenen Altkomponenten, oft eingebaut in Appliances oder Anwendungen von Drittanbietern. Für einen Konzern in der kritischen Lebensmittelversorgung gehören die fünf Produkte gegen das Inventar geprüft und Ausnahmen mit Ablaufdatum und benannter Owner-Person versehen.",
+   "source": "The Hacker News",
+   "url": "https://thehackernews.com/2026/10/flax-typhoon-exploits-five-flaws-as.html",
+   "id": "2026-10-12-flax-typhoon-alte-schwachstellen",
+   "topic": "Cyber- & IT-Regulierung",
+   "impact": "mittel",
+   "published": "2026-10-09",
+   "tags": [
+    "Altsysteme",
+    "Staatliche Angreifer",
+    "Kritische Infrastruktur"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
+    "ISO/IEC 27001 Anhang A 5.9 – Inventar der Informationen und anderen zugehörigen Werte"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Management"
+   ],
+   "countries": [
+    "EU",
+    "DE"
+   ],
+   "dossier": "lebenszyklus-altsysteme",
+   "priority": 2,
+   "primary": false,
+   "added": "2026-10-12T05:06:47Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Die Quelle vom 9. Oktober 2026 bestätigt die fünf Schwachstellen (ProFTPD 2015, BIND 2015, Struts 2016, ONLYOFFICE 2021, Strapi 2023), die Frist 11. Oktober 2026 und die Warnung vor Angreifern in kritischen Infrastrukturen einschließlich operativer Technik."
+   }
+  },
+  {
+   "title": "Update: Digital Omnibus – Ratsentwurf will Meldung von Datenschutzverletzungen nur bei hohem Risiko",
+   "summary": "Der 163 Seiten lange Mandatsentwurf des Rats vom 2. Oktober 2026 sieht vor, dass Datenschutzverletzungen nur noch bei hohem Risiko an die Aufsicht gemeldet werden müssen, und zwar innerhalb von 96 Stunden. Nach einer abgelehnten Cookie-Einwilligung darf schon nach vier statt sechs Monaten erneut gefragt werden. Sechs Zwecke sollen ohne Einwilligung auskommen, darunter die Messung kontextbezogener Werbung. Außerdem enthält der Entwurf einen relativen Begriff personenbezogener Daten, das berechtigte Interesse als Grundlage für Künstliche Intelligenz und die Möglichkeit, missbräuchliche Auskunftsanträge abzulehnen. Neu gegenüber dem bisherigen Stand ist der konkrete Inhalt des Entwurfs. Die Abstimmung der Ständigen Vertreter war für den 11. Oktober angesetzt, ein Ergebnis wurde noch nicht veröffentlicht.",
+   "relevance": "Meldeprozess, Cookie-Management im Onlinehandel und Bearbeitung von Auskunftsanträgen wären direkt betroffen. Bis zum Abschluss des Trilogs gilt das heutige Recht. Sinnvoll ist, die Meldekette schon jetzt für beide Varianten durchzuspielen, aber noch nichts umzubauen.",
+   "source": "PPC Land",
+   "url": "https://ppc.land/eu-council-draft-cuts-cookie-re-prompt-wait-from-6-months-to-4/",
+   "id": "2026-10-12-digital-omnibus-ratsentwurf-meldepflicht",
+   "topic": "Datenschutz & Datenrecht",
+   "impact": "mittel",
+   "published": "2026-10-09",
+   "tags": [
+    "Digital Omnibus",
+    "Meldepflicht",
+    "Cookies"
+   ],
+   "controls": [
+    "DSGVO Art. 33 – Meldung von Verletzungen an die Aufsichtsbehörde",
+    "DSGVO Art. 15 – Auskunftsrecht"
+   ],
+   "roles": [
+    "Datenschutz",
+    "Management"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "dsgvo-reform-digital-omnibus",
+   "priority": 3,
+   "primary": false,
+   "added": "2026-10-12T05:06:47Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Inhalt stimmt mit der Quelle überein (163 Seiten, Entwurf vom 2. Oktober, hohes Risiko und 96 Stunden, vier statt sechs Monate, sechs Ausnahmen, Abstimmung am 11. Oktober). Das Veröffentlichungsdatum war nur als Monat angegeben, laut Quelle ist es der 9. Oktober 2026."
    }
   },
   {

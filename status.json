@@ -1,11 +1,17 @@
 {
  "last_run": {
-  "start": "2026-10-11T07:00:02+02:00",
-  "end": "2026-10-11T07:08:24+02:00",
+  "start": "2026-10-12T07:00:01+02:00",
+  "end": "2026-10-12T07:06:47+02:00",
   "ok": true,
-  "summary": "6 neue Meldungen: P1 Letzte Sicherheitsupdates: Windows Server 2012 am 13. Oktober, Exchange 2016 und 2019 Ende Oktober; P2 Update: Angriffe auf Südkoreas Banken liefen über Angriffssuite ARTEX mit "
+  "summary": "3 neue Meldungen: P1 AnyDesk unter Linux: Angriffscode für Lücke vor der Anmeldung, behoben ohne Sicherheitshinweis; P2 Staatliche Angreifer nutzen bis zu elf Jahre alte Lücken, Behörde setzt Patc"
  },
  "history": [
+  {
+   "start": "2026-10-12T07:00:01+02:00",
+   "end": "2026-10-12T07:06:47+02:00",
+   "ok": true,
+   "summary": "3 neue Meldungen: P1 AnyDesk unter Linux: Angriffscode für Lücke vor der Anmeldung, behoben ohne Sicherheitshinweis; P2 Staatliche Angreifer nutzen bis zu elf Jahre alte Lücken, Behörde setzt Patc"
+  },
   {
    "start": "2026-10-11T07:00:02+02:00",
    "end": "2026-10-11T07:08:24+02:00",
