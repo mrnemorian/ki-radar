@@ -1,11 +1,17 @@
 {
  "last_run": {
-  "start": "2026-10-12T07:00:01+02:00",
-  "end": "2026-10-12T07:06:47+02:00",
+  "start": "2026-10-13T07:00:01+02:00",
+  "end": "2026-10-13T07:07:44+02:00",
   "ok": true,
-  "summary": "3 neue Meldungen: P1 AnyDesk unter Linux: Angriffscode für Lücke vor der Anmeldung, behoben ohne Sicherheitshinweis; P2 Staatliche Angreifer nutzen bis zu elf Jahre alte Lücken, Behörde setzt Patc"
+  "summary": "7 neue Meldungen: P1 Frankreich: Angreifer heizen Kühlmöbel in Hunderten Supermärkten auf; P2 Ahold Delhaize: Cybervorfall legt Verteilzentren von Albert Heijn lahm; P3 TUI Belgien bestätigt Daten"
  },
  "history": [
+  {
+   "start": "2026-10-13T07:00:01+02:00",
+   "end": "2026-10-13T07:07:44+02:00",
+   "ok": true,
+   "summary": "7 neue Meldungen: P1 Frankreich: Angreifer heizen Kühlmöbel in Hunderten Supermärkten auf; P2 Ahold Delhaize: Cybervorfall legt Verteilzentren von Albert Heijn lahm; P3 TUI Belgien bestätigt Daten"
+  },
   {
    "start": "2026-10-12T07:00:01+02:00",
    "end": "2026-10-12T07:06:47+02:00",
@@ -83,12 +89,6 @@
    "end": "2026-09-30T13:23:35+02:00",
    "ok": true,
    "summary": "4 neue Meldungen: P1 Update: Österreichs Cybersicherheitsgesetz startet, Selbstdeklaration bis September 2027; P2 Autonomer Agent mit Künstlicher Intelligenz steuert Angriff auf niederländische Sic"
-  },
-  {
-   "start": "2026-09-30T13:03:40+02:00",
-   "end": "2026-09-30T13:10:23+02:00",
-   "ok": true,
-   "summary": "4 neue Meldungen: P1 Update: Österreich – neues Cybersicherheitsgesetz gilt ab morgen, Meldepflicht ab dem ersten Tag; P2 Kiteworks: Kunden sollten Server vorsorglich abschalten, kritische Lücke g"
   }
  ]
 }
