@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-13T05:07:44Z",
+ "updated": "2026-10-14T05:07:08Z",
  "topics": [
   "IT-Governance & Risiko",
   "Cyber- & IT-Regulierung",
@@ -11,6 +11,18 @@
   "Weitere Themen"
  ],
  "briefings": [
+  {
+   "date": "2026-10-14",
+   "headline": "Angriffe auf Kühlsteuerungen treffen weitere Hersteller, Microsoft schließt eine ausgenutzte Lücke, und bei Amadeus lagen Passdaten von Reisenden offen.",
+   "points": [
+    "Französisches Computer-Notfallteam erweitert Warnung: neben Danfoss auch Fernsteuerungen von Copeland und Dixell kompromittiert, Zurücksetzen allein reicht nicht",
+    "Microsoft-Patchday mit 1.411 Lücken, darunter die ausgenutzte CVE-2026-96951; Behörde der Vereinigten Staaten setzt Frist bis 16. Oktober",
+    "Amadeus: Passdaten und Buchungscodes von Reisenden und Kennungen deutscher Reisebüros waren über eine ungeschützte Schnittstelle einsehbar",
+    "SAP-Patchday mit Lücke vom Höchstwert 10, Ahold Delhaize findet bislang keinen Datenabfluss",
+    "Kommission will Normen zu Rechtsakten kostenlos machen; Digital Omnibus im Rat weiter blockiert"
+   ],
+   "count": 7
+  },
   {
    "date": "2026-10-13",
    "headline": "Der europäische Lebensmittelhandel wird direkt angegriffen: Kühlsteuerungen in Frankreich manipuliert, Ahold Delhaize schaltet Systeme ab, TUI Belgien meldet ein Datenleck.",
@@ -203,19 +215,19 @@
    "title": "Betriebstechnik in Filialen und Logistik",
    "sector": "Handel & Branche",
    "ring": "jetzt handeln",
-   "status": "Am 11. und 12. Oktober 2026 haben Angreifer in Frankreich Kühlsteuerungen von Danfoss in 250 bis 350 Supermärkten übernommen und Kühlmöbel auf bis zu 50 Grad aufgeheizt. Allein in Frankreich sind 1.590 solcher Systeme aus dem Internet erreichbar. Das Standardisierungsinstitut der Vereinigten Staaten bezieht den Lebensmittelsektor in den Entwurf seiner Richtlinie für operative Technologie ein.",
-   "next_step": "Kühl-, Gebäude- und Lagertechnik inventarisieren, Internetexposition und Fernwartungszugänge der Dienstleister prüfen, Firmware-Stände abfragen und eine klare Zuständigkeit zwischen Informationstechnik und Facility Management festlegen.",
+   "status": "Das französische Computer-Notfallteam meldet seit 13. Oktober 2026 kompromittierte Kühlsteuerungen von Danfoss sowie Fernsteuerungen xweb von Copeland und Dixell und warnt, dass bloßes Zurücksetzen nicht schützt. Bei Ahold Delhaize zeigt der Stillstand von Verteilzentren, wie stark die Versorgung an Logistiksystemen hängt.",
+   "next_step": "Betriebstechnik in Filialen und Lägern inventarisieren, Erreichbarkeit aus dem Internet prüfen, Standardpasswörter und Firmwarestand bei Dienstleistern abfragen und Verantwortliche festlegen.",
    "open_questions": [
-    "Welche bekannte Lücke oder welcher Zugangsweg wurde in Frankreich genutzt?",
-    "Wer verantwortet Betriebstechnik in Filialen: Informationstechnik, Facility Management oder Dienstleister?",
-    "Wie werden Ausfälle der Kühlkette in Meldungen nach der NIS-2-Richtlinie eingeordnet?"
+    "Wer ist Owner der Kühl- und Gebäudesteuerung: Haustechnik, Informationstechnik oder Dienstleister?",
+    "Welche Geräte haben das Ende der Herstellerunterstützung erreicht?",
+    "Decken Notfallpläne den Betrieb von Verteilzentren ohne zentrale Systeme ab?"
    ],
    "controls": [
-    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
-    "ISO/IEC 27001 Anhang A 5.9 – Inventar der Informationen und anderen zugehörigen Werte",
-    "IEC 62443 – Sicherheit industrieller Automatisierungssysteme"
+    "NIS-2-Richtlinie Art. 21 – Risikomanagementmaßnahmen im Bereich der Cybersicherheit",
+    "ISO/IEC 27001 Anhang A 8.20 – Netzwerksicherheit",
+    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen"
    ],
-   "updated": "2026-10-13"
+   "updated": "2026-10-14"
   },
   {
    "slug": "drittparteien-lieferkette",
@@ -229,18 +241,18 @@
    "title": "Drittparteien- und Lieferkettenrisiko",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Aufsichtsbehörden nehmen Dienstleister direkt in Haftung: Nach Schweden (Miljödata) hat Griechenland einen Auftragsverarbeiter wegen veralteter Systeme mit 150.000 Euro und den Auftraggeber mit 200.000 Euro belegt. In Dänemark führte der legale Suchzugang eines kleinen Unternehmens zu Abfragen über 8,8 Millionen Menschen, in Japan trifft der Ransomware-Angriff auf IDC Frontier Millionen…",
-   "next_step": "Verträge zur Auftragsverarbeitung auf Vollständigkeit prüfen und bei kritischen Dienstleistern Nachweise zu Wartungsständen und Patch-Prozessen anfordern.",
+   "status": "Bei Amadeus waren Pass- und Buchungsdaten von Reisenden sowie Hunderte Kennungen deutscher Reisebüros über eine ungeschützte Schnittstelle einsehbar. Zuvor hatten Aufsichtsbehörden in Schweden und Griechenland Dienstleister direkt mit Bußgeldern belegt.",
+   "next_step": "Bei zentralen Plattformanbietern Betroffenheit, Meldewege und Nachweise zur Absicherung von Schnittstellen anfordern.",
    "open_questions": [
-    "Wie werden Wartungsstände von Dienstleistern laufend überwacht statt nur jährlich abgefragt?",
-    "Wie lassen sich ungewöhnliche Abfragemengen über legale Zugänge erkennen?"
+    "Welche Zusagen zu Meldung und Information enthalten Verträge mit Buchungsplattformen?",
+    "Wie schnell erfährt man von Lücken beim Anbieter, die nicht öffentlich gemeldet werden?"
    ],
    "controls": [
-    "DSGVO Art. 28 – Auftragsverarbeiter",
     "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
+    "DSGVO Art. 28 – Auftragsverarbeiter",
     "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen"
    ],
-   "updated": "2026-10-11"
+   "updated": "2026-10-14"
   },
   {
    "slug": "identitaeten-zugangsdaten",
@@ -279,17 +291,17 @@
    "title": "Kritische Schwachstellen in Randsystemen und Kernanwendungen",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Für AnyDesk unter Linux ist seit 8. Oktober 2026 Angriffscode öffentlich, der vor jeder Anmeldung volle Rechte verschafft. Der Hersteller hatte die Lücke ohne Sicherheitshinweis behoben. Parallel bleiben die NetScaler-Lücke CVE-2026-107406, die aktiv ausgenutzte Atlassian-Lücke CVE-2026-21589 sowie die Lücken in Exchange und SAP (OVERPASS) offen.",
-   "next_step": "Fernwartungswerkzeuge bei eigenen Teams und Dienstleistern inventarisieren und auf aktuelle Versionen bringen. Das Schwachstellenmanagement so ergänzen, dass auch Herstellerkorrekturen ohne Schwachstellen-Kennung bewertet werden.",
+   "status": "Microsoft hat am 13. Oktober 2026 1.411 Lücken geschlossen, die ausgenutzte CVE-2026-96951 soll nach der Behörde der Vereinigten Staaten bis 16. Oktober behoben sein; SAP schließt am selben Tag eine Lücke mit Höchstwert 10. Offen bleiben zudem AnyDesk unter Linux, NetScaler, Atlassian sowie Exchange und SAP OVERPASS.",
+   "next_step": "Notfall-Patchfristen für aktiv ausgenutzte Lücken festlegen und Abweichungen mit Risikoakzeptanz durch Verantwortliche dokumentieren.",
    "open_questions": [
-    "Wie erfahren wir von stillen Sicherheitskorrekturen, die nicht als solche gekennzeichnet sind?",
-    "Welche Dienstleister nutzen eigene Fernwartungswerkzeuge mit Zugriff auf unsere Systeme?"
+    "Reicht die Kapazität im Patchmanagement bei Rekordzahlen an Lücken?",
+    "Sind beschleunigte Updates im Änderungsmanagement prüfbar dokumentiert?"
    ],
    "controls": [
-    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
-    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette"
+    "ISO/IEC 27001 Anhang A 8.8 – Umgang mit technischen Schwachstellen",
+    "IT-Kontrollen der Abschlussprüfung – Änderungsmanagement"
    ],
-   "updated": "2026-10-12"
+   "updated": "2026-10-14"
   },
   {
    "slug": "lebenszyklus-altsysteme",
@@ -476,17 +488,16 @@
    "title": "Datenschutzreform und Digital Omnibus",
    "sector": "Datenschutz & Datenrecht",
    "ring": "beobachten",
-   "status": "Der Mandatsentwurf des Rats vom 2. Oktober 2026 sieht Meldungen von Datenschutzverletzungen nur bei hohem Risiko und innerhalb von 96 Stunden vor, außerdem eine erneute Cookie-Abfrage nach vier Monaten, einen relativen Begriff personenbezogener Daten und die Ablehnung missbräuchlicher Auskunftsanträge. Die Abstimmung der Ständigen Vertreter war für den 11. Oktober angesetzt, ein Ergebnis ist…",
-   "next_step": "Ergebnis der Ratsabstimmung verfolgen und die Folgen für Meldekette, Cookie-Management und Bearbeitung von Auskunftsanträgen vorbereitend bewerten, ohne Prozesse vorzeitig umzustellen.",
+   "status": "Der Ausschuss der Ständigen Vertreter hat den Mandatsentwurf am 11. Oktober 2026 weder beraten noch abgestimmt; Deutschland verlangt ausdrückliche Vereinbarungen für das Teilen von Daten mit Geschäftsgeheimnissen. Der Entwurf sieht unter anderem Meldungen von Datenschutzverletzungen nur bei hohem Risiko innerhalb von 96 Stunden vor.",
+   "next_step": "Neuen Termin im Rat beobachten und bis zur Einigung an den geltenden Meldefristen festhalten.",
    "open_questions": [
-    "Hat der Rat sein Mandat am 11. Oktober beschlossen?",
-    "Übernimmt das Parlament die Schwelle von 96 Stunden und den Begriff des hohen Risikos?"
+    "Gelingt ein Ratsmandat noch vor Ende 2026?",
+    "Welche Regeln für Geschäftsgeheimnisse nach der Datenverordnung setzen sich durch?"
    ],
    "controls": [
-    "DSGVO Art. 33 – Meldung von Verletzungen an die Aufsichtsbehörde",
-    "DSGVO Art. 15 – Auskunftsrecht"
+    "DSGVO Art. 33 – Meldung von Verletzungen des Schutzes personenbezogener Daten"
    ],
-   "updated": "2026-10-12"
+   "updated": "2026-10-14"
   },
   {
    "slug": "post-quanten-kryptografie",
@@ -637,6 +648,17 @@
    "checked": true
   },
   {
+   "date": "2026-12-08",
+   "title": "Ende der Konsultation zur neuen Normungsverordnung",
+   "detail": "Unternehmen können zum Vorschlag für kostenlose Normen und gemeinsame Spezifikationen der Kommission Stellung nehmen, etwa über ihre Verbände.",
+   "scope": "EU",
+   "url": "https://prodlaw.eu/2026/10/european-commission-proposes-revision-of-the-framework-for-european-standardisation/",
+   "primary": false,
+   "checked": true,
+   "dossier": null,
+   "added": "2026-10-14"
+  },
+  {
    "date": "2027-01-01",
    "title": "Österreich: Registrierung abgeschlossen (bis 1. Jänner 2027, faktisch Jahresende 2026)",
    "detail": "Betroffene Einrichtungen registrieren sich über die Anwendung NIS2 Services im Unternehmensserviceportal; die Behördenquelle nennt „bis zum 1. Jänner 2027“.",
@@ -716,6 +738,18 @@
  ],
  "signals": [
   {
+   "theme": "Digital Fairness Act",
+   "why": "Der Vorschlag der Kommission zu manipulativen Gestaltungen, Abonnements und Personalisierung im Onlinehandel wird bis Ende 2026 erwartet und würde Onlineshops und Apps direkt betreffen.",
+   "count": 7,
+   "first_seen": "2026-09-30",
+   "last_seen": "2026-10-14",
+   "evidence": [
+    "https://www.privacylaws.com/news/eu-proposal-on-digital-fairness-act-expected-by-the-end-of-2026/",
+    "https://www.europarl.europa.eu/legislative-train/theme-protecting-our-democracy-upholding-our-values/file-digital-fairness-act",
+    "https://www.mlex.com/mlex/articles/2529049/eu-digital-fairness-act-on-consumer-protection-tentatively-eyed-for-november"
+   ]
+  },
+  {
    "theme": "Neue Prüfungsstandards für Prüfungsnachweise",
    "why": "Neben der Konsultation zu Prüfungsnachweisen bis 15. Dezember 2026 kündigt der internationale Standardsetzer für November einen ersten Leitfaden zum Qualitätsmanagement bei Prüfungswerkzeugen mit Künstlicher Intelligenz an. Das verändert die Erwartungen an Datenqualität und Nachweise aus den Systemen der Unternehmen.",
    "count": 7,
@@ -727,18 +761,6 @@
     "https://www.iaasb.org/publications/proposed-revisions-audit-evidence-risk-response-isa-330-isa-500-isa-520",
     "https://www.iaasb.org/consultations-projects/audit-evidence-and-risk-response-isa-330-isa-500-isa-520",
     "https://www.accountingtoday.com/news/iaasb-proposes-to-revise-audit-standards-for-new-risks-and-tech"
-   ]
-  },
-  {
-   "theme": "Digital Fairness Act",
-   "why": "Die Kommission plant den Gesetzesvorschlag für das vierte Quartal 2026. Er zielt auf Dark Patterns, süchtig machendes Design und unfaire Personalisierung und würde Onlineshops, Apps und Preisgestaltung im Handel direkt treffen.",
-   "count": 6,
-   "first_seen": "2026-09-30",
-   "last_seen": "2026-10-12",
-   "evidence": [
-    "https://www.europarl.europa.eu/legislative-train/theme-protecting-our-democracy-upholding-our-values/file-digital-fairness-act",
-    "https://www.privacylaws.com/news/eu-proposal-on-digital-fairness-act-expected-by-the-end-of-2026/",
-    "https://www.mlex.com/mlex/articles/2529049/eu-digital-fairness-act-on-consumer-protection-tentatively-eyed-for-november"
    ]
   },
   {
@@ -771,13 +793,13 @@
   },
   {
    "theme": "Normen zum Cyber Resilience Act",
-   "why": "Nach dem Änderungsentwurf der Kommission sollen die Normungsorganisationen die horizontalen Normentwürfe und die Normen zum Schwachstellenmanagement bis 31. Oktober 2026 liefern, die produktspezifischen bis 31. Dezember 2026. Sie werden zur Messlatte beim Einkauf vernetzter Geräte wie Kühlsteuerungen.",
-   "count": 3,
+   "why": "Die Termine für die harmonisierten Normen zur Verordnung über Cyberresilienz wurden um zwei Monate verschoben, im Amtsblatt ist noch keine Norm veröffentlicht. Zusammen mit der geplanten Rückfallebene gemeinsamer Spezifikationen entscheidet das, woran Einkauf und Lieferanten vernetzter Produkte gemessen werden.",
+   "count": 4,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-13",
+   "last_seen": "2026-10-14",
    "evidence": [
-    "https://www.cyberresilienceact.eu/news/cra-standardisation-deadlines-pushed-back-two-months.html",
-    "https://www.cyberresilienceact.eu/state-of-play.html"
+    "https://www.cyberresilienceact.eu/state-of-play.html",
+    "https://www.cyberresilienceact.eu/news/cra-standardisation-deadlines-pushed-back-two-months.html"
    ]
   },
   {
@@ -878,6 +900,222 @@
   }
  ],
  "news": [
+  {
+   "title": "Microsoft-Patchday: 1.411 Lücken, eine wird bereits ausgenutzt",
+   "summary": "Microsoft hat am 13. Oktober 2026 Updates für 1.411 Schwachstellen veröffentlicht, darunter 70 kritische. Die Lücke CVE-2026-96951 in der Windows Shell wird aktiv ausgenutzt und erlaubt es, den Schutz für heruntergeladene Dateien zu umgehen. Zugleich endete die Unterstützung für Windows 11 Version 24H2 in den Ausgaben Home und Pro sowie für Windows 10 Enterprise LTSB 2016.",
+   "relevance": "Die Behördenfrist taugt als Maßstab für die eigene Notfall-Patchfrist auf Arbeitsplätzen. Für die Abschlussprüfung zählt, dass auch beschleunigt eingespielte Updates im Änderungsmanagement nachvollziehbar dokumentiert sind.",
+   "source": "BleepingComputer",
+   "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-october-2026-patch-tuesday-fixes-1-411-flaws-3-zero-days/",
+   "id": "2026-10-14-microsoft-patchday-oktober-ausgenutzte-luecke",
+   "topic": "IT-Governance & Risiko",
+   "impact": "hoch",
+   "published": "2026-10-13",
+   "tags": [
+    "Patchmanagement",
+    "Zero Day",
+    "Windows"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 8.8 – Umgang mit technischen Schwachstellen",
+    "IT-Kontrollen der Abschlussprüfung – Änderungsmanagement"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Revision & Prüfung"
+   ],
+   "countries": [
+    "EU",
+    "DE"
+   ],
+   "dossier": "kritische-schwachstellen-perimeter",
+   "priority": 2,
+   "primary": false,
+   "added": "2026-10-14T05:07:08Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Zahlen, Lücke und Ende der Unterstützung stimmen. Die Frist der Cybersicherheitsbehörde der Vereinigten Staaten bis 16. Oktober steht nicht in der Quelle, und auch die Meldung der Behörde vom 13. Oktober nennt kein Datum."
+   }
+  },
+  {
+   "title": "Amadeus: Passdaten und Buchungscodes von Reisenden waren offen einsehbar",
+   "summary": "Bei einem Buchungssystem von Amadeus war ein Speicherabbild einer Anwendung ohne Anmeldung abrufbar; es enthielt Zugangsdaten und Tokens und ermöglichte den Zugriff auf Namen, Geburtsdaten, Buchungscodes, Kontakt- und Passdaten im Klartext, unter anderem zu Flügen von Lufthansa und Condor. In den Daten fanden sich Hunderte Kennungen deutscher Reisebüros und Buchungsstellen. Amadeus wurde am 21. September 2026 informiert, spricht von einer möglichen Schwachstelle, nennt keine Zahl Betroffener, und die Lücke scheint geschlossen.",
+   "relevance": "Reiseveranstalter und Reisebüros hängen an wenigen zentralen Buchungsplattformen. Zu klären sind Betroffenheit der eigenen Zugänge, Wechsel von Zugangsdaten, eine mögliche Meldepflicht nach der Datenschutz-Grundverordnung und Warnungen an Kunden vor Phishing mit echten Buchungsdaten.",
+   "source": "heise online",
+   "url": "https://www.heise.de/news/Sicherheitsluecke-in-Reisebuchungssystem-Passagierdaten-waren-betroffen-11479912.html",
+   "id": "2026-10-14-amadeus-buchungssystem-passdaten",
+   "topic": "Handel & Branche",
+   "impact": "hoch",
+   "published": "2026-10-13",
+   "tags": [
+    "Touristik",
+    "Drittanbieter",
+    "Datenleck"
+   ],
+   "controls": [
+    "DSGVO Art. 28 – Auftragsverarbeiter",
+    "DSGVO Art. 33 – Meldung von Verletzungen des Schutzes personenbezogener Daten",
+    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen"
+   ],
+   "roles": [
+    "Einkauf & Drittparteien",
+    "Datenschutz",
+    "IT-Risiko"
+   ],
+   "countries": [
+    "DE",
+    "EU"
+   ],
+   "dossier": "drittparteien-lieferkette",
+   "priority": 3,
+   "primary": false,
+   "added": "2026-10-14T05:07:08Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Speicherabbild ohne Anmeldung, Zugangsdaten und Tokens, Datenarten, Lufthansa und Condor, Hunderte Kennungen deutscher Reisebüros, Information am 21. September, keine Zahl Betroffener: alles in der Quelle belegt."
+   }
+  },
+  {
+   "title": "SAP-Patchday: Lücke mit Höchstwert 10, kritische Fehler auch in S/4HANA",
+   "summary": "SAP hat am 13. Oktober 2026 16 Sicherheitshinweise veröffentlicht. Die schwerste Lücke CVE-2026-89111 mit dem Höchstwert 10 steckt im Entwicklungspaket SAP Cloud SDK für Python und kann Zugangsdaten an Server von Angreifern umleiten; weitere kritische Lücken betreffen unter anderem S/4HANA, Commerce Cloud und die ABAP-Plattform. Angriffe sind noch nicht bekannt.",
+   "relevance": "Systeme für Warenwirtschaft und Rechnungslegung stehen im Zentrum der allgemeinen IT-Kontrollen der Abschlussprüfung. Nach der OVERPASS-Erfahrung sollten Patchfristen und Ausnahmen für SAP-Systeme belegt und durch Verantwortliche freigegeben sein.",
+   "source": "heise online",
+   "url": "https://heise.de/en/news/SAP-Patchday-Attackers-can-take-over-systems-11486462.html",
+   "id": "2026-10-14-sap-patchday-oktober-kritische-luecken",
+   "topic": "IT-Governance & Risiko",
+   "impact": "mittel",
+   "published": "2026-10-13",
+   "tags": [
+    "SAP",
+    "Patchmanagement"
+   ],
+   "controls": [
+    "IT-Kontrollen der Abschlussprüfung – Änderungsmanagement",
+    "ISO/IEC 27001 Anhang A 8.8 – Umgang mit technischen Schwachstellen"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Revision & Prüfung"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "kritische-schwachstellen-perimeter",
+   "priority": 4,
+   "primary": false,
+   "added": "2026-10-14T05:07:08Z",
+   "check": {
+    "verdict": "ok",
+    "note": "16 Hinweise, CVE-2026-89111 mit Höchstwert 10 im SAP Cloud SDK für Python mit Umleitung von Zugangsdaten. S/4HANA, Commerce Cloud und die ABAP-Plattform sind betroffen, Angriffe sind nicht bekannt."
+   }
+  },
+  {
+   "title": "Update: Ahold Delhaize findet bislang keinen Datenabfluss, Regale bleiben leer",
+   "summary": "Ahold Delhaize hat nach eigenen Angaben bislang keine Hinweise, dass Daten von Kunden, Beschäftigten oder Dritten gestohlen wurden, und bringt erste Systeme wieder in Betrieb. Wegen stillstehender Verteilzentren bleiben in Albert-Heijn-Märkten Regale leer, die Onlineangebote von Albert Heijn, Etos und Gall & Gall sind weiter nicht erreichbar. Das niederländische Nationale Zentrum für Cybersicherheit sieht keinen Grund für einen Zusammenhang mit den Angriffen auf Kühlsteuerungen in Frankreich.",
+   "relevance": "Der Fall zeigt, dass für Lebensmittelhändler der Ausfall von Logistik und Bestellsystemen das größere Risiko sein kann als der Datenabfluss. Notfallpläne sollten den Betrieb der Verteilzentren ohne zentrale Informationstechnik ausdrücklich abdecken.",
+   "source": "NL Times",
+   "url": "https://nltimes.nl/2026/10/13/albert-heijn-parent-ahold-delhaize-finds-evidence-data-theft-cyber-incident",
+   "id": "2026-10-14-update-ahold-delhaize-kein-datenabfluss",
+   "topic": "Handel & Branche",
+   "impact": "mittel",
+   "published": "2026-10-13",
+   "tags": [
+    "Wettbewerber",
+    "Logistik",
+    "Notfallmanagement"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Aufrechterhaltung des Betriebs und Krisenmanagement",
+    "ISO/IEC 27001 Anhang A 5.30 – Informations- und Kommunikationstechnik-Bereitschaft für Business Continuity"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Management"
+   ],
+   "countries": [
+    "NL",
+    "BE"
+   ],
+   "dossier": "betriebstechnik-filialen-logistik",
+   "priority": 5,
+   "primary": false,
+   "added": "2026-10-14T05:07:08Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Kein Hinweis auf Datendiebstahl, Systeme werden schrittweise wieder hochgefahren, leere Regale wegen der Verteilzentren, Onlineangebote nicht erreichbar. Das Nationale Zentrum für Cybersicherheit sieht keinen Grund für einen Zusammenhang."
+   }
+  },
+  {
+   "title": "Update: Digital Omnibus – Ständige Vertreter beraten Text nicht einmal",
+   "summary": "Der Kompromisstext der irischen Ratspräsidentschaft zum Digital Omnibus sollte am 11. Oktober 2026 im Ausschuss der Ständigen Vertreter abgestimmt werden, wurde aber weder beraten noch abgestimmt. Deutschland verlangt, dass das Teilen von Daten, die Geschäftsgeheimnisse enthalten, nach der Datenverordnung nur mit ausdrücklicher Vereinbarung erfolgt. Die Präsidentschaft will weitere Gespräche mit den Mitgliedstaaten führen.",
+   "relevance": "Erleichterungen wie die Meldung von Datenschutzverletzungen nur bei hohem Risiko rücken weiter nach hinten. Prozesse sollten bis auf Weiteres an den geltenden Fristen der Datenschutz-Grundverordnung ausgerichtet bleiben.",
+   "source": "Agence Europe",
+   "url": "https://agenceurope.eu/en/bulletin/article/13958/17/future-of-digital-omnibus-still-in-limbo-as-member-states-fail-to-agree",
+   "id": "2026-10-14-update-digital-omnibus-nicht-beraten",
+   "topic": "Datenschutz & Datenrecht",
+   "impact": "info",
+   "published": "2026-10-13",
+   "tags": [
+    "Digital Omnibus",
+    "Rat",
+    "Datenverordnung"
+   ],
+   "controls": [
+    "DSGVO Art. 33 – Meldung von Verletzungen des Schutzes personenbezogener Daten"
+   ],
+   "roles": [
+    "Datenschutz",
+    "Management"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "dsgvo-reform-digital-omnibus",
+   "priority": 7,
+   "primary": false,
+   "added": "2026-10-14T05:07:08Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Inhalt stimmt. Der Artikel ist aber vom 13. Oktober 2026, nicht vom 12. Oktober."
+   }
+  },
+  {
+   "title": "Update: Angriffe auf Kühlsteuerungen – Warnung umfasst weitere Hersteller",
+   "summary": "Das französische Computer-Notfallteam hat seine Warnung zu den Angriffen auf Kühlmöbel am 13. Oktober 2026 aktualisiert: Neben den Steuerungen der Reihen AK-SM und AK-SC von Danfoss sind auch die Fernsteuerungen xweb von Copeland und Dixell kompromittiert. Die Behörde rät, die Geräte vom Internet zu trennen, den Zugang nur noch über gesicherte Netze zu erlauben, Standardpasswörter zu ändern und die Firmware zu aktualisieren. Ein bloßes Zurücksetzen auf Werkseinstellungen reiche nicht, weil das Gerät sonst mit Sicherheit erneut kompromittiert werde.",
+   "relevance": "Für einen Lebensmittelhändler betrifft das direkt Warenverluste, Lebensmittelsicherheit und Versorgung. Nötig sind ein Inventar der Betriebstechnik in Filialen und Lägern, eine Prüfung auf Erreichbarkeit aus dem Internet und eine klare Verantwortung zwischen Haustechnik, Informationstechnik und Dienstleistern.",
+   "source": "Französisches Computer-Notfallteam (Nationale Agentur für Sicherheit der…",
+   "url": "https://www.cert.ssi.gouv.fr/alerte/CERTFR-2026-ALE-012/",
+   "id": "2026-10-14-update-kuehlsteuerungen-weitere-hersteller",
+   "topic": "Handel & Branche",
+   "impact": "hoch",
+   "published": "2026-10-12",
+   "tags": [
+    "Betriebstechnik",
+    "Kühlkette",
+    "Supermärkte"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Risikomanagementmaßnahmen im Bereich der Cybersicherheit",
+    "ISO/IEC 27001 Anhang A 8.20 – Netzwerksicherheit",
+    "ISO/IEC 27001 Anhang A 8.8 – Umgang mit technischen Schwachstellen"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Einkauf & Drittparteien",
+    "Management"
+   ],
+   "countries": [
+    "FR",
+    "EU"
+   ],
+   "dossier": "betriebstechnik-filialen-logistik",
+   "priority": 1,
+   "primary": false,
+   "added": "2026-10-14T05:07:08Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Erstfassung vom 12. Oktober, Aktualisierung vom 13. Oktober mit weiteren Geräten (Danfoss AK-SM und AK-SC, Copeland xweb, Dixell xweb). Die Empfehlungen und der Hinweis, dass ein Zurücksetzen auf Werkseinstellungen nicht reicht und das Gerät sonst mit Sicherheit erneut kompromittiert wird, stehen…"
+   }
+  },
   {
    "title": "Frankreich: Angreifer heizen Kühlmöbel in Hunderten Supermärkten auf",
    "summary": "In der Nacht vom 11. auf den 12. Oktober 2026 haben Angreifer Kühlsteuerungen von Danfoss mit älteren Softwareständen übernommen und die eingebaute Abtaufunktion ausgelöst. Betroffen sind 250 bis 350 Filialen, unter anderem von Intermarché, Coopérative U, Carrefour Market, Monoprix und Leclerc. Laut französischen Medien stiegen die Temperaturen auf bis zu 50 Grad, Ware verdarb und es kam zu Bränden. Ein Sicherheitsforscher zählte 1.590 aus dem Internet erreichbare Danfoss-Systeme in Frankreich. Bekannt sind Lücken wie CVE-2025-41450 (Umgehung der Anmeldung) und CVE-2025-41451 (Einschleusen von Befehlen), ein Zusammenhang mit dem Angriff ist aber nicht bestätigt. Die Staatsanwaltschaft Paris ermittelt.",
@@ -1123,6 +1361,38 @@
    "check": {
     "verdict": "ok",
     "note": "Banken, ARTEX, Claude-Code-Sitzungen mit DeepSeek, GLM und Grok, offene Verzeichnisse, Lebenslauf, geschlossenes Projekt mit englischen und koreanischen Ablegern, Kundendaten, Kreditkartendaten und Ausfälle sind alle in der Quelle belegt."
+   }
+  },
+  {
+   "title": "Kommission will Normen zu Rechtsakten kostenlos und schneller machen",
+   "summary": "Die Europäische Kommission hat am 6. Oktober 2026 eine neue Normungsverordnung vorgeschlagen, die die Verordnung (EU) Nr. 1025/2012 ersetzen soll. Normen, die Rechtsakte der Europäischen Union unterstützen, sollen kostenlos zugänglich werden, und die Entwicklungszeit soll von etwa sechs auf vier Jahre sinken. Eine öffentliche Konsultation läuft bis 8. Dezember 2026.",
+   "relevance": "Für Pflichten aus der Verordnung über Cyberresilienz und der Verordnung über Künstliche Intelligenz hängt die Vermutung der Konformität an Normen, die bisher verspätet und kostenpflichtig sind. Gemeinsame Spezifikationen als Rückfallebene würden Anforderungen an Lieferanten früher greifbar machen.",
+   "source": "prodlaw.eu",
+   "url": "https://prodlaw.eu/2026/10/european-commission-proposes-revision-of-the-framework-for-european-standardisation/",
+   "id": "2026-10-14-normungsverordnung-kostenlose-normen",
+   "topic": "Standards & Zertifizierung",
+   "impact": "info",
+   "published": "2026-10-09",
+   "tags": [
+    "Normung",
+    "Konformität",
+    "Gesetzgebung"
+   ],
+   "controls": [],
+   "roles": [
+    "Einkauf & Drittparteien",
+    "IT-Risiko"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": null,
+   "priority": 6,
+   "primary": false,
+   "added": "2026-10-14T05:07:08Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Datum, kostenlose Normen, Verkürzung von sechs auf vier Jahre und das Ende der Konsultation stimmen. Dass die Kommission gemeinsame Spezifikationen erlassen kann, wenn harmonisierte Normen ausbleiben, steht nicht in der Quelle."
    }
   },
   {

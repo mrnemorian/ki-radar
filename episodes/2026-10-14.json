@@ -1,0 +1,177 @@
+{
+ "format": "tag",
+ "chapters": [
+  {
+   "title": "Begrüßung",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Guten Morgen, liebe IT-GRC-Kolleginnen und -Kollegen, willkommen beim IT-GRC Radar am Mittwoch, dem vierzehnten Oktober 2026."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Morgen. Nach dieser Woche schaue ich jedes Kühlregal mit anderen Augen an."
+    }
+   ]
+  },
+  {
+   "title": "Kühlsteuerungen",
+   "news_id": "2026-10-14-update-kuehlsteuerungen-weitere-hersteller",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Da passt der Einstieg: Es gibt Neues zu den Angriffen auf Kühlmöbel in französischen Supermärkten. Das französische Computer-Notfallteam hat seine Warnung am dreizehnten Oktober erweitert. Betroffen sind nicht nur Steuerungen von Danfoss, sondern auch Fernsteuerungen von Copeland und Dixell."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und der Satz, der hängen bleibt: Ein Zurücksetzen auf Werkseinstellungen reicht nicht, sonst wird das Gerät mit Sicherheit wieder kompromittiert. Die Behörde sagt sehr klar, dass solche Oberflächen gar nicht am Internet hängen dürfen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Moment, das heißt, die Lösung ist eher Netzwerk als Patch?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Beides. Vom Internet trennen, Zugriff nur über gesicherte Netze, Standardpasswörter weg, Firmware aktualisieren. Und vorher klären, wem die Kühlsteuerung eigentlich gehört. Haustechnik, Informationstechnik, Dienstleister? Die ehrliche Antwort steht oft in keiner Excel-Liste."
+    }
+   ]
+  },
+  {
+   "title": "Microsoft-Patchday",
+   "news_id": "2026-10-14-microsoft-patchday-oktober-ausgenutzte-luecke",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Zweites Thema, der Microsoft-Patchday. 1.411 Lücken, ein Rekord. Eine davon, CVE-2026-96951 in der Windows Shell, wird schon ausgenutzt."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Damit umgehen Angreifer den Schutz für heruntergeladene Dateien, das sogenannte [en]Mark of the Web[/en]. Das gehört bei uns ganz nach oben auf die Liste."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Bei 1.411 Einträgen bin ich ehrlich gesagt froh, dass Microsoft sie jetzt in Risikogruppen bündelt."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Hilft beim Priorisieren. Und für die Abschlussprüfung gilt trotzdem: Auch ein Notfall-Update muss sauber im Änderungsmanagement stehen."
+    }
+   ]
+  },
+  {
+   "title": "Amadeus",
+   "news_id": "2026-10-14-amadeus-buchungssystem-passdaten",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Jetzt zur Touristik. Heise berichtet über eine Lücke in einem Buchungssystem von Amadeus. Ohne Anmeldung waren Namen, Geburtsdaten, Buchungscodes und Passdaten einsehbar, auch zu Flügen von Lufthansa und Condor."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und mittendrin Hunderte Kennungen deutscher Reisebüros. Amadeus wurde am einundzwanzigsten September informiert, die Lücke scheint geschlossen, eine Zahl Betroffener nennt das Unternehmen nicht."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Was macht man damit, wenn man selbst Reisen verkauft?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Beim Anbieter nachfragen, ob die eigenen Zugänge betroffen waren, Zugangsdaten tauschen, eine mögliche Meldepflicht nach der Datenschutz-Grundverordnung prüfen. Und Kunden vor Phishing mit echten Buchungsdaten warnen, das kennen wir ja schon von den Hotels."
+    }
+   ]
+  },
+  {
+   "title": "SAP-Patchday",
+   "news_id": "2026-10-14-sap-patchday-oktober-kritische-luecken",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Am selben Tag war SAP-Patchday. Die schwerste Lücke hat den Höchstwert 10 und steckt im Entwicklungspaket SAP Cloud SDK für Python, weitere kritische Lücken betreffen unter anderem S/4HANA und Commerce Cloud."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Angriffe sind noch keine bekannt. Aber nach OVERPASS wissen wir, wie schnell das kippt. Lieber jetzt patchen als in der Audit-Saison erklären, warum nicht."
+    }
+   ]
+  },
+  {
+   "title": "Ahold Delhaize",
+   "news_id": "2026-10-14-update-ahold-delhaize-kein-datenabfluss",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Neues auch zu Ahold Delhaize: Der Konzern findet bislang keine Hinweise auf gestohlene Daten und fährt Systeme schrittweise hoch. In Albert-Heijn-Märkten bleiben trotzdem Regale leer, weil Verteilzentren stillstanden."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und das niederländische Nationale Zentrum für Cybersicherheit sieht keinen Zusammenhang mit Frankreich. Für mich die Lehre: Das eigentliche Risiko ist die Logistik. Ein Notfallplan, der ohne zentrale Systeme kein Verteilzentrum betreiben kann, ist eher ein Wunschzettel."
+    }
+   ]
+  },
+  {
+   "title": "Normung",
+   "news_id": "2026-10-14-normungsverordnung-kostenlose-normen",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Etwas aus der offenen Suche: Die Europäische Kommission will die europäische Normung neu regeln."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Klingt trocken, ist aber relevant. Normen zu Rechtsakten sollen kostenlos werden, und die Entwicklung soll von etwa sechs auf vier Jahre schrumpfen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Also kein Bezahlschild mehr vor der Norm, die man erfüllen muss?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Für Normen zu Rechtsakten, ja. Die Konsultation läuft bis zum achten Dezember 2026."
+    }
+   ]
+  },
+  {
+   "title": "Digital Omnibus",
+   "news_id": "2026-10-14-update-digital-omnibus-nicht-beraten",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Und kurz zum Digital Omnibus: Die Ständigen Vertreter haben den Text am elften Oktober nicht einmal beraten."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Deutschland will, dass Daten mit Geschäftsgeheimnissen nur mit ausdrücklicher Vereinbarung geteilt werden. Heißt für uns: Die geltenden Meldefristen bleiben, bis wirklich etwas beschlossen ist."
+    }
+   ]
+  },
+  {
+   "title": "Auf dem Radar",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Was steht auf dem Radar?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Die Normen zur Verordnung über Cyberresilienz. Die Termine wurden um zwei Monate verschoben, im Amtsblatt steht noch keine. Passt zur Normungsreform von eben, und wer vernetzte Geräte einkauft, sollte das im Blick behalten."
+    }
+   ]
+  },
+  {
+   "title": "Abschied",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Das war es für heute. Alle Quellen findet ihr wie immer auf der Webseite."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und schaut mal nach, wem eure Kühlsteuerung gehört. Bis morgen."
+    }
+   ]
+  }
+ ]
+}
