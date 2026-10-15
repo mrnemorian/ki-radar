@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-14T05:07:08Z",
+ "updated": "2026-10-15T05:07:27Z",
  "topics": [
   "IT-Governance & Risiko",
   "Cyber- & IT-Regulierung",
@@ -11,6 +11,18 @@
   "Weitere Themen"
  ],
  "briefings": [
+  {
+   "date": "2026-10-15",
+   "headline": "Bundesamt fordert Absicherung von Kühlsteuerungen, aktiv ausgenutzte Lücken an Firewall, Mail-Gateway und Fernzugang, Leitlinie zur Post-Quanten-Kryptografie.",
+   "points": [
+    "Update Betriebstechnik: Das Bundesamt für Sicherheit in der Informationstechnik richtet die Cybersicherheitsempfehlung Nummer 154 ausdrücklich an Betreiber von Anlagen zur Lebensmittelkühlung.",
+    "Vier neue aktiv ausgenutzte Lücken im Katalog der Behörde der Vereinigten Staaten (Palo Alto Networks, Cisco, AhsayCBS), dazu wird Ivanti Connect Secure angegriffen.",
+    "Gemeinsame Leitlinie von Bund und Bundesamt zur Post-Quanten-Kryptografie: Hochrisiko-Anwendungen bis Ende 2030 umstellen.",
+    "Verbraucherschützer verklagen Lidl wegen fehlender Datenschutzhinweise an Selbstbedienungskassen.",
+    "Studie: Nur 11 Prozent der Unternehmen haben eigene Abläufe für Sicherheitsvorfälle mit Künstlicher Intelligenz."
+   ],
+   "count": 6
+  },
   {
    "date": "2026-10-14",
    "headline": "Angriffe auf Kühlsteuerungen treffen weitere Hersteller, Microsoft schließt eine ausgenutzte Lücke, und bei Amadeus lagen Passdaten von Reisenden offen.",
@@ -213,21 +225,20 @@
     }
    ],
    "title": "Betriebstechnik in Filialen und Logistik",
-   "sector": "Handel & Branche",
+   "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Das französische Computer-Notfallteam meldet seit 13. Oktober 2026 kompromittierte Kühlsteuerungen von Danfoss sowie Fernsteuerungen xweb von Copeland und Dixell und warnt, dass bloßes Zurücksetzen nicht schützt. Bei Ahold Delhaize zeigt der Stillstand von Verteilzentren, wie stark die Versorgung an Logistiksystemen hängt.",
-   "next_step": "Betriebstechnik in Filialen und Lägern inventarisieren, Erreichbarkeit aus dem Internet prüfen, Standardpasswörter und Firmwarestand bei Dienstleistern abfragen und Verantwortliche festlegen.",
+   "status": "Das Bundesamt für Sicherheit in der Informationstechnik hat am 13. Oktober 2026 die Cybersicherheitsempfehlung Nummer 154 veröffentlicht und richtet sie ausdrücklich an Betreiber von Anlagen zur Lebensmittelkühlung; nach Euronews sind weiterhin Tausende ähnliche Geräte offen erreichbar. Bei Ahold Delhaize wird der Schaden auf rund 10 Millionen Euro geschätzt, Fachleute vermuten einen…",
+   "next_step": "Alle aus dem Internet erreichbaren Steuerungen und Fernwartungszugänge in Filialen und Logistik inventarisieren, je Anlage Verantwortliche festlegen und gegen die Empfehlung Nummer 154 abgleichen.",
    "open_questions": [
-    "Wer ist Owner der Kühl- und Gebäudesteuerung: Haustechnik, Informationstechnik oder Dienstleister?",
-    "Welche Geräte haben das Ende der Herstellerunterstützung erreicht?",
-    "Decken Notfallpläne den Betrieb von Verteilzentren ohne zentrale Systeme ab?"
+    "Wer verantwortet Fernzugänge von Wartungsdienstleistern für Kühl- und Gebäudetechnik?",
+    "Wie werden Ausfälle ohne Datenabfluss in Wesentlichkeitsschwellen und Meldeprozessen bewertet?"
    ],
    "controls": [
     "NIS-2-Richtlinie Art. 21 – Risikomanagementmaßnahmen im Bereich der Cybersicherheit",
     "ISO/IEC 27001 Anhang A 8.20 – Netzwerksicherheit",
     "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen"
    ],
-   "updated": "2026-10-14"
+   "updated": "2026-10-15"
   },
   {
    "slug": "drittparteien-lieferkette",
@@ -291,17 +302,17 @@
    "title": "Kritische Schwachstellen in Randsystemen und Kernanwendungen",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Microsoft hat am 13. Oktober 2026 1.411 Lücken geschlossen, die ausgenutzte CVE-2026-96951 soll nach der Behörde der Vereinigten Staaten bis 16. Oktober behoben sein; SAP schließt am selben Tag eine Lücke mit Höchstwert 10. Offen bleiben zudem AnyDesk unter Linux, NetScaler, Atlassian sowie Exchange und SAP OVERPASS.",
-   "next_step": "Notfall-Patchfristen für aktiv ausgenutzte Lücken festlegen und Abweichungen mit Risikoakzeptanz durch Verantwortliche dokumentieren.",
+   "status": "Am 14. Oktober 2026 kamen aktiv ausgenutzte Lücken in PAN-OS von Palo Alto Networks, im Cisco Secure Email Gateway und in der Backup-Software AhsayCBS in den Behördenkatalog der Vereinigten Staaten, zudem wird Ivanti Connect Secure angegriffen. Offen bleiben die Microsoft-Lücke CVE-2026-96951, die SAP-Lücke mit Höchstwert 10 sowie Altlasten bei NetScaler, Atlassian, AnyDesk und Exchange.",
+   "next_step": "Katalogeinträge mit Internetbezug innerhalb weniger Tage schließen, Ausnahmen dokumentiert genehmigen und Backup-Systeme gezielt in die Priorisierung aufnehmen.",
    "open_questions": [
-    "Reicht die Kapazität im Patchmanagement bei Rekordzahlen an Lücken?",
-    "Sind beschleunigte Updates im Änderungsmanagement prüfbar dokumentiert?"
+    "Werden Datensicherungssysteme im Schwachstellenmanagement gleich hoch priorisiert wie Firewalls?",
+    "Wie schnell erfahren Dienstleister mit eigenen Randsystemen von Katalogeinträgen?"
    ],
    "controls": [
-    "ISO/IEC 27001 Anhang A 8.8 – Umgang mit technischen Schwachstellen",
-    "IT-Kontrollen der Abschlussprüfung – Änderungsmanagement"
+    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
+    "NIS-2-Richtlinie Art. 21 – Behandlung und Offenlegung von Schwachstellen"
    ],
-   "updated": "2026-10-14"
+   "updated": "2026-10-15"
   },
   {
    "slug": "lebenszyklus-altsysteme",
@@ -405,6 +416,34 @@
    "updated": "2026-10-09"
   },
   {
+   "slug": "post-quanten-kryptografie",
+   "created": "2026-10-03",
+   "ring_history": [
+    {
+     "date": "2026-10-03",
+     "ring": "beobachten"
+    },
+    {
+     "date": "2026-10-15",
+     "ring": "vorbereiten"
+    }
+   ],
+   "title": "Post-Quanten-Kryptografie",
+   "sector": "Cyber- & IT-Regulierung",
+   "ring": "vorbereiten",
+   "status": "Bund und Bundesamt für Sicherheit in der Informationstechnik haben am 12. Oktober 2026 eine gemeinsame Leitlinie zur Umsetzung des europäischen Fahrplans veröffentlicht, die sich auch an Unternehmen und Betreiber kritischer Infrastrukturen richtet: Hochrisiko-Anwendungen bis spätestens Ende 2030, Gesamtmigration bis 2035 weitgehend abgeschlossen. Zuvor hatte das Bundesamt von Classic McEliece…",
+   "next_step": "Kryptoinventar aufbauen, Hochrisiko-Anwendungen per Risikoanalyse bestimmen, Zuständigkeiten festlegen und Anforderungen an Kryptoagilität in Lieferantenverträge aufnehmen.",
+   "open_questions": [
+    "Welche Anwendungen gelten im Konzern als Hochrisiko im Sinne des Fahrplans?",
+    "Wie weit sind zentrale Anbieter wie Zahlungsdienstleister und Cloud-Anbieter mit ihrer eigenen Umstellung?"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 8.24 – Verwendung von Kryptografie",
+    "NIS-2-Richtlinie Art. 21 – Konzepte und Verfahren für Kryptografie und Verschlüsselung"
+   ],
+   "updated": "2026-10-15"
+  },
+  {
    "slug": "pruefung-it-ki",
    "created": "2026-10-04",
    "ring_history": [
@@ -498,30 +537,6 @@
     "DSGVO Art. 33 – Meldung von Verletzungen des Schutzes personenbezogener Daten"
    ],
    "updated": "2026-10-14"
-  },
-  {
-   "slug": "post-quanten-kryptografie",
-   "created": "2026-10-03",
-   "ring_history": [
-    {
-     "date": "2026-10-03",
-     "ring": "beobachten"
-    }
-   ],
-   "title": "Post-Quanten-Kryptografie",
-   "sector": "Standards & Zertifizierung",
-   "ring": "beobachten",
-   "status": "Nach dem Fahrplan der Europäischen Union sollen die Mitgliedstaaten bis Ende 2026 mit der Umstellung beginnen und Hochrisiko-Anwendungen bis spätestens 2030 absichern; die europäischen Finanzaufsichtsbehörden unterstreichen das im Herbstbericht 2026. Das Bundesamt für Sicherheit in der Informationstechnik rät seit 1. Oktober 2026 bei neuen Entwicklungen von Classic McEliece ab und empfiehlt…",
-   "next_step": "Kryptografie-Inventar aufbauen (wo steckt welches Verfahren, wie lange müssen Daten vertraulich bleiben) und Krypto-Agilität als Anforderung in Architektur und Einkauf aufnehmen.",
-   "open_questions": [
-    "Welche Systeme mit langer Lebensdauer, etwa Kassen und Zahlungsterminals, lassen sich überhaupt auf neue Verfahren umstellen?",
-    "Wann ziehen Zahlungsnetzwerke und PCI-Standards mit verbindlichen Vorgaben nach?"
-   ],
-   "controls": [
-    "ISO/IEC 27001 Anhang A 8.24 – Verwendung von Kryptografie",
-    "NIS-2-Richtlinie Art. 21 – Kryptografie und Verschlüsselung"
-   ],
-   "updated": "2026-10-03"
   },
   {
    "slug": "zahlungsverkehr-pci-dss",
@@ -670,6 +685,17 @@
    "added": "2026-09-30"
   },
   {
+   "date": "2027-01-01",
+   "title": "E-Rechnung: Ausstellungspflicht für Unternehmen über 800.000 Euro Vorjahresumsatz",
+   "detail": "Unternehmen mit mehr als 800.000 Euro Vorjahresumsatz dürfen im Inland zwischen Unternehmen keine Papier- oder einfachen PDF-Rechnungen mehr ausstellen, Rechnungsprozesse und Kontrollen müssen auf strukturierte elektronische Rechnungen umgestellt sein.",
+   "scope": "DE",
+   "url": "https://www.ihk.de/dresden/hauptnavigation/recht-steuern/erechnung-6232764",
+   "primary": false,
+   "checked": true,
+   "dossier": null,
+   "added": "2026-10-15"
+  },
+  {
    "date": "2027-01-12",
    "title": "Datenverordnung: keine Gebühren mehr für den Wechsel des Cloud-Anbieters",
    "detail": "Ab diesem Tag dürfen Anbieter von Datenverarbeitungsdiensten keine Gebühren mehr für den Wechsel erheben. Cloud-Kunden sollten ihre Ausstiegspläne und Verträge darauf prüfen.",
@@ -734,18 +760,29 @@
    "added": "2026-09-30",
    "primary": false,
    "checked": true
+  },
+  {
+   "date": "2030-12-31",
+   "title": "Post-Quanten-Kryptografie: Hochrisiko-Anwendungen umgestellt",
+   "detail": "Nach der Leitlinie von Bund und Bundesamt sollen Hochrisiko-Anwendungen auch in Unternehmen und kritischen Infrastrukturen spätestens Ende 2030 quantensicher sein, die Gesamtmigration bis 2035.",
+   "scope": "DE",
+   "url": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Pressemitteilungen/Presse2026/261012_Leitlinie-PQC.html",
+   "primary": true,
+   "checked": true,
+   "dossier": "post-quanten-kryptografie",
+   "added": "2026-10-15"
   }
  ],
  "signals": [
   {
    "theme": "Digital Fairness Act",
-   "why": "Der Vorschlag der Kommission zu manipulativen Gestaltungen, Abonnements und Personalisierung im Onlinehandel wird bis Ende 2026 erwartet und würde Onlineshops und Apps direkt betreffen.",
-   "count": 7,
+   "why": "Der Vorschlag der Kommission zu manipulativen Oberflächen, suchtförderndem Design und unfairer Personalisierung ist für das vierte Quartal 2026 angekündigt. Er würde Onlineshops, Apps und Kundenbindungsprogramme des Handels direkt treffen.",
+   "count": 8,
    "first_seen": "2026-09-30",
-   "last_seen": "2026-10-14",
+   "last_seen": "2026-10-15",
    "evidence": [
-    "https://www.privacylaws.com/news/eu-proposal-on-digital-fairness-act-expected-by-the-end-of-2026/",
     "https://www.europarl.europa.eu/legislative-train/theme-protecting-our-democracy-upholding-our-values/file-digital-fairness-act",
+    "https://www.privacylaws.com/news/eu-proposal-on-digital-fairness-act-expected-by-the-end-of-2026/",
     "https://www.mlex.com/mlex/articles/2529049/eu-digital-fairness-act-on-consumer-protection-tentatively-eyed-for-november"
    ]
   },
@@ -761,6 +798,18 @@
     "https://www.iaasb.org/publications/proposed-revisions-audit-evidence-risk-response-isa-330-isa-500-isa-520",
     "https://www.iaasb.org/consultations-projects/audit-evidence-and-risk-response-isa-330-isa-500-isa-520",
     "https://www.accountingtoday.com/news/iaasb-proposes-to-revise-audit-standards-for-new-risks-and-tech"
+   ]
+  },
+  {
+   "theme": "Normen zum Cyber Resilience Act",
+   "why": "Die Grundlagennormen EN 40000-1-1 und EN 40000-1-2 zur Cyberresilienz von Produkten mit digitalen Elementen wurden im Oktober 2026 von den Mitgliedern der europäischen Normungsorganisation CENELEC angenommen, Veröffentlichung geplant am 25. November 2026. Sie werden zur Messlatte für Sicherheitsanforderungen beim Einkauf vernetzter Produkte und Software.",
+   "count": 5,
+   "first_seen": "2026-10-11",
+   "last_seen": "2026-10-15",
+   "evidence": [
+    "https://compliance.globalnorm.de/en/product-compliance-news/detail/eu-cyber-resilience-act-cra-standards-en-40000-1-x-series/",
+    "https://www.cyberresilienceact.eu/state-of-play.html",
+    "https://www.cyberresilienceact.eu/news/cra-standardisation-deadlines-pushed-back-two-months.html"
    ]
   },
   {
@@ -789,17 +838,6 @@
     "https://digital-strategy.ec.europa.eu/en/policies/post-quantum-cryptography",
     "https://www.whitehouse.gov/wp-content/uploads/2026/06/M-26-15-Execution-of-the-Migration-to-Post-Quantum-Cryptography.pdf",
     "https://www.heise.de/news/CA-Bewerbung-CDN-Anbieter-Cloudflare-will-bald-selber-Zertifikate-ausstellen-11469864.html"
-   ]
-  },
-  {
-   "theme": "Normen zum Cyber Resilience Act",
-   "why": "Die Termine für die harmonisierten Normen zur Verordnung über Cyberresilienz wurden um zwei Monate verschoben, im Amtsblatt ist noch keine Norm veröffentlicht. Zusammen mit der geplanten Rückfallebene gemeinsamer Spezifikationen entscheidet das, woran Einkauf und Lieferanten vernetzter Produkte gemessen werden.",
-   "count": 4,
-   "first_seen": "2026-10-11",
-   "last_seen": "2026-10-14",
-   "evidence": [
-    "https://www.cyberresilienceact.eu/state-of-play.html",
-    "https://www.cyberresilienceact.eu/news/cra-standardisation-deadlines-pushed-back-two-months.html"
    ]
   },
   {
@@ -834,6 +872,16 @@
    "evidence": [
     "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/Grundschutz-in-der-Informationssicherheit/Grundschutz-Plus-Plus/grundschutz-plus-plus_node.html",
     "https://sits.com/ch/blog/grundschutz-plus-plus-bsi-it-grundschutz/"
+   ]
+  },
+  {
+   "theme": "Aktive Cyberabwehr durch Bundesbehörden",
+   "why": "Der Gesetzentwurf zur Stärkung der Cybersicherheit soll Bundesamt, Bundeskriminalamt und Bundespolizei aktive Abwehrmaßnahmen wie Datenlöschung und Umleitung von Datenverkehr erlauben; Fachleute warnen, dass Systeme von Unternehmen und kritischen Infrastrukturen dabei zu Zielen behördlicher Eingriffe werden könnten.",
+   "count": 1,
+   "first_seen": "2026-10-15",
+   "last_seen": "2026-10-15",
+   "evidence": [
+    "https://www.bundestag.de/dokumente/textarchiv/2026/kw41-pa-inneres-cybersicherheit-1221640"
    ]
   },
   {
@@ -900,6 +948,115 @@
   }
  ],
  "news": [
+  {
+   "title": "Aktiv ausgenutzt: Lücken in Firewall, Mail-Gateway, Backup-Software und Ivanti-Fernzugang",
+   "summary": "Die Cybersicherheitsbehörde der Vereinigten Staaten hat am 14. Oktober 2026 vier aktiv ausgenutzte Schwachstellen in ihren Katalog aufgenommen: CVE-2026-0322 in PAN-OS von Palo Alto Networks, CVE-2026-76519 im Cisco Secure Email Gateway sowie CVE-2026-105133 und CVE-2026-105134 in der Backup-Software AhsayCBS. Betroffene Organisationen sollten die Lücken vorrangig schließen.",
+   "relevance": "Betroffen sind Firewalls, Mail-Gateways, Fernzugänge und Datensicherung, also genau die Systeme, die bei einem Angriff zuerst und nach einem Angriff am dringendsten gebraucht werden. Schwachstellenmanagement sollte Katalogeinträge mit Internetbezug außerhalb des regulären Patchzyklus behandeln und Ausnahmen nachvollziehbar genehmigen.",
+   "source": "Cybersecurity and Infrastructure Security Agency",
+   "url": "https://www.cisa.gov/news-events/alerts/2026/10/14/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+   "id": "2026-10-15-kev-palo-alto-cisco-ivanti",
+   "topic": "IT-Governance & Risiko",
+   "impact": "hoch",
+   "published": "2026-10-14",
+   "tags": [
+    "Zero Day",
+    "Randsysteme",
+    "Patchmanagement"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
+    "NIS-2-Richtlinie Art. 21 – Behandlung und Offenlegung von Schwachstellen",
+    "ISO/IEC 27001 Anhang A 8.13 – Sicherung von Informationen"
+   ],
+   "roles": [
+    "IT-Risiko"
+   ],
+   "countries": [
+    "EU",
+    "DE",
+    "AT"
+   ],
+   "dossier": "kritische-schwachstellen-perimeter",
+   "priority": 2,
+   "primary": true,
+   "added": "2026-10-15T05:07:27Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Datum und die vier Katalogeinträge stimmen. Die Angaben zur Ivanti-Connect-Secure-Lücke CVE-2026-104935 und zu heise stehen nicht in der Quelle der Behörde und sind dort nicht belegt."
+   }
+  },
+  {
+   "title": "Update: Ahold Delhaize – Schaden bei Albert Heijn auf rund zehn Millionen Euro geschätzt",
+   "summary": "Der Schaden durch den Cybervorfall bei Albert Heijn wird auf rund 10 Millionen Euro geschätzt, ein Handelsexperte hält Umsatzausfälle von bis zu 21 Millionen Euro für möglich. Fachleute vermuten einen Überlastungsangriff statt eines klassischen Einbruchs; am 14. Oktober sollten die Verteilzentren wieder anlaufen, Frischware blieb gestört, die Webseite offline und alle Onlinebestellungen bis Donnerstag wurden storniert. Hinweise auf gestohlene Kunden- oder Beschäftigtendaten gibt es weiterhin nicht.",
+   "relevance": "Neu sind die Schadensschätzung und die vermutete Angriffsart: Auch ein Vorfall ohne Datenabfluss kann einen Lebensmittelhändler Millionen kosten und die Belieferung der Filialen stören. Wesentlichkeitsschwellen im Notfall- und Meldeprozess sollten Verfügbarkeitsschäden ebenso bewerten wie Vertraulichkeitsschäden.",
+   "source": "NL Times",
+   "url": "https://nltimes.nl/2026/10/14/albert-heijn-recovery-underway-cyberattack-damage-likely-tops-eu10-million",
+   "id": "2026-10-15-ahold-delhaize-schaden",
+   "topic": "Handel & Branche",
+   "impact": "info",
+   "published": "2026-10-14",
+   "tags": [
+    "Wettbewerber",
+    "Verfügbarkeit",
+    "Logistik"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Aufrechterhaltung des Betriebs und Krisenmanagement",
+    "ISO/IEC 27001 Anhang A 5.30 – IKT-Bereitschaft für Business Continuity"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Management"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "betriebstechnik-filialen-logistik",
+   "priority": 6,
+   "primary": false,
+   "added": "2026-10-15T05:07:27Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum, Schadensschätzungen (mindestens 10 Millionen Euro, rund 21 Millionen Euro Umsatzausfall), vermuteter Überlastungsangriff, Lage bei Verteilzentren, Frischware, Webseite und Bestellungen sowie fehlende Hinweise auf Datendiebstahl stimmen mit der Quelle überein."
+   }
+  },
+  {
+   "title": "Update: Kühlsteuerungen – Bundesamt fordert, Steuerungen vom Internet zu trennen",
+   "summary": "Nach den Angriffen auf Kühlmöbel in französischen Supermärkten hat das Bundesamt für Sicherheit in der Informationstechnik am 13. Oktober 2026 die Cybersicherheitsempfehlung Nummer 154 zu Gefährdungen durch aus dem Internet erreichbare Betriebstechnik veröffentlicht. Sie richtet sich ausdrücklich an Betreiber kleiner Anlagen, etwa zur Kühlung von Lebensmitteln, und empfiehlt, direkte Internetzugänge zu unterbinden, virtuelle private Netze und Mehrfaktor-Authentisierung einzusetzen, Software aktuell zu halten und offen erreichbare Geräte aufzuspüren. Präsidentin Claudia Plattner warnt, der Angriff hätte jedes Land treffen können und könne jederzeit Nachahmer finden.",
+   "relevance": "Neu gegenüber dem bisherigen Stand ist eine deutsche behördliche Empfehlung mit konkretem Maßnahmenkatalog, an der sich Prüfer und Aufsicht künftig orientieren dürften. Für einen Konzern mit Tausenden Filialen stellt sich vor allem die Frage, wer Fernzugänge von Wartungsdienstleistern zu Kühl- und Gebäudetechnik verantwortet und inventarisiert.",
+   "source": "Bundesamt für Sicherheit in der Informationstechnik",
+   "url": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Pressemitteilungen/Presse2026/261013_OT-Gefaehrdung-Kleinanlagen.html",
+   "id": "2026-10-15-bsi-steuerungssysteme-absichern",
+   "topic": "Standards & Zertifizierung",
+   "impact": "hoch",
+   "published": "2026-10-13",
+   "tags": [
+    "Betriebstechnik",
+    "Kühlung",
+    "Fernwartung"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Risikomanagementmaßnahmen im Bereich der Cybersicherheit",
+    "ISO/IEC 27001 Anhang A 8.20 – Netzwerksicherheit",
+    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Einkauf & Drittparteien",
+    "Management"
+   ],
+   "countries": [
+    "DE"
+   ],
+   "dossier": "betriebstechnik-filialen-logistik",
+   "priority": 1,
+   "primary": true,
+   "added": "2026-10-15T05:07:27Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Das Zitat lautet laut Quelle, der Angriff könne jederzeit Nachahmer finden, nicht dass die Angreifer jederzeit erneut zuschlagen könnten. Dass Fernzugriffe nur über virtuelle private Netze mit Mehrfaktor-Authentisierung zugelassen werden, steht so nicht in der Quelle; virtuelle private Netze und…"
+   }
+  },
   {
    "title": "Microsoft-Patchday: 1.411 Lücken, eine wird bereits ausgenutzt",
    "summary": "Microsoft hat am 13. Oktober 2026 Updates für 1.411 Schwachstellen veröffentlicht, darunter 70 kritische. Die Lücke CVE-2026-96951 in der Windows Shell wird aktiv ausgenutzt und erlaubt es, den Schutz für heruntergeladene Dateien zu umgehen. Zugleich endete die Unterstützung für Windows 11 Version 24H2 in den Ausgaben Home und Pro sowie für Windows 10 Enterprise LTSB 2016.",
@@ -1076,6 +1233,77 @@
    "check": {
     "verdict": "abweichung",
     "note": "Inhalt stimmt. Der Artikel ist aber vom 13. Oktober 2026, nicht vom 12. Oktober."
+   }
+  },
+  {
+   "title": "Update: Bund und Bundesamt legen Leitlinie zur Umstellung auf Post-Quanten-Kryptografie vor",
+   "summary": "Das Bundesministerium des Innern, das Bundesministerium für Digitales und Staatsmodernisierung und das Bundesamt für Sicherheit in der Informationstechnik haben am 12. Oktober 2026 eine gemeinsame Leitlinie zur nationalen Umsetzung des europäischen Fahrplans veröffentlicht. Sie bestätigt die Fristen: Hochrisiko-Anwendungen sollen spätestens Ende 2030 umgestellt sein, die Migration insgesamt bis 2035 weitgehend abgeschlossen. Empfohlen werden klare Zuständigkeiten, verbindliche Zeitpläne, die Verankerung des Quantenrisikos im Risikomanagement, Kryptoagilität und die frühe Einbindung von Herstellern und Lieferketten; ausdrücklich angesprochen sind auch Unternehmen und Betreiber kritischer Infrastrukturen.",
+   "relevance": "Neu ist, dass aus dem europäischen Fahrplan eine deutsche Leitlinie mit Erwartungen an Unternehmen wird. Ohne Kryptoinventar lässt sich nicht bestimmen, welche Anwendungen bis 2030 umgestellt sein müssen, und Anforderungen an Kryptoagilität gehören in Lieferantenverträge.",
+   "source": "Bundesamt für Sicherheit in der Informationstechnik",
+   "url": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Pressemitteilungen/Presse2026/261012_Leitlinie-PQC.html",
+   "id": "2026-10-15-leitlinie-post-quanten-kryptografie",
+   "topic": "Cyber- & IT-Regulierung",
+   "impact": "mittel",
+   "published": "2026-10-12",
+   "tags": [
+    "Post-Quanten-Kryptografie",
+    "Kryptoinventar",
+    "Kryptoagilität"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 8.24 – Verwendung von Kryptografie",
+    "NIS-2-Richtlinie Art. 21 – Konzepte und Verfahren für Kryptografie und Verschlüsselung"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Einkauf & Drittparteien",
+    "Management"
+   ],
+   "countries": [
+    "DE"
+   ],
+   "dossier": "post-quanten-kryptografie",
+   "priority": 3,
+   "primary": true,
+   "added": "2026-10-15T05:07:27Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum, beteiligte Stellen, Fristen Ende 2030 und 2035, Empfehlungen sowie Zielgruppen einschließlich Unternehmen und Betreibern kritischer Infrastrukturen stimmen mit der Quelle überein."
+   }
+  },
+  {
+   "title": "Studie: Nur elf Prozent haben eigene Abläufe für Vorfälle mit Künstlicher Intelligenz",
+   "summary": "Der TÜV-Verband und das Bundesamt für Sicherheit in der Informationstechnik haben die Sicherheitsstudie 2026 zu Künstlicher Intelligenz und Cybersicherheit in Unternehmen vorgestellt, für die forsa 505 Unternehmen ab 20 Beschäftigten befragt hat. Jedes sechste Unternehmen registrierte in den vergangenen zwölf Monaten einen Angriff oder Betrugsversuch, bei dem Künstliche Intelligenz eine Rolle spielte oder gespielt haben könnte; neun von zehn Betroffenen nannten täuschend echte Phishing-Mails. Nur elf Prozent der Unternehmen, die Künstliche Intelligenz nutzen oder planen, haben besondere Abläufe für Sicherheitsvorfälle mit Künstlicher Intelligenz.",
+   "relevance": "Die Studie liefert eine belastbare Vergleichszahl für Reifegradberichte an Vorstand und Prüfungsausschuss. Notfall- und Vorfallpläne sollten Fälle mit Künstlicher Intelligenz ausdrücklich abdecken, einschließlich der Frage, wer sie auslöst und bewertet.",
+   "source": "Borns IT- und Windows-Blog",
+   "url": "https://borncity.com/news/ki-sicherheit-in-unternehmen-nur-11-prozent-haben-spezielle-notfallablaeufe/",
+   "id": "2026-10-15-ki-sicherheitsstudie",
+   "topic": "AI-Governance",
+   "impact": "mittel",
+   "published": "2026-10-12",
+   "tags": [
+    "Künstliche Intelligenz",
+    "Vorfallmanagement",
+    "Phishing"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 5.24 – Planung und Vorbereitung der Handhabung von Informationssicherheitsvorfällen",
+    "ISO/IEC 42001 – Managementsystem für Künstliche Intelligenz"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Management"
+   ],
+   "countries": [
+    "DE"
+   ],
+   "dossier": null,
+   "priority": 5,
+   "primary": false,
+   "added": "2026-10-15T05:07:27Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Der Blogbeitrag ist am 12. Oktober 2026 erschienen. Die Zahlen stimmen (17 Prozent, 90 Prozent Phishing, 11 Prozent). Dass forsa 505 Unternehmen befragt hat, steht in weiteren Berichten zur Studie; die Quelle selbst spricht von über 500 Unternehmen."
    }
   },
   {
@@ -1361,6 +1589,41 @@
    "check": {
     "verdict": "ok",
     "note": "Banken, ARTEX, Claude-Code-Sitzungen mit DeepSeek, GLM und Grok, offene Verzeichnisse, Lebenslauf, geschlossenes Projekt mit englischen und koreanischen Ablegern, Kundendaten, Kreditkartendaten und Ausfälle sind alle in der Quelle belegt."
+   }
+  },
+  {
+   "title": "Verbraucherschützer verklagen Lidl wegen Videoüberwachung an Selbstbedienungskassen",
+   "summary": "Der Verbraucherzentrale Bundesverband hat gegen die Lidl Vertriebs-GmbH & Co. KG Unterlassungsklage vor dem Oberlandesgericht Brandenburg erhoben (Aktenzeichen 7 UKl 6/26). Nach der Klage waren am 26. März 2026 in einer Berliner Filiale Kameras an den Selbstbedienungskassen in Betrieb, ohne dass ein Datenschutzhinweis ausgehängt war. Der Verband sieht darin einen Verstoß gegen die Informationspflichten nach Artikel 12 und 13 der Datenschutz-Grundverordnung.",
+   "relevance": "Selbstbedienungskassen mit Kameras verbreiten sich im Lebensmittelhandel schnell; Verbandsklagen machen schon ein fehlendes Hinweisschild in einer einzelnen Filiale zum Rechtsstreit. Datenschutzkontrollen sollten deshalb nicht nur das Konzept, sondern die Umsetzung vor Ort per Stichprobe prüfen.",
+   "source": "Lebensmittel Zeitung",
+   "url": "https://www.lebensmittelzeitung.net/politik/nachrichten/datenschutz-lidl-kassiert-klage-zu-sb-kassen-193627",
+   "id": "2026-10-15-lidl-klage-sb-kassen",
+   "topic": "Datenschutz & Datenrecht",
+   "impact": "mittel",
+   "published": "2026-10-09",
+   "tags": [
+    "Videoüberwachung",
+    "Selbstbedienungskasse",
+    "Verbandsklage"
+   ],
+   "controls": [
+    "DSGVO Art. 13 – Informationspflicht bei Erhebung personenbezogener Daten",
+    "DSGVO Art. 12 – Transparente Information"
+   ],
+   "roles": [
+    "Datenschutz",
+    "Revision & Prüfung"
+   ],
+   "countries": [
+    "DE"
+   ],
+   "dossier": null,
+   "priority": 4,
+   "primary": false,
+   "added": "2026-10-15T05:07:27Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Der Artikel der Lebensmittel Zeitung vom 9. Oktober 2026 liegt größtenteils hinter einer Bezahlschranke; der frei lesbare Teil bestätigt die Kernaussage. Gericht, Aktenzeichen 7 UKl 6/26, Vorfall am 26. März 2026 in Berlin und Artikel 12 und 13 der Datenschutz-Grundverordnung sind auf der Seite…"
    }
   },
   {
