@@ -1,0 +1,255 @@
+{
+ "format": "tiefgang",
+ "chapters": [
+  {
+   "title": "Begrüßung",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Guten Morgen, liebe IT-GRC-Kolleginnen und -Kollegen, willkommen beim IT-GRC Radar. Heute ist Freitag, der sechzehnte Oktober 2026, und freitags nehmen wir uns Zeit für den Tiefgang."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und Tiefe hatte diese Woche reichlich. Kühlregale, Firewalls, Exchange. Man hätte sich ruhig mal eine langweilige Woche wünschen dürfen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Wir starten mit drei Meldungen, danach geht es um die Betriebstechnik in Filialen und Logistik. Am Ende kommen wie immer die Zahl der Woche und der [en]Owner[/en]-Moment."
+    }
+   ]
+  },
+  {
+   "title": "Exchange-Updates mit Nebenwirkungen",
+   "news_id": "2026-10-16-exchange-oktober-updates-ausfaelle",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Das erste Thema betrifft viele Betriebsteams direkt. Berichte aus dem Blog von Günter Born und aus Microsofts [en]Tech Community[/en] zeigen: Auf Exchange-Servern fallen 24 bis 30 Stunden nach dem Oktober-[en]Update[/en] Datenbankdienste und Mailzustellung aus, vor allem bei der [en]Subscription Edition[/en]."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Also ausgerechnet bei der Version, auf die alle umsteigen sollen. Das Timing ist, sagen wir, sportlich."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Born rät, die Installation vorerst zurückzustellen. Aber die [en]Updates[/en] schließen ja Sicherheitslücken. Was macht man da?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Bewusst entscheiden und es aufschreiben. Zurückstellen ist legitim, aber nur mit dokumentierter Risikoakzeptanz, einem Ablaufdatum und kompensierenden Maßnahmen, zum Beispiel engerer Überwachung."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und was sagt die Abschlussprüfung dazu?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Bei den allgemeinen Kontrollen der Informationstechnik fragt der Prüfer im Änderungsmanagement genau danach: Wer hat die Ausnahme genehmigt, und wann wurde nachgezogen? Eine Mail mit dem Betreff „machen wir später“ ist leider kein Genehmigungsnachweis."
+    }
+   ]
+  },
+  {
+   "title": "Nextcloud und die deaktivierte App",
+   "news_id": "2026-10-16-nextcloud-collabora-webshells",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Zweites Thema: Nextcloud. Angreifer nutzen seit Mitte September eine Lücke in der App mit dem eingebauten Collabora-Server. Sie legen [en]Webshells[/en] ab und suchen nach Passwortdatenbanken."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Die Korrektur gibt es seit dem elften September, Version 26.4.303. Der eigentliche Lerneffekt ist ein anderer: Die App nur zu deaktivieren reicht nicht. Wer sie nicht braucht, soll sie entfernen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Moment, deaktiviert heißt also nicht sicher?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Genau. Und solche Plattformen stehen gern in einem Fachbereich oder einer Tochter, außerhalb des zentralen [en]Patch[/en]-Managements. Also Inventar prüfen, Versionen abgleichen und im Nextcloud-Verzeichnis nach fremden Dateien suchen. Beim [en]Owner[/en]-Moment komme ich darauf noch zurück."
+    }
+   ]
+  },
+  {
+   "title": "Update: Kühlsteuerungen in Frankreich",
+   "news_id": "2026-10-16-update-kuehlsteuerungen-700-maerkte",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Da gibt es Neues zu den Kühlsteuerungen in Frankreich. Finanzminister Roland Lescure spricht von rund 700 der etwa 10.000 Supermärkte im Land. Er nennt das einen Weckruf, der die Lebensmittelsicherheit im Kern berühre."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Der Bericht nennt neben Danfoss ausdrücklich auch Fernsteuermodule von Copeland. Lösegeld oder Datendiebstahl sind nicht bekannt. Der Schaden entsteht durch warme Tiefkühltruhen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Das ist die perfekte Überleitung zu unserem Tiefgang."
+    }
+   ]
+  },
+  {
+   "title": "Tiefgang: Betriebstechnik in Filialen und Logistik",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Fassen wir die Woche zusammen. In der Nacht zum zwölften Oktober schalten Angreifer in Frankreich Kühlmöbel aus der Ferne in den Abtaumodus, die Temperaturen steigen bis auf 50 Grad. Am dreizehnten veröffentlicht das Bundesamt für Sicherheit in der Informationstechnik eine Cybersicherheitsempfehlung, die sich ausdrücklich auch an Betreiber von Anlagen zur Lebensmittelkühlung richtet."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Die wirksamste Maßnahme laut Bundesamt: die Steuerungen vom Internet trennen. Wo Fernzugriff nötig ist, nur über einen verschlüsselten Tunnel mit Mehr-Faktor-Anmeldung, dazu Freigabelisten und zeitnahe Sicherheitsupdates."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Klingt nach Grundhygiene. Warum ist das in der Praxis so schwer?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Weil diese Geräte selten in der Welt der Informationssicherheit leben. Sie gehören zur Haustechnik und werden von Kälte- oder Facility-Dienstleistern betreut. Fachberichten zufolge sind ältere Danfoss-Steuerungen betroffen, die überhaupt keine Sicherheitsupdates mehr bekommen. In der Inventarliste der Informationstechnik stehen die nicht."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Also wieder die ewige Frage: Wer ist eigentlich [en]Owner[/en]? Die Technik, der Dienstleister, die Informationssicherheit?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ehrlich gesagt in vielen Unternehmen: alle ein bisschen, also niemand. Was operative Ausfälle kosten, zeigt der Fall Ahold Delhaize, ein anderer Vorfall, der die Verteilzentren traf. Bei Albert Heijn wird der Schaden auf rund zehn Millionen Euro geschätzt."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Dann spiele ich mal die Gegenseite. Komplett vom Netz klingt gut, aber Kältetechnik wird heute aus der Ferne überwacht: Alarme bei Temperaturabweichung, Energieoptimierung, Fernwartung durch den Hersteller. Trennt man das alles, fährt künftig nachts jemand raus, wenn eine Truhe spinnt."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Berechtigter Einwand. Das Bundesamt sagt ja nicht: niemals Fernzugriff. Es sagt: nicht offen im Internet. Ein kontrollierter Zugang mit starker Anmeldung ist etwas anderes, und zwar so gebaut, dass der Dienstleister nicht seine eigene Hintertür mitbringt."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Aber wird das nicht teuer bei Tausenden Standorten? Tunnel, Anmeldeverfahren, Austausch von Altgeräten …"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ja, das ist das stärkste Gegenargument. Nur haben wir die Alternative diese Woche in Frankreich live gesehen. Und die Lebensmittelversorgung fällt unter die NIS-2-Richtlinie, also die Richtlinie über Netz- und Informationssicherheit. Deren Risikomanagement endet nicht an der Tür zum Technikraum."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und die Hersteller? Müssten die nicht einfach sichere Geräte liefern?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ab Dezember 2027 verschärft der Cyber Resilience Act die Pflichten für Hersteller vernetzter Produkte deutlich. Die ersten Normen dazu sollen im November erscheinen. Das hilft aber nur bei neuen Geräten. Um die Bestandsgeräte in den Filialen müssen wir uns weiter selbst kümmern."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Gut, dann konkret. Was sind die nächsten Schritte für Governance, Risiko und Compliance in einem großen Handelskonzern?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Erstens das Inventar: Welche vernetzten Kühl-, Gebäude- und Lagersteuerungen gibt es, mit Hersteller, Modell und Version, und wer betreut sie? Zweitens von außen prüfen, ob eigene Adressbereiche solche Oberflächen offen zeigen. Drittens die Verantwortung festschreiben, mit einem benannten [en]Owner[/en] pro Anlagentyp."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und viertens ahne ich schon: Verträge."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Richtig. Fernzugriff, Meldepflichten und Zusagen für Updates gehören in die Verträge mit Kälte- und Facility-Dienstleistern. Fünftens die Notfallplanung: Was passiert, wenn in hundert Märkten gleichzeitig die Kühlung ausfällt? Wer misst manuell, wer entscheidet über die Vernichtung von Ware, wer kommuniziert?"
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Das ist dann keine Frage mehr für das Sicherheitsteam allein."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Nein, das gehört in den Krisenstab und auf die Tagesordnung des Vorstands. Ein Angriff, der ohne Erpressung nur über verdorbene Ware wirkt, ist übrigens ein ziemlich ehrliches Szenario für die nächste Übung."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Mein Fazit: Für die Trennung spricht die Lage, dagegen der Betrieb. Dazwischen liegt eine saubere Architektur mit klarem [en]Owner[/en]."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Unterschreibe ich. Am liebsten in einem Dokument, das nicht „Kühlung final final zwei“ heißt."
+    }
+   ]
+  },
+  {
+   "title": "Zahl der Woche",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Kommen wir zur Zahl der Woche."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Mehr als 1.400. So viele Lücken hat Microsoft am Oktober-[en]Patchday[/en] geschlossen, eine davon wurde bereits ausgenutzt."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "1.400. Da hilft auch die schönste Excel-Liste nicht mehr."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Eben. Die Zahl zeigt, dass Priorisierung wichtiger ist als Vollständigkeit: zuerst aktiv ausgenutzte Lücken, dann exponierte Systeme. Und die Exchange-Geschichte zeigt, dass man zusätzlich einen Plan braucht für den Fall, dass ein [en]Patch[/en] selbst zum Problem wird."
+    }
+   ]
+  },
+  {
+   "title": "Owner-Moment der Woche",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Und jetzt der [en]Owner[/en]-Moment der Woche."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ich nehme Nextcloud. Eine App, die niemand nutzt, wird deaktiviert, und alle fühlen sich sicher. Nur ist deaktiviert eben nicht entfernt, und die Lücke bleibt erreichbar."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Das kennt man aus jeder Aufräumaktion. Eigentlich weg, aber eben nur eigentlich."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Die Lehre daraus: Ungenutzte Komponenten brauchen genauso einen [en]Owner[/en] wie genutzte, nämlich jemanden, der entscheidet, dass sie gelöscht werden. Sonst stehen sie in keiner Liste mehr, aber immer noch auf dem Server."
+    }
+   ]
+  },
+  {
+   "title": "Auf dem Radar",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Auf dem Radar habe ich heute Grundschutz plus plus. Das Bundesamt will die Methodik Ende Oktober vorstellen. Ab dem ersten Januar 2027 sollen Zertifizierungen nach ISO 27001 auf dieser Grundlage möglich sein."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Spannend, weil die Anforderungen maschinenlesbar kommen. Wer seine Kontrollen heute noch in Tabellen pflegt, sollte prüfen, ob sie sich automatisiert abbilden lassen."
+    }
+   ]
+  },
+  {
+   "title": "Abschied",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Das war unser Freitag. Weitere Meldungen findet ihr auf der Webseite, unter anderem zu den ersten Normen für den Cyber Resilience Act, zu verdeckten Fernarbeitern aus Nordkorea und zu Datenbrillen. Dort stehen wie immer auch alle Quellen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Schönes Wochenende. Und falls ihr am Montag eine Kühltruhe ohne zuständige Person findet: Jetzt wisst ihr, welche Frage zuerst kommt."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Bis Montag."
+    }
+   ]
+  }
+ ]
+}

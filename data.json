@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-15T05:07:27Z",
+ "updated": "2026-10-16T05:11:39Z",
  "topics": [
   "IT-Governance & Risiko",
   "Cyber- & IT-Regulierung",
@@ -11,6 +11,18 @@
   "Weitere Themen"
  ],
  "briefings": [
+  {
+   "date": "2026-10-16",
+   "headline": "Exchange-Updates mit Ausfällen, Angriffe auf Nextcloud und 700 betroffene Märkte in Frankreich: Betriebstechnik bleibt das Thema der Woche.",
+   "points": [
+    "Exchange Server: Nach den Oktober-Updates fallen Berichten zufolge Datenbankdienste und Mailzustellung nach 24 bis 30 Stunden aus. Ein Aufschub braucht eine dokumentierte Risikoentscheidung.",
+    "Nextcloud: Angreifer nutzen eine Lücke im eingebauten Collabora-Server für Hintertüren. Deaktivieren reicht nicht, ungenutzte Apps müssen entfernt werden.",
+    "Update Kühlsteuerungen: Frankreich zählt rund 700 betroffene Supermärkte, neben Danfoss sind auch Module von Copeland betroffen.",
+    "Cyber Resilience Act: Die ersten Normen der Reihe EN 40000 sind angenommen und sollen am 25. November erscheinen.",
+    "Außerdem: verdeckte Fernarbeiter aus Nordkorea, Stellungnahme zu Datenbrillen, Bußgeld gegen Emirates wegen Gesundheitsdaten von Fluggästen."
+   ],
+   "count": 8
+  },
   {
    "date": "2026-10-15",
    "headline": "Bundesamt fordert Absicherung von Kühlsteuerungen, aktiv ausgenutzte Lücken an Firewall, Mail-Gateway und Fernzugang, Leitlinie zur Post-Quanten-Kryptografie.",
@@ -225,20 +237,21 @@
     }
    ],
    "title": "Betriebstechnik in Filialen und Logistik",
-   "sector": "IT-Governance & Risiko",
+   "sector": "Handel & Branche",
    "ring": "jetzt handeln",
-   "status": "Das Bundesamt für Sicherheit in der Informationstechnik hat am 13. Oktober 2026 die Cybersicherheitsempfehlung Nummer 154 veröffentlicht und richtet sie ausdrücklich an Betreiber von Anlagen zur Lebensmittelkühlung; nach Euronews sind weiterhin Tausende ähnliche Geräte offen erreichbar. Bei Ahold Delhaize wird der Schaden auf rund 10 Millionen Euro geschätzt, Fachleute vermuten einen…",
-   "next_step": "Alle aus dem Internet erreichbaren Steuerungen und Fernwartungszugänge in Filialen und Logistik inventarisieren, je Anlage Verantwortliche festlegen und gegen die Empfehlung Nummer 154 abgleichen.",
+   "status": "Laut französischem Finanzminister waren rund 700 der etwa 10.000 Supermärkte in Frankreich betroffen. Angegriffen wurden Fernsteuermodule von Danfoss und Copeland, Kühlmöbel wurden in den Abtaumodus geschaltet, die Temperaturen stiegen bis auf 50 Grad. Fachberichten zufolge sind ältere Danfoss-Steuerungen ohne Sicherheitsupdates betroffen. Das Bundesamt für Sicherheit in der Informationstechnik…",
+   "next_step": "Vernetzte Kühl-, Gebäude- und Lagersteuerungen mit Hersteller, Modell und Version inventarisieren, eigene Adressbereiche von außen auf offene Oberflächen prüfen, pro Anlagentyp einen Verantwortlichen benennen, Verträge mit Kälte- und Facility-Dienstleistern zu Fernzugriff und Updates nachschärfen…",
    "open_questions": [
-    "Wer verantwortet Fernzugänge von Wartungsdienstleistern für Kühl- und Gebäudetechnik?",
-    "Wie werden Ausfälle ohne Datenabfluss in Wesentlichkeitsschwellen und Meldeprozessen bewertet?"
+    "Wer ist für Steuerungen verantwortlich, die von Facility-Dienstleistern betreut werden?",
+    "Wie schnell lassen sich Altgeräte ohne Sicherheitsupdates ersetzen oder abschotten?",
+    "Wer steckt hinter dem Angriff, und welches Motiv hat er?"
    ],
    "controls": [
-    "NIS-2-Richtlinie Art. 21 – Risikomanagementmaßnahmen im Bereich der Cybersicherheit",
+    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
     "ISO/IEC 27001 Anhang A 8.20 – Netzwerksicherheit",
-    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen"
+    "ISO/IEC 27001 Anhang A 5.9 – Inventar der Informationen und anderer zugehöriger Werte"
    ],
-   "updated": "2026-10-15"
+   "updated": "2026-10-16"
   },
   {
    "slug": "drittparteien-lieferkette",
@@ -277,18 +290,17 @@
    "title": "Identitäten und Zugangsdaten",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Die Gruppe hinter dem ASOS-Vorfall, bei dem erschlichene Zugangsdaten eines Beschäftigten den Zugriff ermöglichten, meldet am 12. Oktober 2026 auch einen Einbruch bei Air France-KLM. Die Fluggesellschaft bestätigt Zugriff auf interne Ordner. Parallel laufen die Kampagne CaptiveCrunch über Gastnetze in Hotels und die Angriffswelle FortiBleed mit geleakten Zugangsdaten.",
-   "next_step": "Phishing-resistente Anmeldung für Zugänge zu Cloud-Datenplattformen und Kommunikationsdiensten priorisieren und Abläufe im Helpdesk gegen Social Engineering absichern.",
+   "status": "Neben erschlichenen Zugangsdaten wie bei ASOS und Air France-KLM rückt der Einstellungsprozess in den Blick: Die Behörden der Vereinigten Staaten haben Laptop-Farmen zerschlagen, über die nordkoreanische Fachkräfte mit gestohlenen Identitäten per Fernzugriff auf Firmengeräten arbeiteten. Dabei wurden rund 187 Geräte sichergestellt. Parallel laufen die Kampagnen CaptiveCrunch und FortiBleed weiter.",
+   "next_step": "Identitätsprüfung bei Einstellungen für Fernarbeit und beim Personal von Dienstleistern mit privilegierten Zugängen schärfen und unerwartete Fernwartungssoftware sowie abweichende Lieferadressen für Firmengeräte überwachen.",
    "open_questions": [
-    "Welche Datenplattformen erlauben noch eine Anmeldung ohne zweiten Faktor?",
-    "Wie prüft der Helpdesk die Identität von Anrufern?"
+    "Welche Identitätsprüfung verlangen wir von Dienstleistern, deren Personal auf unsere Systeme zugreift?"
    ],
    "controls": [
-    "ISO/IEC 27001 Anhang A 5.17 – Authentisierungsinformationen",
-    "NIS-2-Richtlinie Art. 21 – Multi-Faktor-Authentifizierung",
-    "IT-Kontrollen der Abschlussprüfung – Zugriffsschutz"
+    "ISO/IEC 27001 Anhang A 5.16 – Identitätsmanagement",
+    "ISO/IEC 27001 Anhang A 6.1 – Sicherheitsüberprüfung",
+    "ISO/IEC 27001 Anhang A 5.18 – Zugangsrechte"
    ],
-   "updated": "2026-10-13"
+   "updated": "2026-10-16"
   },
   {
    "slug": "kritische-schwachstellen-perimeter",
@@ -302,17 +314,18 @@
    "title": "Kritische Schwachstellen in Randsystemen und Kernanwendungen",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Am 14. Oktober 2026 kamen aktiv ausgenutzte Lücken in PAN-OS von Palo Alto Networks, im Cisco Secure Email Gateway und in der Backup-Software AhsayCBS in den Behördenkatalog der Vereinigten Staaten, zudem wird Ivanti Connect Secure angegriffen. Offen bleiben die Microsoft-Lücke CVE-2026-96951, die SAP-Lücke mit Höchstwert 10 sowie Altlasten bei NetScaler, Atlassian, AnyDesk und Exchange.",
-   "next_step": "Katalogeinträge mit Internetbezug innerhalb weniger Tage schließen, Ausnahmen dokumentiert genehmigen und Backup-Systeme gezielt in die Priorisierung aufnehmen.",
+   "status": "Neu: Angriffe über die Nextcloud-App mit eingebautem Collabora-Server (CVE-2026-110447) sowie Berichte, dass Exchange-Server 24 bis 30 Stunden nach den Oktober-Updates ausfallen. Weiter aktiv ausgenutzt oder offen sind Lücken in PAN-OS, im Cisco Secure Email Gateway, in Ivanti Connect Secure, die Microsoft-Lücke CVE-2026-96951 und die SAP-Lücke mit Höchstwert 10.",
+   "next_step": "Für Exchange eine dokumentierte Entscheidung treffen: einspielen mit enger Überwachung oder befristet zurückstellen mit kompensierenden Maßnahmen. Nextcloud-Installationen auch außerhalb der zentralen Informationstechnik erfassen und ungenutzte Collabora-Apps entfernen.",
    "open_questions": [
-    "Werden Datensicherungssysteme im Schwachstellenmanagement gleich hoch priorisiert wie Firewalls?",
-    "Wie schnell erfahren Dienstleister mit eigenen Randsystemen von Katalogeinträgen?"
+    "Wann liefert Microsoft eine Korrektur für die Ausfälle nach den Exchange-Updates?",
+    "Wie viele selbst betriebene Plattformen für Zusammenarbeit stehen außerhalb des zentralen Patch-Managements?"
    ],
    "controls": [
     "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
-    "NIS-2-Richtlinie Art. 21 – Behandlung und Offenlegung von Schwachstellen"
+    "IT-Kontrollen der Abschlussprüfung – Änderungsmanagement",
+    "NIS-2-Richtlinie Art. 21 – Umgang mit und Offenlegung von Schwachstellen"
    ],
-   "updated": "2026-10-15"
+   "updated": "2026-10-16"
   },
   {
    "slug": "lebenszyklus-altsysteme",
@@ -414,6 +427,30 @@
     "ISO/IEC 42001 – Managementsystem für Künstliche Intelligenz"
    ],
    "updated": "2026-10-09"
+  },
+  {
+   "slug": "cyber-resilience-act",
+   "created": "2026-10-16",
+   "ring_history": [
+    {
+     "date": "2026-10-16",
+     "ring": "vorbereiten"
+    }
+   ],
+   "title": "Cyber Resilience Act",
+   "sector": "Cyber- & IT-Regulierung",
+   "ring": "vorbereiten",
+   "status": "Seit dem 11. September 2026 müssen Hersteller von Produkten mit digitalen Elementen aktiv ausgenutzte Schwachstellen und schwere Vorfälle melden. Die ersten Normen EN 40000-1-1 und EN 40000-1-2 sind angenommen und sollen am 25. November 2026 erscheinen. Ab Dezember 2027 gelten deutlich strengere Herstellerpflichten für vernetzte Geräte.",
+   "next_step": "Klären, bei welchen Eigenmarken mit vernetzten Funktionen der Konzern als Hersteller, Importeur oder Händler gilt, und die Anforderungen der Verordnung in Einkaufsbedingungen und Lieferantenbewertung aufnehmen, auch für vernetzte Technik in Filialen und Logistik.",
+   "open_questions": [
+    "Wann folgen die Normen zum Umgang mit Schwachstellen und die produktspezifischen Normen?",
+    "Welche Eigenmarken-Produkte fallen unter die Verordnung?"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen",
+    "ISO/IEC 27001 Anhang A 5.20 – Behandlung der Informationssicherheit in Lieferantenvereinbarungen"
+   ],
+   "updated": "2026-10-16"
   },
   {
    "slug": "post-quanten-kryptografie",
@@ -564,17 +601,6 @@
  ],
  "deadlines": [
   {
-   "date": "2026-10-01",
-   "title": "Österreich: Cybersicherheitsgesetz gilt, Meldepflicht startet",
-   "detail": "Betroffene Einrichtungen in Österreich müssen ab diesem Tag erhebliche Cybervorfälle über das Unternehmensserviceportal melden können.",
-   "scope": "AT",
-   "url": "https://www.usp.gv.at/aktuelles/newsliste/NIS-2.html",
-   "dossier": "nis2-umsetzung",
-   "added": "2026-09-30",
-   "primary": true,
-   "checked": true
-  },
-  {
    "date": "2026-10-03",
    "title": "Cisco Catalyst SD-WAN Manager: Behördenfrist für CVE-2026-76504",
    "detail": "Die amerikanische Cybersicherheitsbehörde verlangt von Bundesbehörden die Absicherung gegen die aktiv ausgenutzte Lücke; Betreiber sollten Patchstand und Protokolle auf verdächtige Anmeldeversuche prüfen.",
@@ -606,6 +632,17 @@
    "checked": true,
    "dossier": "lebenszyklus-altsysteme",
    "added": "2026-10-11"
+  },
+  {
+   "date": "2026-10-16",
+   "title": "Patch-Frist der Behörde der Vereinigten Staaten für Windows-Lücke CVE-2026-96951",
+   "detail": "Die Cybersicherheitsbehörde der Vereinigten Staaten verlangt von Bundesbehörden, die aktiv ausgenutzte Lücke in der Windows Shell bis heute zu schließen. Unternehmen sollten das als Richtwert für die eigene Priorisierung nehmen.",
+   "scope": "global",
+   "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-96951",
+   "primary": true,
+   "checked": true,
+   "dossier": "kritische-schwachstellen-perimeter",
+   "added": "2026-10-16"
   },
   {
    "date": "2026-10-31",
@@ -776,11 +813,12 @@
  "signals": [
   {
    "theme": "Digital Fairness Act",
-   "why": "Der Vorschlag der Kommission zu manipulativen Oberflächen, suchtförderndem Design und unfairer Personalisierung ist für das vierte Quartal 2026 angekündigt. Er würde Onlineshops, Apps und Kundenbindungsprogramme des Handels direkt treffen.",
-   "count": 8,
+   "why": "Die Kommission will den Vorschlag gegen manipulative Gestaltung, unfaire Personalisierung und Abo-Fallen voraussichtlich im vierten Quartal 2026 vorlegen. Das beträfe Onlineshops, Kundenprogramme und personalisierte Preise direkt.",
+   "count": 9,
    "first_seen": "2026-09-30",
-   "last_seen": "2026-10-15",
+   "last_seen": "2026-10-16",
    "evidence": [
+    "https://www.eversheds-sutherland.com/en/slovakia/insights/the-digital-fairness-act-what-businesses-need-to-know",
     "https://www.europarl.europa.eu/legislative-train/theme-protecting-our-democracy-upholding-our-values/file-digital-fairness-act",
     "https://www.privacylaws.com/news/eu-proposal-on-digital-fairness-act-expected-by-the-end-of-2026/",
     "https://www.mlex.com/mlex/articles/2529049/eu-digital-fairness-act-on-consumer-protection-tentatively-eyed-for-november"
@@ -841,6 +879,17 @@
    ]
   },
   {
+   "theme": "Grundschutz++ zertifizierbar ab 2027",
+   "why": "Das Bundesamt für Sicherheit in der Informationstechnik will die Methodik Ende Oktober vorstellen. Ab dem 1. Januar 2027 sollen Zertifizierungsanträge nach ISO/IEC 27001 auf Basis von Grundschutz++ möglich sein. Die maschinenlesbaren Anforderungen könnten das Kontrollmanagement automatisieren und Tabellenlisten ablösen.",
+   "count": 3,
+   "first_seen": "2026-10-02",
+   "last_seen": "2026-10-16",
+   "evidence": [
+    "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/Grundschutz-in-der-Informationssicherheit/Grundschutz-Plus-Plus/grundschutz-plus-plus_node.html",
+    "https://sits.com/ch/blog/grundschutz-plus-plus-bsi-it-grundschutz/"
+   ]
+  },
+  {
    "theme": "Haftungsregeln für Künstliche Intelligenz",
    "why": "Die Europäische Kommission schließt eine neue Haftungsrichtlinie für Künstliche Intelligenz derzeit aus. Wer haftet, bleibt damit vorerst Sache der Verträge mit Anbietern und des allgemeinen Produkthaftungsrechts.",
    "count": 2,
@@ -861,17 +910,6 @@
     "https://christopher-helm.com/kritis-betreiber-schwellenwert-rechtsverordnung/",
     "https://ag.kritis.info/2026/05/28/referentenentwurf-des-bmi-verordnung-zur-bestimmung-kritischer-anlagen-nach-dem-kritis-dachgesetz-kritisverordnung-kritisv/",
     "https://christopher-helm.com/kritis-dachgesetz-registrierungsfrist-gestrichen/"
-   ]
-  },
-  {
-   "theme": "Grundschutz++ zertifizierbar ab 2027",
-   "why": "Die Pilotphase des Bundesamts für Sicherheit in der Informationstechnik endete am 30. September 2026. Die Methodik soll auf der it-sa Ende Oktober vorgestellt werden und ab 1. Januar 2027 zertifizierbar sein. Das kann bestehende Zertifizierungs- und Kontrollrahmen verändern.",
-   "count": 2,
-   "first_seen": "2026-10-02",
-   "last_seen": "2026-10-04",
-   "evidence": [
-    "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/Grundschutz-in-der-Informationssicherheit/Grundschutz-Plus-Plus/grundschutz-plus-plus_node.html",
-    "https://sits.com/ch/blog/grundschutz-plus-plus-bsi-it-grundschutz/"
    ]
   },
   {
@@ -949,6 +987,76 @@
  ],
  "news": [
   {
+   "title": "Exchange Server: Oktober-Updates legen Dienste nach ein bis zwei Tagen lahm",
+   "summary": "Berichte im Blog von Günter Born und in der Tech Community von Microsoft zeigen: Auf Exchange-Servern fallen 24 bis 30 Stunden nach Installation der Oktober-Updates Datenbankdienste und Mailzustellung aus, vor allem bei der Subscription Edition. Born rät, die Installation vorerst zurückzustellen. Weil die Updates auch Sicherheitslücken schließen, sollte der Aufschub nur vorübergehend sein.",
+   "relevance": "Hier stehen Patch-Frist und Verfügbarkeit gegeneinander: Wer zurückstellt, braucht eine dokumentierte Risikoentscheidung mit Ablaufdatum und kompensierenden Maßnahmen. Für die Abschlussprüfung muss die Notfall-Ausnahme im Änderungsmanagement nachvollziehbar genehmigt sein, zumal Exchange 2016 und 2019 am 31. Oktober ohnehin keine Sicherheitsupdates mehr bekommen.",
+   "source": "nbreview.de",
+   "url": "https://nbreview.de/security-briefing-15-10-2026-angriffe-auf-nextcloud-ueber-collabora-app-kritische-next-js-luecken-exchange-ausfaelle-nach-update/",
+   "id": "2026-10-16-exchange-oktober-updates-ausfaelle",
+   "topic": "IT-Governance & Risiko",
+   "impact": "hoch",
+   "published": "2026-10-15",
+   "tags": [
+    "Exchange",
+    "Patch-Management",
+    "Änderungsmanagement"
+   ],
+   "controls": [
+    "IT-Kontrollen der Abschlussprüfung – Änderungsmanagement",
+    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
+    "NIS-2-Richtlinie Art. 21 – Umgang mit und Offenlegung von Schwachstellen"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Revision & Prüfung"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "kritische-schwachstellen-perimeter",
+   "priority": 1,
+   "primary": false,
+   "added": "2026-10-16T05:11:38Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Datum, Zeitfenster, Edition und Empfehlung stimmen. Die Kennung CVE-2026-70571 kommt in der Quelle nicht vor; dort wird zum Exchange-Fehler keine Lückenkennung genannt."
+   }
+  },
+  {
+   "title": "Nextcloud: Angreifer nutzen Lücke im eingebauten Collabora-Server für Hintertüren",
+   "summary": "Über die Lücke CVE-2026-110447 in der Nextcloud-App mit eingebautem Collabora-Server legen Angreifer seit Mitte September Webshells ab und suchen nach Passwortdatenbanken, Spuren von Passwortmanagern und Kryptowallets. Die Korrektur in Version 26.4.303 gibt es seit 11. September. Ein bloßes Deaktivieren der App reicht nicht, ungenutzte Installationen sollen entfernt werden. Eigenständige Collabora-Installationen und Nextcloud All-in-One sind nicht betroffen.",
+   "relevance": "Selbst betriebene Plattformen für Zusammenarbeit in Fachbereichen oder Tochtergesellschaften laufen oft außerhalb des zentralen Patch-Managements. Inventar prüfen, Versionen abgleichen und das Nextcloud-Verzeichnis nach unbekannten Dateien durchsuchen.",
+   "source": "BleepingComputer",
+   "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-collabora-rce-flaw-to-backdoor-nextcloud-servers/",
+   "id": "2026-10-16-nextcloud-collabora-webshells",
+   "topic": "IT-Governance & Risiko",
+   "impact": "hoch",
+   "published": "2026-10-15",
+   "tags": [
+    "Nextcloud",
+    "Webshell",
+    "Schattensysteme"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
+    "ISO/IEC 27001 Anhang A 5.9 – Inventar der Informationen und anderer zugehöriger Werte"
+   ],
+   "roles": [
+    "IT-Risiko"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "kritische-schwachstellen-perimeter",
+   "priority": 2,
+   "primary": false,
+   "added": "2026-10-16T05:11:38Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Inhalt stimmt (Lückenkennung, Mitte September, Version 26.4.303 seit 11. September, Deaktivieren reicht nicht, nicht betroffene Installationen). Der Artikel erschien am 15. Oktober 2026; am 14. Oktober wurde nur die Sicherheitsmeldung veröffentlicht."
+   }
+  },
+  {
    "title": "Aktiv ausgenutzt: Lücken in Firewall, Mail-Gateway, Backup-Software und Ivanti-Fernzugang",
    "summary": "Die Cybersicherheitsbehörde der Vereinigten Staaten hat am 14. Oktober 2026 vier aktiv ausgenutzte Schwachstellen in ihren Katalog aufgenommen: CVE-2026-0322 in PAN-OS von Palo Alto Networks, CVE-2026-76519 im Cisco Secure Email Gateway sowie CVE-2026-105133 und CVE-2026-105134 in der Backup-Software AhsayCBS. Betroffene Organisationen sollten die Lücken vorrangig schließen.",
    "relevance": "Betroffen sind Firewalls, Mail-Gateways, Fernzugänge und Datensicherung, also genau die Systeme, die bei einem Angriff zuerst und nach einem Angriff am dringendsten gebraucht werden. Schwachstellenmanagement sollte Katalogeinträge mit Internetbezug außerhalb des regulären Patchzyklus behandeln und Ausnahmen nachvollziehbar genehmigen.",
@@ -1018,6 +1126,145 @@
    "check": {
     "verdict": "ok",
     "note": "Datum, Schadensschätzungen (mindestens 10 Millionen Euro, rund 21 Millionen Euro Umsatzausfall), vermuteter Überlastungsangriff, Lage bei Verteilzentren, Frischware, Webseite und Bestellungen sowie fehlende Hinweise auf Datendiebstahl stimmen mit der Quelle überein."
+   }
+  },
+  {
+   "title": "Update: Kühlsteuerungen – Frankreich zählt rund 700 betroffene Supermärkte",
+   "summary": "Laut dem französischen Finanzminister Roland Lescure waren rund 700 der etwa 10.000 Supermärkte im Land betroffen. Er nennt den Vorfall einen Weckruf, der die Lebensmittelsicherheit im Kern berühre, sieht aber keine Gefahr für die Versorgung. Der Bericht nennt neben Fernsteuermodulen von Danfoss ausdrücklich auch solche des Herstellers Copeland. Lösegeldforderungen oder Datendiebstahl sind nicht bekannt.",
+   "relevance": "Mit der offiziellen Zahl wird das Szenario für Vorstand und Krisenstab greifbar: ein Angriff ohne Erpressung, der allein über verdorbene Ware und leere Kühlregale wirkt. Wer für Kühl- und Gebäudetechnik verantwortlich ist, muss zwischen Technik, Facility-Dienstleistern und Informationssicherheit verbindlich geklärt sein.",
+   "source": "KRMG",
+   "url": "https://krmg.com/2026/10/13/cyberattack-targeting-refrigeration-systems-hits-700-supermarkets-french-government-says/",
+   "id": "2026-10-16-update-kuehlsteuerungen-700-maerkte",
+   "topic": "Handel & Branche",
+   "impact": "mittel",
+   "published": "2026-10-13",
+   "tags": [
+    "Kühltechnik",
+    "Betriebstechnik",
+    "Lebensmittelhandel"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
+    "ISO/IEC 27001 Anhang A 8.20 – Netzwerksicherheit"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Einkauf & Drittparteien",
+    "Management"
+   ],
+   "countries": [
+    "FR",
+    "EU"
+   ],
+   "dossier": "betriebstechnik-filialen-logistik",
+   "priority": 3,
+   "primary": false,
+   "added": "2026-10-16T05:11:38Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Rund 700 von 10.000 Supermärkten, Zitate von Lescure (Weckruf, Kern der Lebensmittelsicherheit, keine Gefahr für die Versorgung), Danfoss und Copeland sowie kein Lösegeld und kein Datendiebstahl sind belegt."
+   }
+  },
+  {
+   "title": "Verdeckte Fernarbeiter aus Nordkorea: Razzien gegen Laptop-Farmen in Texas",
+   "summary": "Das Justizministerium der Vereinigten Staaten hat zwei Personen festgenommen. Sie sollen nordkoreanischen Fachkräften für Informationstechnik mit gestohlenen Identitäten zu Stellen bei Unternehmen verholfen haben. Bei Durchsuchungen von mehr als 40 Wohnungen in Texas zwischen dem 21. und 25. September stellten Ermittler rund 187 Laptops und weitere Geräte sicher. Über diese Firmengeräte arbeiteten die Fachkräfte per Fernzugriff.",
+   "relevance": "Das Risiko steckt im Einstellungs- und Onboarding-Prozess, nicht in der Firewall. Identitätsprüfung bei Einstellungen für Fernarbeit und beim Personal von Dienstleistern, Lieferadressen für Firmengeräte und unerwartete Fernwartungssoftware gehören in die Kontrollen von Personal, Einkauf und Informationssicherheit.",
+   "source": "GV Wire (Reuters)",
+   "url": "https://gvwire.com/2026/10/13/doj-arrests-2-seizes-187-devices-in-north-korean-laptop-farm-crackdown-in-texas/",
+   "id": "2026-10-16-nordkorea-laptop-farmen",
+   "topic": "Weitere Themen",
+   "impact": "mittel",
+   "published": "2026-10-13",
+   "tags": [
+    "Insider-Risiko",
+    "Onboarding",
+    "Geopolitik"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 6.1 – Sicherheitsüberprüfung",
+    "ISO/IEC 27001 Anhang A 5.16 – Identitätsmanagement"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Einkauf & Drittparteien"
+   ],
+   "countries": [
+    "US"
+   ],
+   "dossier": "identitaeten-zugangsdaten",
+   "priority": 5,
+   "primary": false,
+   "added": "2026-10-16T05:11:38Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Zwei Festnahmen, mehr als 40 Wohnungen in Texas, 21. bis 25. September, rund 187 Laptops und weitere Geräte, Datum 13. Oktober: alles belegt."
+   }
+  },
+  {
+   "title": "Datenschutzausschuss: Hersteller von Datenbrillen können Pflichten nicht auf Nutzer abwälzen",
+   "summary": "Der Europäische Datenschutzausschuss hat am 13. Oktober eine Stellungnahme zu Datenbrillen veröffentlicht. Wer sie beruflich nutzt oder Aufnahmen öffentlich teilt, ist Verantwortlicher im Sinne der Datenschutz-Grundverordnung. Hersteller und Diensteanbieter dürfen ihre Pflichten nicht auf die Nutzer verlagern. Die Geräte sollen deutlich erkennbar anzeigen, wenn sie aufnehmen, etwa durch Leuchtanzeigen oder Tonsignale.",
+   "relevance": "Für Handel und Logistik in zweierlei Hinsicht relevant: beim möglichen Einsatz durch Beschäftigte in Lager, Filiale oder Kundenservice und bei Kundinnen und Kunden, die mit Kamera-Brillen im Markt filmen. Hausordnung, Richtlinien für Beschäftigte und Datenschutz-Folgenabschätzungen sollten das Thema abdecken.",
+   "source": "Europäischer Datenschutzausschuss",
+   "url": "https://www.edpb.europa.eu/news/edpb-publishes-statement-on-the-data-protection-challenges-of-smart-glasses_en",
+   "id": "2026-10-16-edpb-datenbrillen",
+   "topic": "Datenschutz & Datenrecht",
+   "impact": "mittel",
+   "published": "2026-10-13",
+   "tags": [
+    "Datenbrillen",
+    "Beschäftigtendaten",
+    "Videoaufnahmen"
+   ],
+   "controls": [
+    "DSGVO Art. 35 – Datenschutz-Folgenabschätzung",
+    "DSGVO Art. 25 – Datenschutz durch Technikgestaltung"
+   ],
+   "roles": [
+    "Datenschutz"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": null,
+   "priority": 6,
+   "primary": true,
+   "added": "2026-10-16T05:11:39Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum 13. Oktober und alle Kernaussagen sind belegt."
+   }
+  },
+  {
+   "title": "Modehändler TFG London: Cyberangriff legt Systeme von Phase Eight, Hobbs und Whistles lahm",
+   "summary": "TFG London, die britische Tochter der südafrikanischen Foschini-Gruppe, hat am 11. Oktober einen Cyberangriff entdeckt. Mehrere Systeme der Marken Phase Eight, Hobbs und Whistles sind weiter nicht verfügbar, die Geschäfte bleiben geöffnet. Das Unternehmen sieht keinen Grund, eine Gefährdung von Zahlungsdaten anzunehmen, und prüft, ob Kundendaten betroffen sind. Eine Tätergruppe hat sich bislang nicht bekannt.",
+   "relevance": "Nach Ahold Delhaize und ASOS ist das der nächste angegriffene Händler binnen einer Woche. Notfallpläne für den Betrieb ohne zentrale Systeme und die Trennung der Zahlungsumgebung müssen geübt sein, nicht nur dokumentiert.",
+   "source": "ITV News",
+   "url": "https://www.itv.com/news/2026-10-13/hobbs-and-whistles-owner-struck-by-cyber-attack",
+   "id": "2026-10-16-tfg-london-cyberangriff",
+   "topic": "Handel & Branche",
+   "impact": "info",
+   "published": "2026-10-13",
+   "tags": [
+    "Einzelhandel",
+    "Notfallmanagement"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 5.30 – Bereitschaft der Informations- und Kommunikationstechnik für Business Continuity"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Management"
+   ],
+   "countries": [
+    "GB"
+   ],
+   "dossier": null,
+   "priority": 8,
+   "primary": false,
+   "added": "2026-10-16T05:11:39Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Die Seite von ITV lud nicht (Zeitüberschreitung). Per Websuche belegt: Angriff am 11. Oktober entdeckt, Marken, Geschäfte geöffnet, keine Gefahr für Zahlungsdaten, Prüfung der Kundendaten, keine Tätergruppe bekannt. ITV-Artikel vom 13. Oktober."
    }
   },
   {
@@ -1589,6 +1836,41 @@
    "check": {
     "verdict": "ok",
     "note": "Banken, ARTEX, Claude-Code-Sitzungen mit DeepSeek, GLM und Grok, offene Verzeichnisse, Lebenslauf, geschlossenes Projekt mit englischen und koreanischen Ablegern, Kundendaten, Kreditkartendaten und Ausfälle sind alle in der Quelle belegt."
+   }
+  },
+  {
+   "title": "Italien: 180.000 Euro gegen Emirates wegen Gesundheitsdaten von Fluggästen",
+   "summary": "Die italienische Datenschutzbehörde hat Emirates mit 180.000 Euro belegt. Fluggäste mussten für Unterstützungsleistungen ein medizinisches Formular mit Gesundheitsdaten und Angaben zu Ärzten ausfüllen, ohne klar zu erfahren, ob das nötig ist, wofür die Daten dienen und wie lange sie gespeichert werden. Die Aufbewahrung von sieben Jahren wertet die Behörde als überzogen. Emirates muss binnen 30 Tagen Pflichtfelder und Fristen festlegen und überschüssige Daten löschen.",
+   "relevance": "Auch Reiseveranstalter und Reisebüros erheben Gesundheitsangaben, etwa für Mobilitätshilfe oder Sonderbedarf, und geben sie an Fluggesellschaften und Hotels weiter. Datenfelder und Löschfristen solcher Formulare gehören ins Verzeichnis der Verarbeitungstätigkeiten und in den Prüfplan.",
+   "source": "Europäischer Datenschutzausschuss",
+   "url": "https://www.edpb.europa.eu/news/italian-dpa-fines-emirates-eur-180-000-for-infringements-concerning-passengers-health-data_en",
+   "id": "2026-10-16-emirates-gesundheitsdaten-bussgeld",
+   "topic": "Datenschutz & Datenrecht",
+   "impact": "mittel",
+   "published": "2026-10-09",
+   "tags": [
+    "Touristik",
+    "Gesundheitsdaten",
+    "Löschfristen"
+   ],
+   "controls": [
+    "DSGVO Art. 5 Abs. 1 lit. e – Speicherbegrenzung",
+    "DSGVO Art. 13 – Informationspflichten"
+   ],
+   "roles": [
+    "Datenschutz"
+   ],
+   "countries": [
+    "IT",
+    "EU"
+   ],
+   "dossier": null,
+   "priority": 7,
+   "primary": true,
+   "added": "2026-10-16T05:11:39Z",
+   "check": {
+    "verdict": "ok",
+    "note": "180.000 Euro, medizinisches Formular, sieben Jahre Aufbewahrung zu lang, Frist von 30 Tagen, Datum 9. Oktober: alles belegt."
    }
   },
   {
@@ -2259,6 +2541,41 @@
    "check": {
     "verdict": "abweichung",
     "note": "Termine und Streitpunkte sind belegt. Das Training Künstlicher Intelligenz auf Grundlage berechtigter Interessen und die vier Monate geltenden Cookie-Ablehnungen kommen im frei sichtbaren Teil der Quelle nicht vor (der Rest steht hinter einer Bezahlschranke)."
+   }
+  },
+  {
+   "title": "Cyber Resilience Act: Erste Normen der Reihe EN 40000 angenommen, Veröffentlichung im November",
+   "summary": "Die Mitglieder des Europäischen Komitees für elektrotechnische Normung haben den Normen EN 40000-1-1 (Begriffe) und EN 40000-1-2 (Grundsätze der Cyberresilienz) für Produkte mit digitalen Elementen zugestimmt. Die Abstimmung läuft formal bis 2. November, die Veröffentlichung ist für den 25. November 2026 geplant. Die Norm zum Umgang mit Schwachstellen, EN 40000-1-3, ist noch in Arbeit. Nationale Ausgaben müssen bis spätestens 31. Mai 2027 erscheinen.",
+   "relevance": "Wer Eigenmarken mit vernetzten Geräten verkauft, kann nach dem Cyber Resilience Act (Verordnung über Cyberresilienz) als Hersteller gelten, als Händler oder Importeur gelten Prüfpflichten. Die Normen werden zur Messlatte in Einkaufsverträgen und Lieferantenbewertungen, auch für vernetzte Technik in Filialen.",
+   "source": "Globalnorm",
+   "url": "https://compliance.globalnorm.de/en/product-compliance-news/detail/eu-cyber-resilience-act-cra-standards-en-40000-1-x-series/",
+   "id": "2026-10-16-cyber-resilience-act-erste-normen",
+   "topic": "Standards & Zertifizierung",
+   "impact": "mittel",
+   "published": "2026-10-07",
+   "tags": [
+    "Cyber Resilience Act",
+    "Normung",
+    "Eigenmarken"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen",
+    "ISO/IEC 27001 Anhang A 5.20 – Behandlung der Informationssicherheit in Lieferantenvereinbarungen"
+   ],
+   "roles": [
+    "Einkauf & Drittparteien",
+    "IT-Risiko"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "cyber-resilience-act",
+   "priority": 4,
+   "primary": false,
+   "added": "2026-10-16T05:11:38Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Normen, Abstimmung bis 2. November, Veröffentlichung am 25. November 2026, EN 40000-1-3 in Arbeit und nationale Ausgaben bis 31. Mai 2027 sind belegt. Das Datum ließ sich nicht direkt ablesen, die Quelle nennt aber eine Zustimmung im Oktober 2026."
    }
   },
   {
