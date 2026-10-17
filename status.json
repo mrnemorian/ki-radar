@@ -1,6 +1,16 @@
 {
  "last_run": {
-  "start": "2026-10-16T07:00:01+02:00",
-  "end": "2026-10-16T07:11:39+02:00",
+  "start": "2026-10-17T07:00:01+02:00",
+  "end": "2026-10-17T07:07:28+02:00",
   "ok": true,
-  "summary": 
+  "summary": "6 neue Meldungen: P1 BeyondTrust Remote Support: Ausgenutzte Lücke erlaubt Übernahme ohne Anmeldung; P2 Update: Kühlsteuerungen – mindestens 4.500 Danfoss-Schnittstellen weiter offen im Netz; P3 "
+ },
+ "history": [
+  {
+   "start": "2026-10-17T07:00:01+02:00",
+   "end": "2026-10-17T07:07:28+02:00",
+   "ok": true,
+   "summary": "6 neue Meldungen: P1 BeyondTrust Remote Support: Ausgenutzte Lücke erlaubt Übernahme ohne Anmeldung; P2 Update: Kühlsteuerungen – mindestens 4.500 Danfoss-Schnittstellen weiter offen im Netz; P3 "
+  }
+ ]
+}

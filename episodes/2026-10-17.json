@@ -1,0 +1,171 @@
+{
+ "format": "tag",
+ "chapters": [
+  {
+   "title": "Begrüßung",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Guten Morgen, liebe IT-GRC-Kolleginnen und -Kollegen, willkommen beim IT-GRC Radar am Samstag, dem siebzehnten Oktober 2026."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Samstag. Ich hatte auf einen ruhigen Kaffee gehofft."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Daraus wird leider nichts. Es geht um eine Lücke in einer Fernwartungssoftware, Neues zu den Kühlsteuerungen, ein deutsches Gesetz zum [en]Cyber Resilience Act[/en] und eine neue Regel in Österreich für Kurznachrichten an Kunden."
+    }
+   ]
+  },
+  {
+   "title": "Fernwartungslücke BeyondTrust",
+   "news_id": "2026-10-17-beyondtrust-remote-support-zero-day",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Fangen wir mit dem Dringendsten an. Die Cyberabwehrbehörde der Vereinigten Staaten hat am Freitag eine Lücke in BeyondTrust Remote Support in ihren Katalog aktiv ausgenutzter Schwachstellen aufgenommen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Also das Werkzeug, mit dem sich Dienstleister und eigene Teams auf fremde Rechner schalten. Genau die Art Zugang, die in jeder Risikoanalyse ganz oben steht."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Laut Fachberichten wird die Lücke seit Ende August als [en]Zero Day[/en] ausgenutzt. Angreifer konnten ohne Anmeldung eine [en]Web Shell[/en] ablegen. Betroffen sind Versionen bis 26.2.3, die gehosteten Instanzen sind schon gepatcht."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Der wichtigste Satz steht in der Warnung der Behörde: Der Patch schließt die Tür, aber wer schon drin ist, bleibt drin. Wer exponiert war, soll also isolieren, forensisch prüfen, neu aufsetzen und alle gespeicherten Zugangsdaten wechseln."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Moment, gespeicherte Zugangsdaten in einem Fernwartungswerkzeug. Wie viele sind das denn so?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ehrlich gesagt: mehr, als in irgendeiner Excel-Liste steht. Die Behörden in den Vereinigten Staaten haben bis Montag Zeit. Für uns gilt diese Frist nicht, aber sie ist ein guter Maßstab für die eigene."
+    }
+   ]
+  },
+  {
+   "title": "Update Kühlsteuerungen",
+   "news_id": "2026-10-17-update-kuehlsteuerungen-4500-offen",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Da gibt es Neues zu den Angriffen auf Kühlsteuerungen in französischen Supermärkten. Reuters hat danach noch mindestens 4.500 Danfoss-Schnittstellen gefunden, die aus dem Internet erreichbar waren. Nur auf wenigen läuft aktuelle Software."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und es gibt Berichte über Angriffe in Spanien, Portugal, Polen, Belgien und Deutschland, bisher allerdings ohne Zahlen. Die Aufforderung, die Steuerungen vom Netz zu nehmen, ist also noch längst nicht überall angekommen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Wer hat eigentlich das Inventar dieser Steuerungen? Die Filiale, der Kältedienstleister, die zentrale Informationstechnik?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Vermutlich alle ein bisschen, also im Ernstfall niemand. Für einen Lebensmittelhändler ist das keine Frage der Haustechnik, sondern der Versorgungssicherheit. Fernzugriff nur über abgesicherte Verbindungen, das ist die klare Empfehlung."
+    }
+   ]
+  },
+  {
+   "title": "Gesetz zum Cyber Resilience Act",
+   "news_id": "2026-10-17-bundestag-durchfuehrungsgesetz-cra",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Nach Berlin. Der Bundestag hat am fünfzehnten Oktober das Durchführungsgesetz zum [en]Cyber Resilience Act[/en] beschlossen, also zur europäischen Verordnung über Cybersicherheit von Produkten mit digitalen Elementen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Damit steht fest, wer kontrolliert: Das Bundesamt für Sicherheit in der Informationstechnik wird Marktüberwachungsbehörde, und das Gesetz regelt auch die Bußgeldverfahren."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Betrifft das einen Händler überhaupt? Wir bauen doch keine Router."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Die Verordnung nimmt auch Einführer und Händler in die Pflicht, und wer vernetzte Produkte unter eigener Marke verkauft, gilt schnell selbst als Hersteller. Ab Dezember 2027 werden die Herstellerpflichten deutlich strenger."
+    }
+   ]
+  },
+  {
+   "title": "Österreich: Absenderkennungen",
+   "news_id": "2026-10-17-oesterreich-sms-absenderkennungen",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Nach Österreich. Die Rundfunk und Telekom Regulierungs-GmbH meldet: Kurznachrichten mit Text-Absender werden nur noch zugestellt, wenn die Kennung im Verzeichnis der Behörde steht. Und der direkte Versand solcher Nachrichten aus dem Ausland wird untersagt."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Für Konzerne ist das der heikle Punkt. Wenn Abholbenachrichtigungen oder Anmeldecodes über einen zentralen Dienstleister im Ausland laufen, sollte man prüfen, ob sie noch ankommen. Sonst sperrt man die eigenen Kunden aus, ganz ohne [en]Phishing[/en]."
+    }
+   ]
+  },
+  {
+   "title": "Souveräne Cloud im Test",
+   "news_id": "2026-10-17-aws-souveraene-cloud-trenntest",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Kurz zur Souveränität. Amazon Web Services will seine europäische souveräne [en]Cloud[/en] am vierundzwanzigsten Oktober für einige Stunden vom globalen Netz trennen, betrieben nur von Personal mit Wohnsitz in der Europäischen Union."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ein brauchbarer Nachweis für die Bewertung von Abhängigkeiten. Die Frage nach dem Rechtsrahmen der Vereinigten Staaten beantwortet er allerdings nicht. Und der Anbieter schließt kurze Störungen nicht aus, bitte also nicht überrascht sein."
+    }
+   ]
+  },
+  {
+   "title": "Fehmarnbelt-Baustelle",
+   "news_id": "2026-10-17-fehmarnbelt-auftragnehmer-cyberangriff",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Aus der offenen Suche: Ein Cyberangriff auf den Hauptauftragnehmer hat die Baustelle des Fehmarnbelt-Tunnels lahmgelegt, betroffen waren Zugangssysteme und digitale Werkzeuge, sogar Schiffe standen still. Inzwischen wird teilweise wieder gearbeitet."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ein einziger Dienstleister fällt aus, und ein ganzes Großprojekt steht still. Genau dieses Szenario sollte man für kritische Auftragnehmer einmal ehrlich durchspielen."
+    }
+   ]
+  },
+  {
+   "title": "Auf dem Radar",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Auf dem Radar: Der Bundestag hat das Digitale Identitätengesetz beschlossen, die europäische Brieftasche für digitale Identität soll ab Januar 2027 flächendeckend verfügbar sein."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Unternehmen müssen sie nicht annehmen. Aber wenn Kunden fragen, warum der Altersnachweis im Onlineshop nicht mit dem Handy geht, wird es ein Thema."
+    }
+   ]
+  },
+  {
+   "title": "Abschied",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Das war es für heute. Alle Quellen findet ihr wie immer auf der Webseite."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und wer am Wochenende eine Fernwartungs-Appliance findet, von der niemand wusste: Glückwunsch, ihr habt gerade den [en]Owner[/en] gefunden."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Schönes Wochenende!"
+    }
+   ]
+  }
+ ]
+}

@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-16T05:11:39Z",
+ "updated": "2026-10-17T05:07:27Z",
  "topics": [
   "IT-Governance & Risiko",
   "Cyber- & IT-Regulierung",
@@ -11,6 +11,18 @@
   "Weitere Themen"
  ],
  "briefings": [
+  {
+   "date": "2026-10-17",
+   "headline": "Aktiv ausgenutzte Lücke in Fernwartungssoftware, Tausende Kühlsteuerungen weiter offen im Netz, Bundestag regelt Aufsicht zum Cyber Resilience Act",
+   "points": [
+    "BeyondTrust Remote Support: Zero Day seit Ende August ausgenutzt, Behörde der Vereinigten Staaten fordert neben dem Patch auch Forensik und das Wechseln aller gespeicherten Zugangsdaten",
+    "Update Kühlsteuerungen: mindestens 4.500 Danfoss-Schnittstellen weiter aus dem Internet erreichbar, Berichte über Angriffe auch in Deutschland, Spanien, Portugal, Polen und Belgien",
+    "Bundestag beschließt Durchführungsgesetz zum Cyber Resilience Act: Bundesamt für Sicherheit in der Informationstechnik wird Marktüberwachungsbehörde",
+    "Österreich: Kurznachrichten mit Text-Absender werden nur noch mit registrierter Kennung zugestellt, direkter Versand aus dem Ausland untersagt",
+    "Amazon Web Services trennt die europäische souveräne Cloud am 24. Oktober testweise vom globalen Netz, Angriff auf Auftragnehmer legt Fehmarnbelt-Baustelle lahm"
+   ],
+   "count": 6
+  },
   {
    "date": "2026-10-16",
    "headline": "Exchange-Updates mit Ausfällen, Angriffe auf Nextcloud und 700 betroffene Märkte in Frankreich: Betriebstechnik bleibt das Thema der Woche.",
@@ -239,19 +251,18 @@
    "title": "Betriebstechnik in Filialen und Logistik",
    "sector": "Handel & Branche",
    "ring": "jetzt handeln",
-   "status": "Laut französischem Finanzminister waren rund 700 der etwa 10.000 Supermärkte in Frankreich betroffen. Angegriffen wurden Fernsteuermodule von Danfoss und Copeland, Kühlmöbel wurden in den Abtaumodus geschaltet, die Temperaturen stiegen bis auf 50 Grad. Fachberichten zufolge sind ältere Danfoss-Steuerungen ohne Sicherheitsupdates betroffen. Das Bundesamt für Sicherheit in der Informationstechnik…",
-   "next_step": "Vernetzte Kühl-, Gebäude- und Lagersteuerungen mit Hersteller, Modell und Version inventarisieren, eigene Adressbereiche von außen auf offene Oberflächen prüfen, pro Anlagentyp einen Verantwortlichen benennen, Verträge mit Kälte- und Facility-Dienstleistern zu Fernzugriff und Updates nachschärfen…",
+   "status": "Nach den Angriffen auf rund 700 französische Supermärkte waren laut Reuters noch mindestens 4.500 Danfoss-Schnittstellen aus dem Internet erreichbar, nur wenige mit aktueller Software. Berichten zufolge gab es Angriffe auch in Spanien, Portugal, Polen, Deutschland und Belgien. Betroffen sind auch Steuerungen von Copeland und Dixell, und das Bundesamt für Sicherheit in der Informationstechnik…",
+   "next_step": "Inventar der Kühl- und Gebäudesteuerungen je Land erstellen, aus dem Internet erreichbare Zugänge abschalten und Fernzugriff von Kältedienstleistern nur noch über abgesicherte Verbindungen erlauben.",
    "open_questions": [
-    "Wer ist für Steuerungen verantwortlich, die von Facility-Dienstleistern betreut werden?",
-    "Wie schnell lassen sich Altgeräte ohne Sicherheitsupdates ersetzen oder abschotten?",
-    "Wer steckt hinter dem Angriff, und welches Motiv hat er?"
+    "Wer verantwortet Kühlsteuerungen in den Filialen: Haustechnik, Dienstleister oder zentrale Informationstechnik?",
+    "Sind Angriffe auf Kühlsteuerungen als Szenario im Notfallmanagement und in der Meldelogik nach der NIS-2-Richtlinie abgebildet?"
    ],
    "controls": [
     "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
-    "ISO/IEC 27001 Anhang A 8.20 – Netzwerksicherheit",
-    "ISO/IEC 27001 Anhang A 5.9 – Inventar der Informationen und anderer zugehöriger Werte"
+    "ISO/IEC 27001 Anhang A 5.9 – Inventar der Informationen und anderen zugehörigen Werte",
+    "ISO/IEC 27001 Anhang A 8.20 – Netzwerksicherheit"
    ],
-   "updated": "2026-10-16"
+   "updated": "2026-10-17"
   },
   {
    "slug": "drittparteien-lieferkette",
@@ -265,18 +276,18 @@
    "title": "Drittparteien- und Lieferkettenrisiko",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Bei Amadeus waren Pass- und Buchungsdaten von Reisenden sowie Hunderte Kennungen deutscher Reisebüros über eine ungeschützte Schnittstelle einsehbar. Zuvor hatten Aufsichtsbehörden in Schweden und Griechenland Dienstleister direkt mit Bußgeldern belegt.",
-   "next_step": "Bei zentralen Plattformanbietern Betroffenheit, Meldewege und Nachweise zur Absicherung von Schnittstellen anfordern.",
+   "status": "Ein Cyberangriff auf den Hauptauftragnehmer hat die Fehmarnbelt-Baustelle samt Zugangsausweisen und Maschinen lahmgelegt. Zuvor waren bei Amadeus Pass- und Buchungsdaten über eine ungeschützte Schnittstelle einsehbar, und Aufsichtsbehörden in Schweden und Griechenland haben Dienstleister direkt mit Bußgeldern belegt.",
+   "next_step": "Für kritische Dienstleister Ausfallszenarien einschließlich physischer Zugänge und Betriebstechnik durchspielen und Fernzugänge von Dienstleistern im Register erfassen.",
    "open_questions": [
-    "Welche Zusagen zu Meldung und Information enthalten Verträge mit Buchungsplattformen?",
-    "Wie schnell erfährt man von Lücken beim Anbieter, die nicht öffentlich gemeldet werden?"
+    "Für welche Dienstleister gibt es getestete Notfallpläne für einen Totalausfall?",
+    "Wie werden Fernwartungswerkzeuge von Dienstleistern in die Schwachstellensteuerung einbezogen?"
    ],
    "controls": [
     "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
-    "DSGVO Art. 28 – Auftragsverarbeiter",
-    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen"
+    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen",
+    "ISO/IEC 27001 Anhang A 5.29 – Informationssicherheit bei Störungen"
    ],
-   "updated": "2026-10-14"
+   "updated": "2026-10-17"
   },
   {
    "slug": "identitaeten-zugangsdaten",
@@ -314,18 +325,18 @@
    "title": "Kritische Schwachstellen in Randsystemen und Kernanwendungen",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Neu: Angriffe über die Nextcloud-App mit eingebautem Collabora-Server (CVE-2026-110447) sowie Berichte, dass Exchange-Server 24 bis 30 Stunden nach den Oktober-Updates ausfallen. Weiter aktiv ausgenutzt oder offen sind Lücken in PAN-OS, im Cisco Secure Email Gateway, in Ivanti Connect Secure, die Microsoft-Lücke CVE-2026-96951 und die SAP-Lücke mit Höchstwert 10.",
-   "next_step": "Für Exchange eine dokumentierte Entscheidung treffen: einspielen mit enger Überwachung oder befristet zurückstellen mit kompensierenden Maßnahmen. Nextcloud-Installationen auch außerhalb der zentralen Informationstechnik erfassen und ungenutzte Collabora-Apps entfernen.",
+   "status": "Neu ist die seit Ende August ausgenutzte Lücke CVE-2026-102764 in BeyondTrust Remote Support, für die die Behörde der Vereinigten Staaten neben dem Patch auch Forensik und das Wechseln aller gespeicherten Zugangsdaten verlangt. Weiter offen oder aktiv ausgenutzt sind Lücken in Nextcloud mit Collabora, PAN-OS, im Cisco Secure Email Gateway und in Ivanti Connect Secure, die Microsoft-Lücke…",
+   "next_step": "Fernwartungswerkzeuge bei eigenen Teams und Dienstleistern erfassen und Patchstand belegen lassen. Bei exponierten Systemen eine Prüfung auf Kompromittierung und den Wechsel der hinterlegten Zugangsdaten nachweisen.",
    "open_questions": [
-    "Wann liefert Microsoft eine Korrektur für die Ausfälle nach den Exchange-Updates?",
-    "Wie viele selbst betriebene Plattformen für Zusammenarbeit stehen außerhalb des zentralen Patch-Managements?"
+    "Welche Dienstleister nutzen eigene Fernwartungs-Appliances mit Zugang zu Konzernsystemen?",
+    "Gilt für Lücken im Behördenkatalog eine verbindliche interne Patch-Frist?"
    ],
    "controls": [
-    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
-    "IT-Kontrollen der Abschlussprüfung – Änderungsmanagement",
-    "NIS-2-Richtlinie Art. 21 – Umgang mit und Offenlegung von Schwachstellen"
+    "ISO/IEC 27001 Anhang A 8.8 – Umgang mit technischen Schwachstellen",
+    "ISO/IEC 27001 Anhang A 8.2 – Privilegierte Zugangsrechte",
+    "IT-Kontrollen der Abschlussprüfung – Änderungsmanagement"
    ],
-   "updated": "2026-10-16"
+   "updated": "2026-10-17"
   },
   {
    "slug": "lebenszyklus-altsysteme",
@@ -440,17 +451,17 @@
    "title": "Cyber Resilience Act",
    "sector": "Cyber- & IT-Regulierung",
    "ring": "vorbereiten",
-   "status": "Seit dem 11. September 2026 müssen Hersteller von Produkten mit digitalen Elementen aktiv ausgenutzte Schwachstellen und schwere Vorfälle melden. Die ersten Normen EN 40000-1-1 und EN 40000-1-2 sind angenommen und sollen am 25. November 2026 erscheinen. Ab Dezember 2027 gelten deutlich strengere Herstellerpflichten für vernetzte Geräte.",
-   "next_step": "Klären, bei welchen Eigenmarken mit vernetzten Funktionen der Konzern als Hersteller, Importeur oder Händler gilt, und die Anforderungen der Verordnung in Einkaufsbedingungen und Lieferantenbewertung aufnehmen, auch für vernetzte Technik in Filialen und Logistik.",
+   "status": "Seit dem 11. September 2026 gelten Meldepflichten für Hersteller, und am 15. Oktober 2026 hat der Bundestag das Durchführungsgesetz beschlossen, mit dem das Bundesamt für Sicherheit in der Informationstechnik Marktüberwachungsbehörde wird. Die ersten Normen EN 40000-1-1 und EN 40000-1-2 sollen am 25. November 2026 erscheinen, ab Dezember 2027 gelten die strengeren Herstellerpflichten.",
+   "next_step": "Prüfen, wo der Konzern als Hersteller (Eigenmarken), Einführer oder Händler vernetzter Produkte auftritt, und die Pflichten in Lieferantenverträgen verankern.",
    "open_questions": [
-    "Wann folgen die Normen zum Umgang mit Schwachstellen und die produktspezifischen Normen?",
-    "Welche Eigenmarken-Produkte fallen unter die Verordnung?"
+    "Welche Eigenmarkenprodukte mit digitalen Elementen fallen unter die Herstellerpflichten?",
+    "Wann treten die angepassten Regelungen des Durchführungsgesetzes genau in Kraft?"
    ],
    "controls": [
-    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen",
-    "ISO/IEC 27001 Anhang A 5.20 – Behandlung der Informationssicherheit in Lieferantenvereinbarungen"
+    "Cyber Resilience Act Art. 19 und 20 – Pflichten der Einführer und Händler",
+    "ISO/IEC 27001 Anhang A 5.20 – Informationssicherheit in Lieferantenvereinbarungen"
    ],
-   "updated": "2026-10-16"
+   "updated": "2026-10-17"
   },
   {
    "slug": "post-quanten-kryptografie",
@@ -538,19 +549,19 @@
     }
    ],
    "title": "Cloud-Souveränität und Abhängigkeiten",
-   "sector": "Cyber- & IT-Regulierung",
+   "sector": "IT-Governance & Risiko",
    "ring": "beobachten",
-   "status": "Der Cloud and AI Development Act liegt seit 3. Juni 2026 als Vorschlag der Kommission vor. Im Parlament schlägt der Berichterstatter des Rechtsausschusses zwei statt vier Souveränitätsstufen und 80 Prozent der neuen Rechenzentrumskapazität für europäische Anbieter vor; der Berichtsentwurf wird für den 1. Dezember 2026 erwartet. Nach der Datenverordnung entfallen ab 12. Januar 2027 Gebühren für…",
-   "next_step": "Kritische Cloud-Abhängigkeiten nach Anbieter und Rechtsraum erfassen und in neuen Cloud-Verträgen Wechsel- und Ausstiegsklauseln verankern.",
+   "status": "Der Cloud and AI Development Act liegt als Vorschlag der Kommission vor, der Berichtsentwurf im Parlament wird für den 1. Dezember 2026 erwartet. Amazon Web Services will die europäische souveräne Cloud am 24. Oktober 2026 testweise vom globalen Netz trennen, und nach der Datenverordnung entfallen ab 12. Januar 2027 die Gebühren für den Wechsel des Cloud-Anbieters.",
+   "next_step": "Ergebnisse des Trenntests auswerten und in die Bewertung von Abhängigkeiten und Exit-Strategien aufnehmen. Den Berichtsentwurf im Parlament beobachten.",
    "open_questions": [
-    "Wird die Souveränitätsstufe zum Kriterium für private Auftraggeber oder nur für öffentliche Vergaben?",
-    "Wie wirken sich die Pläne auf bestehende Verträge mit Hyperscalern aus?"
+    "Welche Souveränitätsstufen verlangt der Cloud and AI Development Act am Ende?",
+    "Wie viel ist ein technischer Unabhängigkeitstest wert, solange der Rechtsrahmen der Vereinigten Staaten gilt?"
    ],
    "controls": [
     "ISO/IEC 27001 Anhang A 5.23 – Informationssicherheit für die Nutzung von Cloud-Diensten",
-    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette"
+    "ISO/IEC 27001 Anhang A 5.30 – Informations- und Kommunikationstechnik-Bereitschaft für Business Continuity"
    ],
-   "updated": "2026-10-10"
+   "updated": "2026-10-17"
   },
   {
    "slug": "dsgvo-reform-digital-omnibus",
@@ -643,6 +654,17 @@
    "checked": true,
    "dossier": "kritische-schwachstellen-perimeter",
    "added": "2026-10-16"
+  },
+  {
+   "date": "2026-10-19",
+   "title": "Patch-Frist der Behörde der Vereinigten Staaten für BeyondTrust Remote Support (CVE-2026-102764)",
+   "detail": "Bundesbehörden der Vereinigten Staaten müssen die aktiv ausgenutzte Lücke bis dahin schließen. Für Unternehmen mit BeyondTrust Remote Support ist das ein Richtwert für Patch und Prüfung auf Kompromittierung.",
+   "scope": "global",
+   "url": "https://hol.org/blog/cve-2026-102764-beyondtrust-remote-support-file-upload-kev",
+   "primary": false,
+   "checked": true,
+   "dossier": "kritische-schwachstellen-perimeter",
+   "added": "2026-10-17"
   },
   {
    "date": "2026-10-31",
@@ -890,6 +912,17 @@
    ]
   },
   {
+   "theme": "Digitale Identitäts-Wallet der Europäischen Union",
+   "why": "Der Bundestag hat am 15. Oktober 2026 das Digitale Identitätengesetz beschlossen, die Brieftasche soll ab Januar 2027 flächendeckend verfügbar sein. Eine Pflicht zur Annahme für private Unternehmen gibt es nicht, für Altersnachweise und Kundenidentifizierung im Onlinehandel kann sie trotzdem relevant werden.",
+   "count": 2,
+   "first_seen": "2026-10-08",
+   "last_seen": "2026-10-17",
+   "evidence": [
+    "https://www.bundestag.de/dokumente/textarchiv/2026/kw42-pa-digitales-identitaeten-1224678",
+    "https://www.heise.de/news/EUDI-Wallet-Anhoerung-mit-viel-Kritik-an-d-you-Planung-11477850.html"
+   ]
+  },
+  {
    "theme": "Haftungsregeln für Künstliche Intelligenz",
    "why": "Die Europäische Kommission schließt eine neue Haftungsrichtlinie für Künstliche Intelligenz derzeit aus. Wer haftet, bleibt damit vorerst Sache der Verträge mit Anbietern und des allgemeinen Produkthaftungsrechts.",
    "count": 2,
@@ -930,16 +963,6 @@
    "last_seen": "2026-10-12",
    "evidence": [
     "https://ms-aktuell.de/finanzen/digitale-bezahlpflicht-04-10-2026/"
-   ]
-  },
-  {
-   "theme": "Digitale Identitäts-Wallet der Europäischen Union",
-   "why": "Bei der Anhörung zur deutschen Wallet „d-you“ warnten Fachleute vor Identitätsbetrug über kompromittierte Smartphones, zum Beispiel bei Hotelbuchungen, und vor fehlender Prüfung der Dienstanbieter. Händler und Reiseanbieter, die die Wallet künftig akzeptieren, müssen diese Risiken bewerten.",
-   "count": 1,
-   "first_seen": "2026-10-08",
-   "last_seen": "2026-10-08",
-   "evidence": [
-    "https://www.heise.de/news/EUDI-Wallet-Anhoerung-mit-viel-Kritik-an-d-you-Planung-11477850.html"
    ]
   },
   {
@@ -986,6 +1009,152 @@
   }
  ],
  "news": [
+  {
+   "title": "BeyondTrust Remote Support: Ausgenutzte Lücke erlaubt Übernahme ohne Anmeldung",
+   "summary": "Die Cyberabwehrbehörde der Vereinigten Staaten hat die Lücke CVE-2026-102764 in BeyondTrust Remote Support bis Version 26.2.3 am 16. Oktober 2026 in ihren Katalog aktiv ausgenutzter Schwachstellen aufgenommen. Laut Fachberichten wird sie seit 29. August als Zero Day ausgenutzt, Angreifer konnten ohne Anmeldung Dateien schreiben und Web Shells ablegen. Die Behörde empfiehlt den Patch BT26-05-RS, bei Verdacht auf Kompromittierung Isolation, Forensik, Neuaufbau, das Wechseln aller gespeicherten Zugangsdaten und die Prüfung neuer Registrierungen für die Mehr-Faktor-Anmeldung; gehostete Instanzen sind bereits gepatcht.",
+   "relevance": "Fernwartungswerkzeuge bündeln privilegierte Zugänge eigener Teams und externer Dienstleister. Ein Patch allein reicht hier nicht: Wer exponiert war, braucht eine Prüfung auf Kompromittierung und den Wechsel aller dort hinterlegten Zugangsdaten, und das Drittparteien-Register sollte zeigen, welche Dienstleister solche Werkzeuge einsetzen.",
+   "source": "Cybersecurity and Infrastructure Security Agency",
+   "url": "https://www.cisa.gov/news-events/alerts/2026/10/16/cisa-urges-patching-critical-vulnerability-beyondtrust-remote-support",
+   "id": "2026-10-17-beyondtrust-remote-support-zero-day",
+   "topic": "IT-Governance & Risiko",
+   "impact": "hoch",
+   "published": "2026-10-16",
+   "tags": [
+    "Zero Day",
+    "Fernwartung",
+    "privilegierte Zugänge"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 8.8 – Umgang mit technischen Schwachstellen",
+    "ISO/IEC 27001 Anhang A 8.2 – Privilegierte Zugangsrechte",
+    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Einkauf & Drittparteien"
+   ],
+   "countries": [
+    "EU",
+    "DE",
+    "AT"
+   ],
+   "dossier": "kritische-schwachstellen-perimeter",
+   "priority": 1,
+   "primary": true,
+   "added": "2026-10-17T05:07:27Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum, Versionen, Patch BT26-05-RS, Empfehlungen und gepatchte gehostete Instanzen stehen in der Warnung der Behörde. Ausnutzung als Zero Day seit 29. August, Schreiben von Dateien ohne Anmeldung und Web Shells stehen nicht in der Behördenwarnung, sind aber in einem Fachbericht (hol.org) belegt…"
+   }
+  },
+  {
+   "title": "Österreich: Kurznachrichten mit Text-Absender nur noch mit registrierter Kennung",
+   "summary": "In Österreich werden Kurznachrichten mit alphanumerischer Absenderkennung nur noch zugestellt, wenn die Kennung im Verzeichnis der Rundfunk und Telekom Regulierungs-GmbH steht; die Mobilfunkanbieter tragen die Kennungen im Auftrag der Unternehmen ein. Über 8.500 Kennungen sind bereits registriert, 2026 gingen mehr als 9.000 Beschwerden über betrügerische Kurznachrichten ein. Künftig ist zudem der direkte Versand solcher Nachrichten aus dem Ausland an österreichische Kundinnen und Kunden untersagt.",
+   "relevance": "Wer Abholbenachrichtigungen, Liefer-Updates oder Anmeldecodes per Kurznachricht an österreichische Kunden sendet, muss Registrierung und Versandweg prüfen. Das gilt besonders für zentrale Versanddienstleister außerhalb Österreichs. Sonst kommen Nachrichten nicht an, und Prozesse wie die Zwei-Faktor-Anmeldung fallen still aus.",
+   "source": "Rundfunk und Telekom Regulierungs-GmbH (APA-OTS)",
+   "url": "https://www.ots.at/presseaussendung/OTS_20261016_OTS0009/aus-fuer-phishing-sms-in-oesterreich-rtr-schaltet-textbasierte-sms-absenderkennungen-frei",
+   "id": "2026-10-17-oesterreich-sms-absenderkennungen",
+   "topic": "Cyber- & IT-Regulierung",
+   "impact": "mittel",
+   "published": "2026-10-16",
+   "tags": [
+    "Österreich",
+    "Phishing",
+    "Kundenkommunikation"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen",
+    "ISO/IEC 27001 Anhang A 5.31 – Rechtliche, gesetzliche, regulatorische und vertragliche Anforderungen"
+   ],
+   "roles": [
+    "Einkauf & Drittparteien",
+    "IT-Risiko"
+   ],
+   "countries": [
+    "AT"
+   ],
+   "dossier": null,
+   "priority": 4,
+   "primary": false,
+   "added": "2026-10-17T05:07:27Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum 16. Oktober 2026, über 8.500 Kennungen, mehr als 9.000 Beschwerden im Jahr 2026, Eintrag durch Mobilfunkanbieter und Verbot des direkten Versands aus dem Ausland sind belegt."
+   }
+  },
+  {
+   "title": "Cyberangriff auf Hauptauftragnehmer legt Fehmarnbelt-Baustelle lahm",
+   "summary": "Ein Cyberangriff auf das Baukonsortium Femern Link Contractors in der Nacht auf Montag, den 12. Oktober 2026, hat die Arbeiten am Fehmarnbelt-Tunnel unterbrochen. Berichten zufolge fielen zentrale Systeme, digitale Zugangssysteme und digitale Werkzeuge aus, mehrere Schiffe stellten den Betrieb ein. Inzwischen laufen Erdarbeiten und Teile der Betonarbeiten wieder. Die dänische Spezialeinheit der Polizei ermittelt, Täter und Einfallstor sind bisher nicht bekannt.",
+   "relevance": "Der Fall zeigt, dass der Ausfall eines einzigen Auftragnehmers auch physische Zugänge und Maschinen lahmlegen kann. Dieses Szenario gehört in die Notfallplanung für kritische Dienstleister in Logistik, Bau und Filialtechnik.",
+   "source": "The Copenhagen Post",
+   "url": "https://cphpost.dk/2026-10-16/news/round-up/work-partially-resumes-at-fehmarn-belt-site-after-cyberattack/",
+   "id": "2026-10-17-fehmarnbelt-auftragnehmer-cyberangriff",
+   "topic": "Weitere Themen",
+   "impact": "info",
+   "published": "2026-10-16",
+   "tags": [
+    "Ransomware",
+    "Auftragnehmer",
+    "Notfallplanung"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
+    "ISO/IEC 27001 Anhang A 5.29 – Informationssicherheit bei Störungen"
+   ],
+   "roles": [
+    "Einkauf & Drittparteien",
+    "IT-Risiko"
+   ],
+   "countries": [
+    "EU",
+    "DE"
+   ],
+   "dossier": "drittparteien-lieferkette",
+   "priority": 6,
+   "primary": false,
+   "added": "2026-10-17T05:07:27Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Laut Quelle geschah der Angriff in der Nacht auf Montag, also am 12. und nicht am 13. Oktober. Ausgefallene Maschinen werden nicht erwähnt, genannt werden Zugangssysteme, digitale Werkzeuge und stillstehende Schiffe. Ein Datum der Wiederaufnahme nennt die Quelle nicht, sie meldet am 16. Oktober…"
+   }
+  },
+  {
+   "title": "Bundestag beschließt Durchführungsgesetz zum Cyber Resilience Act",
+   "summary": "Der Bundestag hat am 15. Oktober 2026 das Gesetz zur Durchführung der europäischen Verordnung über horizontale Cybersicherheitsanforderungen für Produkte mit digitalen Elementen beschlossen. Das Bundesamt für Sicherheit in der Informationstechnik wird Marktüberwachungsbehörde und notifizierende Behörde, außerdem regelt das Gesetz das Bußgeldverfahren und ändert unter anderem das Gesetz über das Bundesamt. Der Bundesrat hatte keine Einwände erhoben, einzelne Zeitpunkte des Inkrafttretens hat der Innenausschuss angepasst.",
+   "relevance": "Die Verordnung verpflichtet neben Herstellern auch Einführer und Händler. Wer vernetzte Produkte unter eigener Marke vertreibt, kann selbst als Hersteller gelten. Mit der Zuständigkeit des Bundesamts steht fest, wer in Deutschland kontrolliert. Das ist ein Anlass, Produktportfolio, Rollen und Lieferantenverträge vor den strengen Herstellerpflichten ab Dezember 2027 zu prüfen.",
+   "source": "Deutscher Bundestag",
+   "url": "https://www.bundestag.de/dokumente/textarchiv/2026/kw42-de-cyberresilienz-1224508",
+   "id": "2026-10-17-bundestag-durchfuehrungsgesetz-cra",
+   "topic": "Cyber- & IT-Regulierung",
+   "impact": "mittel",
+   "published": "2026-10-15",
+   "tags": [
+    "Cyber Resilience Act",
+    "Marktüberwachung",
+    "Eigenmarken"
+   ],
+   "controls": [
+    "Cyber Resilience Act Art. 19 und 20 – Pflichten der Einführer und Händler",
+    "ISO/IEC 27001 Anhang A 5.20 – Informationssicherheit in Lieferantenvereinbarungen"
+   ],
+   "roles": [
+    "Einkauf & Drittparteien",
+    "IT-Risiko",
+    "Management"
+   ],
+   "countries": [
+    "DE",
+    "EU"
+   ],
+   "dossier": "cyber-resilience-act",
+   "priority": 3,
+   "primary": true,
+   "added": "2026-10-17T05:07:27Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Beschluss am 15. Oktober 2026, Bundesamt als Marktüberwachungsbehörde und notifizierende Behörde, Bußgeldverfahren, Änderung des Gesetzes über das Bundesamt, keine Einwände des Bundesrates und Anpassung von Zeitpunkten des Inkrafttretens durch den Innenausschuss sind belegt."
+   }
+  },
   {
    "title": "Exchange Server: Oktober-Updates legen Dienste nach ein bis zwei Tagen lahm",
    "summary": "Berichte im Blog von Günter Born und in der Tech Community von Microsoft zeigen: Auf Exchange-Servern fallen 24 bis 30 Stunden nach Installation der Oktober-Updates Datenbankdienste und Mailzustellung aus, vor allem bei der Subscription Edition. Born rät, die Installation vorerst zurückzustellen. Weil die Updates auch Sicherheitslücken schließen, sollte der Aufschub nur vorübergehend sein.",
@@ -1054,6 +1223,44 @@
    "check": {
     "verdict": "abweichung",
     "note": "Inhalt stimmt (Lückenkennung, Mitte September, Version 26.4.303 seit 11. September, Deaktivieren reicht nicht, nicht betroffene Installationen). Der Artikel erschien am 15. Oktober 2026; am 14. Oktober wurde nur die Sicherheitsmeldung veröffentlicht."
+   }
+  },
+  {
+   "title": "Update: Kühlsteuerungen – mindestens 4.500 Danfoss-Schnittstellen weiter offen im Netz",
+   "summary": "Nach dem Angriff auf rund 700 französische Supermärkte fand die Nachrichtenagentur Reuters am 13. Oktober mindestens 4.500 weiterhin aus dem Internet erreichbare Danfoss-Schnittstellen; laut einer französischen Scan-Firma läuft nur auf einer kleinen Minderheit aktuelle Software. Berichten zufolge gab es auch Angriffe in Spanien, Portugal, Polen, Deutschland und Belgien, ohne Angaben zum Umfang. Die französische Behörde empfiehlt, die Steuerungen vom Netz zu nehmen und Fernzugriff nur über abgesicherte Verbindungen zuzulassen; das Filtern nach Adressen gilt nur als vorübergehende Notlösung.",
+   "relevance": "Neu gegenüber dem bisherigen Stand: Die Angriffsfläche ist nach dem Vorfall kaum kleiner geworden, und es gibt Hinweise auf Angriffe auch in Deutschland. Für Lebensmittelhändler wird damit aus einem französischen Vorfall ein unmittelbares Risiko für die Versorgung. Inventar, Fernzugriff von Kältedienstleistern und die Verantwortung für die Steuerungen in den Filialen gehören jetzt auf die Agenda.",
+   "source": "ComplexDiscovery",
+   "url": "https://complexdiscovery.com/refrigeration-hack-affected-about-700-french-supermarkets-government-says-as-danfoss-interfaces-stay-online/",
+   "id": "2026-10-17-update-kuehlsteuerungen-4500-offen",
+   "topic": "Handel & Branche",
+   "impact": "hoch",
+   "published": "2026-10-14",
+   "tags": [
+    "Betriebstechnik",
+    "Kühlkette",
+    "Filialen"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 5.9 – Inventar der Informationen und anderen zugehörigen Werte",
+    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
+    "ISO/IEC 27001 Anhang A 8.20 – Netzwerksicherheit"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Einkauf & Drittparteien",
+    "Management"
+   ],
+   "countries": [
+    "EU",
+    "DE"
+   ],
+   "dossier": "betriebstechnik-filialen-logistik",
+   "priority": 2,
+   "primary": false,
+   "added": "2026-10-17T05:07:27Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum 14. Oktober, mindestens 4.500 Schnittstellen am Dienstag (13. Oktober), Aussage der Scan-Firma Onyphe, die betroffenen Länder und die Empfehlungen der französischen Behörde einschließlich der Adressfilterung als vorübergehender Schutz sind belegt."
    }
   },
   {
@@ -4091,6 +4298,42 @@
    "check": {
     "verdict": "abweichung",
     "note": "Alle Prozentwerte und das Datum stimmen. Die Zahl von 25.747 Befragten steht nicht auf der Quellseite."
+   }
+  },
+  {
+   "title": "Amazon Web Services trennt souveräne Cloud am 24. Oktober testweise vom globalen Netz",
+   "summary": "Amazon Web Services will die europäische souveräne Cloud in Brandenburg am 24. Oktober 2026 für mehrere Stunden vom globalen Backbone trennen. Den Test soll ausschließlich Personal mit Wohnsitz in der Europäischen Union durchführen, die Verbindung läuft dann über europäische Internetanbieter. Der Test orientiert sich am Rahmen der Kommission für Cloud-Souveränität und am deutschen C3A-Rahmen. Kurze Störungen beim Umleiten des Datenverkehrs schließt der Anbieter nicht aus.",
+   "relevance": "Der Test kann als technischer Nachweis in die Bewertung von Abhängigkeiten und Exit-Strategien einfließen. Fragen zum Rechtsrahmen der Vereinigten Staaten beantwortet er aber nicht. Wer diese Umgebung nutzt, sollte das Testfenster im Betrieb und im Notfallmanagement einplanen.",
+   "source": "CloudComputing News",
+   "url": "https://www.cloudcomputing-news.net/news/aws-european-sovereign-cloud-independence-test/",
+   "id": "2026-10-17-aws-souveraene-cloud-trenntest",
+   "topic": "IT-Governance & Risiko",
+   "impact": "info",
+   "published": "2026-09-29",
+   "tags": [
+    "Cloud-Souveränität",
+    "Abhängigkeiten",
+    "Hyperscaler"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 5.23 – Informationssicherheit für die Nutzung von Cloud-Diensten",
+    "ISO/IEC 27001 Anhang A 5.30 – Informations- und Kommunikationstechnik-Bereitschaft für Business Continuity"
+   ],
+   "roles": [
+    "Einkauf & Drittparteien",
+    "Management"
+   ],
+   "countries": [
+    "EU",
+    "DE"
+   ],
+   "dossier": "cloud-souveraenitaet",
+   "priority": 5,
+   "primary": false,
+   "added": "2026-10-17T05:07:27Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Der Artikel erschien am 29. September 2026. Die Inhalte (24. Oktober, mehrere Stunden, Personal mit Wohnsitz in der Europäischen Union, europäische Internetanbieter, beide Rahmenwerke, mögliche kurze Störungen) sind belegt."
    }
   },
   {
