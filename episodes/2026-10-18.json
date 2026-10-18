@@ -1,0 +1,129 @@
+{
+ "format": "tag",
+ "chapters": [
+  {
+   "title": "Begrüßung",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Guten Morgen, liebe IT-GRC-Kolleginnen und -Kollegen, willkommen beim IT-GRC Radar am Sonntag, dem achtzehnten Oktober 2026. Heute ist es ruhiger als in den letzten Tagen, aber drei Themen haben es in sich."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ruhiger klingt gut. Nach einer Woche mit überhitzten Kühltruhen nehme ich jeden ruhigen Sonntag gern mit."
+    }
+   ]
+  },
+  {
+   "title": "Firewalls über den Dienstleister",
+   "news_id": "2026-10-18-fortimanager-dienstleister-firewalls",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Fangen wir mit dem Wichtigsten an. Die Sicherheitsforscher von Unit 42 haben einen Fall beschrieben, in dem Angreifer die zentrale FortiManager-Verwaltung eines Telekommunikations-Dienstleisters übernommen haben. Darüber flossen Konfigurationen, Schlüsselmaterial und Datenbanken von mehr als 500 Firewalls der Kunden ab."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Moment, das heißt, zuerst wurde gar nicht die Firewall des Kunden geknackt, sondern das Werkzeug, mit dem der [en]Managed Service Provider[/en] alle Firewalls verwaltet. Das ist der Generalschlüssel, der beim Hausmeister im Kasten hängt."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Genau. Und die dabei eingesetzte Schadsoftware PEERSTITCH läuft nur im Arbeitsspeicher und baut keine eigenen Verbindungen auf."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Das ist das Unangenehme daran: Herkömmliche Erkennung sieht davon praktisch nichts. Für einen Konzern mit vielen Dienstleistern heißt das, wer zentrale Verwaltungskonsolen für unsere Netze betreibt, gehört in der Lieferantensteuerung ganz nach oben. Fragen gibt es genug: Sind die Kunden sauber getrennt, sind die Managementzugänge gehärtet, und wie schnell meldet der Dienstleister einen Vorfall?"
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und wenn es schon passiert ist?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Dann gilt, was die Forscher empfehlen: Abgeflossene Schlüssel und Zertifikate als kompromittiert betrachten und alles wechseln. Der [en]Patch[/en] allein reicht nicht. Und die Frage, wer eigentlich Owner der Firewall-Zertifikate ist, klärt man besser vorher als an einem Sonntagmorgen."
+    }
+   ]
+  },
+  {
+   "title": "Albert Heijn ohne Lieferdienst",
+   "news_id": "2026-10-18-albert-heijn-lieferstopp",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Da gibt es Neues zu Ahold Delhaize. Albert Heijn hat am Samstag mitgeteilt, dass bis mindestens Dienstag keine Lebensmittel nach Hause geliefert werden. Online bestellen geht nicht, das Bonusprogramm und die persönlichen Rabatte funktionieren nicht, und der Kundenservice ist nicht erreichbar."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Das ist dann mehr als eine Woche ohne Onlinekanal. Immerhin werden die Filialen mehrmals am Tag nachbeliefert, damit die Regale nicht leer bleiben."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Hinweise auf gestohlene personenbezogene Daten gibt es laut Unternehmen bisher nicht."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Das ist die gute Nachricht. Lehrreicher finde ich etwas anderes: In der [en]Business Impact Analysis[/en] landet das Kundenbindungsprogramm oft weit unten, weil es ja nur Marketing ist. Bis es eine Woche fehlt und die Kundschaft, wie berichtet wird, zur Konkurrenz geht."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Also Notfallplanung auch für Systeme, die nicht nach Kasse aussehen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Genau, und den kontrollierten Wiederanlauf vorher üben. Wie man wieder hochfährt, sollte man nicht erst planen, wenn schon alles aus ist."
+    }
+   ]
+  },
+  {
+   "title": "Bußgeld gegen Xandr",
+   "news_id": "2026-10-18-xandr-bussgeld-norwegen",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Zum Datenschutz. Die norwegische Datenschutzbehörde hat gegen den Werbetechnik-Anbieter Xandr rund 8,6 Millionen Euro verhängt. Xandr hatte über [en]Real-Time Bidding[/en] Daten aus der App Grindr verarbeitet, aus denen sich die sexuelle Orientierung ablesen ließ, und sich dabei auf die Einwilligung verlassen, die Grindr eingeholt hatte."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und diese Einwilligung war unwirksam. Der Kernsatz der Behörde: Rechenschaft kann man nicht auslagern, jeder gemeinsam Verantwortliche muss selbst prüfen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Warum ist das für einen Händler interessant?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Weil Handelskonzerne mit [en]Retail Media[/en] selbst zu Werbeplattformen werden und Daten mit Partnern teilen. Wer Daten übernimmt, braucht eine eigene, dokumentierte Prüfung der Rechtsgrundlage. Der Satz im Vertrag, der Partner habe eingewilligt, ist kein Nachweis, sondern nur das Häkchen in der Excel-Liste, das nie jemand geprüft hat."
+    }
+   ]
+  },
+  {
+   "title": "Auf dem Radar",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Auf dem Radar steht heute wieder der [en]Digital Fairness Act[/en]. Das Europäische Parlament führt ihn als Vorschlag der Kommission, angekündigt für das vierte Quartal 2026."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Es geht um manipulative Gestaltung, schwer kündbare Abonnements und unfaire Personalisierung. Für Onlineshops, Lieferdienste und Reiseportale heißt das: Preis- und Personalisierungslogik sollte man schon jetzt erklären können, nicht erst, wenn jemand danach fragt."
+    }
+   ]
+  },
+  {
+   "title": "Abschied",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Das war das IT-GRC Radar für diesen Sonntag. Alle Quellen findet ihr wie immer auf der Webseite."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und wer heute noch fünf Minuten hat: einfach mal nachsehen, wer eigentlich die Firewall-Konsolen verwaltet. Schönen Sonntag."
+    }
+   ]
+  }
+ ]
+}

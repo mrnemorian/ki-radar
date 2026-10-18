@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-17T05:07:27Z",
+ "updated": "2026-10-18T05:06:21Z",
  "topics": [
   "IT-Governance & Risiko",
   "Cyber- & IT-Regulierung",
@@ -11,6 +11,17 @@
   "Weitere Themen"
  ],
  "briefings": [
+  {
+   "date": "2026-10-18",
+   "headline": "Angreifer kapern die Firewall-Verwaltung eines Dienstleisters, Albert Heijn liefert seit fast einer Woche nicht, und Norwegen bestraft fehlende eigene Einwilligungsprüfung.",
+   "points": [
+    "Über die übernommene zentrale FortiManager-Konsole eines Telekommunikations-Dienstleisters flossen Konfigurationen und Schlüsselmaterial von über 500 Kunden-Firewalls ab; die genutzte Fortinet-Lücke steht seit 16. Oktober im Katalog aktiv ausgenutzter Schwachstellen.",
+    "Update Ahold Delhaize: Albert Heijn liefert bis mindestens Dienstag nicht, Kundenkarte, Rabatte und Kundenservice sind ausgefallen, Hinweise auf Datenabfluss gibt es bisher nicht.",
+    "Norwegen verhängt 8,6 Millionen Euro gegen den Werbetechnik-Anbieter Xandr: Wer Daten übernimmt, muss die Einwilligung selbst prüfen und kann sich nicht auf den Partner verlassen.",
+    "Auf dem Radar: Der Digital Fairness Act ist als Vorschlag der Kommission für das vierte Quartal 2026 angekündigt."
+   ],
+   "count": 3
+  },
   {
    "date": "2026-10-17",
    "headline": "Aktiv ausgenutzte Lücke in Fernwartungssoftware, Tausende Kühlsteuerungen weiter offen im Netz, Bundestag regelt Aufsicht zum Cyber Resilience Act",
@@ -276,18 +287,18 @@
    "title": "Drittparteien- und Lieferkettenrisiko",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Ein Cyberangriff auf den Hauptauftragnehmer hat die Fehmarnbelt-Baustelle samt Zugangsausweisen und Maschinen lahmgelegt. Zuvor waren bei Amadeus Pass- und Buchungsdaten über eine ungeschützte Schnittstelle einsehbar, und Aufsichtsbehörden in Schweden und Griechenland haben Dienstleister direkt mit Bußgeldern belegt.",
-   "next_step": "Für kritische Dienstleister Ausfallszenarien einschließlich physischer Zugänge und Betriebstechnik durchspielen und Fernzugänge von Dienstleistern im Register erfassen.",
+   "status": "Über die gekaperte zentrale FortiManager-Verwaltung eines Telekommunikations-Dienstleisters flossen Konfigurationen und Schlüsselmaterial von über 500 Kunden-Firewalls ab. Zuvor legte ein Angriff auf den Hauptauftragnehmer die Fehmarnbelt-Baustelle lahm, und Aufsichtsbehörden in Schweden und Griechenland haben Dienstleister direkt mit Bußgeldern belegt.",
+   "next_step": "Dienstleister mit zentralen Verwaltungskonsolen für eigene Netze und Firewalls identifizieren und gezielt zu Mandantentrennung, Härtung der Managementzugänge, Meldewegen und Schlüsselwechsel nach Vorfällen befragen.",
    "open_questions": [
-    "Für welche Dienstleister gibt es getestete Notfallpläne für einen Totalausfall?",
-    "Wie werden Fernwartungswerkzeuge von Dienstleistern in die Schwachstellensteuerung einbezogen?"
+    "Welche Dienstleister verwalten Firewalls oder Netzkomponenten über eine gemeinsame Konsole für mehrere Kunden?",
+    "Ist vertraglich geregelt, wie schnell ein Dienstleister eine Kompromittierung seiner Verwaltungssysteme meldet?"
    ],
    "controls": [
     "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
     "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen",
-    "ISO/IEC 27001 Anhang A 5.29 – Informationssicherheit bei Störungen"
+    "ISO/IEC 27001 Anhang A 5.22 – Überwachung von Lieferantendienstleistungen"
    ],
-   "updated": "2026-10-17"
+   "updated": "2026-10-18"
   },
   {
    "slug": "identitaeten-zugangsdaten",
@@ -323,20 +334,18 @@
     }
    ],
    "title": "Kritische Schwachstellen in Randsystemen und Kernanwendungen",
-   "sector": "IT-Governance & Risiko",
+   "sector": "Cyber- & IT-Regulierung",
    "ring": "jetzt handeln",
-   "status": "Neu ist die seit Ende August ausgenutzte Lücke CVE-2026-102764 in BeyondTrust Remote Support, für die die Behörde der Vereinigten Staaten neben dem Patch auch Forensik und das Wechseln aller gespeicherten Zugangsdaten verlangt. Weiter offen oder aktiv ausgenutzt sind Lücken in Nextcloud mit Collabora, PAN-OS, im Cisco Secure Email Gateway und in Ivanti Connect Secure, die Microsoft-Lücke…",
-   "next_step": "Fernwartungswerkzeuge bei eigenen Teams und Dienstleistern erfassen und Patchstand belegen lassen. Bei exponierten Systemen eine Prüfung auf Kompromittierung und den Wechsel der hinterlegten Zugangsdaten nachweisen.",
+   "status": "Neu im Katalog aktiv ausgenutzter Schwachstellen ist seit 16. Oktober 2026 die Fortinet-Lücke CVE-2025-61624, über die Angreifer mit der Schadsoftware PEERSTITCH Firewalls im Arbeitsspeicher manipulierten. Für BeyondTrust Remote Support (CVE-2026-102764) läuft die Patch-Frist der Behörde der Vereinigten Staaten am 19. Oktober 2026 ab, weiter ausgenutzt werden Lücken in Atlassian Data Center…",
+   "next_step": "Fortinet-Bestand auf CVE-2025-61624 prüfen, Managementzugänge vom Internet trennen und bei Verdacht Speicherforensik sowie Wechsel von Zertifikaten und Zugangsdaten veranlassen.",
    "open_questions": [
-    "Welche Dienstleister nutzen eigene Fernwartungs-Appliances mit Zugang zu Konzernsystemen?",
-    "Gilt für Lücken im Behördenkatalog eine verbindliche interne Patch-Frist?"
+    "Reicht die bestehende Erkennung für Schadsoftware, die nur im Arbeitsspeicher von Netzgeräten läuft?"
    ],
    "controls": [
     "ISO/IEC 27001 Anhang A 8.8 – Umgang mit technischen Schwachstellen",
-    "ISO/IEC 27001 Anhang A 8.2 – Privilegierte Zugangsrechte",
-    "IT-Kontrollen der Abschlussprüfung – Änderungsmanagement"
+    "NIS-2-Richtlinie Art. 21 – Umgang mit Schwachstellen"
    ],
-   "updated": "2026-10-17"
+   "updated": "2026-10-18"
   },
   {
    "slug": "lebenszyklus-altsysteme",
@@ -612,17 +621,6 @@
  ],
  "deadlines": [
   {
-   "date": "2026-10-03",
-   "title": "Cisco Catalyst SD-WAN Manager: Behördenfrist für CVE-2026-76504",
-   "detail": "Die amerikanische Cybersicherheitsbehörde verlangt von Bundesbehörden die Absicherung gegen die aktiv ausgenutzte Lücke; Betreiber sollten Patchstand und Protokolle auf verdächtige Anmeldeversuche prüfen.",
-   "scope": "US",
-   "url": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-new-sd-wan-authentication-bypass-zero-day-exploited-in-attacks/",
-   "primary": false,
-   "checked": true,
-   "dossier": null,
-   "added": "2026-10-02"
-  },
-  {
    "date": "2026-10-04",
    "title": "Fortinet FortiMail: Behördenfrist für CVE-2026-104286",
    "detail": "Bundesbehörden der Vereinigten Staaten müssen die aktiv ausgenutzte Lücke untersuchen und entschärfen; Betreiber sollten bis zum Update die Funktion für identitätsbasierte Verschlüsselung abschalten oder die Verwaltungsoberfläche abschotten.",
@@ -835,13 +833,13 @@
  "signals": [
   {
    "theme": "Digital Fairness Act",
-   "why": "Die Kommission will den Vorschlag gegen manipulative Gestaltung, unfaire Personalisierung und Abo-Fallen voraussichtlich im vierten Quartal 2026 vorlegen. Das beträfe Onlineshops, Kundenprogramme und personalisierte Preise direkt.",
-   "count": 9,
+   "why": "Die Kommission hat den Vorschlag für das vierte Quartal 2026 angekündigt; er zielt auf manipulative Gestaltung, schwer kündbare Abonnements und unfaire Personalisierung. Das betrifft Onlineshops, Lieferdienste und Reiseportale und verlangt, Preis- und Personalisierungslogik nachvollziehbar zu dokumentieren.",
+   "count": 10,
    "first_seen": "2026-09-30",
-   "last_seen": "2026-10-16",
+   "last_seen": "2026-10-18",
    "evidence": [
-    "https://www.eversheds-sutherland.com/en/slovakia/insights/the-digital-fairness-act-what-businesses-need-to-know",
     "https://www.europarl.europa.eu/legislative-train/theme-protecting-our-democracy-upholding-our-values/file-digital-fairness-act",
+    "https://www.eversheds-sutherland.com/en/slovakia/insights/the-digital-fairness-act-what-businesses-need-to-know",
     "https://www.privacylaws.com/news/eu-proposal-on-digital-fairness-act-expected-by-the-end-of-2026/",
     "https://www.mlex.com/mlex/articles/2529049/eu-digital-fairness-act-on-consumer-protection-tentatively-eyed-for-november"
    ]
@@ -912,6 +910,19 @@
    ]
   },
   {
+   "theme": "Cloud-Souveränität und Cloud and AI Development Act",
+   "why": "Nach einem vorläufigen Zeitplan soll der Berichtsentwurf des Parlaments im Dezember vorliegen und Mitte März abgestimmt werden. Daraus folgen Anforderungen an Souveränitätsstufen von Cloud-Diensten, die in Ausschreibungen und Exit-Strategien einfließen können.",
+   "count": 2,
+   "first_seen": "2026-09-30",
+   "last_seen": "2026-10-18",
+   "evidence": [
+    "https://www.mlex.com/mlex/technology/articles/2535003",
+    "https://www.eesc.europa.eu/en/our-work/opinions-information-reports/opinions/cloud-and-ai-development-act",
+    "https://www.datenschutzticker.de/2026/09/cada-europas-cloud-und-ki-infrastruktur-im-fokus/",
+    "https://netzpolitik.org/2026/cloud-and-ai-development-act-eu-kommission-greift-bei-us-cloud-anbietern-kaum-durch/"
+   ]
+  },
+  {
    "theme": "Digitale Identitäts-Wallet der Europäischen Union",
    "why": "Der Bundestag hat am 15. Oktober 2026 das Digitale Identitätengesetz beschlossen, die Brieftasche soll ab Januar 2027 flächendeckend verfügbar sein. Eine Pflicht zur Annahme für private Unternehmen gibt es nicht, für Altersnachweise und Kundenidentifizierung im Onlinehandel kann sie trotzdem relevant werden.",
    "count": 2,
@@ -976,18 +987,6 @@
    ]
   },
   {
-   "theme": "Cloud-Souveränität und Cloud and AI Development Act",
-   "why": "Mit der Stellungnahme des Wirtschafts- und Sozialausschusses geht das Verfahren weiter; Anforderungen an Cloud-Anbieter und öffentliche Förderung könnten Anbieterlandschaft und Exit-Strategien verändern.",
-   "count": 1,
-   "first_seen": "2026-09-30",
-   "last_seen": "2026-09-30",
-   "evidence": [
-    "https://www.eesc.europa.eu/en/our-work/opinions-information-reports/opinions/cloud-and-ai-development-act",
-    "https://www.datenschutzticker.de/2026/09/cada-europas-cloud-und-ki-infrastruktur-im-fokus/",
-    "https://netzpolitik.org/2026/cloud-and-ai-development-act-eu-kommission-greift-bei-us-cloud-anbietern-kaum-durch/"
-   ]
-  },
-  {
    "theme": "Kriegsausschluss in Cyberversicherungen",
    "why": "Versicherer übernehmen erweiterte Ausschlüsse für staatliche Cyberangriffe, sobald kritische Infrastruktur beeinträchtigt ist. Das ist gerade für Händler mit Bezug zu kritischen Infrastrukturen ein Punkt bei der Versicherbarkeit und der Planung der Risikotragfähigkeit.",
    "count": 1,
@@ -1009,6 +1008,77 @@
   }
  ],
  "news": [
+  {
+   "title": "Update: Ahold Delhaize – Albert Heijn liefert bis mindestens Dienstag nicht",
+   "summary": "Albert Heijn hat am 17. Oktober 2026 den Lieferstopp nach dem Cybervorfall bis mindestens Dienstag verlängert. Neu gegenüber dem bisherigen Stand: Online-Bestellungen sind nicht möglich, das Bonus-Kundenprogramm und persönliche Rabatte funktionieren nicht, der Kundenservice ist nicht erreichbar, die Filialen werden mehrmals täglich nachbeliefert. Hinweise auf gestohlene personenbezogene Daten gibt es laut Unternehmen bisher nicht, ein Bericht nennt Wettbewerber als Profiteure.",
+   "relevance": "Fast eine Woche ohne Onlinekanal zeigt, dass Kundenbindungsprogramm, Rabatte und Lieferdienst in der Business Impact Analysis und der Notfallplanung eines Lebensmittelhändlers nicht unten stehen dürfen. Lehrreich ist auch der kontrollierte Wiederanlauf in Stufen, der vorab geplant und geübt sein sollte.",
+   "source": "NL Times",
+   "url": "https://nltimes.nl/2026/10/17/albert-heijn-extends-delivery-halt-least-tuesday-cybersecurity-incident",
+   "id": "2026-10-18-albert-heijn-lieferstopp",
+   "topic": "Handel & Branche",
+   "impact": "mittel",
+   "published": "2026-10-17",
+   "tags": [
+    "Ahold Delhaize",
+    "Wiederanlauf",
+    "Lebensmittelhandel"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Aufrechterhaltung des Betriebs und Krisenmanagement",
+    "ISO/IEC 27001 Anhang A 5.30 – Informations- und Kommunikationstechnik-Bereitschaft für Business Continuity"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Management"
+   ],
+   "countries": [
+    "NL"
+   ],
+   "dossier": null,
+   "priority": 2,
+   "primary": false,
+   "added": "2026-10-18T05:06:21Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum 17. Oktober 2026 und alle Angaben belegt: Lieferstopp bis mindestens Dienstag, keine Online-Bestellungen, Bonus-Aktionen und persönliche Rabatte nicht verfügbar, Kundenservice nicht erreichbar, Filialen werden mehrmals täglich beliefert, bisher keine Hinweise auf gestohlene Daten…"
+   }
+  },
+  {
+   "title": "Norwegen: 8,6 Millionen Euro gegen Xandr, Einwilligung des Partners reicht nicht",
+   "summary": "Die norwegische Datenschutzbehörde hat am 2. Oktober 2026 gegen den Werbetechnik-Anbieter Xandr rund 8,6 Millionen Euro verhängt, der Europäische Datenschutzausschuss berichtete am 16. Oktober. Xandr hatte über Real-Time Bidding Werbekennungen, IP-Adressen und Angaben zur sexuellen Orientierung von Nutzern der App Grindr verarbeitet und sich auf deren unwirksame Einwilligung gestützt. Die Behörde betont, dass Rechenschaftspflicht nicht ausgelagert werden kann und jeder gemeinsam Verantwortliche die Rechtsgrundlage selbst prüfen muss.",
+   "relevance": "Handelskonzerne mit eigener Retail-Media-Vermarktung und Datenpartnerschaften brauchen eine eigene, dokumentierte Prüfung der Rechtsgrundlagen für übernommene Daten, eine Vertragsklausel des Partners ist kein Nachweis. Das gilt besonders, wenn sich aus Kauf- oder Nutzungsdaten besondere Kategorien wie Gesundheit ableiten lassen.",
+   "source": "Europäischer Datenschutzausschuss",
+   "url": "https://www.edpb.europa.eu/news/norwegian-dpa-fines-xandr-eur-8-600-000-for-unlawful-processing-of-personal-data_en",
+   "id": "2026-10-18-xandr-bussgeld-norwegen",
+   "topic": "Datenschutz & Datenrecht",
+   "impact": "mittel",
+   "published": "2026-10-16",
+   "tags": [
+    "Werbetechnik",
+    "gemeinsame Verantwortlichkeit",
+    "Bußgeld"
+   ],
+   "controls": [
+    "DSGVO Art. 9 – Verarbeitung besonderer Kategorien personenbezogener Daten",
+    "DSGVO Art. 26 – Gemeinsam Verantwortliche",
+    "DSGVO Art. 5 Abs. 2 – Rechenschaftspflicht"
+   ],
+   "roles": [
+    "Datenschutz",
+    "Einkauf & Drittparteien"
+   ],
+   "countries": [
+    "NO"
+   ],
+   "dossier": null,
+   "priority": 3,
+   "primary": true,
+   "added": "2026-10-18T05:06:21Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Meldung vom 16. Oktober 2026, Entscheidung vom 2. Oktober 2026, 8,6 Millionen Euro, Werbekennungen, IP-Adressen und sexuelle Orientierung von Grindr-Nutzern, unwirksame Einwilligung und der Satz, dass Rechenschaftspflicht nicht ausgelagert werden kann – alles belegt."
+   }
+  },
   {
    "title": "BeyondTrust Remote Support: Ausgenutzte Lücke erlaubt Übernahme ohne Anmeldung",
    "summary": "Die Cyberabwehrbehörde der Vereinigten Staaten hat die Lücke CVE-2026-102764 in BeyondTrust Remote Support bis Version 26.2.3 am 16. Oktober 2026 in ihren Katalog aktiv ausgenutzter Schwachstellen aufgenommen. Laut Fachberichten wird sie seit 29. August als Zero Day ausgenutzt, Angreifer konnten ohne Anmeldung Dateien schreiben und Web Shells ablegen. Die Behörde empfiehlt den Patch BT26-05-RS, bei Verdacht auf Kompromittierung Isolation, Forensik, Neuaufbau, das Wechseln aller gespeicherten Zugangsdaten und die Prüfung neuer Registrierungen für die Mehr-Faktor-Anmeldung; gehostete Instanzen sind bereits gepatcht.",
@@ -1223,6 +1293,42 @@
    "check": {
     "verdict": "abweichung",
     "note": "Inhalt stimmt (Lückenkennung, Mitte September, Version 26.4.303 seit 11. September, Deaktivieren reicht nicht, nicht betroffene Installationen). Der Artikel erschien am 15. Oktober 2026; am 14. Oktober wurde nur die Sicherheitsmeldung veröffentlicht."
+   }
+  },
+  {
+   "title": "Firewall-Verwaltung eines Dienstleisters gekapert: Daten von über 500 Kunden-Firewalls abgeflossen",
+   "summary": "Die Sicherheitsforscher von Unit 42 beschreiben einen Angriff auf die zentrale FortiManager-Verwaltung eines Telekommunikations-Dienstleisters, über die Konfigurationen, Schlüsselmaterial und Datenbanken von mehr als 500 verwalteten FortiGate-Firewalls der Kunden abflossen. Die Angreifer nutzten die Lücken CVE-2024-47575 und CVE-2025-61624 und setzten die nur im Arbeitsspeicher laufende Schadsoftware PEERSTITCH ein, die keine eigenen Verbindungen aufbaut.",
+   "relevance": "Zentrale Verwaltungskonsolen von Managed Service Providern sind ein Generalschlüssel für viele Kundennetze und gehören in der Drittparteiensteuerung eines Konzerns mit vielen Netzdienstleistern ganz nach oben. Nach einem Vorfall reicht der Patch nicht, Schlüssel, Zertifikate und Zugangsdaten müssen als kompromittiert gelten und gewechselt werden.",
+   "source": "Unit 42 (Palo Alto Networks)",
+   "url": "https://unit42.paloaltonetworks.com/fortimanager-cve-2024-47575-peerstitch-malware.md",
+   "id": "2026-10-18-fortimanager-dienstleister-firewalls",
+   "topic": "IT-Governance & Risiko",
+   "impact": "hoch",
+   "published": "2026-10-14",
+   "tags": [
+    "Managed Service Provider",
+    "Fortinet",
+    "Supply Chain"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
+    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen",
+    "ISO/IEC 27001 Anhang A 8.24 – Verwendung von Kryptografie"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Einkauf & Drittparteien"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "drittparteien-lieferkette",
+   "priority": 1,
+   "primary": false,
+   "added": "2026-10-18T05:06:21Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Datum 14. Oktober 2026, Dienstleister, mehr als 500 Firewalls, beide Lücken und die Eigenschaften von PEERSTITCH sind belegt. Dass die Behörde der Vereinigten Staaten für Cybersicherheit CVE-2025-61624 am 16. Oktober 2026 in ihren Katalog aktiv ausgenutzter Schwachstellen aufgenommen hat, steht…"
    }
   },
   {
