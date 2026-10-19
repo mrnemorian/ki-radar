@@ -1,0 +1,183 @@
+{
+ "format": "tag",
+ "chapters": [
+  {
+   "title": "Begrüßung",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Guten Morgen, liebe IT-GRC-Kolleginnen und -Kollegen, willkommen beim IT-GRC Radar. Heute ist Montag, der neunzehnte Oktober 2026."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Montag, und schon geht es wieder um einen Dienstleister, der Angreifern die Tür aufgehalten hat. Gut, dass der Kaffee schon steht."
+    }
+   ]
+  },
+  {
+   "title": "Die Woche",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Vorher wie jeden Montag der Blick auf die Fristen. Die Frist der Woche ist eigentlich heute: Für die ausgenutzte Lücke in BeyondTrust Remote Support läuft die Patch-Frist der Behörde der Vereinigten Staaten ab."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Wer dieses Fernwartungswerkzeug einsetzt und noch nicht gepatcht hat, weiß jetzt, was nach der Folge ansteht. Kurz danach, am einunddreißigsten Oktober, enden die Sicherheitsupdates für Exchange Server 2016 und 2019. Und in Italien müssen gelistete Einrichtungen bis dahin die grundlegenden Maßnahmen nach der NIS-2-Richtlinie umgesetzt haben, also der Richtlinie über Netz- und Informationssicherheit."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Also noch zwölf Tage. Klingt nach viel, ist es in der Audit-Saison aber nicht."
+    }
+   ]
+  },
+  {
+   "title": "ConnectWise Cloud Backup",
+   "news_id": "2026-10-19-connectwise-cloud-backup-microsoft-365",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Damit zur wichtigsten Meldung. ConnectWise hat seinen Dienst [en]Cloud Backup[/en] abgeschaltet. Angreifer hatten die Anwendungsidentitäten des Dienstes übernommen und sind damit in Microsoft-365-Umgebungen von Kunden eingedrungen. Huntress zählt mindestens 162 betroffene [en]Tenants[/en]."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Das Unangenehme daran: Die Angreifer haben sich als Backup-Anwendung angemeldet, mit allen Rechten, die die Kunden ihr einmal gegeben haben. E-Mails, OneDrive, SharePoint, Teams-Chats, alles lesbar und veränderbar. Multi-Faktor-Authentifizierung hilft da nicht, weil sich gar kein Mensch anmeldet."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Moment, heißt das, die ganze Härtung der Benutzerkonten läuft auf diesem Weg ins Leere?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Genau. Deshalb muss auf den Tisch, welche Drittanbieter-Apps im eigenen [en]Tenant[/en] welche Rechte haben und wer eigentlich Owner dieser Zustimmungen ist. Die ehrliche Antwort steht oft in einer Excel-Liste von 2021. Und bereits ausgestellte [en]Tokens[/en] können weiter gültig sein, bis sie ablaufen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Also nicht auf den Anbieter warten, sondern selbst Anmeldungen, Rollen und Weiterleitungen prüfen."
+    }
+   ]
+  },
+  {
+   "title": "E-Rechnung",
+   "news_id": "2026-10-19-bmf-schreiben-e-rechnung-oktober-2026",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Das zweite Thema ist weniger spektakulär, hat aber ein Datum. Das Bundesministerium der Finanzen hat am fünfzehnten Oktober ein ergänzendes Schreiben zur E-Rechnung veröffentlicht."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Darin geht es um Pflichtangaben und Leistungsbeschreibung, Teilrechnungen, Rabatte und Boni, Rechnungskorrekturen und Fehler bei der Validierung, die steuerliche Folgen haben."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Gibt es denn eine Schonfrist?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Eine kleine. Rechnungen, die bis zum einunddreißigsten Dezember 2026 nach den alten Schreiben ausgestellt werden, werden nicht beanstandet. Für die Prüfung heißt das: Jede neue Validierungsregel ist eine Änderung an einem rechnungslegungsrelevanten System, also ein Fall fürs Änderungsmanagement."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Gut zwei Monate also, für Steuerabteilung, Informationstechnik und Einkauf gleichzeitig. Sportlich."
+    }
+   ]
+  },
+  {
+   "title": "Kühlsteuerungen und Versicherung",
+   "news_id": "2026-10-19-kuehlsteuerungen-versicherer-fahrlaessigkeit",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Da gibt es Neues zu den Angriffen auf Kühlsteuerungen in Frankreich. Jetzt geht es um die Frage, wer zahlt."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Laut Versicherungswirtschaft heute könnten Cyberversicherer kürzen oder ablehnen und sich dabei auf grobe Fahrlässigkeit berufen, bei staatlichen Tätern womöglich auch auf Kriegsausschlüsse. Genannt werden Anlagen direkt am Internet, Standardpasswörter und veraltete Hardware."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und um welche Summen geht es?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Coopérative U schätzt bis zu 200.000 Euro pro Hypermarkt. Damit landet eine Frage, die bisher bei der Haustechnik lag, beim Vorstand. Und wer die Steuerungen nicht im Inventar hat, kann dem Versicherer auch nicht belegen, dass sie abgesichert waren."
+    }
+   ]
+  },
+  {
+   "title": "H und M und GreyOrange",
+   "news_id": "2026-10-19-hm-greyorange-shinyhunters",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Bleiben wir im Handel. Die Gruppe ShinyHunters behauptet, bei H und M Daten aus Produktions- und Logistiksystemen erbeutet zu haben."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Fachleute sehen als wahrscheinlichen Weg den Anbieter für Lagerautomatisierung GreyOrange, nicht die Systeme von H und M selbst. Das Unternehmen sieht nach eigenen Angaben keine Hinweise auf eine Kompromittierung der eigenen Datenumgebung."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Das klingt nach demselben Muster wie bei ConnectWise vorhin."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ja. Die Frage ist nicht nur, wie sicher die eigenen Systeme sind. Wichtig ist auch, welche Daten im Lager beim Dienstleister liegen und ob der Vertrag Informationsrechte vorsieht, wenn es dort brennt."
+    }
+   ]
+  },
+  {
+   "title": "Ahold Delhaize",
+   "news_id": "2026-10-19-ahold-delhaize-notbetrieb-altsysteme",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Und noch ein Update zu Ahold Delhaize. Albert Heijn will ab Freitag schrittweise wieder ausliefern, alle Bestellungen bis Donnerstag sind storniert."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Spannender finde ich Delhaize in Belgien. Dort konnten die Filialleiter seit Freitag wieder über ältere Systeme bestellen, und seit Samstag können Kunden wieder online bestellen. Ausgerechnet das Altsystem als Rettungsanker."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Das hören die Kollegen vom Lebenszyklusmanagement bestimmt gern."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Vorsicht. Die Lehre ist eher, dass ein geübter Notbetrieb für die Filialbestellung Gold wert ist, egal womit er läuft. Personenbezogene Daten sind laut Unternehmen weiterhin nicht betroffen."
+    }
+   ]
+  },
+  {
+   "title": "Auf dem Radar",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Was haben wir auf dem Radar?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Den Digital Fairness Act. Die Kommission will den Vorschlag im vierten Quartal vorlegen, also bis Dezember. Es geht um [en]Dark Patterns[/en], unfaire Personalisierung und Influencer-Marketing, und das betrifft jeden Onlineshop und jede Buchungsstrecke."
+    }
+   ]
+  },
+  {
+   "title": "Abschied",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Das war das IT-GRC Radar zum Wochenstart. Alle Quellen finden Sie wie immer auf der Webseite."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und schauen Sie heute noch nach, welche Apps in Ihrem [en]Tenant[/en] welche Rechte haben. Bis morgen."
+    }
+   ]
+  }
+ ]
+}

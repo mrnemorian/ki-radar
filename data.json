@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-18T05:06:21Z",
+ "updated": "2026-10-19T05:06:09Z",
  "topics": [
   "IT-Governance & Risiko",
   "Cyber- & IT-Regulierung",
@@ -11,6 +11,18 @@
   "Weitere Themen"
  ],
  "briefings": [
+  {
+   "date": "2026-10-19",
+   "headline": "Ein Backup-Dienstleister wird zum Einfallstor in Microsoft 365, für die E-Rechnung gibt es neue Regeln, und Versicherer prüfen die Angriffe auf Kühlanlagen.",
+   "points": [
+    "ConnectWise schaltet Cloud Backup ab: Angreifer nutzten Anwendungsidentitäten, um in mindestens 162 Microsoft-365-Umgebungen von Kunden einzudringen. Multi-Faktor-Authentifizierung half nicht.",
+    "Neues Schreiben des Bundesministeriums der Finanzen zur E-Rechnung vom 15. Oktober 2026: Die Ausstellungspflicht ab 1. Januar 2027 rückt näher.",
+    "Update Kühlsteuerungen: Cyberversicherer könnten wegen grober Fahrlässigkeit kürzen, Schäden bis 200.000 Euro pro Hypermarkt",
+    "H&M: Angreifer behaupten Datendiebstahl, der wahrscheinliche Weg führt über den Anbieter von Lagerautomatisierung GreyOrange",
+    "Update Ahold Delhaize: Albert Heijn liefert ab Freitag wieder aus, Delhaize bestellte im Notbetrieb über Altsysteme"
+   ],
+   "count": 5
+  },
   {
    "date": "2026-10-18",
    "headline": "Angreifer kapern die Firewall-Verwaltung eines Dienstleisters, Albert Heijn liefert seit fast einer Woche nicht, und Norwegen bestraft fehlende eigene Einwilligungsprüfung.",
@@ -262,18 +274,18 @@
    "title": "Betriebstechnik in Filialen und Logistik",
    "sector": "Handel & Branche",
    "ring": "jetzt handeln",
-   "status": "Nach den Angriffen auf rund 700 französische Supermärkte waren laut Reuters noch mindestens 4.500 Danfoss-Schnittstellen aus dem Internet erreichbar, nur wenige mit aktueller Software. Berichten zufolge gab es Angriffe auch in Spanien, Portugal, Polen, Deutschland und Belgien. Betroffen sind auch Steuerungen von Copeland und Dixell, und das Bundesamt für Sicherheit in der Informationstechnik…",
-   "next_step": "Inventar der Kühl- und Gebäudesteuerungen je Land erstellen, aus dem Internet erreichbare Zugänge abschalten und Fernzugriff von Kältedienstleistern nur noch über abgesicherte Verbindungen erlauben.",
+   "status": "Nach den Angriffen auf Kühlsteuerungen von Danfoss, Copeland und Dixell in rund 700 französischen Supermärkten rechnet die Versicherungswirtschaft damit, dass Cyberversicherer wegen grober Fahrlässigkeit und verletzter Obliegenheiten kürzen. Coopérative U schätzt die Schäden auf bis zu 200.000 Euro pro Hypermarkt. Das Bundesamt für Sicherheit in der Informationstechnik fordert, solche…",
+   "next_step": "Betriebstechnik in Filialen und Logistik vollständig inventarisieren und von außen erreichbare Schnittstellen abschalten. Die Ergebnisse dokumentieren und mit den Obliegenheiten der Cyberversicherung abgleichen.",
    "open_questions": [
-    "Wer verantwortet Kühlsteuerungen in den Filialen: Haustechnik, Dienstleister oder zentrale Informationstechnik?",
-    "Sind Angriffe auf Kühlsteuerungen als Szenario im Notfallmanagement und in der Meldelogik nach der NIS-2-Richtlinie abgebildet?"
+    "Kann gegenüber dem Versicherer nachgewiesen werden, dass Steuerungen abgeschottet und gepflegt sind?",
+    "Greifen Kriegsausschlüsse, falls staatliche Täter bestätigt werden?"
    ],
    "controls": [
-    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
+    "NIS-2-Richtlinie Art. 21 – Konzepte für Risikoanalyse und Sicherheit von Informationssystemen",
     "ISO/IEC 27001 Anhang A 5.9 – Inventar der Informationen und anderen zugehörigen Werte",
     "ISO/IEC 27001 Anhang A 8.20 – Netzwerksicherheit"
    ],
-   "updated": "2026-10-17"
+   "updated": "2026-10-19"
   },
   {
    "slug": "drittparteien-lieferkette",
@@ -287,18 +299,18 @@
    "title": "Drittparteien- und Lieferkettenrisiko",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Über die gekaperte zentrale FortiManager-Verwaltung eines Telekommunikations-Dienstleisters flossen Konfigurationen und Schlüsselmaterial von über 500 Kunden-Firewalls ab. Zuvor legte ein Angriff auf den Hauptauftragnehmer die Fehmarnbelt-Baustelle lahm, und Aufsichtsbehörden in Schweden und Griechenland haben Dienstleister direkt mit Bußgeldern belegt.",
-   "next_step": "Dienstleister mit zentralen Verwaltungskonsolen für eigene Netze und Firewalls identifizieren und gezielt zu Mandantentrennung, Härtung der Managementzugänge, Meldewegen und Schlüsselwechsel nach Vorfällen befragen.",
+   "status": "Über gekaperte Anwendungsidentitäten von ConnectWise Cloud Backup drangen Angreifer in mindestens 162 Microsoft-365-Umgebungen von Kunden ein, ohne dass Multi-Faktor-Authentifizierung half. Bei H&M führt die Spur eines behaupteten Datendiebstahls zum Anbieter für Lagerautomatisierung GreyOrange. Zuvor hatten die gekaperte FortiManager-Verwaltung eines Dienstleisters und der Angriff auf den…",
+   "next_step": "Für alle Drittanbieter-Anwendungen in der Cloud-Umgebung prüfen, welche Rechte und Zustimmungen sie haben und wer sie verantwortet. Ungenutzte Berechtigungen entziehen und Anmeldungen von Anwendungen überwachen.",
    "open_questions": [
-    "Welche Dienstleister verwalten Firewalls oder Netzkomponenten über eine gemeinsame Konsole für mehrere Kunden?",
-    "Ist vertraglich geregelt, wie schnell ein Dienstleister eine Kompromittierung seiner Verwaltungssysteme meldet?"
+    "Welche Drittanbieter-Anwendungen haben anwendungsweite Rechte auf E-Mail und Dateien, und wer hat sie zugelassen?",
+    "Regeln die Verträge mit Logistik- und Automatisierungsdienstleistern Meldefristen und Informationsrechte bei Vorfällen?"
    ],
    "controls": [
     "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
     "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen",
-    "ISO/IEC 27001 Anhang A 5.22 – Überwachung von Lieferantendienstleistungen"
+    "ISO/IEC 27001 Anhang A 5.20 – Behandlung der Informationssicherheit in Lieferantenvereinbarungen"
    ],
-   "updated": "2026-10-18"
+   "updated": "2026-10-19"
   },
   {
    "slug": "identitaeten-zugangsdaten",
@@ -312,17 +324,17 @@
    "title": "Identitäten und Zugangsdaten",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Neben erschlichenen Zugangsdaten wie bei ASOS und Air France-KLM rückt der Einstellungsprozess in den Blick: Die Behörden der Vereinigten Staaten haben Laptop-Farmen zerschlagen, über die nordkoreanische Fachkräfte mit gestohlenen Identitäten per Fernzugriff auf Firmengeräten arbeiteten. Dabei wurden rund 187 Geräte sichergestellt. Parallel laufen die Kampagnen CaptiveCrunch und FortiBleed weiter.",
-   "next_step": "Identitätsprüfung bei Einstellungen für Fernarbeit und beim Personal von Dienstleistern mit privilegierten Zugängen schärfen und unerwartete Fernwartungssoftware sowie abweichende Lieferadressen für Firmengeräte überwachen.",
+   "status": "Neben erschlichenen Zugangsdaten wie bei ASOS und Air France-KLM rücken nicht-menschliche Identitäten in den Blick. Bei ConnectWise nutzten Angreifer die Zugangsdaten einer Backup-Anwendung und umgingen damit die Multi-Faktor-Authentifizierung vollständig. Außerdem können bereits ausgestellte Token nach der Sperre weiter gültig bleiben. Parallel laufen Ermittlungen gegen Laptop-Farmen für…",
+   "next_step": "Anwendungsidentitäten und Dienstkonten wie privilegierte Konten behandeln: inventarisieren, regelmäßig rezertifizieren, Zugangsdaten rotieren und Anmeldungen überwachen.",
    "open_questions": [
-    "Welche Identitätsprüfung verlangen wir von Dienstleistern, deren Personal auf unsere Systeme zugreift?"
+    "Gibt es ein Verzeichnis der nicht-menschlichen Identitäten mit benannten Verantwortlichen?"
    ],
    "controls": [
-    "ISO/IEC 27001 Anhang A 5.16 – Identitätsmanagement",
-    "ISO/IEC 27001 Anhang A 6.1 – Sicherheitsüberprüfung",
-    "ISO/IEC 27001 Anhang A 5.18 – Zugangsrechte"
+    "ISO/IEC 27001 Anhang A 8.2 – Privilegierte Zugangsrechte",
+    "ISO/IEC 27001 Anhang A 5.18 – Zugangsrechte",
+    "IT-Kontrollen der Abschlussprüfung – Zugriffsmanagement"
    ],
-   "updated": "2026-10-16"
+   "updated": "2026-10-19"
   },
   {
    "slug": "kritische-schwachstellen-perimeter",
@@ -621,17 +633,6 @@
  ],
  "deadlines": [
   {
-   "date": "2026-10-04",
-   "title": "Fortinet FortiMail: Behördenfrist für CVE-2026-104286",
-   "detail": "Bundesbehörden der Vereinigten Staaten müssen die aktiv ausgenutzte Lücke untersuchen und entschärfen; Betreiber sollten bis zum Update die Funktion für identitätsbasierte Verschlüsselung abschalten oder die Verwaltungsoberfläche abschotten.",
-   "scope": "US",
-   "url": "https://www.bleepingcomputer.com/news/security/fortinet-warns-of-critical-fortimail-flaw-exploited-in-zero-day-attacks/",
-   "primary": false,
-   "checked": true,
-   "dossier": null,
-   "added": "2026-10-02"
-  },
-  {
    "date": "2026-10-13",
    "title": "Windows Server 2012 und 2012 R2: letzte Extended Security Updates",
    "detail": "Betreiber von Windows Server 2012 und 2012 R2 erhalten danach keine Sicherheitsupdates mehr und müssen Systeme ablösen, abschotten oder das Risiko formal akzeptieren.",
@@ -729,6 +730,17 @@
    "checked": true,
    "dossier": null,
    "added": "2026-10-14"
+  },
+  {
+   "date": "2026-12-31",
+   "title": "E-Rechnung: Nichtbeanstandung nach früheren Schreiben endet",
+   "detail": "E-Rechnungen müssen spätestens ab 2027 die zusätzlichen Anforderungen aus dem Schreiben des Bundesministeriums der Finanzen vom 15. Oktober 2026 erfüllen. Rechnungssysteme und Validierungsregeln sind deshalb rechtzeitig anzupassen.",
+   "scope": "DE",
+   "url": "https://blogs.pwc.de/de/steuern-und-recht/article/257354/bmf-ergaenzende-regelungen-zur-elektronischen-rechnung/",
+   "primary": false,
+   "checked": true,
+   "dossier": null,
+   "added": "2026-10-19"
   },
   {
    "date": "2027-01-01",
@@ -833,14 +845,14 @@
  "signals": [
   {
    "theme": "Digital Fairness Act",
-   "why": "Die Kommission hat den Vorschlag für das vierte Quartal 2026 angekündigt; er zielt auf manipulative Gestaltung, schwer kündbare Abonnements und unfaire Personalisierung. Das betrifft Onlineshops, Lieferdienste und Reiseportale und verlangt, Preis- und Personalisierungslogik nachvollziehbar zu dokumentieren.",
-   "count": 10,
+   "why": "Die Kommission plant ihren Vorschlag für das vierte Quartal 2026. Er zielt auf Dark Patterns, unfaire Personalisierung und Influencer-Marketing und würde damit Onlineshops, Apps und Buchungsstrecken betreffen.",
+   "count": 11,
    "first_seen": "2026-09-30",
-   "last_seen": "2026-10-18",
+   "last_seen": "2026-10-19",
    "evidence": [
+    "https://www.privacylaws.com/news/eu-proposal-on-digital-fairness-act-expected-by-the-end-of-2026/",
     "https://www.europarl.europa.eu/legislative-train/theme-protecting-our-democracy-upholding-our-values/file-digital-fairness-act",
     "https://www.eversheds-sutherland.com/en/slovakia/insights/the-digital-fairness-act-what-businesses-need-to-know",
-    "https://www.privacylaws.com/news/eu-proposal-on-digital-fairness-act-expected-by-the-end-of-2026/",
     "https://www.mlex.com/mlex/articles/2529049/eu-digital-fairness-act-on-consumer-protection-tentatively-eyed-for-november"
    ]
   },
@@ -907,6 +919,17 @@
    "evidence": [
     "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/Grundschutz-in-der-Informationssicherheit/Grundschutz-Plus-Plus/grundschutz-plus-plus_node.html",
     "https://sits.com/ch/blog/grundschutz-plus-plus-bsi-it-grundschutz/"
+   ]
+  },
+  {
+   "theme": "Kriegsausschluss in Cyberversicherungen",
+   "why": "Nach den Angriffen auf Kühlanlagen erwartet die Versicherungswirtschaft, dass Leistungen gekürzt oder verweigert werden, falls staatliche Täter bestätigt werden. Das macht Cyberrisiken eines Konzerns schwerer versicherbar.",
+   "count": 2,
+   "first_seen": "2026-09-30",
+   "last_seen": "2026-10-19",
+   "evidence": [
+    "https://versicherungswirtschaft-heute.de/politik-und-regulierung/2026-10-19/warum-frankreichs-supermarkt-hack-auch-deutsche-ketten-bedroht/",
+    "https://www.asscompact.de/nachrichten/cyberversicherung-stand-der-dinge-bei-den-kriegsklauseln"
    ]
   },
   {
@@ -987,16 +1010,6 @@
    ]
   },
   {
-   "theme": "Kriegsausschluss in Cyberversicherungen",
-   "why": "Versicherer übernehmen erweiterte Ausschlüsse für staatliche Cyberangriffe, sobald kritische Infrastruktur beeinträchtigt ist. Das ist gerade für Händler mit Bezug zu kritischen Infrastrukturen ein Punkt bei der Versicherbarkeit und der Planung der Risikotragfähigkeit.",
-   "count": 1,
-   "first_seen": "2026-09-30",
-   "last_seen": "2026-09-30",
-   "evidence": [
-    "https://www.asscompact.de/nachrichten/cyberversicherung-stand-der-dinge-bei-den-kriegsklauseln"
-   ]
-  },
-  {
    "theme": "Beschäftigtendatengesetz zweiter Anlauf",
    "why": "Die Bundesregierung bereitet einen neuen Entwurf für ein eigenes Gesetz zum Beschäftigtendatenschutz vor; der frühere Entwurf enthielt Regeln zu Überwachung und Künstlicher Intelligenz im Personalwesen, was Personaleinsatzplanung und Mitarbeiterüberwachung direkt betreffen würde.",
    "count": 1,
@@ -1008,6 +1021,115 @@
   }
  ],
  "news": [
+  {
+   "title": "Update: Kühlsteuerungen – Versicherer könnten wegen grober Fahrlässigkeit kürzen",
+   "summary": "Nach den Angriffen auf Kühlanlagen in rund 700 französischen Supermärkten geht es jetzt darum, wer für die Schäden zahlt. Laut Versicherungswirtschaft heute könnten Cyberversicherer Leistungen verweigern oder kürzen. Sie können sich auf grobe Fahrlässigkeit und verletzte Obliegenheiten berufen und, falls staatliche Täter bestätigt werden, auf Kriegsausschlüsse. Als Schwachstellen nennt der Bericht Anlagen ohne Firewall direkt am Internet, Standardpasswörter und veraltete Hardware. Coopérative U schätzt die Schäden auf bis zu 200.000 Euro pro Hypermarkt.",
+   "relevance": "Ob ein solcher Schaden versichert ist, hängt davon ab, ob Betriebstechnik in Filialen und Logistik nachweislich inventarisiert, abgeschottet und gepflegt wird. Fehlen diese Nachweise, kann der Versicherungsschutz wegfallen. Auch Versicherungsbedingungen und Obliegenheiten sollten mit der Informationssicherheit abgeglichen werden.",
+   "source": "Versicherungswirtschaft heute",
+   "url": "https://versicherungswirtschaft-heute.de/politik-und-regulierung/2026-10-19/warum-frankreichs-supermarkt-hack-auch-deutsche-ketten-bedroht/",
+   "id": "2026-10-19-kuehlsteuerungen-versicherer-fahrlaessigkeit",
+   "topic": "Weitere Themen",
+   "impact": "mittel",
+   "published": "2026-10-19",
+   "tags": [
+    "Cyberversicherung",
+    "Betriebstechnik",
+    "Lebensmittelhandel"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Konzepte für Risikoanalyse und Sicherheit von Informationssystemen",
+    "ISO/IEC 27001 Anhang A 5.9 – Inventar der Informationen und anderen zugehörigen Werte"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Management"
+   ],
+   "countries": [
+    "FR",
+    "DE",
+    "EU"
+   ],
+   "dossier": "betriebstechnik-filialen-logistik",
+   "priority": 3,
+   "primary": false,
+   "added": "2026-10-19T05:06:09Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Artikel vom 19. Oktober 2026 bestätigt rund 700 Supermärkte, grobe Fahrlässigkeit, Obliegenheiten und Kriegsklausel, Anlagen ohne Sicherheitsbarriere am Internet, Standardpasswort, veraltete Hardware und bis zu 200.000 Euro pro Hypermarkt."
+   }
+  },
+  {
+   "title": "Update: Ahold Delhaize – Albert Heijn liefert ab Freitag, Delhaize bestellte über Altsysteme",
+   "summary": "Albert Heijn will ab Freitag schrittweise wieder Online-Bestellungen ausliefern. Alle Bestellungen bis einschließlich Donnerstag sind storniert, Website und App sind wieder erreichbar. Die Schwestermarke Delhaize in Belgien hat sich schneller erholt: Filialleiter bestellen seit Freitag wieder über ältere Systeme, Kunden können seit Samstag online bestellen. Hinweise auf betroffene personenbezogene Daten gibt es laut Unternehmen weiterhin nicht.",
+   "relevance": "Neu gegenüber dem bisherigen Stand sind ein konkreter Termin für die Wiederaufnahme und ein Notbetrieb über Altsysteme. Für einen Lebensmittelhändler zeigt der Fall, wie wichtig ein erprobter Notprozess für die Filialbestellung ist. Ihn als Teil der Notfallplanung regelmäßig zu üben, kann die Erholung um Tage verkürzen.",
+   "source": "VRT NWS",
+   "url": "https://www.vrt.be/vrtnws/nl/2026/10/18/albert-heijn-bestellingen/",
+   "id": "2026-10-19-ahold-delhaize-notbetrieb-altsysteme",
+   "topic": "Handel & Branche",
+   "impact": "mittel",
+   "published": "2026-10-18",
+   "tags": [
+    "Notfallmanagement",
+    "Lebensmittelhandel",
+    "Wiederanlauf"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Aufrechterhaltung des Betriebs und Krisenmanagement",
+    "ISO/IEC 27001 Anhang A 5.30 – IKT-Bereitschaft für Business Continuity"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Management"
+   ],
+   "countries": [
+    "NL",
+    "BE"
+   ],
+   "dossier": null,
+   "priority": 5,
+   "primary": false,
+   "added": "2026-10-19T05:06:09Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Artikel vom 18. Oktober 2026 bestätigt alle Angaben zu Albert Heijn und Delhaize sowie die fehlenden Hinweise auf betroffene personenbezogene Daten."
+   }
+  },
+  {
+   "title": "ConnectWise: Gekaperte Backup-Anwendung öffnet Microsoft-365-Umgebungen von Kunden",
+   "summary": "ConnectWise hat den Dienst Cloud Backup abgeschaltet und am 17. Oktober 2026 sieben Anwendungsidentitäten deaktiviert. Angreifer hatten sich zuvor als Backup-Anwendung angemeldet und deren Berechtigungen genutzt. Huntress zählte mindestens 162 kompromittierte Microsoft-365-Umgebungen, in denen E-Mails, OneDrive- und SharePoint-Dateien sowie Teams-Chats lesbar und veränderbar waren. Multi-Faktor-Authentifizierung griff nicht, weil die Angreifer die Zugangsdaten der Anwendung nutzten. In einigen Umgebungen versuchten sie außerdem, über neue Zugangsdaten und Rollenzuweisungen dauerhaft Zugriff zu behalten.",
+   "relevance": "Drittanbieter-Anwendungen mit weitreichenden Rechten in der eigenen Cloud-Umgebung umgehen die Absicherung der Benutzerkonten. Wer welche Anwendung zugelassen hat, sollte inventarisiert, regelmäßig rezertifiziert und überwacht werden. Bereits ausgestellte Token können weiter gültig sein, deshalb muss jeder Kunde selbst prüfen und nicht nur auf die Maßnahmen des Anbieters warten.",
+   "source": "BleepingComputer",
+   "url": "https://www.bleepingcomputer.com/news/security/hackers-breach-microsoft-365-tenants-via-connectwise-supply-chain-attack/",
+   "id": "2026-10-19-connectwise-cloud-backup-microsoft-365",
+   "topic": "IT-Governance & Risiko",
+   "impact": "hoch",
+   "published": "2026-10-17",
+   "tags": [
+    "Supply Chain",
+    "Microsoft 365",
+    "Anwendungsidentitäten"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
+    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen",
+    "ISO/IEC 27001 Anhang A 8.2 – Privilegierte Zugangsrechte"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Einkauf & Drittparteien"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "drittparteien-lieferkette",
+   "priority": 1,
+   "primary": false,
+   "added": "2026-10-19T05:06:09Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Quelle vom 17. Oktober 2026 bestätigt: Cloud Backup abgeschaltet, sieben Anwendungsidentitäten am 17. Oktober deaktiviert, mindestens 162 Umgebungen laut Huntress, betroffen waren E-Mails, OneDrive, SharePoint und Teams. Multi-Faktor-Authentifizierung wurde umgangen, außerdem gab es neue…"
+   }
+  },
   {
    "title": "Update: Ahold Delhaize – Albert Heijn liefert bis mindestens Dienstag nicht",
    "summary": "Albert Heijn hat am 17. Oktober 2026 den Lieferstopp nach dem Cybervorfall bis mindestens Dienstag verlängert. Neu gegenüber dem bisherigen Stand: Online-Bestellungen sind nicht möglich, das Bonus-Kundenprogramm und persönliche Rabatte funktionieren nicht, der Kundenservice ist nicht erreichbar, die Filialen werden mehrmals täglich nachbeliefert. Hinweise auf gestohlene personenbezogene Daten gibt es laut Unternehmen bisher nicht, ein Bericht nennt Wettbewerber als Profiteure.",
@@ -1041,6 +1163,76 @@
    "check": {
     "verdict": "ok",
     "note": "Datum 17. Oktober 2026 und alle Angaben belegt: Lieferstopp bis mindestens Dienstag, keine Online-Bestellungen, Bonus-Aktionen und persönliche Rabatte nicht verfügbar, Kundenservice nicht erreichbar, Filialen werden mehrmals täglich beliefert, bisher keine Hinweise auf gestohlene Daten…"
+   }
+  },
+  {
+   "title": "E-Rechnung: Finanzministerium ergänzt Regeln kurz vor der Ausstellungspflicht 2027",
+   "summary": "Das Bundesministerium der Finanzen hat am 15. Oktober 2026 ein ergänzendes Schreiben zur E-Rechnung veröffentlicht. Es behandelt unter anderem Anzahlungs- und Teilrechnungen, Pflichtangaben und Leistungsbeschreibung, Bauleistungen, Rabatte und Boni, Rechnungskorrekturen, Fehler bei der Validierung mit steuerlichen Folgen sowie Bußgelder. E-Rechnungen, die bis 31. Dezember 2026 nach den früheren Schreiben ausgestellt werden, werden nicht beanstandet.",
+   "relevance": "Ab 1. Januar 2027 müssen Unternehmen mit mehr als 800.000 Euro Vorjahresumsatz E-Rechnungen ausstellen. Anpassungen an Validierungsregeln, Schnittstellen und Rechnungssystemen betreffen rechnungslegungsrelevante Systeme. Sie gehören deshalb ins Änderungsmanagement und werden in der Jahresabschlussprüfung betrachtet.",
+   "source": "PwC Deutschland Blog Steuern und Recht",
+   "url": "https://blogs.pwc.de/de/steuern-und-recht/article/257354/bmf-ergaenzende-regelungen-zur-elektronischen-rechnung/",
+   "id": "2026-10-19-bmf-schreiben-e-rechnung-oktober-2026",
+   "topic": "Handel & Branche",
+   "impact": "hoch",
+   "published": "2026-10-16",
+   "tags": [
+    "E-Rechnung",
+    "Steuern",
+    "Rechnungswesen"
+   ],
+   "controls": [
+    "IT-Kontrollen der Abschlussprüfung – Änderungsmanagement",
+    "IT-Kontrollen der Abschlussprüfung – Schnittstellen und Datenübertragung"
+   ],
+   "roles": [
+    "Revision & Prüfung",
+    "Management"
+   ],
+   "countries": [
+    "DE"
+   ],
+   "dossier": null,
+   "priority": 2,
+   "primary": false,
+   "added": "2026-10-19T05:06:09Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Blogbeitrag vom 16. Oktober 2026, Schreiben vom 15. Oktober 2026. Die Themen und die Nichtbeanstandung bis 31. Dezember 2026 sind wörtlich belegt."
+   }
+  },
+  {
+   "title": "H&M: Angreifer melden Datendiebstahl, Spur führt zu Anbieter für Lagerautomatisierung",
+   "summary": "Die Gruppe ShinyHunters behauptet, Daten aus Produktions- und Logistiksystemen von H&M erbeutet zu haben, darunter Daten zu Lieferkette, Bestand und Filialinfrastruktur. Nach Einschätzung von Fachleuten lief der Angriff wahrscheinlich über GreyOrange, eine Plattform zur Bestandsverwaltung in Lagern, und nicht über die Systeme von H&M selbst. H&M prüft die Behauptungen nach eigenen Angaben, sieht bislang keine Hinweise auf eine Kompromittierung der eigenen Datenumgebung und hat die britische Datenschutzaufsicht nicht informiert.",
+   "relevance": "Anbieter von Lager- und Logistikautomatisierung verarbeiten oft betriebskritische Bestands- und Filialdaten. Selbst wenn keine personenbezogenen Daten betroffen sind, entsteht so ein Risiko für Erpressung und Reputation. Verträge sollten Meldepflichten, Informationsrechte und Datenminimierung bei solchen Dienstleistern ausdrücklich regeln.",
+   "source": "teiss",
+   "url": "https://www.teiss.co.uk/news/hm-investigates-potential-data-breach-after-shinyhunters-claims-cyber-attack-18318",
+   "id": "2026-10-19-hm-greyorange-shinyhunters",
+   "topic": "Handel & Branche",
+   "impact": "mittel",
+   "published": "2026-10-16",
+   "tags": [
+    "Logistik",
+    "Drittparteien",
+    "ShinyHunters"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
+    "ISO/IEC 27001 Anhang A 5.20 – Behandlung der Informationssicherheit in Lieferantenvereinbarungen"
+   ],
+   "roles": [
+    "Einkauf & Drittparteien",
+    "IT-Risiko"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "drittparteien-lieferkette",
+   "priority": 4,
+   "primary": false,
+   "added": "2026-10-19T05:06:09Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Artikel vom 16. Oktober 2026 bestätigt die Behauptungen von ShinyHunters, die Spur zu GreyOrange, die Stellungnahme von H&M und dass die britische Datenschutzaufsicht nicht informiert wurde."
    }
   },
   {
