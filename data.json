@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-19T05:06:09Z",
+ "updated": "2026-10-20T05:08:06Z",
  "topics": [
   "IT-Governance & Risiko",
   "Cyber- & IT-Regulierung",
@@ -11,6 +11,18 @@
   "Weitere Themen"
  ],
  "briefings": [
+  {
+   "date": "2026-10-20",
+   "headline": "Ahold Delhaize bestätigt Ausfälle bis Mittel- und Südosteuropa, Linux-Lücke bedroht Virtualisierung, Angriff legt Personalplattform lahm",
+   "points": [
+    "Ahold Delhaize: Webseiten, Apps und Teile der Infrastruktur in den Vereinigten Staaten und Europa offline, zweiter großer Angriff in zwei Jahren",
+    "PwnEscape: Kritische Linux-Lücke lässt virtuelle Maschinen aus der Isolation ausbrechen, gefunden mit Künstlicher Intelligenz für unter 700 Dollar",
+    "Bullhorn: Software für Personaldienstleister nach Cyberangriff abgeschaltet, Datenabfluss noch ungeklärt",
+    "Anonymisierung: Konsultation des Europäischen Datenschutzausschusses endet am 30. Oktober",
+    "Landgericht Traunstein: Erfolgreicher Angriff bedeutet nicht automatisch Haftung, Datenschutzaufsicht warnt Touristik vor Phishing mit echten Buchungsdaten"
+   ],
+   "count": 7
+  },
   {
    "date": "2026-10-19",
    "headline": "Ein Backup-Dienstleister wird zum Einfallstor in Microsoft 365, für die E-Rechnung gibt es neue Regeln, und Versicherer prüfen die Angriffe auf Kühlanlagen.",
@@ -299,18 +311,18 @@
    "title": "Drittparteien- und Lieferkettenrisiko",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Über gekaperte Anwendungsidentitäten von ConnectWise Cloud Backup drangen Angreifer in mindestens 162 Microsoft-365-Umgebungen von Kunden ein, ohne dass Multi-Faktor-Authentifizierung half. Bei H&M führt die Spur eines behaupteten Datendiebstahls zum Anbieter für Lagerautomatisierung GreyOrange. Zuvor hatten die gekaperte FortiManager-Verwaltung eines Dienstleisters und der Angriff auf den…",
-   "next_step": "Für alle Drittanbieter-Anwendungen in der Cloud-Umgebung prüfen, welche Rechte und Zustimmungen sie haben und wer sie verantwortet. Ungenutzte Berechtigungen entziehen und Anmeldungen von Anwendungen überwachen.",
+   "status": "Nach ConnectWise und der gekaperten Firewall-Verwaltung eines Dienstleisters trifft es jetzt mit Bullhorn eine Plattform, auf der viele Personaldienstleister arbeiten; ob Daten abgeflossen sind, ist offen. Parallel warnen mehrere Landesdatenschutzbehörden, dass Hotels und Touristikbetriebe nach dem Angriff auf einen Softwareanbieter auch bei Auslagerung verantwortlich bleiben.",
+   "next_step": "Kritische Dienstleister einschließlich Personaldienstleister nach den von ihnen genutzten Plattformen und Unterauftragnehmern fragen, Meldewege bei Vorfällen vertraglich prüfen und Anwendungsidentitäten von Drittanbietern mit Zugriff auf eigene Umgebungen überprüfen.",
    "open_questions": [
-    "Welche Drittanbieter-Anwendungen haben anwendungsweite Rechte auf E-Mail und Dateien, und wer hat sie zugelassen?",
-    "Regeln die Verträge mit Logistik- und Automatisierungsdienstleistern Meldefristen und Informationsrechte bei Vorfällen?"
+    "Wurden bei Bullhorn Bewerber- und Beschäftigtendaten abgezogen?",
+    "Wie weit reicht die Verantwortung für Unterauftragnehmer der Buchungsdienstleister in der Touristik?"
    ],
    "controls": [
     "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
     "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen",
-    "ISO/IEC 27001 Anhang A 5.20 – Behandlung der Informationssicherheit in Lieferantenvereinbarungen"
+    "DSGVO Art. 28 – Auftragsverarbeiter"
    ],
-   "updated": "2026-10-19"
+   "updated": "2026-10-20"
   },
   {
    "slug": "identitaeten-zugangsdaten",
@@ -346,18 +358,20 @@
     }
    ],
    "title": "Kritische Schwachstellen in Randsystemen und Kernanwendungen",
-   "sector": "Cyber- & IT-Regulierung",
+   "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Neu im Katalog aktiv ausgenutzter Schwachstellen ist seit 16. Oktober 2026 die Fortinet-Lücke CVE-2025-61624, über die Angreifer mit der Schadsoftware PEERSTITCH Firewalls im Arbeitsspeicher manipulierten. Für BeyondTrust Remote Support (CVE-2026-102764) läuft die Patch-Frist der Behörde der Vereinigten Staaten am 19. Oktober 2026 ab, weiter ausgenutzt werden Lücken in Atlassian Data Center…",
-   "next_step": "Fortinet-Bestand auf CVE-2025-61624 prüfen, Managementzugänge vom Internet trennen und bei Verdacht Speicherforensik sowie Wechsel von Zertifikaten und Zugangsdaten veranlassen.",
+   "status": "Neben den aktiv ausgenutzten Lücken bei Fortinet (CVE-2025-61624), BeyondTrust Remote Support (CVE-2026-102764, Patch-Frist der Behörde der Vereinigten Staaten am 19. Oktober 2026 abgelaufen) und Ivanti Connect Secure kommt mit PwnEscape (CVE-2026-99999) eine kritische Linux-Lücke hinzu, über die virtuelle Maschinen aus der Isolation ausbrechen können. Sie wurde mit Künstlicher Intelligenz in…",
+   "next_step": "Linux-Virtualisierungshosts inventarisieren und Patches mit Neustartfenstern einplanen, Hosting-Dienstleister nach ihrem Zeitplan fragen und prüfen, ob die Patch-Fristen für kritische Lücken angesichts schneller gefundener Schwachstellen noch passen.",
    "open_questions": [
-    "Reicht die bestehende Erkennung für Schadsoftware, die nur im Arbeitsspeicher von Netzgeräten läuft?"
+    "Wann liefern Ubuntu und Red Hat Updates für PwnEscape?",
+    "Reichen die internen Patch-Fristen, wenn Lücken mit Künstlicher Intelligenz in Tagen gefunden werden?"
    ],
    "controls": [
-    "ISO/IEC 27001 Anhang A 8.8 – Umgang mit technischen Schwachstellen",
-    "NIS-2-Richtlinie Art. 21 – Umgang mit Schwachstellen"
+    "ISO/IEC 27001 Anhang A 8.8 – Handhabung technischer Schwachstellen",
+    "NIS-2-Richtlinie Art. 21 – Umgang mit Schwachstellen",
+    "IT-Kontrollen der Abschlussprüfung – Änderungsmanagement"
    ],
-   "updated": "2026-10-18"
+   "updated": "2026-10-20"
   },
   {
    "slug": "lebenszyklus-altsysteme",
@@ -666,6 +680,17 @@
    "added": "2026-10-17"
   },
   {
+   "date": "2026-10-30",
+   "title": "Ende der Konsultation zu Leitlinien des Datenschutzausschusses zur Anonymisierung",
+   "detail": "Unternehmen, die Kunden- oder Beschäftigtendaten anonymisiert für Analysen oder Künstliche Intelligenz nutzen, können bis dahin Stellung nehmen und sollten ihre Verfahren gegen die drei Kriterien prüfen.",
+   "scope": "EU",
+   "url": "https://www.edpb.europa.eu/public-consultations/guidelines-022026-on-anonymisation_en",
+   "primary": true,
+   "checked": true,
+   "dossier": null,
+   "added": "2026-10-20"
+  },
+  {
    "date": "2026-10-31",
    "title": "Italien: grundlegende Sicherheitsmaßnahmen nach NIS-2 umgesetzt",
    "detail": "Wesentliche und wichtige Einrichtungen, die 2025 in die italienische Liste aufgenommen wurden, müssen die Maßnahmen nach den Vorgaben der nationalen Cybersicherheitsagentur umgesetzt und nachweisbar haben.",
@@ -845,13 +870,13 @@
  "signals": [
   {
    "theme": "Digital Fairness Act",
-   "why": "Die Kommission plant ihren Vorschlag für das vierte Quartal 2026. Er zielt auf Dark Patterns, unfaire Personalisierung und Influencer-Marketing und würde damit Onlineshops, Apps und Buchungsstrecken betreffen.",
-   "count": 11,
+   "why": "Der Vorschlag der Kommission zu manipulativen Designmustern, süchtig machendem Design und unfairer Personalisierung wird im vierten Quartal 2026 erwartet und würde Onlineshops, Apps und Kundenprogramme im Handel direkt betreffen.",
+   "count": 12,
    "first_seen": "2026-09-30",
-   "last_seen": "2026-10-19",
+   "last_seen": "2026-10-20",
    "evidence": [
-    "https://www.privacylaws.com/news/eu-proposal-on-digital-fairness-act-expected-by-the-end-of-2026/",
     "https://www.europarl.europa.eu/legislative-train/theme-protecting-our-democracy-upholding-our-values/file-digital-fairness-act",
+    "https://www.privacylaws.com/news/eu-proposal-on-digital-fairness-act-expected-by-the-end-of-2026/",
     "https://www.eversheds-sutherland.com/en/slovakia/insights/the-digital-fairness-act-what-businesses-need-to-know",
     "https://www.mlex.com/mlex/articles/2529049/eu-digital-fairness-act-on-consumer-protection-tentatively-eyed-for-november"
    ]
@@ -980,6 +1005,16 @@
    ]
   },
   {
+   "theme": "Schwachstellensuche durch Künstliche Intelligenz",
+   "why": "Die kritische Linux-Lücke PwnEscape wurde mit einem Modell Künstlicher Intelligenz in drei Tagen für unter 700 Dollar gefunden. Wenn Lücken so billig zu finden sind, verkürzt sich die Zeit bis zum Angriff, und Patch-Fristen sowie Risikobewertungen müssen nachziehen.",
+   "count": 1,
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20",
+   "evidence": [
+    "https://www.heise.de/news/PwnEscape-Kritische-Luecke-in-Linux-Kernel-erlaubt-VM-Ausbruch-11492131.html"
+   ]
+  },
+  {
    "theme": "Aktive Cyberabwehr durch Bundesbehörden",
    "why": "Der Gesetzentwurf zur Stärkung der Cybersicherheit soll Bundesamt, Bundeskriminalamt und Bundespolizei aktive Abwehrmaßnahmen wie Datenlöschung und Umleitung von Datenverkehr erlauben; Fachleute warnen, dass Systeme von Unternehmen und kritischen Infrastrukturen dabei zu Zielen behördlicher Eingriffe werden könnten.",
    "count": 1,
@@ -1021,6 +1056,145 @@
   }
  ],
  "news": [
+  {
+   "title": "Update: Ahold Delhaize – Ausfälle in den Vereinigten Staaten und bis Mittel- und Südosteuropa",
+   "summary": "Ahold Delhaize bestätigt, dass der Vorfall Webseiten, Apps und Teile der Infrastruktur in den Vereinigten Staaten (unter anderem Food Lion, Giant Food, Stop & Shop, Hannaford) und in Europa (Albert Heijn, Etos, Gall & Gall sowie Gesellschaften in Mittel- und Südosteuropa) vom Netz gezwungen hat. Neu gegenüber dem bisherigen Stand sind die offizielle Bestätigung des Ausmaßes über beide Kontinente und die Aussage, dass es keine Hinweise auf den Diebstahl sensibler Daten von Kunden, Beschäftigten oder Partnern gibt. Die Filialen blieben geöffnet, der Onlinehandel in den Vereinigten Staaten soll in den kommenden Tagen wieder laufen. Gemeldet wurde der Vorfall dem nationalen Zentrum für Cybersicherheit der Niederlande und der Polizei. Es ist der zweite große Angriff auf den Konzern innerhalb von zwei Jahren.",
+   "relevance": "Ein Wettbewerber mit Gesellschaften in denselben Ländern wie REWE International zeigt, wie ein zentraler Vorfall auf Onlinehandel, Kundenkarten und Landesgesellschaften durchschlägt. Wiederanlauf- und Notfallpläne sollten zentral und mit den Ländergesellschaften gemeinsam geübt und die Lehren aus früheren Vorfällen mit klarer Verantwortung nachverfolgt werden.",
+   "source": "The Register",
+   "url": "https://www.theregister.com/security/2026/10/19/grocery-giant-ahold-delhaize-confirms-cyberattack-forced-us-and-european-systems-offline/5303970",
+   "id": "2026-10-20-ahold-delhaize-usa-europa-offline",
+   "topic": "Handel & Branche",
+   "impact": "mittel",
+   "published": "2026-10-19",
+   "tags": [
+    "Lebensmittelhandel",
+    "Notfallmanagement",
+    "Wettbewerber"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Aufrechterhaltung des Betriebs und Krisenmanagement",
+    "ISO/IEC 27001 Anhang A 5.30 – Informations- und Kommunikationstechnik-Bereitschaft für die Geschäftskontinuität"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Management"
+   ],
+   "countries": [
+    "NL",
+    "BE",
+    "RO",
+    "CZ",
+    "EU"
+   ],
+   "dossier": null,
+   "priority": 1,
+   "primary": false,
+   "added": "2026-10-20T05:08:06Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum, betroffene Marken, keine Hinweise auf Datendiebstahl, geöffnete Filialen, Onlinehandel in den Vereinigten Staaten in den kommenden Tagen, Meldung an das nationale Zentrum für Cybersicherheit und die Polizei sowie der Vorfall vom November 2024 sind in der Quelle belegt."
+   }
+  },
+  {
+   "title": "PwnEscape: Kritische Linux-Lücke lässt virtuelle Maschinen aus der Isolation ausbrechen",
+   "summary": "Die Lücke CVE-2026-99999 im Netzwerkcode des Linux-Kernels (Schweregrad 9,3 von 10) erlaubt virtuellen Maschinen auf Hosts mit der Virtualisierung Kernel-based Virtual Machine, aus ihrer Isolation auszubrechen und den Host sowie andere Maschinen zu übernehmen. Die Korrektur ist seit 8. Oktober im Kernel, Debian liefert Updates, bei Ubuntu und Red Hat standen sie zur Veröffentlichung noch aus; Hoster wie Netcup starten Hosts neu, Hetzner setzt eine vorläufige Schutzmaßnahme ein. Gefunden wurde die Lücke mit einem Modell Künstlicher Intelligenz in drei Tagen für unter 700 Dollar, Fachleute erwarten funktionierenden Angriffscode innerhalb von Wochen.",
+   "relevance": "Wer eigene Virtualisierungsplattformen oder eine Private Cloud auf Linux-Basis betreibt, braucht jetzt eine Bestandsaufnahme der betroffenen Hosts und einen Patch-Plan mit Neustartfenstern. Bei Hosting- und Cloud-Dienstleistern sollte nachgefragt werden, wie und bis wann sie die Lücke schließen.",
+   "source": "heise online",
+   "url": "https://www.heise.de/news/PwnEscape-Kritische-Luecke-in-Linux-Kernel-erlaubt-VM-Ausbruch-11492131.html",
+   "id": "2026-10-20-pwnescape-linux-vm-ausbruch",
+   "topic": "IT-Governance & Risiko",
+   "impact": "mittel",
+   "published": "2026-10-19",
+   "tags": [
+    "Virtualisierung",
+    "Schwachstelle",
+    "Cloud"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 8.8 – Handhabung technischer Schwachstellen",
+    "IT-Kontrollen der Abschlussprüfung – Änderungsmanagement"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Einkauf & Drittparteien"
+   ],
+   "countries": [],
+   "dossier": "kritische-schwachstellen-perimeter",
+   "priority": 2,
+   "primary": false,
+   "added": "2026-10-20T05:08:06Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Kennung, Schweregrad 9,3, Korrektur seit 8. Oktober, Stand bei Debian, Ubuntu und Red Hat, Vorgehen von Netcup und Hetzner, drei Tage und unter 700 Dollar sowie Angriffscode innerhalb von Wochen sind in der Quelle belegt."
+   }
+  },
+  {
+   "title": "Bullhorn: Software für Personaldienstleister nach Cyberangriff abgeschaltet",
+   "summary": "Der Anbieter Bullhorn, dessen Plattform Personal- und Zeitarbeitsdienstleister für Bewerbermanagement, Kundenbeziehungen und Abrechnung nutzen, hat den Zugang nach einem Cyberangriff gesperrt. Am Freitag, dem 16. Oktober, gab es Probleme beim Veröffentlichen von Stellenanzeigen, am 17. Oktober bestätigte das Unternehmen einen systemweiten Ausfall durch einen Cyberangriff. Die forensische Untersuchung läuft mit externer Unterstützung, ob Kundendaten abgeflossen sind, ist laut Bullhorn noch nicht geklärt.",
+   "relevance": "Personaldienstleister für Logistik und Filialen verarbeiten Bewerber- und Beschäftigtendaten oft auf solchen Plattformen, also im Bereich der Dienstleister von Dienstleistern. Drittparteienmanagement sollte bei wichtigen Personaldienstleistern die genutzten Plattformen, Meldewege und Auswirkungen auf die Personaleinsatzplanung kennen.",
+   "source": "BleepingComputer",
+   "url": "https://www.bleepingcomputer.com/news/security/bullhorn-takes-staffing-platform-offline-to-contain-cyberattack/",
+   "id": "2026-10-20-bullhorn-personalplattform-angriff",
+   "topic": "IT-Governance & Risiko",
+   "impact": "mittel",
+   "published": "2026-10-19",
+   "tags": [
+    "Drittparteien",
+    "Personaldienstleister",
+    "Beschäftigtendaten"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
+    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen"
+   ],
+   "roles": [
+    "Einkauf & Drittparteien",
+    "Datenschutz"
+   ],
+   "countries": [],
+   "dossier": "drittparteien-lieferkette",
+   "priority": 3,
+   "primary": false,
+   "added": "2026-10-20T05:08:06Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Die Quelle spricht von Problemen beim Veröffentlichen von Stellenanzeigen, nicht von Synchronisationsproblemen. Dass Teile der Plattform in Australien, Europa und den Vereinigten Staaten wieder laufen, steht nicht in der Quelle; dort heißt es, es gebe noch keinen Zeitplan für die Wiederherstellung."
+   }
+  },
+  {
+   "title": "Anonymisierung: Konsultation zu Leitlinien des Datenschutzausschusses endet am 30. Oktober",
+   "summary": "Der Europäische Datenschutzausschuss hat am 7. Juli 2026 den Entwurf der Leitlinien 02/2026 zur Anonymisierung angenommen, die Konsultation läuft bis 30. Oktober 2026. Der Entwurf ersetzt die Stellungnahme der früheren Artikel-29-Datenschutzgruppe von 2014 und beschreibt einen kontextbezogenen und einen vereinfachten Ansatz. Daten sollen nur dann als anonym gelten, wenn drei Kriterien erfüllt sind: kein Herausgreifen einzelner Datensätze, keine Verknüpfung und keine Rückschlüsse.",
+   "relevance": "Für Kundenkartendaten, Absatzprognosen, Analysen und Trainingsdaten für Künstliche Intelligenz entscheidet die Einstufung als anonym darüber, ob die Datenschutz-Grundverordnung gilt. Datenschutz und Datenverantwortliche sollten bestehende Anonymisierungsverfahren schon jetzt gegen die drei Kriterien prüfen.",
+   "source": "Stiftung Datenschutz",
+   "url": "https://stiftungdatenschutz.org/veroeffentlichungen/datenschutzwoche/detailansicht/datenschutzwoche-vom-19-oktober-2026-741",
+   "id": "2026-10-20-edpb-anonymisierung-konsultation",
+   "topic": "Datenschutz & Datenrecht",
+   "impact": "mittel",
+   "published": "2026-10-19",
+   "tags": [
+    "Anonymisierung",
+    "Leitlinien",
+    "Konsultation"
+   ],
+   "controls": [
+    "DSGVO Art. 4 Nr. 1 und Erwägungsgrund 26 – Personenbezug und Anonymität",
+    "DSGVO Art. 25 – Datenschutz durch Technikgestaltung"
+   ],
+   "roles": [
+    "Datenschutz"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": null,
+   "priority": 4,
+   "primary": false,
+   "added": "2026-10-20T05:08:06Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Die angegebene Quelle belegt nur das Ende der Konsultation am 30. Oktober 2026. Annahme am 7. Juli 2026, Ersatz der Stellungnahme von 2014, die zwei Ansätze und die drei Kriterien sind durch die Seite des Europäischen Datenschutzausschusses und durch mehrere Fachberichte belegt."
+   }
+  },
   {
    "title": "Update: Kühlsteuerungen – Versicherer könnten wegen grober Fahrlässigkeit kürzen",
    "summary": "Nach den Angriffen auf Kühlanlagen in rund 700 französischen Supermärkten geht es jetzt darum, wer für die Schäden zahlt. Laut Versicherungswirtschaft heute könnten Cyberversicherer Leistungen verweigern oder kürzen. Sie können sich auf grobe Fahrlässigkeit und verletzte Obliegenheiten berufen und, falls staatliche Täter bestätigt werden, auf Kriegsausschlüsse. Als Schwachstellen nennt der Bericht Anlagen ohne Firewall direkt am Internet, Standardpasswörter und veraltete Hardware. Coopérative U schätzt die Schäden auf bis zu 200.000 Euro pro Hypermarkt.",
@@ -1163,6 +1337,41 @@
    "check": {
     "verdict": "ok",
     "note": "Datum 17. Oktober 2026 und alle Angaben belegt: Lieferstopp bis mindestens Dienstag, keine Online-Bestellungen, Bonus-Aktionen und persönliche Rabatte nicht verfügbar, Kundenservice nicht erreichbar, Filialen werden mehrmals täglich beliefert, bisher keine Hinweise auf gestohlene Daten…"
+   }
+  },
+  {
+   "title": "Burger King Japan: 11,18 Millionen Datensätze aus Mitgliederprogramm abgeflossen",
+   "summary": "Burger King Japan meldet, dass Unbefugte zwischen dem 2. und 7. Oktober 2026 auf einen Server mit Daten von Nutzern der offiziellen App zugegriffen haben. Betroffen sind rund 11,18 Millionen Datensätze mit Namen, Geburtsdaten, Geschlecht, E-Mail-Adressen, Telefonnummern und Bestellverläufen, Kreditkartennummern waren laut Unternehmen nicht gespeichert. Wie die Angreifer eingedrungen sind, wird noch mit externen Fachleuten untersucht.",
+   "relevance": "Mitglieder- und Kundenkartenprogramme bündeln große Mengen personenbezogener Daten und sind ein attraktives Ziel. Datensparsamkeit, Zugriffsüberwachung und Löschkonzepte für Programme mit App sollten regelmäßig geprüft werden.",
+   "source": "BleepingComputer",
+   "url": "https://www.bleepingcomputer.com/news/security/burger-king-japan-data-breach-exposes-11-million-customer-records/",
+   "id": "2026-10-20-burger-king-japan-mitgliederdaten",
+   "topic": "Handel & Branche",
+   "impact": "info",
+   "published": "2026-10-16",
+   "tags": [
+    "Kundenprogramm",
+    "Datenabfluss",
+    "Japan"
+   ],
+   "controls": [
+    "DSGVO Art. 5 Abs. 1 lit. c – Datenminimierung",
+    "ISO/IEC 27001 Anhang A 8.16 – Überwachung von Aktivitäten"
+   ],
+   "roles": [
+    "Datenschutz",
+    "IT-Risiko"
+   ],
+   "countries": [
+    "JP"
+   ],
+   "dossier": null,
+   "priority": 7,
+   "primary": false,
+   "added": "2026-10-20T05:08:06Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Der Artikel erschien am 16. Oktober 2026, nicht am 19. Oktober. Mitgliedsnummern werden in der Quelle nicht genannt, stattdessen Bestellverläufe."
    }
   },
   {
@@ -1485,6 +1694,76 @@
    "check": {
     "verdict": "abweichung",
     "note": "Inhalt stimmt (Lückenkennung, Mitte September, Version 26.4.303 seit 11. September, Deaktivieren reicht nicht, nicht betroffene Installationen). Der Artikel erschien am 15. Oktober 2026; am 14. Oktober wurde nur die Sicherheitsmeldung veröffentlicht."
+   }
+  },
+  {
+   "title": "Landgericht Traunstein: Erfolgreicher Cyberangriff bedeutet nicht automatisch Haftung",
+   "summary": "Nach einem Urteil des Landgerichts Traunstein vom 17. Juli 2026, über das am 14. Oktober berichtet wurde, löst ein erfolgreicher Cyberangriff nicht automatisch eine Haftung des Unternehmens aus. Ob technische und organisatorische Maßnahmen angemessen waren, ist aus der Sicht vor dem Vorfall und am Risiko gemessen zu beurteilen. Schadensersatz nach Artikel 82 der Datenschutz-Grundverordnung setzt einen konkreten Schaden voraus, der ursächlich auf einen Verstoß zurückgeht.",
+   "relevance": "Das Urteil stärkt die Position von Unternehmen, die ihre Risikoanalysen und Schutzmaßnahmen nachvollziehbar dokumentiert haben. Für Massenklagen nach Datenabflüssen wird die Dokumentation vor dem Vorfall zum zentralen Beweismittel.",
+   "source": "Dr. Datenschutz",
+   "url": "https://www.dr-datenschutz.de/dr-datenschutz-shortnews-im-oktober-2026-kw42/",
+   "id": "2026-10-20-lg-traunstein-cyberangriff-haftung",
+   "topic": "Datenschutz & Datenrecht",
+   "impact": "mittel",
+   "published": "2026-10-14",
+   "tags": [
+    "Rechtsprechung",
+    "Schadensersatz",
+    "Dokumentation"
+   ],
+   "controls": [
+    "DSGVO Art. 32 – Sicherheit der Verarbeitung",
+    "DSGVO Art. 82 – Haftung und Recht auf Schadenersatz"
+   ],
+   "roles": [
+    "Datenschutz",
+    "IT-Risiko"
+   ],
+   "countries": [
+    "DE"
+   ],
+   "dossier": null,
+   "priority": 5,
+   "primary": false,
+   "added": "2026-10-20T05:08:06Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Urteil vom 17. Juli 2026 (Aktenzeichen 9 O 1560/24), Beurteilung aus der Sicht vor dem Vorfall und Voraussetzungen für Schadensersatz nach Artikel 82 sind belegt. Der Beitrag erschien am 14. Oktober 2026."
+   }
+  },
+  {
+   "title": "Datenschutzaufsicht warnt: Häufung von Datenpannen in Hotellerie und Tourismus",
+   "summary": "Der Thüringer Landesbeauftragte für den Datenschutz meldet eine massive Häufung von Meldungen über Datenpannen und von Verbraucherbeschwerden in Hotellerie und Tourismus nach einem großflächigen Cyberangriff auf Softwaredienstleister für Hotels und auf Buchungsportale. Dabei wurden Stammdaten, Buchungsdaten und Zahlungsdaten von Gästen erbeutet. Mit den echten Daten verschicken Betrüger E-Mails und Kurznachrichten mit falschen Forderungen oder angeblichen Buchungsfehlern, um Zahlungen oder Zugangsdaten zu erschleichen.",
+   "relevance": "Für einen Touristikkonzern mit vielen Hotel- und Buchungspartnern ist das ein Hinweis auf Phishing gegen Kunden mit echten Buchungsdaten. Kundenkommunikation, Betrugserkennung und die Kontrolle von Auftragsverarbeitern in der Buchungskette gehören auf die Agenda.",
+   "source": "Thüringer Landesbeauftragter für den Datenschutz und die Informationsfreiheit",
+   "url": "https://tlfdi.de/fileadmin/tlfdi/presse/Pressemitteilungen_2026/2026-10-14_PM_TLfDI_Sensibilisierung_Hotellerie_u_Tourismus.pdf",
+   "id": "2026-10-20-datenschutzaufsicht-touristik-datenpannen",
+   "topic": "Datenschutz & Datenrecht",
+   "impact": "mittel",
+   "published": "2026-10-14",
+   "tags": [
+    "Touristik",
+    "Phishing",
+    "Auftragsverarbeitung"
+   ],
+   "controls": [
+    "DSGVO Art. 28 – Auftragsverarbeiter",
+    "DSGVO Art. 33 und 34 – Meldung und Benachrichtigung bei Datenschutzverletzungen"
+   ],
+   "roles": [
+    "Datenschutz",
+    "Einkauf & Drittparteien"
+   ],
+   "countries": [
+    "DE"
+   ],
+   "dossier": "drittparteien-lieferkette",
+   "priority": 6,
+   "primary": false,
+   "added": "2026-10-20T05:08:06Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Die Pressemitteilung nennt weder Behörden anderer Länder (Mecklenburg-Vorpommern, Nordrhein-Westfalen, Niedersachsen, Bremen) noch die Aussage zur Verantwortung bei Auftragsverarbeitern. Laut Quelle richtete sich der Angriff gegen Softwaredienstleister für Hotels und gegen Buchungsportale, nicht…"
    }
   },
   {

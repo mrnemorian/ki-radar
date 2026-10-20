@@ -1,0 +1,193 @@
+{
+ "format": "tag",
+ "chapters": [
+  {
+   "title": "Begrüßung",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Guten Morgen, liebe IT-GRC-Kolleginnen und -Kollegen, willkommen beim IT-GRC Radar am Dienstag, dem zwanzigsten Oktober 2026."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Guten Morgen. Dienstag klingt harmlos, aber ich habe schon gesehen, was heute auf dem Zettel steht."
+    }
+   ]
+  },
+  {
+   "title": "Ahold Delhaize",
+   "news_id": "2026-10-20-ahold-delhaize-usa-europa-offline",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Da gibt es Neues zu Ahold Delhaize. Der Konzern bestätigt jetzt offiziell, dass Webseiten, Apps und Teile der Infrastruktur in den Vereinigten Staaten und in Europa offline waren, auch bei den Gesellschaften in Mittel- und Südosteuropa."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Das ist für uns der spannende Teil. Man sieht hier, wie ein zentraler Vorfall bis in die Landesgesellschaften durchschlägt. Die Filialen blieben offen, der Onlinehandel in den Vereinigten Staaten soll aber erst in den kommenden Tagen wieder laufen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Moment, sind denn Daten abgeflossen?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Laut Konzern gibt es keine Hinweise auf den Diebstahl sensibler Daten von Kunden, Beschäftigten oder Partnern. Bemerkenswerter finde ich etwas anderes: Das ist der zweite große Angriff in zwei Jahren. Da fragt ein Aufsichtsrat zu Recht, was aus den Lehren vom letzten Mal geworden ist."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Also die klassische Frage: Wer ist eigentlich [en]Owner[/en] der [en]Lessons Learned[/en]?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Genau die. Und für die Notfallplanung heißt das: Den Wiederanlauf nicht nur in der Zentrale üben, sondern zusammen mit den Ländergesellschaften."
+    }
+   ]
+  },
+  {
+   "title": "PwnEscape",
+   "news_id": "2026-10-20-pwnescape-linux-vm-ausbruch",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Zweites Thema, etwas technischer. Über eine Lücke im Linux-Kernel namens PwnEscape können virtuelle Maschinen aus ihrer Isolation ausbrechen. Schweregrad 9,3 von 10."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Das betrifft Virtualisierungs-[en]Hosts[/en] auf Linux-Basis. Wer eine eigene [en]Private Cloud[/en] betreibt, sollte das jetzt einplanen. Debian hat Updates, bei Ubuntu und Red Hat standen sie zur Veröffentlichung noch aus."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und wo ist der Haken?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Gefunden wurde die Lücke mit einem Modell Künstlicher Intelligenz, in drei Tagen, für unter 700 Dollar. Fachleute erwarten funktionierende Angriffe innerhalb von Wochen. Das [en]Patch[/en]-Fenster ist also bald kürzer als die Sitzung, in der wir es festlegen."
+    }
+   ]
+  },
+  {
+   "title": "Bullhorn",
+   "news_id": "2026-10-20-bullhorn-personalplattform-angriff",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Dann Drittparteien. Bullhorn, eine Software für Personaldienstleister, hat die Plattform nach einem Cyberangriff abgeschaltet."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Klingt weit weg, ist es aber nicht. Zeitarbeitsfirmen in Logistik und Filialen arbeiten oft mit solchen Systemen. Ob Kundendaten abgeflossen sind, ist laut Bullhorn noch nicht geklärt."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Also wieder der Dienstleister des Dienstleisters."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Genau, die vierte Spalte in der Excel-Liste, die keiner pflegt. Ich würde bei den großen Personaldienstleistern nachfragen, welche Plattform sie eigentlich nutzen."
+    }
+   ]
+  },
+  {
+   "title": "Anonymisierung",
+   "news_id": "2026-10-20-edpb-anonymisierung-konsultation",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Eine Frist für die Datenschutzleute: Bis zum dreißigsten Oktober läuft die Konsultation des Europäischen Datenschutzausschusses zu Leitlinien über Anonymisierung."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Der Entwurf nennt drei Kriterien: Man darf keine einzelnen Datensätze herausgreifen, nichts verknüpfen und keine Rückschlüsse ziehen können. Für Kundenkartendaten, Absatzprognosen oder Trainingsdaten ist das zentral, denn was nicht anonym ist, fällt weiter unter die Datenschutz-Grundverordnung."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Heißt das, manches, was bei uns als anonym gilt, ist es gar nicht?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Das sollte man zumindest prüfen, solange die Leitlinien noch nicht final sind."
+    }
+   ]
+  },
+  {
+   "title": "Urteil zur Haftung",
+   "news_id": "2026-10-20-lg-traunstein-cyberangriff-haftung",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Aus der Rechtsprechung: Laut Landgericht Traunstein führt ein erfolgreicher Cyberangriff nicht automatisch zur Haftung."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Entscheidend ist, ob die Maßnahmen vorher angemessen waren, gemessen am Risiko. Und für Schadensersatz braucht es einen konkreten Schaden. Wer die Risikoanalyse von damals nicht mehr findet, hat dann allerdings ein Problem."
+    }
+   ]
+  },
+  {
+   "title": "Touristik",
+   "news_id": "2026-10-20-datenschutzaufsicht-touristik-datenpannen",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Für die Touristik: Der Thüringer Landesdatenschutzbeauftragte meldet eine massive Häufung von Datenpannen in Hotellerie und Tourismus."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Auslöser ist ein Angriff auf Softwaredienstleister für Hotels und auf Buchungsportale, und mit den echten Buchungsdaten läuft jetzt [en]Phishing[/en] gegen Gäste. Wer seine Buchungssoftware an einen Dienstleister ausgelagert hat, sollte trotzdem nicht glauben, dass das Thema damit beim Dienstleister liegt."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Die Arbeit kann man also auslagern, die Verantwortung nicht."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Den Satz drucken wir auf die nächste Lieferantenbewertung."
+    }
+   ]
+  },
+  {
+   "title": "Burger King Japan",
+   "news_id": "2026-10-20-burger-king-japan-mitgliederdaten",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Kurz noch: Burger King Japan meldet 11,18 Millionen betroffene Datensätze aus dem Mitgliederprogramm der App."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Betroffen sind Namen, Kontaktdaten und Geburtsdaten, Kreditkarten nicht. Wie die Angreifer hineingekommen sind, ist offen. Für jedes Kundenprogramm ist das eine Erinnerung, wie viel ein Mitgliedersystem über Menschen verrät."
+    }
+   ]
+  },
+  {
+   "title": "Auf dem Radar",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Und was hast du auf dem Radar?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Schwachstellensuche mit Künstlicher Intelligenz. Wie vorhin bei PwnEscape gesehen, ist das Finden kritischer Lücken billig geworden. Das wird unsere Patch-Fristen und Risikobewertungen verändern, ob wir wollen oder nicht."
+    }
+   ]
+  },
+  {
+   "title": "Abschied",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Das war es für heute. Alle Quellen findet ihr wie immer auf der Webseite."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Bis morgen, und schaut ruhig mal bei euren Virtualisierungs-[en]Hosts[/en] vorbei."
+    }
+   ]
+  }
+ ]
+}

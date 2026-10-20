@@ -1,11 +1,17 @@
 {
  "last_run": {
-  "start": "2026-10-19T07:00:02+02:00",
-  "end": "2026-10-19T07:06:09+02:00",
+  "start": "2026-10-20T07:00:01+02:00",
+  "end": "2026-10-20T07:08:07+02:00",
   "ok": true,
-  "summary": "5 neue Meldungen: P1 ConnectWise: Gekaperte Backup-Anwendung öffnet Microsoft-365-Umgebungen von Kunden; P2 E-Rechnung: Finanzministerium ergänzt Regeln kurz vor der Ausstellungspflicht 2027; P3 Upd"
+  "summary": "7 neue Meldungen: P1 Update: Ahold Delhaize – Ausfälle in den Vereinigten Staaten und bis Mittel- und Südosteuropa; P2 PwnEscape: Kritische Linux-Lücke lässt virtuelle Maschinen aus der Isolatio"
  },
  "history": [
+  {
+   "start": "2026-10-20T07:00:01+02:00",
+   "end": "2026-10-20T07:08:07+02:00",
+   "ok": true,
+   "summary": "7 neue Meldungen: P1 Update: Ahold Delhaize – Ausfälle in den Vereinigten Staaten und bis Mittel- und Südosteuropa; P2 PwnEscape: Kritische Linux-Lücke lässt virtuelle Maschinen aus der Isolatio"
+  },
   {
    "start": "2026-10-19T07:00:02+02:00",
    "end": "2026-10-19T07:06:09+02:00",
