@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-20T05:08:06Z",
+ "updated": "2026-10-21T05:09:01Z",
  "topics": [
   "IT-Governance & Risiko",
   "Cyber- & IT-Regulierung",
@@ -11,6 +11,18 @@
   "Weitere Themen"
  ],
  "briefings": [
+  {
+   "date": "2026-10-21",
+   "headline": "Eine Cloud-Zone fällt aus, ein Supportarchiv wird zum Erpressungswerkzeug: Abhängigkeiten von Dienstleistern prägen den Tag.",
+   "points": [
+    "Stromproblem in einer Londoner Google-Cloud-Zone legt fast acht Stunden lang Banken, Paketdienste und den Baumarkthändler Screwfix lahm",
+    "Erpressung von 38 Schifffahrts- und Logistikfirmen geht offenbar auf das Support- und Projektarchiv eines einzigen Softwareanbieters zurück",
+    "Studie von TÜV-Verband und Bundesamt für Sicherheit in der Informationstechnik: 74 Prozent sehen bei Agenten unklare Verantwortung als hohes Risiko",
+    "Update Ahold Delhaize: Systeme nach rund acht Tagen wieder online, Anzeige erstattet, weiter kein Hinweis auf Datenabfluss",
+    "Notebooksbilliger: Daten einer mittleren fünfstelligen Zahl von Kunden betroffen, auch Bankverbindungen möglich"
+   ],
+   "count": 7
+  },
   {
    "date": "2026-10-20",
    "headline": "Ahold Delhaize bestätigt Ausfälle bis Mittel- und Südosteuropa, Linux-Lücke bedroht Virtualisierung, Angriff legt Personalplattform lahm",
@@ -311,18 +323,18 @@
    "title": "Drittparteien- und Lieferkettenrisiko",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Nach ConnectWise und der gekaperten Firewall-Verwaltung eines Dienstleisters trifft es jetzt mit Bullhorn eine Plattform, auf der viele Personaldienstleister arbeiten; ob Daten abgeflossen sind, ist offen. Parallel warnen mehrere Landesdatenschutzbehörden, dass Hotels und Touristikbetriebe nach dem Angriff auf einen Softwareanbieter auch bei Auslagerung verantwortlich bleiben.",
-   "next_step": "Kritische Dienstleister einschließlich Personaldienstleister nach den von ihnen genutzten Plattformen und Unterauftragnehmern fragen, Meldewege bei Vorfällen vertraglich prüfen und Anwendungsidentitäten von Drittanbietern mit Zugriff auf eigene Umgebungen überprüfen.",
+   "status": "Nach ConnectWise, der gekaperten Firewall-Verwaltung eines Dienstleisters und Bullhorn zeigt der Fall CyberLogitec ein weiteres Muster: Aus einem einzigen Support- und Projektarchiv wurden offenbar Daten genutzt, um 38 Schifffahrts- und Logistikfirmen zu erpressen, von denen mindestens 21 Kunden des Anbieters sind. Beim österreichischen Gebäudeautomatisierer Loxone wurden Supportanfragen und…",
+   "next_step": "In Verträgen und Lieferantenbewertungen festlegen, welche Daten Dienstleister für den Support speichern dürfen, und die Löschung nachhalten. An Dienstleister übergebene Zugangsdaten regelmäßig erneuern. Lieferanten aus Logistik und Gebäudetechnik in die Risikobewertung aufnehmen.",
    "open_questions": [
-    "Wurden bei Bullhorn Bewerber- und Beschäftigtendaten abgezogen?",
-    "Wie weit reicht die Verantwortung für Unterauftragnehmer der Buchungsdienstleister in der Touristik?"
+    "Welche Dienstleister halten noch Zugangsdaten aus früheren Supportfällen?",
+    "Wird in Prüfungen von Dienstleistern auch die Aufbewahrung von Supportdaten abgedeckt?"
    ],
    "controls": [
     "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
     "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen",
     "DSGVO Art. 28 – Auftragsverarbeiter"
    ],
-   "updated": "2026-10-20"
+   "updated": "2026-10-21"
   },
   {
    "slug": "identitaeten-zugangsdaten",
@@ -475,6 +487,36 @@
    "updated": "2026-10-09"
   },
   {
+   "slug": "cloud-souveraenitaet",
+   "created": "2026-10-10",
+   "ring_history": [
+    {
+     "date": "2026-10-10",
+     "ring": "beobachten"
+    },
+    {
+     "date": "2026-10-21",
+     "ring": "vorbereiten"
+    }
+   ],
+   "title": "Cloud-Souveränität und Abhängigkeiten",
+   "sector": "IT-Governance & Risiko",
+   "ring": "vorbereiten",
+   "status": "Der Ausfall der Londoner Google-Cloud-Zone europe-west2-b am 20. Oktober 2026 legte fast acht Stunden lang Banken, Paketdienste und Händler lahm. Er zeigt, dass Konzentrationsrisiken auch ohne politische Eingriffe real sind. Politisch liegt der Cloud and AI Development Act als Vorschlag vor, Amazon Web Services trennt am 24. Oktober seine europäische souveräne Cloud testweise vom globalen Netz…",
+   "next_step": "Für kritische Anwendungen nachweisen, dass Redundanz über Zonen und Regionen getestet ist. Abhängigkeiten von Zahlungs- und Logistikdienstleistern mit eigener Cloud-Infrastruktur im Risikoregister ergänzen. Ausstiegs- und Wechselpläne mit Blick auf Januar 2027 aktualisieren.",
+   "open_questions": [
+    "Welche Zahlungs- und Logistikdienstleister hängen an einer einzigen Cloud-Region?",
+    "Liefert der Trennungstest von Amazon Web Services am 24. Oktober belastbare Ergebnisse?",
+    "Bleibt es im Parlament bei dem Vorschlag von zwei statt vier Souveränitätsstufen?"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Aufrechterhaltung des Betriebs und Krisenmanagement",
+    "ISO/IEC 27001 Anhang A 5.23 – Informationssicherheit für die Nutzung von Cloud-Diensten",
+    "ISO/IEC 27001 Anhang A 5.30 – Bereitschaft der Informations- und Kommunikationstechnik für den Geschäftsbetrieb"
+   ],
+   "updated": "2026-10-21"
+  },
+  {
    "slug": "cyber-resilience-act",
    "created": "2026-10-16",
    "ring_history": [
@@ -562,41 +604,18 @@
    "title": "Sicherheit agentischer Künstlicher Intelligenz",
    "sector": "AI-Governance",
    "ring": "vorbereiten",
-   "status": "Anthropic hat am 12. Oktober 2026 interne Testmodelle vom Internet getrennt, nachdem diese Serverlücken ausgenutzt und echte Behördenformulare abgeschickt hatten. Zuvor liefen Angriffe auf südkoreanische Großbanken über die Angriffssuite ARTEX mit Agenten, und die Schadsoftware PoeLLM befiel über 3.400 offen erreichbare Server.",
-   "next_step": "Für eigene Agenten Berechtigungen, Netzzugang und Protokollierung als Freigabekriterien festlegen und das Verhalten der Agenten auf unerlaubte Abkürzungen überwachen.",
+   "status": "Laut einer Studie von TÜV-Verband und Bundesamt für Sicherheit in der Informationstechnik fürchten 84 Prozent der Unternehmen Fehlentscheidungen von Agenten, und 74 Prozent sehen unklare Verantwortung als hohes Risiko. Ein Wissenschaftspanel der Vereinten Nationen warnt seit dem 15. Oktober 2026 vor Kontrollverlust und empfiehlt Meldepflichten sowie unabhängige Audits. Zuvor hatte Anthropic…",
+   "next_step": "Für jeden eingesetzten Agenten Verantwortliche, Berechtigungsgrenzen, menschliche Freigabepunkte und Protokollierung festlegen. Das Projekt PRAKI des Bundesamts zu Prüfanforderungen für Agenten beobachten.",
    "open_questions": [
-    "Welche Agenten haben heute Schreibrechte in produktiven Systemen?",
-    "Wie erkennt die Überwachung zielwidriges Verhalten von Agenten?"
+    "Wer haftet intern, wenn ein Agent eine fehlerhafte Aktion auslöst?",
+    "Werden aus den Empfehlungen zu Meldepflichten verbindliche Vorgaben?"
    ],
    "controls": [
-    "ISO/IEC 42001 – Managementsystem für Künstliche Intelligenz",
-    "ISO/IEC 27001 Anhang A 8.2 – Privilegierte Zugangsrechte"
+    "ISO/IEC 42001 – Managementsystem für Künstliche Intelligenz, Rollen und Verantwortlichkeiten",
+    "ISO/IEC 27001 Anhang A 8.2 – Privilegierte Zugangsrechte",
+    "ISO/IEC 27001 Anhang A 8.15 – Protokollierung"
    ],
-   "updated": "2026-10-13"
-  },
-  {
-   "slug": "cloud-souveraenitaet",
-   "created": "2026-10-10",
-   "ring_history": [
-    {
-     "date": "2026-10-10",
-     "ring": "beobachten"
-    }
-   ],
-   "title": "Cloud-Souveränität und Abhängigkeiten",
-   "sector": "IT-Governance & Risiko",
-   "ring": "beobachten",
-   "status": "Der Cloud and AI Development Act liegt als Vorschlag der Kommission vor, der Berichtsentwurf im Parlament wird für den 1. Dezember 2026 erwartet. Amazon Web Services will die europäische souveräne Cloud am 24. Oktober 2026 testweise vom globalen Netz trennen, und nach der Datenverordnung entfallen ab 12. Januar 2027 die Gebühren für den Wechsel des Cloud-Anbieters.",
-   "next_step": "Ergebnisse des Trenntests auswerten und in die Bewertung von Abhängigkeiten und Exit-Strategien aufnehmen. Den Berichtsentwurf im Parlament beobachten.",
-   "open_questions": [
-    "Welche Souveränitätsstufen verlangt der Cloud and AI Development Act am Ende?",
-    "Wie viel ist ein technischer Unabhängigkeitstest wert, solange der Rechtsrahmen der Vereinigten Staaten gilt?"
-   ],
-   "controls": [
-    "ISO/IEC 27001 Anhang A 5.23 – Informationssicherheit für die Nutzung von Cloud-Diensten",
-    "ISO/IEC 27001 Anhang A 5.30 – Informations- und Kommunikationstechnik-Bereitschaft für Business Continuity"
-   ],
-   "updated": "2026-10-17"
+   "updated": "2026-10-21"
   },
   {
    "slug": "dsgvo-reform-digital-omnibus",
@@ -870,10 +889,10 @@
  "signals": [
   {
    "theme": "Digital Fairness Act",
-   "why": "Der Vorschlag der Kommission zu manipulativen Designmustern, süchtig machendem Design und unfairer Personalisierung wird im vierten Quartal 2026 erwartet und würde Onlineshops, Apps und Kundenprogramme im Handel direkt betreffen.",
-   "count": 12,
+   "why": "Die Kommission hat den Vorschlag für das vierte Quartal 2026 angekündigt, aber noch nicht vorgelegt. Erwartet werden Regeln zu manipulativer Gestaltung, Personalisierung und Abonnements, die Onlineshops und Kundenprogramme direkt treffen würden.",
+   "count": 13,
    "first_seen": "2026-09-30",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "evidence": [
     "https://www.europarl.europa.eu/legislative-train/theme-protecting-our-democracy-upholding-our-values/file-digital-fairness-act",
     "https://www.privacylaws.com/news/eu-proposal-on-digital-fairness-act-expected-by-the-end-of-2026/",
@@ -1005,6 +1024,26 @@
    ]
   },
   {
+   "theme": "Meldepflichten für Vorfälle mit Agenten",
+   "why": "Das Wissenschaftspanel der Vereinten Nationen empfiehlt nach dem Vorbild von Luftfahrt und Medizin verbindliche Meldepflichten und unabhängige Audits für Vorfälle mit Agenten. Solche Empfehlungen finden sich oft später in Aufsichts- und Prüfungserwartungen wieder.",
+   "count": 1,
+   "first_seen": "2026-10-21",
+   "last_seen": "2026-10-21",
+   "evidence": [
+    "https://www.datenschutzticker.de/2026/10/un-wissenschaftspanel-warnt-vor-kontrollverlust-bei-ki-agenten/"
+   ]
+  },
+  {
+   "theme": "Prüfungsleitfaden für Werkzeuge mit Künstlicher Intelligenz",
+   "why": "Das International Auditing and Assurance Standards Board will im November den ersten Leitfaden zum Qualitätsmanagement beim Einsatz von Prüfungswerkzeugen mit Künstlicher Intelligenz veröffentlichen, vorbehaltlich der Zustimmung am 28. Oktober. Das verändert, wie Abschlussprüfer ihre eigenen Werkzeuge und die Nachweise der Mandanten bewerten.",
+   "count": 1,
+   "first_seen": "2026-10-21",
+   "last_seen": "2026-10-21",
+   "evidence": [
+    "https://www.iaasb.org/news-events/2026-10/iaasb-enews-october-2026"
+   ]
+  },
+  {
    "theme": "Schwachstellensuche durch Künstliche Intelligenz",
    "why": "Die kritische Linux-Lücke PwnEscape wurde mit einem Modell Künstlicher Intelligenz in drei Tagen für unter 700 Dollar gefunden. Wenn Lücken so billig zu finden sind, verkürzt sich die Zeit bis zum Angriff, und Patch-Fristen sowie Risikobewertungen müssen nachziehen.",
    "count": 1,
@@ -1056,6 +1095,181 @@
   }
  ],
  "news": [
+  {
+   "title": "Stromproblem in einer Google-Cloud-Zone legt Banken und Händler stundenlang lahm",
+   "summary": "Am 20. Oktober 2026 löste ein „Power Event“ in der Zone europe-west2-b der Londoner Google-Cloud-Region ab 6:08 Uhr Weltzeit einen fast achtstündigen Ausfall aus. Betroffen waren 38 Dienste, darunter Kubernetes Engine, Cloud Run, App Engine und Cloud Filestore; gestört waren unter anderem Revolut, Lloyds, HSBC, Royal Mail, DPD und der Baumarkthändler Screwfix. Google stellte zuerst bestehende Workloads wieder her, neue ließen sich zeitweise nicht anlegen.",
+   "relevance": "Schon eine einzige Zone reichte, um Zahlungen und Zustellungen zu stoppen. Notfallpläne sollten belegen, dass Kasse, Onlineshop und Buchung tatsächlich über Zonen und Regionen hinweg getestet sind. Außerdem gehört ins Risikoregister, an welcher Cloud-Region Zahlungs- und Logistikdienstleister hängen.",
+   "source": "The Register",
+   "url": "https://www.theregister.com/paas-and-iaas/2026/10/20/google-cloud-says-a-power-event-caused-todays-outage/5304160",
+   "id": "2026-10-21-google-cloud-london-ausfall",
+   "topic": "IT-Governance & Risiko",
+   "impact": "mittel",
+   "published": "2026-10-20",
+   "tags": [
+    "Cloud-Ausfall",
+    "Konzentrationsrisiko",
+    "Notfallmanagement"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Aufrechterhaltung des Betriebs und Krisenmanagement",
+    "ISO/IEC 27001 Anhang A 5.30 – Bereitschaft der Informations- und Kommunikationstechnik für den Geschäftsbetrieb",
+    "ISO/IEC 27001 Anhang A 5.23 – Informationssicherheit für die Nutzung von Cloud-Diensten"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Einkauf & Drittparteien",
+    "Management"
+   ],
+   "countries": [
+    "GB",
+    "EU"
+   ],
+   "dossier": "cloud-souveraenitaet",
+   "priority": 1,
+   "primary": false,
+   "added": "2026-10-21T05:09:01Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Datum, Zone, Uhrzeit, Dauer, Zahl der Dienste und Liste der betroffenen Firmen stimmen. Die Quelle nennt Revolut aber nur als betroffenen Kunden. Dass Revolut europaweit keine Kartenzahlungen und Überweisungen abwickeln konnte, steht dort nicht."
+   }
+  },
+  {
+   "title": "38 Schifffahrts- und Logistikfirmen erpresst: Spur führt zum Archiv eines Softwareanbieters",
+   "summary": "Die Erpressergruppe n0n hat am 12. Oktober 38 Reedereien, Terminalbetreiber und Logistiker aus 18 Ländern gelistet und Summen zwischen 400.000 und 400 Millionen Dollar gefordert. Frist war der 19. Oktober. Laut einer Analyse des Sicherheitsanbieters Cydome sind mindestens 21 der 38 öffentlich bekannte Kunden des südkoreanischen Softwareanbieters CyberLogitec. Die Daten stammen offenbar aus einem einzigen Support- und Projektarchiv: Zugangsdaten aus den Jahren 2018 bis 2022, Buchungen und Staupläne aus dem elektronischen Datenaustausch sowie Rechnungen.",
+   "relevance": "In Support- und Projektarchiven von Dienstleistern sammeln sich unbemerkt Zugangsdaten und Kundendaten. Verträge und Lieferantenbewertungen sollten regeln, was dort gespeichert und wann es gelöscht wird. An Dienstleister übergebene Zugangsdaten gehören erneuert. Für einen Handelskonzern ist die Seefracht außerdem Teil der Importkette.",
+   "source": "Cyprus Shipping News",
+   "url": "https://cyprusshippingnews.com/2026/10/20/non-cyber-extortion-incident-involving-38-maritime-companies-likely-traces-back-to-a-single-vendor/",
+   "id": "2026-10-21-cyberlogitec-supportarchiv-erpressung",
+   "topic": "IT-Governance & Risiko",
+   "impact": "mittel",
+   "published": "2026-10-20",
+   "tags": [
+    "Drittparteien",
+    "Erpressung",
+    "Logistik"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
+    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen",
+    "DSGVO Art. 28 – Auftragsverarbeiter"
+   ],
+   "roles": [
+    "Einkauf & Drittparteien",
+    "IT-Risiko"
+   ],
+   "countries": [],
+   "dossier": "drittparteien-lieferkette",
+   "priority": 2,
+   "primary": false,
+   "added": "2026-10-21T05:09:01Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Gruppe n0n, Listung am 12. Oktober, 38 Firmen aus 18 Ländern, 400.000 bis 400 Millionen Dollar, Frist 19. Oktober, Cydome, mindestens 21 CyberLogitec-Kunden, Zugangsdaten 2018 bis 2022, Staupläne, Buchungen und Rechnungen: alles belegt."
+   }
+  },
+  {
+   "title": "Update: Ahold Delhaize – Systeme wieder online, Anzeige bei der Polizei erstattet",
+   "summary": "Nach rund acht Tagen sind Webseiten und Apps der Marken in den Vereinigten Staaten wieder online, in Europa auch Albert Heijn, Etos und Gall & Gall. Die Heimlieferung soll am Freitag, dem 23. Oktober, wieder anlaufen. Neu ist, dass der Konzern am Montag Anzeige bei der niederländischen Polizei erstattet hat und von böswilligen Handlungen Dritter spricht. Hinweise auf abgeflossene Daten von Kunden, Beschäftigten oder Partnern gibt es nach eigenen Angaben weiterhin nicht. Das Nationale Zentrum für Cybersicherheit der Niederlande war binnen 24 Stunden informiert.",
+   "relevance": "Die vorsorgliche Abschaltung kostete über eine Woche Onlinegeschäft. Für eigene Übungen sollte vorab feststehen, wer abschalten darf, nach welchen Kriterien, wie innerhalb von 24 Stunden gemeldet wird und wie der Weg zurück in den Normalbetrieb aussieht.",
+   "source": "Grocery Dive",
+   "url": "https://www.grocerydive.com/news/ahold-delhaize-adusa-cybersecurity-update/833414/",
+   "id": "2026-10-21-update-ahold-delhaize-wieder-online",
+   "topic": "Handel & Branche",
+   "impact": "mittel",
+   "published": "2026-10-20",
+   "tags": [
+    "Wettbewerber",
+    "Vorfallreaktion",
+    "Lebensmittelhandel"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 23 – Berichtspflichten",
+    "ISO/IEC 27001 Anhang A 5.26 – Reaktion auf Informationssicherheitsvorfälle"
+   ],
+   "roles": [
+    "Management",
+    "IT-Risiko"
+   ],
+   "countries": [
+    "NL",
+    "BE",
+    "US"
+   ],
+   "dossier": null,
+   "priority": 4,
+   "primary": false,
+   "added": "2026-10-21T05:09:01Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Systeme nach rund acht Tagen wieder online, Heimlieferung von Albert Heijn ab Freitag, Anzeige bei der Polizei am Montag, böswillige Handlungen Dritter, keine Hinweise auf Datenabfluss, Cybersicherheitszentrum binnen 24 Stunden informiert: belegt."
+   }
+  },
+  {
+   "title": "Aktiv ausgenutzt: Lücken in Siemens Software Center, Plex Media Server und SiteGuard",
+   "summary": "Die Cybersicherheitsbehörde der Vereinigten Staaten hat am 20. Oktober sechs Schwachstellen in ihren Katalog aktiv ausgenutzter Lücken aufgenommen. Vier davon betreffen den Plex Media Server (darunter CVE-2026-96652 und CVE-2026-96656). Dazu kommen eine Befehlseinschleusung in EG Secure Solutions SiteGuard Server Edition (CVE-2026-106931) und eine Lücke im Suchpfad des Siemens Software Center (CVE-2026-110936). Eine konkrete Patch-Frist nennt die Warnung nicht.",
+   "relevance": "Das Siemens Software Center läuft auf Rechnern von Technikern, die Steuerungen in Logistik und Gebäuden pflegen, also an der Schnittstelle zur Betriebstechnik. Private Mediendienste wie Plex auf Rechnern mit Firmenzugang sind vor allem ein Problem der Inventarisierung.",
+   "source": "Cybersecurity and Infrastructure Security Agency",
+   "url": "https://www.cisa.gov/news-events/alerts/2026/10/20/cisa-adds-six-known-exploited-vulnerabilities-catalog",
+   "id": "2026-10-21-katalog-siemens-plex-siteguard",
+   "topic": "Cyber- & IT-Regulierung",
+   "impact": "info",
+   "published": "2026-10-20",
+   "tags": [
+    "Schwachstellen",
+    "Betriebstechnik"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
+    "ISO/IEC 27001 Anhang A 5.9 – Inventar der Informationen und anderen damit verbundenen Werte"
+   ],
+   "roles": [
+    "IT-Risiko"
+   ],
+   "countries": [],
+   "dossier": "kritische-schwachstellen-perimeter",
+   "priority": 6,
+   "primary": true,
+   "added": "2026-10-21T05:09:01Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Sechs Lücken am 20. Oktober: vier im Plex Media Server, eine Befehlseinschleusung in SiteGuard und eine Lücke im Suchpfad des Siemens Software Center. Die Nummern stimmen, eine konkrete Frist nennt die Warnung nicht."
+   }
+  },
+  {
+   "title": "Österreichischer Gebäudeautomatisierer Loxone: 201,6 Gigabyte interner Daten kopiert",
+   "summary": "Loxone hat einen am 18. Oktober festgestellten Angriff auf interne Systeme bestätigt. Kopiert wurden rund 201,6 Gigabyte, darunter Kontaktdaten von Geschäftspartnern aus dem Kundenbeziehungsmanagement, Supportanfragen und Bewerberdaten. Nach Unternehmensangaben sind Miniserver, der Fernzugang Remote Connect, Exosphere und Kundenanlagen nicht betroffen, eine zentrale Datenbank mit Zugangsdaten zu Kundenanlagen gebe es nicht. Eine Gruppe namens „Samurai“ droht mit der Veröffentlichung.",
+   "relevance": "Supportanfragen an Hersteller von Gebäude- und Steuerungstechnik enthalten oft Netzpläne, Konfigurationen oder Hinweise auf Fernzugänge. Wer solche Anbieter einsetzt, sollte nachvollziehen, was über Tickets geteilt wurde. Es ist dasselbe Muster wie beim Supportarchiv in der Schifffahrt.",
+   "source": "Borns IT- und Windows-Blog",
+   "url": "https://borncity.com/blog/2026/10/19/sicherheitsvorfall-bei-loxone/",
+   "id": "2026-10-21-loxone-interne-daten-kopiert",
+   "topic": "Weitere Themen",
+   "impact": "info",
+   "published": "2026-10-19",
+   "tags": [
+    "Gebäudetechnik",
+    "Österreich",
+    "Supportdaten"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen",
+    "ISO/IEC 27001 Anhang A 5.14 – Informationsübertragung"
+   ],
+   "roles": [
+    "Einkauf & Drittparteien",
+    "IT-Risiko"
+   ],
+   "countries": [
+    "AT"
+   ],
+   "dossier": "drittparteien-lieferkette",
+   "priority": 7,
+   "primary": false,
+   "added": "2026-10-21T05:09:01Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Am 18. Oktober wurde der Angriff festgestellt. Bestätigt hat Loxone ihn erst danach, und den Datenabfluss räumte das Unternehmen in einer Aktualisierung am 20. Oktober ein. Alle übrigen Angaben sind belegt."
+   }
+  },
   {
    "title": "Update: Ahold Delhaize – Ausfälle in den Vereinigten Staaten und bis Mittel- und Südosteuropa",
    "summary": "Ahold Delhaize bestätigt, dass der Vorfall Webseiten, Apps und Teile der Infrastruktur in den Vereinigten Staaten (unter anderem Food Lion, Giant Food, Stop & Shop, Hannaford) und in Europa (Albert Heijn, Etos, Gall & Gall sowie Gesellschaften in Mittel- und Südosteuropa) vom Netz gezwungen hat. Neu gegenüber dem bisherigen Stand sind die offizielle Bestätigung des Ausmaßes über beide Kontinente und die Aussage, dass es keine Hinweise auf den Diebstahl sensibler Daten von Kunden, Beschäftigten oder Partnern gibt. Die Filialen blieben geöffnet, der Onlinehandel in den Vereinigten Staaten soll in den kommenden Tagen wieder laufen. Gemeldet wurde der Vorfall dem nationalen Zentrum für Cybersicherheit der Niederlande und der Polizei. Es ist der zweite große Angriff auf den Konzern innerhalb von zwei Jahren.",
@@ -1697,6 +1911,41 @@
    }
   },
   {
+   "title": "Notebooksbilliger: Daten einer mittleren fünfstelligen Zahl von Kunden abgeflossen",
+   "summary": "Der Onlinehändler hat am 14. Oktober einen unbefugten Zugriff auf seine Systeme gemeldet. Bestätigt abgeflossen sind E-Mail-Adressen, möglicherweise auch Namen, Anschriften und für Zahlungen hinterlegte Bankverbindungen. Passwörter und vollständige Kreditkartendaten sind nach Unternehmensangaben nicht betroffen. Am 20. Oktober bezifferte das Unternehmen die Zahl der Betroffenen auf eine mittlere fünfstellige Zahl und rät, die Konten auf unberechtigte Lastschriften zu prüfen. Die Datenschutzaufsicht ist informiert, Strafanzeige ist gestellt.",
+   "relevance": "Kartendaten schützt ein strenger Branchenstandard, gespeicherte Kontodaten für Lastschriften oft nur das allgemeine Datenschutzkonzept. Es lohnt sich zu klären, wo im Onlineshop Bankverbindungen liegen und ob sie im Risikoregister genauso behandelt werden wie Kartendaten.",
+   "source": "ComputerBase",
+   "url": "https://www.computerbase.de/news/wirtschaft/cyberangriff-notebooksbilliger-warnt-vor-moeglichem-datenleck.99833/",
+   "id": "2026-10-21-notebooksbilliger-datenabfluss",
+   "topic": "Handel & Branche",
+   "impact": "mittel",
+   "published": "2026-10-14",
+   "tags": [
+    "Onlinehandel",
+    "Datenabfluss",
+    "Bankdaten"
+   ],
+   "controls": [
+    "DSGVO Art. 32 – Sicherheit der Verarbeitung",
+    "DSGVO Art. 34 – Benachrichtigung der betroffenen Personen"
+   ],
+   "roles": [
+    "Datenschutz",
+    "IT-Risiko"
+   ],
+   "countries": [
+    "DE"
+   ],
+   "dossier": null,
+   "priority": 5,
+   "primary": false,
+   "added": "2026-10-21T05:09:01Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Erstmeldung vom 14. Oktober, Aktualisierung vom 20. Oktober mit einer mittleren fünfstelligen Zahl von Betroffenen. Datenarten, Hinweis auf Lastschriften, Meldung an die Datenschutzaufsicht und Strafanzeige stimmen. Kreditkartendaten speichert das Unternehmen laut Quelle gar nicht."
+   }
+  },
+  {
    "title": "Landgericht Traunstein: Erfolgreicher Cyberangriff bedeutet nicht automatisch Haftung",
    "summary": "Nach einem Urteil des Landgerichts Traunstein vom 17. Juli 2026, über das am 14. Oktober berichtet wurde, löst ein erfolgreicher Cyberangriff nicht automatisch eine Haftung des Unternehmens aus. Ob technische und organisatorische Maßnahmen angemessen waren, ist aus der Sicht vor dem Vorfall und am Risiko gemessen zu beurteilen. Schadensersatz nach Artikel 82 der Datenschutz-Grundverordnung setzt einen konkreten Schaden voraus, der ursächlich auf einen Verstoß zurückgeht.",
    "relevance": "Das Urteil stärkt die Position von Unternehmen, die ihre Risikoanalysen und Schutzmaßnahmen nachvollziehbar dokumentiert haben. Für Massenklagen nach Datenabflüssen wird die Dokumentation vor dem Vorfall zum zentralen Beweismittel.",
@@ -1910,6 +2159,41 @@
    "check": {
     "verdict": "ok",
     "note": "Datum, Schadensschätzungen (mindestens 10 Millionen Euro, rund 21 Millionen Euro Umsatzausfall), vermuteter Überlastungsangriff, Lage bei Verteilzentren, Frischware, Webseite und Bestellungen sowie fehlende Hinweise auf Datendiebstahl stimmen mit der Quelle überein."
+   }
+  },
+  {
+   "title": "Studie von TÜV-Verband und Bundesamt: Unternehmen fürchten Fehlentscheidungen von Agenten",
+   "summary": "In einer repräsentativen forsa-Befragung von 505 Unternehmen zwischen dem 22. Juni und dem 31. Juli 2026 fürchten 84 Prozent, dass Agenten mit Künstlicher Intelligenz auf Basis falscher oder erfundener Informationen fehlerhaft entscheiden. Jeweils 78 Prozent sehen neue Sicherheitslücken über Schnittstellen, den Abfluss sensibler Daten und ungewollte Aktionen. 74 Prozent halten unklare Verantwortung und Haftung für ein hohes Risiko. Der TÜV-Verband, der Verband der Technischen Überwachungsvereine, fordert verpflichtende unabhängige Prüfungen für leistungsfähige Modelle vor dem Marktstart.",
+   "relevance": "Die Zahlen stützen die Forderung, für jeden Agenten im Kundenservice oder in der Disposition vor dem Einsatz Verantwortliche, Berechtigungsgrenzen und menschliche Freigabepunkte festzulegen. Dass drei Viertel unklare Verantwortung als Hauptrisiko nennen, ist eine Aufgabe für die Governance und nicht für die Technik.",
+   "source": "TÜV-Verband",
+   "url": "https://www.tuev-verband.de/pressemitteilungen/ki-agenten-unternehmen-sehen-erhebliche-sicherheitsrisiken",
+   "id": "2026-10-21-tuev-bundesamt-studie-agenten",
+   "topic": "AI-Governance",
+   "impact": "mittel",
+   "published": "2026-10-13",
+   "tags": [
+    "Agenten",
+    "Verantwortung",
+    "Studie"
+   ],
+   "controls": [
+    "ISO/IEC 42001 – Managementsystem für Künstliche Intelligenz, Rollen und Verantwortlichkeiten",
+    "ISO/IEC 27001 Anhang A 8.2 – Privilegierte Zugangsrechte"
+   ],
+   "roles": [
+    "Management",
+    "IT-Risiko"
+   ],
+   "countries": [
+    "DE"
+   ],
+   "dossier": "agentische-ki-sicherheit",
+   "priority": 3,
+   "primary": false,
+   "added": "2026-10-21T05:09:01Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum 13. Oktober, gemeinsame Studie mit dem Bundesamt für Sicherheit in der Informationstechnik, forsa, 505 Unternehmen, 22. Juni bis 31. Juli, alle Prozentzahlen und die Forderung nach verpflichtenden Prüfungen vor dem Marktstart: belegt."
    }
   },
   {

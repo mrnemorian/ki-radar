@@ -1,0 +1,181 @@
+{
+ "format": "tag",
+ "chapters": [
+  {
+   "title": "Begrüßung",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Guten Morgen, liebe IT-GRC-Kolleginnen und -Kollegen, willkommen beim IT-GRC Radar am Mittwoch, dem einundzwanzigsten Oktober 2026. Heute dreht sich fast alles um eine Frage: Wie abhängig sind wir eigentlich von anderen?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Also das Thema, bei dem jede Excel-Liste mit Dienstleistern plötzlich zwei Spalten zu kurz ist. Leg los."
+    }
+   ]
+  },
+  {
+   "title": "Google-Cloud-Ausfall",
+   "news_id": "2026-10-21-google-cloud-london-ausfall",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Gestern kurz nach acht Uhr deutscher Zeit hatte Google in London ein [en]Power Event[/en], also ein Stromproblem, in einer einzigen Zone. Fast acht Stunden lang ging bei vielen Diensten nichts."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und das traf nicht bloß Testsysteme. Betroffen waren unter anderem Revolut, Lloyds, HSBC, Royal Mail, der Paketdienst DPD und der britische Baumarkthändler Screwfix."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Moment, eine Zone? Dafür hat man doch mehrere."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Auf dem Papier, ja. Ein guter Anlass zu prüfen, ob Kasse, Onlineshop und Buchung wirklich über mehrere Zonen laufen und ob das jemals getestet wurde. Noch heikler ist, dass der Zahlungsdienstleister selbst an genau einer Region hängen kann, und das steht in keinem eigenen Architekturbild."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Abhängigkeiten zweiter Ordnung also."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Genau. Google hat außerdem zuerst bestehende [en]Workloads[/en] zurückgeholt, neue ließen sich zeitweise gar nicht anlegen. Wer im Ernstfall umziehen will, steht dann in der Schlange."
+    }
+   ]
+  },
+  {
+   "title": "Erpressung über Supportarchiv",
+   "news_id": "2026-10-21-cyberlogitec-supportarchiv-erpressung",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Wir bleiben bei der [en]Supply Chain[/en]. Eine Erpressergruppe hat 38 Reedereien, Terminalbetreiber und Logistiker aus 18 Ländern gelistet und verlangt zwischen 400.000 und 400 Millionen Dollar."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Schon die Spannweite ist bemerkenswert. Interessanter ist aber die Analyse dahinter: Mindestens 21 der Opfer sind Kunden des südkoreanischen Softwareanbieters CyberLogitec. Die Daten kommen offenbar aus einem einzigen [en]Support[/en]-Archiv, inklusive Zugangsdaten von 2018 bis 2022."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Die gelten hoffentlich nicht mehr?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Genau das sollte man sich selbst fragen. Wer einem Dienstleister jemals Zugangsdaten für ein Ticket geschickt hat, sollte sie erneuern. In den Vertrag gehört außerdem, was der Anbieter speichern darf und wann er es löscht."
+    }
+   ]
+  },
+  {
+   "title": "Studie zu Agenten",
+   "news_id": "2026-10-21-tuev-bundesamt-studie-agenten",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Zur Künstlichen Intelligenz. Der TÜV-Verband und das Bundesamt für Sicherheit in der Informationstechnik haben 505 Unternehmen befragt. 84 Prozent fürchten, dass Agenten auf Basis erfundener Informationen falsch entscheiden."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und 74 Prozent halten unklare Verantwortung für ein hohes Risiko. Das ist für mich die eigentliche Zahl."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Das ewige: Wer ist eigentlich [en]Owner[/en]?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Jetzt auch für Software, die selbst handelt. Bevor ein Agent im Kundenservice loslegt, braucht es einen benannten Verantwortlichen, Berechtigungsgrenzen und Punkte, an denen ein Mensch freigibt. Das ist Governance, keine Technikfrage."
+    }
+   ]
+  },
+  {
+   "title": "Update Ahold Delhaize",
+   "news_id": "2026-10-21-update-ahold-delhaize-wieder-online",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Da gibt es Neues zu Ahold Delhaize. Nach rund acht Tagen sind die Webseiten und Apps wieder online, und Albert Heijn will ab Freitag, dem dreiundzwanzigsten Oktober, wieder liefern. Am Montag hat der Konzern außerdem Anzeige bei der Polizei erstattet."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Auf abgeflossene Daten gibt es weiterhin keine Hinweise. Für die eigene Notfallübung bleibt die Frage, wer bei uns abschalten darf, nach welchen Kriterien und wie man wieder hochfährt. Das um drei Uhr nachts zu klären, ist ungünstig."
+    }
+   ]
+  },
+  {
+   "title": "Notebooksbilliger",
+   "news_id": "2026-10-21-notebooksbilliger-datenabfluss",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Notebooksbilliger meldet inzwischen eine mittlere fünfstellige Zahl betroffener Kunden. Abgeflossen sind E-Mail-Adressen, möglicherweise auch Anschriften und Bankverbindungen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Kreditkartendaten waren nicht dabei. Die schützt ein strenger Branchenstandard, Kontodaten für Lastschriften dagegen oft nur das allgemeine Konzept. Man sollte wissen, wo diese Daten im eigenen Shop liegen."
+    }
+   ]
+  },
+  {
+   "title": "Ausgenutzte Lücken",
+   "news_id": "2026-10-21-katalog-siemens-plex-siteguard",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Kurz zur Schwachstellenlage: Die Cybersicherheitsbehörde der Vereinigten Staaten hat sechs aktiv ausgenutzte Lücken in ihren Katalog aufgenommen, darunter das Siemens Software Center und den [en]Plex Media Server[/en]."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Das Siemens-Werkzeug läuft auf Technikerrechnern an der Betriebstechnik. Ein privater Medienserver auf einem Firmenrechner ist eher ein Inventarproblem als ein Patchproblem."
+    }
+   ]
+  },
+  {
+   "title": "Loxone",
+   "news_id": "2026-10-21-loxone-interne-daten-kopiert",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Und aus Österreich: Beim Gebäudeautomatisierer Loxone wurden rund 201,6 Gigabyte interner Daten kopiert, darunter Supportanfragen. Kundenanlagen sind laut Unternehmen nicht betroffen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Wieder Supportdaten, das ist heute fast ein Leitmotiv. In solchen Tickets landen gern Netzpläne."
+    }
+   ]
+  },
+  {
+   "title": "Auf dem Radar",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Was steht auf dem Radar?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ein Wissenschaftspanel der Vereinten Nationen empfiehlt nach Vorfällen mit Agenten Meldepflichten und unabhängige Audits, nach dem Vorbild der Luftfahrt. Solche Empfehlungen tauchen gern irgendwann in Prüfungskatalogen auf."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Meistens kurz vor der Audit-Saison."
+    }
+   ]
+  },
+  {
+   "title": "Abschied",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Das war es für heute. Alle Quellen findet ihr wie immer auf der Webseite."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und vielleicht heute mal einen Blick in die Dienstleisterliste werfen. Bis morgen."
+    }
+   ]
+  }
+ ]
+}
