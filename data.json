@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-21T05:09:01Z",
+ "updated": "2026-10-22T05:07:18Z",
  "topics": [
   "IT-Governance & Risiko",
   "Cyber- & IT-Regulierung",
@@ -11,6 +11,18 @@
   "Weitere Themen"
  ],
  "briefings": [
+  {
+   "date": "2026-10-22",
+   "headline": "Kritische Lücken in der Skriptsprache PHP, Rat einig beim Digital Omnibus und erste harmonisierte Norm zur Verordnung über Künstliche Intelligenz",
+   "points": [
+    "PHP2Shell: Zwei kritische Lücken in praktisch allen Versionen der Skriptsprache PHP seit Version 5, sofort patchen und Bestand von Webanwendungen klären",
+    "Update Digital Omnibus: Die Botschafter der Mitgliedstaaten haben am 21. Oktober das Verhandlungsmandat des Rates beschlossen, jetzt folgt der Trilog",
+    "Norm EN 18286 als erste harmonisierte Norm zur Verordnung über Künstliche Intelligenz im Amtsblatt veröffentlicht",
+    "Interne Revision: Verbindliche Themenanforderung zu Organisationsverhalten gilt ab 15. Dezember 2026",
+    "Zertifizierungsstelle eMudhra: Erratbare Schlüssel trotz Prüfberichten, dazu neuer Leitfaden ISO/IEC 27090 zur Sicherheit Künstlicher Intelligenz"
+   ],
+   "count": 6
+  },
   {
    "date": "2026-10-21",
    "headline": "Eine Cloud-Zone fällt aus, ein Supportarchiv wird zum Erpressungswerkzeug: Abhängigkeiten von Dienstleistern prägen den Tag.",
@@ -372,18 +384,17 @@
    "title": "Kritische Schwachstellen in Randsystemen und Kernanwendungen",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Neben den aktiv ausgenutzten Lücken bei Fortinet (CVE-2025-61624), BeyondTrust Remote Support (CVE-2026-102764, Patch-Frist der Behörde der Vereinigten Staaten am 19. Oktober 2026 abgelaufen) und Ivanti Connect Secure kommt mit PwnEscape (CVE-2026-99999) eine kritische Linux-Lücke hinzu, über die virtuelle Maschinen aus der Isolation ausbrechen können. Sie wurde mit Künstlicher Intelligenz in…",
-   "next_step": "Linux-Virtualisierungshosts inventarisieren und Patches mit Neustartfenstern einplanen, Hosting-Dienstleister nach ihrem Zeitplan fragen und prüfen, ob die Patch-Fristen für kritische Lücken angesichts schneller gefundener Schwachstellen noch passen.",
+   "status": "Zu den aktiv ausgenutzten Lücken bei Fortinet, BeyondTrust Remote Support, Ivanti Connect Secure und der Linux-Lücke PwnEscape kommen die kritischen PHP2Shell-Lücken CVE-2026-109618 und CVE-2026-109619 in der Skriptsprache PHP hinzu. Sie betreffen Versionen seit PHP 5 und erlauben Codeausführung ohne Anmeldung, Updates gibt es seit 21. Oktober 2026.",
+   "next_step": "Webanwendungen und Geräte mit PHP inventarisieren, auch bei Dienstleistern, auf die bereinigten Versionen aktualisieren und die Aufnahme in den Katalog aktiv ausgenutzter Schwachstellen beobachten.",
    "open_questions": [
-    "Wann liefern Ubuntu und Red Hat Updates für PwnEscape?",
-    "Reichen die internen Patch-Fristen, wenn Lücken mit Künstlicher Intelligenz in Tagen gefunden werden?"
+    "Wie vollständig ist der Bestand an Webanwendungen und Kampagnenseiten einschließlich Dienstleistern?",
+    "Wann tauchen öffentliche Angriffswerkzeuge für PHP2Shell auf?"
    ],
    "controls": [
-    "ISO/IEC 27001 Anhang A 8.8 – Handhabung technischer Schwachstellen",
-    "NIS-2-Richtlinie Art. 21 – Umgang mit Schwachstellen",
-    "IT-Kontrollen der Abschlussprüfung – Änderungsmanagement"
+    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
+    "NIS-2-Richtlinie Art. 21 – Umgang mit Schwachstellen"
    ],
-   "updated": "2026-10-20"
+   "updated": "2026-10-22"
   },
   {
    "slug": "lebenszyklus-altsysteme",
@@ -447,19 +458,18 @@
    "title": "Verordnung über Künstliche Intelligenz",
    "sector": "AI-Governance",
    "ring": "jetzt handeln",
-   "status": "Die Transparenzpflichten nach Artikel 50 gelten seit 2. August 2026. Für bereits am Markt befindliche Systeme endet die Übergangsfrist zur Kennzeichnung synthetischer Inhalte am 2. Dezember 2026, und OpenAI führt dafür unsichtbare Wasserzeichen für Texte in der Europäischen Union ein. Die Hochrisiko-Pflichten nach Anhang III gelten nach dem Digital Omnibus erst ab 2. Dezember 2027, Aufsicht in…",
-   "next_step": "Im Inventar der Systeme mit Künstlicher Intelligenz für jede Anwendung die Rolle (Anbieter oder Betreiber) und den Kennzeichnungsstatus erfassen. Einsatzfälle wie die Personaleinsatzplanung sollten früh daraufhin geprüft werden, ob sie unter Anhang III fallen.",
+   "status": "Die Transparenzpflichten nach Artikel 50 gelten seit 2. August 2026, der Übergang für die Kennzeichnung synthetischer Inhalte endet am 2. Dezember 2026. Am 19. Oktober 2026 wurde mit EN 18286 die erste harmonisierte Norm im Amtsblatt veröffentlicht, die für das Qualitätsmanagement nach Artikel 17 eine Konformitätsvermutung begründet; die Hochrisiko-Pflichten nach Anhang III gelten ab 2. Dezember…",
+   "next_step": "Bestand an Systemen Künstlicher Intelligenz nach Anbieter- und Betreiberrolle einordnen und EN 18286 als Maßstab für eigene Entwicklungen und Lieferantenanforderungen prüfen.",
    "open_questions": [
-    "Wie belastbar ist eine Kennzeichnung, wenn Wasserzeichen nach der Bearbeitung kaum noch erkennbar sind?",
-    "Wann wird der Detektor für Unternehmen verfügbar?",
-    "Wann beginnt die Bundesnetzagentur mit der Kontrolle von Kennzeichnungspflichten?"
+    "Welche weiteren harmonisierten Normen folgen bis Ende 2027?",
+    "Wann veröffentlicht die Kommission die endgültigen Leitlinien zur Einstufung als Hochrisiko-System?"
    ],
    "controls": [
-    "Verordnung (EU) 2024/1689 Art. 50 – Transparenzpflichten",
-    "Verordnung (EU) 2024/1689 Art. 4 – Kompetenz im Umgang mit Künstlicher Intelligenz",
+    "KI-Verordnung Art. 17 – Qualitätsmanagementsystem",
+    "KI-Verordnung Art. 50 – Transparenzpflichten",
     "ISO/IEC 42001 – Managementsystem für Künstliche Intelligenz"
    ],
-   "updated": "2026-10-06"
+   "updated": "2026-10-22"
   },
   {
    "slug": "algorithmisches-management",
@@ -580,17 +590,17 @@
    "title": "Prüfung von Informationstechnik und Künstlicher Intelligenz",
    "sector": "Prüfung & Assurance",
    "ring": "vorbereiten",
-   "status": "Das Institut der Wirtschaftsprüfer hat zwei Prüfungshinweise zu Künstlicher Intelligenz veröffentlicht, die Anforderung der Internen Revision zur Prüfung von Drittparteien gilt seit 15. September 2026. International läuft bis 15. Dezember 2026 die Konsultation zu neuen Standards für Prüfungsnachweise (ISA 330, 500 und 520), und die überarbeitete Norm ISA 240 zu Betrug tritt im Dezember 2026 in…",
-   "next_step": "Für wesentliche systemgenerierte Berichte belegen, woher die Daten kommen und dass sie vollständig sind. Mit dem Abschlussprüfer klären, wie sich die neuen Anforderungen an Prüfungsnachweise auf die Prüfung der allgemeinen IT-Kontrollen auswirken.",
+   "status": "Das Institut der Wirtschaftsprüfer hat zwei Prüfungshinweise zu Künstlicher Intelligenz veröffentlicht. Bei den Themenanforderungen für die Interne Revision gelten Cybersicherheit seit Februar und Drittparteien seit 15. September 2026, Organisationsverhalten folgt am 15. Dezember 2026; international läuft bis 15. Dezember 2026 die Konsultation zu neuen Standards für Prüfungsnachweise.",
+   "next_step": "Nachweise für Cybersicherheit und Drittparteien an den Mindestkriterien der Revision ausrichten und Stellungnahmen zur Konsultation zu Prüfungsnachweisen verfolgen.",
    "open_questions": [
-    "Wann und in welcher Form übernimmt das Institut der Wirtschaftsprüfer die neuen internationalen Anforderungen?",
-    "Wie werden Ergebnisse von Agenten Künstlicher Intelligenz als Prüfungsnachweis bewertet?"
+    "Wann gilt die Themenanforderung zu organisatorischer Resilienz?",
+    "Wie stark verändern die neuen Standards zu Prüfungsnachweisen die Prüfung allgemeiner IT-Kontrollen?"
    ],
    "controls": [
-    "IT-Kontrollen der Abschlussprüfung – Verlässlichkeit systemgenerierter Informationen",
-    "ISA [DE] 315 – Verständnis der Informationstechnik"
+    "Global Internal Audit Standards – Topical Requirements",
+    "IT-Kontrollen der Abschlussprüfung – Prüfungsnachweise"
    ],
-   "updated": "2026-10-10"
+   "updated": "2026-10-22"
   },
   {
    "slug": "agentische-ki-sicherheit",
@@ -629,16 +639,16 @@
    "title": "Datenschutzreform und Digital Omnibus",
    "sector": "Datenschutz & Datenrecht",
    "ring": "beobachten",
-   "status": "Der Ausschuss der Ständigen Vertreter hat den Mandatsentwurf am 11. Oktober 2026 weder beraten noch abgestimmt; Deutschland verlangt ausdrückliche Vereinbarungen für das Teilen von Daten mit Geschäftsgeheimnissen. Der Entwurf sieht unter anderem Meldungen von Datenschutzverletzungen nur bei hohem Risiko innerhalb von 96 Stunden vor.",
-   "next_step": "Neuen Termin im Rat beobachten und bis zur Einigung an den geltenden Meldefristen festhalten.",
+   "status": "Der Ausschuss der Ständigen Vertreter hat am 21. Oktober 2026 nach zwei gescheiterten Anläufen das Verhandlungsmandat des Rates beschlossen, unter anderem mit mehr Schutz für Geschäftsgeheimnisse. Frühere Ratsentwürfe sahen Meldungen von Datenschutzverletzungen nur bei hohem Risiko innerhalb von 96 Stunden vor; der Trilog beginnt, sobald das Europäische Parlament seine Position hat.",
+   "next_step": "Position des Europäischen Parlaments und den Zeitplan des Trilogs verfolgen; Meldeprozesse für Datenschutzverletzungen so gestalten, dass Schwellen und Fristen anpassbar sind.",
    "open_questions": [
-    "Gelingt ein Ratsmandat noch vor Ende 2026?",
-    "Welche Regeln für Geschäftsgeheimnisse nach der Datenverordnung setzen sich durch?"
+    "Wann beschließt das Europäische Parlament seine Position?",
+    "Bleiben die 96 Stunden und die Schwelle des hohen Risikos im Trilog erhalten?"
    ],
    "controls": [
     "DSGVO Art. 33 – Meldung von Verletzungen des Schutzes personenbezogener Daten"
    ],
-   "updated": "2026-10-14"
+   "updated": "2026-10-22"
   },
   {
    "slug": "zahlungsverkehr-pci-dss",
@@ -774,6 +784,17 @@
    "checked": true,
    "dossier": null,
    "added": "2026-10-14"
+  },
+  {
+   "date": "2026-12-15",
+   "title": "Interne Revision: Themenanforderung Organisationsverhalten gilt",
+   "detail": "Interne Revisionen, die nach den globalen Standards arbeiten, müssen ab diesem Tag die Mindestinhalte zu Organisationsverhalten einhalten, wenn das Thema im Prüfungsplan steht.",
+   "scope": "global",
+   "url": "https://www.plantemoran.com/explore-our-thinking/insight/2026/10/iias-topical-requirements-new-baseline",
+   "primary": false,
+   "checked": true,
+   "dossier": "pruefung-it-ki",
+   "added": "2026-10-22"
   },
   {
    "date": "2026-12-31",
@@ -955,6 +976,31 @@
    ]
   },
   {
+   "theme": "Digitale Identitäts-Wallet der Europäischen Union",
+   "why": "Der Bundestag hat am 15. Oktober 2026 das Gesetz zur digitalen Identitäts-Wallet beschlossen, der Start ist für 2. Januar 2027 geplant. Für Kundenkonten, Altersprüfungen und Identifizierung im Onlinehandel kann das neue Anforderungen an Anbindung und Datenschutz bringen.",
+   "count": 3,
+   "first_seen": "2026-10-08",
+   "last_seen": "2026-10-22",
+   "evidence": [
+    "https://www.bundestag.de/dokumente/textarchiv/2026/kw42-de-digitale-identitaeten-gesetz-1223586",
+    "https://www.bundestag.de/dokumente/textarchiv/2026/kw42-pa-digitales-identitaeten-1224678",
+    "https://www.heise.de/news/EUDI-Wallet-Anhoerung-mit-viel-Kritik-an-d-you-Planung-11477850.html"
+   ]
+  },
+  {
+   "theme": "Rechtsverordnung zum Dachgesetz Kritische Infrastrukturen",
+   "why": "Die Verordnung mit den Schwellenwerten für kritische Anlagen liegt weiter nur als Entwurf vor. Erst mit ihr greifen Registrierung beim Bundesamt innerhalb von drei Monaten, Risikoanalysen und Resilienzpläne, was die Lebensmittelversorgung direkt betrifft.",
+   "count": 3,
+   "first_seen": "2026-09-30",
+   "last_seen": "2026-10-22",
+   "evidence": [
+    "https://cms.law/de/deu/legal-updates/kritis-verordnung-was-betreiber-kritischer-anlagen-jetzt-wissen-muessen",
+    "https://christopher-helm.com/kritis-betreiber-schwellenwert-rechtsverordnung/",
+    "https://ag.kritis.info/2026/05/28/referentenentwurf-des-bmi-verordnung-zur-bestimmung-kritischer-anlagen-nach-dem-kritis-dachgesetz-kritisverordnung-kritisv/",
+    "https://christopher-helm.com/kritis-dachgesetz-registrierungsfrist-gestrichen/"
+   ]
+  },
+  {
    "theme": "Grundschutz++ zertifizierbar ab 2027",
    "why": "Das Bundesamt für Sicherheit in der Informationstechnik will die Methodik Ende Oktober vorstellen. Ab dem 1. Januar 2027 sollen Zertifizierungsanträge nach ISO/IEC 27001 auf Basis von Grundschutz++ möglich sein. Die maschinenlesbaren Anforderungen könnten das Kontrollmanagement automatisieren und Tabellenlisten ablösen.",
    "count": 3,
@@ -990,17 +1036,6 @@
    ]
   },
   {
-   "theme": "Digitale Identitäts-Wallet der Europäischen Union",
-   "why": "Der Bundestag hat am 15. Oktober 2026 das Digitale Identitätengesetz beschlossen, die Brieftasche soll ab Januar 2027 flächendeckend verfügbar sein. Eine Pflicht zur Annahme für private Unternehmen gibt es nicht, für Altersnachweise und Kundenidentifizierung im Onlinehandel kann sie trotzdem relevant werden.",
-   "count": 2,
-   "first_seen": "2026-10-08",
-   "last_seen": "2026-10-17",
-   "evidence": [
-    "https://www.bundestag.de/dokumente/textarchiv/2026/kw42-pa-digitales-identitaeten-1224678",
-    "https://www.heise.de/news/EUDI-Wallet-Anhoerung-mit-viel-Kritik-an-d-you-Planung-11477850.html"
-   ]
-  },
-  {
    "theme": "Haftungsregeln für Künstliche Intelligenz",
    "why": "Die Europäische Kommission schließt eine neue Haftungsrichtlinie für Künstliche Intelligenz derzeit aus. Wer haftet, bleibt damit vorerst Sache der Verträge mit Anbietern und des allgemeinen Produkthaftungsrechts.",
    "count": 2,
@@ -1009,18 +1044,6 @@
    "evidence": [
     "https://www.techuk.org/insights/news/dispatch-from-brussels-updates-on-eu-tech-policy-09-10",
     "https://www.politico.eu/article/eu-lawmakers-ai-apocalypse-warnings-brussels-scrambles-ai-rules-gaps/"
-   ]
-  },
-  {
-   "theme": "Rechtsverordnung zum Dachgesetz Kritische Infrastrukturen",
-   "why": "Das Dachgesetz für Kritische Infrastrukturen gilt zwar seit März 2026. Welche Anlagen erfasst sind, legt aber erst die noch ausstehende Rechtsverordnung fest. Ab ihrer Verkündung läuft die Registrierung, acht Monate später sind Nachweise fällig, was die Lebensmittelversorgung direkt betrifft.",
-   "count": 2,
-   "first_seen": "2026-09-30",
-   "last_seen": "2026-10-06",
-   "evidence": [
-    "https://christopher-helm.com/kritis-betreiber-schwellenwert-rechtsverordnung/",
-    "https://ag.kritis.info/2026/05/28/referentenentwurf-des-bmi-verordnung-zur-bestimmung-kritischer-anlagen-nach-dem-kritis-dachgesetz-kritisverordnung-kritisv/",
-    "https://christopher-helm.com/kritis-dachgesetz-registrierungsfrist-gestrichen/"
    ]
   },
   {
@@ -1095,6 +1118,146 @@
   }
  ],
  "news": [
+  {
+   "title": "Update: Digital Omnibus – Mitgliedstaaten einigen sich auf Verhandlungsmandat",
+   "summary": "Der Ausschuss der Ständigen Vertreter hat am 21. Oktober 2026 das Verhandlungsmandat des Rates zum Digital Omnibus beschlossen, der vor allem die Datenschutz-Grundverordnung und das Datengesetz vereinfachen soll. Gegenüber dem letzten Kompromisstext, der den Schutz von Geschäftsgeheimnissen zu industriellem Wissen in Sektoren der NIS-2-Richtlinie gestärkt hatte, gab es offenbar keine Änderungen. Die irische Ratspräsidentschaft kann nun mit dem Europäischen Parlament verhandeln, sobald dieses seine Position beschlossen hat.",
+   "relevance": "Neu gegenüber dem bisherigen Stand: Der Rat ist jetzt verhandlungsfähig, die Reform der Datenschutz-Grundverordnung und der Datenverordnung wird damit wahrscheinlicher. Bis zum Abschluss gilt das heutige Recht; Melde- und Einwilligungsprozesse sollten so gestaltet sein, dass sich Schwellen und Fristen später ändern lassen.",
+   "source": "Agence Europe",
+   "url": "https://agenceurope.eu/en/bulletin/article/13965/11/eu-council-adopts-negotiating-position-on-digital-omnibus",
+   "id": "2026-10-22-update-digital-omnibus-ratsmandat",
+   "topic": "Datenschutz & Datenrecht",
+   "impact": "mittel",
+   "published": "2026-10-22",
+   "tags": [
+    "Digital Omnibus",
+    "Datenschutzreform",
+    "Rat der Europäischen Union"
+   ],
+   "controls": [
+    "DSGVO Art. 33 – Meldung von Verletzungen des Schutzes personenbezogener Daten"
+   ],
+   "roles": [
+    "Datenschutz",
+    "Management"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "dsgvo-reform-digital-omnibus",
+   "priority": 2,
+   "primary": false,
+   "added": "2026-10-22T05:07:18Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Gescheiterte Abstimmungen am 7. und 11. Oktober sowie Forderungen von Deutschland und Frankreich stehen nicht in der Quelle; dort ist nur von gestärktem Schutz von Geschäftsgeheimnissen im letzten Kompromisstext die Rede. Der Artikel erschien am 22. Oktober 2026."
+   }
+  },
+  {
+   "title": "PHP2Shell: Kritische Lücken in der Skriptsprache PHP erlauben Codeausführung ohne Anmeldung",
+   "summary": "Das PHP-Projekt hat am 21. Oktober 2026 zwei kritische Lücken (CVE-2026-109618 und CVE-2026-109619) geschlossen, die Versionen seit PHP 5 betreffen und ohne Anmeldung Codeausführung im Kontext des Webservers ermöglichen. Die Veröffentlichung wurde wegen eines Lecks um einen Tag vorgezogen; behoben sind die Fehler in den Versionen 8.5.12, 8.4.27, 8.3.36 und 8.2.35. Laut heise sind Härtungen der Konfiguration nur ein Notbehelf, auch Speichersysteme, Router und Sicherheitsgeräte mit PHP brauchen Updates.",
+   "relevance": "Ein Handelskonzern mit Onlineshops, Kampagnenseiten, Partnerportalen und vielen Dienstleistern muss schnell wissen, wo PHP läuft, auch in Geräten und bei Drittparteien. Die Lücke ist ein Test für Bestandsführung, Patch-Fristen und die Frage, wer für vergessene Webanwendungen verantwortlich ist.",
+   "source": "heise online",
+   "url": "https://www.heise.de/news/php2shell-Kritische-Sicherheitsluecken-erlauben-Codeeinschleusung-in-PHP-11492938.html",
+   "id": "2026-10-22-php2shell-kritische-luecken",
+   "topic": "IT-Governance & Risiko",
+   "impact": "hoch",
+   "published": "2026-10-21",
+   "tags": [
+    "Schwachstelle",
+    "Patch-Management",
+    "Webanwendungen"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
+    "ISO/IEC 27001 Anhang A 5.9 – Inventar der Informationen und anderen zugehörigen Werte",
+    "NIS-2-Richtlinie Art. 21 – Umgang mit Schwachstellen"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Einkauf & Drittparteien"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "kritische-schwachstellen-perimeter",
+   "priority": 1,
+   "primary": false,
+   "added": "2026-10-22T05:07:18Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum 21. Oktober 2026, Nummern der Schwachstellen, betroffene und behobene Versionen, vorgezogene Veröffentlichung wegen eines Lecks, Härtung nur als vorübergehende Krücke und betroffene Speichersysteme, Router und Sicherheitsgeräte sind durch die Quelle belegt."
+   }
+  },
+  {
+   "title": "Zertifizierungsstelle eMudhra: Acht Zwischenzertifikate mit erratbaren Schlüsseln gesperrt",
+   "summary": "Bei der Zertifizierungsstelle eMudhra waren acht Zwischenzertifikate kompromittiert, weil die privaten Schlüssel aus trivial erratbaren Werten erzeugt worden waren, einer davon war die Zahl 4. Nach der Meldung an Mozilla und Google am 17. Oktober sperrten die Browser die Zertifikate binnen Stunden; Administratoren müssen Vertrauensspeicher auf Servern selbst aktualisieren. heise sieht ein Versagen auch des WebTrust-Prüfprozesses, der solche Kontrollen überwachen soll.",
+   "relevance": "Der Fall zeigt, dass Prüfberichte und Zertifikate eines Dienstleisters kein Ersatz für eigene Risikobewertung sind. Außerdem gehören Vertrauensspeicher auf Servern und Geräten in das Patch- und Konfigurationsmanagement.",
+   "source": "heise online",
+   "url": "https://www.heise.de/news/Vorfall-bei-Zertifizierungsstelle-eMudhra-Acht-CA-Zertifikate-kompromittiert-11494412.html",
+   "id": "2026-10-22-emudhra-zertifikate-kompromittiert",
+   "topic": "Prüfung & Assurance",
+   "impact": "mittel",
+   "published": "2026-10-20",
+   "tags": [
+    "Zertifizierungsstelle",
+    "Prüfberichte",
+    "Vertrauensspeicher"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 5.22 – Überwachung und Änderungsmanagement von Lieferantendienstleistungen",
+    "ISO/IEC 27001 Anhang A 8.24 – Verwendung von Kryptografie"
+   ],
+   "roles": [
+    "Revision & Prüfung",
+    "Einkauf & Drittparteien",
+    "IT-Risiko"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "drittparteien-lieferkette",
+   "priority": 5,
+   "primary": false,
+   "added": "2026-10-22T05:07:18Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Inhalt belegt (acht Zwischenzertifikate, Schlüssel teils nur die Zahl 4, Meldung am 17. Oktober, Mozilla sperrte nach knapp drei Stunden, Server-Vertrauensspeicher selbst aktualisieren, Kritik am WebTrust-Prüfer BDO). Das Veröffentlichungsdatum ist der 20. Oktober 2026."
+   }
+  },
+  {
+   "title": "Neuer Leitfaden ISO/IEC 27090 zu Sicherheitsbedrohungen für Künstliche Intelligenz",
+   "summary": "Die internationale Normung hat am 14. Oktober 2026 die erste Ausgabe von ISO/IEC 27090 veröffentlicht, einen 56-seitigen Leitfaden zu Bedrohungen für Systeme Künstlicher Intelligenz über den gesamten Lebenszyklus. Er behandelt neun Bedrohungen, darunter Datenvergiftung, Modelldiebstahl und Prompt Injection, und ist nicht zertifizierbar. Er ergänzt ISO/IEC 27001, 27002 und 42001.",
+   "relevance": "Die Bedrohungsliste lässt sich direkt in bestehende Risikobewertungen für Informationssicherheit übernehmen, etwa für Kundenservice-Chatbots oder Prognosemodelle. Das schafft einen gemeinsamen Maßstab für Sicherheitsteams, Fachbereiche und Prüfer.",
+   "source": "Reconn Orbit",
+   "url": "https://orbit.reconn.io/iso-iec-27090-2026-ai-security-guide",
+   "id": "2026-10-22-iso-27090-ki-sicherheit",
+   "topic": "Standards & Zertifizierung",
+   "impact": "info",
+   "published": "2026-10-20",
+   "tags": [
+    "Normung",
+    "Sicherheit Künstlicher Intelligenz",
+    "Risikobewertung"
+   ],
+   "controls": [
+    "ISO/IEC 27090 – Sicherheitsbedrohungen für Systeme Künstlicher Intelligenz",
+    "ISO/IEC 42001 – Managementsystem für Künstliche Intelligenz"
+   ],
+   "roles": [
+    "IT-Risiko"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": null,
+   "priority": 6,
+   "primary": false,
+   "added": "2026-10-22T05:07:18Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Inhalt belegt (erste Ausgabe vom 14. Oktober 2026, 56 Seiten, neun Bedrohungen, nicht zertifizierbar, ergänzt ISO/IEC 27001 und 27002, Verweis auf 42001). Der Artikel erschien am 20. Oktober 2026."
+   }
+  },
   {
    "title": "Stromproblem in einer Google-Cloud-Zone legt Banken und Händler stundenlang lahm",
    "summary": "Am 20. Oktober 2026 löste ein „Power Event“ in der Zone europe-west2-b der Londoner Google-Cloud-Region ab 6:08 Uhr Weltzeit einen fast achtstündigen Ausfall aus. Betroffen waren 38 Dienste, darunter Kubernetes Engine, Cloud Run, App Engine und Cloud Filestore; gestört waren unter anderem Revolut, Lloyds, HSBC, Royal Mail, DPD und der Baumarkthändler Screwfix. Google stellte zuerst bestehende Workloads wieder her, neue ließen sich zeitweise nicht anlegen.",
@@ -1233,6 +1396,42 @@
    "check": {
     "verdict": "ok",
     "note": "Sechs Lücken am 20. Oktober: vier im Plex Media Server, eine Befehlseinschleusung in SiteGuard und eine Lücke im Suchpfad des Siemens Software Center. Die Nummern stimmen, eine konkrete Frist nennt die Warnung nicht."
+   }
+  },
+  {
+   "title": "Erste harmonisierte Norm zur Verordnung über Künstliche Intelligenz im Amtsblatt",
+   "summary": "Die Europäische Kommission hat den Verweis auf die Norm EN 18286:2026 zum Qualitätsmanagementsystem für Anbieter von Hochrisiko-Systemen Künstlicher Intelligenz im Amtsblatt veröffentlicht (Durchführungsbeschluss (EU) 2026/2274). Wer sie anwendet, erhält die Vermutung, die Anforderungen aus Artikel 17 der Verordnung zu erfüllen. Die Norm der europäischen Normungsorganisationen CEN und CENELEC setzt auf bestehende Normen wie ISO/IEC 42001 und ISO 9001 auf, statt sie zu ersetzen.",
+   "relevance": "Für Systeme Künstlicher Intelligenz in Personaleinsatzplanung oder Personalauswahl gelten Hochrisiko-Pflichten ab 2. Dezember 2027; wer eigene Modelle entwickelt oder wesentlich verändert, kann zum Anbieter werden. Die Norm taugt außerdem als Maßstab für Anforderungen an Lieferanten und für die Prüfung.",
+   "source": "Europäische Kommission",
+   "url": "https://digital-strategy.ec.europa.eu/en/library/first-harmonised-standard-supporting-ai-act-published-official-journal",
+   "id": "2026-10-22-en-18286-harmonisierte-norm-ki",
+   "topic": "Standards & Zertifizierung",
+   "impact": "mittel",
+   "published": "2026-10-19",
+   "tags": [
+    "Harmonisierte Norm",
+    "Qualitätsmanagement",
+    "Hochrisiko"
+   ],
+   "controls": [
+    "KI-Verordnung Art. 17 – Qualitätsmanagementsystem",
+    "ISO/IEC 42001 – Managementsystem für Künstliche Intelligenz"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Einkauf & Drittparteien",
+    "Revision & Prüfung"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "ai-act",
+   "priority": 3,
+   "primary": true,
+   "added": "2026-10-22T05:07:18Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum 19. Oktober 2026, Norm EN 18286:2026, Durchführungsbeschluss (EU) 2026/2274, Vermutungswirkung für Artikel 17, CEN und CENELEC sowie Aufbau auf ISO/IEC 42001 und ISO 9001 sind belegt."
    }
   },
   {
@@ -1801,6 +2000,40 @@
    "check": {
     "verdict": "abweichung",
     "note": "Laut Quelle geschah der Angriff in der Nacht auf Montag, also am 12. und nicht am 13. Oktober. Ausgefallene Maschinen werden nicht erwähnt, genannt werden Zugangssysteme, digitale Werkzeuge und stillstehende Schiffe. Ein Datum der Wiederaufnahme nennt die Quelle nicht, sie meldet am 16. Oktober…"
+   }
+  },
+  {
+   "title": "Interne Revision: Themenanforderung zu Organisationsverhalten gilt ab 15. Dezember",
+   "summary": "Die verbindlichen Themenanforderungen des Institute of Internal Auditors legen Mindestinhalte für Prüfungen fest: Cybersicherheit gilt seit 5. Februar 2026, Drittparteienrisiko seit 15. September 2026, Organisationsverhalten ab 15. Dezember 2026; für organisatorische Resilienz steht noch kein Datum fest. Externe Qualitätsbeurteilungen nach dem jeweiligen Stichtag prüfen, ob die Revision die Anforderungen eingehalten hat, Abweichungen sind begründet zu dokumentieren.",
+   "relevance": "Die Revision wird Cybersicherheit und Drittparteien nach festen Mindestkriterien prüfen; die zweite Linie sollte ihre Nachweise dazu jetzt ordnen. Die Anforderung zu Organisationsverhalten berührt auch Kultur und Verantwortlichkeiten in Programmen für Informationssicherheit.",
+   "source": "Plante Moran",
+   "url": "https://www.plantemoran.com/explore-our-thinking/insight/2026/10/iias-topical-requirements-new-baseline",
+   "id": "2026-10-22-revision-themenanforderungen",
+   "topic": "Prüfung & Assurance",
+   "impact": "mittel",
+   "published": "2026-10-15",
+   "tags": [
+    "Interne Revision",
+    "Prüfungsstandards",
+    "Qualitätsbeurteilung"
+   ],
+   "controls": [
+    "Global Internal Audit Standards – Topical Requirements Cybersicherheit und Drittparteien"
+   ],
+   "roles": [
+    "Revision & Prüfung",
+    "IT-Risiko"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "pruefung-it-ki",
+   "priority": 4,
+   "primary": false,
+   "added": "2026-10-22T05:07:18Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Veröffentlicht am 15. Oktober 2026; alle Stichtage, die externen Qualitätsbeurteilungen und die Dokumentation von Abweichungen mit Begründung sind belegt."
    }
   },
   {

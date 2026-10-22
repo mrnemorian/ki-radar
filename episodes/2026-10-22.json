@@ -1,0 +1,183 @@
+{
+ "format": "tag",
+ "chapters": [
+  {
+   "title": "Begrüßung",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Guten Morgen, liebe IT-GRC-Kolleginnen und -Kollegen, willkommen beim IT-GRC Radar. Heute ist Donnerstag, der zweiundzwanzigste Oktober 2026."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Morgen! Ich ahne schon: [en]Patches[/en], Paragrafen und Prüfer. Die klassische Dreifaltigkeit."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Ziemlich genau. Wir fangen mit dem an, was nicht warten kann."
+    }
+   ]
+  },
+  {
+   "title": "PHP2Shell",
+   "news_id": "2026-10-22-php2shell-kritische-luecken",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Die Skriptsprache PHP hat am einundzwanzigsten Oktober zwei kritische Lücken geschlossen, CVE-2026-109618 und CVE-2026-109619. Betroffen sind die Versionen seit PHP 5, Angreifer brauchen keine Anmeldung und können Code im Kontext des Webservers ausführen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Moment, seit PHP 5? Dann ist die Lücke älter als manche unserer Ausnahmegenehmigungen. Und die Veröffentlichung wurde wegen eines Lecks sogar einen Tag vorgezogen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Reicht es nicht, die Konfiguration zu härten?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Laut heise ist das nur ein Notbehelf, es muss aktualisiert werden. Der eigentliche Aufwand ist aber die Inventur: PHP steckt auch in Speichersystemen, Routern und Sicherheitsgeräten, oft bei Dienstleistern. Wer seine [en]Webshops[/en], Kampagnenseiten und Partnerportale nicht kennt, sucht jetzt."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Also wieder die Frage, wer eigentlich [en]Owner[/en] der [en]Microsite[/en] von vor sieben Jahren ist."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Genau die. Und ehrlich gesagt beantwortet die sich selten von allein."
+    }
+   ]
+  },
+  {
+   "title": "Digital Omnibus",
+   "news_id": "2026-10-22-update-digital-omnibus-ratsmandat",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Da gibt es Neues zum Digital Omnibus. Die Botschafter der Mitgliedstaaten haben sich am einundzwanzigsten Oktober auf das Verhandlungsmandat des Rates geeinigt."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Endlich. Der letzte Kompromiss hatte den Schutz von Geschäftsgeheimnissen gestärkt, und daran wurde offenbar nichts mehr geändert. Jetzt kann die irische Ratspräsidentschaft verhandeln, sobald das Parlament seine Position hat."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Ändert sich damit schon etwas für uns?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Noch nicht, es gilt die heutige Datenschutz-Grundverordnung. Wer seinen Meldeprozess ohnehin überarbeitet, sollte ihn so bauen, dass er sich später anpassen lässt, statt alles neu zu zeichnen."
+    }
+   ]
+  },
+  {
+   "title": "Erste harmonisierte Norm",
+   "news_id": "2026-10-22-en-18286-harmonisierte-norm-ki",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Die Kommission hat am neunzehnten Oktober die erste harmonisierte Norm zur Verordnung über Künstliche Intelligenz im Amtsblatt veröffentlicht: EN 18286, ein Qualitätsmanagementsystem für Anbieter von Hochrisiko-Systemen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Wer sie umsetzt, für den wird vermutet, dass er die Anforderungen aus Artikel 17 erfüllt. Und sie baut auf Normen wie ISO IEC 42001 auf, statt sie zu ersetzen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Wir sind doch meistens Betreiber, nicht Anbieter."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Meistens. Aber wer eigene Modelle für die Personaleinsatzplanung baut oder stark anpasst, kann in die Anbieterrolle rutschen. Bis die Hochrisiko-Pflichten gelten, ist die Norm ein guter Maßstab für Lieferantenfragebögen."
+    }
+   ]
+  },
+  {
+   "title": "Interne Revision",
+   "news_id": "2026-10-22-revision-themenanforderungen",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Für die Revision: Ab dem fünfzehnten Dezember 2026 gilt die verbindliche Themenanforderung des Institute of Internal Auditors zu Organisationsverhalten. Cybersicherheit gilt seit Februar, Drittparteien seit September."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und externe Qualitätsbeurteilungen prüfen nach dem Stichtag, ob die Revision diese Mindestinhalte eingehalten hat. Abweichungen müssen begründet dokumentiert werden."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Also noch eine Spalte in der Excel-Liste."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Mindestens eine. Für uns heißt das: Die Revision fragt bei Cyber- und Drittparteienprüfungen nach festen Kriterien. Besser vorher wissen, welche Nachweise man wirklich hat."
+    }
+   ]
+  },
+  {
+   "title": "eMudhra",
+   "news_id": "2026-10-22-emudhra-zertifikate-kompromittiert",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Ein Lehrstück zu Prüfberichten: Bei der Zertifizierungsstelle eMudhra waren acht Zwischenzertifikate kompromittiert. Die privaten Schlüssel waren trivial zu erraten, einer war schlicht die Zahl 4."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Die 4. Da hilft auch keine Passwortschulung mehr. Die Browser haben binnen Stunden gesperrt, aber die Vertrauensspeicher auf Servern müssen Administratoren selbst aktualisieren."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und warum ist das ein Prüfungsthema?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Weil eMudhra nach WebTrust geprüft wurde und heise genau dort ein Versagen sieht. Ein sauberer Bericht ersetzt kein eigenes Urteil über den Dienstleister. Das gilt für jeden Bericht, den wir uns in der [en]Audit[/en]-Saison geben lassen."
+    }
+   ]
+  },
+  {
+   "title": "ISO IEC 27090",
+   "news_id": "2026-10-22-iso-27090-ki-sicherheit",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Kurz noch: Seit dem vierzehnten Oktober gibt es die Norm ISO IEC 27090, einen Leitfaden zu Bedrohungen für Systeme Künstlicher Intelligenz, von Datenvergiftung bis [en]Prompt Injection[/en]."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Nicht zertifizierbar, aber praktisch: Die neun Bedrohungen lassen sich direkt in die bestehende Risikobewertung übernehmen. Weniger neu erfinden, mehr einsortieren."
+    }
+   ]
+  },
+  {
+   "title": "Auf dem Radar",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Und auf dem Radar?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Die digitale Identitäts-[en]Wallet[/en]. Der Bundestag hat das Gesetz am fünfzehnten Oktober beschlossen, Start soll am zweiten Januar 2027 sein. Für Kundenkonten und Altersprüfungen im Onlinehandel könnte das spannend werden, die Nutzung bleibt aber freiwillig."
+    }
+   ]
+  },
+  {
+   "title": "Abschied",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Das war es für heute. Alle Quellen findet ihr wie immer auf der Webseite."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und allen, die heute die PHP-Inventur starten: viel Erfolg bei der [en]Owner[/en]-Suche. Bis morgen."
+    }
+   ]
+  }
+ ]
+}
