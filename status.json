@@ -1,11 +1,17 @@
 {
  "last_run": {
-  "start": "2026-10-22T07:00:01+02:00",
-  "end": "2026-10-22T07:07:19+02:00",
+  "start": "2026-10-23T07:00:01+02:00",
+  "end": "2026-10-23T07:08:07+02:00",
   "ok": true,
-  "summary": "6 neue Meldungen: P1 PHP2Shell: Kritische Lücken in der Skriptsprache PHP erlauben Codeausführung ohne Anmeldung; P2 Update: Digital Omnibus – Mitgliedstaaten einigen sich auf Verhandlungsmandat; "
+  "summary": "8 neue Meldungen: P1 Fortinet: Außerplanmäßige Updates für Firewalls und Verwaltung, Details erst am 10. November; P2 LiteLLM: Veröffentlichungsprozess gekapert, Version 1.107.0 stiehlt Cloud-Zug"
  },
  "history": [
+  {
+   "start": "2026-10-23T07:00:01+02:00",
+   "end": "2026-10-23T07:08:07+02:00",
+   "ok": true,
+   "summary": "8 neue Meldungen: P1 Fortinet: Außerplanmäßige Updates für Firewalls und Verwaltung, Details erst am 10. November; P2 LiteLLM: Veröffentlichungsprozess gekapert, Version 1.107.0 stiehlt Cloud-Zug"
+  },
   {
    "start": "2026-10-22T07:00:01+02:00",
    "end": "2026-10-22T07:07:19+02:00",
