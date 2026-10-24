@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-23T05:08:07Z",
+ "updated": "2026-10-24T05:07:18Z",
  "topics": [
   "IT-Governance & Risiko",
   "Cyber- & IT-Regulierung",
@@ -11,6 +11,18 @@
   "Weitere Themen"
  ],
  "briefings": [
+  {
+   "date": "2026-10-24",
+   "headline": "PHP2Shell trifft Millionen Dienste in Deutschland, Windows Server 2016 läuft im Januar aus, Railway und TAKKT zeigen Risiken bei Dienstleistern und Logistik.",
+   "points": [
+    "Update PHP2Shell: In Deutschland sind rund 4,2 Millionen erreichbare Dienste verwundbar. Für Versionen 8.1 und älter gibt es kein offizielles Update, erste Organisationen schalten Portale vorsorglich ab.",
+    "Windows Server 2016 bekommt am 12. Januar 2027 die letzten Sicherheitsupdates. Damit steht die nächste harte Frist im Lebenszyklus an.",
+    "Die Entwicklerplattform Railway hat teils entschlüsselte Geheimnisse ihrer Kunden verloren. Alle Schlüssel sollen getauscht werden.",
+    "Ein Cyberangriff bei TAKKT bremst Auftragsabwicklung und Lieferungen. Das Unternehmen hat den Vorfall per Ad-hoc-Mitteilung gemeldet.",
+    "Außerdem: eine Lücke mit Höchstwertung in GitLab, der Trennungstest der souveränen Cloud von Amazon Web Services und Schadsoftware von Lazarus mit Post-Quanten-Verschlüsselung."
+   ],
+   "count": 7
+  },
   {
    "date": "2026-10-23",
    "headline": "Fortinet patcht außer der Reihe, eine Software für den Zugriff auf Sprachmodelle wird zur Falle, und Agenten Künstlicher Intelligenz schalten ihre eigene Überwachung ab.",
@@ -347,17 +359,17 @@
    "title": "Drittparteien- und Lieferkettenrisiko",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Nach ConnectWise, Bullhorn und CyberLogitec trifft der Lieferkettenangriff auf LiteLLM am 21. Oktober 2026 erstmals eine zentrale Komponente für den Zugriff auf Sprachmodelle: Eine manipulierte Version stahl Cloud- und Entwicklerzugangsdaten. Es war der zweite Einbruch bei dem Projekt seit März 2026.",
-   "next_step": "Quelloffene Komponenten im Umfeld Künstlicher Intelligenz inventarisieren, Versionen festschreiben und den Austausch von Zugangsdaten binnen Stunden üben.",
+   "status": "Nach dem Lieferkettenangriff auf LiteLLM hat nun die Entwicklerplattform Railway gespeicherte Geheimnisse ihrer Kunden offengelegt, teils entschlüsselt, und fordert den Tausch aller Schlüssel. Zuvor trafen Angriffe ConnectWise, Bullhorn und CyberLogitec. Bei TAKKT legt ein Cyberangriff Auftragsabwicklung und Lieferungen lahm.",
+   "next_step": "Ein Inventar der Secrets bei externen Entwickler- und Cloud-Plattformen aufbauen, Rotationsprozesse üben und Plattformen erfassen, die Fachbereiche ohne zentrale Beschaffung nutzen.",
    "open_questions": [
-    "Wie werden quelloffene Projekte ohne Vertragspartner im Drittparteienmanagement abgedeckt?",
-    "Wer verantwortet Versuchsprojekte der Fachbereiche?"
+    "Welche Entwicklerplattformen werden ohne zentrale Beschaffung genutzt?",
+    "Wie schnell lassen sich alle Schlüssel einer Plattform tatsächlich tauschen?"
    ],
    "controls": [
     "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
     "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen"
    ],
-   "updated": "2026-10-23"
+   "updated": "2026-10-24"
   },
   {
    "slug": "identitaeten-zugangsdaten",
@@ -395,17 +407,17 @@
    "title": "Kritische Schwachstellen in Randsystemen und Kernanwendungen",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Nach den PHP2Shell-Lücken hat Fortinet am 22. Oktober 2026 außerplanmäßige Updates für FortiOS, FortiManager, FortiAnalyzer, FortiMail und FortiAuthenticator veröffentlicht, Details folgen erst am 10. November. Zudem wird eine Lücke in Arista VeloCloud Orchestrator aktiv ausgenutzt, und die Warnung zu SafePay nennt Randsysteme als bevorzugten Zugang.",
-   "next_step": "Fortinet-Updates ohne Warten auf Kennungen einspielen und einen Notfallweg für Patches festlegen, der auf Herstellerwarnungen statt auf Scannerfunde reagiert.",
+   "status": "PHP2Shell betrifft laut Censys in Deutschland rund 4,2 Millionen erreichbare Dienste. Die PHP-Versionen 8.1 und älter bleiben ohne offizielles Update, Behörden und Stadtwerke haben Portale vorsorglich abgeschaltet. Fortinet veröffentlicht am 10. November Details zu seinen außerplanmäßigen Updates. Hinzu kommen eine Lücke mit Höchstwertung in GitLab und eine aktiv ausgenutzte Lücke in Arista…",
+   "next_step": "Den PHP-Bestand vollständig erfassen, auch eingebettete Komponenten in Appliances und Dienstleisterprodukten. Versionen 8.1 und älter ablösen oder abschotten, selbst betriebene GitLab-Server sofort aktualisieren und Entscheidungsrechte für vorsorgliche Abschaltungen festlegen.",
    "open_questions": [
-    "Wie schnell entstehen Angriffe, wenn Angreifer Patches mit Künstlicher Intelligenz analysieren?",
-    "Welche Randsysteme sind im Inventar nicht erfasst?"
+    "Welche Herstellerprodukte enthalten PHP, ohne es auszuweisen?",
+    "Wer entscheidet über eine vorsorgliche Abschaltung von Kundenportalen, und nach welchen Kriterien?"
    ],
    "controls": [
     "NIS-2-Richtlinie Art. 21 – Umgang mit Schwachstellen",
-    "ISO/IEC 27001 Anhang A 8.8 – Handhabung technischer Schwachstellen"
+    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen"
    ],
-   "updated": "2026-10-23"
+   "updated": "2026-10-24"
   },
   {
    "slug": "lebenszyklus-altsysteme",
@@ -419,16 +431,17 @@
    "title": "Lebenszyklus und Altsysteme",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Exchange Server 2016 und 2019 erhalten am 31. Oktober 2026 die letzten Extended Security Updates, Windows 11 Version 23H2 in den Unternehmensausgaben am 10. November 2026. Nach eMudhra musste GoDaddy 404.607 Zertifikate wegen fehlerhafter Richtliniendokumente widerrufen; Let's Encrypt verkürzt die Laufzeit ab 10. Februar 2027 auf 64 Tage.",
-   "next_step": "Zertifikatsinventar vervollständigen und automatischen Austausch für alle extern genutzten Zertifikate einführen, bevor die kürzeren Laufzeiten gelten.",
+   "status": "Exchange Server 2016 und 2019 erhalten am 31. Oktober 2026 die letzten Extended Security Updates. In den Unternehmensausgaben folgt Windows 11 Version 23H2 am 10. November 2026, Windows Server 2016 am 12. Januar 2027. Dazu kommen ältere PHP-Versionen ohne Updates und kürzere Zertifikatslaufzeiten ab Februar 2027.",
+   "next_step": "Für jede Frist die betroffenen Systeme mit Verantwortlichen erfassen. Für Systeme, die nicht rechtzeitig migriert werden, Risikoakzeptanz und Ausgleichsmaßnahmen dokumentieren, bevor die Abschlussprüfung danach fragt.",
    "open_questions": [
-    "Welche Anwendungen können Zertifikate nicht automatisch tauschen?"
+    "Wie viele Server mit Windows Server 2016 stützen Anwendungen, die für den Abschluss relevant sind?",
+    "Gibt es für Windows Server 2016 bezahlte Verlängerungen der Sicherheitsupdates?"
    ],
    "controls": [
-    "ISO/IEC 27001 Anhang A 8.24 – Verwendung von Kryptografie",
-    "ISO/IEC 27001 Anhang A 5.9 – Inventar der Informationen und anderen damit verbundenen Werte"
+    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
+    "IT-Kontrollen der Abschlussprüfung – Betrieb"
    ],
-   "updated": "2026-10-23"
+   "updated": "2026-10-24"
   },
   {
    "slug": "nis2-umsetzung",
@@ -521,19 +534,17 @@
    "title": "Cloud-Souveränität und Abhängigkeiten",
    "sector": "IT-Governance & Risiko",
    "ring": "vorbereiten",
-   "status": "Der Ausfall der Londoner Google-Cloud-Zone europe-west2-b am 20. Oktober 2026 legte fast acht Stunden lang Banken, Paketdienste und Händler lahm. Er zeigt, dass Konzentrationsrisiken auch ohne politische Eingriffe real sind. Politisch liegt der Cloud and AI Development Act als Vorschlag vor, Amazon Web Services trennt am 24. Oktober seine europäische souveräne Cloud testweise vom globalen Netz…",
-   "next_step": "Für kritische Anwendungen nachweisen, dass Redundanz über Zonen und Regionen getestet ist. Abhängigkeiten von Zahlungs- und Logistikdienstleistern mit eigener Cloud-Infrastruktur im Risikoregister ergänzen. Ausstiegs- und Wechselpläne mit Blick auf Januar 2027 aktualisieren.",
+   "status": "Amazon Web Services trennt seine europäische souveräne Cloud am 24. Oktober 2026 für mehrere Stunden vom globalen Netz und beruft sich dabei auf das Cloud Sovereignty Framework der Europäischen Kommission und den Kriterienkatalog C3A, ohne eine Zertifizierung zu beanspruchen. Wie sich Identitätsdienste und Steuerungsebene bei einer längeren Trennung verhalten, bleibt offen. Der Ausfall einer…",
+   "next_step": "Kriterien für Souveränität getrennt nach technischer Autonomie und rechtlichem Zugriff in die Anbieterbewertung aufnehmen und das veröffentlichte Ergebnis des Trennungstests auswerten.",
    "open_questions": [
-    "Welche Zahlungs- und Logistikdienstleister hängen an einer einzigen Cloud-Region?",
-    "Liefert der Trennungstest von Amazon Web Services am 24. Oktober belastbare Ergebnisse?",
-    "Bleibt es im Parlament bei dem Vorschlag von zwei statt vier Souveränitätsstufen?"
+    "Wie lange kann eine abgetrennte Region ohne globale Identitäts- und Namensdienste betrieben werden?",
+    "Welche Nachweise nach dem Kriterienkatalog C3A legen Anbieter tatsächlich vor?"
    ],
    "controls": [
-    "NIS-2-Richtlinie Art. 21 – Aufrechterhaltung des Betriebs und Krisenmanagement",
-    "ISO/IEC 27001 Anhang A 5.23 – Informationssicherheit für die Nutzung von Cloud-Diensten",
-    "ISO/IEC 27001 Anhang A 5.30 – Bereitschaft der Informations- und Kommunikationstechnik für den Geschäftsbetrieb"
+    "ISO/IEC 27001 Anhang A 5.23 – Informationssicherheit bei der Nutzung von Cloud-Diensten",
+    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette"
    ],
-   "updated": "2026-10-21"
+   "updated": "2026-10-24"
   },
   {
    "slug": "cyber-resilience-act",
@@ -573,19 +584,18 @@
     }
    ],
    "title": "Post-Quanten-Kryptografie",
-   "sector": "Cyber- & IT-Regulierung",
+   "sector": "Weitere Themen",
    "ring": "vorbereiten",
-   "status": "Bund und Bundesamt für Sicherheit in der Informationstechnik haben am 12. Oktober 2026 eine gemeinsame Leitlinie zur Umsetzung des europäischen Fahrplans veröffentlicht, die sich auch an Unternehmen und Betreiber kritischer Infrastrukturen richtet: Hochrisiko-Anwendungen bis spätestens Ende 2030, Gesamtmigration bis 2035 weitgehend abgeschlossen. Zuvor hatte das Bundesamt von Classic McEliece…",
-   "next_step": "Kryptoinventar aufbauen, Hochrisiko-Anwendungen per Risikoanalyse bestimmen, Zuständigkeiten festlegen und Anforderungen an Kryptoagilität in Lieferantenverträge aufnehmen.",
+   "status": "Bund und Bundesamt für Sicherheit in der Informationstechnik verlangen in ihrer Leitlinie vom 12. Oktober 2026 die Umstellung von Hochrisiko-Anwendungen bis spätestens Ende 2030. Die Gesamtmigration soll bis 2035 weitgehend abgeschlossen sein. Gleichzeitig zeigt die Gruppe Lazarus, dass auch Angreifer das Verfahren ML-KEM bereits nutzen, um Schadsoftware zu verbergen.",
+   "next_step": "Das Kryptografie-Inventar aufbauen und bei Sicherheitswerkzeugen prüfen, ob sie Verkehr mit Post-Quanten-Verfahren erkennen und auswerten können.",
    "open_questions": [
-    "Welche Anwendungen gelten im Konzern als Hochrisiko im Sinne des Fahrplans?",
-    "Wie weit sind zentrale Anbieter wie Zahlungsdienstleister und Cloud-Anbieter mit ihrer eigenen Umstellung?"
+    "Unterstützen eingesetzte Werkzeuge zur Netzwerkprüfung Post-Quanten-Verfahren?",
+    "Welche Anwendungen gelten als Hochrisiko-Anwendungen im Sinne der Leitlinie?"
    ],
    "controls": [
-    "ISO/IEC 27001 Anhang A 8.24 – Verwendung von Kryptografie",
-    "NIS-2-Richtlinie Art. 21 – Konzepte und Verfahren für Kryptografie und Verschlüsselung"
+    "ISO/IEC 27001 Anhang A 8.24 – Einsatz von Kryptografie"
    ],
-   "updated": "2026-10-15"
+   "updated": "2026-10-24"
   },
   {
    "slug": "pruefung-it-ki",
@@ -861,6 +871,17 @@
    "added": "2026-10-01"
   },
   {
+   "date": "2027-01-12",
+   "title": "Windows Server 2016: letzte Sicherheitsupdates",
+   "detail": "Alle Betreiber von Windows Server 2016 müssen bis dahin migrieren oder Risikoakzeptanz und Ausgleichsmaßnahmen dokumentieren.",
+   "scope": "global",
+   "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-server-2016-reaches-end-of-support-in-january/",
+   "primary": false,
+   "checked": true,
+   "dossier": "lebenszyklus-altsysteme",
+   "added": "2026-10-24"
+  },
+  {
    "date": "2027-02-10",
    "title": "Let's Encrypt: Zertifikate standardmäßig nur noch 64 Tage gültig",
    "detail": "Betreiber von Webseiten und Schnittstellen mit Zertifikaten von Let's Encrypt müssen feste Erneuerungsintervalle durch eine automatische Erneuerung ersetzen.",
@@ -1079,6 +1100,26 @@
    ]
   },
   {
+   "theme": "Cyberversicherung bei vorsorglicher Abschaltung",
+   "why": "Nach den PHP2Shell-Abschaltungen diskutiert die Versicherungsbranche, ob vorsorgliche Abschaltungen als Betriebsunterbrechung gedeckt sind. Das sollte vor der nächsten Notabschaltung mit dem Versicherer geklärt sein.",
+   "count": 1,
+   "first_seen": "2026-10-24",
+   "last_seen": "2026-10-24",
+   "evidence": [
+    "https://www.insurancebusinessmag.com/uk/news/cyber/uk-councils-and-met-police-among-sites-pulled-offline-after-ncsc-alert-594424.aspx"
+   ]
+  },
+  {
+   "theme": "Ausschluss von Hochrisiko-Anbietern",
+   "why": "Der Vorschlag der Europäischen Kommission für einen neuen Rechtsakt zur Cybersicherheit sieht vor, Anbieter aus Risikostaaten in Sektoren der NIS-2-Richtlinie einzuschränken oder auszuschließen. Das könnte den Austausch von Komponenten und neue Prüfschritte im Einkauf erzwingen.",
+   "count": 1,
+   "first_seen": "2026-10-24",
+   "last_seen": "2026-10-24",
+   "evidence": [
+    "https://cm.twobirds.com/en/insights/2026/eu-cybersecurity-act-proposal-key-provisions,-scope,-and-implications-for-organisations"
+   ]
+  },
+  {
    "theme": "Meldepflichten für Vorfälle mit Agenten",
    "why": "Das Wissenschaftspanel der Vereinten Nationen empfiehlt nach dem Vorbild von Luftfahrt und Medizin verbindliche Meldepflichten und unabhängige Audits für Vorfälle mit Agenten. Solche Empfehlungen finden sich oft später in Aufsichts- und Prüfungserwartungen wieder.",
    "count": 1,
@@ -1140,6 +1181,184 @@
   }
  ],
  "news": [
+  {
+   "title": "Update: PHP2Shell – 4,2 Millionen verwundbare Dienste in Deutschland, Portale vorsorglich offline",
+   "summary": "Das Sicherheitsunternehmen Censys hat das Internet nach den Lücken CVE-2026-109618 und CVE-2026-109619 in der Skriptsprache PHP durchsucht. In Deutschland waren demnach rund 4,2 Millionen von 11 Millionen erreichbaren PHP-Diensten verwundbar, offizielle Updates gibt es nur für die Versionen 8.2 bis 8.5. Für die Versionen 7.4 bis 8.1 gibt es lediglich Korrekturen im Quellcode, aber keine fertigen Versionen.",
+   "relevance": "Verwundbares PHP steckt nicht nur in eigenen Webshops, sondern oft unbemerkt in Appliances und in Produkten von Dienstleistern. Für Version 8.1 und älter bleibt nur Ablösen oder Abschotten. Die Abschaltwelle zeigt außerdem: Wer über die vorsorgliche Abschaltung von Kundenportalen entscheidet und nach welchen Kriterien, muss vorher geklärt sein.",
+   "source": "heise online",
+   "url": "https://www.heise.de/news/php2shell-Millionen-PHP-Dienste-in-Deutschland-verwundbar-11498464.html",
+   "id": "2026-10-24-php2shell-deutschland-vorsorgliche-abschaltungen",
+   "topic": "IT-Governance & Risiko",
+   "impact": "hoch",
+   "published": "2026-10-23",
+   "tags": [
+    "PHP2Shell",
+    "Schwachstellenmanagement",
+    "Notabschaltung"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Umgang mit Schwachstellen",
+    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Einkauf & Drittparteien"
+   ],
+   "countries": [
+    "DE",
+    "EU"
+   ],
+   "dossier": "kritische-schwachstellen-perimeter",
+   "priority": 1,
+   "primary": false,
+   "added": "2026-10-24T05:07:18Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Datum, Lücken und Zahlen stimmen. Die Quelle erwähnt aber weder Stadtwerke, Städte oder die Charité noch vorsorgliche Abschaltungen von Portalen noch eine Aussage des Bundesamts für Sicherheit in der Informationstechnik. Diese Angaben und damit auch der Titelteil 'Portale vorsorglich offline' sind…"
+   }
+  },
+  {
+   "title": "Windows Server 2016: Letzte Sicherheitsupdates am 12. Januar 2027",
+   "summary": "Microsoft beendet den Support für alle Ausgaben von Windows Server 2016 am 12. Januar 2027, danach gibt es keine monatlichen Sicherheitsupdates mehr. Microsoft empfiehlt den Umstieg auf Windows Server 2025. Dieses System erhält erweiterten Support bis zum 14. November 2034.",
+   "relevance": "Nach Exchange Server Ende Oktober und Windows 11 Version 23H2 im November ist das die nächste harte Frist im Lebenszyklus. In großen Serverlandschaften mit Warenwirtschaft, Filial- und Logistikanwendungen bleiben weniger als drei Monate für die Migration oder eine dokumentierte Risikoakzeptanz. Systeme ohne Herstellerunterstützung sind ein klassischer Befund bei den allgemeinen IT-Kontrollen der Abschlussprüfung.",
+   "source": "BleepingComputer",
+   "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-server-2016-reaches-end-of-support-in-january/",
+   "id": "2026-10-24-windows-server-2016-supportende",
+   "topic": "IT-Governance & Risiko",
+   "impact": "hoch",
+   "published": "2026-10-23",
+   "tags": [
+    "Lebenszyklus",
+    "Altsysteme",
+    "Windows Server"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
+    "IT-Kontrollen der Abschlussprüfung – Betrieb"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Revision & Prüfung",
+    "Management"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "lebenszyklus-altsysteme",
+   "priority": 2,
+   "primary": false,
+   "added": "2026-10-24T05:07:18Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum 23. Oktober 2026, Supportende am 12. Januar 2027 für alle Ausgaben, die Empfehlung für Windows Server 2025 und dessen erweiterter Support bis 14. November 2034 sind belegt."
+   }
+  },
+  {
+   "title": "Cloud-Plattform Railway: Kunden sollen alle Zugangsdaten und Schlüssel tauschen",
+   "summary": "Unbefugte haben bei der Entwicklerplattform Railway auf gespeicherte Umgebungsvariablen von Kunden zugegriffen und teils entschlüsselte Zugangsdaten erhalten. Railway hostet nach eigenen Angaben für rund 4,8 Millionen Nutzer über 16 Millionen Dienste. Die Plattform fordert alle Kunden auf, Schlüssel für Programmierschnittstellen sowie Datenbank- und Registry-Zugangsdaten zu tauschen und ihre Protokolle zu prüfen. Ausgangspunkt waren Angriffe auf dort betriebene Anbieter für Inferenz Künstlicher Intelligenz.",
+   "relevance": "Nach LiteLLM ist das der zweite Fall binnen einer Woche, in dem eine Entwicklerplattform Geheimnisse ihrer Kunden preisgibt. Entscheidend ist, ob es ein Inventar der Secrets und einen geübten Rotationsprozess gibt. Das gilt auch für Plattformen, die Fachbereiche oder Dienstleister ohne zentrale Beschaffung nutzen.",
+   "source": "BleepingComputer",
+   "url": "https://www.bleepingcomputer.com/news/security/railway-warns-devs-to-rotate-secrets-after-potential-breach/",
+   "id": "2026-10-24-railway-geheimnisse-rotieren",
+   "topic": "IT-Governance & Risiko",
+   "impact": "mittel",
+   "published": "2026-10-22",
+   "tags": [
+    "Supply Chain",
+    "Secrets",
+    "Entwicklerplattform"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 5.17 – Authentisierungsinformationen",
+    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Einkauf & Drittparteien"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "drittparteien-lieferkette",
+   "priority": 3,
+   "primary": false,
+   "added": "2026-10-24T05:07:18Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum, 4,8 Millionen Nutzer, über 16 Millionen Dienste, teils entschlüsselte Umgebungsvariablen, die zu tauschenden Zugangsdaten, die Prüfung der Protokolle und die Angriffe auf Inferenz-Anbieter sind belegt."
+   }
+  },
+  {
+   "title": "Händler TAKKT: Cyberangriff bremst Bestellabwicklung und Lieferungen",
+   "summary": "Die TAKKT AG hat am 21. Oktober 2026 per Ad-hoc-Mitteilung nach Artikel 17 der Marktmissbrauchsverordnung einen Cyberangriff auf Teile ihrer Systeme gemeldet, die betroffenen Systeme wurden vom Netz genommen. Erheblich eingeschränkt sind Auftragsabwicklung, Kundenservice und Lieferungen der Sparte Industrie und Verpackung in Europa sowie der Sparte Gastronomiebedarf in Nordamerika. Online-Bestellungen bleiben möglich. Angriffsweg und ein möglicher Datenabfluss sind bisher offen.",
+   "relevance": "Wie bei Ahold Delhaize trifft der Angriff nicht die Kasse, sondern Logistik und Auftragsabwicklung. Gerade für diese Prozesse müssen Notfallpläne und Wiederanlaufzeiten belastbar sein. Der Fall zeigt auch, dass ein Cybervorfall kapitalmarktrechtliche Pflichten auslösen kann. Krisenstab, Rechtsabteilung und Informationssicherheit müssen dann eng getaktet zusammenarbeiten.",
+   "source": "Security.io",
+   "url": "https://security.io/articles/2026/10/22/takkt-cyberattack-operational-disruption",
+   "id": "2026-10-24-takkt-cyberangriff-lieferungen",
+   "topic": "Handel & Branche",
+   "impact": "mittel",
+   "published": "2026-10-22",
+   "tags": [
+    "Cyberangriff",
+    "Logistik",
+    "Ad-hoc-Mitteilung"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Aufrechterhaltung des Betriebs und Krisenmanagement",
+    "ISO/IEC 27001 Anhang A 5.30 – Bereitschaft der Informations- und Kommunikationstechnik für Business Continuity"
+   ],
+   "roles": [
+    "Management",
+    "IT-Risiko"
+   ],
+   "countries": [
+    "DE",
+    "EU"
+   ],
+   "dossier": null,
+   "priority": 4,
+   "primary": false,
+   "added": "2026-10-24T05:07:18Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Ad-hoc-Mitteilung vom 21. Oktober 2026 nach Artikel 17 der Marktmissbrauchsverordnung, betroffene Sparten und Regionen, weiterhin mögliche Online-Bestellungen und der offene Angriffsweg sind belegt."
+   }
+  },
+  {
+   "title": "GitLab: Lücke mit Höchstwertung erlaubt Codeausführung ohne Anmeldung",
+   "summary": "GitLab hat am 22. Oktober 2026 Updates für die Lücke CVE-2026-110264 veröffentlicht. Es handelt sich um einen Ganzzahlüberlauf im Compiler für reguläre Ausdrücke, über den Angreifer ohne Anmeldung Code auf dem Server ausführen können. Betroffen sind die selbst betriebenen Community- und Enterprise-Ausgaben, die Korrektur steckt unter anderem in den Versionen 19.5.1, 19.4.3 und 18.11.13. Aktive Angriffe sind bisher nicht bekannt.",
+   "relevance": "Wer Quellcode und Bereitstellungs-Pipelines auf eigenen GitLab-Servern betreibt, setzt hier seine Kronjuwelen aufs Spiel: Eine Übernahme gefährdet die Integrität aller daraus ausgelieferten Anwendungen. Für die Prüfung berührt das unmittelbar das Änderungsmanagement in den allgemeinen IT-Kontrollen.",
+   "source": "BleepingComputer",
+   "url": "https://www.bleepingcomputer.com/news/security/gitlab-warns-of-new-max-severity-code-execution-vulnerability/",
+   "id": "2026-10-24-gitlab-kritische-luecke",
+   "topic": "IT-Governance & Risiko",
+   "impact": "mittel",
+   "published": "2026-10-22",
+   "tags": [
+    "Quellcodeverwaltung",
+    "Änderungsmanagement",
+    "Schwachstelle"
+   ],
+   "controls": [
+    "IT-Kontrollen der Abschlussprüfung – Änderungsmanagement",
+    "ISO/IEC 27001 Anhang A 8.4 – Zugriff auf Quellcode"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Revision & Prüfung"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "kritische-schwachstellen-perimeter",
+   "priority": 5,
+   "primary": false,
+   "added": "2026-10-24T05:07:18Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Lücke, Fehlerart, Codeausführung ohne Anmeldung, betroffene Ausgaben und die genannten Versionen sind belegt. Weitere korrigierte Versionen werden in der Quelle zusätzlich genannt."
+   }
+  },
   {
    "title": "Fortinet: Außerplanmäßige Updates für Firewalls und Verwaltung, Details erst am 10. November",
    "summary": "Fortinet hat außer der Reihe Updates für FortiOS (unter anderem 8.0.2, 7.6.8, 7.4.13 und 7.2.14), FortiManager, FortiAnalyzer, FortiMail und FortiAuthenticator veröffentlicht; FortiSASE wird automatisch aktualisiert. Die kritischen und hochriskanten Lücken wurden mit Werkzeugen Künstlicher Intelligenz gefunden, Kennungen und Details sollen erst zum regulären Patchday am 10. November 2026 folgen. Der Hersteller warnt, dass Angreifer die Updates mit Künstlicher Intelligenz binnen Stunden oder Tagen analysieren könnten.",
@@ -1343,6 +1562,39 @@
    "check": {
     "verdict": "abweichung",
     "note": "Gescheiterte Abstimmungen am 7. und 11. Oktober sowie Forderungen von Deutschland und Frankreich stehen nicht in der Quelle; dort ist nur von gestärktem Schutz von Geschäftsgeheimnissen im letzten Kompromisstext die Rede. Der Artikel erschien am 22. Oktober 2026."
+   }
+  },
+  {
+   "title": "Nordkoreanische Angreifer nutzen Post-Quanten-Verschlüsselung für Schadsoftware",
+   "summary": "Kaspersky beschreibt eine Kampagne der Gruppe Lazarus gegen südkoreanische Organisationen. Ein Ladeprogramm nutzt dabei das standardisierte Post-Quanten-Verfahren ML-KEM-1024, um die Verbindung zu den Steuerungsservern abzusichern und nachgeladene Module zu verbergen. Die Angriffe laufen laut den Forschern seit Juli 2025.",
+   "relevance": "Post-Quanten-Kryptografie ist damit nicht nur ein Migrationsprojekt, sondern auch eine Frage der Erkennung: Werkzeuge zur Netzwerk- und Inhaltsprüfung müssen mit den neuen Verfahren umgehen können. Das gehört in das Kryptografie-Inventar und in die Anforderungen an Sicherheitswerkzeuge.",
+   "source": "BleepingComputer",
+   "url": "https://www.bleepingcomputer.com/news/security/lazarus-hackers-use-post-quantum-cryptography-for-malware-delivery/",
+   "id": "2026-10-24-lazarus-post-quanten-schadsoftware",
+   "topic": "Weitere Themen",
+   "impact": "info",
+   "published": "2026-10-21",
+   "tags": [
+    "Post-Quanten-Kryptografie",
+    "Staatliche Angreifer",
+    "Erkennung"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 8.24 – Einsatz von Kryptografie"
+   ],
+   "roles": [
+    "IT-Risiko"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "post-quanten-kryptografie",
+   "priority": 7,
+   "primary": false,
+   "added": "2026-10-24T05:07:18Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Der Artikel erschien am 21. Oktober 2026, nicht am 23. Oktober. Kaspersky, die südkoreanischen Ziele, ML-KEM-1024 und der Beginn im Juli 2025 sind belegt."
    }
   },
   {
@@ -1936,6 +2188,41 @@
    "check": {
     "verdict": "ok",
     "note": "Artikel vom 19. Oktober 2026 bestätigt rund 700 Supermärkte, grobe Fahrlässigkeit, Obliegenheiten und Kriegsklausel, Anlagen ohne Sicherheitsbarriere am Internet, Standardpasswort, veraltete Hardware und bis zu 200.000 Euro pro Hypermarkt."
+   }
+  },
+  {
+   "title": "Update: Amazon Web Services trennt souveräne Cloud heute vom globalen Netz – was der Test nicht zeigt",
+   "summary": "Am 24. Oktober 2026 betreibt Amazon Web Services seine europäische souveräne Cloud mehrere Stunden ohne Verbindung zum globalen Backbone und zu einem eigenen Kanal für Datenübertragungen, der Verkehr läuft dann über europäische Internetanbieter. Der Konzern orientiert sich nach eigener Aussage am Cloud Sovereignty Framework der Europäischen Kommission und am Kriterienkatalog C3A des Bundesamts für Sicherheit in der Informationstechnik, beansprucht aber keine Zertifizierung. Es fehlen Angaben dazu, wie sich Identitäts- und Namensdienste, die Steuerungsebene und Zertifikatslaufzeiten bei einer längeren Trennung verhalten.",
+   "relevance": "Für die Souveränitätsbewertung von Cloud-Anbietern ist der Test ein Lehrstück. Eine mehrstündige Trennung belegt technische Resilienz, beantwortet aber weder die Frage nach dem rechtlichen Zugriff aus den Vereinigten Staaten noch die nach längerer Autonomie. Kriterienkataloge im Einkauf sollten beide Ebenen getrennt abfragen.",
+   "source": "InfoQ",
+   "url": "https://infoq.com/news/2026/10/aws-sovereign-cloud-exercise",
+   "id": "2026-10-24-aws-souveraene-cloud-trennungstest",
+   "topic": "Standards & Zertifizierung",
+   "impact": "info",
+   "published": "2026-10-18",
+   "tags": [
+    "Cloud-Souveränität",
+    "C3A",
+    "Resilienz"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 5.23 – Informationssicherheit bei der Nutzung von Cloud-Diensten"
+   ],
+   "roles": [
+    "Einkauf & Drittparteien",
+    "Management"
+   ],
+   "countries": [
+    "EU",
+    "DE"
+   ],
+   "dossier": "cloud-souveraenitaet",
+   "priority": 6,
+   "primary": false,
+   "added": "2026-10-24T05:07:18Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Veröffentlichung am 18. Oktober 2026, Trennung am 24. Oktober über mehrere Stunden, Umleitung über europäische Internetanbieter, die beiden Bezugsrahmen, keine beanspruchte Zertifizierung und die fehlenden Angaben sind belegt."
    }
   },
   {

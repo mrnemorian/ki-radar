@@ -1,0 +1,185 @@
+{
+ "format": "tag",
+ "chapters": [
+  {
+   "title": "Begrüßung",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Guten Morgen, liebe IT-GRC-Kolleginnen und -Kollegen, willkommen beim IT-GRC Radar am Samstag, dem vierundzwanzigsten Oktober 2026."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Samstag, und trotzdem ist die Patchliste länger als der Einkaufszettel. Na dann, los."
+    }
+   ]
+  },
+  {
+   "title": "PHP2Shell in Deutschland",
+   "news_id": "2026-10-24-php2shell-deutschland-vorsorgliche-abschaltungen",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Da gibt es Neues zu PHP2Shell, den beiden kritischen Lücken in der Skriptsprache PHP. Laut Scans von Censys sind in Deutschland rund 4,2 Millionen von 11 Millionen erreichbaren Diensten verwundbar."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Moment, und für die Versionen 8.1 und älter gibt es gar kein offizielles Update? Dann heißt die Maßnahme nicht patchen, sondern ablösen oder abschotten."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Genau. Ablösen oder abschotten, und zwar zügig."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Für einen Handelskonzern ist der Webshop nur der sichtbare Teil. PHP steckt oft unbemerkt in [en]Appliances[/en] und Produkten von Dienstleistern. Und wer die Abschaltung des Kundenportals entscheidet, sollte man nicht erst nachts um elf klären."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Also wieder das ewige: Wer ist eigentlich Owner?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Diesmal mit Stoppuhr."
+    }
+   ]
+  },
+  {
+   "title": "Windows Server 2016",
+   "news_id": "2026-10-24-windows-server-2016-supportende",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Passend dazu der Lebenszyklus. Windows Server 2016 bekommt am zwölften Januar 2027 die letzten Sicherheitsupdates, und zwar in allen Ausgaben."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Das ist die dritte harte Frist in Folge: Exchange Ende Oktober, Windows 11 im November, jetzt der Server. Gut zweieinhalb Monate sind in großen Serverlandschaften nicht viel."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und wenn die Migration nicht rechtzeitig klappt?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Dann braucht es eine dokumentierte Risikoakzeptanz mit Ausgleichsmaßnahmen. Sonst taucht der Server in der Abschlussprüfung als Befund bei den allgemeinen IT-Kontrollen auf, pünktlich zur Audit-Saison."
+    }
+   ]
+  },
+  {
+   "title": "Railway",
+   "news_id": "2026-10-24-railway-geheimnisse-rotieren",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Weiter zur [en]Supply Chain[/en]. Die Entwicklerplattform Railway, nach eigenen Angaben mit rund 4,8 Millionen Nutzern, meldet Zugriffe auf gespeicherte Umgebungsvariablen von Kunden, teils entschlüsselt."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Nach LiteLLM ist das der zweite Fall in einer Woche, in dem eine Entwicklerplattform die Geheimnisse ihrer Kunden preisgibt. Railway sagt: alle Schlüssel und Zugangsdaten tauschen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Klingt erst mal einfach."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ist es aber nur, wenn es ein Inventar der [en]Secrets[/en] gibt und die Rotation geübt ist. Heikel wird es bei Plattformen, die ein Fachbereich mal eben mit Kreditkarte gebucht hat. Die stehen selten in der Excel-Liste."
+    }
+   ]
+  },
+  {
+   "title": "TAKKT",
+   "news_id": "2026-10-24-takkt-cyberangriff-lieferungen",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Aus dem Handel: Die TAKKT AG hat am einundzwanzigsten Oktober per Ad-hoc-Mitteilung einen Cyberangriff gemeldet. Auftragsabwicklung, Kundenservice und Lieferungen in Europa und Nordamerika sind erheblich eingeschränkt, online bestellen geht aber noch."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Wie bei Ahold Delhaize trifft es nicht die Kasse, sondern Logistik und Auftragsabwicklung. Bestellen kann man, nur kommt nichts an. Genau dafür müssen die Wiederanlaufzeiten realistisch geplant sein."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und was sagt uns die Ad-hoc-Mitteilung?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Dass ein Cybervorfall schnell kapitalmarktrechtliche Pflichten auslösen kann. Krisenstab, Recht und Sicherheit müssen dann im Stundentakt zusammenarbeiten, nicht im Wochentakt."
+    }
+   ]
+  },
+  {
+   "title": "GitLab",
+   "news_id": "2026-10-24-gitlab-kritische-luecke",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Kurz zu GitLab: Eine Lücke mit Höchstwertung erlaubt auf selbst betriebenen Servern Codeausführung ohne Anmeldung. Updates gibt es, Angriffe sind bisher nicht bekannt."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Wer Quellcode und [en]Pipelines[/en] selbst betreibt, hat hier seine Kronjuwelen im Netz. Eine Übernahme gefährdet alles, was daraus ausgeliefert wird. Prüfer nennen das Änderungsmanagement, ich nenne es: bitte heute noch patchen."
+    }
+   ]
+  },
+  {
+   "title": "Souveräne Cloud im Test",
+   "news_id": "2026-10-24-aws-souveraene-cloud-trennungstest",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Und heute trennt Amazon Web Services seine europäische souveräne [en]Cloud[/en] testweise vom globalen Netz. Da gibt es Neues: Wie sich Identitäts- und Namensdienste oder Zertifikate bei einer längeren Trennung verhalten, dazu fehlen laut einem Bericht die Angaben."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ein paar Stunden Trennung belegen Resilienz, aber noch keine Souveränität. Ob Behörden der Vereinigten Staaten Zugriff verlangen können, bleibt davon unberührt. Im Einkauf sollte man beides getrennt abfragen."
+    }
+   ]
+  },
+  {
+   "title": "Lazarus und Post-Quanten",
+   "news_id": "2026-10-24-lazarus-post-quanten-schadsoftware",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Zum Schluss etwas Kurioses: Die nordkoreanische Gruppe Lazarus nutzt laut Kaspersky das Post-Quanten-Verfahren ML-KEM, um ihre Schadsoftware zu verbergen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Die Angreifer sind bei der Migration also schneller als manche Projektplanung. Im Ernst: Erkennungswerkzeuge müssen mit den neuen Verfahren umgehen können. Das gehört ins Kryptografie-Inventar."
+    }
+   ]
+  },
+  {
+   "title": "Auf dem Radar",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Auf dem Radar: Versicherer diskutieren, ob vorsorgliche Abschaltungen bei kritischen Lücken wie PHP2Shell als Betriebsunterbrechung gedeckt sind."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Das sollte man vor der nächsten Abschaltung mit dem Versicherer klären, nicht danach. Sonst wird die vorsichtige Entscheidung am Ende die teure."
+    }
+   ]
+  },
+  {
+   "title": "Abschied",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Das war das IT-GRC Radar für diesen Samstag. Alle Quellen findet ihr wie immer auf der Webseite."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Schönes Wochenende. Und wer noch PHP 8.1 findet: nicht erschrecken, aufschreiben."
+    }
+   ]
+  }
+ ]
+}

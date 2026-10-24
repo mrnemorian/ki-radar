@@ -1,11 +1,17 @@
 {
  "last_run": {
-  "start": "2026-10-23T07:00:01+02:00",
-  "end": "2026-10-23T07:08:07+02:00",
+  "start": "2026-10-24T07:00:01+02:00",
+  "end": "2026-10-24T07:07:18+02:00",
   "ok": true,
-  "summary": "8 neue Meldungen: P1 Fortinet: Außerplanmäßige Updates für Firewalls und Verwaltung, Details erst am 10. November; P2 LiteLLM: Veröffentlichungsprozess gekapert, Version 1.107.0 stiehlt Cloud-Zug"
+  "summary": "7 neue Meldungen: P1 Update: PHP2Shell – 4,2 Millionen verwundbare Dienste in Deutschland, Portale vorsorglich offline; P2 Windows Server 2016: Letzte Sicherheitsupdates am 12. Januar 2027; P3 Cloud"
  },
  "history": [
+  {
+   "start": "2026-10-24T07:00:01+02:00",
+   "end": "2026-10-24T07:07:18+02:00",
+   "ok": true,
+   "summary": "7 neue Meldungen: P1 Update: PHP2Shell – 4,2 Millionen verwundbare Dienste in Deutschland, Portale vorsorglich offline; P2 Windows Server 2016: Letzte Sicherheitsupdates am 12. Januar 2027; P3 Cloud"
+  },
   {
    "start": "2026-10-23T07:00:01+02:00",
    "end": "2026-10-23T07:08:07+02:00",
