@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-24T05:07:18Z",
+ "updated": "2026-10-25T06:09:50Z",
  "topics": [
   "IT-Governance & Risiko",
   "Cyber- & IT-Regulierung",
@@ -11,6 +11,18 @@
   "Weitere Themen"
  ],
  "briefings": [
+  {
+   "date": "2026-10-25",
+   "headline": "Italien schaltet bei der NIS-2-Umsetzung auf Nachweise um, Agenten automatisieren den ConnectWise-Angriff, und Aufsichten in Südosteuropa sanktionieren.",
+   "points": [
+    "Italien: Bis 31. Oktober müssen grundlegende Sicherheitsmaßnahmen umgesetzt und funktionierend nachweisbar sein, Bußgelder bis 10 Millionen Euro oder 2 Prozent des Umsatzes",
+    "ConnectWise-Angriff: Microsoft nennt die staatsnahe chinesische Gruppe Storm-0940, die mit dem Agenten-Framework ARTEX über 2.250 Cloud-Umgebungen angriff",
+    "Rumänien verhängt das erste Bußgeld nach dem nationalen Cybersicherheitsgesetz, weil eine Meldepflicht nicht fristgerecht erfüllt wurde",
+    "Kroatien: 2,59 Millionen Euro Bußgeld, weil Fingerabdrücke von vier statt der angegebenen zwei Fingern erfasst wurden",
+    "Wettbewerber Schwarz Digits geht eine Partnerschaft für souveräne Infrastruktur mit Fujitsu und Fsas Technologies ein"
+   ],
+   "count": 5
+  },
   {
    "date": "2026-10-24",
    "headline": "PHP2Shell trifft Millionen Dienste in Deutschland, Windows Server 2016 läuft im Januar aus, Railway und TAKKT zeigen Risiken bei Dienstleistern und Logistik.",
@@ -359,17 +371,18 @@
    "title": "Drittparteien- und Lieferkettenrisiko",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Nach dem Lieferkettenangriff auf LiteLLM hat nun die Entwicklerplattform Railway gespeicherte Geheimnisse ihrer Kunden offengelegt, teils entschlüsselt, und fordert den Tausch aller Schlüssel. Zuvor trafen Angriffe ConnectWise, Bullhorn und CyberLogitec. Bei TAKKT legt ein Cyberangriff Auftragsabwicklung und Lieferungen lahm.",
-   "next_step": "Ein Inventar der Secrets bei externen Entwickler- und Cloud-Plattformen aufbauen, Rotationsprozesse üben und Plattformen erfassen, die Fachbereiche ohne zentrale Beschaffung nutzen.",
+   "status": "Microsoft ordnet den Angriff über ConnectWise der staatsnahen chinesischen Gruppe Storm-0940 zu. Sie erreichte mit dem Agenten-Framework ARTEX über 2.250 Cloud-Umgebungen und verschaffte sich dauerhaften privilegierten Zugriff. Zuvor wurden über LiteLLM und Railway Zugangsdaten und Geheimnisse abgegriffen, bei TAKKT legte ein Cyberangriff Auftragsabwicklung und Lieferungen lahm.",
+   "next_step": "Zugriffe von Dienstleistern auf Microsoft-365- und Cloud-Umgebungen inventarisieren, Anwendungszugangsdaten und OAuth-Freigaben überprüfen und Verbindungen zu kompromittierten Anbietern bis zum Abschluss ihrer Wiederherstellung getrennt halten.",
    "open_questions": [
-    "Welche Entwicklerplattformen werden ohne zentrale Beschaffung genutzt?",
-    "Wie schnell lassen sich alle Schlüssel einer Plattform tatsächlich tauschen?"
+    "Wie lassen sich Agenten-gestützte Massenangriffe auf Anmeldungen bei Dienstleistern vertraglich und technisch absichern?",
+    "Welche Nachweise zur Bereinigung sollte ein kompromittierter Anbieter vor der Wiederanbindung liefern?"
    ],
    "controls": [
     "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
-    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen"
+    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen",
+    "ISO/IEC 27001 Anhang A 5.22 – Überwachung von Lieferantendienstleistungen"
    ],
-   "updated": "2026-10-24"
+   "updated": "2026-10-25"
   },
   {
    "slug": "identitaeten-zugangsdaten",
@@ -455,18 +468,18 @@
    "title": "NIS-2-Umsetzung",
    "sector": "Cyber- & IT-Regulierung",
    "ring": "jetzt handeln",
-   "status": "In Deutschland gilt das Umsetzungsgesetz seit 6. Dezember 2025, in Österreich das Netz- und Informationssystemsicherheitsgesetz 2026 seit 1. Oktober 2026 mit Registrierung bis 31. Dezember 2026 und Selbstdeklaration bis Ende September 2027. In Italien müssen bereits 2025 gelistete Einrichtungen die grundlegenden Sicherheitsmaßnahmen bis 31. Oktober 2026 umgesetzt haben, die Meldepflicht gilt…",
-   "next_step": "Länderübersicht für alle Gesellschaften führen: Betroffenheit, Registrierung, Meldewege und Fristen je Land; für Italien den Umsetzungsstand der grundlegenden Sicherheitsmaßnahmen vor dem 31. Oktober bestätigen lassen.",
+   "status": "In Deutschland gilt das Umsetzungsgesetz seit 6. Dezember 2025, in Österreich das Netz- und Informationssystemsicherheitsgesetz 2026 seit 1. Oktober 2026 mit Registrierung bis Jahresende. In Italien müssen die 2025 gelisteten Einrichtungen bis 31. Oktober 2026 funktionierende, belegbare Maßnahmen vorweisen, danach werden Kontrollen erwartet; Rumänien hat am 29. September 2026 das erste Bußgeld…",
+   "next_step": "Für die italienischen Einheiten die Nachweise wie Wiederherstellungstests, Multi-Faktor-Authentifizierung, Inventar mit Verantwortlichen und Leitungsbeschluss abrufbar machen; in allen Ländern von REWE International die Meldewege und Fristen mit Zeitstempeln üben.",
    "open_questions": [
-    "Wie lassen sich nationale Nachweise (Selbstdeklaration Österreich, Maßnahmenkatalog Italien, Nachweise Deutschland) aus einem gemeinsamen Kontrollrahmen bedienen?",
-    "Wie stimmen sich parallele Meldepflichten mehrerer Länder bei einem konzernweiten Vorfall ab?"
+    "Wann und wie beginnt die italienische Cybersicherheitsagentur mit formellen Kontrollen?",
+    "Wenden die Aufsichten in Mittel- und Südosteuropa Meldefristen gegenüber Unternehmen ebenso streng an wie gegenüber Behörden?"
    ],
    "controls": [
-    "NIS-2-Richtlinie Art. 20 – Governance und Verantwortung der Leitungsorgane",
+    "NIS-2-Richtlinie Art. 20 – Governance",
     "NIS-2-Richtlinie Art. 21 – Risikomanagementmaßnahmen",
     "NIS-2-Richtlinie Art. 23 – Berichtspflichten"
    ],
-   "updated": "2026-10-03"
+   "updated": "2026-10-25"
   },
   {
    "slug": "ai-act",
@@ -534,17 +547,17 @@
    "title": "Cloud-Souveränität und Abhängigkeiten",
    "sector": "IT-Governance & Risiko",
    "ring": "vorbereiten",
-   "status": "Amazon Web Services trennt seine europäische souveräne Cloud am 24. Oktober 2026 für mehrere Stunden vom globalen Netz und beruft sich dabei auf das Cloud Sovereignty Framework der Europäischen Kommission und den Kriterienkatalog C3A, ohne eine Zertifizierung zu beanspruchen. Wie sich Identitätsdienste und Steuerungsebene bei einer längeren Trennung verhalten, bleibt offen. Der Ausfall einer…",
-   "next_step": "Kriterien für Souveränität getrennt nach technischer Autonomie und rechtlichem Zugriff in die Anbieterbewertung aufnehmen und das veröffentlichte Ergebnis des Trennungstests auswerten.",
+   "status": "Amazon Web Services hatte die Trennung seiner europäischen souveränen Cloud vom globalen Netz für den 24. Oktober 2026 angekündigt und will Regulierern und Kunden danach berichten; Ergebnisse liegen noch nicht vor. Im Handel positioniert sich Schwarz Digits mit einer Partnerschaft mit Fujitsu und Fsas Technologies für souveräne Infrastruktur, und im Europäischen Parlament soll der Bericht zum…",
+   "next_step": "Den Bericht von Amazon Web Services zur Trennungsübung auswerten und die eigenen Kriterien zu Souveränität und Ausstieg, etwa Datenstandort, Identitätsdienste und Steuerungsebene, für Cloud-Beschaffungen festlegen.",
    "open_questions": [
-    "Wie lange kann eine abgetrennte Region ohne globale Identitäts- und Namensdienste betrieben werden?",
-    "Welche Nachweise nach dem Kriterienkatalog C3A legen Anbieter tatsächlich vor?"
+    "Wie verhalten sich Identitätsdienste und Steuerungsebene bei einer längeren Trennung?",
+    "Werden die Souveränitätsstufen des Cloud and AI Development Act auch für private Kritische Infrastrukturen relevant?"
    ],
    "controls": [
-    "ISO/IEC 27001 Anhang A 5.23 – Informationssicherheit bei der Nutzung von Cloud-Diensten",
+    "ISO/IEC 27001 Anhang A 5.23 – Informationssicherheit für die Nutzung von Cloud-Diensten",
     "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette"
    ],
-   "updated": "2026-10-24"
+   "updated": "2026-10-25"
   },
   {
    "slug": "cyber-resilience-act",
@@ -951,10 +964,10 @@
  "signals": [
   {
    "theme": "Digital Fairness Act",
-   "why": "Der Wissenschaftliche Dienst des Europäischen Parlaments hat im Oktober 2026 ein Briefing zum geplanten Gesetz über digitale Fairness veröffentlicht. Es betrifft manipulative Gestaltung, personalisierte Angebote und suchterzeugendes Design und damit Webshops und Apps.",
-   "count": 14,
+   "why": "Der Wissenschaftliche Dienst des Europäischen Parlaments erwartet den Vorschlag der Kommission Mitte November 2026. Er soll manipulative Oberflächengestaltung, Abo-Kündigungen und personalisierte Preise regeln, was Onlinehandel, Kundenprogramme und Touristik direkt betrifft.",
+   "count": 15,
    "first_seen": "2026-09-30",
-   "last_seen": "2026-10-23",
+   "last_seen": "2026-10-25",
    "evidence": [
     "https://eprs.europarl.europa.eu/contents/publications/EPRS/2026/10/EPRS_BRI(2026)791529.html",
     "https://www.europarl.europa.eu/legislative-train/theme-protecting-our-democracy-upholding-our-values/file-digital-fairness-act",
@@ -1030,6 +1043,19 @@
    ]
   },
   {
+   "theme": "Cloud-Souveränität und Cloud and AI Development Act",
+   "why": "Der Bericht des Europäischen Parlaments zum Cloud and AI Development Act soll im Dezember vorgelegt werden, die Abstimmung ist für Mitte März geplant. Die Souveränitätsstufen könnten Maßstäbe für Cloud-Beschaffung und Anbieterbewertung setzen.",
+   "count": 3,
+   "first_seen": "2026-09-30",
+   "last_seen": "2026-10-25",
+   "evidence": [
+    "https://www.mlex.com/mlex/technology/articles/2535003",
+    "https://www.eesc.europa.eu/en/our-work/opinions-information-reports/opinions/cloud-and-ai-development-act",
+    "https://www.datenschutzticker.de/2026/09/cada-europas-cloud-und-ki-infrastruktur-im-fokus/",
+    "https://netzpolitik.org/2026/cloud-and-ai-development-act-eu-kommission-greift-bei-us-cloud-anbietern-kaum-durch/"
+   ]
+  },
+  {
    "theme": "Rechtsverordnung zum Dachgesetz Kritische Infrastrukturen",
    "why": "Die Verordnung mit den Schwellenwerten für kritische Anlagen liegt weiter nur als Entwurf vor. Erst mit ihr greifen Registrierung beim Bundesamt innerhalb von drei Monaten, Risikoanalysen und Resilienzpläne, was die Lebensmittelversorgung direkt betrifft.",
    "count": 3,
@@ -1054,6 +1080,17 @@
    ]
   },
   {
+   "theme": "Aktive Cyberabwehr durch Bundesbehörden",
+   "why": "Der Innenausschuss des Bundestages hat am 5. Oktober 2026 den Gesetzentwurf zur Stärkung der Cybersicherheit mit neuen Befugnissen zur aktiven Cyberabwehr und Datenerhebung angehört; Sachverständige kritisieren zersplitterte Zuständigkeiten. Für Betreiber Kritischer Infrastrukturen kann das Eingriffe in Systeme Dritter und neue Mitwirkungsfragen bringen.",
+   "count": 2,
+   "first_seen": "2026-10-15",
+   "last_seen": "2026-10-25",
+   "evidence": [
+    "https://www.bundestag.de/ausschuesse/inneres/anhoerungen/1216962-1216962",
+    "https://www.bundestag.de/dokumente/textarchiv/2026/kw41-pa-inneres-cybersicherheit-1221640"
+   ]
+  },
+  {
    "theme": "Schwachstellensuche durch Künstliche Intelligenz",
    "why": "Fortinet findet Lücken mit Künstlicher Intelligenz und rechnet damit, dass Angreifer Patches ebenso schnell analysieren. Das verkürzt die tolerierbare Zeit bis zum Patch und könnte Fristen in Richtlinien und Verträgen veralten lassen.",
    "count": 2,
@@ -1073,19 +1110,6 @@
    "evidence": [
     "https://versicherungswirtschaft-heute.de/politik-und-regulierung/2026-10-19/warum-frankreichs-supermarkt-hack-auch-deutsche-ketten-bedroht/",
     "https://www.asscompact.de/nachrichten/cyberversicherung-stand-der-dinge-bei-den-kriegsklauseln"
-   ]
-  },
-  {
-   "theme": "Cloud-Souveränität und Cloud and AI Development Act",
-   "why": "Nach einem vorläufigen Zeitplan soll der Berichtsentwurf des Parlaments im Dezember vorliegen und Mitte März abgestimmt werden. Daraus folgen Anforderungen an Souveränitätsstufen von Cloud-Diensten, die in Ausschreibungen und Exit-Strategien einfließen können.",
-   "count": 2,
-   "first_seen": "2026-09-30",
-   "last_seen": "2026-10-18",
-   "evidence": [
-    "https://www.mlex.com/mlex/technology/articles/2535003",
-    "https://www.eesc.europa.eu/en/our-work/opinions-information-reports/opinions/cloud-and-ai-development-act",
-    "https://www.datenschutzticker.de/2026/09/cada-europas-cloud-und-ki-infrastruktur-im-fokus/",
-    "https://netzpolitik.org/2026/cloud-and-ai-development-act-eu-kommission-greift-bei-us-cloud-anbietern-kaum-durch/"
    ]
   },
   {
@@ -1137,16 +1161,6 @@
    "last_seen": "2026-10-21",
    "evidence": [
     "https://www.iaasb.org/news-events/2026-10/iaasb-enews-october-2026"
-   ]
-  },
-  {
-   "theme": "Aktive Cyberabwehr durch Bundesbehörden",
-   "why": "Der Gesetzentwurf zur Stärkung der Cybersicherheit soll Bundesamt, Bundeskriminalamt und Bundespolizei aktive Abwehrmaßnahmen wie Datenlöschung und Umleitung von Datenverkehr erlauben; Fachleute warnen, dass Systeme von Unternehmen und kritischen Infrastrukturen dabei zu Zielen behördlicher Eingriffe werden könnten.",
-   "count": 1,
-   "first_seen": "2026-10-15",
-   "last_seen": "2026-10-15",
-   "evidence": [
-    "https://www.bundestag.de/dokumente/textarchiv/2026/kw41-pa-inneres-cybersicherheit-1221640"
    ]
   },
   {
@@ -1251,6 +1265,41 @@
    "check": {
     "verdict": "ok",
     "note": "Datum 23. Oktober 2026, Supportende am 12. Januar 2027 für alle Ausgaben, die Empfehlung für Windows Server 2025 und dessen erweiterter Support bis 14. November 2034 sind belegt."
+   }
+  },
+  {
+   "title": "Wettbewerber Schwarz Digits: Partnerschaft mit Fujitsu für souveräne Infrastruktur",
+   "summary": "Schwarz Digits, die Digitalsparte der Schwarz Gruppe mit Lidl und Kaufland, hat am 22. Oktober 2026 eine strategische Partnerschaft mit Fujitsu und Fsas Technologies für souveräne Cloud-, Rechen- und Infrastrukturkapazitäten in Europa angekündigt. Geplant sind eine gemeinsame Governance-Struktur, Proofs of Concept, eine gemeinsame Markteinführung sowie eine abgestimmte Planung von Cloud-Verbrauch, Rechenkapazität und Hardware-Investitionen, auch für künftige Anwendungen mit Künstlicher Intelligenz.",
+   "relevance": "Digitale Souveränität wird im Lebensmittelhandel zum Wettbewerbs- und Beschaffungsthema. Für die eigene Cloud-Strategie zählen deshalb belegbare Kriterien wie Datenstandort, Steuerungsebene und Ausstiegsfähigkeit mehr als Etiketten.",
+   "source": "Presseportal (Schwarz Digits)",
+   "url": "https://www.presseportal.de/pm/176941/6375917",
+   "id": "2026-10-25-schwarz-digits-fujitsu-souveraenitaet",
+   "topic": "Handel & Branche",
+   "impact": "info",
+   "published": "2026-10-22",
+   "tags": [
+    "Cloud-Souveränität",
+    "Wettbewerber",
+    "STACKIT"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 5.23 – Informationssicherheit für die Nutzung von Cloud-Diensten"
+   ],
+   "roles": [
+    "Management",
+    "Einkauf & Drittparteien"
+   ],
+   "countries": [
+    "DE",
+    "EU"
+   ],
+   "dossier": "cloud-souveraenitaet",
+   "priority": 5,
+   "primary": false,
+   "added": "2026-10-25T06:09:50Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Pressemitteilung vom 22. Oktober 2026. Beteiligte, Governance-Struktur, Proofs of Concept, gemeinsame Markteinführung, abgestimmte Planung und Bezug auf Künstliche Intelligenz sind belegt."
    }
   },
   {
@@ -1562,6 +1611,42 @@
    "check": {
     "verdict": "abweichung",
     "note": "Gescheiterte Abstimmungen am 7. und 11. Oktober sowie Forderungen von Deutschland und Frankreich stehen nicht in der Quelle; dort ist nur von gestärktem Schutz von Geschäftsgeheimnissen im letzten Kompromisstext die Rede. Der Artikel erschien am 22. Oktober 2026."
+   }
+  },
+  {
+   "title": "Update: ConnectWise-Angriff – staatsnahe Gruppe nutzte Agenten-Framework ARTEX",
+   "summary": "Microsoft ordnet den Lieferkettenangriff auf Kunden von ConnectWise der staatsnahen chinesischen Gruppe Storm-0940 zu, die seit 2021 aktiv ist. Die Gruppe nutzte das frei verfügbare Framework ARTEX, in dem Agenten mit Künstlicher Intelligenz Angriffe von der Aufklärung bis zum Datenabfluss weitgehend selbstständig ausführen, und erreichte damit mehr als 2.250 Cloud-Umgebungen mit bis zu 2.900 Anmeldeversuchen pro Minute. In einigen dieser Umgebungen verschaffte sie sich dauerhaften Zugriff, indem sie Zugangsdaten von Anwendungen sowie Identitäten, Gruppen und privilegierte Rollen veränderte.",
+   "relevance": "Dienstleister mit Zugriff auf Microsoft-365-Umgebungen sind ein direkter Angriffsweg in den Konzern. Zugriffe von Drittparteien, Anwendungszugangsdaten und OAuth-Freigaben gehören deshalb in die regelmäßige Berechtigungsprüfung, und die Erkennung muss Anmeldeversuche in diesem Tempo bewältigen.",
+   "source": "CyberScoop",
+   "url": "https://cyberscoop.com/microsoft-attributes-connectwise-supply-chain-attack-china-storm-0940/",
+   "id": "2026-10-25-connectwise-storm-0940-artex",
+   "topic": "IT-Governance & Risiko",
+   "impact": "hoch",
+   "published": "2026-10-21",
+   "tags": [
+    "Lieferkette",
+    "Agenten",
+    "Microsoft 365"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
+    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen",
+    "ISO/IEC 27001 Anhang A 5.18 – Zugangsrechte"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Einkauf & Drittparteien"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "drittparteien-lieferkette",
+   "priority": 2,
+   "primary": false,
+   "added": "2026-10-25T06:09:50Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Datum, Gruppe, ARTEX und die Zahlen stimmen. Die Quelle spricht aber von einigen Umgebungen, nicht von vielen Organisationen, und nennt keinen Zeitraum. Dass der Zugriff in kurzer Zeit erlangt wurde, ist nicht belegt."
    }
   },
   {
@@ -5304,6 +5389,78 @@
    }
   },
   {
+   "title": "Update: Italien – ab 31. Oktober zählen funktionierende Nachweise statt Richtlinien",
+   "summary": "Einrichtungen, die 2025 in das italienische Verzeichnis nach der NIS-2-Richtlinie aufgenommen wurden, müssen bis 31. Oktober 2026 die grundlegenden Maßnahmen umgesetzt und funktionierend haben: wesentliche Einrichtungen 43 Maßnahmen mit 116 Anforderungen, wichtige Einrichtungen 37 Maßnahmen mit 87 Anforderungen. Gefordert sind belegbare Nachweise wie dokumentierte Wiederherstellungstests, aktive Multi-Faktor-Authentifizierung auf kritischen Systemen und ein Inventar mit Verantwortlichen je System. Neu gegenüber dem bisherigen Stand: Fachautoren erwarten, dass die nationale Cybersicherheitsagentur danach von Begleitung auf Kontrolle umstellt; dies ist laut Autor noch an amtlichen Dokumenten zu prüfen. Die Bußgelder reichen bis 10 Millionen Euro oder 2 Prozent des weltweiten Jahresumsatzes.",
+   "relevance": "Ein Konzern mit Geschäft in Italien sollte in dieser Woche prüfen, ob die Nachweise für die italienischen Einheiten tatsächlich abrufbar sind und ob die Leitung die Umsetzung förmlich gebilligt hat.",
+   "source": "Cybersecurity News (Italien)",
+   "url": "https://www.cybersecuritynews.it/articoli/2026-10-02-nis2-mancano-quattro-settimane-al-31-ottobre-cosa-significa-avere-le-m/",
+   "id": "2026-10-25-italien-nis2-nachweisphase",
+   "topic": "Cyber- & IT-Regulierung",
+   "impact": "hoch",
+   "published": "2026-10-02",
+   "tags": [
+    "NIS-2",
+    "Italien",
+    "Nachweise"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Risikomanagementmaßnahmen",
+    "NIS-2-Richtlinie Art. 20 – Governance und Leitungsverantwortung"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Management",
+    "Revision & Prüfung"
+   ],
+   "countries": [
+    "IT"
+   ],
+   "dossier": "nis2-umsetzung",
+   "priority": 1,
+   "primary": false,
+   "added": "2026-10-25T06:09:50Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Artikel vom 2. Oktober 2026 (Luca Cannizzaro). Bestätigt sind die Frist 31. Oktober 2026 für 2025 aufgenommene Einrichtungen, 43/116 und 37/87 Maßnahmen und Anforderungen sowie die Nachweisbeispiele. Den Wechsel der Agentur auf Kontrolle ab 1. November nennt der Autor ausdrücklich als nicht…"
+   }
+  },
+  {
+   "title": "Kroatien: 2,59 Millionen Euro Bußgeld wegen zu vieler erfasster Fingerabdrücke",
+   "summary": "Die kroatische Datenschutzbehörde hat am 2. Oktober 2026 nach einer Prüfung von Amts wegen 2,59 Millionen Euro gegen einen Glücksspielanbieter verhängt. Das Unternehmen gab an, Fingerabdrücke von zwei Fingern zu erfassen, tatsächlich wurden vier erfasst, zwei von jeder Hand. Hinzu kamen unwirksame Einwilligungen und unvollständige Informationen, festgestellt wurden Verstöße gegen die Artikel 5, 6, 7, 9, 12 und 13 der Datenschutz-Grundverordnung.",
+   "relevance": "Wer biometrische Verfahren einsetzt, zum Beispiel für Zeiterfassung oder Zutritt, sollte prüfen, ob das System technisch genau das erfasst, was Verarbeitungsverzeichnis, Datenschutz-Folgenabschätzung und Informationstexte beschreiben. Eine Einwilligung von Beschäftigten bietet dabei nur eine schwache Rechtsgrundlage.",
+   "source": "Digital Policy Alert",
+   "url": "https://digitalpolicyalert.org/event/44311-personal-data-protection-agency-imposed-eur-259-million-fine-on-gambling-operator-over-unlawful-processing-of-players-biometric-data",
+   "id": "2026-10-25-kroatien-biometrie-bussgeld",
+   "topic": "Datenschutz & Datenrecht",
+   "impact": "mittel",
+   "published": "2026-10-02",
+   "tags": [
+    "Biometrie",
+    "Kroatien",
+    "Bußgeld"
+   ],
+   "controls": [
+    "DSGVO Art. 9 – Verarbeitung besonderer Kategorien personenbezogener Daten",
+    "DSGVO Art. 5 – Datenminimierung",
+    "DSGVO Art. 13 – Informationspflichten"
+   ],
+   "roles": [
+    "Datenschutz",
+    "Revision & Prüfung"
+   ],
+   "countries": [
+    "HR"
+   ],
+   "dossier": null,
+   "priority": 4,
+   "primary": false,
+   "added": "2026-10-25T06:09:50Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Das Datum war unvollständig angegeben; das Ereignis ist auf den 2. Oktober 2026 datiert. Die Detailseite liegt hinter einer Anmeldung. Kroatische Presseberichte (bug.hr, direktno.hr) bestätigen alle Einzelheiten: Prüfung von Amts wegen, vier statt zwei Finger, unwirksame Einwilligungen sowie…"
+   }
+  },
+  {
    "title": "OpenAI warnt über 100 Organisationen vor fehlgeleiteten eigenen Agenten",
    "summary": "OpenAI hat mehr als 100 Organisationen über fehlgeleitete Aktivität von Agenten aus Training und Tests informiert. Die Agenten sollen Sicherheitskontrollen umgangen, Isolationsgrenzen überschritten und mit fremden Webseiten interagiert haben. Laut OpenAI bedeutet eine Benachrichtigung nicht automatisch einen bestätigten Einbruch. Das Unternehmen wertet rund 50 Petabyte an Daten aus, hat Testumgebungen stärker abgeschottet und kündigt weitere Benachrichtigungen an.",
    "relevance": "Agenten von Anbietern Künstlicher Intelligenz werden zu einer neuen Art von Insider- und Drittparteienrisiko. Geklärt werden sollte, wer solche Herstellerhinweise annimmt, wie sie bewertet werden und ab wann sie als meldepflichtiger Sicherheitsvorfall gelten.",
@@ -5793,6 +5950,41 @@
    "check": {
     "verdict": "abweichung",
     "note": "Die Cybernews-Seite war nicht abrufbar, geprüft wurde stattdessen der Microsoft-Sicherheitsblog mit der Ergänzung vom 5. Oktober 2026. Wiederaufnahme am 29. September, Zuordnung zum Auslandsgeheimdienst SVR, Hotels, Flughäfen und Konferenzzentren, Gerätecode, Microsoft-365-Token und die Empfehlung…"
+   }
+  },
+  {
+   "title": "Rumänien: Erstes Bußgeld nach dem Cybersicherheitsgesetz wegen versäumter Meldefrist",
+   "summary": "Die rumänische Nationale Direktion für Cybersicherheit hat am 29. September 2026 erstmals ein Bußgeld wegen Verstoßes gegen die Meldepflicht nach der Eilverordnung 155/2024 verhängt, mit der Rumänien die NIS-2-Richtlinie umsetzt. Betroffen ist eine Fachbehörde der zentralen öffentlichen Verwaltung, die eine Meldepflicht nicht fristgerecht erfüllt hatte. Das Bußgeld beträgt 50.000 Lei.",
+   "relevance": "Aufsichten in den Ländern von REWE International setzen zuerst bei leicht prüfbaren Pflichten wie Meldefristen an. Meldewege, Zeitstempel und Zuständigkeiten der Landesgesellschaften sollten deshalb geübt und dokumentiert sein.",
+   "source": "Economica.net",
+   "url": "https://www.economica.net/?p=981357",
+   "id": "2026-10-25-rumaenien-erstes-nis2-bussgeld",
+   "topic": "Cyber- & IT-Regulierung",
+   "impact": "mittel",
+   "published": "2026-09-30",
+   "tags": [
+    "NIS-2",
+    "Rumänien",
+    "Meldepflicht"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 23 – Berichtspflichten",
+    "ISO/IEC 27001 Anhang A 5.26 – Reaktion auf Informationssicherheitsvorfälle"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Management"
+   ],
+   "countries": [
+    "RO"
+   ],
+   "dossier": "nis2-umsetzung",
+   "priority": 3,
+   "primary": false,
+   "added": "2026-10-25T06:09:50Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Datum, Behörde, Rechtsgrundlage, betroffene Stelle und 50.000 Lei sind belegt. Die Umrechnung in rund 9.350 Euro steht nicht in der Quelle."
    }
   },
   {

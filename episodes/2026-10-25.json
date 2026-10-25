@@ -1,0 +1,173 @@
+{
+ "format": "tag",
+ "chapters": [
+  {
+   "title": "Begrüßung",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Guten Morgen, liebe IT-GRC-Kolleginnen und -Kollegen, willkommen beim IT-GRC Radar. Heute ist Sonntag, der fünfundzwanzigste Oktober 2026."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Sonntag, und trotzdem tickt irgendwo eine Frist. Ich ahne schon, wohin das geht."
+    }
+   ]
+  },
+  {
+   "title": "Italien: Nachweise statt Richtlinien",
+   "news_id": "2026-10-25-italien-nis2-nachweisphase",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Richtig geahnt. Da gibt es Neues zur NIS-2-Richtlinie, also der Richtlinie über Netz- und Informationssicherheit, in Italien. Am kommenden Samstag, dem einunddreißigsten Oktober, müssen Einrichtungen, die 2025 ins nationale Verzeichnis aufgenommen wurden, ihre grundlegenden Sicherheitsmaßnahmen umgesetzt haben."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und zwar umgesetzt und funktionierend, das ist der Knackpunkt. Für wesentliche Einrichtungen sind das 43 Maßnahmen mit 116 Anforderungen, für wichtige 37 Maßnahmen mit 87 Anforderungen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Moment, funktionierend heißt, eine unterschriebene Richtlinie reicht nicht?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Genau. Gefragt sind Nachweise: dokumentierte Wiederherstellungstests, aktive Multi-Faktor-Authentifizierung auf kritischen Systemen, ein Inventar, in dem jedes System einen [en]Owner[/en] hat. Die ewige Frage, wer eigentlich [en]Owner[/en] ist, landet damit quasi im Prüfkatalog."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und nach dem Stichtag?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Fachautoren erwarten, dass die nationale Cybersicherheitsagentur dann von Begleitung auf Kontrolle umschaltet, amtlich bestätigt ist das aber noch nicht. Die Bußgelder reichen bis 10 Millionen Euro oder 2 Prozent des weltweiten Umsatzes. Wer Geschäft in Italien hat, sollte also diese Woche nachsehen, ob die Nachweise wirklich abrufbar sind."
+    }
+   ]
+  },
+  {
+   "title": "ConnectWise: Angriff mit Agenten",
+   "news_id": "2026-10-25-connectwise-storm-0940-artex",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Neues gibt es auch zum Angriff über ConnectWise, den wir vor gut einer Woche hatten. Microsoft ordnet ihn jetzt einer staatsnahen chinesischen Gruppe zu, die als Storm-0940 geführt wird."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Bemerkenswert ist das Werkzeug. Die Gruppe nutzte ARTEX, ein frei verfügbares [en]Framework[/en], in dem [en]Agents[/en] Angriffe von der Aufklärung bis zum Datenabfluss weitgehend selbstständig erledigen. Damit erreichte sie mehr als 2.250 [en]Tenants[/en], mit bis zu 2.900 Anmeldeversuchen pro Minute."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "2.900 pro Minute. Da kommt keine Sichtprüfung im Lagezentrum mehr hinterher."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Eben. Und in einigen Umgebungen verschafften sich die Angreifer dauerhaften Zugriff in der [en]Cloud[/en], über geänderte Zugangsdaten von Anwendungen und veränderte Berechtigungen. Wer Dienstleister mit Zugriff auf Microsoft 365 hat, sollte gezielt nach solchen Änderungen und nach missbrauchten [en]OAuth[/en]-Freigaben suchen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Das Lieferantenregister in Excel hilft da vermutlich nur begrenzt."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Nur, wenn drinsteht, welcher Dienstleister welche Rechte hat. Meistens steht da der Vertragsbeginn."
+    }
+   ]
+  },
+  {
+   "title": "Rumänien: Erstes Bußgeld",
+   "news_id": "2026-10-25-rumaenien-erstes-nis2-bussgeld",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Weiter nach Südosteuropa. Die rumänische Nationale Direktion für Cybersicherheit hat ihr erstes Bußgeld nach dem Gesetz zur Umsetzung der NIS-2-Richtlinie verhängt."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Die Summe ist überschaubar, 50.000 Lei, gegen eine Fachbehörde der zentralen Verwaltung. Der Grund: Eine Meldepflicht wurde nicht fristgerecht erfüllt."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Also kein spektakulärer Angriff, sondern eine verpasste Frist."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und genau das ist die Lehre. Aufsichten fangen mit dem an, was sich leicht prüfen lässt, und das sind Fristen. Für Landesgesellschaften heißt das: Meldewege üben, bevor es ernst wird."
+    }
+   ]
+  },
+  {
+   "title": "Kroatien: Vier statt zwei Finger",
+   "news_id": "2026-10-25-kroatien-biometrie-bussgeld",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "In Kroatien hat die Datenschutzbehörde 2,59 Millionen Euro gegen einen Glücksspielanbieter verhängt, wegen biometrischer Daten."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Der Anbieter gab an, Fingerabdrücke von zwei Fingern zu erfassen. Tatsächlich waren es vier, zwei von jeder Hand. Dazu kamen unwirksame Einwilligungen und lückenhafte Informationen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Ehrlich gesagt ein Klassiker: Die Dokumentation sagt das eine, das System macht das andere."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und das betrifft jeden, der biometrische Verfahren nutzt, etwa bei Zeiterfassung oder Zutritt. Die Prüffrage ist simpel: Erfasst das System genau das, was im Verarbeitungsverzeichnis steht?"
+    }
+   ]
+  },
+  {
+   "title": "Schwarz Digits und Souveränität",
+   "news_id": "2026-10-25-schwarz-digits-fujitsu-souveraenitaet",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Zum Wettbewerb. Schwarz Digits, die Digitalsparte der Schwarz Gruppe mit Lidl und Kaufland, hat mit Fujitsu und Fsas Technologies eine Partnerschaft für souveräne Infrastruktur in Europa vereinbart."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Geplant sind eine gemeinsame Governance-Struktur, [en]Proofs of Concept[/en] und eine abgestimmte Planung von [en]Cloud[/en]-Verbrauch, Rechenkapazität und Hardware. Souveränität wird im Handel offenbar zum Wettbewerbsthema, nicht nur zur Compliance-Frage."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und für gestern war ja die Trennungsübung bei Amazon Web Services angekündigt."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Genau, die Ergebnisse will Amazon den Regulierern und Kunden nachreichen. Ich bin gespannt, ob darin auch steht, was mit den Identitätsdiensten passiert ist."
+    }
+   ]
+  },
+  {
+   "title": "Auf dem Radar",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Auf dem Radar: der [en]Digital Fairness Act[/en]."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Der Wissenschaftliche Dienst des Europäischen Parlaments erwartet den Vorschlag der Kommission Mitte November. Es geht um manipulative Gestaltung, Abo-Kündigungen und personalisierte Preise. Wer im Onlinehandel oder in der Touristik Preise personalisiert, sollte schon mal wissen, wo und wie."
+    }
+   ]
+  },
+  {
+   "title": "Abschied",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Das war das IT-GRC Radar für diesen Sonntag. Alle Quellen findet ihr wie immer auf der Webseite."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und wer in Italien noch Nachweise sucht: Die Woche hat noch sechs Tage. Bis morgen."
+    }
+   ]
+  }
+ ]
+}
