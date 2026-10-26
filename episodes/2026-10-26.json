@@ -1,0 +1,199 @@
+{
+ "format": "tag",
+ "chapters": [
+  {
+   "title": "Begrüßung",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Guten Morgen, liebe IT-GRC-Kolleginnen und -Kollegen, willkommen beim IT-GRC Radar. Heute ist Montag, der sechsundzwanzigste Oktober 2026."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Montag, und am Ende der Woche ballen sich die Fristen. Ich hole mir noch einen zweiten Kaffee, dann bin ich bereit."
+    }
+   ]
+  },
+  {
+   "title": "Die Woche",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Dann direkt der Blick auf die Woche. Am Freitag, dem dreißigsten Oktober, endet die Konsultation des Europäischen Datenschutzausschusses zu seinen Leitlinien zur Anonymisierung."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und am Samstag, dem einunddreißigsten Oktober, wird es voll. In Italien müssen die 2025 gelisteten Einrichtungen funktionierende Maßnahmen nach der NIS-2-Richtlinie vorweisen, also der Richtlinie über Netz- und Informationssicherheit. Exchange Server 2016 und 2019 bekommen ihre letzten [en]Extended Security Updates[/en], und bei der Kartenzahlung laufen zwei Standards aus."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und welche ist deine Frist der Woche?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Exchange. Wer da noch Server ohne Plan hat, sollte bis Samstag wenigstens eine dokumentierte Risikoakzeptanz mit Namen und Unterschrift haben. Dafür muss allerdings jemand Owner sein, und das ist ja bekanntlich die schwierigste Frage."
+    }
+   ]
+  },
+  {
+   "title": "Aruba-Lücken",
+   "news_id": "2026-10-26-hpe-arubaos-hoechstwertung",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Die wichtigste Meldung: HPE hat am dreiundzwanzigsten Oktober 72 Lücken im Betriebssystem ArubaOS geschlossen, acht davon mit Höchstwertung. Betroffen sind die Versionen 8 und 10 für Controller, [en]Access Points[/en] und [en]Gateways[/en]."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Höchstwertung heißt hier: aus der Ferne ausnutzbar, ohne Anmeldung, ohne dass jemand etwas anklicken muss. Angriffscode ist laut HPE noch nicht bekannt. Genau jetzt sollte man patchen, nicht erst danach."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und warum ist das im Handel besonders heikel?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Weil Funknetze in Filialen, Lagern und Büros schnell auf Hunderte oder Tausende Geräte kommen. HPE rät außerdem, die Verwaltungsoberflächen nur aus eigenen Netzsegmenten erreichbar zu machen. Ehrlich gesagt kann man das auch ohne Patch-Druck umsetzen."
+    }
+   ]
+  },
+  {
+   "title": "Grundschutz++",
+   "news_id": "2026-10-26-grundschutz-plus-plus-it-sa",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Morgen beginnt die Messe it-sa in Nürnberg. Dort will das Bundesamt für Sicherheit in der Informationstechnik die Methodik von Grundschutz++ veröffentlichen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Das ist ein großer Umbau. Statt Bausteinen gibt es rund 20 Praktiken mit etwa 1.000 Anforderungen, maschinenlesbar. Zertifizieren lassen kann man sich ab dem ersten Januar 2027, der klassische Grundschutz bleibt laut Fachquellen bis Ende November 2031 zertifizierbar."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Also kein Grund zur Panik?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Panik nicht, aber man sollte seine Werkzeuge prüfen. Wer seine Kontrollen heute in Excel-Listen pflegt, wird merken: Ein Nachweis auf Datenbasis ist etwas anderes als ein hübsch formatiertes Tabellenblatt."
+    }
+   ]
+  },
+  {
+   "title": "Staples",
+   "news_id": "2026-10-26-staples-geschenkkarten-nexus",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Ein Fall aus dem amerikanischen Handel, den Gerichtsakten jetzt öffentlich machen: Angreifer haben bei Staples das interne Kundenservice-Werkzeug Nexus missbraucht."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Über wiederholte [en]Heap Dumps[/en] kamen sie an die Sitzungsdaten angemeldeter Servicekräfte und erzeugten über 15.000 Geschenkkarten im Wert von rund 5 Millionen Dollar. Dabei galt das Werkzeug als nur intern erreichbar."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Nur intern erreichbar. Den Satz hört man öfter."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Eben. Was dort Geld bewegt, also Gutschriften, Erstattungen, Geschenkkarten, braucht Limits, Vier-Augen-Prinzip und Auffälligkeitsprüfung, ganz egal, wo es im Netz steht."
+    }
+   ]
+  },
+  {
+   "title": "Collabora",
+   "news_id": "2026-10-26-collabora-aktiv-ausgenutzt",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Kurz ein Update zu Nextcloud: Die amerikanische Cybersicherheitsbehörde listet die Lücke im eingebauten Collabora-Server seit dem dreiundzwanzigsten Oktober als aktiv ausgenutzt."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Solche Server stehen gern in Fachabteilungen. Die erste Frage ist also nicht, ob gepatcht ist, sondern ob das Inventar sie überhaupt kennt."
+    }
+   ]
+  },
+  {
+   "title": "Gekaperte Agenten",
+   "news_id": "2026-10-26-agents-md-downloads",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Bei Agenten mit Künstlicher Intelligenz gibt es einen Angriff, der fast zu einfach klingt."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Es reicht eine präparierte Datei AGENTS.md im Download-Ordner. Wer seinen [en]Coding[/en]-Agenten von dort startet, übernimmt die Anweisungen gleich mit. Bei Codex klappte das in 90 Prozent der Tests, bei Claude Code wurden in etwa der Hälfte der Versuche Anmelde-Token abgegriffen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und was sagen die Hersteller?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Die raten, Agenten nur im jeweiligen Projektordner zu starten. Und die Forschenden sagen sinngemäß: Der Agent tut, wofür er gebaut ist. Die Kontrolle liegt also bei uns, mit klaren Regeln, wo Agenten laufen dürfen und mit welchen Rechten."
+    }
+   ]
+  },
+  {
+   "title": "Tal der Tränen",
+   "news_id": "2026-10-26-cyberagentur-tal-der-traenen",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Dazu passt eine Zahl, die die Cyberagentur des Bundes nennt: Von Januar bis September wurden über 10.124 Lücken in großer Software gefunden, 578 Prozent mehr als im Vorjahreszeitraum."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Dort spricht man von einem Tal der Tränen, weil Angriffscode heute in Stunden entsteht. Neben dieser Zahl wirkt eine Patch-Frist von 30 Tagen in der Richtlinie ein bisschen wie ein Fahrplan aus dem letzten Jahrhundert."
+    }
+   ]
+  },
+  {
+   "title": "Entra ID",
+   "news_id": "2026-10-26-entra-id-selbstpruefung",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Und für die Prüfungssaison: Ein Forensiker empfiehlt, Microsoft Entra ID regelmäßig selbst zu prüfen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Drei Fragen: Wer hat privilegierten Zugriff, was schützt ihn, und welche indirekten Rechteketten führen trotzdem ans Ziel. Und eine einmalige Prüfung ist immer nur eine Momentaufnahme."
+    }
+   ]
+  },
+  {
+   "title": "Auf dem Radar",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Und was steht auf dem Radar?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Der Digital Fairness Act. Laut dem Wissenschaftlichen Dienst des Europäischen Parlaments soll der Vorschlag Mitte November kommen, mit Regeln zu [en]Dark Patterns[/en], Abofallen und personalisierten Preisen. Für Onlinehandel und Reisebuchung ist das kein Randthema."
+    }
+   ]
+  },
+  {
+   "title": "Abschied",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Das war unser Montag. Alle Quellen findet ihr wie immer auf der Webseite."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und allen, die bis Samstag noch einen Owner für Exchange suchen: viel Erfolg. Bis morgen."
+    }
+   ]
+  }
+ ]
+}

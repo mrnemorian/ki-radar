@@ -1,11 +1,17 @@
 {
  "last_run": {
-  "start": "2026-10-25T07:00:01+01:00",
-  "end": "2026-10-25T07:09:50+01:00",
+  "start": "2026-10-26T07:00:01+01:00",
+  "end": "2026-10-26T07:08:42+01:00",
   "ok": true,
-  "summary": "5 neue Meldungen: P1 Update: Italien – ab 31. Oktober zählen funktionierende Nachweise statt Richtlinien; P2 Update: ConnectWise-Angriff – staatsnahe Gruppe nutzte Agenten-Framework ARTEX; P3 Rum"
+  "summary": "7 neue Meldungen: P1 HPE ArubaOS: Acht Lücken mit Höchstwertung in Funknetz-Controllern und Gateways; P2 Grundschutz++: Methodik soll morgen zur it-sa erscheinen, Zertifizierung ab 2027; P3 Staples:"
  },
  "history": [
+  {
+   "start": "2026-10-26T07:00:01+01:00",
+   "end": "2026-10-26T07:08:42+01:00",
+   "ok": true,
+   "summary": "7 neue Meldungen: P1 HPE ArubaOS: Acht Lücken mit Höchstwertung in Funknetz-Controllern und Gateways; P2 Grundschutz++: Methodik soll morgen zur it-sa erscheinen, Zertifizierung ab 2027; P3 Staples:"
+  },
   {
    "start": "2026-10-25T07:00:01+01:00",
    "end": "2026-10-25T07:09:50+01:00",

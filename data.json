@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T06:09:50Z",
+ "updated": "2026-10-26T06:08:42Z",
  "topics": [
   "IT-Governance & Risiko",
   "Cyber- & IT-Regulierung",
@@ -11,6 +11,18 @@
   "Weitere Themen"
  ],
  "briefings": [
+  {
+   "date": "2026-10-26",
+   "headline": "Höchstwertungslücken in Aruba-Funknetzen, Grundschutz++ startet morgen, und am Samstag enden gleich mehrere Fristen.",
+   "points": [
+    "HPE schließt 72 Lücken in ArubaOS, acht davon mit Höchstwertung, ausnutzbar ohne Anmeldung",
+    "Das Bundesamt für Sicherheit in der Informationstechnik will am 27. Oktober zur Messe it-sa die Methodik von Grundschutz++ veröffentlichen, Zertifizierung ab 1. Januar 2027",
+    "Am 31. Oktober endet die Auslaufphase für drei Standards zu Zahlungssoftware auf handelsüblichen Geräten",
+    "Staples: Missbrauchtes Kundenservice-Werkzeug erzeugte über 15.000 Geschenkkarten im Wert von rund 5 Millionen Dollar",
+    "Cyberagentur: 578 Prozent mehr Schwachstellen in großer Software als im Vorjahr, Angriffscode entsteht in Stunden"
+   ],
+   "count": 7
+  },
   {
    "date": "2026-10-25",
    "headline": "Italien schaltet bei der NIS-2-Umsetzung auf Nachweise um, Agenten automatisieren den ConnectWise-Angriff, und Aufsichten in Südosteuropa sanktionieren.",
@@ -396,17 +408,16 @@
    "title": "Identitäten und Zugangsdaten",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Neben erschlichenen Zugangsdaten wie bei ASOS und Air France-KLM rücken nicht-menschliche Identitäten in den Blick. Bei ConnectWise nutzten Angreifer die Zugangsdaten einer Backup-Anwendung und umgingen damit die Multi-Faktor-Authentifizierung vollständig. Außerdem können bereits ausgestellte Token nach der Sperre weiter gültig bleiben. Parallel laufen Ermittlungen gegen Laptop-Farmen für…",
-   "next_step": "Anwendungsidentitäten und Dienstkonten wie privilegierte Konten behandeln: inventarisieren, regelmäßig rezertifizieren, Zugangsdaten rotieren und Anmeldungen überwachen.",
+   "status": "Bei Staples kamen Angreifer über Speicherabbilder an Sitzungsdaten von Servicekräften und erzeugten Geschenkkarten für rund 5 Millionen Dollar. Gleichzeitig rücken versteckte Rechteketten in Cloud-Identitäten wie Entra ID und nicht-menschliche Identitäten wie bei ConnectWise in den Blick.",
+   "next_step": "Sitzungsschutz und Funktionen mit Geldwirkung in Service-Werkzeugen prüfen, regelmäßige automatisierte Prüfung der Cloud-Berechtigungen nach einem festen Maßstab einführen.",
    "open_questions": [
-    "Gibt es ein Verzeichnis der nicht-menschlichen Identitäten mit benannten Verantwortlichen?"
+    "Welche internen Werkzeuge können Gutschriften oder Gutscheine erzeugen, und mit welchen Limits?"
    ],
    "controls": [
-    "ISO/IEC 27001 Anhang A 8.2 – Privilegierte Zugangsrechte",
     "ISO/IEC 27001 Anhang A 5.18 – Zugangsrechte",
-    "IT-Kontrollen der Abschlussprüfung – Zugriffsmanagement"
+    "IT-Kontrollen der Abschlussprüfung – Zugriffsschutz"
    ],
-   "updated": "2026-10-19"
+   "updated": "2026-10-26"
   },
   {
    "slug": "kritische-schwachstellen-perimeter",
@@ -420,17 +431,17 @@
    "title": "Kritische Schwachstellen in Randsystemen und Kernanwendungen",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "PHP2Shell betrifft laut Censys in Deutschland rund 4,2 Millionen erreichbare Dienste. Die PHP-Versionen 8.1 und älter bleiben ohne offizielles Update, Behörden und Stadtwerke haben Portale vorsorglich abgeschaltet. Fortinet veröffentlicht am 10. November Details zu seinen außerplanmäßigen Updates. Hinzu kommen eine Lücke mit Höchstwertung in GitLab und eine aktiv ausgenutzte Lücke in Arista…",
-   "next_step": "Den PHP-Bestand vollständig erfassen, auch eingebettete Komponenten in Appliances und Dienstleisterprodukten. Versionen 8.1 und älter ablösen oder abschotten, selbst betriebene GitLab-Server sofort aktualisieren und Entscheidungsrechte für vorsorgliche Abschaltungen festlegen.",
+   "status": "HPE hat acht Lücken mit Höchstwertung in ArubaOS 8 und 10 geschlossen, und die Collabora-Lücke in Nextcloud ist offiziell als aktiv ausgenutzt gelistet. Nach Daten, die die Cyberagentur zitiert, ist die Zahl der Schwachstellen in großer Software um 578 Prozent gestiegen; PHP2Shell und die Fortinet-Details am 10. November bleiben offen.",
+   "next_step": "Aruba-Bestand und Nextcloud-Installationen inventarisieren und patchen, Verwaltungsoberflächen segmentieren, Patch-Fristen nach Risiko und Ausnutzungsstatus staffeln.",
    "open_questions": [
-    "Welche Herstellerprodukte enthalten PHP, ohne es auszuweisen?",
-    "Wer entscheidet über eine vorsorgliche Abschaltung von Kundenportalen, und nach welchen Kriterien?"
+    "Sind die Patch-Fristen in den Richtlinien bei Angriffscode innerhalb von Stunden noch haltbar?",
+    "Welche Systeme laufen außerhalb des zentralen Inventars?"
    ],
    "controls": [
     "NIS-2-Richtlinie Art. 21 – Umgang mit Schwachstellen",
-    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen"
+    "ISO/IEC 27001 Anhang A 8.8 – Handhabung technischer Schwachstellen"
    ],
-   "updated": "2026-10-24"
+   "updated": "2026-10-26"
   },
   {
    "slug": "lebenszyklus-altsysteme",
@@ -646,18 +657,17 @@
    "title": "Sicherheit agentischer Künstlicher Intelligenz",
    "sector": "AI-Governance",
    "ring": "vorbereiten",
-   "status": "OpenAI berichtet, dass eigene Agenten im Oktober 2026 Alarme abgeschaltet und Überwachung entfernt haben, einer machte auf Nachfrage falsche Angaben. Behörden der Vereinigten Staaten und Kanadas empfehlen, Abhängigkeiten von Token-Kontingenten als Resilienzrisiko zu steuern, und erste Prüfungen mit Verhaltenstests für Agenten sind verfügbar.",
-   "next_step": "Inventar aller Agenten mit ihren Rechten erstellen und technisch ausschließen, dass Agenten mit Schreibrechten Überwachung und Alarme ändern können.",
+   "status": "Neben fehlgeleiteten Agenten bei OpenAI zeigt ein neuer Angriff: Schon eine präparierte AGENTS.md im Download-Ordner reicht, um Coding-Agenten zu kapern. Die Hersteller sehen keinen Patch-Bedarf, damit liegt die Kontrolle bei den Anwendern; erste Prüfungen mit Verhaltenstests für Agenten sind verfügbar.",
+   "next_step": "Nutzungsregeln für Coding-Agenten festlegen (Arbeitsverzeichnisse, Rechte, Token-Laufzeiten) und in die Entwicklerrichtlinie aufnehmen.",
    "open_questions": [
-    "Wer ist Owner eines Agenten, der Aufgaben an Unteragenten delegiert?",
-    "Wie werden Vorfälle mit Agenten erkannt und gemeldet?"
+    "Wer ist Owner für Agenten auf Entwicklerrechnern?",
+    "Wie werden Anweisungsdateien in Repositories geprüft?"
    ],
    "controls": [
-    "ISO/IEC 27001 Anhang A 5.3 – Aufgabentrennung",
-    "ISO/IEC 27001 Anhang A 8.15 – Protokollierung",
-    "ISO/IEC 42001 – Managementsystem für Künstliche Intelligenz"
+    "ISO/IEC 42001 Anhang A – Nutzung von Systemen Künstlicher Intelligenz",
+    "ISO/IEC 27001 Anhang A 8.28 – Sichere Codierung"
    ],
-   "updated": "2026-10-23"
+   "updated": "2026-10-26"
   },
   {
    "slug": "dsgvo-reform-digital-omnibus",
@@ -692,18 +702,17 @@
     }
    ],
    "title": "Zahlungsverkehr und PCI DSS",
-   "sector": "Standards & Zertifizierung",
+   "sector": "Handel & Branche",
    "ring": "beobachten",
-   "status": "Der PCI Security Standards Council hat im September 2026 den Schlüsselmanagement-Standard Key Management and Operations 1.0, einen Leitfaden zu Systemen Künstlicher Intelligenz und Version 2.0 des Standards für sicheren Software-Lebenszyklus veröffentlicht. Für den neuen Software-Standard beginnt eine zwölfmonatige Übergangszeit, sobald Schulungen verfügbar sind (geplant im vierten Quartal 2026).",
-   "next_step": "Bei Herstellern von Kassen-, Zahlungs- und Shopsoftware den Umstellungsplan auf die neuen Standards in die Lieferantenbewertung aufnehmen und den Einsatz Künstlicher Intelligenz in der Karten-Datenumgebung erfassen.",
+   "status": "Nach den neuen Standards vom September 2026 enden am 31. Oktober 2026 die Auslaufphasen für die Standards zu Geheimzahl-Eingabe und kontaktlosem Bezahlen auf handelsüblichen Geräten sowie für das 3-D Secure Software Development Kit. Für den neuen Software-Standard beginnt die zwölfmonatige Übergangszeit, sobald Schulungen verfügbar sind.",
+   "next_step": "Bei Zahlungsdienstleistern erfragen, nach welchem Standard mobile Bezahllösungen künftig validiert sind, und Nachweise aktualisieren.",
    "open_questions": [
-    "Welche eingesetzten Zahlungsanwendungen sind nach den Software-Standards des Councils gelistet, und bis wann stellen deren Hersteller um?"
+    "Wie lange bleiben bestehende Listungen nach dem 31. Oktober gültig?"
    ],
    "controls": [
-    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen",
-    "ISO/IEC 27001 Anhang A 8.25 – Sicherer Entwicklungslebenszyklus"
+    "PCI DSS Anforderung 12.8 – Steuerung von Drittdienstleistern"
    ],
-   "updated": "2026-10-03"
+   "updated": "2026-10-26"
   }
  ],
  "deadlines": [
@@ -772,6 +781,17 @@
    "checked": true,
    "dossier": "lebenszyklus-altsysteme",
    "added": "2026-10-11"
+  },
+  {
+   "date": "2026-10-31",
+   "title": "Auslaufphase für Standards zu Zahlungssoftware auf handelsüblichen Geräten endet",
+   "detail": "Für die Standards zur Geheimzahl-Eingabe und zum kontaktlosen Bezahlen auf handelsüblichen Geräten sowie das 3-D Secure Software Development Kit nimmt der PCI Security Standards Council danach keine neuen Einreichungen an; Händler sollten den Status ihrer mobilen Bezahllösungen klären.",
+   "scope": "global",
+   "url": "https://www.pcisecuritystandards.org/wp-content/uploads/2026/05/PCI_SPoC_and_PCI_CPoC_Sunset_Bulletin.pdf",
+   "primary": true,
+   "checked": true,
+   "dossier": "zahlungsverkehr-pci-dss",
+   "added": "2026-10-26"
   },
   {
    "date": "2026-11-10",
@@ -873,6 +893,17 @@
    "added": "2026-10-15"
   },
   {
+   "date": "2027-01-01",
+   "title": "Grundschutz++: Zertifizierung möglich",
+   "detail": "Ab diesem Tag sollen Zertifizierungen nach ISO/IEC 27001 auf Basis von Grundschutz++ möglich sein; Organisationen mit Grundschutz-Zertifikaten sollten den Umstieg in die Rezertifizierungsplanung aufnehmen.",
+   "scope": "DE",
+   "url": "https://securitydocs.de/blog/grundschutz-plus-plus/",
+   "primary": false,
+   "checked": true,
+   "dossier": null,
+   "added": "2026-10-26"
+  },
+  {
    "date": "2027-01-12",
    "title": "Datenverordnung: keine Gebühren mehr für den Wechsel des Cloud-Anbieters",
    "detail": "Ab diesem Tag dürfen Anbieter von Datenverarbeitungsdiensten keine Gebühren mehr für den Wechsel erheben. Cloud-Kunden sollten ihre Ausstiegspläne und Verträge darauf prüfen.",
@@ -959,15 +990,26 @@
    "checked": true,
    "dossier": "post-quanten-kryptografie",
    "added": "2026-10-15"
+  },
+  {
+   "date": "2031-11-30",
+   "title": "Klassischer IT-Grundschutz: letzte Zertifizierbarkeit",
+   "detail": "Bis zu diesem Datum bleibt der klassische IT-Grundschutz laut Fachquelle zertifizierbar; danach ist der Umstieg auf Grundschutz++ nötig.",
+   "scope": "DE",
+   "url": "https://securitydocs.de/blog/grundschutz-plus-plus/",
+   "primary": false,
+   "checked": true,
+   "dossier": null,
+   "added": "2026-10-26"
   }
  ],
  "signals": [
   {
    "theme": "Digital Fairness Act",
-   "why": "Der Wissenschaftliche Dienst des Europäischen Parlaments erwartet den Vorschlag der Kommission Mitte November 2026. Er soll manipulative Oberflächengestaltung, Abo-Kündigungen und personalisierte Preise regeln, was Onlinehandel, Kundenprogramme und Touristik direkt betrifft.",
-   "count": 15,
+   "why": "Laut Wissenschaftlichem Dienst des Europäischen Parlaments soll der Vorschlag Mitte November 2026 kommen, mit Regeln zu Dark Patterns, Abo-Kündigung und personalisierten Preisen. Das betrifft Onlinehandel, Kundenbindungsprogramme und dynamische Preise bei Reisebuchungen direkt.",
+   "count": 16,
    "first_seen": "2026-09-30",
-   "last_seen": "2026-10-25",
+   "last_seen": "2026-10-26",
    "evidence": [
     "https://eprs.europarl.europa.eu/contents/publications/EPRS/2026/10/EPRS_BRI(2026)791529.html",
     "https://www.europarl.europa.eu/legislative-train/theme-protecting-our-democracy-upholding-our-values/file-digital-fairness-act",
@@ -1031,6 +1073,20 @@
    ]
   },
   {
+   "theme": "Cloud-Souveränität und Cloud and AI Development Act",
+   "why": "Der gemeinsame Berichtsentwurf im Europäischen Parlament ist für den 1. Dezember 2026 geplant, die Abstimmung für Mitte März 2027. Die Souveränitätsstufen könnten künftig Anforderungen an Cloud-Beschaffung und Ausstiegsstrategien prägen.",
+   "count": 4,
+   "first_seen": "2026-09-30",
+   "last_seen": "2026-10-26",
+   "evidence": [
+    "https://www.mlex.com/mlex/articles/2535003/eu-lawmakers-to-present-report-on-eu-s-cloud-and-ai-development-act-in-december",
+    "https://www.mlex.com/mlex/technology/articles/2535003",
+    "https://www.eesc.europa.eu/en/our-work/opinions-information-reports/opinions/cloud-and-ai-development-act",
+    "https://www.datenschutzticker.de/2026/09/cada-europas-cloud-und-ki-infrastruktur-im-fokus/",
+    "https://netzpolitik.org/2026/cloud-and-ai-development-act-eu-kommission-greift-bei-us-cloud-anbietern-kaum-durch/"
+   ]
+  },
+  {
    "theme": "Digitale Identitäts-Wallet der Europäischen Union",
    "why": "Das deutsche Gesetz für digitale Identitäten ist beschlossen, die Wallet soll am 2. Januar 2027 starten. Für Unternehmen bleibt die Annahme freiwillig, Identifizierungsprozesse im Onlinehandel und in der Touristik könnten sie aber nutzen.",
    "count": 4,
@@ -1040,19 +1096,6 @@
     "https://www.bundestag.de/dokumente/textarchiv/2026/kw42-pa-digitales-identitaeten-1224678",
     "https://www.bundestag.de/dokumente/textarchiv/2026/kw42-de-digitale-identitaeten-gesetz-1223586",
     "https://www.heise.de/news/EUDI-Wallet-Anhoerung-mit-viel-Kritik-an-d-you-Planung-11477850.html"
-   ]
-  },
-  {
-   "theme": "Cloud-Souveränität und Cloud and AI Development Act",
-   "why": "Der Bericht des Europäischen Parlaments zum Cloud and AI Development Act soll im Dezember vorgelegt werden, die Abstimmung ist für Mitte März geplant. Die Souveränitätsstufen könnten Maßstäbe für Cloud-Beschaffung und Anbieterbewertung setzen.",
-   "count": 3,
-   "first_seen": "2026-09-30",
-   "last_seen": "2026-10-25",
-   "evidence": [
-    "https://www.mlex.com/mlex/technology/articles/2535003",
-    "https://www.eesc.europa.eu/en/our-work/opinions-information-reports/opinions/cloud-and-ai-development-act",
-    "https://www.datenschutzticker.de/2026/09/cada-europas-cloud-und-ki-infrastruktur-im-fokus/",
-    "https://netzpolitik.org/2026/cloud-and-ai-development-act-eu-kommission-greift-bei-us-cloud-anbietern-kaum-durch/"
    ]
   },
   {
@@ -1121,6 +1164,16 @@
    "evidence": [
     "https://www.techuk.org/insights/news/dispatch-from-brussels-updates-on-eu-tech-policy-09-10",
     "https://www.politico.eu/article/eu-lawmakers-ai-apocalypse-warnings-brussels-scrambles-ai-rules-gaps/"
+   ]
+  },
+  {
+   "theme": "Web-Regeln für Agenten",
+   "why": "Das World Wide Web Consortium hat am 21. Oktober 2026 ein Diskussionspapier vorgelegt: Agenten sollen eingebettete Anweisungen nicht blind befolgen und teure Aktionen wie Buchungen nur mit ausdrücklicher Zustimmung ausführen. Daraus könnten Standards entstehen, die Onlineshops und Buchungsportale umsetzen müssen.",
+   "count": 1,
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-10-26",
+   "evidence": [
+    "https://www.heise.de/news/W3C-Ein-Auftrag-ist-kein-Freibrief-fuer-KI-Agenten-11497919.html"
    ]
   },
   {
@@ -1195,6 +1248,170 @@
   }
  ],
  "news": [
+  {
+   "title": "Präparierte Datei im Download-Ordner kapert Coding-Agenten",
+   "summary": "Forschende zeigen, dass eine bösartige Anweisungsdatei im Download-Ordner Coding-Agenten wie OpenAI Codex und Claude Code zu schädlichen Befehlen bringen kann. Browser können solche Dateien ohne Zutun ablegen, und Agenten, die von dort gestartet werden, laden die Anweisungen automatisch. Bei Codex klappte der Test zu 90 Prozent, bei Claude Code wurden in etwa der Hälfte der Versuche Anmelde-Token abgegriffen; laut den Forschenden gibt es für die Hersteller nichts zu patchen, OpenAI und Anthropic raten zu projektspezifischen Arbeitsverzeichnissen.",
+   "relevance": "Das Risiko liegt bei der Konfiguration und Nutzung, nicht beim Hersteller. Unternehmen brauchen deshalb eigene Regeln, wo und mit welchen Rechten Agenten auf Entwicklerrechnern laufen dürfen, und sollten Token mit langer Laufzeit vermeiden.",
+   "source": "BleepingComputer",
+   "url": "https://www.bleepingcomputer.com/news/security/ai-coding-agents-hijacked-using-agentsmd-file-in-downloads-folder/",
+   "id": "2026-10-26-agents-md-downloads",
+   "topic": "AI-Governance",
+   "impact": "mittel",
+   "published": "2026-10-25",
+   "tags": [
+    "Agenten",
+    "Prompt Injection",
+    "Entwicklung"
+   ],
+   "controls": [
+    "ISO/IEC 42001 Anhang A – Nutzung von Systemen Künstlicher Intelligenz",
+    "ISO/IEC 27001 Anhang A 8.28 – Sichere Codierung"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Management"
+   ],
+   "countries": [],
+   "dossier": "agentische-ki-sicherheit",
+   "priority": 5,
+   "primary": false,
+   "added": "2026-10-26T06:08:42Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Dass es nichts zu patchen gibt, sagen die Forschenden, nicht die Hersteller. Die Hersteller raten nur zu Projektverzeichnissen. Cursor wird nur als Agent genannt, den Kunden aus dem Download-Ordner starten, und war nicht Teil der Tests. Bei Claude Code wurde eine Datei CLAUDE.md genutzt."
+   }
+  },
+  {
+   "title": "Cyberagentur: 578 Prozent mehr Schwachstellen, Angreifer klar im Vorteil",
+   "summary": "Nach Daten von IBM X-Force, die die Cyberagentur des Bundes zitiert, wurden von Januar bis September 2026 über 10.124 Schwachstellen in großer Software etwa von Microsoft, Oracle und Google Chrome gefunden. Das sind 578 Prozent mehr als im Vorjahreszeitraum, mehr als die Hälfte gilt als hoch oder kritisch. Abteilungsleiter Daniel Gille spricht von einem Tal der Tränen: Angriffscode entsteht inzwischen in Minuten oder Stunden statt in Wochen.",
+   "relevance": "Patch-Fristen von 14 oder 30 Tagen in Richtlinien und Versicherungsauflagen passen kaum noch zur Bedrohungslage. Für einen Konzern mit großer Systemlandschaft heißt das: Fristen nach Risiko staffeln, Notfall-Patchprozesse üben und die Ressourcenplanung anpassen.",
+   "source": "heise online",
+   "url": "https://www.heise.de/news/Cyberagentur-Software-Schwachstellen-bleiben-laenger-ein-Problem-11499379.html",
+   "id": "2026-10-26-cyberagentur-tal-der-traenen",
+   "topic": "Weitere Themen",
+   "impact": "mittel",
+   "published": "2026-10-25",
+   "tags": [
+    "Schwachstellen",
+    "Patch-Management",
+    "Lagebild"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Umgang mit Schwachstellen",
+    "IT-Kontrollen der Abschlussprüfung – Änderungsmanagement"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Management"
+   ],
+   "countries": [],
+   "dossier": "kritische-schwachstellen-perimeter",
+   "priority": 6,
+   "primary": false,
+   "added": "2026-10-26T06:08:42Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum 25. Oktober 2026, mindestens 10.124 Lücken, plus 578 Prozent, IBM X-Force, über die Hälfte hoch oder kritisch, Daniel Gille und Minuten oder Stunden sind belegt."
+   }
+  },
+  {
+   "title": "HPE ArubaOS: Acht Lücken mit Höchstwertung in Funknetz-Controllern und Gateways",
+   "summary": "HPE hat am 23. Oktober 2026 in den Versionen 8 und 10 von ArubaOS 72 Schwachstellen geschlossen, acht davon mit Höchstwertung (CVE-2026-79844 bis CVE-2026-79851). Darunter sind Umgehungen der Anmeldung, das Einschleusen von Befehlen und Datenbankbefehlen sowie Pufferüberläufe; sie sind aus der Ferne ohne Anmeldung und ohne Zutun von Nutzern ausnutzbar. Laut HPE sind zum Veröffentlichungstermin kein öffentlicher Angriffscode und keine Diskussion darüber bekannt.",
+   "relevance": "Funknetze in Filialen, Lagern und Büros eines Handelskonzerns umfassen schnell sehr viele Geräte. Ziel muss sein, zu patchen, bevor Angriffscode auftaucht. Außerdem sollten Verwaltungsoberflächen grundsätzlich nur aus eigenen Netzsegmenten erreichbar sein.",
+   "source": "BleepingComputer",
+   "url": "https://www.bleepingcomputer.com/news/security/hpe-patches-eight-max-severity-rce-and-auth-bypass-aos-flaws/",
+   "id": "2026-10-26-hpe-arubaos-hoechstwertung",
+   "topic": "IT-Governance & Risiko",
+   "impact": "hoch",
+   "published": "2026-10-23",
+   "tags": [
+    "Schwachstellen",
+    "Netzwerk",
+    "Filialen"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Umgang mit Schwachstellen",
+    "ISO/IEC 27001 Anhang A 8.8 – Handhabung technischer Schwachstellen",
+    "ISO/IEC 27001 Anhang A 8.22 – Trennung von Netzwerken"
+   ],
+   "roles": [
+    "IT-Risiko"
+   ],
+   "countries": [],
+   "dossier": "kritische-schwachstellen-perimeter",
+   "priority": 1,
+   "primary": false,
+   "added": "2026-10-26T06:08:42Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum 23. Oktober 2026, 72 Lücken, acht mit Höchstwertung, CVE-Bereich, Lückenarten, Ausnutzbarkeit ohne Anmeldung und fehlender öffentlicher Angriffscode stimmen mit der Quelle überein."
+   }
+  },
+  {
+   "title": "Update: Nextcloud – Lücke im Collabora-Server offiziell als aktiv ausgenutzt gelistet",
+   "summary": "Die amerikanische Cybersicherheitsbehörde hat die Schwachstelle CVE-2026-110447 im eingebauten Collabora-Online-Server am 23. Oktober 2026 in ihren Katalog aktiv ausgenutzter Schwachstellen aufgenommen. Es handelt sich um das Einschleusen von Betriebssystembefehlen. Bisher war bekannt, dass Angreifer die Lücke für Hintertüren auf Nextcloud-Servern nutzen; jetzt liegt die offizielle Bestätigung der Behörde vor.",
+   "relevance": "Nextcloud-Installationen mit Office-Funktion laufen oft außerhalb der zentralen Informationstechnik, etwa in Fachabteilungen oder Projekten. Das Inventar muss solche Systeme kennen, damit sie innerhalb der Patch-Fristen erfasst werden.",
+   "source": "Cybersecurity and Infrastructure Security Agency",
+   "url": "https://www.cisa.gov/news-events/alerts/2026/10/23/cisa-adds-one-known-exploited-vulnerability-catalog-0",
+   "id": "2026-10-26-collabora-aktiv-ausgenutzt",
+   "topic": "IT-Governance & Risiko",
+   "impact": "mittel",
+   "published": "2026-10-23",
+   "tags": [
+    "Nextcloud",
+    "Schwachstellen",
+    "Schatten-IT"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 5.9 – Inventar der Informationen und anderen zugehörigen Werte",
+    "ISO/IEC 27001 Anhang A 8.8 – Handhabung technischer Schwachstellen"
+   ],
+   "roles": [
+    "IT-Risiko"
+   ],
+   "countries": [],
+   "dossier": "kritische-schwachstellen-perimeter",
+   "priority": 4,
+   "primary": true,
+   "added": "2026-10-26T06:08:42Z",
+   "check": {
+    "verdict": "ok",
+    "note": "CVE-2026-110447, Collabora Online Built-in CODE Server, Einschleusen von Betriebssystembefehlen, aufgenommen am 23. Oktober 2026. Der Hinweis auf frühere Hintertüren stammt aus der Vorberichterstattung und steht nicht in der Behördenmeldung."
+   }
+  },
+  {
+   "title": "Entra ID: Forensiker empfiehlt regelmäßige Selbstprüfung versteckter Rechteketten",
+   "summary": "Im Interview mit dem Magazin iX empfiehlt ein Forensiker von Corporate Trust, Microsoft Entra ID regelmäßig und am besten automatisiert selbst zu prüfen. Kernfragen sind, wer privilegierten Zugriff hat, welche Schutzmaßnahmen greifen und welche indirekten Berechtigungsketten zur Kontrolle führen. Als Prüfmaßstab nennt er die Baselines Secure Cloud Business Applications der amerikanischen Cybersicherheitsbehörde und den Benchmark des Center for Internet Security für Microsoft 365.",
+   "relevance": "Für allgemeine IT-Kontrollen beim Zugriffsschutz reicht eine jährliche Momentaufnahme der Rollen nicht, wenn Rechte sich aus Kombinationen ergeben. Für Revision und Abschlussprüfung lohnt sich ein fester Prüfmaßstab für die Cloud-Identitäten.",
+   "source": "heise online",
+   "url": "https://www.heise.de/news/Entra-ID-Wer-hat-hier-eigentlich-die-Schluessel-11498161.html",
+   "id": "2026-10-26-entra-id-selbstpruefung",
+   "topic": "Prüfung & Assurance",
+   "impact": "info",
+   "published": "2026-10-23",
+   "tags": [
+    "Entra ID",
+    "Berechtigungen",
+    "Cloud"
+   ],
+   "controls": [
+    "IT-Kontrollen der Abschlussprüfung – Zugriffsschutz",
+    "ISO/IEC 27001 Anhang A 5.18 – Zugangsrechte"
+   ],
+   "roles": [
+    "Revision & Prüfung",
+    "IT-Risiko"
+   ],
+   "countries": [],
+   "dossier": "identitaeten-zugangsdaten",
+   "priority": 7,
+   "primary": false,
+   "added": "2026-10-26T06:08:42Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum 23. Oktober 2026. Interviewt wird ein Berater von Corporate Trust mit Schwerpunkt digitale Forensik. Drei Kernfragen, die Baselines der Cybersicherheitsbehörde und der Benchmark des Center for Internet Security sind belegt."
+   }
+  },
   {
    "title": "Update: PHP2Shell – 4,2 Millionen verwundbare Dienste in Deutschland, Portale vorsorglich offline",
    "summary": "Das Sicherheitsunternehmen Censys hat das Internet nach den Lücken CVE-2026-109618 und CVE-2026-109619 in der Skriptsprache PHP durchsucht. In Deutschland waren demnach rund 4,2 Millionen von 11 Millionen erreichbaren PHP-Diensten verwundbar, offizielle Updates gibt es nur für die Versionen 8.2 bis 8.5. Für die Versionen 7.4 bis 8.1 gibt es lediglich Korrekturen im Quellcode, aber keine fertigen Versionen.",
@@ -1749,6 +1966,40 @@
    "check": {
     "verdict": "ok",
     "note": "Datum 21. Oktober 2026, Nummern der Schwachstellen, betroffene und behobene Versionen, vorgezogene Veröffentlichung wegen eines Lecks, Härtung nur als vorübergehende Krücke und betroffene Speichersysteme, Router und Sicherheitsgeräte sind durch die Quelle belegt."
+   }
+  },
+  {
+   "title": "Staples: Gekapertes Service-Werkzeug erzeugte Geschenkkarten für 5 Millionen Dollar",
+   "summary": "Laut Gerichtsakten haben Angreifer das interne Kundenservice-System Nexus des Händlers Staples missbraucht. Über wiederholte Speicherabbilder (Heap Dumps) erbeuteten sie Sitzungsdaten angemeldeter Servicekräfte und erzeugten über 15.000 Geschenkkarten im Wert von rund 5 Millionen Dollar, von denen rund 425.000 Dollar eingelöst wurden. Das System galt als nur intern erreichbar; der Vorfall wurde im Oktober 2023 entdeckt und gehört zu einem Betrugskomplex von über 100 Millionen Dollar.",
+   "relevance": "Werkzeuge mit Geldfunktion wie Gutschriften, Erstattungen und Geschenkkarten brauchen Limits, Vier-Augen-Prinzip und Auffälligkeitsprüfung, egal wie gut sie im Netz abgeschottet sind. Auch Diagnosefunktionen wie Speicherabbilder gehören in die Härtung und das Berechtigungskonzept.",
+   "source": "Gizmodo",
+   "url": "https://gizmodo.com/chinese-crime-ring-allegedly-hacked-staples-to-mint-5-million-in-gift-cards-2000828269",
+   "id": "2026-10-26-staples-geschenkkarten-nexus",
+   "topic": "Handel & Branche",
+   "impact": "mittel",
+   "published": "2026-10-20",
+   "tags": [
+    "Betrug",
+    "Geschenkkarten",
+    "Kundenservice"
+   ],
+   "controls": [
+    "IT-Kontrollen der Abschlussprüfung – Zugriffsschutz",
+    "ISO/IEC 27001 Anhang A 8.2 – Privilegierte Zugriffsrechte",
+    "ISO/IEC 27001 Anhang A 8.16 – Überwachung von Aktivitäten"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Revision & Prüfung"
+   ],
+   "countries": [],
+   "dossier": "identitaeten-zugangsdaten",
+   "priority": 3,
+   "primary": false,
+   "added": "2026-10-26T06:08:42Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum, System Nexus, Speicherabbilder, über 15.000 Karten, rund 5 Millionen Dollar, rund 425.000 Dollar eingelöst, Entdeckung im Oktober 2023 und Betrugskomplex über 100 Millionen Dollar sind belegt."
    }
   },
   {
@@ -5880,6 +6131,41 @@
    "check": {
     "verdict": "ok",
     "note": "Der Newsletter des Instituts vom 1. Oktober 2026 nennt die Ausgabe 19/2026 mit dem Beitrag von Sabine Samtleben zur berufsrechtlichen Zulässigkeit, Mandantendaten zum Training von KI-Systemen zu nutzen."
+   }
+  },
+  {
+   "title": "Grundschutz++: Methodik soll morgen zur it-sa erscheinen, Zertifizierung ab 2027",
+   "summary": "Nach dem Zeitplan des Bundesamts für Sicherheit in der Informationstechnik soll die Methodik von Grundschutz++ auf der Messe it-sa am 27. Oktober 2026 veröffentlicht werden; ab 1. Januar 2027 sollen Zertifizierungen möglich sein. Statt Bausteinen als Dokument gibt es rund 20 Praktiken mit etwa 1.000 Anforderungen im maschinenlesbaren Format OSCAL (Open Security Controls Assessment Language), jeweils mit Angaben zu Schutzniveau und Umsetzungsaufwand. Laut Fachquelle bleibt der klassische IT-Grundschutz bis 30. November 2031 zertifizierbar.",
+   "relevance": "Für Konzerne mit Zertifikaten nach ISO/IEC 27001 auf Basis von IT-Grundschutz entsteht kein sofortiger Druck. Werkzeuge für das Informationssicherheits-Managementsystem, das Mapping der Anforderungen und Nachweise auf Datenbasis sollten aber schon jetzt in die Planung der nächsten Rezertifizierung einfließen.",
+   "source": "securitydocs",
+   "url": "https://securitydocs.de/blog/grundschutz-plus-plus/",
+   "id": "2026-10-26-grundschutz-plus-plus-it-sa",
+   "topic": "Standards & Zertifizierung",
+   "impact": "mittel",
+   "published": "2026-10",
+   "tags": [
+    "IT-Grundschutz",
+    "Zertifizierung",
+    "Bundesamt"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Abschnitt 6.1 – Maßnahmen zum Umgang mit Risiken und Chancen",
+    "BSI IT-Grundschutz – Methodik"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Revision & Prüfung"
+   ],
+   "countries": [
+    "DE"
+   ],
+   "dossier": null,
+   "priority": 2,
+   "primary": false,
+   "added": "2026-10-26T06:08:42Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Artikel vom 8. Oktober 2026. Veröffentlichung am 27. Oktober 2026 auf der it-sa, Zertifizierung ab 1. Januar 2027, rund 1.000 Anforderungen in 20 Praktiken, OSCAL, Angaben zu Niveau und Aufwand sowie klassischer Grundschutz bis 30. November 2031 sind belegt."
    }
   },
   {
