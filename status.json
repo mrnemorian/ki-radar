@@ -1,11 +1,17 @@
 {
  "last_run": {
-  "start": "2026-10-26T07:00:01+01:00",
-  "end": "2026-10-26T07:08:42+01:00",
+  "start": "2026-10-27T07:00:01+01:00",
+  "end": "2026-10-27T07:07:55+01:00",
   "ok": true,
-  "summary": "7 neue Meldungen: P1 HPE ArubaOS: Acht Lücken mit Höchstwertung in Funknetz-Controllern und Gateways; P2 Grundschutz++: Methodik soll morgen zur it-sa erscheinen, Zertifizierung ab 2027; P3 Staples:"
+  "summary": "6 neue Meldungen: P1 Arista VeloCloud Orchestrator: Aktiv ausgenutzte Lücke in der Steuerung von Standortnetzen; P2 Amadeus: Über missbrauchtes Konto Buchungsdaten von Korean Air und Asiana abgeflos"
  },
  "history": [
+  {
+   "start": "2026-10-27T07:00:01+01:00",
+   "end": "2026-10-27T07:07:55+01:00",
+   "ok": true,
+   "summary": "6 neue Meldungen: P1 Arista VeloCloud Orchestrator: Aktiv ausgenutzte Lücke in der Steuerung von Standortnetzen; P2 Amadeus: Über missbrauchtes Konto Buchungsdaten von Korean Air und Asiana abgeflos"
+  },
   {
    "start": "2026-10-26T07:00:01+01:00",
    "end": "2026-10-26T07:08:42+01:00",

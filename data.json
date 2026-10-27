@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-26T06:08:42Z",
+ "updated": "2026-10-27T06:07:55Z",
  "topics": [
   "IT-Governance & Risiko",
   "Cyber- & IT-Regulierung",
@@ -11,6 +11,18 @@
   "Weitere Themen"
  ],
  "briefings": [
+  {
+   "date": "2026-10-27",
+   "headline": "Ausgenutzte Lücke in der Netzsteuerung von Arista, drei Jahre unbemerkter Zugriff über ein Amadeus-Konto und ein Urteil des Bundesgerichtshofs zum Scoring",
+   "points": [
+    "Arista VeloCloud Orchestrator: Eine bereits ausgenutzte Lücke macht aus einfachen Nutzern Betreiber der Netzsteuerung, Patches liegen vor",
+    "Amadeus: Über ein missbrauchtes Konto flossen von August 2023 bis September 2026 Buchungsdaten von Korean Air und Asiana ab",
+    "Bundesgerichtshof: Ein Score kann eine automatisierte Entscheidung sein, Betroffene müssen weniger beweisen",
+    "Cloudflare-Chef erwartet über Jahre fast wöchentlich Lücken vom Kaliber PHP2Shell, weil Künstliche Intelligenz Schwachstellen schneller findet",
+    "Nachrichtendienste wollen für Geheimdaten angeblich eine abgeschottete Google-Cloud nutzen, Rakuten Travel meldet abgeflossene Teil-Kartendaten"
+   ],
+   "count": 6
+  },
   {
    "date": "2026-10-26",
    "headline": "Höchstwertungslücken in Aruba-Funknetzen, Grundschutz++ startet morgen, und am Samstag enden gleich mehrere Fristen.",
@@ -383,18 +395,17 @@
    "title": "Drittparteien- und Lieferkettenrisiko",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Microsoft ordnet den Angriff über ConnectWise der staatsnahen chinesischen Gruppe Storm-0940 zu. Sie erreichte mit dem Agenten-Framework ARTEX über 2.250 Cloud-Umgebungen und verschaffte sich dauerhaften privilegierten Zugriff. Zuvor wurden über LiteLLM und Railway Zugangsdaten und Geheimnisse abgegriffen, bei TAKKT legte ein Cyberangriff Auftragsabwicklung und Lieferungen lahm.",
-   "next_step": "Zugriffe von Dienstleistern auf Microsoft-365- und Cloud-Umgebungen inventarisieren, Anwendungszugangsdaten und OAuth-Freigaben überprüfen und Verbindungen zu kompromittierten Anbietern bis zum Abschluss ihrer Wiederherstellung getrennt halten.",
+   "status": "Nach ConnectWise, LiteLLM, Railway und TAKKT zeigt der Fall Amadeus, dass ein legitimes Konto bei einem Plattformanbieter von August 2023 bis September 2026 unbemerkt für Zugriffe auf Buchungsdaten von Korean Air und Asiana genutzt werden konnte. Microsoft ordnet den ConnectWise-Angriff der staatsnahen Gruppe Storm-0940 zu, die mit dem Agenten-Framework ARTEX Anmeldungen bei über 2.250…",
+   "next_step": "Für kritische Plattformen wie Reservierungs-, Kassen- und Backup-Dienste erfassen, welche Konten bestehen, wer deren Nutzung überwacht und welche Benachrichtigungsfristen die Verträge vorsehen.",
    "open_questions": [
-    "Wie lassen sich Agenten-gestützte Massenangriffe auf Anmeldungen bei Dienstleistern vertraglich und technisch absichern?",
-    "Welche Nachweise zur Bereinigung sollte ein kompromittierter Anbieter vor der Wiederanbindung liefern?"
+    "Liefern Plattformanbieter Zugriffsprotokolle zu den Konten ihrer Kunden?",
+    "Wie schnell müssen Anbieter laut Vertrag über Vorfälle informieren?"
    ],
    "controls": [
     "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
-    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen",
-    "ISO/IEC 27001 Anhang A 5.22 – Überwachung von Lieferantendienstleistungen"
+    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen"
    ],
-   "updated": "2026-10-25"
+   "updated": "2026-10-27"
   },
   {
    "slug": "identitaeten-zugangsdaten",
@@ -429,19 +440,19 @@
     }
    ],
    "title": "Kritische Schwachstellen in Randsystemen und Kernanwendungen",
-   "sector": "IT-Governance & Risiko",
+   "sector": "Cyber- & IT-Regulierung",
    "ring": "jetzt handeln",
-   "status": "HPE hat acht Lücken mit Höchstwertung in ArubaOS 8 und 10 geschlossen, und die Collabora-Lücke in Nextcloud ist offiziell als aktiv ausgenutzt gelistet. Nach Daten, die die Cyberagentur zitiert, ist die Zahl der Schwachstellen in großer Software um 578 Prozent gestiegen; PHP2Shell und die Fortinet-Details am 10. November bleiben offen.",
-   "next_step": "Aruba-Bestand und Nextcloud-Installationen inventarisieren und patchen, Verwaltungsoberflächen segmentieren, Patch-Fristen nach Risiko und Ausnutzungsstatus staffeln.",
+   "status": "Zu HPE ArubaOS, Collabora in Nextcloud und PHP2Shell kommt eine aktiv ausgenutzte Lücke im VeloCloud Orchestrator von Arista, der zentralen Steuerung von Standortnetzen. Der Cloudflare-Chef erwartet, dass Lücken dieses Kalibers wegen Künstlicher Intelligenz über Jahre fast wöchentlich auftauchen; die Fortinet-Details folgen am 10. November.",
+   "next_step": "Steuerzentralen für Netze, Fernzugänge und erreichbare Altanwendungen gegen den Katalog aktiv ausgenutzter Schwachstellen abgleichen und Kapazität für Notfallpatches in Budget und Kontrollen verankern.",
    "open_questions": [
-    "Sind die Patch-Fristen in den Richtlinien bei Angriffscode innerhalb von Stunden noch haltbar?",
-    "Welche Systeme laufen außerhalb des zentralen Inventars?"
+    "Reichen die Patch-Fristen in den Kontrollen, wenn die Ausnutzung binnen Stunden beginnt?",
+    "Wer ist Owner für Steuerzentralen, die Dienstleister betreiben?"
    ],
    "controls": [
-    "NIS-2-Richtlinie Art. 21 – Umgang mit Schwachstellen",
-    "ISO/IEC 27001 Anhang A 8.8 – Handhabung technischer Schwachstellen"
+    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
+    "NIS-2-Richtlinie Art. 21 – Umgang mit Schwachstellen"
    ],
-   "updated": "2026-10-26"
+   "updated": "2026-10-27"
   },
   {
    "slug": "lebenszyklus-altsysteme",
@@ -529,18 +540,17 @@
    "title": "Automatisierte Entscheidungen und algorithmisches Management",
    "sector": "Datenschutz & Datenrecht",
    "ring": "vorbereiten",
-   "status": "Die niederländische Datenschutzbehörde hat am 8. Oktober 2026 gegen Uber 824,99 Millionen Euro wegen automatischer Kontosperren ohne menschliche Entscheidung und fehlender Information über Profiling verhängt, die Entscheidung ist noch nicht rechtskräftig. Systeme Künstlicher Intelligenz für Einstellung, Aufgabenverteilung und Leistungsüberwachung gelten nach dem Digital Omnibus ab 2. Dezember…",
-   "next_step": "Anwendungsfälle erfassen, in denen Algorithmen Entscheidungen über Beschäftigte oder Kunden treffen oder vorbereiten, und für jeden die menschliche Prüfung, die Information der Betroffenen und den Verantwortlichen dokumentieren.",
+   "status": "Die niederländische Datenschutzbehörde hat am 8. Oktober 2026 gegen Uber 824,99 Millionen Euro wegen automatischer Entscheidungen ohne menschliche Prüfung verhängt, noch nicht rechtskräftig. Am 21. Oktober 2026 entschied der Bundesgerichtshof, dass ein Score als automatisierte Entscheidung gelten kann, wenn die Entscheidung eines Dritten maßgeblich davon abhängt, und senkte die Beweislast für…",
+   "next_step": "Automatisierte Entscheidungen über Kunden und Beschäftigte inventarisieren, Anteil menschlicher Prüfung dokumentieren und Auskunftsprozesse zur Entscheidungslogik testen.",
    "open_questions": [
-    "Ab wann gilt eine von Menschen nur bestätigte Empfehlung als automatisierte Entscheidung?",
-    "Wie greifen Datenschutz-Grundverordnung und Hochrisiko-Pflichten der Verordnung über Künstliche Intelligenz bei Personalsystemen ineinander?"
+    "Wann ist eine menschliche Prüfung mehr als eine Formsache?",
+    "Wie weit reicht die Auskunft über Score-Logik gegenüber Geschäftsgeheimnissen?"
    ],
    "controls": [
-    "DSGVO Art. 22 – Automatisierte Entscheidungen im Einzelfall einschließlich Profiling",
-    "DSGVO Art. 35 – Datenschutz-Folgenabschätzung",
-    "ISO/IEC 42001 – Managementsystem für Künstliche Intelligenz"
+    "DSGVO Art. 22 – Automatisierte Entscheidungen im Einzelfall",
+    "DSGVO Art. 15 – Auskunftsrecht"
    ],
-   "updated": "2026-10-09"
+   "updated": "2026-10-27"
   },
   {
    "slug": "cloud-souveraenitaet",
@@ -558,17 +568,17 @@
    "title": "Cloud-Souveränität und Abhängigkeiten",
    "sector": "IT-Governance & Risiko",
    "ring": "vorbereiten",
-   "status": "Amazon Web Services hatte die Trennung seiner europäischen souveränen Cloud vom globalen Netz für den 24. Oktober 2026 angekündigt und will Regulierern und Kunden danach berichten; Ergebnisse liegen noch nicht vor. Im Handel positioniert sich Schwarz Digits mit einer Partnerschaft mit Fujitsu und Fsas Technologies für souveräne Infrastruktur, und im Europäischen Parlament soll der Bericht zum…",
-   "next_step": "Den Bericht von Amazon Web Services zur Trennungsübung auswerten und die eigenen Kriterien zu Souveränität und Ausstieg, etwa Datenstandort, Identitätsdienste und Steuerungsebene, für Cloud-Beschaffungen festlegen.",
+   "status": "Amazon Web Services hatte die Trennung seiner europäischen souveränen Cloud vom globalen Netz für den 24. Oktober 2026 angekündigt, Ergebnisse liegen noch nicht vor. Laut Tagesschau wollen die deutschen Nachrichtendienste für eingestufte Daten die abgeschottete Google Distributed Cloud nutzen, Kosten über 500 Millionen Euro; im Handel positioniert sich Schwarz Digits mit Fujitsu für souveräne…",
+   "next_step": "Souveränitätsanforderungen nach Schutzbedarf staffeln, für kritische Anwendungen Betriebsmodell, Trennbarkeit und Exit-Fähigkeit dokumentieren und den Bericht von Amazon Web Services zum Trenntest auswerten.",
    "open_questions": [
-    "Wie verhalten sich Identitätsdienste und Steuerungsebene bei einer längeren Trennung?",
-    "Werden die Souveränitätsstufen des Cloud and AI Development Act auch für private Kritische Infrastrukturen relevant?"
+    "Was belegt der Trenntest von Amazon Web Services tatsächlich?",
+    "Zählt für Souveränität die Herkunft des Anbieters oder das Betriebsmodell?"
    ],
    "controls": [
     "ISO/IEC 27001 Anhang A 5.23 – Informationssicherheit für die Nutzung von Cloud-Diensten",
     "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette"
    ],
-   "updated": "2026-10-25"
+   "updated": "2026-10-27"
   },
   {
    "slug": "cyber-resilience-act",
@@ -1006,10 +1016,10 @@
  "signals": [
   {
    "theme": "Digital Fairness Act",
-   "why": "Laut Wissenschaftlichem Dienst des Europäischen Parlaments soll der Vorschlag Mitte November 2026 kommen, mit Regeln zu Dark Patterns, Abo-Kündigung und personalisierten Preisen. Das betrifft Onlinehandel, Kundenbindungsprogramme und dynamische Preise bei Reisebuchungen direkt.",
-   "count": 16,
+   "why": "Der Vorschlag der Kommission wird für das vierte Quartal 2026 erwartet und soll Dark Patterns, suchtförderndes Design und unfaire Personalisierung regeln. Das trifft Onlineshops, Apps und Kundenbindungsprogramme direkt.",
+   "count": 17,
    "first_seen": "2026-09-30",
-   "last_seen": "2026-10-26",
+   "last_seen": "2026-10-27",
    "evidence": [
     "https://eprs.europarl.europa.eu/contents/publications/EPRS/2026/10/EPRS_BRI(2026)791529.html",
     "https://www.europarl.europa.eu/legislative-train/theme-protecting-our-democracy-upholding-our-values/file-digital-fairness-act",
@@ -1020,10 +1030,10 @@
   },
   {
    "theme": "Neue Prüfungsstandards für Prüfungsnachweise",
-   "why": "Neben der Konsultation zu Prüfungsnachweisen bis 15. Dezember 2026 kündigt der internationale Standardsetzer für November einen ersten Leitfaden zum Qualitätsmanagement bei Prüfungswerkzeugen mit Künstlicher Intelligenz an. Das verändert die Erwartungen an Datenqualität und Nachweise aus den Systemen der Unternehmen.",
-   "count": 7,
+   "why": "Die Konsultation zu den überarbeiteten Standards ISA 330, ISA 500 und ISA 520 läuft bis 15. Dezember 2026 und soll den stärkeren Technikeinsatz in Unternehmen berücksichtigen. Das verändert, welche Nachweise Abschlussprüfer zu allgemeinen IT-Kontrollen verlangen.",
+   "count": 8,
    "first_seen": "2026-09-30",
-   "last_seen": "2026-10-13",
+   "last_seen": "2026-10-27",
    "evidence": [
     "https://www.iaasb.org/news-events/2026-10/iaasb-enews-october-2026",
     "https://ifacweb.blob.core.windows.net/publicfiles/2026-08/IAASB-Audit-Evidence-Risk-Response-ISA-500-Exposure-Draft.pdf",
@@ -1249,6 +1259,141 @@
  ],
  "news": [
   {
+   "title": "Arista VeloCloud Orchestrator: Aktiv ausgenutzte Lücke in der Steuerung von Standortnetzen",
+   "summary": "Arista hat am 22. Oktober 2026 die bereits ausgenutzte Lücke CVE-2026-114625 in lokal betriebenen Installationen des VeloCloud Orchestrator geschlossen, der Steuerzentrale für Software-Defined Wide Area Networks. Angemeldete Nutzer mit einfachen Rechten können über eine SQL Injection, also eingeschleuste Datenbankbefehle, Betreiberrechte als Superuser Operator erlangen; Arista bewertet die Lücke mit 9,9 von 10. Die amerikanische Behörde für Cybersicherheit und Infrastruktursicherheit hat sie in ihren Katalog aktiv ausgenutzter Schwachstellen aufgenommen, behoben ist sie in den Versionen 5.2.3.18, 6.1.3.10 und 6.4.2.12.",
+   "relevance": "Wer Filialen, Lager oder Reisebüros über solche Netze anbindet, hat in der Steuerzentrale einen Hebel für alle Standorte. Sofort klären, ob der Orchestrator selbst betrieben wird, Patchstand und Zugriffsprotokolle prüfen und die Weboberfläche auf Verwaltungsnetze beschränken.",
+   "source": "heise online",
+   "url": "https://www.heise.de/news/Angriffe-auf-Arista-VeloCloud-und-Collabora-Nextcloud-beobachtet-11499615.html",
+   "id": "2026-10-27-arista-velocloud-zero-day",
+   "topic": "Cyber- & IT-Regulierung",
+   "impact": "hoch",
+   "published": "2026-10-26",
+   "tags": [
+    "Zero Day",
+    "Netzsteuerung",
+    "Standortnetze"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Umgang mit Schwachstellen",
+    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
+    "ISO/IEC 27001 Anhang A 8.2 – Privilegierte Zugriffsrechte"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Einkauf & Drittparteien"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "kritische-schwachstellen-perimeter",
+   "priority": 1,
+   "primary": false,
+   "added": "2026-10-27T06:07:55Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum, Versionen, Superuser Operator, Anmeldung erforderlich und Aufnahme in den Katalog der amerikanischen Behörde stimmen mit heise überein. heise nennt nur den Wert 9,4 nach CVSS 4 und kein Advisory-Datum; laut Arista-Advisory (über Bleeping Computer) wurde die Lücke am 22. Oktober 2026…"
+   }
+  },
+  {
+   "title": "Cloudflare-Chef erwartet über Jahre fast wöchentlich Lücken vom Kaliber PHP2Shell",
+   "summary": "Cloudflare-Chef Matthew Prince rechnet mit einigen Jahren, in denen es sich anfühlt, als falle jede Woche der Himmel herunter. Künstliche Intelligenz beschleunige das Finden von Schwachstellen und verkürze die Zeit bis zur Ausnutzung; Cloudflare habe neben PHP2Shell weitere schwere Lücken in kritischen Softwarekomponenten gefunden. Fachleute von VulnCheck und secuvera erwarten deutlich mehr Angriffe auf aus dem Internet erreichbare Systeme, besonders bei altem Code.",
+   "relevance": "Für Patch- und Schwachstellenmanagement heißt das: Kapazität für Notfallpatches, realistische Fristen in den Kontrollen und der Risikoappetit für erreichbare Altanwendungen gehören in die Budget- und Vorstandsplanung, nicht nur in den Betrieb.",
+   "source": "heise online",
+   "url": "https://www.heise.de/news/Cloudflare-Chef-erwartet-etliche-weitere-Luecken-wie-php2shell-11500909.html",
+   "id": "2026-10-27-cloudflare-schwachstellenflut",
+   "topic": "Weitere Themen",
+   "impact": "mittel",
+   "published": "2026-10-26",
+   "tags": [
+    "Schwachstellen",
+    "Künstliche Intelligenz",
+    "Patchmanagement"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
+    "NIS-2-Richtlinie Art. 21 – Umgang mit Schwachstellen"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Management"
+   ],
+   "countries": [],
+   "dossier": "kritische-schwachstellen-perimeter",
+   "priority": 4,
+   "primary": false,
+   "added": "2026-10-27T06:07:55Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Zitat von Prince, Rolle der künstlichen Intelligenz, weitere Lücken sowie Aussagen von VulnCheck und secuvera sind belegt."
+   }
+  },
+  {
+   "title": "Nachrichtendienste wollen für Geheimdaten angeblich abgeschottete Google-Cloud nutzen",
+   "summary": "Laut Tagesschau wollen Bundesnachrichtendienst, Bundesamt für Verfassungsschutz und Militärischer Abschirmdienst für den Austausch eingestufter Informationen die vom Internet getrennte Lösung Google Distributed Cloud nutzen. Das Bundesamt für Sicherheit in der Informationstechnik muss Komponenten noch zulassen, die Kosten sollen bei mindestens 500 Millionen Euro liegen und der Start verzögert sich gegenüber dem ersten Quartal 2027. Laut Bericht sendet die Wahl das Signal, dass europäische Anbieter derzeit nicht mithalten können; aus der Opposition fordert Konstantin von Notz eine Begründung, warum keine europäische Lösung möglich war.",
+   "relevance": "Wenn selbst Sicherheitsbehörden für höchsten Schutzbedarf auf abgeschottete Angebote amerikanischer Anbieter setzen, verschiebt sich die Souveränitätsdebatte von der Herkunft des Anbieters zu Betriebsmodell, Trennung und Kontrolle. Ein Referenzpunkt für Cloud-Strategie und Exit-Planung.",
+   "source": "heise online",
+   "url": "https://www.heise.de/news/Nachrichtendienste-BND-und-BfV-wollen-angeblich-auf-Google-setzen-11500403.html",
+   "id": "2026-10-27-nachrichtendienste-google-cloud",
+   "topic": "IT-Governance & Risiko",
+   "impact": "info",
+   "published": "2026-10-26",
+   "tags": [
+    "Cloud-Souveränität",
+    "Öffentlicher Sektor"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 5.23 – Informationssicherheit für die Nutzung von Cloud-Diensten"
+   ],
+   "roles": [
+    "Management",
+    "Einkauf & Drittparteien"
+   ],
+   "countries": [
+    "DE"
+   ],
+   "dossier": "cloud-souveraenitaet",
+   "priority": 5,
+   "primary": false,
+   "added": "2026-10-27T06:07:55Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Die Aussage über das Signal an europäische Anbieter steht im Bericht selbst und stammt nicht von Kritikern aus der Opposition. Der Oppositionspolitiker von Notz fragt nur, warum keine europäische Lösung möglich war. Bei den Kosten heißt es in der Quelle mindestens 500 Millionen Euro."
+   }
+  },
+  {
+   "title": "Reiseportal Rakuten Travel: Teil-Kartendaten von rund 36.000 Kunden abgeflossen",
+   "summary": "Rakuten hat am 26. Oktober 2026 einen unbefugten Zugriff auf sein Buchungsportal Rakuten Travel gemeldet, der bereits am 10. September entdeckt worden war. Abgeflossen sind Namen, E-Mail-Adressen und Telefonnummern sowie bei rund 36.000 Nutzern die letzten vier Ziffern, die Herausgeberkennung und das Ablaufdatum von Zahlungskarten. Wie die Angreifer eindrangen, ist nicht bekannt; laut Rakuten reichen die Daten nicht für betrügerische Zahlungen.",
+   "relevance": "Teil-Kartendaten zusammen mit Kontaktdaten taugen für glaubwürdiges Phishing gegen Reisende. In der Europäischen Union wäre die Aufsicht innerhalb von 72 Stunden zu informieren; Meldeketten für Buchungsportale und Szenarien mit Kartendaten sollten geübt sein.",
+   "source": "Bloomberg Law",
+   "url": "https://news.bloomberglaw.com/ip-law/rakuten-travel-site-hacked-credit-card-data-stolen-oct-26",
+   "id": "2026-10-27-rakuten-travel-kartendaten",
+   "topic": "Handel & Branche",
+   "impact": "info",
+   "published": "2026-10-26",
+   "tags": [
+    "Touristik",
+    "Kartendaten",
+    "Datenabfluss"
+   ],
+   "controls": [
+    "PCI DSS Anforderung 3 – Schutz gespeicherter Kontodaten",
+    "DSGVO Art. 33 – Meldung an die Aufsichtsbehörde"
+   ],
+   "roles": [
+    "Datenschutz",
+    "IT-Risiko"
+   ],
+   "countries": [],
+   "dossier": "zahlungsverkehr-pci-dss",
+   "priority": 6,
+   "primary": false,
+   "added": "2026-10-27T06:07:55Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Meldung vom 26. Oktober, Entdeckung am 10. September, rund 36.000 Betroffene, Art der Kartendaten, unbekannter Angriffsweg und Aussage zum Betrugsrisiko sind belegt."
+   }
+  },
+  {
    "title": "Präparierte Datei im Download-Ordner kapert Coding-Agenten",
    "summary": "Forschende zeigen, dass eine bösartige Anweisungsdatei im Download-Ordner Coding-Agenten wie OpenAI Codex und Claude Code zu schädlichen Befehlen bringen kann. Browser können solche Dateien ohne Zutun ablegen, und Agenten, die von dort gestartet werden, laden die Anweisungen automatisch. Bei Codex klappte der Test zu 90 Prozent, bei Claude Code wurden in etwa der Hälfte der Versuche Anmelde-Token abgegriffen; laut den Forschenden gibt es für die Hersteller nichts zu patchen, OpenAI und Anthropic raten zu projektspezifischen Arbeitsverzeichnissen.",
    "relevance": "Das Risiko liegt bei der Konfiguration und Nutzung, nicht beim Hersteller. Unternehmen brauchen deshalb eigene Regeln, wo und mit welchen Rechten Agenten auf Entwicklerrechnern laufen dürfen, und sollten Token mit langer Laufzeit vermeiden.",
@@ -1312,6 +1457,41 @@
    "check": {
     "verdict": "ok",
     "note": "Datum 25. Oktober 2026, mindestens 10.124 Lücken, plus 578 Prozent, IBM X-Force, über die Hälfte hoch oder kritisch, Daniel Gille und Minuten oder Stunden sind belegt."
+   }
+  },
+  {
+   "title": "Amadeus: Über missbrauchtes Konto Buchungsdaten von Korean Air und Asiana abgeflossen",
+   "summary": "Korean Air wurde am 20. Oktober 2026 von Amadeus informiert, dass über unbefugt genutzte Anmeldedaten eines Kontos im Reservierungs- und Ticketsystem personenbezogene Daten abgeflossen sind; auch Asiana Airlines bestätigt einen Abfluss beim selben Anbieter. Der Zugriff lief nach bisherigem Stand zwischen August 2023 und September 2026, betroffen sind unter anderem Buchungsnummern, Zahlungsdaten laut den Fluggesellschaften nicht. Die Zahl der Betroffenen ist noch offen, beide Fluggesellschaften fordern von Amadeus stärkere Schutzmaßnahmen.",
+   "relevance": "Reservierungs- und Vertriebssysteme sind für Touristik zentrale Drittanbieter. Ein über drei Jahre unentdeckter Zugriff über ein legitimes Konto zeigt, dass Kontenvergabe, Überwachung von Zugriffen und vertragliche Benachrichtigungsfristen bei solchen Plattformen auf den Prüfstand gehören.",
+   "source": "Seoul Economic Daily",
+   "url": "https://en.sedaily.com/finance/2026/10/23/korean-air-says-customer-data-leaked-at-booking-system",
+   "id": "2026-10-27-amadeus-konto-airlines",
+   "topic": "Handel & Branche",
+   "impact": "mittel",
+   "published": "2026-10-23",
+   "tags": [
+    "Touristik",
+    "Reservierungssystem",
+    "Zugangsdaten"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen",
+    "ISO/IEC 27001 Anhang A 5.18 – Zugangsrechte",
+    "DSGVO Art. 28 – Auftragsverarbeiter"
+   ],
+   "roles": [
+    "Einkauf & Drittparteien",
+    "Datenschutz",
+    "IT-Risiko"
+   ],
+   "countries": [],
+   "dossier": "drittparteien-lieferkette",
+   "priority": 2,
+   "primary": false,
+   "added": "2026-10-27T06:07:55Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Benachrichtigung am Abend des 20. Oktober, Zeitraum August 2023 bis September 2026, Buchungsnummern, keine Zahlungsdaten, Zahl offen und Forderungen an Amadeus sind belegt."
    }
   },
   {
@@ -1828,6 +2008,41 @@
    "check": {
     "verdict": "abweichung",
     "note": "Gescheiterte Abstimmungen am 7. und 11. Oktober sowie Forderungen von Deutschland und Frankreich stehen nicht in der Quelle; dort ist nur von gestärktem Schutz von Geschäftsgeheimnissen im letzten Kompromisstext die Rede. Der Artikel erschien am 22. Oktober 2026."
+   }
+  },
+  {
+   "title": "Bundesgerichtshof: Score kann automatisierte Entscheidung sein, Beweislast für Betroffene sinkt",
+   "summary": "Der Bundesgerichtshof hat am 21. Oktober 2026 in vier Verfahren gegen die SCHUFA entschieden, wann Auskunfteien Informationen über ihre Score-Verfahren herausgeben müssen. Ein Score gilt als automatisierte Entscheidung nach Artikel 22 der Datenschutz-Grundverordnung, wenn die Entscheidung eines Dritten über Abschluss, Durchführung oder Beendigung eines Vertrags maßgeblich davon abhängt. Dafür genügt der Vortrag, dass ein Score übermittelt wurde und es in zeitlichem Zusammenhang zu einer nachteiligen Entscheidung kam; die Verfahren gehen zurück an das Berufungsgericht.",
+   "relevance": "Wer Bonitätsprüfungen im Onlinehandel, beim Kauf auf Rechnung oder bei Reisebuchungen nutzt, muss damit rechnen, dass Kunden leichter Auskunft verlangen und die eigene Entscheidung als vom Score abhängig vermutet wird. Menschliche Prüfung, Dokumentation und Auskunftsprozesse sollten das belegbar abbilden.",
+   "source": "Bundesgerichtshof",
+   "url": "https://www.bundesgerichtshof.de/SharedDocs/Pressemitteilungen/DE/2026/2026198.html?nn=373478",
+   "id": "2026-10-27-bgh-schufa-scoring",
+   "topic": "Datenschutz & Datenrecht",
+   "impact": "mittel",
+   "published": "2026-10-21",
+   "tags": [
+    "Scoring",
+    "Rechtsprechung",
+    "Bonitätsprüfung"
+   ],
+   "controls": [
+    "DSGVO Art. 22 – Automatisierte Entscheidungen im Einzelfall",
+    "DSGVO Art. 15 – Auskunftsrecht"
+   ],
+   "roles": [
+    "Datenschutz",
+    "Management"
+   ],
+   "countries": [
+    "DE"
+   ],
+   "dossier": "algorithmisches-management",
+   "priority": 3,
+   "primary": false,
+   "added": "2026-10-27T06:07:55Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Vier Verfahren (I ZR 227/25 bis 230/25) vom 21. Oktober 2026, widerlegliche Vermutung bei Übermittlung und zeitlichem Zusammenhang, Zurückverweisung – alles belegt."
    }
   },
   {

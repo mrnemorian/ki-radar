@@ -1,0 +1,163 @@
+{
+ "format": "tag",
+ "chapters": [
+  {
+   "title": "Begrüßung",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Guten Morgen, liebe IT-GRC-Kolleginnen und -Kollegen, willkommen beim IT-GRC Radar am Dienstag, dem siebenundzwanzigsten Oktober 2026."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Guten Morgen. Ich habe gesehen, dass wir wieder mit einer Steuerzentrale anfangen. Der Kaffee ist also kein Luxus."
+    }
+   ]
+  },
+  {
+   "title": "Arista VeloCloud",
+   "news_id": "2026-10-27-arista-velocloud-zero-day",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Richtig vermutet. Arista hat eine Lücke im VeloCloud Orchestrator geschlossen, also der Zentrale, die [en]Software-Defined Wide Area Networks[/en] über viele Standorte steuert. Die Lücke wird schon ausgenutzt und steht im amerikanischen Katalog aktiv ausgenutzter Schwachstellen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und das Unangenehme: Es reicht ein angemeldeter Nutzer mit einfachen Rechten. Über eine [en]SQL Injection[/en] wird daraus ein [en]Superuser Operator[/en], Bewertung 9,9 von 10."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Moment, heißt das, ein einziges schwaches Konto genügt für die Steuerung des ganzen Netzes?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Im schlimmsten Fall ja. Wer Filialen, Lager oder Reisebüros so anbindet, sollte heute klären, ob der Orchestrator selbst betrieben wird, auf die gepatchten Versionen gehen und die Weboberfläche nur aus dem Verwaltungsnetz erreichbar machen."
+    }
+   ]
+  },
+  {
+   "title": "Amadeus",
+   "news_id": "2026-10-27-amadeus-konto-airlines",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Dann in die Touristik. Korean Air wurde am zwanzigsten Oktober von Amadeus informiert, dass über die Zugangsdaten eines Kontos im Reservierungssystem Kundendaten abgeflossen sind. Asiana ist ebenfalls betroffen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und jetzt der Teil, bei dem ich kurz schlucken musste: Der Zugriff lief nach bisherigem Stand von August 2023 bis September 2026. Drei Jahre, mit einem ganz legitimen Konto."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Zahlungsdaten waren laut den Fluggesellschaften nicht dabei, Buchungsnummern schon."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Für jeden Reiseanbieter ist das die Frage an die eigene [en]Supply Chain[/en]: Welche Konten haben wir bei solchen Plattformen, wer schaut auf ihre Nutzung, und wann muss uns der Anbieter informieren? Wenn die Antwort in einer Excel-Liste von 2019 steht, ist das leider auch eine Antwort."
+    }
+   ]
+  },
+  {
+   "title": "Scoring-Urteil",
+   "news_id": "2026-10-27-bgh-schufa-scoring",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Ein Urteil aus Karlsruhe. Der Bundesgerichtshof hat am einundzwanzigsten Oktober in vier Verfahren gegen die SCHUFA entschieden."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Der Kern: Ein Score kann eine automatisierte Entscheidung nach Artikel 22 der Datenschutz-Grundverordnung sein, wenn die Entscheidung des Unternehmens maßgeblich davon abhängt. Und Betroffene müssen nur vortragen, dass ein Score übermittelt wurde und kurz danach eine nachteilige Entscheidung kam."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Das klingt ja fast nach einer Vermutung zulasten des Unternehmens."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Genau so wirkt es. Für Kauf auf Rechnung im Onlinehandel oder Reisebuchungen heißt das: belegen können, wie viel Mensch in der Entscheidung steckt. Passt übrigens gut zum Uber-Bußgeld, das wir im Dossier zu automatisierten Entscheidungen führen."
+    }
+   ]
+  },
+  {
+   "title": "Schwachstellenflut",
+   "news_id": "2026-10-27-cloudflare-schwachstellenflut",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Da gibt es Neues zur Schwachstellenlage. Der Cloudflare-Chef erwartet nach PHP2Shell ein paar Jahre, in denen es sich anfühlt, als falle jede Woche der Himmel herunter."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ehrlich gesagt fühlt sich das für manche Patch-Teams schon jetzt so an. Die Begründung ist aber ernst: Künstliche Intelligenz findet Lücken schneller, und die Zeit bis zur Ausnutzung schrumpft."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und was macht man damit, außer zu seufzen?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ins Budget schreiben. Kapazität für Notfallpatches, realistische Fristen in den Kontrollen und eine ehrliche Liste alter Anwendungen, die aus dem Internet erreichbar sind. Das ist eine Vorstandsfrage, keine Technikfußnote."
+    }
+   ]
+  },
+  {
+   "title": "Nachrichtendienste und Cloud",
+   "news_id": "2026-10-27-nachrichtendienste-google-cloud",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Zur Souveränität. Laut Tagesschau wollen Bundesnachrichtendienst, Verfassungsschutz und Militärischer Abschirmdienst für eingestufte Daten die vom Internet getrennte Lösung Google Distributed Cloud nutzen. Kosten mindestens 500 Millionen Euro, das Bundesamt für Sicherheit in der Informationstechnik muss noch zulassen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Spannend, weil die Debatte damit weg von der Flagge des Anbieters geht, hin zu Betriebsmodell und Trennung. Für die eigene [en]Cloud[/en]-Strategie ein Referenzpunkt."
+    }
+   ]
+  },
+  {
+   "title": "Rakuten Travel",
+   "news_id": "2026-10-27-rakuten-travel-kartendaten",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Kurz noch: Das Reiseportal Rakuten Travel meldet, dass Teil-Kartendaten von rund 36.000 Kunden abgeflossen sind. Entdeckt wurde das schon am zehnten September."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Letzte vier Ziffern, Ablaufdatum, dazu Kontaktdaten. Für Zahlungen reicht das nicht, für glaubwürdiges [en]Phishing[/en] leider schon. In der Europäischen Union hätte die Aufsicht binnen 72 Stunden Bescheid wissen müssen – öffentlich wurde es hier erst nach gut sechs Wochen."
+    }
+   ]
+  },
+  {
+   "title": "Auf dem Radar",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Und was steht bei dir auf dem Radar?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Der [en]Digital Fairness Act[/en]. Der Vorschlag der Kommission wird noch für dieses Jahr erwartet, es geht um [en]Dark Patterns[/en] und personalisierte Ansprache. Das trifft Onlineshops und Apps ziemlich direkt."
+    }
+   ]
+  },
+  {
+   "title": "Abschied",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Das war es für heute. Alle Quellen findet ihr wie immer auf der Webseite."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und wer heute klärt, wer eigentlich Owner der Netzsteuerung ist, hat den Dienstag schon gewonnen. Bis morgen."
+    }
+   ]
+  }
+ ]
+}
