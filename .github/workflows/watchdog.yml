@@ -1,0 +1,76 @@
+# Wächter: prüft unabhängig vom Pi, ob der Morgenlauf geklappt hat,
+# und warnt den Besitzer per Telegram (auch wenn der Pi selbst nicht mehr melden kann).
+name: Waechter
+
+on:
+  schedule:
+    - cron: "15 8 * * *"   # 09:15 MEZ / 10:15 MESZ – Morgenlauf startet 07:00
+  workflow_dispatch:
+    inputs:
+      test:
+        description: "Testnachricht senden, auch wenn alles in Ordnung ist"
+        type: boolean
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_OWNER_ID: ${{ secrets.TELEGRAM_OWNER_ID }}
+      GH_TOKEN: ${{ github.token }}
+      TEST: ${{ inputs.test }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Morgenlauf und Seitenbau prüfen
+        id: check
+        run: |
+          python3 - <<'PY'
+          import datetime, json, os, subprocess
+          from zoneinfo import ZoneInfo
+          today = datetime.datetime.now(ZoneInfo("Europe/Berlin")).date().isoformat()
+          problems = []
+          try:
+              run = json.load(open("status.json", encoding="utf-8"))["last_run"]
+          except Exception as e:
+              run = None
+              problems.append(f"status.json nicht lesbar ({e.__class__.__name__})")
+          if run:
+              day = run.get("start", "")[:10]
+              if day != today:
+                  problems.append(f"Kein Lauf heute – letzter Lauf vom {day}. Pi aus, offline oder Zeitplan gestoppt?")
+              elif not run.get("ok"):
+                  problems.append(f"Lauf heute fehlgeschlagen: {run.get('summary') or 'ohne Angabe'}")
+          try:
+              out = subprocess.run(["gh", "run", "list", "-R", os.environ["GITHUB_REPOSITORY"], "-w", "pages.yml",
+                                    "-L", "1", "--json", "conclusion,createdAt"], capture_output=True, text=True, check=True).stdout
+              last = json.loads(out)[0]
+              if last["conclusion"] not in ("success", "", None):
+                  problems.append(f"Seitenbau vom {last['createdAt'][:10]} fehlgeschlagen ({last['conclusion']})")
+          except Exception as e:
+              print("Seitenbau nicht prüfbar:", e)
+          if problems:
+              msg = "⚠️ IT-GRC Radar – Wächter\n" + "\n".join("• " + p for p in problems)
+          elif os.environ.get("TEST") == "true":
+              msg = "✅ IT-GRC Radar – Wächter (Test)\nHeutiger Lauf und Seitenbau sind in Ordnung."
+          else:
+              msg = ""
+          print(msg or "Alles in Ordnung.")
+          with open("watchdog_msg.txt", "w", encoding="utf-8") as f:
+              f.write(msg)
+          PY
+
+      - name: Besitzer warnen
+        run: |
+          [ -s watchdog_msg.txt ] || exit 0
+          if [ -z "$TELEGRAM_BOT_TOKEN" ] || [ -z "$TELEGRAM_OWNER_ID" ]; then
+            echo "::error::Secret TELEGRAM_OWNER_ID oder TELEGRAM_BOT_TOKEN fehlt"; exit 1
+          fi
+          curl -sS -f -o /dev/null --data-urlencode text@watchdog_msg.txt -d chat_id="$TELEGRAM_OWNER_ID" \
+            "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage"
+          echo "Warnung gesendet"
