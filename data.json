@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-27T06:07:55Z",
+ "updated": "2026-10-30T08:56:20Z",
  "topics": [
   "IT-Governance & Risiko",
   "Cyber- & IT-Regulierung",
@@ -11,6 +11,18 @@
   "Weitere Themen"
  ],
  "briefings": [
+  {
+   "date": "2026-10-30",
+   "headline": "Angreifer nutzen Lücken in GitLab, Cisco-Firewalls und Onlineshops auf Adobe-Basis aus, und bei Amadeus zeigt sich das Ausmaß des Drittparteienrisikos.",
+   "points": [
+    "GitLab und Cisco: Lücke mit Höchstwert und Zero Day in Firewalls werden aktiv ausgenutzt. Bei GitLab schließt erst das Ruby-Update die Lücke.",
+    "Onlinehandel: Ausgenutzte Lücke in Adobe Commerce und Magento, Kampagne mit mindestens 953 kompromittierten Shops, dazu die Bibliothek Brotli",
+    "Amadeus: Daten von rund 92.000 Kunden von Japan Airlines betroffen, unbemerkter Zugriff über drei Jahre",
+    "PHP2Shell wird mit der Linux-Lücke Fragnesia zu Root-Rechten verkettet. Bei Veeam sind kritische Lücken in Backup-Servern geschlossen.",
+    "Agentur der Europäischen Union für Cybersicherheit legt Leitfaden zu Software-Stücklisten vor. Das Europäische Parlament will seine Position zum Digital Omnibus bis Februar festlegen."
+   ],
+   "count": 7
+  },
   {
    "date": "2026-10-27",
    "headline": "Ausgenutzte Lücke in der Netzsteuerung von Arista, drei Jahre unbemerkter Zugriff über ein Amadeus-Konto und ein Urteil des Bundesgerichtshofs zum Scoring",
@@ -395,17 +407,18 @@
    "title": "Drittparteien- und Lieferkettenrisiko",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Nach ConnectWise, LiteLLM, Railway und TAKKT zeigt der Fall Amadeus, dass ein legitimes Konto bei einem Plattformanbieter von August 2023 bis September 2026 unbemerkt für Zugriffe auf Buchungsdaten von Korean Air und Asiana genutzt werden konnte. Microsoft ordnet den ConnectWise-Angriff der staatsnahen Gruppe Storm-0940 zu, die mit dem Agenten-Framework ARTEX Anmeldungen bei über 2.250…",
-   "next_step": "Für kritische Plattformen wie Reservierungs-, Kassen- und Backup-Dienste erfassen, welche Konten bestehen, wer deren Nutzung überwacht und welche Benachrichtigungsfristen die Verträge vorsehen.",
+   "status": "Nach ConnectWise, LiteLLM, Railway und TAKKT zeigt der Fall Amadeus, dass ein legitimes Konto bei einem Plattformanbieter von August 2023 bis September 2026 unbemerkt genutzt werden konnte. Inzwischen melden Japan Airlines mit rund 92.000 betroffenen Kunden sowie All Nippon Airways, Korean Air und Asiana Betroffenheit.",
+   "next_step": "Bei kritischen Plattformanbietern prüfen, ob vertraglich Protokollzugriffe, Anomalieerkennung für privilegierte Konten und kurze Meldefristen gesichert sind. Software-Stücklisten in Einkaufsbedingungen aufnehmen.",
    "open_questions": [
-    "Liefern Plattformanbieter Zugriffsprotokolle zu den Konten ihrer Kunden?",
-    "Wie schnell müssen Anbieter laut Vertrag über Vorfälle informieren?"
+    "Welche Plattformanbieter haben Zugriff auf Kunden- oder Buchungsdaten, ohne dass eigene Protokolle auswertbar sind?",
+    "Reichen jährliche Dienstleisterberichte für Anbieter mit Dauerzugriff?"
    ],
    "controls": [
     "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
-    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen"
+    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen",
+    "ISO/IEC 27001 Anhang A 5.22 – Überwachung von Lieferantendienstleistungen"
    ],
-   "updated": "2026-10-27"
+   "updated": "2026-10-30"
   },
   {
    "slug": "identitaeten-zugangsdaten",
@@ -440,19 +453,20 @@
     }
    ],
    "title": "Kritische Schwachstellen in Randsystemen und Kernanwendungen",
-   "sector": "Cyber- & IT-Regulierung",
+   "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Zu HPE ArubaOS, Collabora in Nextcloud und PHP2Shell kommt eine aktiv ausgenutzte Lücke im VeloCloud Orchestrator von Arista, der zentralen Steuerung von Standortnetzen. Der Cloudflare-Chef erwartet, dass Lücken dieses Kalibers wegen Künstlicher Intelligenz über Jahre fast wöchentlich auftauchen; die Fortinet-Details folgen am 10. November.",
-   "next_step": "Steuerzentralen für Netze, Fernzugänge und erreichbare Altanwendungen gegen den Katalog aktiv ausgenutzter Schwachstellen abgleichen und Kapazität für Notfallpatches in Budget und Kontrollen verankern.",
+   "status": "Diese Woche wurden die GitLab-Lücke CVE-2026-97229, ein Zero Day in Cisco-Firewalls, Adobe Commerce und die Bibliothek Brotli als aktiv ausgenutzt gelistet. Angreifer verketten außerdem PHP2Shell mit der Linux-Lücke Fragnesia zu Root-Rechten, und Veeam hat eine kritische Lücke in Backup-Servern geschlossen. Laut Rapid7 folgen erste Ausnutzungsversuche im Schnitt nach etwa drei Tagen, die…",
+   "next_step": "Bestand an GitLab-Instanzen, Cisco-Firewalls, Magento-Shops, Veeam-Servern und älteren Linux-Kerneln prüfen. Patch-Fristen für aktiv ausgenutzte Lücken in Systemen mit Internetkontakt verbindlich festlegen und messen, Laufzeitumgebungen wie Ruby einem Verantwortlichen zuordnen.",
    "open_questions": [
-    "Reichen die Patch-Fristen in den Kontrollen, wenn die Ausnutzung binnen Stunden beginnt?",
-    "Wer ist Owner für Steuerzentralen, die Dienstleister betreiben?"
+    "Wie werden Lücken in Laufzeitumgebungen und Bibliotheken erkannt, wenn Schwachstellenscanner sie nicht melden?",
+    "Welche Ausnahmen mit Ausgleichsmaßnahmen sind für Altsysteme ohne Updates noch vertretbar?"
    ],
    "controls": [
-    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
-    "NIS-2-Richtlinie Art. 21 – Umgang mit Schwachstellen"
+    "ISO/IEC 27001 Anhang A 8.8 – Umgang mit technischen Schwachstellen",
+    "NIS-2-Richtlinie Art. 21 – Behandlung und Offenlegung von Schwachstellen",
+    "IT-Kontrollen der Abschlussprüfung – Änderungsmanagement"
    ],
-   "updated": "2026-10-27"
+   "updated": "2026-10-30"
   },
   {
    "slug": "lebenszyklus-altsysteme",
@@ -592,17 +606,17 @@
    "title": "Cyber Resilience Act",
    "sector": "Cyber- & IT-Regulierung",
    "ring": "vorbereiten",
-   "status": "Seit dem 11. September 2026 gelten Meldepflichten für Hersteller, und am 15. Oktober 2026 hat der Bundestag das Durchführungsgesetz beschlossen, mit dem das Bundesamt für Sicherheit in der Informationstechnik Marktüberwachungsbehörde wird. Die ersten Normen EN 40000-1-1 und EN 40000-1-2 sollen am 25. November 2026 erscheinen, ab Dezember 2027 gelten die strengeren Herstellerpflichten.",
-   "next_step": "Prüfen, wo der Konzern als Hersteller (Eigenmarken), Einführer oder Händler vernetzter Produkte auftritt, und die Pflichten in Lieferantenverträgen verankern.",
+   "status": "Seit dem 11. September 2026 gelten Meldepflichten für Hersteller, der Bundestag hat das Durchführungsgesetz am 15. Oktober 2026 beschlossen. Die Agentur der Europäischen Union für Cybersicherheit hat am 22. Oktober einen Leitfaden zu Software-Stücklisten veröffentlicht, die ersten Normen der Reihe EN 40000 sollen am 25. November erscheinen. Die strengeren Herstellerpflichten gelten ab Dezember…",
+   "next_step": "Klären, wo der Konzern selbst als Hersteller oder Importeur auftritt, zum Beispiel bei Eigenmarken mit digitalen Elementen. Bei Lieferanten Software-Stücklisten und Schwachstellenprozesse anfragen.",
    "open_questions": [
-    "Welche Eigenmarkenprodukte mit digitalen Elementen fallen unter die Herstellerpflichten?",
-    "Wann treten die angepassten Regelungen des Durchführungsgesetzes genau in Kraft?"
+    "Welche Eigenmarken oder selbst entwickelten Produkte fallen unter die Herstellerpflichten?",
+    "Wie fließen Software-Stücklisten von Lieferanten in das eigene Schwachstellenmanagement ein?"
    ],
    "controls": [
-    "Cyber Resilience Act Art. 19 und 20 – Pflichten der Einführer und Händler",
-    "ISO/IEC 27001 Anhang A 5.20 – Informationssicherheit in Lieferantenvereinbarungen"
+    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
+    "ISO/IEC 27001 Anhang A 5.21 – Informationssicherheit in der Lieferkette der Informations- und Kommunikationstechnik"
    ],
-   "updated": "2026-10-17"
+   "updated": "2026-10-30"
   },
   {
    "slug": "post-quanten-kryptografie",
@@ -691,16 +705,17 @@
    "title": "Datenschutzreform und Digital Omnibus",
    "sector": "Datenschutz & Datenrecht",
    "ring": "beobachten",
-   "status": "Der Ausschuss der Ständigen Vertreter hat am 21. Oktober 2026 nach zwei gescheiterten Anläufen das Verhandlungsmandat des Rates beschlossen, unter anderem mit mehr Schutz für Geschäftsgeheimnisse. Frühere Ratsentwürfe sahen Meldungen von Datenschutzverletzungen nur bei hohem Risiko innerhalb von 96 Stunden vor; der Trilog beginnt, sobald das Europäische Parlament seine Position hat.",
-   "next_step": "Position des Europäischen Parlaments und den Zeitplan des Trilogs verfolgen; Meldeprozesse für Datenschutzverletzungen so gestalten, dass Schwellen und Fristen anpassbar sind.",
+   "status": "Der Rat hat am 21. Oktober 2026 sein Mandat beschlossen: Er streicht Browsersignale für Cookie-Präferenzen und den Widerspruch gegen das Training Künstlicher Intelligenz und erleichtert die Abweisung unbegründeter Auskunftsanfragen. Das Europäische Parlament will seine Position bis Februar festlegen, danach beginnt der Trilog.",
+   "next_step": "Position des Parlaments im Februar abwarten und bis dahin Auswirkungen auf Einwilligungsmanagement, Auskunftsprozesse und die Meldung von Datenschutzverletzungen vorbereitend bewerten.",
    "open_questions": [
-    "Wann beschließt das Europäische Parlament seine Position?",
-    "Bleiben die 96 Stunden und die Schwelle des hohen Risikos im Trilog erhalten?"
+    "Kommt die Meldung von Datenschutzverletzungen nur bei hohem Risiko innerhalb von 96 Stunden in den Endtext?",
+    "Wie wird das Training Künstlicher Intelligenz mit Kundendaten am Ende geregelt?"
    ],
    "controls": [
+    "DSGVO Art. 15 – Auskunftsrecht der betroffenen Person",
     "DSGVO Art. 33 – Meldung von Verletzungen des Schutzes personenbezogener Daten"
    ],
-   "updated": "2026-10-22"
+   "updated": "2026-10-30"
   },
   {
    "slug": "zahlungsverkehr-pci-dss",
@@ -726,17 +741,6 @@
   }
  ],
  "deadlines": [
-  {
-   "date": "2026-10-13",
-   "title": "Windows Server 2012 und 2012 R2: letzte Extended Security Updates",
-   "detail": "Betreiber von Windows Server 2012 und 2012 R2 erhalten danach keine Sicherheitsupdates mehr und müssen Systeme ablösen, abschotten oder das Risiko formal akzeptieren.",
-   "scope": "global",
-   "url": "https://learn.microsoft.com/en-us/lifecycle/products/windows-server-2012-r2",
-   "primary": false,
-   "checked": true,
-   "dossier": "lebenszyklus-altsysteme",
-   "added": "2026-10-11"
-  },
   {
    "date": "2026-10-16",
    "title": "Patch-Frist der Behörde der Vereinigten Staaten für Windows-Lücke CVE-2026-96951",
@@ -1016,10 +1020,10 @@
  "signals": [
   {
    "theme": "Digital Fairness Act",
-   "why": "Der Vorschlag der Kommission wird für das vierte Quartal 2026 erwartet und soll Dark Patterns, suchtförderndes Design und unfaire Personalisierung regeln. Das trifft Onlineshops, Apps und Kundenbindungsprogramme direkt.",
-   "count": 17,
+   "why": "Die Kommission will den Vorschlag gegen manipulative Oberflächengestaltung, Abofallen und unfaire Personalisierung voraussichtlich im November vorlegen. Die Bundesregierung wirbt dagegen dafür, bestehendes Verbraucherrecht zu ändern. Für den Onlinehandel betrifft das Bestellstrecken, Kündigungswege und Personalisierung.",
+   "count": 18,
    "first_seen": "2026-09-30",
-   "last_seen": "2026-10-27",
+   "last_seen": "2026-10-30",
    "evidence": [
     "https://eprs.europarl.europa.eu/contents/publications/EPRS/2026/10/EPRS_BRI(2026)791529.html",
     "https://www.europarl.europa.eu/legislative-train/theme-protecting-our-democracy-upholding-our-values/file-digital-fairness-act",
@@ -1133,6 +1137,16 @@
    ]
   },
   {
+   "theme": "Prüfungsleitfaden für Werkzeuge mit Künstlicher Intelligenz",
+   "why": "Das International Auditing and Assurance Standards Board arbeitet an einer Leitfadenreihe zum Qualitätsmanagement beim Einsatz von Werkzeugen mit Künstlicher Intelligenz in der Prüfung. Der erste Teil wird für November erwartet und dürfte prägen, welche Nachweise Abschlussprüfer verlangen.",
+   "count": 2,
+   "first_seen": "2026-10-21",
+   "last_seen": "2026-10-30",
+   "evidence": [
+    "https://www.iaasb.org/news-events/2026-10/iaasb-enews-october-2026"
+   ]
+  },
+  {
    "theme": "Aktive Cyberabwehr durch Bundesbehörden",
    "why": "Der Innenausschuss des Bundestages hat am 5. Oktober 2026 den Gesetzentwurf zur Stärkung der Cybersicherheit mit neuen Befugnissen zur aktiven Cyberabwehr und Datenerhebung angehört; Sachverständige kritisieren zersplitterte Zuständigkeiten. Für Betreiber Kritischer Infrastrukturen kann das Eingriffe in Systeme Dritter und neue Mitwirkungsfragen bringen.",
    "count": 2,
@@ -1177,6 +1191,16 @@
    ]
   },
   {
+   "theme": "Cyberpolicen schließen Künstliche Intelligenz aus",
+   "why": "Makler wehren sich gegen Ausschlüsse für Risiken aus Künstlicher Intelligenz in Cyberversicherungen, und die Versicherer sind sich uneins, welche Policen solche Risiken decken sollen. Das betrifft die Versicherbarkeit von Vorfällen mit Agenten und automatisierten Systemen.",
+   "count": 1,
+   "first_seen": "2026-10-30",
+   "last_seen": "2026-10-30",
+   "evidence": [
+    "https://www.theinsurer.com/cyber-risk/news/debate-intensifies-rise-over-where-ai-risk-belongs-2026-10-22/"
+   ]
+  },
+  {
    "theme": "Web-Regeln für Agenten",
    "why": "Das World Wide Web Consortium hat am 21. Oktober 2026 ein Diskussionspapier vorgelegt: Agenten sollen eingebettete Anweisungen nicht blind befolgen und teure Aktionen wie Buchungen nur mit ausdrücklicher Zustimmung ausführen. Daraus könnten Standards entstehen, die Onlineshops und Buchungsportale umsetzen müssen.",
    "count": 1,
@@ -1217,16 +1241,6 @@
    ]
   },
   {
-   "theme": "Prüfungsleitfaden für Werkzeuge mit Künstlicher Intelligenz",
-   "why": "Das International Auditing and Assurance Standards Board will im November den ersten Leitfaden zum Qualitätsmanagement beim Einsatz von Prüfungswerkzeugen mit Künstlicher Intelligenz veröffentlichen, vorbehaltlich der Zustimmung am 28. Oktober. Das verändert, wie Abschlussprüfer ihre eigenen Werkzeuge und die Nachweise der Mandanten bewerten.",
-   "count": 1,
-   "first_seen": "2026-10-21",
-   "last_seen": "2026-10-21",
-   "evidence": [
-    "https://www.iaasb.org/news-events/2026-10/iaasb-enews-october-2026"
-   ]
-  },
-  {
    "theme": "Pflicht zur digitalen Zahlungsoption",
    "why": "Das Bundesfinanzministerium plant Medienberichten zufolge, dass Händler ab 2027 neben Bargeld mindestens eine digitale Zahlungsart anbieten müssen, ohne Zusatzgebühren. Beschlossen ist das noch nicht. Für Kassen-, Zahlungs- und Kartendatenumgebungen hätte es Folgen für Verfügbarkeit und Kontrollen.",
    "count": 1,
@@ -1258,6 +1272,205 @@
   }
  ],
  "news": [
+  {
+   "title": "Update: GitLab-Lücke wird ausgenutzt, dazu ein Zero Day in Cisco-Firewalls",
+   "summary": "Die amerikanische Cybersicherheitsbehörde hat die GitLab-Lücke CVE-2026-97229 (Schweregrad 10 von 10, Codeausführung ohne Anmeldung über präparierte Build-Konfigurationen) und die Lücke CVE-2026-76418 in Cisco Secure Firewall ASA und Firepower Threat Defense in ihren Katalog aktiv ausgenutzter Schwachstellen aufgenommen. Neu gegenüber der Meldung vom 22. Oktober: Der Fehler steckt in Ruby, deshalb müssen selbst betriebene Installationen auch Ruby auf mindestens 3.3.13, 3.4.12 oder 4.0.9 heben. Ein GitLab-Update allein genügt nicht. Bei Cisco führen präparierte Anfragen an den Fernzugang zum Neustart der Geräte, einen offiziellen Workaround gibt es nicht.",
+   "relevance": "Quellcode-Plattformen und Firewalls für den Fernzugang sind Kronjuwelen. Ein Konzern sollte für aktiv ausgenutzte Lücken in Systemen mit Internetkontakt feste Fristen haben und dabei auch Laufzeitumgebungen unter den Anwendungen erfassen.",
+   "source": "heise online",
+   "url": "https://www.heise.de/news/Cisco-Firewalls-und-GitLab-Luecke-werden-angegriffen-11505669.html",
+   "id": "2026-10-30-gitlab-cisco-ausgenutzt",
+   "topic": "IT-Governance & Risiko",
+   "impact": "hoch",
+   "published": "2026-10-30",
+   "tags": [
+    "aktiv ausgenutzt",
+    "Quellcode-Plattform",
+    "Firewall"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 8.8 – Umgang mit technischen Schwachstellen",
+    "IT-Kontrollen der Abschlussprüfung – Änderungsmanagement",
+    "NIS-2-Richtlinie Art. 21 – Behandlung und Offenlegung von Schwachstellen"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Revision & Prüfung"
+   ],
+   "countries": [],
+   "dossier": "kritische-schwachstellen-perimeter",
+   "priority": 1,
+   "primary": false,
+   "added": "2026-10-30T08:56:20Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Die Quelle bestätigt beide Kennungen, den Schweregrad 10 bei GitLab, die Codeausführung ohne Anmeldung über präparierte Konfigurationen für die Build-Pipeline und die Ruby-Mindestversionen 3.3.13, 3.4.12 und 4.0.9. Auch der Hinweis, dass ein GitLab-Update allein nicht genügt, steht dort. Bei Cisco…"
+   }
+  },
+  {
+   "title": "Update: Digital Omnibus – Parlament will Position bis Februar, Details der Ratsposition",
+   "summary": "Das Europäische Parlament will seine Position zur Datenschutzreform im Digital Omnibus bis Februar festlegen, danach beginnt der Trilog. Die Ratsposition vom 21. Oktober streicht laut heise maschinenlesbare Signale für Cookie-Präferenzen und das Widerspruchsrecht gegen die Nutzung von Daten für das Training Künstlicher Intelligenz. Unbegründete Auskunftsanfragen sollen sich leichter abweisen lassen, und nach abgelehnten Cookies darf nach vier Monaten erneut gefragt werden. Der Verbraucherzentrale Bundesverband fordert einen Neustart.",
+   "relevance": "Die Reform betrifft Einwilligungsmanagement, Auskunftsprozesse und das Training Künstlicher Intelligenz mit Kundendaten. Wirksam wird sie frühestens nach dem Trilog, Prozessänderungen sollten bis dahin nur vorbereitet werden.",
+   "source": "heise online",
+   "url": "https://www.heise.de/hintergrund/Auslegungssache-171-Omnibus-mit-Schlagseite-11504905.html",
+   "id": "2026-10-30-digital-omnibus-parlament",
+   "topic": "Datenschutz & Datenrecht",
+   "impact": "info",
+   "published": "2026-10-30",
+   "tags": [
+    "Datenschutzreform",
+    "Cookies",
+    "Auskunftsrecht"
+   ],
+   "controls": [
+    "DSGVO Art. 15 – Auskunftsrecht der betroffenen Person"
+   ],
+   "roles": [
+    "Datenschutz",
+    "Management"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "dsgvo-reform-digital-omnibus",
+   "priority": 7,
+   "primary": false,
+   "added": "2026-10-30T08:56:20Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Die Quelle bestätigt die Position des Parlaments bis Februar, den anschließenden Trilog und die Einigung im Rat am 21. Oktober. Auch die gestrichenen maschinenlesbaren Signale, das gestrichene Widerspruchsrecht gegen KI-Training, das leichtere Abweisen unbegründeter Auskunftsanfragen, die erneute…"
+   }
+  },
+  {
+   "title": "Update: Amadeus – Daten von rund 92.000 Kunden von Japan Airlines betroffen",
+   "summary": "Japan Airlines meldete am 28. Oktober 2026, dass über das Passagiersystem von Amadeus Daten von rund 92.000 Kunden abgeflossen sind: Bei etwa 90.000 geht es um Buchungscodes, Namen und Flugdaten, bei rund 2.000 zusätzlich um Passnummern, Kontaktdaten und Vielfliegernummern. Der unbefugte Zugriff lief laut Amadeus vom 10. August 2023 bis 23. September 2026. Neu ist, dass neben Korean Air und Asiana auch Japan Airlines und All Nippon Airways Betroffenheit melden. Kartennummern und Passwörter waren laut Japan Airlines nicht betroffen.",
+   "relevance": "Für eine Touristiksparte zeigt der Fall, dass jährliche Dienstleisterberichte keinen laufenden Missbrauch legitimer Konten erkennen. Nötig sind vertraglich gesicherte Protokollzugriffe, Anomalieerkennung und kurze Meldewege beim Plattformanbieter.",
+   "source": "BleepingComputer",
+   "url": "https://www.bleepingcomputer.com/news/security/japan-airlines-suffers-third-party-data-breach-exposing-passenger-info/",
+   "id": "2026-10-30-amadeus-japan-airlines",
+   "topic": "Handel & Branche",
+   "impact": "mittel",
+   "published": "2026-10-29",
+   "tags": [
+    "Touristik",
+    "Buchungssystem",
+    "Drittparteien"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
+    "ISO/IEC 27001 Anhang A 5.22 – Überwachung von Lieferantendienstleistungen",
+    "DSGVO Art. 28 – Auftragsverarbeiter"
+   ],
+   "roles": [
+    "Einkauf & Drittparteien",
+    "Datenschutz"
+   ],
+   "countries": [],
+   "dossier": "drittparteien-lieferkette",
+   "priority": 3,
+   "primary": false,
+   "added": "2026-10-30T08:56:20Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Veröffentlicht am 29. Oktober 2026, die Seite ließ sich im zweiten Versuch laden. Bestätigt sind rund 92.000 Betroffene, aufgeteilt in 90.000 und 2.000, die genannten Datenarten und der Zugriffszeitraum vom 10. August 2023 bis 23. September 2026. Korean Air und Asiana bestätigen ihre…"
+   }
+  },
+  {
+   "title": "Update: PHP2Shell wird mit Linux-Lücke Fragnesia zu Root-Rechten verkettet",
+   "summary": "Die amerikanische Cybersicherheitsbehörde warnt, dass Angreifer die Linux-Kernel-Lücke CVE-2026-46300 mit dem Namen Fragnesia mit den PHP2Shell-Lücken in der Skriptsprache PHP kombinieren: PHP2Shell verschafft den Zugang, Fragnesia hebt die Rechte auf Root. Betroffen sind gängige Distributionen mit Kerneln, die vor dem 13. Mai 2026 erschienen sind, öffentlicher Angriffscode existiert. Das Sicherheitsunternehmen Dream Security meldet 25 so übernommene Server in mehreren Ländern.",
+   "relevance": "Wer PHP2Shell nur in der Webschicht gepatcht hat, ist bei älteren Kerneln weiter verwundbar. Patch-Nachweise sollten Betriebssystem und Anwendung gemeinsam abdecken.",
+   "source": "BleepingComputer",
+   "url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-fragnesia-linux-flaw-chained-in-php2shell-attacks/",
+   "id": "2026-10-30-php2shell-fragnesia",
+   "topic": "IT-Governance & Risiko",
+   "impact": "mittel",
+   "published": "2026-10-29",
+   "tags": [
+    "Linux",
+    "PHP",
+    "Rechteausweitung"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 8.8 – Umgang mit technischen Schwachstellen"
+   ],
+   "roles": [
+    "IT-Risiko"
+   ],
+   "countries": [],
+   "dossier": "kritische-schwachstellen-perimeter",
+   "priority": 4,
+   "primary": false,
+   "added": "2026-10-30T08:56:20Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Veröffentlicht am 29. Oktober 2026. Die Quelle bestätigt die Kennung CVE-2026-46300, die Verkettung mit PHP2Shell bis zu Root-Rechten, die Kernel vor dem 13. Mai 2026 und den öffentlichen Angriffscode. Laut Dream Security wurden 25 Server in den Vereinigten Staaten, Japan, Taiwan und Südkorea…"
+   }
+  },
+  {
+   "title": "Onlinehandel: Ausgenutzte Lücke in Adobe Commerce und Magento, 953 Shops kompromittiert",
+   "summary": "Die amerikanische Cybersicherheitsbehörde listet die Lücke CVE-2026-48356 in Adobe Commerce und Magento (Schweregrad 9,3) sowie CVE-2026-111497 in der Kompressionsbibliothek Brotli (Versionen 1.0.3 bis 1.2.0) als aktiv ausgenutzt. Über die Shop-Lücke lassen sich gefährliche Dateien hochladen und Code ausführen. Das Sicherheitsunternehmen Sansec beschreibt eine Kampagne, die seit Juli 2025 mindestens 953 meist Magento-basierte Shops kompromittiert hat. Abhilfe bringen das Sicherheitsupdate APSB26-73 vom Juli 2026 beziehungsweise die Brotli-Versionen 1.0.10, 1.1.1 oder 1.2.1.",
+   "relevance": "Für Händler mit großem Onlinegeschäft reicht das Update nicht. Shops sollten auch auf hochgeladene Fremddateien und Webshells geprüft werden, und Kartenzahlungsseiten berühren die Anforderungen von PCI DSS an Skripte. Brotli zeigt, warum man wissen muss, welche Bibliotheken in der eigenen Software stecken.",
+   "source": "heise online",
+   "url": "https://www.heise.de/news/Angreifer-nehmen-Brotli-Adobe-Commerce-und-Magento-Lecks-ins-Visier-11502623.html",
+   "id": "2026-10-30-adobe-commerce-brotli",
+   "topic": "Handel & Branche",
+   "impact": "hoch",
+   "published": "2026-10-28",
+   "tags": [
+    "E-Commerce",
+    "Webshells",
+    "Bibliotheken"
+   ],
+   "controls": [
+    "PCI DSS Anforderung 6.4.3 und 11.6.1 – Skripte und Manipulationserkennung auf Zahlungsseiten",
+    "ISO/IEC 27001 Anhang A 8.8 – Umgang mit technischen Schwachstellen"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Datenschutz"
+   ],
+   "countries": [],
+   "dossier": "kritische-schwachstellen-perimeter",
+   "priority": 2,
+   "primary": false,
+   "added": "2026-10-30T08:56:20Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Veröffentlicht am 28. Oktober 2026. Die Quelle bestätigt beide Kennungen, den Schweregrad 9,3, die Brotli-Versionen 1.0.3 bis 1.2.0 und die korrigierten Versionen 1.0.10, 1.1.1 und 1.2.1. Auch die Angabe von Sansec zu mindestens 953 Shops seit Juli 2025 und das Juli-Update APSB26-73 stehen dort."
+   }
+  },
+  {
+   "title": "Veeam: Kritische Lücke in Backup-Servern, Mehr-Faktor-Anmeldung abschaltbar",
+   "summary": "Veeam hat in Backup and Replication die kritische Lücke CVE-2026-108142 geschlossen, über die Angreifer ohne Anmeldung den Dienst für Continuous Data Protection erreichen und Sicherungspläne stören können. Hinzu kommen zwei mittlere Lücken mit Dateischreibzugriff, eine Rechteausweitung im Agent for Linux und in Veeam ONE die Möglichkeit, mit Administratorrechten die Mehr-Faktor-Authentifizierung abzuschalten. Laut Hersteller gibt es bisher keine Hinweise auf Angriffe, Updates stehen bereit.",
+   "relevance": "Backup-Server sind bevorzugtes Ziel von Ransomware und die letzte Verteidigungslinie für die Wiederherstellung. Das Patchen und die Härtung der Datensicherung gehören zu den allgemeinen IT-Kontrollen und zur Resilienzplanung.",
+   "source": "heise online",
+   "url": "https://www.heise.de/news/Veeam-Backup-Server-manipulierbar-und-MFA-deaktivierbar-11502821.html",
+   "id": "2026-10-30-veeam-backup",
+   "topic": "IT-Governance & Risiko",
+   "impact": "mittel",
+   "published": "2026-10-28",
+   "tags": [
+    "Datensicherung",
+    "Ransomware",
+    "Resilienz"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 8.13 – Sicherung von Informationen",
+    "IT-Kontrollen der Abschlussprüfung – Rechenzentrumsbetrieb und Datensicherung"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Revision & Prüfung"
+   ],
+   "countries": [],
+   "dossier": "kritische-schwachstellen-perimeter",
+   "priority": 5,
+   "primary": false,
+   "added": "2026-10-30T08:56:20Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Veröffentlicht am 28. Oktober 2026. Die Quelle bestätigt die kritische Lücke CVE-2026-108142 im Dienst für Continuous Data Protection, die zwei mittleren Lücken mit Dateischreibzugriff, die Rechteausweitung im Agent for Linux und das Abschalten der Mehr-Faktor-Authentifizierung in Veeam ONE mit…"
+   }
+  },
   {
    "title": "Arista VeloCloud Orchestrator: Aktiv ausgenutzte Lücke in der Steuerung von Standortnetzen",
    "summary": "Arista hat am 22. Oktober 2026 die bereits ausgenutzte Lücke CVE-2026-114625 in lokal betriebenen Installationen des VeloCloud Orchestrator geschlossen, der Steuerzentrale für Software-Defined Wide Area Networks. Angemeldete Nutzer mit einfachen Rechten können über eine SQL Injection, also eingeschleuste Datenbankbefehle, Betreiberrechte als Superuser Operator erlangen; Arista bewertet die Lücke mit 9,9 von 10. Die amerikanische Behörde für Cybersicherheit und Infrastruktursicherheit hat sie in ihren Katalog aktiv ausgenutzter Schwachstellen aufgenommen, behoben ist sie in den Versionen 5.2.3.18, 6.1.3.10 und 6.4.2.12.",
@@ -1662,6 +1875,41 @@
    "check": {
     "verdict": "ok",
     "note": "Datum 23. Oktober 2026, Supportende am 12. Januar 2027 für alle Ausgaben, die Empfehlung für Windows Server 2025 und dessen erweiterter Support bis 14. November 2034 sind belegt."
+   }
+  },
+  {
+   "title": "Agentur der Europäischen Union für Cybersicherheit: Leitfaden zu Software-Stücklisten",
+   "summary": "Die Agentur der Europäischen Union für Cybersicherheit hat am 22. Oktober 2026 einen technischen Leitfaden zur Einführung von Software-Stücklisten (Software Bill of Materials) veröffentlicht. Er richtet sich an kleine und mittlere Unternehmen sowie an Open-Source-Verwalter, die erste Fähigkeiten zur Absicherung der Software-Lieferkette aufbauen.",
+   "relevance": "Software-Stücklisten sind die Grundlage, um bei Lücken wie Brotli oder Ruby schnell die eigene Betroffenheit zu klären. Mit dem Cyber Resilience Act werden sie für Hersteller Pflicht, daher sollten Einkauf und Informationssicherheit sie schon jetzt in Verträgen anfragen.",
+   "source": "Agentur der Europäischen Union für Cybersicherheit",
+   "url": "https://www.enisa.europa.eu/publications/enisa-technical-advisory-for-software-bill-of-materials",
+   "id": "2026-10-30-enisa-software-stueckliste",
+   "topic": "Standards & Zertifizierung",
+   "impact": "mittel",
+   "published": "2026-10-22",
+   "tags": [
+    "Software-Stückliste",
+    "Lieferkette",
+    "Cyber Resilience Act"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
+    "ISO/IEC 27001 Anhang A 5.21 – Informationssicherheit in der Lieferkette der Informations- und Kommunikationstechnik"
+   ],
+   "roles": [
+    "Einkauf & Drittparteien",
+    "IT-Risiko"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "cyber-resilience-act",
+   "priority": 6,
+   "primary": true,
+   "added": "2026-10-30T08:56:20Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Veröffentlicht am 22. Oktober 2026. Die Quelle bestätigt den Leitfaden für Software-Stücklisten und die Zielgruppe: Kleinst-, Klein- und Mittelunternehmen sowie Verwalter (stewards). Ziel ist, erste Fähigkeiten aufzubauen und die Lieferkette transparenter zu machen."
    }
   },
   {
@@ -7923,18 +8171,6 @@
    "topic": "Datenschutz & Datenrecht",
    "impact": "mittel",
    "published": "2026-07-08",
-   "added": "2026-09-29T22:03:17Z"
-  },
-  {
-   "title": "Institut der Wirtschaftsprüfer: Zwei Prüfungshinweise zu Künstlicher Intelligenz in der Abschlussprüfung (Prüfungshinweise 9.315DE.2 und 9.315DE.3)",
-   "summary": "Das Institut der Wirtschaftsprüfer hat im Juli 2026 zwei Prüfungshinweise veröffentlicht. Prüfungshinweis 9.315DE.2 regelt, wie Abschlussprüfer generative Künstliche Intelligenz in der eigenen Prüfung einsetzen dürfen. Prüfungshinweis 9.315DE.3 beschreibt, wie Prüfer Systeme Künstlicher Intelligenz beim geprüften Unternehmen im Rahmen der internationalen Prüfungsstandards in deutscher Fassung ISA [DE] 315 (Revised 2019) und ISA [DE] 330 berücksichtigen. Beide betonen, dass Künstliche Intelligenz das pflichtgemäße Ermessen und die abschließende Beurteilung durch Menschen nicht ersetzt.",
-   "relevance": "Mit Prüfungshinweis 9.315DE.3 werden Abschlussprüfer durch Künstliche Intelligenz gestützte Prozesse in Rechnungswesen und internem Kontrollsystem gezielt abfragen. Der Bereich Governance, Risiko und Compliance der Informationstechnik sollte vor der nächsten Jahresabschlussprüfung ein Inventar der Prozesse mit Bezug zu Künstlicher Intelligenz sowie die zugehörige Dokumentation der Kontrollen und der allgemeinen Kontrollen der Informationstechnik bereithalten.",
-   "source": "IDW",
-   "url": "https://www.idw.de/themen/digitalisierung/kuenstliche-intelligenz/",
-   "id": "2026-07-idw-ph-9315de-ki-abschlusspruefung",
-   "topic": "Prüfung & Assurance",
-   "impact": "hoch",
-   "published": "2026-07",
    "added": "2026-09-29T22:03:17Z"
   }
  ],

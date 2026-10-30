@@ -1,0 +1,263 @@
+{
+ "format": "tiefgang",
+ "chapters": [
+  {
+   "title": "Begrüßung",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Guten Morgen, liebe IT-GRC-Kolleginnen und -Kollegen, willkommen beim IT-GRC Radar. Heute ist Freitag, der dreißigste Oktober 2026, und freitags nehmen wir uns etwas mehr Zeit."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Gut so, denn diese Woche hat sich angefühlt wie eine einzige lange [en]Patch[/en]-Liste. Ich habe den Kaffee heute extra stark gemacht."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Dann passt unser Tiefgang ja: kritische Schwachstellen in Randsystemen und Kernanwendungen. Vorher aber die drei wichtigsten Meldungen."
+    }
+   ]
+  },
+  {
+   "title": "GitLab und Cisco",
+   "news_id": "2026-10-30-gitlab-cisco-ausgenutzt",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Da gibt es Neues zur GitLab-Lücke, über die wir vergangene Woche gesprochen haben. Die amerikanische Cybersicherheitsbehörde hat sie jetzt als aktiv ausgenutzt gelistet, zusammen mit einem [en]Zero Day[/en] in Firewalls von Cisco."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und GitLab ist kein Randthema. Wer eigene Instanzen betreibt, hat dort Quellcode, [en]Pipelines[/en] und oft auch Zugangsdaten für die Produktion. Die Lücke hat den Höchstwert 10 und erlaubt Codeausführung ohne Anmeldung."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Gibt es schon bestätigte Opfer?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Die Details sind dünn. Die Linux-Distribution Alpine hat Angriffe auf ihre eigene Instanz am zwanzigsten und einundzwanzigsten Oktober gemeldet. Sie hat keinen Erfolg der Angreifer gefunden, die Instanz aber trotzdem als kompromittiert behandelt, neu aufgebaut und alle Passwörter zurückgesetzt."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Das ist konsequent. Und Cisco?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Bei den Firewalls der Reihen ASA und [en]Firepower Threat Defense[/en] lassen präparierte Anfragen an den Fernzugang die Geräte neu starten. Einen offiziellen [en]Workaround[/en] gibt es nicht. Und für einen Konzern mit vielen Standorten ist ein ausgefallener Fernzugang kein Schönheitsfehler."
+    }
+   ]
+  },
+  {
+   "title": "Adobe Commerce und Brotli",
+   "news_id": "2026-10-30-adobe-commerce-brotli",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Bleiben wir bei Angriffen, jetzt aber direkt im Onlinehandel. Die Behörde listet auch eine Lücke in Adobe Commerce und Magento als ausgenutzt, Schweregrad 9,3."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Dazu beschreibt das Sicherheitsunternehmen Sansec eine Kampagne, die seit Juli 2025 mindestens 953 [en]Shops[/en] kompromittiert hat, überwiegend auf Magento-Basis. Über die Lücke lassen sich gefährliche Dateien hochladen und am Ende Code ausführen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Moment, seit Juli 2025? Das heißt, manche [en]Shops[/en] sind womöglich seit über einem Jahr ..."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Genau das ist der unangenehme Teil. Das Sicherheitsupdate vom Juli 2026 einzuspielen reicht nicht, man muss auch nach fremden Dateien und [en]Webshells[/en] suchen. Und wer Kartenzahlung anbietet, landet direkt bei den Anforderungen an Skripte auf Bezahlseiten."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und dann war da noch Brotli."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Eine Bibliothek zum Entpacken komprimierter Daten, die in unzähligen Anwendungen steckt. Die Versionen 1.0.3 bis 1.2.0 sind betroffen, ebenfalls aktiv ausgenutzt. Ob man betroffen ist, weiß man nur, wenn man weiß, was in der eigenen Software steckt. Den Gedanken halten wir fest, der kommt im Tiefgang wieder."
+    }
+   ]
+  },
+  {
+   "title": "Amadeus und Japan Airlines",
+   "news_id": "2026-10-30-amadeus-japan-airlines",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Da gibt es Neues zu Amadeus. Japan Airlines meldet, dass über das Passagiersystem des Dienstleisters Daten von rund 92.000 Kunden abgeflossen sind."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Bei etwa 90.000 geht es um Buchungscodes, Namen und Flugdaten, bei rund 2.000 zusätzlich um Passnummern, Kontaktdaten und Vielfliegernummern. Kartennummern und Passwörter waren laut der Fluggesellschaft nicht betroffen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und der Zeitraum ist erstaunlich."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Vom zehnten August 2023 bis zum dreiundzwanzigsten September 2026. Drei Jahre unbemerkter Zugriff bei einem zentralen Plattformanbieter. Neben Japan Airlines melden auch All Nippon Airways, Korean Air und Asiana Betroffenheit."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Ehrlich gesagt hätte ich gedacht, so etwas fällt in der jährlichen Lieferantenbewertung auf."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Die jährliche Lieferantenbewertung ist oft eine Excel-Liste mit Ampelfarben. Die sieht vieles, aber keine Anmeldungen. Eine Touristiksparte braucht beim Anbieter Protokolle, die sie selbst auswerten darf, und Meldewege, die nicht erst nach drei Jahren greifen."
+    }
+   ]
+  },
+  {
+   "title": "Tiefgang: Kritische Schwachstellen in Randsystemen",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Kommen wir zum Tiefgang. Wenn ich die Woche zusammenzähle: GitLab, Cisco, Adobe Commerce, Brotli, dazu Veeam und eine Linux-Lücke, die mit PHP2Shell verkettet wird."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und das ist kein Zufall. Laut dem Quartalsbericht von Rapid7 gibt es bei schweren Lücken im Schnitt schon nach etwa drei Tagen erste Ausnutzungsversuche. Der Cloudflare-Chef hat vergangene Woche gesagt, er rechne über Jahre mit fast wöchentlichen Lücken dieses Kalibers."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Was ist neu an der Linux-Geschichte?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Die amerikanische Cybersicherheitsbehörde warnt, dass Angreifer die Kernel-Lücke Fragnesia mit PHP2Shell kombinieren. PHP2Shell bringt sie auf den Server, Fragnesia gibt ihnen [en]Root[/en]-Rechte. Wer nur PHP gepatcht hat und einen Kernel von vor Mitte Mai 2026 betreibt, ist also noch nicht fertig."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Dann spiele ich mal die Gegenseite. Wir können doch nicht jede Woche den Notfallmodus ausrufen. Irgendwann stumpfen alle ab, und der Betrieb hat auch noch anderes zu tun."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Stimmt. Deshalb heißt die Antwort nicht mehr Notfälle, sondern ein klarer Standardprozess. Wenn verbindlich festgelegt ist, dass aktiv ausgenutzte Lücken in Systemen mit Internetkontakt innerhalb weniger Tage behoben werden, muss man das nicht jedes Mal neu verhandeln."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und wenn ein Update gar nicht geht, weil ein Altsystem dranhängt?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Dann braucht es eine dokumentierte Risikoakzeptanz mit Ablaufdatum und Ausgleichsmaßnahmen, etwa Abschottung vom Netz. Die französischen Kühlsteuerungen zeigen, was sonst passiert. Danfoss hat am sechsundzwanzigsten Oktober erklärt, die betroffenen Systeme seien überwiegend ältere Produkte ohne Sicherheitsupdates gewesen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Mein zweites Gegenargument: Die Frist ist schön, aber woher weiß man überhaupt, wo Brotli oder Ruby drinsteckt?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Da kommt die Agentur der Europäischen Union für Cybersicherheit ins Spiel. Sie hat am zweiundzwanzigsten Oktober einen Leitfaden zu Software-Stücklisten veröffentlicht, auf Englisch [en]Software Bill of Materials[/en]. Er richtet sich an kleinere Unternehmen, aber die Idee gilt für jeden: ohne Inventar keine Antwort auf die Frage, ob man betroffen ist."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und für Hersteller wird das mit dem Cyber Resilience Act ohnehin Pflicht."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Richtig, die strengeren Herstellerpflichten gelten ab Dezember 2027. Wer Software einkauft, sollte die Stückliste schon jetzt im Vertrag anfragen. Das kostet heute wenig und spart im Ernstfall Tage."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und warum gehört Veeam in dieses Kapitel?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Weil [en]Backup[/en]-Server ein bevorzugtes Ziel von [en]Ransomware[/en] sind. Veeam hat eine kritische Lücke geschlossen, über die Angreifer ohne Anmeldung Sicherungspläne stören können, und in Veeam ONE ließ sich mit Administratorrechten sogar die Mehr-Faktor-Anmeldung abschalten. Angriffe sind laut Hersteller noch nicht bekannt, aber genau das ist der Moment, in dem man patcht."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Also, was sind die konkreten Schritte für Montag?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Erstens prüfen, ob GitLab-Instanzen, Cisco-Firewalls, Magento-[en]Shops[/en], Veeam und ältere Linux-Kernel im Einsatz sind. Zweitens Patch-Fristen für aktiv ausgenutzte Lücken schriftlich festlegen und messen. Drittens Software-Stücklisten bei Lieferanten einfordern. Und viertens für jedes Randsystem einen benannten Verantwortlichen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Da ist sie wieder, die Frage aller Fragen: Wer ist eigentlich [en]Owner[/en]?"
+    }
+   ]
+  },
+  {
+   "title": "Zahl der Woche",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Zahl der Woche."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Drei. So viele Tage dauert es laut Rapid7 im Schnitt, bis bei schweren Lücken die ersten Ausnutzungsversuche kommen. Und 71 Prozent der beobachteten Versuche fallen in die ersten sieben Tage."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und wie lange dauert bei uns im Schnitt die Freigabe für ein Firewall-Update?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Diese Frage beantworte ich lieber nicht in einem öffentlichen Podcast."
+    }
+   ]
+  },
+  {
+   "title": "Owner-Moment der Woche",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Owner-Moment der Woche."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Der kommt aus der GitLab-Lücke. Der eigentliche Fehler steckt in der Engine für reguläre Ausdrücke der Programmiersprache Ruby, nicht im GitLab-Code. Wer GitLab mit eigenem Ruby betreibt, muss Ruby auf mindestens 3.3.13, 3.4.12 oder 4.0.9 heben. Ein Update auf GitLab 19.3.6 allein schließt die Lücke nicht."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Das heißt, das Anwendungsteam patcht, hakt ab, und die Lücke bleibt trotzdem offen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Genau. Die Lehre daraus: Bei Laufzeitumgebungen und Bibliotheken muss klar sein, wem sie gehören. Sonst fühlt sich jeder für seine Schicht verantwortlich und niemand für das, was darunter liegt."
+    }
+   ]
+  },
+  {
+   "title": "Auf dem Radar",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Was haben wir auf dem Radar?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Den Digital Fairness Act. Die Kommission will ihn voraussichtlich im November vorlegen, gegen manipulative Gestaltung von Oberflächen, Abofallen und unfaire Personalisierung. Die Bundesregierung hat in einem Papier vom vierzehnten Oktober dafür geworben, lieber das bestehende Verbraucherrecht zu ändern."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Für einen großen Onlinehandel heißt das: Bestellstrecke, Kündigungsweg und Personalisierung schon mal auf den Prüfstand stellen. Und beim Digital Omnibus will das Europäische Parlament seine Position bis Februar festlegen, erst danach beginnt der Trilog."
+    }
+   ]
+  },
+  {
+   "title": "Abschied",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Das war unser Freitag. Alle Quellen findet ihr auf der Webseite, dazu die weiteren Meldungen zu PHP2Shell, Veeam, den Software-Stücklisten und dem Digital Omnibus."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Schönes Wochenende. Und wer am Samstag noch eine Firewall patcht: Wir denken an euch."
+    }
+   ]
+  }
+ ]
+}

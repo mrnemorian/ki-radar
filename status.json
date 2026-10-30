@@ -1,11 +1,17 @@
 {
  "last_run": {
-  "start": "2026-10-30T07:00:01+01:00",
-  "end": "2026-10-30T07:00:06+01:00",
-  "ok": false,
-  "summary": "Recherche lieferte kein verwertbares Ergebnis"
+  "start": "2026-10-30T09:48:13+01:00",
+  "end": "2026-10-30T09:56:20+01:00",
+  "ok": true,
+  "summary": "7 neue Meldungen: P1 Update: GitLab-Lücke wird ausgenutzt, dazu ein Zero Day in Cisco-Firewalls; P2 Onlinehandel: Ausgenutzte Lücke in Adobe Commerce und Magento, 953 Shops kompromittiert; P3 Update"
  },
  "history": [
+  {
+   "start": "2026-10-30T09:48:13+01:00",
+   "end": "2026-10-30T09:56:20+01:00",
+   "ok": true,
+   "summary": "7 neue Meldungen: P1 Update: GitLab-Lücke wird ausgenutzt, dazu ein Zero Day in Cisco-Firewalls; P2 Onlinehandel: Ausgenutzte Lücke in Adobe Commerce und Magento, 953 Shops kompromittiert; P3 Update"
+  },
   {
    "start": "2026-10-30T07:00:01+01:00",
    "end": "2026-10-30T07:00:06+01:00",
@@ -83,12 +89,6 @@
    "end": "2026-10-18T07:06:22+02:00",
    "ok": true,
    "summary": "3 neue Meldungen: P1 Firewall-Verwaltung eines Dienstleisters gekapert: Daten von über 500 Kunden-Firewalls abgeflossen; P2 Update: Ahold Delhaize – Albert Heijn liefert bis mindestens Dienstag nic"
-  },
-  {
-   "start": "2026-10-17T07:00:01+02:00",
-   "end": "2026-10-17T07:07:28+02:00",
-   "ok": true,
-   "summary": "6 neue Meldungen: P1 BeyondTrust Remote Support: Ausgenutzte Lücke erlaubt Übernahme ohne Anmeldung; P2 Update: Kühlsteuerungen – mindestens 4.500 Danfoss-Schnittstellen weiter offen im Netz; P3 "
   }
  ]
 }
