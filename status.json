@@ -1,11 +1,17 @@
 {
  "last_run": {
-  "start": "2026-10-30T09:48:13+01:00",
-  "end": "2026-10-30T09:56:20+01:00",
+  "start": "2026-10-31T07:00:01+01:00",
+  "end": "2026-10-31T07:07:21+01:00",
   "ok": true,
-  "summary": "7 neue Meldungen: P1 Update: GitLab-Lücke wird ausgenutzt, dazu ein Zero Day in Cisco-Firewalls; P2 Onlinehandel: Ausgenutzte Lücke in Adobe Commerce und Magento, 953 Shops kompromittiert; P3 Update"
+  "summary": "7 neue Meldungen: P1 Oracle E-Business Suite: Angriffsversuche auf kritische Lücke ohne Anmeldung; P2 Linux: Kritische Lücke im Netzwerkstack seit 2015, Updates noch nicht überall verfügbar; P3 Ma"
  },
  "history": [
+  {
+   "start": "2026-10-31T07:00:01+01:00",
+   "end": "2026-10-31T07:07:21+01:00",
+   "ok": true,
+   "summary": "7 neue Meldungen: P1 Oracle E-Business Suite: Angriffsversuche auf kritische Lücke ohne Anmeldung; P2 Linux: Kritische Lücke im Netzwerkstack seit 2015, Updates noch nicht überall verfügbar; P3 Ma"
+  },
   {
    "start": "2026-10-30T09:48:13+01:00",
    "end": "2026-10-30T09:56:20+01:00",
@@ -83,12 +89,6 @@
    "end": "2026-10-19T07:06:09+02:00",
    "ok": true,
    "summary": "5 neue Meldungen: P1 ConnectWise: Gekaperte Backup-Anwendung öffnet Microsoft-365-Umgebungen von Kunden; P2 E-Rechnung: Finanzministerium ergänzt Regeln kurz vor der Ausstellungspflicht 2027; P3 Upd"
-  },
-  {
-   "start": "2026-10-18T07:00:01+02:00",
-   "end": "2026-10-18T07:06:22+02:00",
-   "ok": true,
-   "summary": "3 neue Meldungen: P1 Firewall-Verwaltung eines Dienstleisters gekapert: Daten von über 500 Kunden-Firewalls abgeflossen; P2 Update: Ahold Delhaize – Albert Heijn liefert bis mindestens Dienstag nic"
   }
  ]
 }

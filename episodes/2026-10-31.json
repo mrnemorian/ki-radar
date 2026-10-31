@@ -1,0 +1,193 @@
+{
+ "format": "tag",
+ "chapters": [
+  {
+   "title": "Begrüßung",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Guten Morgen, liebe IT-GRC-Kolleginnen und -Kollegen, willkommen beim IT-GRC Radar am Samstag, dem einunddreißigsten Oktober 2026. Halloween, und wir haben passend ein paar Gruselgeschichten aus dem [en]Patch[/en]-Keller."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Solange keine davon mit der Frage endet, wer eigentlich [en]Owner[/en] ist, bin ich entspannt. Wobei, eigentlich endet jede damit."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und heute bekommen Exchange Server 2016 und 2019 die letzten Sicherheitsupdates. Nur zur Erinnerung."
+    }
+   ]
+  },
+  {
+   "title": "Oracle E-Business Suite",
+   "news_id": "2026-10-31-oracle-ebs-angriffsversuche",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Wir fangen mit Oracle an. In der E-Business Suite steckt eine Lücke mit Schweregrad 9,8, über die Angreifer ohne Anmeldung Systeme übernehmen können. Oracle hat sie mit dem Oktober-[en]Patch[/en] geschlossen, und seit dem siebenundzwanzigsten Oktober sehen Forscher erste Angriffsversuche auf ihre Köder-Systeme."
+    },
+    {
+     "speaker": "Florian",
+     "text": "An solchen Systemen hängen Buchhaltung und Jahresabschluss. Patchen allein reicht da nicht, man sollte auch die veröffentlichten Merkmale einer Kompromittierung prüfen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Warum so gründlich?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Weil schon zwei frühere kritische Lücken in derselben Produktfamilie aktiv ausgenutzt wurden, eine davon von der Erpressergruppe Clop. Und spätestens im Frühjahr will der Abschlussprüfer wissen, ob sich die Integrität des Systems belegen lässt."
+    }
+   ]
+  },
+  {
+   "title": "Linux-Netzwerkstack",
+   "news_id": "2026-10-31-linux-tcp-luecke",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Zweites Thema: Wieder eine kritische Lücke im Netzwerkstack von Linux, Schweregrad 9,8. Betroffen ist das Internetprotokoll Version 4 in allen Kerneln seit 2015."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Moment, seit 2015? Dann ist praktisch jeder Server betroffen, der nicht gestern aufgesetzt wurde."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Ziemlich genau. Gefunden hat die Lücke Anthropic mit Künstlicher Intelligenz, der Angriffscode ist bisher nicht öffentlich. Einige Distributionen haben schon Updates, andere arbeiten noch daran."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Der Haken ist der Neustart. Ein Kernel-[en]Patch[/en] ohne Neustart ist nur ein gutes Gefühl. Ich würde die Wartungsfenster jetzt planen und nicht erst, wenn der Angriffscode auftaucht."
+    }
+   ]
+  },
+  {
+   "title": "Manipulierte Entwickler-Erweiterung",
+   "news_id": "2026-10-31-claude-code-erweiterung-cursor",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Bleiben wir bei den Entwicklern. Im Marktplatz des Code-Editors Cursor war am neunundzwanzigsten Oktober rund elf Stunden lang eine manipulierte Version der Erweiterung Claude Code zu haben, und zwar mit der echten Kennung des Herstellers."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und was hat die gemacht?"
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Sie hat einen fremden Schlüssel für den Fernzugang hinterlegt, einen Tunnel nach außen aufgebaut und Rechnerdaten verschickt. Betroffen sind bis zu 5.000 Nutzer."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Erweiterungen sind Drittparteien, auch wenn nie jemand einen Lieferantenfragebogen dafür ausgefüllt hat. Automatische [en]Updates[/en] sind bequem, aber irgendwer muss festlegen, welche Marktplätze überhaupt erlaubt sind."
+    }
+   ]
+  },
+  {
+   "title": "Kühlsteuerungen",
+   "news_id": "2026-10-31-kuehlsteuerungen-forescout",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Es gibt Neues zu den Kühlsteuerungen in französischen Supermärkten. Forescout hat weltweit 12.976 offen erreichbare Dienste solcher Systeme gezählt, verteilt auf 99 Länder."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ehrlich gesagt finde ich ein anderes Detail spannender. Laut Forescout ist Fernwartung über das Internet in den Herstellerunterlagen als Option vorgesehen. Es liegt also nicht nur an falscher Konfiguration."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und wer steckt hinter den Angriffen?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Seit Januar gab es mehr als 20 vermutete Angriffe, die aktivsten Gruppen dahinter sind prorussische Hacktivisten. Die Empfehlung lautet: Fernwartung nur über abgesicherte Zugänge mit persönlichen Konten und Protokollierung. Und die Wartungsverträge daraufhin lesen, was der Dienstleister eigentlich darf."
+    }
+   ]
+  },
+  {
+   "title": "KeyDrift",
+   "news_id": "2026-10-31-cisco-sdwan-keydrift",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Cisco Talos berichtet über eine Schadsoftware namens KeyDrift. Sie nutzt eine bekannte Lücke in Ciscos softwaredefinierten Weitverkehrsnetzen und kopiert die Schlüssel, mit denen der Verkehr zwischen Standorten verschlüsselt wird."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Über genau solche Netze werden typischerweise Filialen und Lager angebunden. Unangenehm ist zweierlei: Talos kann nicht sagen, ob Schlüssel abgeflossen sind, und die Infrastruktur überschneidet sich mit einem Netz, das der staatsnahen Gruppe Volt Typhoon zugeordnet wird."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Reicht dann ein Update?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Das ist offen. Ein [en]Update[/en] entfernt eine vorhandene [en]Backdoor[/en] nicht zwingend. Also auf Kompromittierung prüfen und klären, ob die Schlüssel neu ausgerollt werden müssen."
+    }
+   ]
+  },
+  {
+   "title": "Digital Fairness Act",
+   "news_id": "2026-10-31-digital-fairness-act-deutschland",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Kurz zum Digital Fairness Act. Laut einem Positionspapier vom vierzehnten Oktober will Deutschland kein eigenes Gesetz, sondern die bestehenden Verbraucherrichtlinien ändern, mit einem allgemeinen Verbot manipulativer Oberflächen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Für den Onlinehandel ist der Weg fast egal, die [en]Dark Patterns[/en] kommen so oder so auf den Prüfstand. Der Vorschlag der Kommission wird im vierten Quartal erwartet."
+    }
+   ]
+  },
+  {
+   "title": "Frachtdiebstahl",
+   "news_id": "2026-10-31-frachtdiebstahl-rechenzentrumstechnik",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Zum Schluss ein Fall aus den Vereinigten Staaten. Banden haben Rechenzentrumstechnik für über 100 Millionen Dollar von Lastwagen gestohlen, über gekaperte Konten auf Frachtbörsen und eingeschleuste Fahrer. Einmal wurden sogar die Ortungsdaten gefälscht."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Das ist Cyberangriff und Logistik in einem. Wer selbst viel transportieren lässt, kann seine Speditionen ruhig mal fragen, wie sie ihre Frachtbörsen-Zugänge absichern."
+    }
+   ]
+  },
+  {
+   "title": "Auf dem Radar",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Auf dem Radar: Das internationale Gremium für Prüfungsstandards will im November einen ersten Leitfaden veröffentlichen, wie Prüfungsgesellschaften Werkzeuge mit Künstlicher Intelligenz in ihr Qualitätsmanagement einbinden."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Heißt übersetzt: Bald fragen nicht nur wir die Prüfer, wie sie ihre Werkzeuge im Griff haben, die Standards fragen gleich mit. Ausgleichende Gerechtigkeit nach jeder [en]Audit[/en]-Saison."
+    }
+   ]
+  },
+  {
+   "title": "Abschied",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Das war es für heute. Alle Quellen findet ihr wie immer auf der Webseite."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Schönes Wochenende, und allen, die heute noch Kernel neu starten: viel Glück."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Bis zum nächsten Mal."
+    }
+   ]
+  }
+ ]
+}

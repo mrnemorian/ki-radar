@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-30T08:56:20Z",
+ "updated": "2026-10-31T06:07:21Z",
  "topics": [
   "IT-Governance & Risiko",
   "Cyber- & IT-Regulierung",
@@ -11,6 +11,18 @@
   "Weitere Themen"
  ],
  "briefings": [
+  {
+   "date": "2026-10-31",
+   "headline": "Angriffe auf Oracle E-Business Suite, kritische Lücke im Linux-Netzwerkstack, manipulierte Entwickler-Erweiterung: Patch- und Neustartfenster jetzt planen",
+   "points": [
+    "Oracle E-Business Suite: Seit 27. Oktober gibt es Angriffsversuche auf eine Lücke mit Schweregrad 9,8, die ohne Anmeldung ausnutzbar ist. Das betrifft die Integrität von Finanzsystemen und ist damit Thema für die Abschlussprüfung.",
+    "Linux: Eine kritische Lücke im Netzwerkstack betrifft praktisch alle Systeme seit 2015. Updates kommen schrittweise, wirksam werden sie erst nach einem Neustart.",
+    "Die Erweiterung Claude Code wurde im Marktplatz des Editors Cursor rund elf Stunden lang manipuliert verteilt. Bis zu 5.000 Nutzer sind betroffen, auf ihren Rechnern wurden Hintertüren angelegt.",
+    "Update zu den Kühlsteuerungen: Forescout zählt weltweit 12.976 offen erreichbare Dienste. Laut den Herstellerunterlagen ist Fernwartung über das Internet eine vorgesehene Option.",
+    "Die Schadsoftware KeyDrift kopiert Schlüssel aus Ciscos softwaredefinierten Weitverkehrsnetzen. Ihre Infrastruktur überschneidet sich mit der staatsnaher Angreifer."
+   ],
+   "count": 7
+  },
   {
    "date": "2026-10-30",
    "headline": "Angreifer nutzen Lücken in GitLab, Cisco-Firewalls und Onlineshops auf Adobe-Basis aus, und bei Amadeus zeigt sich das Ausmaß des Drittparteienrisikos.",
@@ -355,18 +367,6 @@
     "Aktiv ausgenutzte Schwachstelle in mehreren Apple-Produkten: Updates auf mobilen Geräten prüfen"
    ],
    "count": 4
-  },
-  {
-   "date": "2026-09-29",
-   "headline": "Startbestand: Die Regeln haben sich im Sommer verschoben",
-   "points": [
-    "Digital Omnibus in Kraft (27.07.): Hochrisiko nach Anhang III erst ab 02.12.2027, Anhang I ab 02.08.2028.",
-    "Artikel 4, Kompetenz im Umgang mit Künstlicher Intelligenz, ist jetzt eine Bemühenspflicht – Maßnahmen kontextbezogen dokumentieren.",
-    "Transparenzpflichten nach Artikel 50 gelten seit 02.08.2026; die Bundesnetzagentur ist seit 29.07. deutsche Aufsicht für Künstliche Intelligenz (Gesetz zur Marktüberwachung und Innovationsförderung von Künstlicher Intelligenz).",
-    "Sicherheit Künstlicher Intelligenz: Top 10 2026 des Open Worldwide Application Security Project und Agent Control Standard veröffentlicht; Bundesamt für Sicherheit in der Informationstechnik mit neuem Informationspaket zu generativer Künstlicher Intelligenz.",
-    "Prüfung: Agenten mit Künstlicher Intelligenz schaffen Lücken im Prüfpfad – Kernthema für Prüfleitfäden zu Künstlicher Intelligenz."
-   ],
-   "count": 9
   }
  ],
  "dossiers": [
@@ -382,18 +382,18 @@
    "title": "Betriebstechnik in Filialen und Logistik",
    "sector": "Handel & Branche",
    "ring": "jetzt handeln",
-   "status": "Nach den Angriffen auf Kühlsteuerungen von Danfoss, Copeland und Dixell in rund 700 französischen Supermärkten rechnet die Versicherungswirtschaft damit, dass Cyberversicherer wegen grober Fahrlässigkeit und verletzter Obliegenheiten kürzen. Coopérative U schätzt die Schäden auf bis zu 200.000 Euro pro Hypermarkt. Das Bundesamt für Sicherheit in der Informationstechnik fordert, solche…",
-   "next_step": "Betriebstechnik in Filialen und Logistik vollständig inventarisieren und von außen erreichbare Schnittstellen abschalten. Die Ergebnisse dokumentieren und mit den Obliegenheiten der Cyberversicherung abgleichen.",
+   "status": "Forescout zählt weltweit 12.976 offen erreichbare Dienste von Kühl- und Überwachungssystemen in 99 Ländern und verweist darauf, dass Hersteller Fernwartung über das Internet als Option vorsehen. Seit Januar gab es mehr als 20 vermutete Angriffe prorussischer Hacktivisten auf Kühlsysteme; nach dem Fall der rund 700 französischen Supermärkte rechnet die Versicherungswirtschaft mit…",
+   "next_step": "Fernwartungszugänge zur Kühl- und Gebäudetechnik inventarisieren, direkten Internetzugang sperren und mit den Wartungsdienstleistern vertraglich persönliche Konten, Mehr-Faktor-Anmeldung und Sitzungsprotokolle vereinbaren.",
    "open_questions": [
-    "Kann gegenüber dem Versicherer nachgewiesen werden, dass Steuerungen abgeschottet und gepflegt sind?",
-    "Greifen Kriegsausschlüsse, falls staatliche Täter bestätigt werden?"
+    "Welche Fernwartungswege nutzen die Wartungsdienstleister tatsächlich?",
+    "Wie bewerten Cyberversicherer offen erreichbare Betriebstechnik bei der nächsten Vertragsverlängerung?"
    ],
    "controls": [
-    "NIS-2-Richtlinie Art. 21 – Konzepte für Risikoanalyse und Sicherheit von Informationssystemen",
-    "ISO/IEC 27001 Anhang A 5.9 – Inventar der Informationen und anderen zugehörigen Werte",
+    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
+    "ISO/IEC 27001 Anhang A 5.20 – Behandlung von Informationssicherheit in Lieferantenvereinbarungen",
     "ISO/IEC 27001 Anhang A 8.20 – Netzwerksicherheit"
    ],
-   "updated": "2026-10-19"
+   "updated": "2026-10-31"
   },
   {
    "slug": "drittparteien-lieferkette",
@@ -407,18 +407,18 @@
    "title": "Drittparteien- und Lieferkettenrisiko",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Nach ConnectWise, LiteLLM, Railway und TAKKT zeigt der Fall Amadeus, dass ein legitimes Konto bei einem Plattformanbieter von August 2023 bis September 2026 unbemerkt genutzt werden konnte. Inzwischen melden Japan Airlines mit rund 92.000 betroffenen Kunden sowie All Nippon Airways, Korean Air und Asiana Betroffenheit.",
-   "next_step": "Bei kritischen Plattformanbietern prüfen, ob vertraglich Protokollzugriffe, Anomalieerkennung für privilegierte Konten und kurze Meldefristen gesichert sind. Software-Stücklisten in Einkaufsbedingungen aufnehmen.",
+   "status": "Nach ConnectWise, LiteLLM und dem Fall Amadeus zeigt eine manipulierte Version der Erweiterung Claude Code im Cursor-Marktplatz, dass auch Entwicklerwerkzeuge zur Lieferkette gehören. Bis zu 5.000 Nutzer sind betroffen. In den Vereinigten Staaten führten gekaperte Frachtbörsen-Konten von Speditionen zu Diebstählen von Rechenzentrumstechnik im Wert von über 100 Millionen Dollar.",
+   "next_step": "Erlaubte Marktplätze und Erweiterungen für Entwicklungsumgebungen festlegen, automatische Updates regeln und kritische Logistik- und Softwaredienstleister nach der Absicherung ihrer Plattformkonten fragen.",
    "open_questions": [
-    "Welche Plattformanbieter haben Zugriff auf Kunden- oder Buchungsdaten, ohne dass eigene Protokolle auswertbar sind?",
-    "Reichen jährliche Dienstleisterberichte für Anbieter mit Dauerzugriff?"
+    "Wer ist Owner für Erweiterungen und Werkzeuge mit Künstlicher Intelligenz auf Entwicklerrechnern?",
+    "Wie wird die Kontosicherheit von Speditionen und Plattformanbietern nachweisbar bewertet?"
    ],
    "controls": [
-    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
     "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen",
-    "ISO/IEC 27001 Anhang A 5.22 – Überwachung von Lieferantendienstleistungen"
+    "ISO/IEC 27001 Anhang A 5.21 – Umgang mit der Informationssicherheit in der Lieferkette der Informations- und…",
+    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette"
    ],
-   "updated": "2026-10-30"
+   "updated": "2026-10-31"
   },
   {
    "slug": "identitaeten-zugangsdaten",
@@ -455,18 +455,18 @@
    "title": "Kritische Schwachstellen in Randsystemen und Kernanwendungen",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Diese Woche wurden die GitLab-Lücke CVE-2026-97229, ein Zero Day in Cisco-Firewalls, Adobe Commerce und die Bibliothek Brotli als aktiv ausgenutzt gelistet. Angreifer verketten außerdem PHP2Shell mit der Linux-Lücke Fragnesia zu Root-Rechten, und Veeam hat eine kritische Lücke in Backup-Servern geschlossen. Laut Rapid7 folgen erste Ausnutzungsversuche im Schnitt nach etwa drei Tagen, die…",
-   "next_step": "Bestand an GitLab-Instanzen, Cisco-Firewalls, Magento-Shops, Veeam-Servern und älteren Linux-Kerneln prüfen. Patch-Fristen für aktiv ausgenutzte Lücken in Systemen mit Internetkontakt verbindlich festlegen und messen, Laufzeitumgebungen wie Ruby einem Verantwortlichen zuordnen.",
+   "status": "Seit 27. Oktober gibt es Angriffsversuche auf die Oracle-E-Business-Suite-Lücke CVE-2026-101767. Dazu kommen eine kritische Lücke im Linux-Netzwerkstack (CVE-2026-98432), für die noch nicht alle Distributionen Updates haben, und die Schadsoftware KeyDrift, die über CVE-2026-20127 Schlüssel aus Ciscos softwaredefinierten Weitverkehrsnetzen kopiert. Die GitLab- und Cisco-Firewall-Lücken der…",
+   "next_step": "Patch-Stand und Prüfung auf Kompromittierung für Finanzsysteme, Linux-Server und Netzwerksteuerungen zentral nachhalten. Neustartfenster für Kernel-Updates einplanen und die Nachweise für die Abschlussprüfung sichern.",
    "open_questions": [
-    "Wie werden Lücken in Laufzeitumgebungen und Bibliotheken erkannt, wenn Schwachstellenscanner sie nicht melden?",
-    "Welche Ausnahmen mit Ausgleichsmaßnahmen sind für Altsysteme ohne Updates noch vertretbar?"
+    "Wann liefern alle eingesetzten Linux-Distributionen und Appliance-Hersteller korrigierte Kernel?",
+    "Entfernt ein Update KeyDrift von bereits kompromittierten Steuerungen, und müssen Schlüssel neu ausgerollt werden?"
    ],
    "controls": [
-    "ISO/IEC 27001 Anhang A 8.8 – Umgang mit technischen Schwachstellen",
-    "NIS-2-Richtlinie Art. 21 – Behandlung und Offenlegung von Schwachstellen",
+    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
+    "NIS-2-Richtlinie Art. 21 – Umgang mit Schwachstellen",
     "IT-Kontrollen der Abschlussprüfung – Änderungsmanagement"
    ],
-   "updated": "2026-10-30"
+   "updated": "2026-10-31"
   },
   {
    "slug": "lebenszyklus-altsysteme",
@@ -741,17 +741,6 @@
   }
  ],
  "deadlines": [
-  {
-   "date": "2026-10-16",
-   "title": "Patch-Frist der Behörde der Vereinigten Staaten für Windows-Lücke CVE-2026-96951",
-   "detail": "Die Cybersicherheitsbehörde der Vereinigten Staaten verlangt von Bundesbehörden, die aktiv ausgenutzte Lücke in der Windows Shell bis heute zu schließen. Unternehmen sollten das als Richtwert für die eigene Priorisierung nehmen.",
-   "scope": "global",
-   "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-96951",
-   "primary": true,
-   "checked": true,
-   "dossier": "kritische-schwachstellen-perimeter",
-   "added": "2026-10-16"
-  },
   {
    "date": "2026-10-19",
    "title": "Patch-Frist der Behörde der Vereinigten Staaten für BeyondTrust Remote Support (CVE-2026-102764)",
@@ -1047,6 +1036,20 @@
    ]
   },
   {
+   "theme": "Autonome Angriffe durch Agenten",
+   "why": "Der britische Domain-Registrar 123-reg meldet einen Angriff auf Kundendaten, bei dem Künstliche Intelligenz geholfen haben soll, mit vermutetem Bezug nach China. Solche Fälle zeigen, dass Angreifer mit Agenten schneller und in größerem Umfang vorgehen können.",
+   "count": 6,
+   "first_seen": "2026-09-30",
+   "last_seen": "2026-10-31",
+   "evidence": [
+    "https://www.theregister.com/cyber-crime/2026/10/28/123-reg-discloses-ai-cyberattack-on-customer-data-suspects-china-nexus/5305936",
+    "https://bleepingcomputer.com/news/security/hacker-used-artex-ai-and-claude-agents-to-target-south-korean-banks",
+    "https://www.kedglobal.com/banking-finance/newsView/ked202610040005",
+    "https://www.securityweek.com/zammad-zero-days-exploited-in-ai-powered-divd-hack/",
+    "https://www.bleepingcomputer.com/news/security/autonomous-ai-agents-tried-to-hack-us-canadian-government-websites/"
+   ]
+  },
+  {
    "theme": "Normen zum Cyber Resilience Act",
    "why": "Die Grundlagennormen EN 40000-1-1 und EN 40000-1-2 zur Cyberresilienz von Produkten mit digitalen Elementen wurden im Oktober 2026 von den Mitgliedern der europäischen Normungsorganisation CENELEC angenommen, Veröffentlichung geplant am 25. November 2026. Sie werden zur Messlatte für Sicherheitsanforderungen beim Einkauf vernetzter Produkte und Software.",
    "count": 5,
@@ -1056,20 +1059,6 @@
     "https://compliance.globalnorm.de/en/product-compliance-news/detail/eu-cyber-resilience-act-cra-standards-en-40000-1-x-series/",
     "https://www.cyberresilienceact.eu/state-of-play.html",
     "https://www.cyberresilienceact.eu/news/cra-standardisation-deadlines-pushed-back-two-months.html"
-   ]
-  },
-  {
-   "theme": "Autonome Angriffe durch Agenten",
-   "why": "Mit ARTEX ist ein Agenten-gestütztes Angriffswerkzeug im realen Einsatz belegt, und Ableger sind öffentlich verfügbar; die Einstiegshürde für schnelle, automatisierte Angriffe sinkt weiter.",
-   "count": 5,
-   "first_seen": "2026-09-30",
-   "last_seen": "2026-10-11",
-   "evidence": [
-    "https://bleepingcomputer.com/news/security/hacker-used-artex-ai-and-claude-agents-to-target-south-korean-banks",
-    "https://www.kedglobal.com/banking-finance/newsView/ked202610040005",
-    "https://www.securityweek.com/zammad-zero-days-exploited-in-ai-powered-divd-hack/",
-    "https://www.bleepingcomputer.com/news/security/autonomous-ai-agents-tried-to-hack-us-canadian-government-websites/",
-    "https://www.bleepingcomputer.com/news/security/automated-ai-agent-used-to-breach-cybersecurity-nonprofit-divd/"
    ]
   },
   {
@@ -1113,6 +1102,28 @@
    ]
   },
   {
+   "theme": "Prüfungsleitfaden für Werkzeuge mit Künstlicher Intelligenz",
+   "why": "Das internationale Gremium für Prüfungsstandards will im November 2026 einen ersten Leitfaden veröffentlichen, wie Prüfungsgesellschaften Werkzeuge mit Künstlicher Intelligenz im Qualitätsmanagement steuern; ein zweiter Teil folgt. Das verändert, wie Abschlussprüfer Daten aus den Systemen der Mandanten verarbeiten und welche Nachweise sie verlangen.",
+   "count": 3,
+   "first_seen": "2026-10-21",
+   "last_seen": "2026-10-31",
+   "evidence": [
+    "https://www.iaasb.org/news-events/2026-10/iaasb-enews-october-2026"
+   ]
+  },
+  {
+   "theme": "Schwachstellensuche durch Künstliche Intelligenz",
+   "why": "Die kritische Lücke im Linux-Netzwerkstack steckte seit 2015 im Code und wurde jetzt mit Künstlicher Intelligenz gefunden, einschließlich eines funktionierenden Angriffscodes. Wenn solche Funde häufiger werden, müssen Patch-Prozesse und Neustartfenster auf deutlich mehr kritische Updates ausgelegt sein.",
+   "count": 3,
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-31",
+   "evidence": [
+    "https://www.heise.de/news/Erneut-kritischer-Bug-in-Linux-TCP-IP-aufgedeckt-Updates-in-Arbeit-11506050.html",
+    "https://www.heise.de/news/Ausserplanmaessige-Fortinet-Updates-Details-Fehlanzeige-aber-dringend-11497171.html",
+    "https://www.heise.de/news/PwnEscape-Kritische-Luecke-in-Linux-Kernel-erlaubt-VM-Ausbruch-11492131.html"
+   ]
+  },
+  {
    "theme": "Rechtsverordnung zum Dachgesetz Kritische Infrastrukturen",
    "why": "Die Verordnung mit den Schwellenwerten für kritische Anlagen liegt weiter nur als Entwurf vor. Erst mit ihr greifen Registrierung beim Bundesamt innerhalb von drei Monaten, Risikoanalysen und Resilienzpläne, was die Lebensmittelversorgung direkt betrifft.",
    "count": 3,
@@ -1137,16 +1148,6 @@
    ]
   },
   {
-   "theme": "Prüfungsleitfaden für Werkzeuge mit Künstlicher Intelligenz",
-   "why": "Das International Auditing and Assurance Standards Board arbeitet an einer Leitfadenreihe zum Qualitätsmanagement beim Einsatz von Werkzeugen mit Künstlicher Intelligenz in der Prüfung. Der erste Teil wird für November erwartet und dürfte prägen, welche Nachweise Abschlussprüfer verlangen.",
-   "count": 2,
-   "first_seen": "2026-10-21",
-   "last_seen": "2026-10-30",
-   "evidence": [
-    "https://www.iaasb.org/news-events/2026-10/iaasb-enews-october-2026"
-   ]
-  },
-  {
    "theme": "Aktive Cyberabwehr durch Bundesbehörden",
    "why": "Der Innenausschuss des Bundestages hat am 5. Oktober 2026 den Gesetzentwurf zur Stärkung der Cybersicherheit mit neuen Befugnissen zur aktiven Cyberabwehr und Datenerhebung angehört; Sachverständige kritisieren zersplitterte Zuständigkeiten. Für Betreiber Kritischer Infrastrukturen kann das Eingriffe in Systeme Dritter und neue Mitwirkungsfragen bringen.",
    "count": 2,
@@ -1155,17 +1156,6 @@
    "evidence": [
     "https://www.bundestag.de/ausschuesse/inneres/anhoerungen/1216962-1216962",
     "https://www.bundestag.de/dokumente/textarchiv/2026/kw41-pa-inneres-cybersicherheit-1221640"
-   ]
-  },
-  {
-   "theme": "Schwachstellensuche durch Künstliche Intelligenz",
-   "why": "Fortinet findet Lücken mit Künstlicher Intelligenz und rechnet damit, dass Angreifer Patches ebenso schnell analysieren. Das verkürzt die tolerierbare Zeit bis zum Patch und könnte Fristen in Richtlinien und Verträgen veralten lassen.",
-   "count": 2,
-   "first_seen": "2026-10-20",
-   "last_seen": "2026-10-23",
-   "evidence": [
-    "https://www.heise.de/news/Ausserplanmaessige-Fortinet-Updates-Details-Fehlanzeige-aber-dringend-11497171.html",
-    "https://www.heise.de/news/PwnEscape-Kritische-Luecke-in-Linux-Kernel-erlaubt-VM-Ausbruch-11492131.html"
    ]
   },
   {
@@ -1273,6 +1263,72 @@
  ],
  "news": [
   {
+   "title": "Linux: Kritische Lücke im Netzwerkstack seit 2015, Updates noch nicht überall verfügbar",
+   "summary": "Die Lücke CVE-2026-98432 hat den Schweregrad 9,8. Sie steckt in der Verarbeitung des Internetprotokolls Version 4 im Linux-Kernel und kann dazu führen, dass Angreifer aus dem Netz Code ausführen. Betroffen sind alle Kernel seit Version 4.4 von 2015 und damit fast alle großen Distributionen. Behoben ist der Fehler in den Kernel-Versionen 6.12.113, 6.18.56 und 7.2.10. Erste Distributionen haben Updates veröffentlicht, andere arbeiten noch daran. Anthropic hat die Lücke mit Künstlicher Intelligenz gefunden; den einzigen bekannten Angriffscode hat das Unternehmen bisher nicht veröffentlicht.",
+   "relevance": "Nahezu jede Server-Landschaft ist betroffen, von Webshops über Logistiksysteme bis zu Appliances. Entscheidend sind ein vollständiges Inventar der Linux-Systeme und geplante Neustartfenster, denn der neue Kernel wirkt erst nach einem Neustart.",
+   "source": "heise online",
+   "url": "https://www.heise.de/news/Erneut-kritischer-Bug-in-Linux-TCP-IP-aufgedeckt-Updates-in-Arbeit-11506050.html",
+   "id": "2026-10-31-linux-tcp-luecke",
+   "topic": "IT-Governance & Risiko",
+   "impact": "hoch",
+   "published": "2026-10-30",
+   "tags": [
+    "Linux",
+    "Kernel",
+    "Patch-Management"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
+    "ISO/IEC 27001 Anhang A 5.9 – Inventar der Informationen und anderen zugehörigen Werte"
+   ],
+   "roles": [
+    "IT-Risiko"
+   ],
+   "countries": [],
+   "dossier": "kritische-schwachstellen-perimeter",
+   "priority": 2,
+   "primary": false,
+   "added": "2026-10-31T06:07:21Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Die Quelle schreibt nur, dass erste Distributoren Updates veröffentlicht haben. Dass Debian schon ein Update hat, steht dort nicht; Debian wird nur als betroffen genannt."
+   }
+  },
+  {
+   "title": "Manipulierte Claude-Code-Erweiterung im Cursor-Marktplatz legt Hintertüren an",
+   "summary": "Am 29. Oktober wurde im Marktplatz des Code-Editors Cursor rund elf Stunden lang eine manipulierte Version 2.1.313 der Erweiterung Claude Code als reguläres Update verteilt. Sie nutzte die echte Kennung des Herstellers. Die Schadversion hinterlegte einen fremden Schlüssel für den Fernzugang, baute einen Tunnel zu den Angreifern auf, richtete sich dauerhaft ein und übertrug Rechnerdaten wie Benutzername, Git-E-Mail-Adresse und die Namen sensibler Umgebungsvariablen. Laut Cursor sind höchstens 5.000 Nutzer betroffen; Version 2.1.314 behebt das Problem.",
+   "relevance": "Erweiterungen für Entwicklungsumgebungen und Werkzeuge mit Künstlicher Intelligenz sind Drittparteien mit weitreichenden Rechten auf Entwicklerrechnern, laufen aber oft an jedem Lieferantenprozess vorbei. Gebraucht werden eine Liste erlaubter Marktplätze und Erweiterungen, Regeln für automatische Updates und ein Ablauf zum Austausch von Zugangsdaten.",
+   "source": "The Hacker News",
+   "url": "https://thehackernews.com/2026/10/official-claude-code-vs-code-extension.html",
+   "id": "2026-10-31-claude-code-erweiterung-cursor",
+   "topic": "AI-Governance",
+   "impact": "hoch",
+   "published": "2026-10-30",
+   "tags": [
+    "Supply Chain",
+    "Entwicklerwerkzeuge",
+    "Agenten"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen",
+    "ISO/IEC 27001 Anhang A 8.19 – Installation von Software auf Systemen im Betrieb",
+    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Einkauf & Drittparteien"
+   ],
+   "countries": [],
+   "dossier": "drittparteien-lieferkette",
+   "priority": 3,
+   "primary": false,
+   "added": "2026-10-31T06:07:21Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum, Zeitraum von etwa elf Stunden am 29. Oktober, Versionen 2.1.313 und 2.1.314, Kennung des Herstellers, Schadfunktionen und höchstens 5.000 Betroffene laut Cursor sind belegt."
+   }
+  },
+  {
    "title": "Update: GitLab-Lücke wird ausgenutzt, dazu ein Zero Day in Cisco-Firewalls",
    "summary": "Die amerikanische Cybersicherheitsbehörde hat die GitLab-Lücke CVE-2026-97229 (Schweregrad 10 von 10, Codeausführung ohne Anmeldung über präparierte Build-Konfigurationen) und die Lücke CVE-2026-76418 in Cisco Secure Firewall ASA und Firepower Threat Defense in ihren Katalog aktiv ausgenutzter Schwachstellen aufgenommen. Neu gegenüber der Meldung vom 22. Oktober: Der Fehler steckt in Ruby, deshalb müssen selbst betriebene Installationen auch Ruby auf mindestens 3.3.13, 3.4.12 oder 4.0.9 heben. Ein GitLab-Update allein genügt nicht. Bei Cisco führen präparierte Anfragen an den Fernzugang zum Neustart der Geräte, einen offiziellen Workaround gibt es nicht.",
    "relevance": "Quellcode-Plattformen und Firewalls für den Fernzugang sind Kronjuwelen. Ein Konzern sollte für aktiv ausgenutzte Lücken in Systemen mit Internetkontakt feste Fristen haben und dabei auch Laufzeitumgebungen unter den Anwendungen erfassen.",
@@ -1341,6 +1397,70 @@
    }
   },
   {
+   "title": "Schadsoftware KeyDrift kopiert Schlüssel aus Ciscos Weitverkehrsnetzen",
+   "summary": "Cisco Talos berichtet über die Schadsoftware KeyDrift. Angreifer haben sie über die Lücke CVE-2026-20127 mit Schweregrad 10 in Ciscos softwaredefinierten Weitverkehrsnetzen eingeschleust. Sie kopiert die Schlüssel, mit denen der Verkehr zwischen Standorten verschlüsselt wird, und dient als Hintertür. Betroffen sind eigene Installationen wie auch die von Cisco gehosteten Cloud-Umgebungen. Eine Übergangslösung gibt es nicht. Ob Schlüssel abgeflossen sind, kann Talos nicht sagen. Die Infrastruktur der Angreifer überschneidet sich deutlich mit einem Netz, das der staatsnahen Gruppe Volt Typhoon zugeordnet wird.",
+   "relevance": "Solche Netze binden typischerweise Filialen, Lager und Rechenzentren an. Ein Update allein entfernt eine vorhandene Hintertür nicht zwingend. IT-Risiko sollte deshalb eine Prüfung auf Kompromittierung verlangen und klären, ob die Schlüssel neu ausgerollt werden müssen.",
+   "source": "The Hacker News",
+   "url": "https://thehackernews.com/2026/10/hackers-exploited-cisco-sd-wan-flaw-to.html",
+   "id": "2026-10-31-cisco-sdwan-keydrift",
+   "topic": "IT-Governance & Risiko",
+   "impact": "mittel",
+   "published": "2026-10-29",
+   "tags": [
+    "Netzwerk",
+    "Staatliche Angreifer",
+    "Filialanbindung"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 8.24 – Verwendung von Kryptografie",
+    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen"
+   ],
+   "roles": [
+    "IT-Risiko"
+   ],
+   "countries": [],
+   "dossier": "kritische-schwachstellen-perimeter",
+   "priority": 5,
+   "primary": false,
+   "added": "2026-10-31T06:07:21Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum, Lücke CVE-2026-20127 mit Schweregrad 10, Funktion, Betroffenheit eigener und gehosteter Installationen, keine Übergangslösung laut Cisco, unklarer Abfluss und Überschneidung mit dem Volt Typhoon zugeordneten Netz sind belegt."
+   }
+  },
+  {
+   "title": "Gekaperte Frachtbörsen-Konten: Rechenzentrumstechnik für über 100 Millionen Dollar gestohlen",
+   "summary": "In den Vereinigten Staaten haben Banden Server, Speicherchips und Glasfaserkabel im Wert von über 100 Millionen Dollar von Lastwagen gestohlen. Sie kaperten Konten auf Online-Frachtbörsen, schickten Speditionen über gefälschte Aufträge Schadsoftware, ersteigerten mit den übernommenen Konten echte Transporte und setzten eigene Fahrer ein. In einem Fall wurden die Ortungsdaten des Lastwagens gefälscht. Bisher sind fast zwei Dutzend gezielte Diebstähle erfasst.",
+   "relevance": "Der Fall zeigt, wie Cyberangriffe auf Logistikdienstleister zu physischen Verlusten führen. Für einen Händler mit großer eigener Logistik und vielen Speditionspartnern gehört die Absicherung von Frachtbörsen-Zugängen in die Bewertung der Dienstleister.",
+   "source": "heise online",
+   "url": "https://www.heise.de/news/Diebe-stehlen-Rechenzentrums-Equipment-im-Wert-von-ueber-100-Millionen-US-Dollar-11504891.html",
+   "id": "2026-10-31-frachtdiebstahl-rechenzentrumstechnik",
+   "topic": "Weitere Themen",
+   "impact": "info",
+   "published": "2026-10-29",
+   "tags": [
+    "Logistik",
+    "Frachtdiebstahl",
+    "Social Engineering"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen"
+   ],
+   "roles": [
+    "Einkauf & Drittparteien",
+    "IT-Risiko"
+   ],
+   "countries": [],
+   "dossier": "drittparteien-lieferkette",
+   "priority": 7,
+   "primary": false,
+   "added": "2026-10-31T06:07:21Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum, über 100 Millionen Dollar, Güter, Vorgehen, gefälschte Ortungsdaten und knapp zwei Dutzend Diebstähle sind belegt."
+   }
+  },
+  {
    "title": "Update: Amadeus – Daten von rund 92.000 Kunden von Japan Airlines betroffen",
    "summary": "Japan Airlines meldete am 28. Oktober 2026, dass über das Passagiersystem von Amadeus Daten von rund 92.000 Kunden abgeflossen sind: Bei etwa 90.000 geht es um Buchungscodes, Namen und Flugdaten, bei rund 2.000 zusätzlich um Passnummern, Kontaktdaten und Vielfliegernummern. Der unbefugte Zugriff lief laut Amadeus vom 10. August 2023 bis 23. September 2026. Neu ist, dass neben Korean Air und Asiana auch Japan Airlines und All Nippon Airways Betroffenheit melden. Kartennummern und Passwörter waren laut Japan Airlines nicht betroffen.",
    "relevance": "Für eine Touristiksparte zeigt der Fall, dass jährliche Dienstleisterberichte keinen laufenden Missbrauch legitimer Konten erkennen. Nötig sind vertraglich gesicherte Protokollzugriffe, Anomalieerkennung und kurze Meldewege beim Plattformanbieter.",
@@ -1403,6 +1523,40 @@
    "check": {
     "verdict": "ok",
     "note": "Veröffentlicht am 29. Oktober 2026. Die Quelle bestätigt die Kennung CVE-2026-46300, die Verkettung mit PHP2Shell bis zu Root-Rechten, die Kernel vor dem 13. Mai 2026 und den öffentlichen Angriffscode. Laut Dream Security wurden 25 Server in den Vereinigten Staaten, Japan, Taiwan und Südkorea…"
+   }
+  },
+  {
+   "title": "Oracle E-Business Suite: Angriffsversuche auf kritische Lücke ohne Anmeldung",
+   "summary": "Oracle hat mit dem Oktober-Patch die Lücke CVE-2026-101767 im Modul Application Object Library der E-Business Suite geschlossen. Sie hat den Schweregrad 9,8 von 10 und erlaubt Angreifern ohne Anmeldung, Systeme zu übernehmen. Die Firma Defused Cyber hat am 27. Oktober erste Angriffsversuche auf ihre Köder-Systeme beobachtet. Horizon3.ai hat Merkmale veröffentlicht, an denen sich eine Kompromittierung erkennen lässt. Zwei frühere kritische Lücken in der E-Business Suite wurden aktiv ausgenutzt, eine davon von der Erpressergruppe Cl0p.",
+   "relevance": "Systeme für Finanzen und Warenwirtschaft gehören zum Kern der allgemeinen IT-Kontrollen in der Abschlussprüfung. Neben dem Patch braucht es deshalb eine belegte Prüfung auf Kompromittierung, damit sich die Integrität des Systems gegenüber dem Prüfer nachweisen lässt.",
+   "source": "The Hacker News",
+   "url": "https://thehackernews.com/2026/10/hackers-target-critical-oracle-e.html",
+   "id": "2026-10-31-oracle-ebs-angriffsversuche",
+   "topic": "IT-Governance & Risiko",
+   "impact": "hoch",
+   "published": "2026-10-28",
+   "tags": [
+    "Oracle",
+    "Finanzsysteme",
+    "Patch-Management"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
+    "IT-Kontrollen der Abschlussprüfung – Änderungsmanagement",
+    "NIS-2-Richtlinie Art. 21 – Umgang mit Schwachstellen"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Revision & Prüfung"
+   ],
+   "countries": [],
+   "dossier": "kritische-schwachstellen-perimeter",
+   "priority": 1,
+   "primary": false,
+   "added": "2026-10-31T06:07:21Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum 28. Oktober 2026, Lücke, Schweregrad 9,8, Modul Application Object Library, Defused Cyber am 27. Oktober, Merkmale von Horizon3.ai und Cl0p stimmen mit der Quelle überein."
    }
   },
   {
@@ -1469,6 +1623,44 @@
    "check": {
     "verdict": "ok",
     "note": "Veröffentlicht am 28. Oktober 2026. Die Quelle bestätigt die kritische Lücke CVE-2026-108142 im Dienst für Continuous Data Protection, die zwei mittleren Lücken mit Dateischreibzugriff, die Rechteausweitung im Agent for Linux und das Abschalten der Mehr-Faktor-Authentifizierung in Veeam ONE mit…"
+   }
+  },
+  {
+   "title": "Update: Kühlsteuerungen – 12.976 offen erreichbare Dienste, Fernwartung vom Hersteller vorgesehen",
+   "summary": "Forescout Vedere Labs zählt weltweit 12.976 über das Internet erreichbare Dienste von Kühl- und Überwachungssystemen auf 6.017 Adressen in 99 Ländern, darunter 7.075 von Copeland/Dixell XWEB und 4.697 von Danfoss StoreView. Neu gegenüber dem bisherigen Stand: Laut Forescout sehen die Herstellerunterlagen Fernwartung über das Internet als vorgesehene Option vor, es geht also nicht nur um Fehlkonfiguration. Seit Januar 2026 hat Forescout bei der Beobachtung von Hacktivistengruppen mehr als 20 vermutete Angriffe auf Kühlsysteme erfasst; die aktivsten Gruppen dahinter sind die prorussischen Gruppen Z-Pentest Alliance und NoName057(16).",
+   "relevance": "Für einen Lebensmittelhändler mit Tausenden Filialen gehört die Fernwartung von Kühltechnik ins Risikomanagement und in die Verträge mit den Wartungsdienstleistern. Dazu gehören ein abgesicherter Fernzugang, persönliche Konten mit Mehr-Faktor-Anmeldung und protokollierte Sitzungen.",
+   "source": "Borns IT- und Windows-Blog",
+   "url": "https://borncity.com/blog/2026/10/26/forescout-vedere-labs-zum-cyberangriff-auf-franz-supermarkt-kuehlschraenke/",
+   "id": "2026-10-31-kuehlsteuerungen-forescout",
+   "topic": "Handel & Branche",
+   "impact": "mittel",
+   "published": "2026-10-26",
+   "tags": [
+    "Betriebstechnik",
+    "Filialen",
+    "Fernwartung"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
+    "ISO/IEC 27001 Anhang A 5.20 – Behandlung von Informationssicherheit in Lieferantenvereinbarungen",
+    "ISO/IEC 27001 Anhang A 8.20 – Netzwerksicherheit"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Einkauf & Drittparteien"
+   ],
+   "countries": [
+    "EU",
+    "DE",
+    "AT"
+   ],
+   "dossier": "betriebstechnik-filialen-logistik",
+   "priority": 4,
+   "primary": false,
+   "added": "2026-10-31T06:07:21Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Zahlen und Datum stimmen. Die Quelle ordnet aber nicht alle mehr als 20 Angriffe prorussischen Hacktivisten zu, sie nennt nur die beiden prorussischen Gruppen als die aktivsten."
    }
   },
   {
@@ -1670,6 +1862,39 @@
    "check": {
     "verdict": "ok",
     "note": "Datum 25. Oktober 2026, mindestens 10.124 Lücken, plus 578 Prozent, IBM X-Force, über die Hälfte hoch oder kritisch, Daniel Gille und Minuten oder Stunden sind belegt."
+   }
+  },
+  {
+   "title": "Update: Digital Fairness Act – Deutschland will kein eigenes Gesetz, Vorschlag im vierten Quartal erwartet",
+   "summary": "In einem Positionspapier vom 14. Oktober lehnt Deutschland einen eigenständigen Digital Fairness Act ab und will stattdessen die bestehenden Verbraucherrichtlinien ändern. Vorgeschlagen werden ein allgemeines Verbot manipulativer Online-Oberflächen in der Richtlinie über unlautere Geschäftspraktiken sowie verbindliche Grundsätze für Fairness durch Technikgestaltung und durch Voreinstellungen. Zusätzliche Dokumentations- und Berichtspflichten für alle Händler lehnt Deutschland ab. Der Vorschlag der Kommission wird im vierten Quartal 2026 erwartet.",
+   "relevance": "Für einen großen Onlinehändler mit Abonnements, Treueprogrammen und personalisierten Angeboten werden manipulative Gestaltungsmuster unabhängig vom Gesetzgebungsweg geprüft werden. Es lohnt sich, frühzeitig zu inventarisieren, wo Kündigungswege, Voreinstellungen und Personalisierung angreifbar sind.",
+   "source": "Factrail unter Berufung auf Agence Europe",
+   "url": "https://factrail.ai/articles/germany-digital-fairness-act-nonpaper-consumer-rules-october-2026",
+   "id": "2026-10-31-digital-fairness-act-deutschland",
+   "topic": "Weitere Themen",
+   "impact": "info",
+   "published": "2026-10-24",
+   "tags": [
+    "Verbraucherrecht",
+    "Dark Patterns",
+    "Onlinehandel"
+   ],
+   "controls": [],
+   "roles": [
+    "Management",
+    "Datenschutz"
+   ],
+   "countries": [
+    "EU",
+    "DE"
+   ],
+   "dossier": null,
+   "priority": 6,
+   "primary": false,
+   "added": "2026-10-31T06:07:21Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum 24. Oktober, Positionspapier vom 14. Oktober, alle Positionen und der erwartete Vorschlag im vierten Quartal 2026 stimmen mit der Quelle überein."
    }
   },
   {
