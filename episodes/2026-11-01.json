@@ -1,0 +1,169 @@
+{
+ "format": "tag",
+ "chapters": [
+  {
+   "title": "Begrüßung",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Guten Morgen, liebe IT-GRC-Kolleginnen und -Kollegen, willkommen beim IT-GRC Radar am Sonntag, dem ersten November 2026."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Sonntag und Allerheiligen, und die Angreifer machen trotzdem keine Pause. Gut, dass wir auch keine machen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Heute geht es um [en]Firewalls[/en], um Shopsysteme, um einen wachsenden Fall bei einem Buchungsdienstleister und zum Schluss ums Geld."
+    }
+   ]
+  },
+  {
+   "title": "PHP2Shell trifft Firewalls",
+   "news_id": "2026-11-01-php2shell-palo-alto-verwaltung",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Da gibt es Neues zu PHP2Shell. Palo Alto Networks meldet, dass die Lücken in der Skriptsprache PHP jetzt gegen die Verwaltungsoberflächen seiner [en]Firewalls[/en] ausgenutzt werden. Seit dem dreißigsten Oktober gibt es [en]Updates[/en] für alle betroffenen Versionen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Das ist die eigentlich unangenehme Erkenntnis. Letzte Woche haben alle nach Webservern mit PHP gesucht. Dass die Sprache auch in Sicherheitsgeräten steckt, steht in kaum einer Excel-Liste."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Moment, heißt das, die ganze Inventur war umsonst?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Nicht umsonst, aber unvollständig. Sicherheitsforscher zählen 25 übernommene Server, kombiniert mit der Linux-Lücke Fragnesia. Erste Maßnahme: Verwaltungszugänge raus aus dem Internet. Ehrlich gesagt hätten die da nie drin sein sollen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Palo Alto sagt, weniger als 0,01 Prozent der Kunden hätten die Verwaltung offen im Netz."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Beruhigend, solange man nicht selbst zu diesen 0,01 Prozent gehört."
+    }
+   ]
+  },
+  {
+   "title": "Drupal Commerce",
+   "news_id": "2026-11-01-drupal-commerce-ausgenutzt",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Weiter im Onlinehandel. Im Shop-Modul Drupal Commerce wird eine Lücke aktiv ausgenutzt. Bestimmte Routen und Datenfelder sind nicht ausreichend geschützt, und das Projekt warnt ausdrücklich vor möglichen finanziellen Folgen für Händler."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Letzte Woche Magento, diese Woche Drupal. In einem Konzern mit vielen Marken und Ländern ist die spannende Frage nicht, welches Shopsystem man offiziell nutzt, sondern welches irgendwo nebenher läuft."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Das Aktionsportal, das eine Agentur vor Jahren aufgesetzt hat?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Genau das. Und auf die Frage, wer da eigentlich [en]Owner[/en] ist, folgt erfahrungsgemäß ein sehr langes Schweigen im Meeting."
+    }
+   ]
+  },
+  {
+   "title": "WordPress unter Beschuss",
+   "news_id": "2026-11-01-wordpress-angriffswelle",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Passend dazu WordPress. Nach dem [en]Update[/en] auf Version 7.1.4 am achtundzwanzigsten Oktober hat der Sicherheitsanbieter Wordfence fast 63.000 Angriffsversuche in 24 Stunden abgewehrt. Betroffen sind die Versionen 4.7 bis 7.1.3."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ein klassischer Wettlauf. Die [en]Updates[/en] sind öffentlich, und die Angreifer lesen sie genauso schnell wie wir. Marketing-Seiten und Länderauftritte betreiben oft Dienstleister, und dann zählt, ob im Vertrag überhaupt eine Frist für Sicherheitsupdates steht."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und ob jemand sie kontrolliert."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Das wäre dann die Premium-Variante, ja."
+    }
+   ]
+  },
+  {
+   "title": "Amadeus und Cathay Pacific",
+   "news_id": "2026-11-01-amadeus-cathay-pacific",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Neues gibt es auch zu Amadeus. Cathay Pacific meldet rund 53.000 betroffene Buchungen aus der Zeit von August 2023 bis September 2026. Einstieg war ein Systemkonto, Zahlungsdaten sind nach bisherigen Erkenntnissen nicht betroffen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Buchungen aus fast drei Jahren, abrufbar über ein einziges Dienstkonto, das beschäftigt mich am meisten. Und Cathay wurde von Amadeus erst am achtundzwanzigsten Oktober informiert."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Was heißt das für einen Touristikkonzern?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Die Verträge mit Buchungsplattformen auf Meldefristen prüfen und nachfragen, wer dort Dienstkonten überwacht. Die eigene Meldefrist nach der Datenschutz-Grundverordnung läuft ab Kenntnis, nicht ab dem Tag, der dem Dienstleister gerade passt."
+    }
+   ]
+  },
+  {
+   "title": "Sicherheitsbudgets",
+   "news_id": "2026-11-01-bitkom-sicherheitsbudgets",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Zum Schluss ein paar Zahlen. Laut dem Digitalverband Bitkom steigen die Ausgaben für Informationssicherheit in Deutschland dieses Jahr um 11,7 Prozent auf 14,3 Milliarden Euro. Der Anteil am Budget für Informationstechnik bleibt aber bei 18 Prozent."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Bitkom und das Bundesamt für Sicherheit in der Informationstechnik empfehlen 20 Prozent. Eine hübsche Zahl für die nächste Budgetrunde."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Klingt, als würdest du sie dir gerade notieren."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Schon passiert. Aber ehrlich, der Anteil allein sagt nichts über die Wirksamkeit. Überzeugender ist ein Budget, das an konkrete Risiken gekoppelt ist, zum Beispiel an offene Verwaltungszugänge."
+    }
+   ]
+  },
+  {
+   "title": "Auf dem Radar",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Auf dem Radar: der [en]Digital Fairness Act[/en]. Laut einer Analyse des Europäischen Parlaments wird der Vorschlag der Kommission Mitte November erwartet."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Es geht um Kündigungswege bei Abonnements, personalisierte Preise und manipulative Gestaltung. Für Onlineshops und Kundenprogramme lohnt es sich, schon jetzt hinzuschauen."
+    }
+   ]
+  },
+  {
+   "title": "Abschied",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Das war das IT-GRC Radar für heute. Alle Quellen findet ihr wie immer auf der Webseite."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Schönen Sonntag, und werft kurz einen Blick auf eure Verwaltungszugänge. Bis morgen."
+    }
+   ]
+  }
+ ]
+}

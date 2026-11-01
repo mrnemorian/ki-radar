@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-31T06:07:21Z",
+ "updated": "2026-11-01T06:08:43Z",
  "topics": [
   "IT-Governance & Risiko",
   "Cyber- & IT-Regulierung",
@@ -11,6 +11,18 @@
   "Weitere Themen"
  ],
  "briefings": [
+  {
+   "date": "2026-11-01",
+   "headline": "Angriffe auf Firewall-Verwaltungen und Shopsysteme, der Amadeus-Fall wächst, und die Sicherheitsbudgets liegen weiter unter dem Richtwert",
+   "points": [
+    "Update PHP2Shell: Angreifer nutzen die Lücken jetzt gegen Verwaltungsoberflächen von Palo-Alto-Firewalls, Updates gibt es für alle Versionszweige seit 30. Oktober",
+    "Onlinehandel: Lücke im Shop-Modul Drupal Commerce wird aktiv ausgenutzt",
+    "WordPress: fast 63.000 Angriffsversuche in 24 Stunden auf eine neue Lücke zur Codeausführung",
+    "Update Amadeus: Cathay Pacific meldet rund 53.000 betroffene Buchungen, Einstieg war ein Systemkonto",
+    "Bitkom: Unternehmen geben 18 Prozent ihres Budgets für Informationstechnik für Sicherheit aus, empfohlen sind 20 Prozent"
+   ],
+   "count": 5
+  },
   {
    "date": "2026-10-31",
    "headline": "Angriffe auf Oracle E-Business Suite, kritische Lücke im Linux-Netzwerkstack, manipulierte Entwickler-Erweiterung: Patch- und Neustartfenster jetzt planen",
@@ -356,17 +368,6 @@
     "Institut der Wirtschaftsprüfer: Fachbeitrag fragt, ob Prüfer Mandantendaten zum Training Künstlicher Intelligenz nutzen dürfen."
    ],
    "count": 5
-  },
-  {
-   "date": "2026-09-30",
-   "headline": "Österreich startet morgen mit dem neuen Cybersicherheitsgesetz, ein Agent mit Künstlicher Intelligenz führt einen Angriff autonom aus, Beschäftigte erkennen Deepfakes kaum.",
-   "points": [
-    "Österreich: Netz- und Informationssystemsicherheitsgesetz 2026 gilt ab 1. Oktober ohne Übergangsfrist, Selbstdeklaration bis 30. September 2027, Schulungspflicht der Geschäftsleitung strafbewehrt",
-    "Niederländisches Institut für die Offenlegung von Schwachstellen: autonomer Agent mit Künstlicher Intelligenz steuert Angriff nach dem Einbruch",
-    "Eurobarometer: drei von vier Beschäftigten in der Europäischen Union erhalten verdächtige Nachrichten, nur 48 Prozent erkennen Deepfake-Videos",
-    "Aktiv ausgenutzte Schwachstelle in mehreren Apple-Produkten: Updates auf mobilen Geräten prüfen"
-   ],
-   "count": 4
   }
  ],
  "dossiers": [
@@ -407,18 +408,18 @@
    "title": "Drittparteien- und Lieferkettenrisiko",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Nach ConnectWise, LiteLLM und dem Fall Amadeus zeigt eine manipulierte Version der Erweiterung Claude Code im Cursor-Marktplatz, dass auch Entwicklerwerkzeuge zur Lieferkette gehören. Bis zu 5.000 Nutzer sind betroffen. In den Vereinigten Staaten führten gekaperte Frachtbörsen-Konten von Speditionen zu Diebstählen von Rechenzentrumstechnik im Wert von über 100 Millionen Dollar.",
-   "next_step": "Erlaubte Marktplätze und Erweiterungen für Entwicklungsumgebungen festlegen, automatische Updates regeln und kritische Logistik- und Softwaredienstleister nach der Absicherung ihrer Plattformkonten fragen.",
+   "status": "Im Fall Amadeus melden immer mehr Fluggesellschaften Betroffene, zuletzt Cathay Pacific mit rund 53.000 Buchungen. Einstieg war ein Systemkonto, der Zugriff reicht bis August 2023 zurück. ConnectWise, LiteLLM und die manipulierte Claude-Code-Erweiterung zeigen außerdem, dass auch Werkzeuge und Dienstkonten zur Lieferkette gehören.",
+   "next_step": "Bei kritischen Plattformdienstleistern Meldefristen, die Überwachung von Dienstkonten und Nachweise zur Zugriffsprotokollierung in Verträgen und Lieferantenbewertung prüfen.",
    "open_questions": [
-    "Wer ist Owner für Erweiterungen und Werkzeuge mit Künstlicher Intelligenz auf Entwicklerrechnern?",
-    "Wie wird die Kontosicherheit von Speditionen und Plattformanbietern nachweisbar bewertet?"
+    "Wie schnell müssen Buchungsplattformen ihre Kunden über Vorfälle informieren?",
+    "Wer überwacht Dienstkonten von Dienstleistern mit Zugriff auf Kundendaten?"
    ],
    "controls": [
+    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
     "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen",
-    "ISO/IEC 27001 Anhang A 5.21 – Umgang mit der Informationssicherheit in der Lieferkette der Informations- und…",
-    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette"
+    "DSGVO Art. 28 – Auftragsverarbeiter"
    ],
-   "updated": "2026-10-31"
+   "updated": "2026-11-01"
   },
   {
    "slug": "identitaeten-zugangsdaten",
@@ -455,18 +456,18 @@
    "title": "Kritische Schwachstellen in Randsystemen und Kernanwendungen",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Seit 27. Oktober gibt es Angriffsversuche auf die Oracle-E-Business-Suite-Lücke CVE-2026-101767. Dazu kommen eine kritische Lücke im Linux-Netzwerkstack (CVE-2026-98432), für die noch nicht alle Distributionen Updates haben, und die Schadsoftware KeyDrift, die über CVE-2026-20127 Schlüssel aus Ciscos softwaredefinierten Weitverkehrsnetzen kopiert. Die GitLab- und Cisco-Firewall-Lücken der…",
-   "next_step": "Patch-Stand und Prüfung auf Kompromittierung für Finanzsysteme, Linux-Server und Netzwerksteuerungen zentral nachhalten. Neustartfenster für Kernel-Updates einplanen und die Nachweise für die Abschlussprüfung sichern.",
+   "status": "PHP2Shell wird inzwischen auch gegen Verwaltungsoberflächen von Palo-Alto-Firewalls ausgenutzt, Updates für alle Versionszweige gibt es seit 30. Oktober 2026. Dazu kommen eine aktiv ausgenutzte Lücke in Drupal Commerce und massenhafte Angriffsversuche auf WordPress, neben den laufenden Fällen Oracle E-Business Suite, GitLab, Cisco und der Linux-Netzwerklücke.",
+   "next_step": "Das Inventar um Sicherheitsgeräte mit eingebauten Komponenten, Shops bei Agenturen und Marketing-Webseiten ergänzen, Verwaltungszugänge aus dem Internet entfernen und Nachweise für die Behebung aktiv ausgenutzter Lücken einfordern.",
    "open_questions": [
-    "Wann liefern alle eingesetzten Linux-Distributionen und Appliance-Hersteller korrigierte Kernel?",
-    "Entfernt ein Update KeyDrift von bereits kompromittierten Steuerungen, und müssen Schlüssel neu ausgerollt werden?"
+    "Welche Sicherheitsgeräte enthalten PHP-Komponenten, ohne dass das im Inventar steht?",
+    "Gelten die internen Fristen für Sicherheitsupdates auch für Webseiten, die Agenturen betreiben?"
    ],
    "controls": [
-    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
     "NIS-2-Richtlinie Art. 21 – Umgang mit Schwachstellen",
-    "IT-Kontrollen der Abschlussprüfung – Änderungsmanagement"
+    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
+    "PCI DSS Anforderung 6.3.3 – zeitnahe Installation kritischer Sicherheitsupdates"
    ],
-   "updated": "2026-10-31"
+   "updated": "2026-11-01"
   },
   {
    "slug": "lebenszyklus-altsysteme",
@@ -797,6 +798,17 @@
    "added": "2026-10-26"
   },
   {
+   "date": "2026-11-01",
+   "title": "Behördliche Frist zum Schließen der GitLab- und Cisco-Firewall-Lücken",
+   "detail": "Die amerikanische Cybersicherheitsbehörde verlangt von den Bundesbehörden bis zu diesem Tag die Behebung von CVE-2026-97229 in GitLab und CVE-2026-76418 in Cisco-Firewalls; Unternehmen können die Frist als Maßstab für eigene Updates nehmen.",
+   "scope": "global",
+   "url": "https://thehackernews.com/2026/10/cisa-adds-actively-exploited-gitlab-rce.html",
+   "primary": false,
+   "checked": true,
+   "dossier": "kritische-schwachstellen-perimeter",
+   "added": "2026-11-01"
+  },
+  {
    "date": "2026-11-10",
    "title": "Windows 11 Version 23H2 Enterprise und Education: letztes Sicherheitsupdate",
    "detail": "Unternehmen mit Geräten auf Windows 11 Version 23H2 in den Ausgaben Enterprise, Education und IoT Enterprise müssen vorher auf eine unterstützte Version wie 25H2 wechseln.",
@@ -1009,10 +1021,10 @@
  "signals": [
   {
    "theme": "Digital Fairness Act",
-   "why": "Die Kommission will den Vorschlag gegen manipulative Oberflächengestaltung, Abofallen und unfaire Personalisierung voraussichtlich im November vorlegen. Die Bundesregierung wirbt dagegen dafür, bestehendes Verbraucherrecht zu ändern. Für den Onlinehandel betrifft das Bestellstrecken, Kündigungswege und Personalisierung.",
-   "count": 18,
+   "why": "Laut einer Analyse des Europäischen Parlaments wird der Vorschlag Mitte November erwartet. Im Fokus stehen Kündigungswege bei Abonnements, personalisierte Preise und manipulative Gestaltung, was Onlineshops und Kundenprogramme direkt betrifft.",
+   "count": 19,
    "first_seen": "2026-09-30",
-   "last_seen": "2026-10-30",
+   "last_seen": "2026-11-01",
    "evidence": [
     "https://eprs.europarl.europa.eu/contents/publications/EPRS/2026/10/EPRS_BRI(2026)791529.html",
     "https://www.europarl.europa.eu/legislative-train/theme-protecting-our-democracy-upholding-our-values/file-digital-fairness-act",
@@ -1076,6 +1088,16 @@
    ]
   },
   {
+   "theme": "Prüfungsleitfaden für Werkzeuge mit Künstlicher Intelligenz",
+   "why": "Der internationale Standardsetzer für Abschlussprüfungen wollte am 28. Oktober einen ersten Leitfaden zum Qualitätsmanagement beim Einsatz von Prüfwerkzeugen mit Künstlicher Intelligenz verabschieden, die Veröffentlichung wird im November erwartet. Der Leitfaden prägt, wie Abschlussprüfer Künstliche Intelligenz einsetzen und dokumentieren.",
+   "count": 4,
+   "first_seen": "2026-10-21",
+   "last_seen": "2026-11-01",
+   "evidence": [
+    "https://www.iaasb.org/news-events/2026-10/iaasb-enews-october-2026"
+   ]
+  },
+  {
    "theme": "Cloud-Souveränität und Cloud and AI Development Act",
    "why": "Der gemeinsame Berichtsentwurf im Europäischen Parlament ist für den 1. Dezember 2026 geplant, die Abstimmung für Mitte März 2027. Die Souveränitätsstufen könnten künftig Anforderungen an Cloud-Beschaffung und Ausstiegsstrategien prägen.",
    "count": 4,
@@ -1099,16 +1121,6 @@
     "https://www.bundestag.de/dokumente/textarchiv/2026/kw42-pa-digitales-identitaeten-1224678",
     "https://www.bundestag.de/dokumente/textarchiv/2026/kw42-de-digitale-identitaeten-gesetz-1223586",
     "https://www.heise.de/news/EUDI-Wallet-Anhoerung-mit-viel-Kritik-an-d-you-Planung-11477850.html"
-   ]
-  },
-  {
-   "theme": "Prüfungsleitfaden für Werkzeuge mit Künstlicher Intelligenz",
-   "why": "Das internationale Gremium für Prüfungsstandards will im November 2026 einen ersten Leitfaden veröffentlichen, wie Prüfungsgesellschaften Werkzeuge mit Künstlicher Intelligenz im Qualitätsmanagement steuern; ein zweiter Teil folgt. Das verändert, wie Abschlussprüfer Daten aus den Systemen der Mandanten verarbeiten und welche Nachweise sie verlangen.",
-   "count": 3,
-   "first_seen": "2026-10-21",
-   "last_seen": "2026-10-31",
-   "evidence": [
-    "https://www.iaasb.org/news-events/2026-10/iaasb-enews-october-2026"
    ]
   },
   {
@@ -1263,6 +1275,106 @@
  ],
  "news": [
   {
+   "title": "Update: Amadeus – Cathay Pacific meldet 53.000 betroffene Buchungen",
+   "summary": "Cathay Pacific bestätigt, dass über die Systeme des Buchungsdienstleisters Amadeus Daten zu rund 53.000 Buchungen aus der Zeit von August 2023 bis September 2026 eingesehen wurden. Der Angreifer nutzte die Zugangsdaten eines Systemkontos. Amadeus informierte die Fluggesellschaft am 28. Oktober 2026; Zahlungsdaten sind nach bisherigen Erkenntnissen nicht betroffen.",
+   "relevance": "Neu ist: Ein einzelnes Systemkonto war offenbar rund drei Jahre lang der Zugang, und die Kunden des Dienstleisters wurden nacheinander informiert, Japan Airlines schon am 23. Oktober, Cathay erst am 28. Oktober. Touristikunternehmen sollten prüfen, ob ihre Verträge mit Buchungsplattformen Meldefristen, die Überwachung von Dienstkonten und Prüfrechte belastbar regeln.",
+   "source": "Aviation A2Z",
+   "url": "https://aviationa2z.com/index.php/2026/10/31/cathay-pacific-confirms-data-breach-affecting-53000-bookings-passenger-details-exposed/",
+   "id": "2026-11-01-amadeus-cathay-pacific",
+   "topic": "Handel & Branche",
+   "impact": "mittel",
+   "published": "2026-10-31",
+   "tags": [
+    "Touristik",
+    "Amadeus",
+    "Dienstkonten"
+   ],
+   "controls": [
+    "DSGVO Art. 33 – Meldung von Verletzungen des Schutzes personenbezogener Daten",
+    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen",
+    "ISO/IEC 27001 Anhang A 5.18 – Zugangsrechte"
+   ],
+   "roles": [
+    "Einkauf & Drittparteien",
+    "Datenschutz"
+   ],
+   "countries": [],
+   "dossier": "drittparteien-lieferkette",
+   "priority": 4,
+   "primary": false,
+   "added": "2026-11-01T06:08:43Z",
+   "check": {
+    "verdict": "ok",
+    "note": "53.000 Buchungen, Zeitraum August 2023 bis September 2026, Zugangsdaten eines Systemkontos, Benachrichtigung am 28. Oktober und keine Hinweise auf Zahlungsdaten sind belegt. Die Quelle nennt kein Datum, an dem Japan Airlines informiert wurde."
+   }
+  },
+  {
+   "title": "Onlinehandel: Lücke in Drupal Commerce wird aktiv ausgenutzt",
+   "summary": "Das Drupal-Projekt meldet, dass die Lücke CVE-2026-118539 im Shop-Modul Commerce Core aktiv ausgenutzt wird. Bestimmte Routen und Datenfelder sind nicht ausreichend geschützt; laut Hinweis kann das finanzielle Folgen für Händler haben. Betroffen sind die Versionsreihen 2.x und 3.x, Updates stehen bereit, zu den Angriffen gibt es keine Details.",
+   "relevance": "Nach Magento und Adobe Commerce ist innerhalb einer Woche das nächste Shopsystem betroffen. Ein Konzern mit vielen Marken- und Länder-Shops muss prüfen, ob das Inventar auch kleinere Shops, Aktionsseiten und Installationen bei Agenturen erfasst.",
+   "source": "The Hacker News",
+   "url": "https://thehackernews.com/2026/10/hackers-actively-exploit-highly.html",
+   "id": "2026-11-01-drupal-commerce-ausgenutzt",
+   "topic": "Handel & Branche",
+   "impact": "hoch",
+   "published": "2026-10-30",
+   "tags": [
+    "E-Commerce",
+    "Drupal",
+    "Schwachstelle"
+   ],
+   "controls": [
+    "PCI DSS Anforderung 6.3.3 – zeitnahe Installation kritischer Sicherheitsupdates",
+    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Einkauf & Drittparteien"
+   ],
+   "countries": [],
+   "dossier": "kritische-schwachstellen-perimeter",
+   "priority": 2,
+   "primary": false,
+   "added": "2026-11-01T06:08:43Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum, Lückennummer, betroffene Versionsreihen, die ungeschützten Routen und Datenfelder, der Hinweis auf finanzielle Folgen und das Fehlen von Angriffsdetails stimmen mit der Quelle überein."
+   }
+  },
+  {
+   "title": "WordPress: Fast 63.000 Angriffsversuche auf neue Lücke in 24 Stunden",
+   "summary": "Kurz nach dem Update auf Version 7.1.4 vom 28. Oktober 2026 versuchen Angreifer massenhaft, eine Lücke zur Codeausführung im WordPress-Kern auszunutzen. Der Sicherheitsanbieter Wordfence blockierte 62.969 Versuche in 24 Stunden. Betroffen sind die Versionen 4.7 bis 7.1.3.",
+   "relevance": "Marketing-Seiten, Kampagnen und Länderauftritte betreiben oft Agenturen, nicht die zentrale Informationstechnik. Wer diese Webseiten nicht vollständig kennt, kann weder Fristen für Sicherheitsupdates durchsetzen noch Verantwortliche benennen.",
+   "source": "The Hacker News",
+   "url": "https://thehackernews.com/2026/10/wordpress-rce-flaw-draws-nearly-63000.html",
+   "id": "2026-11-01-wordpress-angriffswelle",
+   "topic": "IT-Governance & Risiko",
+   "impact": "mittel",
+   "published": "2026-10-30",
+   "tags": [
+    "WordPress",
+    "Webseiten",
+    "Agenturen"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 5.9 – Inventar der Informationen und anderen zugehörigen Werte",
+    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Einkauf & Drittparteien"
+   ],
+   "countries": [],
+   "dossier": "kritische-schwachstellen-perimeter",
+   "priority": 3,
+   "primary": false,
+   "added": "2026-11-01T06:08:43Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Version 7.1.4 vom 28. Oktober, 62.969 blockierte Angriffe in 24 Stunden durch Wordfence und die Versionen 4.7 bis 7.1.3 sind belegt."
+   }
+  },
+  {
    "title": "Linux: Kritische Lücke im Netzwerkstack seit 2015, Updates noch nicht überall verfügbar",
    "summary": "Die Lücke CVE-2026-98432 hat den Schweregrad 9,8. Sie steckt in der Verarbeitung des Internetprotokolls Version 4 im Linux-Kernel und kann dazu führen, dass Angreifer aus dem Netz Code ausführen. Betroffen sind alle Kernel seit Version 4.4 von 2015 und damit fast alle großen Distributionen. Behoben ist der Fehler in den Kernel-Versionen 6.12.113, 6.18.56 und 7.2.10. Erste Distributionen haben Updates veröffentlicht, andere arbeiten noch daran. Anthropic hat die Lücke mit Künstlicher Intelligenz gefunden; den einzigen bekannten Angriffscode hat das Unternehmen bisher nicht veröffentlicht.",
    "relevance": "Nahezu jede Server-Landschaft ist betroffen, von Webshops über Logistiksysteme bis zu Appliances. Entscheidend sind ein vollständiges Inventar der Linux-Systeme und geplante Neustartfenster, denn der neue Kernel wirkt erst nach einem Neustart.",
@@ -1397,6 +1509,39 @@
    }
   },
   {
+   "title": "Update: PHP2Shell – Angriffe auf Verwaltungszugänge von Palo-Alto-Firewalls",
+   "summary": "Palo Alto Networks meldet, dass die Lücken CVE-2026-109618 und CVE-2026-109619 in der Skriptsprache PHP gegen aus dem Internet erreichbare Verwaltungsoberflächen des Firewall-Betriebssystems PAN-OS ausgenutzt werden. Seit 30. Oktober 2026 gibt es Updates für alle betroffenen Versionszweige. Laut Sicherheitsforschern wurden 25 Server übernommen, indem die Angreifer die PHP-Lücken mit der Linux-Lücke Fragnesia kombinierten.",
+   "relevance": "Neu gegenüber dem bisherigen Stand: PHP2Shell trifft nicht nur Webanwendungen, sondern auch PHP-Komponenten, die in Sicherheitsgeräten eingebaut sind. Die Bestandsaufnahme muss deshalb auch solche Geräte erfassen, und Verwaltungszugänge gehören grundsätzlich nicht ins Internet.",
+   "source": "The Hacker News",
+   "url": "https://thehackernews.com/2026/10/attackers-exploit-php2shell-flaws-in.html",
+   "id": "2026-11-01-php2shell-palo-alto-verwaltung",
+   "topic": "IT-Governance & Risiko",
+   "impact": "hoch",
+   "published": "2026-10-29",
+   "tags": [
+    "PHP2Shell",
+    "Firewall",
+    "Verwaltungszugang"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Umgang mit Schwachstellen",
+    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
+    "ISO/IEC 27001 Anhang A 8.20 – Netzwerksicherheit"
+   ],
+   "roles": [
+    "IT-Risiko"
+   ],
+   "countries": [],
+   "dossier": "kritische-schwachstellen-perimeter",
+   "priority": 1,
+   "primary": false,
+   "added": "2026-11-01T06:08:43Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Datum, Lückennummern, Updatestand und die 25 Server stimmen. Laut Quelle haben die Angreifer die PHP-Lücken mit Fragnesia kombiniert, um die 25 Server zu übernehmen. Dass Fragnesia nur „teils“ beteiligt war, steht so nicht in der Quelle. Die Forscher nennen den Firewall-Hersteller der übernommenen…"
+   }
+  },
+  {
    "title": "Schadsoftware KeyDrift kopiert Schlüssel aus Ciscos Weitverkehrsnetzen",
    "summary": "Cisco Talos berichtet über die Schadsoftware KeyDrift. Angreifer haben sie über die Lücke CVE-2026-20127 mit Schweregrad 10 in Ciscos softwaredefinierten Weitverkehrsnetzen eingeschleust. Sie kopiert die Schlüssel, mit denen der Verkehr zwischen Standorten verschlüsselt wird, und dient als Hintertür. Betroffen sind eigene Installationen wie auch die von Cisco gehosteten Cloud-Umgebungen. Eine Übergangslösung gibt es nicht. Ob Schlüssel abgeflossen sind, kann Talos nicht sagen. Die Infrastruktur der Angreifer überschneidet sich deutlich mit einem Netz, das der staatsnahen Gruppe Volt Typhoon zugeordnet wird.",
    "relevance": "Solche Netze binden typischerweise Filialen, Lager und Rechenzentren an. Ein Update allein entfernt eine vorhandene Hintertür nicht zwingend. IT-Risiko sollte deshalb eine Prüfung auf Kompromittierung verlangen und klären, ob die Schlüssel neu ausgerollt werden müssen.",
@@ -1523,6 +1668,41 @@
    "check": {
     "verdict": "ok",
     "note": "Veröffentlicht am 29. Oktober 2026. Die Quelle bestätigt die Kennung CVE-2026-46300, die Verkettung mit PHP2Shell bis zu Root-Rechten, die Kernel vor dem 13. Mai 2026 und den öffentlichen Angriffscode. Laut Dream Security wurden 25 Server in den Vereinigten Staaten, Japan, Taiwan und Südkorea…"
+   }
+  },
+  {
+   "title": "Ausgaben für Informationssicherheit steigen, Budgetanteil bleibt unter dem Richtwert",
+   "summary": "Nach Daten des Marktforschers IDC steigen die Ausgaben für Informationssicherheit in Deutschland 2026 um 11,7 Prozent auf 14,3 Milliarden Euro, für 2027 werden 15,8 Milliarden Euro erwartet. Unternehmen geben im Schnitt unverändert 18 Prozent ihres Budgets für Informationstechnik für Sicherheit aus. Bitkom und das Bundesamt für Sicherheit in der Informationstechnik empfehlen 20 Prozent.",
+   "relevance": "Der Richtwert ist eine Vergleichsgröße für Budgetgespräche mit Vorstand und Aufsichtsgremien, die nach der NIS-2-Richtlinie Risikomanagementmaßnahmen billigen und überwachen müssen. Über die Wirksamkeit sagt der Anteil allein wenig. Überzeugender ist es, das Budget mit Risikokennzahlen zu verknüpfen.",
+   "source": "Bitkom",
+   "url": "https://www.bitkom.org/Presse/Presseinformation/IT-Sicherheit-Deutscher-Markt-waechst-zweistellig",
+   "id": "2026-11-01-bitkom-sicherheitsbudgets",
+   "topic": "IT-Governance & Risiko",
+   "impact": "info",
+   "published": "2026-10-28",
+   "tags": [
+    "Budget",
+    "Leitungsverantwortung",
+    "Kennzahlen"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 20 – Governance und Verantwortung der Leitungsorgane",
+    "ISO/IEC 27001 Abschnitt 7.1 – Ressourcen"
+   ],
+   "roles": [
+    "Management",
+    "IT-Risiko"
+   ],
+   "countries": [
+    "DE"
+   ],
+   "dossier": null,
+   "priority": 5,
+   "primary": false,
+   "added": "2026-11-01T06:08:43Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Die Zahlen nach IDC (plus 11,7 Prozent, 14,3 und 15,8 Milliarden Euro, 18 Prozent Anteil) und die Empfehlung von 20 Prozent durch Bitkom und das Bundesamt für Sicherheit in der Informationstechnik stimmen. Datum 28. Oktober 2026 stimmt."
    }
   },
   {
@@ -8400,6 +8580,35 @@
   }
  ],
  "monthly": [
+  {
+   "month": "2026-10",
+   "headline": "Cyberangriffe treffen den Lebensmittelhandel im laufenden Betrieb: Angreifer haben Kühlmöbel in rund 700 französischen Supermärkten aufgeheizt, und ein Vorfall hat die Verteilzentren von Albert Heijn lahmgelegt; damit werden Betriebstechnik und Logistik zur obersten Priorität.",
+   "act_now": [
+    "Kühl- und Gebäudesteuerungen vom Internet trennen: Das Bundesamt für Sicherheit in der Informationstechnik fordert das ausdrücklich, mindestens 4.500 Danfoss-Schnittstellen sind weiter offen erreichbar, und Versicherer könnten Leistungen wegen grober Fahrlässigkeit kürzen.",
+    "Randsysteme sofort aktualisieren: Für PHP2Shell gibt es seit 30. Oktober 2026 Updates für Palo-Alto-Firewalls, die behördliche Frist für die GitLab- und Cisco-Lücken endet am 1. November 2026, dazu kommen ausgenutzte Lücken bei Citrix NetScaler, Fortinet, BeyondTrust und Oracle E-Business Suite.",
+    "Altsysteme ablösen oder abschotten: Exchange Server 2016 und 2019 haben am 31. Oktober 2026 die letzten Updates erhalten, Windows 11 Version 23H2 folgt am 10. November 2026, Windows Server 2016 am 12. Januar 2027.",
+    "Zugänge von Dienstleistern und Dienstkonten prüfen: Im Fall Amadeus melden laufend weitere Fluggesellschaften Betroffene, und ConnectWise, LiteLLM sowie Staples zeigen, dass gekaperte Werkzeuge und Sitzungsdaten direkt in Kundenumgebungen führen.",
+    "Regulatorische Nachweise sichern: Unter NIS-2 muss die Registrierung in Österreich bis Jahresende abgeschlossen sein, in Italien werden seit 31. Oktober 2026 belegbare Maßnahmen geprüft; nach der Verordnung über Künstliche Intelligenz endet der Übergang für die Kennzeichnung synthetischer Inhalte…"
+   ],
+   "moved": [
+    "Cloud-Souveränität von „beobachten“ nach „vorbereiten“: Amazon Web Services wollte seine europäische souveräne Cloud trennen, die deutschen Nachrichtendienste setzen auf eine abgeschottete Google-Cloud, und der Wettbewerber Schwarz Digits geht eine Partnerschaft mit Fujitsu ein.",
+    "Post-Quanten-Kryptografie von „beobachten“ nach „vorbereiten“: Laut der Leitlinie von Bund und Bundesamt vom 12. Oktober 2026 müssen Hochrisiko-Anwendungen bis spätestens Ende 2030 umgestellt sein."
+   ],
+   "new": [
+    "Automatisierte Entscheidungen: 824,99 Millionen Euro gegen Uber (noch nicht rechtskräftig), und der Bundesgerichtshof stuft einen Score als automatisierte Entscheidung ein, wenn ein Dritter sich maßgeblich darauf stützt; das ist relevant für Personaleinsatz und Bonitätsprüfung.",
+    "Erste harmonisierte Norm EN 18286 zur Verordnung über Künstliche Intelligenz: Sie ist seit 19. Oktober 2026 im Amtsblatt und begründet eine Konformitätsvermutung für das Qualitätsmanagement.",
+    "Digital Omnibus: Der Rat hat am 21. Oktober 2026 sein Mandat beschlossen, unter anderem leichtere Abweisung unbegründeter Auskunftsanfragen und Meldung von Datenschutzverletzungen nur bei hohem Risiko; das Parlament folgt bis Februar.",
+    "Agenten als neues Risiko: Eine präparierte Datei im Download-Ordner reicht aus, um Coding-Agenten zu kapern, und Hersteller sehen keinen Patch-Bedarf; erste Prüfungen mit Verhaltenstests für Agenten sind verfügbar.",
+    "Signal Cyberversicherung: Policen schließen zunehmend Künstliche Intelligenz und Kriegsereignisse aus, das betrifft die Deckung bei Angriffen auf Betriebstechnik."
+   ],
+   "outlook": [
+    "10. November 2026: Letztes Sicherheitsupdate für Windows 11 Version 23H2 in den Unternehmensausgaben, außerdem veröffentlicht Fortinet Details zu den außerplanmäßig geschlossenen Firewall-Lücken.",
+    "13. November 2026: Die Konsultation zur Bußgeld-Methodik des Europäischen Datenschutzausschusses endet; am 25. November sollen die ersten Normen der Reihe EN 40000 zum Cyber Resilience Act erscheinen.",
+    "Ausstehende Ergebnisse aus der Trennung der souveränen Cloud von Amazon Web Services als Maßstab für die eigene Cloud-Strategie.",
+    "E-Rechnung: Am 31. Dezember 2026 endet die Nichtbeanstandung, ab 1. Januar 2027 gilt die Ausstellungspflicht für Unternehmen mit mehr als 800.000 Euro Vorjahresumsatz, und das Finanzministerium hat die Regeln kurzfristig ergänzt."
+   ],
+   "created": "2026-11-01"
+  },
   {
    "month": "2026-09",
    "headline": "Seit 1. Oktober 2026 gilt das österreichische Netz- und Informationssystemsicherheitsgesetz 2026 zur NIS-2-Umsetzung ohne Übergangsfrist: Die Meldepflicht greift ab dem ersten Tag, und zugleich häufen sich Vorfälle über Dienstleister.",
