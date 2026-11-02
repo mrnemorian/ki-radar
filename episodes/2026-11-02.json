@@ -1,0 +1,185 @@
+{
+ "format": "tag",
+ "chapters": [
+  {
+   "title": "Begrüßung",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Guten Morgen, liebe IT-GRC-Kolleginnen und -Kollegen, und willkommen beim IT-GRC Radar. Heute ist Montag, der zweite November 2026."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Montag nach einem Oktober, den manche schon den schwarzen Oktober nennen. Ich habe den Kaffee heute extra stark gemacht."
+    }
+   ]
+  },
+  {
+   "title": "Die Woche",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Dann fangen wir sanft an. In den kommenden sieben Tagen steht auf unserer Fristenliste tatsächlich nichts Hartes an."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Das klingt verdächtig nach Ruhe vor dem Sturm."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Genau. Unsere Frist der Woche liegt knapp dahinter: Am zehnten November bekommt Windows 11 in der Version 23H2 für Unternehmen das letzte Sicherheitsupdate. Am selben Tag will Fortinet Details zu den außerplanmäßig geschlossenen Lücken veröffentlichen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Wenn Fortinet Details nennt, lesen die Angreifer mit. Diese Woche ist also die Woche zum Aufräumen, nicht die danach."
+    }
+   ]
+  },
+  {
+   "title": "Ivanti ohne Spuren",
+   "news_id": "2026-11-02-ivanti-connect-secure-kette",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Wichtigste Meldung: Bei Ivanti Connect Secure, also Fernzugangsgeräten, nutzen Angreifer seit Anfang Oktober eine Kette aus drei Lücken. Die letzten beiden hat Ivanti am 29. Oktober geschlossen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Das Besondere: keine [en]Backdoor[/en], keine [en]Web Shell[/en]. Die Angreifer haben für jeden einzelnen Befehl die ganze Kette neu ausgeführt."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Moment, heißt das, ein sauberer Scan beweist gar nichts?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ehrlich gesagt, ja. Laut Volexity ging es um gespeicherte Domänen-Zugangsdaten, Wiederherstellungsschlüssel und manipulierte Protokolle. Wer betroffen sein könnte, sollte diese Zugangsdaten als kompromittiert behandeln."
+    }
+   ]
+  },
+  {
+   "title": "Produkthaftung für Software",
+   "news_id": "2026-11-02-produkthaftung-software-ki",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Zweites Thema, juristisch, aber mit Datum: Am neunten Dezember 2026 tritt das neue Produkthaftungsrecht im Wesentlichen in Kraft."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und es hat Zähne. Software gilt ausdrücklich als Produkt, auch Künstliche Intelligenz. Gehaftet wird auch für zerstörte Daten, und fehlende Sicherheitsupdates können einen Fehler begründen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Betrifft das Händler überhaupt?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Unter Umständen schon, denn auch Importeure, bestimmte Dienstleister und Plattformen können haften. Wer Eigenmarken mit Software verkauft, sollte das zusammen mit dem Cyber Resilience Act denken. Und bitte nicht nur in der Rechtsabteilung."
+    }
+   ]
+  },
+  {
+   "title": "VMware ESX ohne Protokoll",
+   "news_id": "2026-11-02-vmware-esx-protokollierungsluecke",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Da gibt es Neues zu den aktiv ausgenutzten Lücken: In VMware ESX steckt eine Lücke mit einem Schweregrad von nur 2,7."
+    },
+    {
+     "speaker": "Florian",
+     "text": "2,7. Die wäre in jeder Excel-Priorisierung ganz unten gelandet."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Genau die hat laut CrowdStrike die Gruppe Warp Panda als [en]Zero Day[/en] genutzt. Wer Administratorrechte hat, kann Aktionen ausführen, die nicht protokolliert werden. Die amerikanische Behörde setzt den elften November als Frist."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Für die allgemeinen Kontrollen der Informationstechnik ist das heikel, denn das Protokoll ist oft genau der Prüfungsnachweis. Ein niedriger [en]Score[/en] heißt eben nicht unwichtig."
+    }
+   ]
+  },
+  {
+   "title": "Kühltruhen beim Pentagon",
+   "news_id": "2026-11-02-update-kuehlsteuerungen-pentagon",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Da gibt es Neues zu den Kühlsteuerungen. Laut Reuters prüft das Pentagon Ausfälle von Gefriertruhen in mindestens sechs Supermärkten auf Militärstützpunkten als mutmaßlichen Cyberangriff und tauscht sich mit Frankreich aus."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Eine offizielle Zuordnung gibt es nicht. Aber es wird ein Muster daraus, und Kühlsteuerungen mit Fernwartung gehören damit ins Risikoregister, nicht nur in die Haustechnik."
+    }
+   ]
+  },
+  {
+   "title": "Passwort in der App",
+   "news_id": "2026-11-02-applebees-passwort-in-app",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "In der Android-App der Restaurantkette Applebee's stand ein Datenbank-Passwort im Code. Namen, Geburtsdaten und Telefonnummern waren abrufbar, das Bonusprogramm hatte mindestens 8,5 Millionen Mitglieder."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und der Forscher fand keinen Meldeweg und musste über die Presse gehen. Wer keine Anlaufstelle für Sicherheitsmeldungen hat, erfährt von seinen Lücken eben aus der Zeitung."
+    }
+   ]
+  },
+  {
+   "title": "Amadeus und Malaysia Airlines",
+   "news_id": "2026-11-02-update-amadeus-malaysia-airlines",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Kurz noch zu Amadeus: Jetzt warnt auch Malaysia Airlines ihre Kunden, betroffen sein können Daten von August 2023 bis September 2026."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Zahlen gibt es keine. Für Reiseveranstalter bleibt die Frage, welche Daten dort liegen und wie schnell man davon erfährt."
+    }
+   ]
+  },
+  {
+   "title": "Auf dem Radar",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Und was hast du auf dem Radar?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Agenten mit Kundenzugangsdaten. Laut Axios melden sich Agenten Künstlicher Intelligenz mit den Zugangsdaten von Kunden bei amerikanischen Banken an, und die Banken können sie kaum von Menschen unterscheiden. Das kommt früher oder später auch bei Onlineshops an."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Dann brauchen wir bald ein Berechtigungskonzept für die Agenten unserer Kunden."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und vor allem jemanden, der sich dafür als [en]Owner[/en] fühlt."
+    }
+   ]
+  },
+  {
+   "title": "Abschied",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Das war das IT-GRC Radar für heute. Alle Quellen findet ihr wie immer auf der Webseite."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Kommt gut in die Woche, und schaut nach euren Fernzugängen."
+    }
+   ]
+  }
+ ]
+}

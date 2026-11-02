@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01T06:08:43Z",
+ "updated": "2026-11-02T06:08:35Z",
  "topics": [
   "IT-Governance & Risiko",
   "Cyber- & IT-Regulierung",
@@ -11,6 +11,18 @@
   "Weitere Themen"
  ],
  "briefings": [
+  {
+   "date": "2026-11-02",
+   "headline": "Ivanti-Angriffskette ohne Spuren, Produkthaftung für Software ab 9. Dezember und eine Protokollierungslücke in VMware ESX, die Prüfer betrifft.",
+   "points": [
+    "Ivanti Connect Secure: Kette aus drei Lücken wird seit Anfang Oktober ausgenutzt, ohne Hintertür und mit Diebstahl von Domänen-Zugangsdaten; Updates seit 29. Oktober.",
+    "Neues Produkthaftungsrecht ab 9. Dezember 2026: Software und Künstliche Intelligenz gelten als Produkt, fehlende Sicherheitsupdates werden haftungsrelevant.",
+    "VMware ESX: Lücke mit Schweregrad 2,7 als Zero Day genutzt, Administratoraktionen bleiben unprotokolliert; Behördenfrist 11. November.",
+    "Kühlsteuerungen: Auch das Pentagon untersucht manipulierte Gefriertruhen in Supermärkten auf Militärstützpunkten und tauscht sich mit Frankreich aus.",
+    "Applebee's mit Datenbank-Passwort in der App, Amadeus-Fall erreicht Malaysia Airlines."
+   ],
+   "count": 6
+  },
   {
    "date": "2026-11-01",
    "headline": "Angriffe auf Firewall-Verwaltungen und Shopsysteme, der Amadeus-Fall wächst, und die Sicherheitsbudgets liegen weiter unter dem Richtwert",
@@ -356,18 +368,6 @@
     "Moritz Hennemann ist neuer Bundesbeauftragter für den Datenschutz, Schwerpunkte folgen am 6. Oktober."
    ],
    "count": 5
-  },
-  {
-   "date": "2026-10-01",
-   "headline": "Österreichs Cybersicherheitsgesetz gilt ab heute, und eine Befragung zeigt große Lücken bei der Lieferkette. Dazu Lehren aus Angriffen über Netzwerktechnik und Sicherheitsprodukte.",
-   "points": [
-    "Österreich: Das Netz- und Informationssystemsicherheitsgesetz 2026 gilt seit heute ohne Übergangsfrist. Laut KPMG Austria wissen 24 Prozent der Unternehmen nicht, ob sie betroffen sind.",
-    "Cisco Catalyst SD-WAN Manager: Kritische Lücke bei der Anmeldung wird aktiv ausgenutzt. Es gibt keinen Workaround, nur Updates und eine Prüfung auf Kompromittierung.",
-    "Bitget: 387,5 Millionen US-Dollar Schaden nach Zero Days in Sicherheitsprodukten von Drittanbietern, die Angreifer waren fast vier Wochen unbemerkt im Netz.",
-    "Über 543.000 noch gültige Zugangsdaten liegen offen auf GitHub, im Mittel 784 Tage lang.",
-    "Institut der Wirtschaftsprüfer: Fachbeitrag fragt, ob Prüfer Mandantendaten zum Training Künstlicher Intelligenz nutzen dürfen."
-   ],
-   "count": 5
   }
  ],
  "dossiers": [
@@ -383,18 +383,17 @@
    "title": "Betriebstechnik in Filialen und Logistik",
    "sector": "Handel & Branche",
    "ring": "jetzt handeln",
-   "status": "Forescout zählt weltweit 12.976 offen erreichbare Dienste von Kühl- und Überwachungssystemen in 99 Ländern und verweist darauf, dass Hersteller Fernwartung über das Internet als Option vorsehen. Seit Januar gab es mehr als 20 vermutete Angriffe prorussischer Hacktivisten auf Kühlsysteme; nach dem Fall der rund 700 französischen Supermärkte rechnet die Versicherungswirtschaft mit…",
-   "next_step": "Fernwartungszugänge zur Kühl- und Gebäudetechnik inventarisieren, direkten Internetzugang sperren und mit den Wartungsdienstleistern vertraglich persönliche Konten, Mehr-Faktor-Anmeldung und Sitzungsprotokolle vereinbaren.",
+   "status": "Nach rund 700 betroffenen Supermärkten in Frankreich und 12.976 offen erreichbaren Diensten von Kühl- und Überwachungssystemen weltweit untersucht nun auch das Pentagon manipulierte Gefriertruhen in mindestens sechs Supermärkten auf Militärstützpunkten und tauscht sich mit Frankreich aus. Eine Zuordnung gibt es nicht, ein Bericht nennt unbestätigt Iran; die Versicherungswirtschaft diskutiert…",
+   "next_step": "Bestand an vernetzter Kühl- und Gebäudetechnik samt Fernwartungszugängen erheben, Internetanbindung abbauen und Notfallabläufe für Ausfälle der Kühlkette mit Filialen und Logistik üben.",
    "open_questions": [
-    "Welche Fernwartungswege nutzen die Wartungsdienstleister tatsächlich?",
-    "Wie bewerten Cyberversicherer offen erreichbare Betriebstechnik bei der nächsten Vertragsverlängerung?"
+    "Wer ist für Kühlsteuerungen und deren Fernwartung verantwortlich – Haustechnik, Informationstechnik oder Dienstleister?",
+    "Welche Nachweise verlangen Cyberversicherer künftig für Betriebstechnik?"
    ],
    "controls": [
     "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
-    "ISO/IEC 27001 Anhang A 5.20 – Behandlung von Informationssicherheit in Lieferantenvereinbarungen",
     "ISO/IEC 27001 Anhang A 8.20 – Netzwerksicherheit"
    ],
-   "updated": "2026-10-31"
+   "updated": "2026-11-02"
   },
   {
    "slug": "drittparteien-lieferkette",
@@ -408,18 +407,18 @@
    "title": "Drittparteien- und Lieferkettenrisiko",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Im Fall Amadeus melden immer mehr Fluggesellschaften Betroffene, zuletzt Cathay Pacific mit rund 53.000 Buchungen. Einstieg war ein Systemkonto, der Zugriff reicht bis August 2023 zurück. ConnectWise, LiteLLM und die manipulierte Claude-Code-Erweiterung zeigen außerdem, dass auch Werkzeuge und Dienstkonten zur Lieferkette gehören.",
-   "next_step": "Bei kritischen Plattformdienstleistern Meldefristen, die Überwachung von Dienstkonten und Nachweise zur Zugriffsprotokollierung in Verträgen und Lieferantenbewertung prüfen.",
+   "status": "Im Fall Amadeus melden weiter Fluggesellschaften Betroffene, zuletzt Malaysia Airlines für Daten aus August 2023 bis September 2026, nach Cathay Pacific mit rund 53.000 Buchungen; eine Gesamtzahl fehlt. ConnectWise, LiteLLM und die manipulierte Claude-Code-Erweiterung zeigen, dass auch Werkzeuge und Dienstkonten zur Lieferkette gehören.",
+   "next_step": "Für kritische Plattformanbieter in Touristik und Handel festhalten, welche Kundendaten dort liegen, und Meldefristen sowie Auskunftsrechte bei Vorfällen vertraglich prüfen.",
    "open_questions": [
-    "Wie schnell müssen Buchungsplattformen ihre Kunden über Vorfälle informieren?",
-    "Wer überwacht Dienstkonten von Dienstleistern mit Zugriff auf Kundendaten?"
+    "Wie schnell erfährt man von Vorfällen bei Plattformanbietern, die viele Kunden gleichzeitig bedienen?",
+    "Reichen Dienstleisterberichte, um lange unentdeckte Zugriffe wie bei Amadeus zu erkennen?"
    ],
    "controls": [
     "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
     "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen",
     "DSGVO Art. 28 – Auftragsverarbeiter"
    ],
-   "updated": "2026-11-01"
+   "updated": "2026-11-02"
   },
   {
    "slug": "identitaeten-zugangsdaten",
@@ -456,18 +455,18 @@
    "title": "Kritische Schwachstellen in Randsystemen und Kernanwendungen",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "PHP2Shell wird inzwischen auch gegen Verwaltungsoberflächen von Palo-Alto-Firewalls ausgenutzt, Updates für alle Versionszweige gibt es seit 30. Oktober 2026. Dazu kommen eine aktiv ausgenutzte Lücke in Drupal Commerce und massenhafte Angriffsversuche auf WordPress, neben den laufenden Fällen Oracle E-Business Suite, GitLab, Cisco und der Linux-Netzwerklücke.",
-   "next_step": "Das Inventar um Sicherheitsgeräte mit eingebauten Komponenten, Shops bei Agenturen und Marketing-Webseiten ergänzen, Verwaltungszugänge aus dem Internet entfernen und Nachweise für die Behebung aktiv ausgenutzter Lücken einfordern.",
+   "status": "Bei Ivanti Connect Secure läuft seit Anfang Oktober eine Angriffskette ohne Hintertür, Updates gibt es seit 29. Oktober; in VMware ESX wurde eine Lücke, die Administratoraktionen unprotokolliert lässt, als Zero Day genutzt, die Behördenfrist endet am 11. November. Daneben laufen PHP2Shell, Drupal Commerce, WordPress, GitLab, Cisco und Oracle E-Business Suite weiter.",
+   "next_step": "Fernzugangsgeräte und Hypervisoren aktualisieren, Zugangsdaten auf exponierten Randsystemen rotieren und belegen, dass aktiv ausgenutzte Lücken unabhängig vom Schweregrad vorrangig behandelt werden.",
    "open_questions": [
-    "Welche Sicherheitsgeräte enthalten PHP-Komponenten, ohne dass das im Inventar steht?",
-    "Gelten die internen Fristen für Sicherheitsupdates auch für Webseiten, die Agenturen betreiben?"
+    "Werden Protokolle von Randsystemen und Hypervisoren manipulationssicher außerhalb der Geräte gespeichert?",
+    "Reicht dauerhaftes Patchen bei Fernzugangsgeräten, oder braucht es eine Austauschstrategie?"
    ],
    "controls": [
     "NIS-2-Richtlinie Art. 21 – Umgang mit Schwachstellen",
     "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
-    "PCI DSS Anforderung 6.3.3 – zeitnahe Installation kritischer Sicherheitsupdates"
+    "ISO/IEC 27001 Anhang A 8.15 – Protokollierung"
    ],
-   "updated": "2026-11-01"
+   "updated": "2026-11-02"
   },
   {
    "slug": "lebenszyklus-altsysteme",
@@ -607,17 +606,17 @@
    "title": "Cyber Resilience Act",
    "sector": "Cyber- & IT-Regulierung",
    "ring": "vorbereiten",
-   "status": "Seit dem 11. September 2026 gelten Meldepflichten für Hersteller, der Bundestag hat das Durchführungsgesetz am 15. Oktober 2026 beschlossen. Die Agentur der Europäischen Union für Cybersicherheit hat am 22. Oktober einen Leitfaden zu Software-Stücklisten veröffentlicht, die ersten Normen der Reihe EN 40000 sollen am 25. November erscheinen. Die strengeren Herstellerpflichten gelten ab Dezember…",
-   "next_step": "Klären, wo der Konzern selbst als Hersteller oder Importeur auftritt, zum Beispiel bei Eigenmarken mit digitalen Elementen. Bei Lieferanten Software-Stücklisten und Schwachstellenprozesse anfragen.",
+   "status": "Seit dem 11. September 2026 gelten Meldepflichten für Hersteller, der Bundestag hat das Durchführungsgesetz beschlossen, und die ersten Normen der Reihe EN 40000 sollen am 25. November erscheinen. Ab 9. Dezember 2026 gilt zudem das neue Produkthaftungsrecht, das Software als Produkt erfasst und fehlende Sicherheitsupdates haftungsrelevant macht; Verstöße gegen den Cyber Resilience Act können…",
+   "next_step": "Ermitteln, bei welchen Eigenmarken, Importen und Plattformangeboten ein Handelskonzern Herstellerpflichten oder Haftung tragen kann, und Sicherheitsupdates sowie Schwachstellenmeldungen vertraglich bei Lieferanten verankern.",
    "open_questions": [
-    "Welche Eigenmarken oder selbst entwickelten Produkte fallen unter die Herstellerpflichten?",
-    "Wie fließen Software-Stücklisten von Lieferanten in das eigene Schwachstellenmanagement ein?"
+    "Wann gilt ein Händler bei Eigenmarken mit Software als Hersteller?",
+    "Wie werden Haftungsrisiken aus fehlenden Updates gegenüber Lieferanten abgesichert?"
    ],
    "controls": [
-    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
-    "ISO/IEC 27001 Anhang A 5.21 – Informationssicherheit in der Lieferkette der Informations- und Kommunikationstechnik"
+    "Cyber Resilience Act – Sicherheitsupdates und Schwachstellenbehandlung",
+    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen"
    ],
-   "updated": "2026-10-30"
+   "updated": "2026-11-02"
   },
   {
    "slug": "post-quanten-kryptografie",
@@ -831,6 +830,17 @@
    "added": "2026-10-23"
   },
   {
+   "date": "2026-11-11",
+   "title": "VMware ESX: behördliche Frist zum Schließen der Protokollierungslücke",
+   "detail": "Die amerikanische Cybersicherheitsbehörde verlangt von Bundesbehörden die Behebung von CVE-2026-41709; Betreiber von VMware ESX sollten die Frist als Maßstab nehmen und das Update vom Juli einspielen.",
+   "scope": "global",
+   "url": "https://cybelangel.com/blog/cve-2026-41709-what-the-vmware-esx-logging-zero-day-means-for-your-business/",
+   "primary": false,
+   "checked": true,
+   "dossier": "kritische-schwachstellen-perimeter",
+   "added": "2026-11-02"
+  },
+  {
    "date": "2026-11-13",
    "title": "Ende der Konsultation zur Bußgeld-Methodik des Europäischen Datenschutzausschusses",
    "detail": "Verantwortliche können bis dahin zu den Leitlinien Stellung nehmen, nach denen Bußgelder nach der Datenschutz-Grundverordnung künftig einheitlich bemessen werden sollen.",
@@ -862,6 +872,17 @@
    "checked": true,
    "dossier": null,
    "added": "2026-10-14"
+  },
+  {
+   "date": "2026-12-09",
+   "title": "Neues Produkthaftungsrecht tritt in Kraft",
+   "detail": "Hersteller, Importeure, Bevollmächtigte, bestimmte Dienstleister und Plattformen haften künftig auch für fehlerhafte Software, Systeme Künstlicher Intelligenz und Datenverluste; Rollen und Lieferantenverträge sollten bis dahin geprüft sein.",
+   "scope": "DE",
+   "url": "https://www.datenschutzticker.de/2026/10/bundestag-reformiert-produkthaftung-cybersicherheit-im-fokus/",
+   "primary": false,
+   "checked": true,
+   "dossier": "cyber-resilience-act",
+   "added": "2026-11-02"
   },
   {
    "date": "2026-12-15",
@@ -1062,6 +1083,32 @@
    ]
   },
   {
+   "theme": "Cloud-Souveränität und Cloud and AI Development Act",
+   "why": "Laut einem vorläufigen Zeitplan will der federführende Industrieausschuss des Europäischen Parlaments seinen Berichtsentwurf am 1. Dezember vorlegen und Mitte März abstimmen. Damit werden Souveränitätsstufen für Cloud-Dienste 2027 konkreter, mit Folgen für Cloud-Strategie und Einkauf.",
+   "count": 5,
+   "first_seen": "2026-09-30",
+   "last_seen": "2026-11-02",
+   "evidence": [
+    "https://www.mlex.com/mlex/articles/2535003",
+    "https://www.mlex.com/mlex/articles/2535003/eu-lawmakers-to-present-report-on-eu-s-cloud-and-ai-development-act-in-december",
+    "https://www.mlex.com/mlex/technology/articles/2535003",
+    "https://www.eesc.europa.eu/en/our-work/opinions-information-reports/opinions/cloud-and-ai-development-act",
+    "https://www.datenschutzticker.de/2026/09/cada-europas-cloud-und-ki-infrastruktur-im-fokus/"
+   ]
+  },
+  {
+   "theme": "Digitale Identitäts-Wallet der Europäischen Union",
+   "why": "Der Bundestag hat am 15. Oktober 2026 das Gesetz für die europäische digitale Identitäts-Wallet beschlossen. Für Händler und Reiseanbieter werden Altersnachweise, Identifizierung und Kundenanmeldung über die Wallet absehbar ein Thema für Prozesse und Datenschutz.",
+   "count": 5,
+   "first_seen": "2026-10-08",
+   "last_seen": "2026-11-02",
+   "evidence": [
+    "https://www.bundestag.de/dokumente/textarchiv/2026/kw42-de-digitale-identitaeten-gesetz-1223586",
+    "https://www.bundestag.de/dokumente/textarchiv/2026/kw42-pa-digitales-identitaeten-1224678",
+    "https://www.heise.de/news/EUDI-Wallet-Anhoerung-mit-viel-Kritik-an-d-you-Planung-11477850.html"
+   ]
+  },
+  {
    "theme": "Normen zum Cyber Resilience Act",
    "why": "Die Grundlagennormen EN 40000-1-1 und EN 40000-1-2 zur Cyberresilienz von Produkten mit digitalen Elementen wurden im Oktober 2026 von den Mitgliedern der europäischen Normungsorganisation CENELEC angenommen, Veröffentlichung geplant am 25. November 2026. Sie werden zur Messlatte für Sicherheitsanforderungen beim Einkauf vernetzter Produkte und Software.",
    "count": 5,
@@ -1095,32 +1142,6 @@
    "last_seen": "2026-11-01",
    "evidence": [
     "https://www.iaasb.org/news-events/2026-10/iaasb-enews-october-2026"
-   ]
-  },
-  {
-   "theme": "Cloud-Souveränität und Cloud and AI Development Act",
-   "why": "Der gemeinsame Berichtsentwurf im Europäischen Parlament ist für den 1. Dezember 2026 geplant, die Abstimmung für Mitte März 2027. Die Souveränitätsstufen könnten künftig Anforderungen an Cloud-Beschaffung und Ausstiegsstrategien prägen.",
-   "count": 4,
-   "first_seen": "2026-09-30",
-   "last_seen": "2026-10-26",
-   "evidence": [
-    "https://www.mlex.com/mlex/articles/2535003/eu-lawmakers-to-present-report-on-eu-s-cloud-and-ai-development-act-in-december",
-    "https://www.mlex.com/mlex/technology/articles/2535003",
-    "https://www.eesc.europa.eu/en/our-work/opinions-information-reports/opinions/cloud-and-ai-development-act",
-    "https://www.datenschutzticker.de/2026/09/cada-europas-cloud-und-ki-infrastruktur-im-fokus/",
-    "https://netzpolitik.org/2026/cloud-and-ai-development-act-eu-kommission-greift-bei-us-cloud-anbietern-kaum-durch/"
-   ]
-  },
-  {
-   "theme": "Digitale Identitäts-Wallet der Europäischen Union",
-   "why": "Das deutsche Gesetz für digitale Identitäten ist beschlossen, die Wallet soll am 2. Januar 2027 starten. Für Unternehmen bleibt die Annahme freiwillig, Identifizierungsprozesse im Onlinehandel und in der Touristik könnten sie aber nutzen.",
-   "count": 4,
-   "first_seen": "2026-10-08",
-   "last_seen": "2026-10-23",
-   "evidence": [
-    "https://www.bundestag.de/dokumente/textarchiv/2026/kw42-pa-digitales-identitaeten-1224678",
-    "https://www.bundestag.de/dokumente/textarchiv/2026/kw42-de-digitale-identitaeten-gesetz-1223586",
-    "https://www.heise.de/news/EUDI-Wallet-Anhoerung-mit-viel-Kritik-an-d-you-Planung-11477850.html"
    ]
   },
   {
@@ -1190,6 +1211,16 @@
    "evidence": [
     "https://www.techuk.org/insights/news/dispatch-from-brussels-updates-on-eu-tech-policy-09-10",
     "https://www.politico.eu/article/eu-lawmakers-ai-apocalypse-warnings-brussels-scrambles-ai-rules-gaps/"
+   ]
+  },
+  {
+   "theme": "Agenten mit Kundenzugangsdaten",
+   "why": "Laut Axios melden sich ungeprüfte Agenten Künstlicher Intelligenz mit Zugangsdaten von Kunden bei amerikanischen Banken an, die sie kaum von Menschen unterscheiden können und zunehmend auf Lesezugriff beschränken. Dasselbe Muster dürfte Kundenkonten in Onlineshops, Lieferdiensten und Reiseportalen erreichen und Fragen zu Haftung, Betrugserkennung und Nutzungsbedingungen aufwerfen.",
+   "count": 1,
+   "first_seen": "2026-11-02",
+   "last_seen": "2026-11-02",
+   "evidence": [
+    "https://axios.com/2026/10/22/ai-agents-banks-unauthorized-accounts-access"
    ]
   },
   {
@@ -1275,6 +1306,39 @@
  ],
  "news": [
   {
+   "title": "Update: Amadeus – auch Malaysia Airlines warnt ihre Kunden",
+   "summary": "Malaysia Airlines hat am 1. November mitgeteilt, dass beim Vorfall im Buchungssystem von Amadeus Kundendaten betroffen sein können, die zwischen August 2023 und September 2026 verarbeitet wurden. Angaben zur Zahl der Betroffenen, zu den Datenarten und zum Zeitpunkt der Entdeckung machte die Fluggesellschaft nicht.",
+   "relevance": "Neu: Mit Malaysia Airlines meldet eine weitere Fluggesellschaft Betroffenheit, eine Gesamtzahl nennt Amadeus weiterhin nicht. Reiseveranstalter sollten klären, welche Kundendaten über solche Plattformen laufen und wie Vorfallsmeldungen des Anbieters vertraglich geregelt sind.",
+   "source": "Malay Mail",
+   "url": "https://www.malaymail.com/news/malaysia/2026/11/01/malaysia-airlines-warns-customers-of-data-exposure-in-amadeus-cybersecurity-breach/241516",
+   "id": "2026-11-02-update-amadeus-malaysia-airlines",
+   "topic": "Handel & Branche",
+   "impact": "info",
+   "published": "2026-11-01",
+   "tags": [
+    "Touristik",
+    "Drittanbieter",
+    "Datenabfluss"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
+    "DSGVO Art. 28 – Auftragsverarbeiter"
+   ],
+   "roles": [
+    "Einkauf & Drittparteien",
+    "Datenschutz"
+   ],
+   "countries": [],
+   "dossier": "drittparteien-lieferkette",
+   "priority": 6,
+   "primary": false,
+   "added": "2026-11-02T06:08:35Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum 1. November, Zeitraum August 2023 bis September 2026 und die fehlenden Angaben sind belegt."
+   }
+  },
+  {
    "title": "Update: Amadeus – Cathay Pacific meldet 53.000 betroffene Buchungen",
    "summary": "Cathay Pacific bestätigt, dass über die Systeme des Buchungsdienstleisters Amadeus Daten zu rund 53.000 Buchungen aus der Zeit von August 2023 bis September 2026 eingesehen wurden. Der Angreifer nutzte die Zugangsdaten eines Systemkontos. Amadeus informierte die Fluggesellschaft am 28. Oktober 2026; Zahlungsdaten sind nach bisherigen Erkenntnissen nicht betroffen.",
    "relevance": "Neu ist: Ein einzelnes Systemkonto war offenbar rund drei Jahre lang der Zugang, und die Kunden des Dienstleisters wurden nacheinander informiert, Japan Airlines schon am 23. Oktober, Cathay erst am 28. Oktober. Touristikunternehmen sollten prüfen, ob ihre Verträge mit Buchungsplattformen Meldefristen, die Überwachung von Dienstkonten und Prüfrechte belastbar regeln.",
@@ -1306,6 +1370,77 @@
    "check": {
     "verdict": "ok",
     "note": "53.000 Buchungen, Zeitraum August 2023 bis September 2026, Zugangsdaten eines Systemkontos, Benachrichtigung am 28. Oktober und keine Hinweise auf Zahlungsdaten sind belegt. Die Quelle nennt kein Datum, an dem Japan Airlines informiert wurde."
+   }
+  },
+  {
+   "title": "Neues Produkthaftungsrecht ab 9. Dezember: Software und Künstliche Intelligenz sind Produkte",
+   "summary": "Der Bundestag hat am 8. Oktober 2026 die Reform des Produkthaftungsrechts zur Umsetzung der Richtlinie 2024/2853 der Europäischen Union beschlossen, sie tritt im Wesentlichen am 9. Dezember 2026 in Kraft. Software einschließlich Systemen Künstlicher Intelligenz gilt ausdrücklich als Produkt, ersatzfähig ist auch die Zerstörung oder Beschädigung von Daten, Cybersicherheitsanforderungen zählen ausdrücklich zur geschuldeten Sicherheit, und fehlende notwendige Sicherheitsupdates können einen Fehler begründen. Neben Herstellern können unter Umständen Importeure, Bevollmächtigte, bestimmte Dienstleister und Online-Plattformen haften, Gerichte können die Offenlegung von Beweismitteln anordnen.",
+   "relevance": "Für Handelskonzerne mit Eigenmarken, Onlinehandel und vernetzten Produkten im Sortiment wird die Cybersicherheit von Produkten zur Haftungsfrage. Sinnvoll ist eine Bestandsaufnahme, in welchen Rollen man als Hersteller, Importeur oder Plattform auftreten kann, abgestimmt mit der Vorbereitung auf den Cyber Resilience Act.",
+   "source": "datenschutzticker.de",
+   "url": "https://www.datenschutzticker.de/2026/10/bundestag-reformiert-produkthaftung-cybersicherheit-im-fokus/",
+   "id": "2026-11-02-produkthaftung-software-ki",
+   "topic": "Cyber- & IT-Regulierung",
+   "impact": "hoch",
+   "published": "2026-10-30",
+   "tags": [
+    "Produkthaftung",
+    "Software",
+    "Haftung"
+   ],
+   "controls": [
+    "Cyber Resilience Act – Sicherheitsupdates und Schwachstellenbehandlung",
+    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen"
+   ],
+   "roles": [
+    "Management",
+    "Einkauf & Drittparteien",
+    "IT-Risiko"
+   ],
+   "countries": [
+    "DE"
+   ],
+   "dossier": "cyber-resilience-act",
+   "priority": 2,
+   "primary": false,
+   "added": "2026-11-02T06:08:35Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum 30. Oktober, Beschluss am 8. Oktober, Inkrafttreten im Wesentlichen am 9. Dezember 2026 sowie alle inhaltlichen Punkte sind belegt."
+   }
+  },
+  {
+   "title": "Applebee's: Datenbank-Passwort in der App machte Kundendaten abrufbar",
+   "summary": "In der Android-App der amerikanischen Restaurantkette Applebee's stand ein Datenbank-Passwort im Code, über das Namen, E-Mail-Adressen, Geburtsdaten, Telefonnummern und Netzadressen der letzten Anmeldungen von Kunden abrufbar und laut dem Forscher auch veränderbar waren. Das Bonusprogramm hatte im Vorjahr mindestens 8,5 Millionen Mitglieder; der Forscher fand das Passwort mit Hilfe Künstlicher Intelligenz und erreichte das Unternehmen mangels Meldeweg nur über die Presse. Applebee's hat die Lücke am 29. Oktober geschlossen und nach eigenen Angaben bislang keine Hinweise auf unbefugten Zugriff gefunden.",
+   "relevance": "Kunden-Apps und Bonusprogramme verarbeiten im Handel massenhaft personenbezogene Daten. Prüfenswert sind eine automatisierte Suche nach Geheimnissen im Code vor jeder Veröffentlichung und ein erreichbarer Meldeweg für Sicherheitsforscher, wie ihn der Cyber Resilience Act von Herstellern verlangt.",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/10/30/applebees-exposed-customers-personal-data-after-leaving-database-password-in-app/",
+   "id": "2026-11-02-applebees-passwort-in-app",
+   "topic": "Handel & Branche",
+   "impact": "mittel",
+   "published": "2026-10-30",
+   "tags": [
+    "Kunden-App",
+    "Geheimnisse im Code",
+    "Meldeweg"
+   ],
+   "controls": [
+    "DSGVO Art. 32 – Sicherheit der Verarbeitung",
+    "ISO/IEC 27001 Anhang A 8.28 – Sichere Codierung"
+   ],
+   "roles": [
+    "Datenschutz",
+    "IT-Risiko"
+   ],
+   "countries": [
+    "US"
+   ],
+   "dossier": "identitaeten-zugangsdaten",
+   "priority": 5,
+   "primary": false,
+   "added": "2026-11-02T06:08:35Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datenarten, Veränderbarkeit, 8,5 Millionen Mitglieder im Jahr 2025, Hilfe durch Künstliche Intelligenz, fehlender Meldeweg und Stellungnahme sind belegt. Die Quelle nennt für die Behebung den Donnerstag vor der Veröffentlichung, das ist der 29. Oktober."
    }
   },
   {
@@ -1506,6 +1641,76 @@
    "check": {
     "verdict": "ok",
     "note": "Die Quelle bestätigt die Position des Parlaments bis Februar, den anschließenden Trilog und die Einigung im Rat am 21. Oktober. Auch die gestrichenen maschinenlesbaren Signale, das gestrichene Widerspruchsrecht gegen KI-Training, das leichtere Abweisen unbegründeter Auskunftsanfragen, die erneute…"
+   }
+  },
+  {
+   "title": "Ivanti Connect Secure: Angriffskette ohne Hintertür, neue Updates seit 29. Oktober",
+   "summary": "Seit mindestens Anfang Oktober nutzen Angreifer eine Kette aus drei Lücken in Ivantis Fernzugangslösung Connect Secure: Umgehung der Anmeldung, Codeausführung und Rechteausweitung auf Root. Ivanti hat die beiden letzten Lücken (CVE-2026-111357 und CVE-2026-118527) am 29. Oktober geschlossen. Laut Volexity installierten die Angreifer keine Hintertür, sondern führten die Kette für jeden Befehl neu aus, stahlen auf dem Gerät gespeicherte Domänen-Zugangsdaten, suchten nach Wiederherstellungsschlüsseln und manipulierten Protokolle.",
+   "relevance": "Fernzugänge bleiben das wichtigste Einfallstor, und weil kein Implantat zurückbleibt, reicht die übliche Suche nach Indikatoren nicht. Betreiber sollten aktualisieren, Zugangsdaten auf den Geräten als kompromittiert behandeln und Protokolle außerhalb des Geräts sichern.",
+   "source": "The Stack",
+   "url": "https://www.thestack.technology/ivanti-patches-two-more-cves-amid-highly-unusual-connect-secure-exploitation/",
+   "id": "2026-11-02-ivanti-connect-secure-kette",
+   "topic": "IT-Governance & Risiko",
+   "impact": "hoch",
+   "published": "2026-10-29",
+   "tags": [
+    "Fernzugang",
+    "Zero Day",
+    "Zugangsdaten"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Umgang mit Schwachstellen",
+    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
+    "ISO/IEC 27001 Anhang A 8.15 – Protokollierung"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Management"
+   ],
+   "countries": [],
+   "dossier": "kritische-schwachstellen-perimeter",
+   "priority": 1,
+   "primary": false,
+   "added": "2026-11-02T06:08:35Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Datum, Patchtermin und Erkenntnisse von Volexity stimmen. Dass die amerikanische Cybersicherheitsbehörde die Lücken am 30. Oktober als aktiv ausgenutzt gelistet hat, steht nicht in der Quelle und ist auch per Suche nicht belegt. Die Quelle selbst nennt die erste Nummer im Text CVE-2026-11357 und…"
+   }
+  },
+  {
+   "title": "Update: Kühlsteuerungen – Pentagon prüft Ausfälle von Gefriertruhen als Cyberangriff",
+   "summary": "Laut Reuters behandelt das amerikanische Verteidigungsministerium Ausfälle von Gefriertruhen in mindestens sechs Supermärkten auf Militärstützpunkten von Ende August als mutmaßlichen Cyberangriff; in Fort Huachuca schaltete eine Truhe in den Abtaumodus und erwärmte die Ware. Die Ermittler stehen in Kontakt mit französischen Behörden, wo im Oktober Kühlmöbel in Supermärkten manipuliert wurden. Eine offizielle Zuordnung gibt es nicht.",
+   "relevance": "Neu gegenüber dem bisherigen Stand: Angriffe auf Kühltechnik im Lebensmittelhandel werden auch in den Vereinigten Staaten und mit möglichem staatlichem Hintergrund untersucht, es entsteht ein länderübergreifendes Muster. Kühlsteuerungen und Fernwartungszugänge gehören damit ins Risikoregister und in die Notfallplanung, nicht nur in die Haustechnik.",
+   "source": "Reuters über CP24",
+   "url": "https://www.cp24.com/news/world/2026/10/29/pentagon-treating-military-base-freezer-malfunctions-as-suspected-cyberattack-officials-say/",
+   "id": "2026-11-02-update-kuehlsteuerungen-pentagon",
+   "topic": "Handel & Branche",
+   "impact": "mittel",
+   "published": "2026-10-29",
+   "tags": [
+    "Betriebstechnik",
+    "Kühlung",
+    "Lebensmittelhandel"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Aufrechterhaltung des Betriebs und Krisenmanagement",
+    "ISO/IEC 27001 Anhang A 8.20 – Netzwerksicherheit"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Management"
+   ],
+   "countries": [
+    "US",
+    "FR"
+   ],
+   "dossier": "betriebstechnik-filialen-logistik",
+   "priority": 4,
+   "primary": false,
+   "added": "2026-11-02T06:08:35Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Die Angabe, Nextgov berichte unter Berufung auf anonyme Quellen von einem Verdacht gegen Iran, steht nicht in der Quelle. Alles andere ist belegt."
    }
   },
   {
@@ -6999,6 +7204,40 @@
    "check": {
     "verdict": "ok",
     "note": "Der Newsletter des Instituts vom 1. Oktober 2026 nennt die Ausgabe 19/2026 mit dem Beitrag von Sabine Samtleben zur berufsrechtlichen Zulässigkeit, Mandantendaten zum Training von KI-Systemen zu nutzen."
+   }
+  },
+  {
+   "title": "VMware ESX: Lücke mit Schweregrad 2,7 als Zero Day genutzt, Aktionen ohne Protokoll",
+   "summary": "Die amerikanische Cybersicherheitsbehörde hat am 28. Oktober 2026 die Lücke CVE-2026-41709 in VMware ESX als aktiv ausgenutzt gelistet, Bundesbehörden müssen sie bis 11. November beheben. Wer bereits Administratorrechte hat, kann bestimmte Aktionen auf dem Hypervisor ausführen, ohne dass sie protokolliert werden; laut CrowdStrike nutzte die China zugeordnete Gruppe Warp Panda das als Zero Day, unter anderem gegen Kanzleien in den Vereinigten Staaten. Broadcom hatte die Korrektur bereits am 29. Juli 2026 veröffentlicht.",
+   "relevance": "Protokolle sind für allgemeine IT-Kontrollen und die forensische Aufarbeitung der zentrale Nachweis; eine Lücke, die Administratoraktionen unsichtbar macht, untergräbt genau diese Kontrolle. Außerdem zeigt der Fall, dass eine Priorisierung nur nach Schweregrad zu kurz greift und aktive Ausnutzung Vorrang haben muss.",
+   "source": "SecurityWeek",
+   "url": "https://securityweek.com/chinese-hackers-quietly-used-low-severity-esxi-logging-flaw-as-zero-day",
+   "id": "2026-11-02-vmware-esx-protokollierungsluecke",
+   "topic": "Prüfung & Assurance",
+   "impact": "mittel",
+   "published": "2026-10",
+   "tags": [
+    "Protokollierung",
+    "Virtualisierung",
+    "Priorisierung"
+   ],
+   "controls": [
+    "IT-Kontrollen der Abschlussprüfung – Protokollierung und Überwachung privilegierter Zugriffe",
+    "ISO/IEC 27001 Anhang A 8.15 – Protokollierung",
+    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen"
+   ],
+   "roles": [
+    "Revision & Prüfung",
+    "IT-Risiko"
+   ],
+   "countries": [],
+   "dossier": "kritische-schwachstellen-perimeter",
+   "priority": 3,
+   "primary": false,
+   "added": "2026-11-02T06:08:35Z",
+   "check": {
+    "verdict": "ok",
+    "note": "SecurityWeek blockiert den Abruf. Über The Hacker News vom 29. Oktober und weitere Quellen bestätigt: Schweregrad 2,7, Aufnahme in den Katalog am 28. Oktober, Frist 11. November, Warp Panda laut CrowdStrike, Ziele im amerikanischen Rechtssektor, Herstellerhinweis vom 29. Juli 2026. Das genaue…"
    }
   },
   {
