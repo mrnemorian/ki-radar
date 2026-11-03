@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-02T06:08:35Z",
+ "updated": "2026-11-03T06:08:27Z",
  "topics": [
   "IT-Governance & Risiko",
   "Cyber- & IT-Regulierung",
@@ -11,6 +11,18 @@
   "Weitere Themen"
  ],
  "briefings": [
+  {
+   "date": "2026-11-03",
+   "headline": "Angriffe auf Kühlanlagen erreichen neun Länder, kritische Lücken in WS_FTP, Condor im Fall Amadeus betroffen",
+   "points": [
+    "Zweite Angriffswelle auf Kühlsteuerungen in Supermärkten in mindestens neun Ländern der Europäischen Union, darunter Italien. Der zuständige Kommissar spricht von einem gezielten Angriff auf die Lebensmittelversorgung.",
+    "Progress WS_FTP Server hat 15 Lücken. Die schwerste hat die Höchstwertung 10 und erlaubt den Diebstahl von Administratorzugangsdaten ohne Anmeldung.",
+    "Amadeus: Auch die deutsche Fluggesellschaft Condor ist betroffen, ANA meldet bis zu 37.800 Fluggäste.",
+    "Generalanwältin am Gerichtshof der Europäischen Union: Eine automatische Ablehnung von Rechnungs- oder Ratenkauf kann eine verbotene automatisierte Entscheidung sein.",
+    "Notebooksbilliger nennt Details, auch Pÿur meldet einen Datenabfluss. Ein gemeinsamer Eintrag in der robots.txt soll das Training Künstlicher Intelligenz stoppen."
+   ],
+   "count": 6
+  },
   {
    "date": "2026-11-02",
    "headline": "Ivanti-Angriffskette ohne Spuren, Produkthaftung für Software ab 9. Dezember und eine Protokollierungslücke in VMware ESX, die Prüfer betrifft.",
@@ -356,18 +368,6 @@
     "PCI Security Standards Council veröffentlicht Version 2.0 des Standards für sicheren Software-Lebenszyklus, mit Anforderungen zu Künstlicher Intelligenz."
    ],
    "count": 7
-  },
-  {
-   "date": "2026-10-02",
-   "headline": "Kritische FortiMail-Lücke ohne Patch, Flink-Einbruch über alte Zugangsdaten: Angreifer brechen nicht mehr ein, sie melden sich an.",
-   "points": [
-    "Fortinet FortiMail: Kritische Zero-Day-Lücke wird ausgenutzt, für die meisten Versionen noch kein Update – Verwaltungsoberflächen abschotten.",
-    "Update Flink: Zugangsdaten einer ehemals beschäftigten Person als Einfallstor, rund eine Million Kunden und 13.000 Beschäftigte betroffen.",
-    "Microsoft-Lagebericht 2026: Ransomware-Fälle in Deutschland fast vervierfacht, Ausnutzung von Lücken in weniger als 24 Stunden.",
-    "Ransomware-Gruppe KillSec zerschlagen, über 110 Terabyte Daten sichergestellt.",
-    "Moritz Hennemann ist neuer Bundesbeauftragter für den Datenschutz, Schwerpunkte folgen am 6. Oktober."
-   ],
-   "count": 5
   }
  ],
  "dossiers": [
@@ -383,17 +383,19 @@
    "title": "Betriebstechnik in Filialen und Logistik",
    "sector": "Handel & Branche",
    "ring": "jetzt handeln",
-   "status": "Nach rund 700 betroffenen Supermärkten in Frankreich und 12.976 offen erreichbaren Diensten von Kühl- und Überwachungssystemen weltweit untersucht nun auch das Pentagon manipulierte Gefriertruhen in mindestens sechs Supermärkten auf Militärstützpunkten und tauscht sich mit Frankreich aus. Eine Zuordnung gibt es nicht, ein Bericht nennt unbestätigt Iran; die Versicherungswirtschaft diskutiert…",
-   "next_step": "Bestand an vernetzter Kühl- und Gebäudetechnik samt Fernwartungszugängen erheben, Internetanbindung abbauen und Notfallabläufe für Ausfälle der Kühlkette mit Filialen und Logistik üben.",
+   "status": "Nach rund 700 betroffenen Supermärkten in Frankreich im Oktober traf in der Nacht zum 2. November eine zweite Welle Supermärkte in mindestens neun Ländern der Europäischen Union, darunter Italien; betroffen waren unter anderem ältere Danfoss-Steuerungen. Der zuständige Kommissar wertet die Angriffe als gezielten Versuch, die Lebensmittelversorgung zu stören. Eine Zuordnung zu Tätern gibt es…",
+   "next_step": "In allen Landesgesellschaften fernwartbare Kühl-, Gebäude- und Logistiksteuerungen erfassen, direkte Internetzugänge schließen, Zugänge von Dienstleistern mit Mehr-Faktor-Anmeldung absichern und für Altgeräte ohne Updates einen Ersatzplan mit Verantwortlichen festlegen.",
    "open_questions": [
-    "Wer ist für Kühlsteuerungen und deren Fernwartung verantwortlich – Haustechnik, Informationstechnik oder Dienstleister?",
-    "Welche Nachweise verlangen Cyberversicherer künftig für Betriebstechnik?"
+    "Wer steckt hinter den Angriffen, und folgen weitere Länder?",
+    "Beziehen die Aufsichtsbehörden Kühlsteuerungen ausdrücklich in die Pflichten für Kritische Infrastrukturen ein?",
+    "Wie gehen Cyberversicherer mit bekannten, aber nicht ersetzten Altgeräten um?"
    ],
    "controls": [
-    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
-    "ISO/IEC 27001 Anhang A 8.20 – Netzwerksicherheit"
+    "NIS-2-Richtlinie Art. 21 – Risikomanagementmaßnahmen im Bereich der Cybersicherheit",
+    "ISO/IEC 27001 Anhang A 8.20 – Netzwerksicherheit",
+    "ISO/IEC 27001 Anhang A 5.21 – Informationssicherheit in der Lieferkette der Informations- und Kommunikationstechnik"
    ],
-   "updated": "2026-11-02"
+   "updated": "2026-11-03"
   },
   {
    "slug": "drittparteien-lieferkette",
@@ -407,18 +409,18 @@
    "title": "Drittparteien- und Lieferkettenrisiko",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Im Fall Amadeus melden weiter Fluggesellschaften Betroffene, zuletzt Malaysia Airlines für Daten aus August 2023 bis September 2026, nach Cathay Pacific mit rund 53.000 Buchungen; eine Gesamtzahl fehlt. ConnectWise, LiteLLM und die manipulierte Claude-Code-Erweiterung zeigen, dass auch Werkzeuge und Dienstkonten zur Lieferkette gehören.",
-   "next_step": "Für kritische Plattformanbieter in Touristik und Handel festhalten, welche Kundendaten dort liegen, und Meldefristen sowie Auskunftsrechte bei Vorfällen vertraglich prüfen.",
+   "status": "Im Fall Amadeus melden weiter Fluggesellschaften Betroffene. Nach Cathay Pacific, Japan Airlines, Korean Air und Malaysia Airlines nennt nun auch die deutsche Condor eigene Daten, ANA spricht von bis zu 37.800 Fluggästen; eine Gesamtzahl fehlt. ConnectWise, LiteLLM und die manipulierte Claude-Code-Erweiterung zeigen, dass auch Werkzeuge und Dienstkonten zur Lieferkette gehören.",
+   "next_step": "Bei Buchungs- und Vertriebsplattformen betroffene Zeiträume und Buchungen abfragen, Meldepflichten prüfen und Kundenkommunikation gegen Phishing mit echten Buchungsdaten vorbereiten.",
    "open_questions": [
-    "Wie schnell erfährt man von Vorfällen bei Plattformanbietern, die viele Kunden gleichzeitig bedienen?",
-    "Reichen Dienstleisterberichte, um lange unentdeckte Zugriffe wie bei Amadeus zu erkennen?"
+    "Wie viele Buchungen und Fluggesellschaften sind insgesamt betroffen?",
+    "Sind auch Reiseveranstalter und Reisebüros direkt betroffen?"
    ],
    "controls": [
-    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
     "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen",
+    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
     "DSGVO Art. 28 – Auftragsverarbeiter"
    ],
-   "updated": "2026-11-02"
+   "updated": "2026-11-03"
   },
   {
    "slug": "identitaeten-zugangsdaten",
@@ -455,18 +457,17 @@
    "title": "Kritische Schwachstellen in Randsystemen und Kernanwendungen",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Bei Ivanti Connect Secure läuft seit Anfang Oktober eine Angriffskette ohne Hintertür, Updates gibt es seit 29. Oktober; in VMware ESX wurde eine Lücke, die Administratoraktionen unprotokolliert lässt, als Zero Day genutzt, die Behördenfrist endet am 11. November. Daneben laufen PHP2Shell, Drupal Commerce, WordPress, GitLab, Cisco und Oracle E-Business Suite weiter.",
-   "next_step": "Fernzugangsgeräte und Hypervisoren aktualisieren, Zugangsdaten auf exponierten Randsystemen rotieren und belegen, dass aktiv ausgenutzte Lücken unabhängig vom Schweregrad vorrangig behandelt werden.",
+   "status": "Bei Ivanti Connect Secure, Drupal Commerce und Synology laufen weiter Angriffe; in VMware ESX endet die Behördenfrist für die als Zero Day genutzte Protokollierungslücke am 11. November. Neu sind 15 Lücken im Dateiübertragungsserver Progress WS_FTP, darunter eine mit der Höchstwertung 10, die ohne Anmeldung Administratorzugangsdaten preisgibt; Angriffe darauf sind noch nicht bekannt.",
+   "next_step": "WS_FTP-Installationen im eigenen Haus und bei Dienstleistern ermitteln und auf 2024.0.7 beziehungsweise 2025.0.4 aktualisieren; die Behördenfristen für ausgenutzte Lücken weiter nachhalten.",
    "open_questions": [
-    "Werden Protokolle von Randsystemen und Hypervisoren manipulationssicher außerhalb der Geräte gespeichert?",
-    "Reicht dauerhaftes Patchen bei Fernzugangsgeräten, oder braucht es eine Austauschstrategie?"
+    "Wird die WS_FTP-Lücke wie zuvor bei MOVEit in großem Stil ausgenutzt?",
+    "Welche Details nennt Fortinet am 10. November?"
    ],
    "controls": [
-    "NIS-2-Richtlinie Art. 21 – Umgang mit Schwachstellen",
     "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
-    "ISO/IEC 27001 Anhang A 8.15 – Protokollierung"
+    "NIS-2-Richtlinie Art. 21 – Umgang mit und Offenlegung von Schwachstellen"
    ],
-   "updated": "2026-11-02"
+   "updated": "2026-11-03"
   },
   {
    "slug": "lebenszyklus-altsysteme",
@@ -554,17 +555,17 @@
    "title": "Automatisierte Entscheidungen und algorithmisches Management",
    "sector": "Datenschutz & Datenrecht",
    "ring": "vorbereiten",
-   "status": "Die niederländische Datenschutzbehörde hat am 8. Oktober 2026 gegen Uber 824,99 Millionen Euro wegen automatischer Entscheidungen ohne menschliche Prüfung verhängt, noch nicht rechtskräftig. Am 21. Oktober 2026 entschied der Bundesgerichtshof, dass ein Score als automatisierte Entscheidung gelten kann, wenn die Entscheidung eines Dritten maßgeblich davon abhängt, und senkte die Beweislast für…",
-   "next_step": "Automatisierte Entscheidungen über Kunden und Beschäftigte inventarisieren, Anteil menschlicher Prüfung dokumentieren und Auskunftsprozesse zur Entscheidungslogik testen.",
+   "status": "Nach dem Bußgeld von 824,99 Millionen Euro gegen Uber und dem Urteil des Bundesgerichtshofs vom 21. Oktober 2026 zu Scores sieht nun auch eine Generalanwältin am Gerichtshof der Europäischen Union die automatische Ablehnung von Rechnungs- oder Ratenkauf als mögliche verbotene automatisierte Entscheidung. Die Ausnahme für die Vertragserfüllung soll eng gelten, die Beweislast trägt der Händler.",
+   "next_step": "Automatisierte Entscheidungen im Onlinehandel, in der Preisgestaltung und in der Personaleinsatzplanung erfassen und für jede Entscheidungslogik, Datengrundlage und menschliche Prüfschritte dokumentieren, auch bei Zahlungsdienstleistern.",
    "open_questions": [
-    "Wann ist eine menschliche Prüfung mehr als eine Formsache?",
-    "Wie weit reicht die Auskunft über Score-Logik gegenüber Geschäftsgeheimnissen?"
+    "Folgt der Gerichtshof den Schlussanträgen in der Rechtssache C-568/25?",
+    "Wie wirkt sich der Digital Omnibus auf das Verbot automatisierter Entscheidungen aus?"
    ],
    "controls": [
     "DSGVO Art. 22 – Automatisierte Entscheidungen im Einzelfall",
-    "DSGVO Art. 15 – Auskunftsrecht"
+    "DSGVO Art. 5 Abs. 2 – Rechenschaftspflicht"
    ],
-   "updated": "2026-10-27"
+   "updated": "2026-11-03"
   },
   {
    "slug": "cloud-souveraenitaet",
@@ -741,17 +742,6 @@
   }
  ],
  "deadlines": [
-  {
-   "date": "2026-10-19",
-   "title": "Patch-Frist der Behörde der Vereinigten Staaten für BeyondTrust Remote Support (CVE-2026-102764)",
-   "detail": "Bundesbehörden der Vereinigten Staaten müssen die aktiv ausgenutzte Lücke bis dahin schließen. Für Unternehmen mit BeyondTrust Remote Support ist das ein Richtwert für Patch und Prüfung auf Kompromittierung.",
-   "scope": "global",
-   "url": "https://hol.org/blog/cve-2026-102764-beyondtrust-remote-support-file-upload-kev",
-   "primary": false,
-   "checked": true,
-   "dossier": "kritische-schwachstellen-perimeter",
-   "added": "2026-10-17"
-  },
   {
    "date": "2026-10-30",
    "title": "Ende der Konsultation zu Leitlinien des Datenschutzausschusses zur Anonymisierung",
@@ -1042,10 +1032,10 @@
  "signals": [
   {
    "theme": "Digital Fairness Act",
-   "why": "Laut einer Analyse des Europäischen Parlaments wird der Vorschlag Mitte November erwartet. Im Fokus stehen Kündigungswege bei Abonnements, personalisierte Preise und manipulative Gestaltung, was Onlineshops und Kundenprogramme direkt betrifft.",
-   "count": 19,
+   "why": "Der Vorschlag der Europäischen Kommission gegen manipulative Gestaltung, Abofallen und problematische Personalisierung im Onlinehandel wird im vierten Quartal 2026 erwartet, laut Berichten Mitte November. Er wird Shop-Gestaltung, Einwilligungen und Kundenprofile betreffen.",
+   "count": 20,
    "first_seen": "2026-09-30",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-03",
    "evidence": [
     "https://eprs.europarl.europa.eu/contents/publications/EPRS/2026/10/EPRS_BRI(2026)791529.html",
     "https://www.europarl.europa.eu/legislative-train/theme-protecting-our-democracy-upholding-our-values/file-digital-fairness-act",
@@ -1069,6 +1059,20 @@
    ]
   },
   {
+   "theme": "Cloud-Souveränität und Cloud and AI Development Act",
+   "why": "Der zuständige Ausschuss des Europäischen Parlaments will seinen Berichtsentwurf am 1. Dezember vorlegen und Mitte März abstimmen. Die Souveränitätsstufen könnten künftig Einkauf und Cloud-Strategie großer Unternehmen prägen.",
+   "count": 6,
+   "first_seen": "2026-09-30",
+   "last_seen": "2026-11-03",
+   "evidence": [
+    "https://www.mlex.com/mlex/articles/2535003/eu-lawmakers-to-present-report-on-eu-s-cloud-and-ai-development-act-in-december",
+    "https://www.mlex.com/mlex/articles/2535003",
+    "https://www.mlex.com/mlex/technology/articles/2535003",
+    "https://www.eesc.europa.eu/en/our-work/opinions-information-reports/opinions/cloud-and-ai-development-act",
+    "https://www.datenschutzticker.de/2026/09/cada-europas-cloud-und-ki-infrastruktur-im-fokus/"
+   ]
+  },
+  {
    "theme": "Autonome Angriffe durch Agenten",
    "why": "Der britische Domain-Registrar 123-reg meldet einen Angriff auf Kundendaten, bei dem Künstliche Intelligenz geholfen haben soll, mit vermutetem Bezug nach China. Solche Fälle zeigen, dass Angreifer mit Agenten schneller und in größerem Umfang vorgehen können.",
    "count": 6,
@@ -1080,20 +1084,6 @@
     "https://www.kedglobal.com/banking-finance/newsView/ked202610040005",
     "https://www.securityweek.com/zammad-zero-days-exploited-in-ai-powered-divd-hack/",
     "https://www.bleepingcomputer.com/news/security/autonomous-ai-agents-tried-to-hack-us-canadian-government-websites/"
-   ]
-  },
-  {
-   "theme": "Cloud-Souveränität und Cloud and AI Development Act",
-   "why": "Laut einem vorläufigen Zeitplan will der federführende Industrieausschuss des Europäischen Parlaments seinen Berichtsentwurf am 1. Dezember vorlegen und Mitte März abstimmen. Damit werden Souveränitätsstufen für Cloud-Dienste 2027 konkreter, mit Folgen für Cloud-Strategie und Einkauf.",
-   "count": 5,
-   "first_seen": "2026-09-30",
-   "last_seen": "2026-11-02",
-   "evidence": [
-    "https://www.mlex.com/mlex/articles/2535003",
-    "https://www.mlex.com/mlex/articles/2535003/eu-lawmakers-to-present-report-on-eu-s-cloud-and-ai-development-act-in-december",
-    "https://www.mlex.com/mlex/technology/articles/2535003",
-    "https://www.eesc.europa.eu/en/our-work/opinions-information-reports/opinions/cloud-and-ai-development-act",
-    "https://www.datenschutzticker.de/2026/09/cada-europas-cloud-und-ki-infrastruktur-im-fokus/"
    ]
   },
   {
@@ -1305,6 +1295,185 @@
   }
  ],
  "news": [
+  {
+   "title": "Update: Kühlsteuerungen – zweite Angriffswelle trifft Supermärkte in neun Ländern",
+   "summary": "Anders als bei der ersten Welle in Frankreich im Oktober stiegen in der Nacht zum 2. November in Supermärkten in mindestens neun Ländern die Temperaturen von Kühl- und Tiefkühlgeräten stark an: in Belgien, Estland, Finnland, Irland, Italien, Luxemburg, den Niederlanden, Portugal und Schweden. Christophe Hansen, Kommissar für Landwirtschaft und Ernährung, nennt die Angriffe einen gezielten Versuch, die Lebensmittelversorgung zu stören. In Schweden waren externe Kühlsteuerungen von Danfoss betroffen, in Estland ältere Danfoss-Modelle. Bekannt hat sich bisher niemand.",
+   "relevance": "Erstmals ist mit Italien auch ein Land von REWE International betroffen, und die Europäische Kommission stuft die Angriffe als Angriff auf die Lebensmittelversorgung ein. Damit werden Kühlsteuerungen ein Thema für die Kritischen Infrastrukturen und die Aufsicht nach der Richtlinie über Netz- und Informationssicherheit (NIS-2-Richtlinie). Ein Inventar der fernwartbaren Kühl- und Gebäudetechnik, die Netztrennung, die Zugänge von Dienstleistern und ein Ersatzplan für Altgeräte ohne Updates gehören jetzt auf die Tagesordnung des Managements.",
+   "source": "New Straits Times (Agence France-Presse)",
+   "url": "https://www.nst.com.my/amp/business/corporate/2026/11/1569503/fridge-cyberattack-hits-supermarkets-across-europe",
+   "id": "2026-11-03-kuehlsteuerungen-zweite-welle",
+   "topic": "Handel & Branche",
+   "impact": "hoch",
+   "published": "2026-11-03",
+   "tags": [
+    "Betriebstechnik",
+    "Lebensmittelversorgung",
+    "Danfoss"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Risikomanagementmaßnahmen im Bereich der Cybersicherheit",
+    "ISO/IEC 27001 Anhang A 5.21 – Informationssicherheit in der Lieferkette der Informations- und Kommunikationstechnik",
+    "ISO/IEC 27001 Anhang A 8.20 – Netzwerksicherheit"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Management",
+    "Einkauf & Drittparteien"
+   ],
+   "countries": [
+    "EU",
+    "IT"
+   ],
+   "dossier": "betriebstechnik-filialen-logistik",
+   "priority": 1,
+   "primary": false,
+   "added": "2026-11-03T06:08:27Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum 3. November 2026 stimmt. Die Quelle bestätigt die neun Länder, das Zitat von Kommissar Hansen, die externe Danfoss-Kühlsteuerung in Schweden, ältere Danfoss-Modelle in Estland, die erste Welle in Frankreich am 12. Oktober und dass sich niemand bekannt hat. Laut Quelle stiegen die…"
+   }
+  },
+  {
+   "title": "Progress WS_FTP Server: 15 Lücken, Administratorzugangsdaten ohne Anmeldung abgreifbar",
+   "summary": "Progress hat Sicherheitshinweise zu 15 Schwachstellen im Dateiübertragungsserver WS_FTP veröffentlicht, sechs davon sind kritisch. Die schwerste, CVE-2026-84295 mit der Höchstwertung 10, erlaubt unter Windows ohne Anmeldung den Diebstahl sensibler Daten bis hin zu Administratorzugangsdaten. Sie ist in den Versionen 2024.0.6 und 2025.0.3 behoben, die übrigen Lücken in 2024.0.7 und 2025.0.4. Aktive Angriffe sind bisher nicht bekannt.",
+   "relevance": "Dateiübertragungsserver sind ein beliebtes Ziel, das hat die Angriffswelle auf MOVEit vom selben Hersteller gezeigt. Händler tauschen über solche Server häufig Daten mit Lieferanten, Banken und Logistikern aus. Deshalb sollte das Schwachstellenmanagement auch Server bei Dienstleistern einbeziehen.",
+   "source": "heise online",
+   "url": "https://www.heise.de/news/Sicherheitsluecken-in-Progress-WS-FTP-ermoeglichen-Kompromittierung-11507580.html",
+   "id": "2026-11-03-progress-ws-ftp-luecken",
+   "topic": "IT-Governance & Risiko",
+   "impact": "hoch",
+   "published": "2026-11-02",
+   "tags": [
+    "Dateiübertragung",
+    "Schwachstellen",
+    "Progress"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
+    "NIS-2-Richtlinie Art. 21 – Umgang mit und Offenlegung von Schwachstellen"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Einkauf & Drittparteien"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "kritische-schwachstellen-perimeter",
+   "priority": 2,
+   "primary": false,
+   "added": "2026-11-03T06:08:27Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum 2. November 2026 stimmt. Die Quelle bestätigt 15 Lücken, davon sechs kritisch, außerdem CVE-2026-84295 mit Wertung 10 unter Windows, Administratorzugangsdaten ohne Anmeldung und die Versionen 2024.0.6 und 2025.0.3 sowie 2024.0.7 und 2025.0.4. Aktive Angriffe werden nicht erwähnt."
+   }
+  },
+  {
+   "title": "Update: Amadeus – auch Condor betroffen, ANA meldet bis zu 37.800 Fluggäste",
+   "summary": "Nach Cathay Pacific, Japan Airlines und Korean Air hat auch die deutsche Fluggesellschaft Condor mitgeteilt, dass ihre Daten vom Vorfall beim Reisetechnologie-Anbieter Amadeus betroffen sind. Zahlen nannte sie nicht. ANA Holdings meldet bis zu 37.800 betroffene Fluggäste. Ob weitere Fluggesellschaften betroffen sind, ist offen; Lufthansa, die in diesem Jahr eine Partnerschaft mit Amadeus eingegangen ist, hat sich zunächst nicht geäußert.",
+   "relevance": "Mit Condor ist nun eine deutsche Fluggesellschaft betroffen, damit rückt der Vorfall näher an deutsche Kundschaft und Reiseveranstalter. Für die Touristik heißt das: bei den Buchungs- und Vertriebsplattformen nachfragen, welche Buchungen und Zeiträume betroffen sind, Meldepflichten prüfen und Kunden vor Phishing mit echten Buchungsdaten warnen.",
+   "source": "Insurance Journal (Bloomberg)",
+   "url": "https://www.insurancejournal.com/news/international/2026/11/02/891007.htm",
+   "id": "2026-11-03-amadeus-condor-ana",
+   "topic": "IT-Governance & Risiko",
+   "impact": "mittel",
+   "published": "2026-11-02",
+   "tags": [
+    "Amadeus",
+    "Touristik",
+    "Drittparteien"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen",
+    "DSGVO Art. 28 – Auftragsverarbeiter",
+    "DSGVO Art. 33 – Meldung von Verletzungen des Schutzes personenbezogener Daten"
+   ],
+   "roles": [
+    "Einkauf & Drittparteien",
+    "Datenschutz",
+    "IT-Risiko"
+   ],
+   "countries": [
+    "DE",
+    "EU"
+   ],
+   "dossier": "drittparteien-lieferkette",
+   "priority": 3,
+   "primary": false,
+   "added": "2026-11-03T06:08:27Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum 2. November 2026 stimmt. Die Quelle bestätigt: Condor betroffen, ohne Zahlen. ANA meldet bis zu 37.800 Fluggäste. Die Lufthansa-Partnerschaft mit Amadeus stammt aus diesem Jahr, Lufthansa hat sich nicht geäußert. Offen ist, ob weitere Fluggesellschaften betroffen sind."
+   }
+  },
+  {
+   "title": "Update: Notebooksbilliger nennt Details, auch Internetanbieter Pÿur meldet Datenabfluss",
+   "summary": "Notebooksbilliger hat den unbefugten Zugriff nach eigenen Angaben am 12. Oktober bemerkt. Möglicherweise wurden Bankverbindungen abgegriffen, Passwörter und vollständige Kartendaten nach Unternehmensangaben nicht. Das Unternehmen hat Strafanzeige gestellt und die Datenschutzaufsicht informiert. Daneben meldet der Internetanbieter Pÿur, dass zwischen Mitte September und Anfang Oktober 2026 wahrscheinlich Vertragsnummern, Namen und Kontodaten abgeflossen sind. Informiert wurden die Bundesnetzagentur, das Bundesamt für Sicherheit in der Informationstechnik und die Datenschutzbehörden.",
+   "relevance": "Abgeflossene Bankverbindungen ermöglichen Lastschriftbetrug und täuschend echtes Phishing, auch im Namen anderer Händler. Für Betrugsprävention und Kundenservice lohnt ein Blick auf die Prüfregeln für Lastschriften und auf vorbereitete Kundenwarnungen.",
+   "source": "heise online",
+   "url": "https://www.heise.de/news/Cyberangriffe-auf-notebooksbilliger-de-und-Pyur-11508664.html",
+   "id": "2026-11-03-notebooksbilliger-pyur-datenabfluss",
+   "topic": "Handel & Branche",
+   "impact": "info",
+   "published": "2026-11-02",
+   "tags": [
+    "Datenabfluss",
+    "Bankverbindungen",
+    "Onlinehandel"
+   ],
+   "controls": [
+    "DSGVO Art. 34 – Benachrichtigung der von einer Verletzung betroffenen Person"
+   ],
+   "roles": [
+    "Datenschutz",
+    "IT-Risiko"
+   ],
+   "countries": [
+    "DE"
+   ],
+   "dossier": null,
+   "priority": 5,
+   "primary": false,
+   "added": "2026-11-03T06:08:27Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum 2. November 2026 stimmt. Die Quelle bestätigt: Entdeckung am 12. Oktober, Bankverbindungen möglicherweise abgeflossen, keine Passwörter und keine vollständigen Kartendaten, Strafanzeige gestellt und Datenschutzaufsicht informiert. Bei Pÿur stimmen der Zeitraum, die betroffenen Daten und die…"
+   }
+  },
+  {
+   "title": "Gemeinsamer Eintrag in der robots.txt soll Training Künstlicher Intelligenz stoppen",
+   "summary": "Google will ab 2027 ein gemeinsames Steuersignal in der robots.txt unterstützen, das auf einer Arbeitsgruppe der Internet Engineering Task Force aufbaut. Mit ihm können Webseitenbetreiber das Training Künstlicher Intelligenz an einer Stelle untersagen, statt Einträge für einzelne Bots zu pflegen. Auch andere Anbieter Künstlicher Intelligenz wollen das Signal ab 2027 auswerten.",
+   "relevance": "Für Webshops, Rezeptportale und Reiseseiten wird die Haltung zum Training fremder Modelle zu einer Governance-Entscheidung, die jemand verantworten muss. Umgekehrt sollten eigene Projekte, die Webinhalte als Trainingsdaten sammeln, solche Vorbehalte erkennen und beachten.",
+   "source": "heise online",
+   "url": "https://www.heise.de/news/KI-Training-Ein-Eintrag-in-der-robots-txt-soll-bald-fuer-alle-Bots-reichen-11508208.html",
+   "id": "2026-11-03-robots-txt-token-ki-training",
+   "topic": "AI-Governance",
+   "impact": "info",
+   "published": "2026-11-02",
+   "tags": [
+    "Trainingsdaten",
+    "Urheberrecht",
+    "Webseiten"
+   ],
+   "controls": [
+    "Verordnung über Künstliche Intelligenz Art. 53 – Pflichten der Anbieter von Modellen mit allgemeinem Verwendungszweck"
+   ],
+   "roles": [
+    "Management",
+    "Datenschutz"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": null,
+   "priority": 6,
+   "primary": false,
+   "added": "2026-11-03T06:08:27Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Die Quelle nennt OpenAI, Microsoft und Anthropic nicht als Unterstützer. Sie spricht nur allgemein von anderen Anbietern Künstlicher Intelligenz und erwähnt OpenAI und Anthropic lediglich wegen ihrer bisherigen eigenen Bot-Einträge. Dass bereits gesammelte Daten und trainierte Modelle nicht…"
+   }
+  },
   {
    "title": "Update: Amadeus – auch Malaysia Airlines warnt ihre Kunden",
    "summary": "Malaysia Airlines hat am 1. November mitgeteilt, dass beim Vorfall im Buchungssystem von Amadeus Kundendaten betroffen sein können, die zwischen August 2023 und September 2026 verarbeitet wurden. Angaben zur Zahl der Betroffenen, zu den Datenarten und zum Zeitpunkt der Entdeckung machte die Fluggesellschaft nicht.",
@@ -3989,6 +4158,42 @@
    "check": {
     "verdict": "abweichung",
     "note": "Laut Quelle geschah der Angriff in der Nacht auf Montag, also am 12. und nicht am 13. Oktober. Ausgefallene Maschinen werden nicht erwähnt, genannt werden Zugangssysteme, digitale Werkzeuge und stillstehende Schiffe. Ein Datum der Wiederaufnahme nennt die Quelle nicht, sie meldet am 16. Oktober…"
+   }
+  },
+  {
+   "title": "Generalanwältin: Automatische Ablehnung des Rechnungskaufs kann verbotene Entscheidung sein",
+   "summary": "In der Rechtssache C-568/25 klagt der österreichische Verein für Konsumenteninformation gegen den Versandhändler Universal Versand. Generalanwältin Laila Medina kommt in ihren Schlussanträgen vom 15. Oktober 2026 zu dem Ergebnis, dass die vollautomatische Verweigerung von Rechnungs- oder Ratenkauf nach einer Bonitätsprüfung unter das Verbot automatisierter Einzelentscheidungen fallen kann. Die Wirkung müsse dafür nicht schwerwiegend sein. Die Ausnahme für die Vertragserfüllung sei eng auszulegen: Der Händler müsse belegen, dass es kein milderes Mittel wie eine menschliche Prüfung gibt und welche Daten er wozu nutzt. Die Schlussanträge binden den Gerichtshof nicht.",
+   "relevance": "Die automatische Steuerung von Zahlarten im Onlinehandel, oft über Zahlungsdienstleister, gerät damit unter Begründungsdruck. Zusammen mit dem Urteil des Bundesgerichtshofs zu Scores vom Oktober sollten Datenschutz und Einkauf die Entscheidungslogik, die Datengrundlage und die menschlichen Prüfschritte solcher Verfahren dokumentieren lassen.",
+   "source": "PPC Land",
+   "url": "https://ppc.land/universal-versand-faces-eu-ruling-on-algorithm-that-blocks-pay-later-options/",
+   "id": "2026-11-03-generalanwaeltin-bonitaetspruefung-zahlarten",
+   "topic": "Datenschutz & Datenrecht",
+   "impact": "mittel",
+   "published": "2026-10-15",
+   "tags": [
+    "Automatisierte Entscheidung",
+    "Zahlarten",
+    "Gerichtshof der Europäischen Union"
+   ],
+   "controls": [
+    "DSGVO Art. 22 – Automatisierte Entscheidungen im Einzelfall",
+    "DSGVO Art. 5 Abs. 2 – Rechenschaftspflicht"
+   ],
+   "roles": [
+    "Datenschutz",
+    "Einkauf & Drittparteien"
+   ],
+   "countries": [
+    "EU",
+    "AT"
+   ],
+   "dossier": "algorithmisches-management",
+   "priority": 4,
+   "primary": false,
+   "added": "2026-11-03T06:08:27Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum 15. Oktober 2026 stimmt. Rechtssache, Parteien, Generalanwältin Medina und die Kernaussagen stimmen mit der Quelle überein: Die Wirkung muss nicht schwerwiegend sein, die Ausnahme ist eng auszulegen, mildere Mittel wie eine menschliche Prüfung sind zu prüfen, die Datennutzung ist zu belegen…"
    }
   },
   {

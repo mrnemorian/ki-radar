@@ -1,0 +1,171 @@
+{
+ "format": "tag",
+ "chapters": [
+  {
+   "title": "Begrüßung",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Guten Morgen, liebe IT-GRC-Kolleginnen und -Kollegen, willkommen beim IT-GRC Radar am Dienstag, dem dritten November 2026. Heute geht es um Kühltruhen, Dateiserver, Flugbuchungen und die Frage, wer eigentlich über den Kauf auf Rechnung entscheidet."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Also ein ganz normaler Dienstag. Ich hatte ehrlich gesagt gehofft, das Thema Kühlung wäre durch."
+    }
+   ]
+  },
+  {
+   "title": "Kühlsteuerungen: zweite Welle",
+   "news_id": "2026-11-03-kuehlsteuerungen-zweite-welle",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Leider nein. Da gibt es Neues zu den Angriffen auf Kühlsteuerungen. In der Nacht zum zweiten November stiegen in Supermärkten in mindestens neun Ländern die Temperaturen, von Belgien und Schweden bis Italien und Portugal."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Italien gehört zu den Ländern von REWE International. Und der zuständige Kommissar spricht von einem gezielten Versuch, die Lebensmittelversorgung zu stören."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Moment, heißt das, aus dem Technikproblem im Markt ist jetzt offiziell eine Frage der Versorgungssicherheit geworden?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "So würde ich es lesen. Betroffen waren unter anderem ältere Danfoss-Steuerungen, teils ohne Updates. Wer seine fernwartbaren Kühlsteuerungen und die Zugänge der Kältetechniker noch nicht vollständig kennt, sollte das jetzt nachholen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und wer ist Owner der Kühltruhe?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Die Haustechnik, sagt die Informationstechnik. Die Informationstechnik, sagt die Haustechnik. Genau in dieser Lücke fühlen sich Angreifer wohl."
+    }
+   ]
+  },
+  {
+   "title": "Progress WS_FTP",
+   "news_id": "2026-11-03-progress-ws-ftp-luecken",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Zweites Thema, nüchterner: Progress hat 15 Lücken im Dateiübertragungsserver WS_FTP geschlossen, sechs davon kritisch. Die schwerste hat die Höchstwertung 10 und gibt unter Windows ohne Anmeldung Administratorzugangsdaten preis."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Progress, da klingelt etwas. Das ist der Hersteller von MOVEit, und an diese Angriffswelle erinnert sich jede Revision. Angriffe sind noch nicht bekannt, genau dieses Zeitfenster sollte man nutzen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Also aktualisieren, bevor die Lücke im Katalog der ausgenutzten Schwachstellen steht."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und bei Dienstleistern nachfragen. Datenaustausch mit Lieferanten und Banken landet erstaunlich oft auf einem Server, der in keinem Inventar auftaucht."
+    }
+   ]
+  },
+  {
+   "title": "Amadeus: Condor betroffen",
+   "news_id": "2026-11-03-amadeus-condor-ana",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Auch zu Amadeus gibt es Neues. Jetzt meldet auch die deutsche Fluggesellschaft Condor, dass ihre Daten betroffen sind, und ANA spricht von bis zu 37.800 Fluggästen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Damit ist der Vorfall in Deutschland angekommen. Für die Touristik heißt das: bei den Buchungsplattformen fragen, welche Zeiträume betroffen sind, und Kunden vor Phishing mit echten Buchungsdaten warnen. Das Unangenehme an Drittparteienvorfällen ist ja, dass man den eigenen Anteil nur scheibchenweise erfährt."
+    }
+   ]
+  },
+  {
+   "title": "Rechnungskauf und Algorithmus",
+   "news_id": "2026-11-03-generalanwaeltin-bonitaetspruefung-zahlarten",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Jetzt zum Datenschutz. Beim Gerichtshof der Europäischen Union liegt ein österreichischer Fall gegen einen Versandhändler. Die Generalanwältin meint: Lehnt ein Algorithmus nach der Bonitätsprüfung den Kauf auf Rechnung automatisch ab, kann das eine verbotene automatisierte Entscheidung sein."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und die Hürden für die Ausnahme sind hoch. Der Händler soll zeigen, dass es kein milderes Mittel gibt, etwa eine menschliche Prüfung, und welche Daten er wofür nutzt. Zusammen mit dem Urteil des Bundesgerichtshofs zu Scores wird das konkret."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Bindend ist das aber noch nicht."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Nein, aber wer Zahlarten automatisch steuert, sollte die Dokumentation jetzt anfordern. Nach dem Urteil gibt es dafür nämlich zuverlässig eine neue Excel-Liste."
+    }
+   ]
+  },
+  {
+   "title": "Notebooksbilliger und Pÿur",
+   "news_id": "2026-11-03-notebooksbilliger-pyur-datenabfluss",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Kurz zu Notebooksbilliger: Der Händler hat den Zugriff am zwölften Oktober bemerkt, möglicherweise sind Bankverbindungen abgeflossen. Auch der Internetanbieter Pÿur meldet einen Datenabfluss."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Bankverbindungen sind Gold für Lastschriftbetrug und für sehr echt wirkendes Phishing, auch im Namen anderer Händler. Kundenwarnungen sollte man griffbereit haben."
+    }
+   ]
+  },
+  {
+   "title": "robots.txt gegen Training",
+   "news_id": "2026-11-03-robots-txt-token-ki-training",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Zum Schluss etwas Grundsätzliches: Google und andere Anbieter Künstlicher Intelligenz wollen ab 2027 einen gemeinsamen Eintrag in der robots-Datei auswerten, mit dem Webseiten das Training Künstlicher Intelligenz untersagen können."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Klingt nach Technik, ist aber eine Governance-Entscheidung: Sollen Rezepte, Produkttexte und Reisebeschreibungen in fremde Modelle wandern?"
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Also eine Entscheidung mit Owner."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ausnahmsweise eine, bei der man den Owner vorher bestimmen kann."
+    }
+   ]
+  },
+  {
+   "title": "Auf dem Radar",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Auf dem Radar steht der [en]Digital Fairness Act[/en]. Der Vorschlag der Kommission wird für Mitte November erwartet."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Manipulative Gestaltung, Abofallen, personalisierte Ansprache im Onlinehandel. Datenschutz, Recht und die Shop-Teams sollten sich das gemeinsam anschauen, sobald der Text da ist."
+    }
+   ]
+  },
+  {
+   "title": "Abschied",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Das war das IT-GRC Radar für heute. Alle Quellen findet ihr wie immer auf der Webseite."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und werft mal einen Blick auf eure Kühltruhen. Bis morgen."
+    }
+   ]
+  }
+ ]
+}
