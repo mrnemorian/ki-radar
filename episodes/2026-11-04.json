@@ -1,0 +1,171 @@
+{
+ "format": "tag",
+ "chapters": [
+  {
+   "title": "Begrüßung",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Guten Morgen, liebe IT-GRC-Kolleginnen und -Kollegen, willkommen beim IT-GRC Radar. Heute ist Mittwoch, der vierte November 2026."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Mittwoch, Bergfest. Und die Nachrichten klettern gleich mit: viel Lieferkette, ein bisschen Linux und ein Ausflug in den österreichischen Tourismus."
+    }
+   ]
+  },
+  {
+   "title": "Linux-Lücke: Patches",
+   "news_id": "2026-11-04-update-linux-tcp-luecke-patches",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Da gibt es Neues zur kritischen Linux-Lücke im Netzwerkstack, über die wir letzte Woche gesprochen haben. Red Hat hat am ersten November korrigierte Kernel ausgeliefert, bei einer Bewertung von 9,8 von 10."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und zwar nachdem Red Hat die Lücke zuerst nur mit 5,9 bewertet hatte. Das ist für mich die eigentliche Lehre: Wer seine [en]Patch[/en]-Priorität blind an der Herstellerbewertung festmacht, lag hier ein paar Tage lang daneben."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und Ubuntu?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Dort liegen die Korrekturen für die Langzeitversionen bisher nur im freiwilligen Testkanal, für ältere Versionen fehlen sie ganz. Debian und SUSE waren schon im Oktober fertig. Wie gut man gerade dasteht, hängt also stark davon ab, welche Distribution wo läuft."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Gibt es schon Angriffe?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Bekannt sind keine. Aber laut Anthropic hat ein unveröffentlichtes Forschungsmodell einen funktionierenden [en]Exploit[/en] geschrieben, und Demonstrationscode ist öffentlich. Ehrlich gesagt würde ich nicht warten. Und den Neustart nicht vergessen, ohne den bringt der neue Kernel nichts."
+    }
+   ]
+  },
+  {
+   "title": "Tourismus: Partnerzugang missbraucht",
+   "news_id": "2026-11-04-feratel-tourismus-buchungsdaten",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Ab nach Österreich. Beim Innsbrucker Dienstleister Feratel, der Buchungsplattformen von Tourismusverbänden betreut, wurden Zugangsdaten eines Schnittstellenpartners missbraucht. In Tirol sind potenziell rund 1.700 Betriebe betroffen, dazu Verbände in Salzburg und der Steiermark."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und dann kommt die Masche, die wir schon aus dem Fall Amadeus kennen: Gäste bekommen über WhatsApp eine Nachricht mit echten Buchungsdetails und einem Link zur angeblich offenen Zahlung."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Kreditkartendaten sollen aber nicht betroffen sein."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Die braucht es auch gar nicht. Wer meine Buchung kennt, dem glaube ich auch die Rechnung. Für Reiseveranstalter heißt das: Zugänge von Integrationspartnern gehören ins Berechtigungsmanagement und nicht in die Schublade ‚läuft halt'. Und Kundenwarnungen sollte man vorbereitet haben, bevor man sie braucht."
+    }
+   ]
+  },
+  {
+   "title": "cPGuard: Update-Kanal gekapert",
+   "news_id": "2026-11-04-cpguard-update-kanal-gekapert",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Lieferkette, die zweite. Beim Sicherheitswerkzeug cPGuard haben Angreifer am zweiten November den [en]Update[/en]-Kanal gekapert. 2.946 Server haben ein Skript bekommen, das Passwort-[en]Hashes[/en], Datenbank-Konfigurationen und Schlüssel für den Fernzugang abgegriffen hat."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ausgerechnet Sicherheitssoftware. Die läuft naturgemäß mit den höchsten Rechten, und automatische [en]Updates[/en] sind ein Vertrauensvorschuss, der in kaum einer Risikoanalyse auftaucht."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Reicht es, das neue [en]Update[/en] einzuspielen?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Version 5.88.25 entfernt die Hintertür, aber die abgegriffenen Zugangsdaten bleiben gültig, bis man sie tauscht. Da muss sich jede Organisation fragen: Können wir alle Geheimnisse eines Servers an einem Tag tauschen? Und steht irgendwo, wer das anstößt?"
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Also mal wieder die Frage nach dem [en]Owner[/en]."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Die stirbt einfach nicht aus."
+    }
+   ]
+  },
+  {
+   "title": "Siemens-Gateways angegriffen",
+   "news_id": "2026-11-04-siemens-iot2050-angriffe",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Betriebstechnik: Eine Lücke mit der Höchstwertung 10 in Siemens-[en]Gateways[/en] vom Typ IoT2050 wird aktiv ausgenutzt. Ohne Anmeldung lässt sich über die Oberfläche Node-RED Code mit höchsten Rechten ausführen. Beobachtet wurden Botnetz-Schadsoftware und eine Hintertür, die einen Neustart übersteht."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Nach den Kühlsteuerungen das nächste Gerät, das irgendwo in Logistik oder Haustechnik hängt und in keiner Excel-Liste auftaucht. Der Patch ist seit August da. Das Problem ist selten der Patch, meistens fehlt das Inventar."
+    }
+   ]
+  },
+  {
+   "title": "Revolve: Gespeicherte Kartendaten",
+   "news_id": "2026-11-04-revolve-kartendaten",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Aus dem Onlinehandel meldet der amerikanische Modehändler Revolve, dass bei mindestens 200.000 Menschen Kartennummern und Ablaufdaten betroffen sein könnten, und zwar bei Kunden, die ihre Karte im Konto gespeichert hatten."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Bequemlichkeit hat eben ihren Preis. Jede gespeicherte Karte vergrößert den Prüfumfang nach dem Sicherheitsstandard der Kartenindustrie und den Schaden im Ernstfall. Da muss man fragen: Speichern wir selbst, oder hält der Zahlungsdienstleister die Daten als [en]Token[/en]?"
+    }
+   ]
+  },
+  {
+   "title": "WorkOS und ARTEX",
+   "news_id": "2026-11-04-workos-artex-angriff",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Und noch kurz zu WorkOS: Die Entwicklerplattform meldet einen Einbruch in ein internes Vertriebswerkzeug. Die Angriffssuite ARTEX mit Künstlicher Intelligenz hat dabei die Erkundung und die Ausnutzungsversuche automatisiert."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Zugriff hatte der Angreifer auf Kontakte und Zusammenfassungen von Kundengesprächen, also genau das Material, aus dem man perfektes [en]Phishing[/en] baut. Interne Nebenanwendungen brauchen dieselben Zugriffskontrollen wie das Produktivsystem, auch wenn sie im Architekturbild nur ein kleines Kästchen sind."
+    }
+   ]
+  },
+  {
+   "title": "Auf dem Radar",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Was steht auf dem Radar?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Der [en]Digital Fairness Act[/en]. Kanzleien erwarten den Vorschlag der Kommission am elften November. Es geht um [en]Dark Patterns[/en], Abo-Fallen und unfaire Personalisierung. Für Onlinehandel und Kundenprogramme lohnt sich ein Blick darauf, bevor die Fachbereiche fragen."
+    }
+   ]
+  },
+  {
+   "title": "Abschied",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Das war das IT-GRC Radar für heute. Alle Quellen findet ihr wie immer auf der Webseite."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und wer heute Kernel patcht: Neustart nicht vergessen. Bis morgen."
+    }
+   ]
+  }
+ ]
+}

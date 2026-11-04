@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T06:08:27Z",
+ "updated": "2026-11-04T06:08:36Z",
  "topics": [
   "IT-Governance & Risiko",
   "Cyber- & IT-Regulierung",
@@ -11,6 +11,18 @@
   "Weitere Themen"
  ],
  "briefings": [
+  {
+   "date": "2026-11-04",
+   "headline": "Linux-Patches kommen je nach Distribution unterschiedlich schnell. Dazu Gästedaten über einen Tourismus-Partnerzugang und ein gekaperter Update-Kanal als Einfallstor.",
+   "points": [
+    "Update zur kritischen Linux-Lücke: Red Hat hat seit 1. November Patches, Ubuntu nur im Testkanal, Demonstrationscode ist öffentlich",
+    "Österreichs Tourismus: Über Zugangsdaten eines Schnittstellenpartners flossen Gästedaten ab, die jetzt für Betrug per WhatsApp genutzt werden",
+    "Sicherheitswerkzeug cPGuard: Gekaperter Update-Kanal greift Zugangsdaten von 2.946 Servern ab",
+    "Siemens-Gateways IoT2050 und Modehändler Revolve zeigen Risiken in Betriebstechnik und bei gespeicherten Kartendaten",
+    "Auf dem Radar: Vorschlag für den Digital Fairness Act wird am 11. November erwartet"
+   ],
+   "count": 7
+  },
   {
    "date": "2026-11-03",
    "headline": "Angriffe auf Kühlanlagen erreichen neun Länder, kritische Lücken in WS_FTP, Condor im Fall Amadeus betroffen",
@@ -356,18 +368,6 @@
     "Österreich: Paketabgabe von 2 Euro pro Sendung für große Versandhändler gilt seit 1. Oktober. Der Bundesgerichtshof kippt die Prime-Preiserhöhung von Amazon."
    ],
    "count": 5
-  },
-  {
-   "date": "2026-10-03",
-   "headline": "Ausgenutzte Lücken im Ticketsystem Zammad, Italiens Frist nach der NIS-2-Richtlinie am 31. Oktober und lehrreiche Datenschutz-Bußgelder prägen den Feiertag.",
-   "points": [
-    "Zammad: Zwei Zero Days im Ticketsystem werden aktiv ausgenutzt, die Behörde der Vereinigten Staaten hat sie in ihren Katalog aufgenommen – Bestand prüfen, aktualisieren, nach Spuren einer Kompromittierung suchen.",
-    "Italien: Wer schon 2025 auf der nationalen Liste nach der NIS-2-Richtlinie stand, muss die grundlegenden Sicherheitsmaßnahmen bis 31. Oktober 2026 umgesetzt haben.",
-    "Datenschutz-Bußgelder im September: 5,5 Millionen Euro gegen BBVA Italia, weil Werbung trotz Widerspruch wegen nicht abgeglichener Systeme verschickt wurde.",
-    "Bundesamt für Sicherheit in der Informationstechnik rät bei neuen Entwicklungen vom Post-Quanten-Verfahren Classic McEliece ab, die Migration bleibt dringend.",
-    "PCI Security Standards Council veröffentlicht Version 2.0 des Standards für sicheren Software-Lebenszyklus, mit Anforderungen zu Künstlicher Intelligenz."
-   ],
-   "count": 7
   }
  ],
  "dossiers": [
@@ -381,21 +381,19 @@
     }
    ],
    "title": "Betriebstechnik in Filialen und Logistik",
-   "sector": "Handel & Branche",
+   "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Nach rund 700 betroffenen Supermärkten in Frankreich im Oktober traf in der Nacht zum 2. November eine zweite Welle Supermärkte in mindestens neun Ländern der Europäischen Union, darunter Italien; betroffen waren unter anderem ältere Danfoss-Steuerungen. Der zuständige Kommissar wertet die Angriffe als gezielten Versuch, die Lebensmittelversorgung zu stören. Eine Zuordnung zu Tätern gibt es…",
-   "next_step": "In allen Landesgesellschaften fernwartbare Kühl-, Gebäude- und Logistiksteuerungen erfassen, direkte Internetzugänge schließen, Zugänge von Dienstleistern mit Mehr-Faktor-Anmeldung absichern und für Altgeräte ohne Updates einen Ersatzplan mit Verantwortlichen festlegen.",
+   "status": "Nach rund 700 Supermärkten in Frankreich traf in der Nacht zum 2. November eine zweite Welle Supermärkte in mindestens neun Ländern der Europäischen Union; die österreichischen REWE-Unternehmen melden keine vergleichbaren Vorfälle. Zusätzlich wird eine Lücke mit Höchstwertung in Siemens-Industrie-Gateways IoT2050 aktiv ausgenutzt.",
+   "next_step": "Inventar von Kühlsteuerungen, Gateways und Fernwartungszugängen vervollständigen und Zuständigkeiten für Patches und Netztrennung festlegen.",
    "open_questions": [
-    "Wer steckt hinter den Angriffen, und folgen weitere Länder?",
-    "Beziehen die Aufsichtsbehörden Kühlsteuerungen ausdrücklich in die Pflichten für Kritische Infrastrukturen ein?",
-    "Wie gehen Cyberversicherer mit bekannten, aber nicht ersetzten Altgeräten um?"
+    "Wer steckt hinter den Angriffen auf Kühlsteuerungen?",
+    "Decken Cyberversicherungen Schäden an veralteten, nicht mehr gepflegten Steuerungen?"
    ],
    "controls": [
-    "NIS-2-Richtlinie Art. 21 – Risikomanagementmaßnahmen im Bereich der Cybersicherheit",
-    "ISO/IEC 27001 Anhang A 8.20 – Netzwerksicherheit",
-    "ISO/IEC 27001 Anhang A 5.21 – Informationssicherheit in der Lieferkette der Informations- und Kommunikationstechnik"
+    "ISO/IEC 27001 Anhang A 8.22 – Trennung von Netzwerken",
+    "NIS-2-Richtlinie Art. 21 – Risikoanalyse und Sicherheit der Informationssysteme"
    ],
-   "updated": "2026-11-03"
+   "updated": "2026-11-04"
   },
   {
    "slug": "drittparteien-lieferkette",
@@ -409,18 +407,17 @@
    "title": "Drittparteien- und Lieferkettenrisiko",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Im Fall Amadeus melden weiter Fluggesellschaften Betroffene. Nach Cathay Pacific, Japan Airlines, Korean Air und Malaysia Airlines nennt nun auch die deutsche Condor eigene Daten, ANA spricht von bis zu 37.800 Fluggästen; eine Gesamtzahl fehlt. ConnectWise, LiteLLM und die manipulierte Claude-Code-Erweiterung zeigen, dass auch Werkzeuge und Dienstkonten zur Lieferkette gehören.",
-   "next_step": "Bei Buchungs- und Vertriebsplattformen betroffene Zeiträume und Buchungen abfragen, Meldepflichten prüfen und Kundenkommunikation gegen Phishing mit echten Buchungsdaten vorbereiten.",
+   "status": "Neben dem Fall Amadeus zeigen zwei neue Fälle dasselbe Muster: Bei Feratel wurden Zugangsdaten eines Schnittstellenpartners missbraucht, um Gästedaten österreichischer Tourismusbetriebe abzugreifen, und beim Sicherheitswerkzeug cPGuard verteilte ein gekaperter Update-Kanal Schadcode an 2.946 Server. Partnerschnittstellen und Software mit automatischen Updates und hohen Rechten gehören damit in…",
+   "next_step": "Zugangsdaten von Integrationspartnern sowie Software mit automatischen Updates und hohen Rechten inventarisieren und die Fähigkeit testen, Geheimnisse kurzfristig zu tauschen.",
    "open_questions": [
-    "Wie viele Buchungen und Fluggesellschaften sind insgesamt betroffen?",
-    "Sind auch Reiseveranstalter und Reisebüros direkt betroffen?"
+    "Welcher Schnittstellenpartner war bei Feratel betroffen, und wie kam er an die Zugangsdaten?",
+    "Wie viele Fluggäste sind im Fall Amadeus insgesamt betroffen?"
    ],
    "controls": [
-    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen",
     "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
-    "DSGVO Art. 28 – Auftragsverarbeiter"
+    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen"
    ],
-   "updated": "2026-11-03"
+   "updated": "2026-11-04"
   },
   {
    "slug": "identitaeten-zugangsdaten",
@@ -457,17 +454,17 @@
    "title": "Kritische Schwachstellen in Randsystemen und Kernanwendungen",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Bei Ivanti Connect Secure, Drupal Commerce und Synology laufen weiter Angriffe; in VMware ESX endet die Behördenfrist für die als Zero Day genutzte Protokollierungslücke am 11. November. Neu sind 15 Lücken im Dateiübertragungsserver Progress WS_FTP, darunter eine mit der Höchstwertung 10, die ohne Anmeldung Administratorzugangsdaten preisgibt; Angriffe darauf sind noch nicht bekannt.",
-   "next_step": "WS_FTP-Installationen im eigenen Haus und bei Dienstleistern ermitteln und auf 2024.0.7 beziehungsweise 2025.0.4 aktualisieren; die Behördenfristen für ausgenutzte Lücken weiter nachhalten.",
+   "status": "Bei Ivanti Connect Secure, Drupal Commerce und Synology laufen weiter Angriffe, neu wird eine Lücke mit Höchstwertung in Siemens-Gateways IoT2050 ausgenutzt. Für die Linux-Lücke CVE-2026-98432 liefert Red Hat seit 1. November Patches, Ubuntu bisher nur im Testkanal; bei VMware ESX endet die Behördenfrist am 11. November.",
+   "next_step": "Patch-Stand der Linux-Kernel je Distribution einschließlich Neustarts nachhalten, Ausnahmen mit Übergangsmaßnahmen dokumentieren und Herstellerbewertungen kritisch gegenprüfen.",
    "open_questions": [
-    "Wird die WS_FTP-Lücke wie zuvor bei MOVEit in großem Stil ausgenutzt?",
-    "Welche Details nennt Fortinet am 10. November?"
+    "Wann liefert Ubuntu die Korrekturen im regulären Kanal?",
+    "Wird ein funktionierender Exploit für die Linux-Lücke öffentlich?"
    ],
    "controls": [
     "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
-    "NIS-2-Richtlinie Art. 21 – Umgang mit und Offenlegung von Schwachstellen"
+    "NIS-2-Richtlinie Art. 21 – Umgang mit Schwachstellen"
    ],
-   "updated": "2026-11-03"
+   "updated": "2026-11-04"
   },
   {
    "slug": "lebenszyklus-altsysteme",
@@ -1032,16 +1029,16 @@
  "signals": [
   {
    "theme": "Digital Fairness Act",
-   "why": "Der Vorschlag der Europäischen Kommission gegen manipulative Gestaltung, Abofallen und problematische Personalisierung im Onlinehandel wird im vierten Quartal 2026 erwartet, laut Berichten Mitte November. Er wird Shop-Gestaltung, Einwilligungen und Kundenprofile betreffen.",
-   "count": 20,
+   "why": "Kanzleien erwarten den Vorschlag der Kommission für den 11. November. Er zielt auf Dark Patterns, Abo-Fallen und unfaire Personalisierung und betrifft damit Onlinehandel, Kundenprogramme und Preisgestaltung.",
+   "count": 21,
    "first_seen": "2026-09-30",
-   "last_seen": "2026-11-03",
+   "last_seen": "2026-11-04",
    "evidence": [
+    "https://www.freshfields.com/en/our-thinking/campaigns/tech-data-and-ai-the-digital-frontier/eu-digital-strategy/navigating-the-eus-digital-fairness-act",
     "https://eprs.europarl.europa.eu/contents/publications/EPRS/2026/10/EPRS_BRI(2026)791529.html",
     "https://www.europarl.europa.eu/legislative-train/theme-protecting-our-democracy-upholding-our-values/file-digital-fairness-act",
     "https://www.privacylaws.com/news/eu-proposal-on-digital-fairness-act-expected-by-the-end-of-2026/",
-    "https://www.eversheds-sutherland.com/en/slovakia/insights/the-digital-fairness-act-what-businesses-need-to-know",
-    "https://www.mlex.com/mlex/articles/2529049/eu-digital-fairness-act-on-consumer-protection-tentatively-eyed-for-november"
+    "https://www.eversheds-sutherland.com/en/slovakia/insights/the-digital-fairness-act-what-businesses-need-to-know"
    ]
   },
   {
@@ -1059,6 +1056,20 @@
    ]
   },
   {
+   "theme": "Autonome Angriffe durch Agenten",
+   "why": "Die Angriffssuite ARTEX taucht in immer mehr Vorfällen auf, zuletzt bei WorkOS. Automatisierte Erkundung verkürzt die Zeit zwischen Schwachstelle und Einbruch auch bei internen Nebenanwendungen.",
+   "count": 7,
+   "first_seen": "2026-09-30",
+   "last_seen": "2026-11-04",
+   "evidence": [
+    "https://www.bleepingcomputer.com/news/security/workos-says-attacker-used-artex-ai-to-breach-internal-sales-app/",
+    "https://www.theregister.com/cyber-crime/2026/10/28/123-reg-discloses-ai-cyberattack-on-customer-data-suspects-china-nexus/5305936",
+    "https://bleepingcomputer.com/news/security/hacker-used-artex-ai-and-claude-agents-to-target-south-korean-banks",
+    "https://www.kedglobal.com/banking-finance/newsView/ked202610040005",
+    "https://www.securityweek.com/zammad-zero-days-exploited-in-ai-powered-divd-hack/"
+   ]
+  },
+  {
    "theme": "Cloud-Souveränität und Cloud and AI Development Act",
    "why": "Der zuständige Ausschuss des Europäischen Parlaments will seinen Berichtsentwurf am 1. Dezember vorlegen und Mitte März abstimmen. Die Souveränitätsstufen könnten künftig Einkauf und Cloud-Strategie großer Unternehmen prägen.",
    "count": 6,
@@ -1070,20 +1081,6 @@
     "https://www.mlex.com/mlex/technology/articles/2535003",
     "https://www.eesc.europa.eu/en/our-work/opinions-information-reports/opinions/cloud-and-ai-development-act",
     "https://www.datenschutzticker.de/2026/09/cada-europas-cloud-und-ki-infrastruktur-im-fokus/"
-   ]
-  },
-  {
-   "theme": "Autonome Angriffe durch Agenten",
-   "why": "Der britische Domain-Registrar 123-reg meldet einen Angriff auf Kundendaten, bei dem Künstliche Intelligenz geholfen haben soll, mit vermutetem Bezug nach China. Solche Fälle zeigen, dass Angreifer mit Agenten schneller und in größerem Umfang vorgehen können.",
-   "count": 6,
-   "first_seen": "2026-09-30",
-   "last_seen": "2026-10-31",
-   "evidence": [
-    "https://www.theregister.com/cyber-crime/2026/10/28/123-reg-discloses-ai-cyberattack-on-customer-data-suspects-china-nexus/5305936",
-    "https://bleepingcomputer.com/news/security/hacker-used-artex-ai-and-claude-agents-to-target-south-korean-banks",
-    "https://www.kedglobal.com/banking-finance/newsView/ked202610040005",
-    "https://www.securityweek.com/zammad-zero-days-exploited-in-ai-powered-divd-hack/",
-    "https://www.bleepingcomputer.com/news/security/autonomous-ai-agents-tried-to-hack-us-canadian-government-websites/"
    ]
   },
   {
@@ -1125,6 +1122,19 @@
    ]
   },
   {
+   "theme": "Schwachstellensuche durch Künstliche Intelligenz",
+   "why": "Laut Anthropic hat ein unveröffentlichtes Forschungsmodell für die kritische Linux-Lücke einen funktionierenden Exploit geschrieben. Patch-Fenster könnten dadurch weiter schrumpfen.",
+   "count": 4,
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-11-04",
+   "evidence": [
+    "https://thehackernews.com/2026/11/red-hat-patches-98-rated-linux-tcp-rce.html",
+    "https://www.heise.de/news/Erneut-kritischer-Bug-in-Linux-TCP-IP-aufgedeckt-Updates-in-Arbeit-11506050.html",
+    "https://www.heise.de/news/Ausserplanmaessige-Fortinet-Updates-Details-Fehlanzeige-aber-dringend-11497171.html",
+    "https://www.heise.de/news/PwnEscape-Kritische-Luecke-in-Linux-Kernel-erlaubt-VM-Ausbruch-11492131.html"
+   ]
+  },
+  {
    "theme": "Prüfungsleitfaden für Werkzeuge mit Künstlicher Intelligenz",
    "why": "Der internationale Standardsetzer für Abschlussprüfungen wollte am 28. Oktober einen ersten Leitfaden zum Qualitätsmanagement beim Einsatz von Prüfwerkzeugen mit Künstlicher Intelligenz verabschieden, die Veröffentlichung wird im November erwartet. Der Leitfaden prägt, wie Abschlussprüfer Künstliche Intelligenz einsetzen und dokumentieren.",
    "count": 4,
@@ -1132,18 +1142,6 @@
    "last_seen": "2026-11-01",
    "evidence": [
     "https://www.iaasb.org/news-events/2026-10/iaasb-enews-october-2026"
-   ]
-  },
-  {
-   "theme": "Schwachstellensuche durch Künstliche Intelligenz",
-   "why": "Die kritische Lücke im Linux-Netzwerkstack steckte seit 2015 im Code und wurde jetzt mit Künstlicher Intelligenz gefunden, einschließlich eines funktionierenden Angriffscodes. Wenn solche Funde häufiger werden, müssen Patch-Prozesse und Neustartfenster auf deutlich mehr kritische Updates ausgelegt sein.",
-   "count": 3,
-   "first_seen": "2026-10-20",
-   "last_seen": "2026-10-31",
-   "evidence": [
-    "https://www.heise.de/news/Erneut-kritischer-Bug-in-Linux-TCP-IP-aufgedeckt-Updates-in-Arbeit-11506050.html",
-    "https://www.heise.de/news/Ausserplanmaessige-Fortinet-Updates-Details-Fehlanzeige-aber-dringend-11497171.html",
-    "https://www.heise.de/news/PwnEscape-Kritische-Luecke-in-Linux-Kernel-erlaubt-VM-Ausbruch-11492131.html"
    ]
   },
   {
@@ -1295,6 +1293,200 @@
   }
  ],
  "news": [
+  {
+   "title": "Update: Linux-Lücke im Netzwerkstack – Red Hat liefert Patches, Ubuntu nur im Testkanal",
+   "summary": "Für die Lücke CVE-2026-98432 im Netzwerkprotokoll-Code des Linux-Kernels (Bewertung 9,8 von 10, ohne Anmeldung über jeden offenen Port ausnutzbar) hat Red Hat am 1. November korrigierte Kernel für die Versionen 8, 9 und 10 von Red Hat Enterprise Linux veröffentlicht. Die Lücke hatte Red Hat zunächst nur mit 5,9 bewertet. Ein Neustart ist nötig. Bei Ubuntu liegen die Korrekturen für die Langzeitversionen nur im freiwilligen Testkanal, ältere Versionen fehlen noch; Debian, SUSE und Oracle Linux haben schon im Oktober geliefert. Angriffe sind nicht bekannt. Laut Anthropic hat aber ein unveröffentlichtes Forschungsmodell einen funktionierenden Exploit geschrieben, und Demonstrationscode ist öffentlich.",
+   "relevance": "In einem großen Handelskonzern läuft Linux typischerweise in Rechenzentrum, Cloud, Logistik und Containerplattformen. Der Patch-Stand muss deshalb je Distribution und mit Neustarts nachgehalten werden. Herstellerbewertungen sollten die Priorität nicht ungeprüft bestimmen, und die Filterregel als Übergangslösung wirkt nicht zwischen Containern auf demselben Host.",
+   "source": "The Hacker News",
+   "url": "https://thehackernews.com/2026/11/red-hat-patches-98-rated-linux-tcp-rce.html",
+   "id": "2026-11-04-update-linux-tcp-luecke-patches",
+   "topic": "IT-Governance & Risiko",
+   "impact": "hoch",
+   "published": "2026-11-03",
+   "tags": [
+    "Linux",
+    "Patch-Management",
+    "Schwachstelle"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
+    "IT-Kontrollen der Abschlussprüfung – Änderungsmanagement",
+    "NIS-2-Richtlinie Art. 21 – Umgang mit Schwachstellen"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Revision & Prüfung"
+   ],
+   "countries": [],
+   "dossier": "kritische-schwachstellen-perimeter",
+   "priority": 1,
+   "primary": false,
+   "added": "2026-11-04T06:08:36Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum 3. November, Kennung, Bewertungen 9,8 und zuvor 5,9 bei Red Hat, Patches vom 1. November für die Versionen 8, 9 und 10, Neustart, Ubuntu nur im Testkanal, ältere Ubuntu-Versionen ausstehend, Debian, SUSE und Oracle Linux im Oktober, keine bekannten Angriffe, Exploit des Anthropic-Modells und…"
+   }
+  },
+  {
+   "title": "Sicherheitssoftware cPGuard: Update-Kanal gekapert, Zugangsdaten von 2.946 Servern abgegriffen",
+   "summary": "Mit gestohlenen Zugangsdaten verschafften sich Angreifer am 2. November Zugriff auf das Update-Verteilnetz des Herstellers OpsShield. Über die Versionen 5.88.12 bis 5.88.19 verteilten sie ein Skript, das Passwort-Hashes, Datenbank-Konfigurationen mit Administratorrechten, Befehlshistorien und Schlüsseldateien für den Fernzugang per Secure Shell abgriff. Betroffen sind laut Hersteller 2.946 Server, außerdem wurde die Datenbank des Abrechnungssystems kopiert. Version 5.88.25 entfernt die Hintertür. Passwörter, Datenbank-Zugangsdaten, Cloud-Geheimnisse und Schlüssel müssen trotzdem getauscht werden.",
+   "relevance": "Gerade Sicherheitswerkzeuge laufen mit höchsten Rechten, und automatische Updates sind eine Vertrauensbeziehung, die selten in Risikoanalysen auftaucht. Gebraucht werden ein Inventar solcher Agenten und die nachweisbare Fähigkeit, alle Geheimnisse eines Servers kurzfristig zu tauschen.",
+   "source": "BleepingComputer",
+   "url": "https://www.bleepingcomputer.com/news/security/hackers-hijack-cpguard-autoupdate-to-deploy-backdoor-steal-data/",
+   "id": "2026-11-04-cpguard-update-kanal-gekapert",
+   "topic": "IT-Governance & Risiko",
+   "impact": "mittel",
+   "published": "2026-11-03",
+   "tags": [
+    "Supply Chain",
+    "Update-Kanal",
+    "Zugangsdaten"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
+    "ISO/IEC 27001 Anhang A 5.21 – Informationssicherheit in der Lieferkette der Informations- und Kommunikationstechnik",
+    "IT-Kontrollen der Abschlussprüfung – Zugriffsmanagement"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Einkauf & Drittparteien"
+   ],
+   "countries": [],
+   "dossier": "drittparteien-lieferkette",
+   "priority": 3,
+   "primary": false,
+   "added": "2026-11-04T06:08:36Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum, 2. November, gestohlene Zugangsdaten zum Verteilnetz, Versionen 5.88.12 bis 5.88.19, abgegriffene Daten, 2.946 Server, kopierte Abrechnungsdatenbank, Version 5.88.25 und Austausch der Geheimnisse: alles belegt."
+   }
+  },
+  {
+   "title": "Industrie-Gateways Siemens IoT2050: Lücke mit Höchstwertung wird für Hintertüren genutzt",
+   "summary": "Angreifer nutzen die Lücke CVE-2026-58115 mit der Höchstwertung 10 in der Node-RED-Oberfläche von Siemens-Gateways SIMATIC IoT2050 Advanced aus. Ohne Anmeldung lassen sich damit eigene Abläufe anlegen und Code mit höchsten Rechten ausführen. Beobachtet wurden das Nachladen von Botnetz-Schadsoftware und eine Hintertür, die einen Neustart übersteht. Siemens stellt seit August Node-RED ab Version 4.3.4.1 als Korrektur bereit und empfiehlt, Node-RED zu deinstallieren oder mit Verschlüsselung und Anmeldung abzusichern.",
+   "relevance": "Nach den Angriffen auf Kühlsteuerungen zeigt sich erneut, dass Gateways in Logistik, Gebäude- und Anlagentechnik zur Angriffsfläche gehören. Zu klären sind ein vollständiges Inventar der Betriebstechnik, die Netztrennung und die Zuständigkeit für Patches.",
+   "source": "The Hacker News",
+   "url": "https://thehackernews.com/2026/11/attackers-exploit-critical-siemens.html",
+   "id": "2026-11-04-siemens-iot2050-angriffe",
+   "topic": "Weitere Themen",
+   "impact": "mittel",
+   "published": "2026-11-03",
+   "tags": [
+    "Betriebstechnik",
+    "Siemens",
+    "aktiv ausgenutzt"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 5.9 – Inventar der Informationen und anderer zugehöriger Werte",
+    "ISO/IEC 27001 Anhang A 8.22 – Trennung von Netzwerken"
+   ],
+   "roles": [
+    "IT-Risiko"
+   ],
+   "countries": [],
+   "dossier": "betriebstechnik-filialen-logistik",
+   "priority": 4,
+   "primary": false,
+   "added": "2026-11-04T06:08:36Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Kennung, Höchstwertung 10, Ausnutzung ohne Anmeldung, Botnetz-Schadsoftware, Hintertür, die einen Neustart übersteht, Korrektur ab Node-RED 4.3.4.1, Siemens-Hinweis von August und Empfehlungen: alles belegt."
+   }
+  },
+  {
+   "title": "Modehändler Revolve: Gespeicherte Kartendaten von mindestens 200.000 Kunden betroffen",
+   "summary": "Der amerikanische Online-Modehändler Revolve hat mindestens 200.000 Menschen über einen Einbruch im September informiert. Angreifer hatten unbefugten Zugriff auf Systeme einschließlich der Shop-Plattform. Möglicherweise betroffen sind Namen, Adressen, Kartennummern und Ablaufdaten von Kunden, die ihre Karte im Konto gespeichert hatten. Den Angriffsweg nennt das Unternehmen nicht.",
+   "relevance": "Im Kundenkonto hinterlegte Kartendaten vergrößern den Prüfumfang nach dem Sicherheitsstandard der Kartenindustrie PCI DSS und den Schaden im Ernstfall. Die naheliegende Kontrollfrage ist, ob der Händler selbst speichert oder der Zahlungsdienstleister die Daten als Token hält.",
+   "source": "PYMNTS",
+   "url": "https://www.pymnts.com/cybersecurity/2026/revolve-reports-breach-fashion-retail-platform/",
+   "id": "2026-11-04-revolve-kartendaten",
+   "topic": "Handel & Branche",
+   "impact": "mittel",
+   "published": "2026-11-03",
+   "tags": [
+    "Onlinehandel",
+    "Kartendaten"
+   ],
+   "controls": [
+    "PCI DSS Anforderung 3 – Schutz gespeicherter Kontodaten",
+    "DSGVO Art. 32 – Sicherheit der Verarbeitung"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Datenschutz"
+   ],
+   "countries": [],
+   "dossier": "zahlungsverkehr-pci-dss",
+   "priority": 5,
+   "primary": false,
+   "added": "2026-11-04T06:08:36Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Mindestens 200.000 Betroffene, Einbruch im September, Shop-Plattform, betroffene Daten bei gespeicherten Karten, kein Angriffsweg genannt: alles belegt."
+   }
+  },
+  {
+   "title": "Angriffssuite ARTEX: Entwicklerplattform WorkOS meldet Einbruch in internes Vertriebswerkzeug",
+   "summary": "WorkOS, deren Dienste laut Bericht mindestens 3.000 Kunden nutzen, darunter OpenAI, Anthropic und Cursor, entdeckte am 30. Oktober einen unbefugten Zugriff auf eine interne Anwendung des Vertriebs. Laut Gründer automatisierte die Angriffssuite ARTEX mit Künstlicher Intelligenz die Erkundung und die Ausnutzungsversuche. Der Angreifer hatte Zugriff auf Geschäftskontakte, Kundenhistorien und Zusammenfassungen von Vertriebs- und Supportgesprächen. Produktivdienste und Anwendungsdaten seien nicht betroffen.",
+   "relevance": "Interne Nebenanwendungen wie Vertriebs- und Kundenbeziehungswerkzeuge enthalten oft Gesprächsinhalte, aus denen sich gezieltes Phishing bauen lässt. Automatisierte Angreifer finden Schwachstellen schneller. Zugriffskontrollen und Überwachung dürfen sich deshalb nicht auf Produktivsysteme beschränken.",
+   "source": "BleepingComputer",
+   "url": "https://www.bleepingcomputer.com/news/security/workos-says-attacker-used-artex-ai-to-breach-internal-sales-app/",
+   "id": "2026-11-04-workos-artex-angriff",
+   "topic": "AI-Governance",
+   "impact": "info",
+   "published": "2026-11-03",
+   "tags": [
+    "Angriffe mit Künstlicher Intelligenz",
+    "ARTEX"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 5.15 – Zugangssteuerung"
+   ],
+   "roles": [
+    "IT-Risiko"
+   ],
+   "countries": [],
+   "dossier": "agentische-ki-sicherheit",
+   "priority": 6,
+   "primary": false,
+   "added": "2026-11-04T06:08:36Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Die Quelle spricht nur von Zugriff auf die Daten. Dass sie abgeflossen sind, bestätigt sie ausdrücklich nicht. Alles andere ist belegt."
+   }
+  },
+  {
+   "title": "Update: Kühlsteuerungen – Händler in Österreich, auch REWE, melden keine eigenen Vorfälle",
+   "summary": "Nach den Angriffen auf Kühlungen in mehreren europäischen Supermärkten erklärten die österreichischen REWE-Unternehmen, ihnen seien keine vergleichbaren Vorfälle bekannt. Zu technischen Schutzmaßnahmen äußere man sich aus Sicherheitsgründen nicht. Spar verweist auf eine eigene Abteilung, die sich auch mit der Sicherheit von Kühlsystemen beschäftigt, Hofer auf ein eigenes Sicherheitsteam, Lidl sei nicht betroffen.",
+   "relevance": "Zurückhaltung bei Details zu Schutzmaßnahmen ist üblich und sinnvoll. Intern sollte trotzdem klar sein, wer für Kühlsteuerungen und andere Betriebstechnik in Filialen zuständig ist, vom Inventar bis zum Fernwartungszugang des Dienstleisters.",
+   "source": "OÖNachrichten",
+   "url": "https://www.nachrichten.at/wirtschaft/heimische-supermaerkte-ruesten-sich-gegen-cyberangriffe;art15,4228517",
+   "id": "2026-11-04-update-kuehlsteuerungen-oesterreich",
+   "topic": "Handel & Branche",
+   "impact": "info",
+   "published": "2026-11-03",
+   "tags": [
+    "Kühlsteuerungen",
+    "Österreich",
+    "Wettbewerber"
+   ],
+   "controls": [],
+   "roles": [
+    "Management",
+    "IT-Risiko"
+   ],
+   "countries": [
+    "AT"
+   ],
+   "dossier": "betriebstechnik-filialen-logistik",
+   "priority": 7,
+   "primary": false,
+   "added": "2026-11-04T06:08:36Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Eine zweite Angriffswelle in mehreren Ländern der Europäischen Union erwähnt die Quelle nicht, dort ist nur von Angriffen auf mehrere europäische Supermärkte die Rede. Die Spar-Abteilung ist laut Quelle nicht eigens für Kühlsysteme zuständig, sie beschäftigt sich auch mit deren Sicherheit."
+   }
+  },
   {
    "title": "Update: Kühlsteuerungen – zweite Angriffswelle trifft Supermärkte in neun Ländern",
    "summary": "Anders als bei der ersten Welle in Frankreich im Oktober stiegen in der Nacht zum 2. November in Supermärkten in mindestens neun Ländern die Temperaturen von Kühl- und Tiefkühlgeräten stark an: in Belgien, Estland, Finnland, Irland, Italien, Luxemburg, den Niederlanden, Portugal und Schweden. Christophe Hansen, Kommissar für Landwirtschaft und Ernährung, nennt die Angriffe einen gezielten Versuch, die Lebensmittelversorgung zu stören. In Schweden waren externe Kühlsteuerungen von Danfoss betroffen, in Estland ältere Danfoss-Modelle. Bekannt hat sich bisher niemand.",
@@ -1505,6 +1697,41 @@
    "check": {
     "verdict": "ok",
     "note": "Datum 1. November, Zeitraum August 2023 bis September 2026 und die fehlenden Angaben sind belegt."
+   }
+  },
+  {
+   "title": "Österreichs Tourismus: Gästedaten über Schnittstellenpartner abgeflossen, Betrug per WhatsApp",
+   "summary": "Beim Innsbrucker Dienstleister Feratel, der Buchungsplattformen von Tourismusverbänden betreut, wurden Zugangsdaten eines Schnittstellenpartners missbraucht. In Tirol sind potenziell rund 1.700 Betriebe betroffen, dazu mehrere Verbände in Salzburg und alle in der Steiermark. Täter schreiben Gäste mit künftigen Buchungen über WhatsApp an und verlangen über Links angebliche Zahlungen. Kreditkarten- und Zugangsdaten sollen nicht betroffen sein. Bei der Datenschutzbehörde gingen Meldungen ein, die Lücke ist laut Feratel geschlossen.",
+   "relevance": "Für Reiseveranstalter ist das Muster bekannt: Echte Buchungsdaten machen Betrugsnachrichten glaubwürdig, und der Einstieg liegt bei einem Partner mit Schnittstellenzugang. Zugangsdaten von Integrationspartnern gehören deshalb ins Drittparteien- und Berechtigungsmanagement. Warnungen an Kunden und Meldewege sollten vorbereitet sein.",
+   "source": "ORF Tirol",
+   "url": "https://tirol.orf.at/stories/3377559/",
+   "id": "2026-11-04-feratel-tourismus-buchungsdaten",
+   "topic": "Handel & Branche",
+   "impact": "mittel",
+   "published": "2026-10-31",
+   "tags": [
+    "Touristik",
+    "Schnittstellen",
+    "Betrug"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen",
+    "DSGVO Art. 33 und 34 – Meldung und Benachrichtigung bei Datenschutzverletzungen"
+   ],
+   "roles": [
+    "Einkauf & Drittparteien",
+    "Datenschutz"
+   ],
+   "countries": [
+    "AT"
+   ],
+   "dossier": "drittparteien-lieferkette",
+   "priority": 2,
+   "primary": false,
+   "added": "2026-11-04T06:08:36Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum 31. Oktober stimmt. Schnittstellenpartner, rund 1.700 Betriebe, mehrere Verbände in Salzburg, alle in der Steiermark, WhatsApp-Masche, Kreditkarten- und Zugangsdaten nicht betroffen, Meldungen an die Datenschutzbehörde, Lücke geschlossen: alles belegt. Laut Quelle betrifft es großteils…"
    }
   },
   {

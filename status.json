@@ -1,11 +1,17 @@
 {
  "last_run": {
-  "start": "2026-11-03T07:00:02+01:00",
-  "end": "2026-11-03T07:08:28+01:00",
+  "start": "2026-11-04T07:00:01+01:00",
+  "end": "2026-11-04T07:08:36+01:00",
   "ok": true,
-  "summary": "6 neue Meldungen: P1 Update: Kühlsteuerungen – zweite Angriffswelle trifft Supermärkte in neun Ländern; P2 Progress WS_FTP Server: 15 Lücken, Administratorzugangsdaten ohne Anmeldung abgreifbar;"
+  "summary": "7 neue Meldungen: P1 Update: Linux-Lücke im Netzwerkstack – Red Hat liefert Patches, Ubuntu nur im Testkanal; P2 Österreichs Tourismus: Gästedaten über Schnittstellenpartner abgeflossen, Betrug "
  },
  "history": [
+  {
+   "start": "2026-11-04T07:00:01+01:00",
+   "end": "2026-11-04T07:08:36+01:00",
+   "ok": true,
+   "summary": "7 neue Meldungen: P1 Update: Linux-Lücke im Netzwerkstack – Red Hat liefert Patches, Ubuntu nur im Testkanal; P2 Österreichs Tourismus: Gästedaten über Schnittstellenpartner abgeflossen, Betrug "
+  },
   {
    "start": "2026-11-03T07:00:02+01:00",
    "end": "2026-11-03T07:08:28+01:00",
@@ -83,12 +89,6 @@
    "end": "2026-10-23T07:08:07+02:00",
    "ok": true,
    "summary": "8 neue Meldungen: P1 Fortinet: Außerplanmäßige Updates für Firewalls und Verwaltung, Details erst am 10. November; P2 LiteLLM: Veröffentlichungsprozess gekapert, Version 1.107.0 stiehlt Cloud-Zug"
-  },
-  {
-   "start": "2026-10-22T07:00:01+02:00",
-   "end": "2026-10-22T07:07:19+02:00",
-   "ok": true,
-   "summary": "6 neue Meldungen: P1 PHP2Shell: Kritische Lücken in der Skriptsprache PHP erlauben Codeausführung ohne Anmeldung; P2 Update: Digital Omnibus – Mitgliedstaaten einigen sich auf Verhandlungsmandat; "
   }
  ]
 }
