@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04T06:08:36Z",
+ "updated": "2026-11-05T06:07:41Z",
  "topics": [
   "IT-Governance & Risiko",
   "Cyber- & IT-Regulierung",
@@ -11,6 +11,18 @@
   "Weitere Themen"
  ],
  "briefings": [
+  {
+   "date": "2026-11-05",
+   "headline": "WordPress-Lücke mit Behördenfrist am 6. November, Kühlsteuerungs-Vorfälle jetzt auch in Rumänien, britische Cyberbehörde warnt vor Ransomware mit Künstlicher Intelligenz",
+   "points": [
+    "Update WordPress: Die Lücke CVE-2026-119977 wird während Core-Upgrades ausgenutzt und ist offiziell gelistet. Die Behördenfrist endet am 6. November.",
+    "Update Kühlsteuerungen: In Rumänien hatten sechs Filialen einer nicht genannten Handelskette Temperaturspitzen. Ein Angriff ist noch nicht bestätigt.",
+    "Die britische Cyberbehörde hält Ransomware mit Künstlicher Intelligenz gegen kritische Infrastruktur innerhalb von zwei Jahren für höchst wahrscheinlich.",
+    "Überarbeitung des Cybersecurity Act: Im Europäischen Parlament sind fast alle politischen Fragen offen. Die interne Position soll bis Jahresende stehen.",
+    "Passwortmanager mSecure und Muji-App: Daten von Kunden abgeflossen, bei Muji möglicherweise bis zu 27,26 Millionen Nutzer."
+   ],
+   "count": 6
+  },
   {
    "date": "2026-11-04",
    "headline": "Linux-Patches kommen je nach Distribution unterschiedlich schnell. Dazu Gästedaten über einen Tourismus-Partnerzugang und ein gekaperter Update-Kanal als Einfallstor.",
@@ -356,18 +368,6 @@
     "Apple will den Vollzugriff von Programmen auf dem Mac wegen Agenten mit Künstlicher Intelligenz einschränken."
    ],
    "count": 6
-  },
-  {
-   "date": "2026-10-04",
-   "headline": "Neuer Zero Day bei Citrix NetScaler ohne Patch, öffentlicher Angriffscode zur SAP-Lücke OVERPASS, und die Revision sieht Künstliche Intelligenz als zweitgrößtes Risiko.",
-   "points": [
-    "Citrix NetScaler: Ein neuer Exploit umgeht offenbar den Fix der Vorwoche. Auch voll aktualisierte Geräte starten spontan neu, ein Patch fehlt.",
-    "SAP OVERPASS (Höchstwert 10 von 10): neuer Angriffsweg über WebSocket-basierte Fernaufrufe, Proof-of-Concept-Code öffentlich, die vorläufige Schutzmaßnahme deckt nur den Webverkehr ab.",
-    "Risk in Focus 2027: 86 Prozent der Revisionsleitungen sehen Cybersicherheit unter den fünf größten Risiken, Künstliche Intelligenz steigt mit 52 Prozent auf Platz zwei.",
-    "Google testet für Gemini auf dem Mac den Zugriff auf alle Dateien und Programme, inklusive Löschen.",
-    "Österreich: Paketabgabe von 2 Euro pro Sendung für große Versandhändler gilt seit 1. Oktober. Der Bundesgerichtshof kippt die Prime-Preiserhöhung von Amazon."
-   ],
-   "count": 5
   }
  ],
  "dossiers": [
@@ -381,19 +381,19 @@
     }
    ],
    "title": "Betriebstechnik in Filialen und Logistik",
-   "sector": "IT-Governance & Risiko",
+   "sector": "Handel & Branche",
    "ring": "jetzt handeln",
-   "status": "Nach rund 700 Supermärkten in Frankreich traf in der Nacht zum 2. November eine zweite Welle Supermärkte in mindestens neun Ländern der Europäischen Union; die österreichischen REWE-Unternehmen melden keine vergleichbaren Vorfälle. Zusätzlich wird eine Lücke mit Höchstwertung in Siemens-Industrie-Gateways IoT2050 aktiv ausgenutzt.",
-   "next_step": "Inventar von Kühlsteuerungen, Gateways und Fernwartungszugängen vervollständigen und Zuständigkeiten für Patches und Netztrennung festlegen.",
+   "status": "Nach rund 700 Supermärkten in Frankreich traf in der Nacht zum 2. November eine zweite Welle Supermärkte in mindestens neun Ländern der Europäischen Union. In Rumänien zeigten sechs Filialen einer nicht genannten Kette Temperaturspitzen, ein Angriff ist dort noch nicht bestätigt. Die britische Cyberbehörde nennt die Vorfälle in ihrem Jahresbericht, zusätzlich wird eine Lücke mit Höchstwertung in…",
+   "next_step": "Konzernweit, auch in den Ländern von REWE International, belegen lassen, dass Kühl- und Gebäudesteuerungen nicht aus dem Internet erreichbar sind und Fernwartungszugänge der Dienstleister kontrolliert werden.",
    "open_questions": [
-    "Wer steckt hinter den Angriffen auf Kühlsteuerungen?",
-    "Decken Cyberversicherungen Schäden an veralteten, nicht mehr gepflegten Steuerungen?"
+    "Wer ist in den Landesgesellschaften Owner der Betriebstechnik in den Filialen?",
+    "Decken Cyberversicherungen Warenverluste durch manipulierte Kühlung, wenn Steuerungen offen erreichbar waren?"
    ],
    "controls": [
-    "ISO/IEC 27001 Anhang A 8.22 – Trennung von Netzwerken",
-    "NIS-2-Richtlinie Art. 21 – Risikoanalyse und Sicherheit der Informationssysteme"
+    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
+    "ISO/IEC 27001 Anhang A 8.20 – Netzwerksicherheit"
    ],
-   "updated": "2026-11-04"
+   "updated": "2026-11-05"
   },
   {
    "slug": "drittparteien-lieferkette",
@@ -431,16 +431,16 @@
    "title": "Identitäten und Zugangsdaten",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Bei Staples kamen Angreifer über Speicherabbilder an Sitzungsdaten von Servicekräften und erzeugten Geschenkkarten für rund 5 Millionen Dollar. Gleichzeitig rücken versteckte Rechteketten in Cloud-Identitäten wie Entra ID und nicht-menschliche Identitäten wie bei ConnectWise in den Blick.",
-   "next_step": "Sitzungsschutz und Funktionen mit Geldwirkung in Service-Werkzeugen prüfen, regelmäßige automatisierte Prüfung der Cloud-Berechtigungen nach einem festen Maßstab einführen.",
+   "status": "Bei Staples erbeuteten Angreifer über Speicherabbilder Sitzungsdaten von Servicekräften und erzeugten Geschenkkarten für rund 5 Millionen Dollar. Beim Passwortmanager mSecure wurde eine verschlüsselte Kundendatenbank abgegriffen, Kunden sollen Passwörter, Zwei-Faktor-Anmeldung und Passkeys erneuern. Daneben rücken versteckte Rechteketten in Entra ID und nicht-menschliche Identitäten in den Blick.",
+   "next_step": "Genutzte Passwortmanager einschließlich der in Fachbereichen selbst beschafften erfassen und einen Ablauf für den Massentausch von Zugangsdaten vorbereiten.",
    "open_questions": [
-    "Welche internen Werkzeuge können Gutschriften oder Gutscheine erzeugen, und mit welchen Limits?"
+    "Welche Passwortmanager sind im Konzern freigegeben und welche werden tatsächlich genutzt?"
    ],
    "controls": [
-    "ISO/IEC 27001 Anhang A 5.18 – Zugangsrechte",
-    "IT-Kontrollen der Abschlussprüfung – Zugriffsschutz"
+    "ISO/IEC 27001 Anhang A 5.17 – Authentisierungsinformationen",
+    "ISO/IEC 27001 Anhang A 5.18 – Zugangsrechte"
    ],
-   "updated": "2026-10-26"
+   "updated": "2026-11-05"
   },
   {
    "slug": "kritische-schwachstellen-perimeter",
@@ -454,17 +454,17 @@
    "title": "Kritische Schwachstellen in Randsystemen und Kernanwendungen",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Bei Ivanti Connect Secure, Drupal Commerce und Synology laufen weiter Angriffe, neu wird eine Lücke mit Höchstwertung in Siemens-Gateways IoT2050 ausgenutzt. Für die Linux-Lücke CVE-2026-98432 liefert Red Hat seit 1. November Patches, Ubuntu bisher nur im Testkanal; bei VMware ESX endet die Behördenfrist am 11. November.",
-   "next_step": "Patch-Stand der Linux-Kernel je Distribution einschließlich Neustarts nachhalten, Ausnahmen mit Übergangsmaßnahmen dokumentieren und Herstellerbewertungen kritisch gegenprüfen.",
+   "status": "Bei Ivanti Connect Secure, Drupal Commerce, Synology und den Siemens-Gateways IoT2050 laufen weiter Angriffe. Neu offiziell als ausgenutzt gelistet ist die WordPress-Lücke CVE-2026-119977, die während Core-Upgrades angegriffen wird; die Behördenfrist endet am 6. November, bei VMware ESX am 11. November. Die britische Cyberbehörde erwartet, dass Künstliche Intelligenz lange geduldete…",
+   "next_step": "WordPress-Inventar einschließlich Agenturseiten abgleichen und die Korrektur vor dem nächsten Upgrade einspielen. Akzeptierte Schwachstellenrisiken mit Ablaufdatum versehen.",
    "open_questions": [
-    "Wann liefert Ubuntu die Korrekturen im regulären Kanal?",
-    "Wird ein funktionierender Exploit für die Linux-Lücke öffentlich?"
+    "Sind alle öffentlich erreichbaren Webseiten der Marken im Inventar erfasst?",
+    "Wie oft werden akzeptierte Risiken tatsächlich neu bewertet?"
    ],
    "controls": [
     "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
     "NIS-2-Richtlinie Art. 21 – Umgang mit Schwachstellen"
    ],
-   "updated": "2026-11-04"
+   "updated": "2026-11-05"
   },
   {
    "slug": "lebenszyklus-altsysteme",
@@ -736,6 +736,30 @@
     "PCI DSS Anforderung 12.8 – Steuerung von Drittdienstleistern"
    ],
    "updated": "2026-10-26"
+  },
+  {
+   "slug": "cybersecurity-act-2",
+   "created": "2026-11-05",
+   "ring_history": [
+    {
+     "date": "2026-11-05",
+     "ring": "beobachten"
+    }
+   ],
+   "title": "Überarbeitung des Cybersecurity Act",
+   "sector": "Cyber- & IT-Regulierung",
+   "ring": "beobachten",
+   "status": "Die Kommission hat im Januar 2026 einen neuen Cybersecurity Act und Änderungen der NIS-2-Richtlinie vorgeschlagen. Im Europäischen Parlament sind fast alle politischen Fragen offen, darunter Bewertungen einzelner Anbieter, eine verpflichtende Zertifizierung und eine stärkere Rolle der Agentur der Europäischen Union für Cybersicherheit; die interne Position soll bis Jahresende stehen.",
+   "next_step": "Den Trilog beobachten und in neuen Langfristverträgen über Netzwerk- und Cloud-Technik Klauseln für einen Anbieterwechsel vorsehen.",
+   "open_questions": [
+    "Wird die Zertifizierung für bestimmte Produktgruppen verpflichtend?",
+    "Welche Anbieter wären von Einzelbewertungen betroffen, und mit welchen Übergangsfristen?"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
+    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen"
+   ],
+   "updated": "2026-11-05"
   }
  ],
  "deadlines": [
@@ -793,6 +817,17 @@
    "checked": true,
    "dossier": "kritische-schwachstellen-perimeter",
    "added": "2026-11-01"
+  },
+  {
+   "date": "2026-11-06",
+   "title": "WordPress-Lücke CVE-2026-119977: behördliche Patch-Frist",
+   "detail": "Die amerikanische Cybersicherheitsbehörde verlangt die Korrektur der beim Core-Upgrade ausgenutzten WordPress-Lücke bis zu diesem Tag. Betreiber von WordPress-Seiten sollten sie als Richtwert nehmen und vor dem nächsten Upgrade patchen.",
+   "scope": "global",
+   "url": "https://thehackernews.com/2026/11/cisa-confirms-hackers-exploiting.html",
+   "primary": false,
+   "checked": true,
+   "dossier": "kritische-schwachstellen-perimeter",
+   "added": "2026-11-05"
   },
   {
    "date": "2026-11-10",
@@ -1029,16 +1064,16 @@
  "signals": [
   {
    "theme": "Digital Fairness Act",
-   "why": "Kanzleien erwarten den Vorschlag der Kommission für den 11. November. Er zielt auf Dark Patterns, Abo-Fallen und unfaire Personalisierung und betrifft damit Onlinehandel, Kundenprogramme und Preisgestaltung.",
-   "count": 21,
+   "why": "Die Kommission will den Vorschlag vorläufig am 11. November vorlegen, der Termin ist aber nicht final. Erwartet werden Regeln zu Dark Patterns, Abofallen und personalisierter Ansprache, die Onlinehandel, Kunden-Apps und Preisgestaltung mit Künstlicher Intelligenz betreffen würden.",
+   "count": 22,
    "first_seen": "2026-09-30",
-   "last_seen": "2026-11-04",
+   "last_seen": "2026-11-05",
    "evidence": [
+    "https://newsletter.digitalfairnessact.com/p/digital-fairness-act-targeted-for",
     "https://www.freshfields.com/en/our-thinking/campaigns/tech-data-and-ai-the-digital-frontier/eu-digital-strategy/navigating-the-eus-digital-fairness-act",
     "https://eprs.europarl.europa.eu/contents/publications/EPRS/2026/10/EPRS_BRI(2026)791529.html",
     "https://www.europarl.europa.eu/legislative-train/theme-protecting-our-democracy-upholding-our-values/file-digital-fairness-act",
-    "https://www.privacylaws.com/news/eu-proposal-on-digital-fairness-act-expected-by-the-end-of-2026/",
-    "https://www.eversheds-sutherland.com/en/slovakia/insights/the-digital-fairness-act-what-businesses-need-to-know"
+    "https://www.privacylaws.com/news/eu-proposal-on-digital-fairness-act-expected-by-the-end-of-2026/"
    ]
   },
   {
@@ -1084,6 +1119,20 @@
    ]
   },
   {
+   "theme": "Schwachstellensuche durch Künstliche Intelligenz",
+   "why": "Nach Einschätzung der britischen Cyberbehörde finden Angreifer mit Künstlicher Intelligenz lange geduldete Schwachstellen in viel größerem Umfang. Akzeptierte Risiken und aufgeschobene Patches werden dadurch schneller zum Einfallstor.",
+   "count": 5,
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-11-05",
+   "evidence": [
+    "https://newcivilengineer.com/latest/highly-likely-ai-will-be-used-in-ransomware-attack-on-uk-critical-infrastructure-03-11-2026",
+    "https://thehackernews.com/2026/11/red-hat-patches-98-rated-linux-tcp-rce.html",
+    "https://www.heise.de/news/Erneut-kritischer-Bug-in-Linux-TCP-IP-aufgedeckt-Updates-in-Arbeit-11506050.html",
+    "https://www.heise.de/news/Ausserplanmaessige-Fortinet-Updates-Details-Fehlanzeige-aber-dringend-11497171.html",
+    "https://www.heise.de/news/PwnEscape-Kritische-Luecke-in-Linux-Kernel-erlaubt-VM-Ausbruch-11492131.html"
+   ]
+  },
+  {
    "theme": "Digitale Identitäts-Wallet der Europäischen Union",
    "why": "Der Bundestag hat am 15. Oktober 2026 das Gesetz für die europäische digitale Identitäts-Wallet beschlossen. Für Händler und Reiseanbieter werden Altersnachweise, Identifizierung und Kundenanmeldung über die Wallet absehbar ein Thema für Prozesse und Datenschutz.",
    "count": 5,
@@ -1119,19 +1168,6 @@
     "https://digital-strategy.ec.europa.eu/en/policies/post-quantum-cryptography",
     "https://www.whitehouse.gov/wp-content/uploads/2026/06/M-26-15-Execution-of-the-Migration-to-Post-Quantum-Cryptography.pdf",
     "https://www.heise.de/news/CA-Bewerbung-CDN-Anbieter-Cloudflare-will-bald-selber-Zertifikate-ausstellen-11469864.html"
-   ]
-  },
-  {
-   "theme": "Schwachstellensuche durch Künstliche Intelligenz",
-   "why": "Laut Anthropic hat ein unveröffentlichtes Forschungsmodell für die kritische Linux-Lücke einen funktionierenden Exploit geschrieben. Patch-Fenster könnten dadurch weiter schrumpfen.",
-   "count": 4,
-   "first_seen": "2026-10-20",
-   "last_seen": "2026-11-04",
-   "evidence": [
-    "https://thehackernews.com/2026/11/red-hat-patches-98-rated-linux-tcp-rce.html",
-    "https://www.heise.de/news/Erneut-kritischer-Bug-in-Linux-TCP-IP-aufgedeckt-Updates-in-Arbeit-11506050.html",
-    "https://www.heise.de/news/Ausserplanmaessige-Fortinet-Updates-Details-Fehlanzeige-aber-dringend-11497171.html",
-    "https://www.heise.de/news/PwnEscape-Kritische-Luecke-in-Linux-Kernel-erlaubt-VM-Ausbruch-11492131.html"
    ]
   },
   {
@@ -1293,6 +1329,143 @@
   }
  ],
  "news": [
+  {
+   "title": "Update: WordPress-Lücke wird beim Core-Upgrade ausgenutzt, Behördenfrist 6. November",
+   "summary": "Die amerikanische Cybersicherheitsbehörde hat die WordPress-Lücke CVE-2026-119977 am 3. November in ihren Katalog aktiv ausgenutzter Schwachstellen aufgenommen. Bundesbehörden dort müssen die Korrekturen bis 6. November einspielen. Neu ist, wie die Lücke ausgenutzt wird: Angreifer ohne Anmeldung nutzen ein kurzes Zeitfenster während vollständiger Core-Upgrades und greifen über vorhersehbare, aus dem Netz erreichbare Ablagepfade an. Ein Sicherheitsanbieter zählte 12.632 blockierte Angriffe in 24 Stunden.",
+   "relevance": "Gerade die Aktualisierung öffnet hier das Angriffsfenster. Das Inventar aller WordPress-Installationen muss deshalb vollständig sein, auch Kampagnen- und Markenseiten bei Agenturen, und die Korrektur sollte vor dem nächsten Upgrade eingespielt werden. Prüfenswert ist auch, ob Agenturen und Hoster als Drittparteien mit Patch-Pflichten erfasst sind.",
+   "source": "The Hacker News",
+   "url": "https://thehackernews.com/2026/11/cisa-confirms-hackers-exploiting.html",
+   "id": "2026-11-05-wordpress-luecke-update-ausnutzung",
+   "topic": "IT-Governance & Risiko",
+   "impact": "hoch",
+   "published": "2026-11-04",
+   "tags": [
+    "WordPress",
+    "Patch-Management",
+    "Webseiten"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
+    "ISO/IEC 27001 Anhang A 5.9 – Inventar der Informationen und anderer zugehöriger Werte",
+    "NIS-2-Richtlinie Art. 21 – Umgang mit Schwachstellen"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Einkauf & Drittparteien"
+   ],
+   "countries": [],
+   "dossier": "kritische-schwachstellen-perimeter",
+   "priority": 1,
+   "primary": false,
+   "added": "2026-11-05T06:07:41Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum 4. November 2026 stimmt. Die Kennung CVE-2026-119977, die Frist für Bundesbehörden am 6. November, die Ausnutzung ohne Anmeldung im kurzen Zeitfenster beim vollständigen Core-Upgrade über vorhersehbare, aus dem Netz erreichbare Ablagepfade und die 12.632 blockierten Angriffe in 24 Stunden…"
+   }
+  },
+  {
+   "title": "Überarbeitung des Cybersecurity Act: Im Parlament sind fast alle politischen Fragen offen",
+   "summary": "Laut einem Berater der federführenden Abgeordneten Markéta Gregorová will das Europäische Parlament seine internen Beratungen zum überarbeiteten Cybersecurity Act bis Jahresende abschließen. Fast alle politischen Fragen seien noch ungelöst. Strittig sind unter anderem Bewertungen einzelner Anbieter, eine verpflichtende Zertifizierung und eine stärkere Rolle der Agentur der Europäischen Union für Cybersicherheit bei Künstlicher Intelligenz. Das im Januar 2026 vorgelegte Paket ändert auch die NIS-2-Richtlinie (Richtlinie über Netz- und Informationssicherheit).",
+   "relevance": "Bewertungen von Anbietern und Pflichtzertifizierungen würden Einkauf, Lieferantensteuerung und langfristige Verträge über Netzwerk- und Cloud-Technik betreffen. Bis zum Trilog genügt es, das Verfahren zu beobachten. In neue Langfristverträge gehören aber schon jetzt Klauseln für einen Anbieterwechsel.",
+   "source": "MLex",
+   "url": "https://www.mlex.com/mlex/data-privacy-security/articles/2546369",
+   "id": "2026-11-05-cybersecurity-act-verhandlungen",
+   "topic": "Cyber- & IT-Regulierung",
+   "impact": "mittel",
+   "published": "2026-11-04",
+   "tags": [
+    "Cybersecurity Act",
+    "Zertifizierung",
+    "Lieferkette"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
+    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen"
+   ],
+   "roles": [
+    "Einkauf & Drittparteien",
+    "IT-Risiko"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "cybersecurity-act-2",
+   "priority": 4,
+   "primary": false,
+   "added": "2026-11-05T06:07:41Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum 4. November 2026 stimmt. Der Berater von Markéta Gregorová (Paul Diegel), der Abschluss bis Jahresende, die fast durchweg offenen politischen Fragen sowie die Anbieterbewertungen, die verpflichtende Zertifizierung und eine stärkere Rolle der Agentur bei Künstlicher Intelligenz stehen im frei…"
+   }
+  },
+  {
+   "title": "Passwortmanager mSecure: Verschlüsselte Kundendatenbank abgegriffen",
+   "summary": "Der Hersteller mSeven Software fordert Kunden seines Passwortmanagers mSecure auf, Passwörter zu ändern, die Zwei-Faktor-Anmeldung zurückzusetzen und Passkeys zu entfernen. Ein Angreifer soll eine verschlüsselte Kundendatenbank entwendet haben. Hinweise, dass er auf die Inhalte zugreifen konnte, hat das Unternehmen nach eigenen Angaben nicht.",
+   "relevance": "Ohne Liste der tatsächlich genutzten Passwortmanager, auch der in Fachbereichen selbst beschafften, bleibt bei einem solchen Fall nur eine Suche nach Betroffenen. Freigegebene Werkzeuge und ein vorbereiteter Ablauf für den Massentausch von Zugangsdaten verkürzen die Reaktion.",
+   "source": "BleepingComputer",
+   "url": "https://www.bleepingcomputer.com/news/security/msecure-password-manager-hack-prompts-password-reset-warnings/",
+   "id": "2026-11-05-msecure-passwortmanager",
+   "topic": "IT-Governance & Risiko",
+   "impact": "mittel",
+   "published": "2026-11-04",
+   "tags": [
+    "Passwortmanager",
+    "Zugangsdaten",
+    "Schatten-IT"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 5.17 – Authentisierungsinformationen",
+    "ISO/IEC 27001 Anhang A 5.23 – Informationssicherheit für die Nutzung von Cloud-Diensten"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Einkauf & Drittparteien"
+   ],
+   "countries": [],
+   "dossier": "identitaeten-zugangsdaten",
+   "priority": 5,
+   "primary": false,
+   "added": "2026-11-05T06:07:41Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum 4. November 2026 stimmt. Die Empfehlungen, die verschlüsselte Datenbank und das Fehlen von Hinweisen auf einen Zugriff auf die Inhalte sind belegt. Die beiden letzten Angaben stammen aus Antworten des Kundendienstes, die Kunden weitergegeben haben."
+   }
+  },
+  {
+   "title": "Britische Cyberbehörde: Ransomware mit Künstlicher Intelligenz gegen kritische Infrastruktur höchst wahrscheinlich",
+   "summary": "Das National Cyber Security Centre, die britische Cyberbehörde, hält es in seinem Jahresbericht vom 3. November für höchst wahrscheinlich, dass Schadsoftware mit Künstlicher Intelligenz bei einem Ransomware-Angriff auf kritische Infrastruktur eingesetzt wird. Der Behördenchef rechnet damit innerhalb von zwei Jahren und warnt vor einem möglichen beispiellosen Anstieg der Vorfälle. Künstliche Intelligenz erfinde dabei keine neuen Methoden, sondern finde lange geduldete Schwachstellen in viel größerem Umfang, und die Regierung hat 70 Millionen Pfund für ein neues Zentrum zur Erkennung von Schwachstellen angekündigt.",
+   "relevance": "Für einen Konzern, der zur Lebensmittelversorgung gehört, heißt das: Akzeptierte Risiken und aufgeschobene Patches brauchen ein Ablaufdatum und eine regelmäßige Neubewertung, weil ihre Ausnutzung billiger wird.",
+   "source": "New Civil Engineer",
+   "url": "https://newcivilengineer.com/latest/highly-likely-ai-will-be-used-in-ransomware-attack-on-uk-critical-infrastructure-03-11-2026",
+   "id": "2026-11-05-britische-cyberbehoerde-jahresbericht",
+   "topic": "Weitere Themen",
+   "impact": "mittel",
+   "published": "2026-11-03",
+   "tags": [
+    "Bedrohungslage",
+    "Künstliche Intelligenz",
+    "Ransomware"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Abschnitt 6.1.3 – Behandlung von Informationssicherheitsrisiken",
+    "NIS-2-Richtlinie Art. 21 – Konzepte für die Risikoanalyse"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Management"
+   ],
+   "countries": [
+    "GB"
+   ],
+   "dossier": "kritische-schwachstellen-perimeter",
+   "priority": 3,
+   "primary": false,
+   "added": "2026-11-05T06:07:41Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Datum und Kernaussagen stimmen. Dass der Bericht die überhitzten Kühlmöbel ausdrücklich nennt, stimmt nicht: Die Kühlmöbel sind nur Einordnung des Artikels, kein Inhalt des Berichts. Die 70 Millionen Pfund wurden bereits im Haushalt der Vorwoche angekündigt."
+   }
+  },
   {
    "title": "Update: Linux-Lücke im Netzwerkstack – Red Hat liefert Patches, Ubuntu nur im Testkanal",
    "summary": "Für die Lücke CVE-2026-98432 im Netzwerkprotokoll-Code des Linux-Kernels (Bewertung 9,8 von 10, ohne Anmeldung über jeden offenen Port ausnutzbar) hat Red Hat am 1. November korrigierte Kernel für die Versionen 8, 9 und 10 von Red Hat Enterprise Linux veröffentlicht. Die Lücke hatte Red Hat zunächst nur mit 5,9 bewertet. Ein Neustart ist nötig. Bei Ubuntu liegen die Korrekturen für die Langzeitversionen nur im freiwilligen Testkanal, ältere Versionen fehlen noch; Debian, SUSE und Oracle Linux haben schon im Oktober geliefert. Angriffe sind nicht bekannt. Laut Anthropic hat aber ein unveröffentlichtes Forschungsmodell einen funktionierenden Exploit geschrieben, und Demonstrationscode ist öffentlich.",
@@ -1523,6 +1696,42 @@
    "check": {
     "verdict": "ok",
     "note": "Datum 3. November 2026 stimmt. Die Quelle bestätigt die neun Länder, das Zitat von Kommissar Hansen, die externe Danfoss-Kühlsteuerung in Schweden, ältere Danfoss-Modelle in Estland, die erste Welle in Frankreich am 12. Oktober und dass sich niemand bekannt hat. Laut Quelle stiegen die…"
+   }
+  },
+  {
+   "title": "Update: Kühlsteuerungen – sechs Filialen einer Handelskette in Rumänien betroffen",
+   "summary": "In der Nacht zum 2. November zeigten sechs Filialen derselben Handelskette in Rumänien ungewöhnliche Temperaturspitzen in der Kühlung. Kette und Standorte wurden nicht genannt. Öffentlich bestätigt ist ein Cyberangriff noch nicht, die Untersuchung prüft unter anderem unberechtigte Zugriffe auf die Systeme, und die Quelle stellt den Vorfall in eine Reihe mit ähnlichen Vorfällen in anderen europäischen Ländern.",
+   "relevance": "Damit erreicht das Muster einen Markt, in dem REWE International tätig ist. Ob die Vorgabe zur Trennung von Kühlsteuerungen vom Internet auch in den Landesgesellschaften und bei deren Kältedienstleistern umgesetzt ist, sollte konzernweit belegt und nicht nur abgefragt werden.",
+   "source": "Informat.ro",
+   "url": "https://informat.ro/en/current-affairs/six-stores-in-romania-targeted-in-possible-cyberattack-146445",
+   "id": "2026-11-05-kuehlsteuerungen-rumaenien",
+   "topic": "Handel & Branche",
+   "impact": "hoch",
+   "published": "2026-11-02",
+   "tags": [
+    "Betriebstechnik",
+    "Rumänien",
+    "Lebensmittelhandel"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
+    "ISO/IEC 27001 Anhang A 8.20 – Netzwerksicherheit"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Management",
+    "Einkauf & Drittparteien"
+   ],
+   "countries": [
+    "RO"
+   ],
+   "dossier": "betriebstechnik-filialen-logistik",
+   "priority": 2,
+   "primary": false,
+   "added": "2026-11-05T06:07:41Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Die Seite selbst lieferte den Fehler 403, geprüft wurde über das Suchergebnis zum Titel. Kernaussage belegt, Veröffentlichung am 2. November 2026. Eine ausdrücklich zweite Angriffswelle auf Supermärkte in mehreren Ländern der Europäischen Union ist nicht belegt, die Quelle verweist nur auf…"
    }
   },
   {
@@ -1766,6 +1975,41 @@
    "check": {
     "verdict": "ok",
     "note": "53.000 Buchungen, Zeitraum August 2023 bis September 2026, Zugangsdaten eines Systemkontos, Benachrichtigung am 28. Oktober und keine Hinweise auf Zahlungsdaten sind belegt. Die Quelle nennt kein Datum, an dem Japan Airlines informiert wurde."
+   }
+  },
+  {
+   "title": "Händler Muji: Daten von bis zu 27,26 Millionen App-Nutzern möglicherweise abgeflossen",
+   "summary": "Ryohin Keikaku, der Betreiber der Handelskette Muji, meldet einen unberechtigten Zugriff auf seine App. Betroffen sein könnten bis zu 27,26 Millionen Nutzer, darunter E-Mail-Adressen, Geburtsdaten und Geschlecht.",
+   "relevance": "Kundenbindungs-Apps gehören im Handel zu den größten Sammlungen personenbezogener Daten. Datensparsamkeit, Löschfristen für inaktive Konten und Überwachung der Schnittstellen begrenzen den Schaden bei einem Vorfall dieser Größe.",
+   "source": "Fashionsnap",
+   "url": "https://www.fashionsnap.com/article/2026-10-30/muji-unauthorized-access/",
+   "id": "2026-11-05-muji-app-daten",
+   "topic": "Handel & Branche",
+   "impact": "mittel",
+   "published": "2026-10-30",
+   "tags": [
+    "Kunden-App",
+    "Datenpanne",
+    "Wettbewerber"
+   ],
+   "controls": [
+    "DSGVO Art. 5 Abs. 1 lit. c – Datenminimierung",
+    "DSGVO Art. 32 – Sicherheit der Verarbeitung"
+   ],
+   "roles": [
+    "Datenschutz",
+    "IT-Risiko"
+   ],
+   "countries": [
+    "JP"
+   ],
+   "dossier": null,
+   "priority": 6,
+   "primary": false,
+   "added": "2026-11-05T06:07:41Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Die Quelle vom 30. Oktober 2026 deckt die Zusammenfassung, sie ist aber überholt. Laut Folgemeldung derselben Quelle vom 4. November könnten bei etwa 1,09 Millionen Muji-Card-Datensätzen die vollständigen Kartennummern und bei etwa 520.000 Datensätzen auch Namen, Adressen und Telefonnummern…"
    }
   },
   {

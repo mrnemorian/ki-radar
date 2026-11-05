@@ -1,0 +1,183 @@
+{
+ "format": "tag",
+ "chapters": [
+  {
+   "title": "Begrüßung",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Guten Morgen, liebe IT-GRC-Kolleginnen und -Kollegen, willkommen beim IT-GRC Radar. Heute ist Donnerstag, der fünfte November 2026."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Morgen! Der Kaffee steht, und die Kühlsteuerungen sind leider auch wieder dabei."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Dazu kommen wir gleich. Zuerst aber etwas mit Frist bis morgen."
+    }
+   ]
+  },
+  {
+   "title": "WordPress beim Upgrade",
+   "news_id": "2026-11-05-wordpress-luecke-update-ausnutzung",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Da gibt es Neues zur WordPress-Lücke aus der vergangenen Woche. Die amerikanische Cybersicherheitsbehörde hat sie am dritten November offiziell als aktiv ausgenutzt gelistet. Bundesbehörden dort müssen bis morgen, den sechsten November, die Korrektur einspielen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Spannend ist, wann angegriffen wird. Ausgenutzt wird ein kurzes Zeitfenster während eines vollständigen [en]Core Upgrade[/en], über vorhersehbare Ablagepfade, die aus dem Netz erreichbar sind. Ausgerechnet das Update ist also der gefährliche Moment."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Moment, heißt das, wer brav aktualisiert, hat ein Problem?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Wer ohne die Korrektur aktualisiert, ja. Ein Sicherheitsanbieter hat in 24 Stunden 12.632 blockierte Angriffe gezählt. Für einen Konzern mit vielen Marken- und Kampagnenseiten zeigt sich jetzt, ob das Inventar wirklich vollständig ist. Dazu gehört auch die Seite, die eine Agentur mal für ein Gewinnspiel aufgesetzt hat."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Die berühmten Seiten, für die sich niemand als [en]Owner[/en] meldet."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Genau die. Und die Agentur gehört übrigens auch ins Drittparteien-Register."
+    }
+   ]
+  },
+  {
+   "title": "Kühlsteuerungen in Rumänien",
+   "news_id": "2026-11-05-kuehlsteuerungen-rumaenien",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Zum Dauerthema Kühlsteuerungen. In Rumänien hatten in der Nacht zum zweiten November sechs Filialen derselben Handelskette ungewöhnliche Temperaturspitzen. Kette und Standorte wurden nicht genannt, und offiziell bestätigt ist ein Cyberangriff noch nicht."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Zeitlich passt es aber genau zu den ähnlichen Vorfällen bei Supermärkten in anderen europäischen Ländern. Rumänien ist eines der Länder von REWE International. Welche Kette betroffen ist, wissen wir nicht, und wir spekulieren da auch nicht."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Was nimmst du trotzdem mit?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Dass das Muster in Mittel- und Osteuropa angekommen ist. Konzernsteuerung heißt hier: Gilt die Vorgabe, Steuerungen vom Internet zu trennen, auch für Landesgesellschaften und deren Kältedienstleister? Und kommt die Rückmeldung als Nachweis oder nur als Zeile in einer Excel-Liste?"
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Die Zeile mit der Ampel, die seit Wochen gelb ist."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Gelb ist im Risikoregister die diplomatischste Farbe."
+    }
+   ]
+  },
+  {
+   "title": "Britische Cyberbehörde",
+   "news_id": "2026-11-05-britische-cyberbehoerde-jahresbericht",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Passend dazu der Jahresbericht des [en]National Cyber Security Centre[/en], der britischen Cyberbehörde, vom dritten November. Sie hält es für höchst wahrscheinlich, dass Schadsoftware mit Künstlicher Intelligenz bei einem [en]Ransomware[/en]-Angriff auf kritische Infrastruktur eingesetzt wird. Der Behördenchef rechnet damit innerhalb von zwei Jahren."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Mir ist ein anderer Satz wichtiger: Künstliche Intelligenz erfindet keine neuen Angriffe. Sie findet lange geduldete Schwachstellen in viel größerem Umfang. Das betrifft jede Liste akzeptierter Risiken, die seit Jahren niemand angeschaut hat."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Großbritannien steckt 70 Millionen Pfund in ein neues Zentrum, das Schwachstellen aufspüren soll. Und die Warnung kommt ausgerechnet in der Woche der überhitzten Kühlmöbel auf dem Kontinent."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Für die Lebensmittelversorgung heißt das: Risikoakzeptanzen brauchen ein Ablaufdatum. Ein akzeptiertes Risiko ist keine Erbschaft."
+    }
+   ]
+  },
+  {
+   "title": "Cybersecurity Act",
+   "news_id": "2026-11-05-cybersecurity-act-verhandlungen",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Ein Regulierungsthema, das gern untergeht: die Überarbeitung des [en]Cybersecurity Act[/en]. Nach Aussage eines Beraters der federführenden Abgeordneten sind im Europäischen Parlament fast alle politischen Fragen offen. Die interne Position soll bis Jahresende stehen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ehrlich gesagt hätte ich nach zehn Monaten mehr Bewegung erwartet. Es geht um Bewertungen einzelner Anbieter, eine verpflichtende Zertifizierung und eine stärkere Rolle der Agentur der Europäischen Union für Cybersicherheit. Außerdem ändert das Paket die NIS-2-Richtlinie, die Richtlinie über Netz- und Informationssicherheit."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Also beobachten statt handeln?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Beobachten, aber mitschreiben. Wenn Anbieterbewertungen kommen, betreffen sie den Einkauf und jeden langfristigen Vertrag über Netzwerktechnik."
+    }
+   ]
+  },
+  {
+   "title": "Passwortmanager mSecure",
+   "news_id": "2026-11-05-msecure-passwortmanager",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Kurz zu Identitäten. Beim Passwortmanager mSecure hat ein Angreifer offenbar eine verschlüsselte Kundendatenbank entwendet. Der Hersteller rät, Passwörter zu ändern, die Zwei-Faktor-Anmeldung zurückzusetzen und [en]Passkeys[/en] zu entfernen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Die eigentliche Frage ist: Wissen wir, welche Passwortmanager im Unternehmen genutzt werden, auch die, die ein Fachbereich mal schnell selbst gekauft hat? Ohne diese Liste wird so ein Fall zur Schnitzeljagd."
+    }
+   ]
+  },
+  {
+   "title": "Muji-App",
+   "news_id": "2026-11-05-muji-app-daten",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Und aus dem Handel in Japan: Ryohin Keikaku, der Betreiber von Muji, meldet, dass Daten von bis zu 27,26 Millionen App-Nutzern betroffen sein könnten, darunter E-Mail-Adressen, Geburtsdaten und Geschlecht."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Kunden-Apps sind riesige Datensammlungen. Was man nicht speichert, kann auch nicht abfließen. Datensparsamkeit ist da ganz praktische Schadensbegrenzung."
+    }
+   ]
+  },
+  {
+   "title": "Auf dem Radar",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Auf dem Radar: Die Kommission will den [en]Digital Fairness Act[/en] vorläufig am elften November vorlegen. Der Termin ist allerdings noch nicht final."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Erwartet werden Regeln zu [en]Dark Patterns[/en], Abofallen und personalisierter Ansprache. Wer Preise mit Künstlicher Intelligenz gestaltet, sollte den Entwurf lesen, sobald er da ist."
+    }
+   ]
+  },
+  {
+   "title": "Abschied",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Das war das IT-GRC Radar für heute. Alle Quellen findet ihr wie immer auf der Webseite."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und schaut heute noch nach euren WordPress-Seiten. Bis morgen!"
+    }
+   ]
+  }
+ ]
+}

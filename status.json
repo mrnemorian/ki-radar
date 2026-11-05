@@ -1,11 +1,17 @@
 {
  "last_run": {
-  "start": "2026-11-04T07:00:01+01:00",
-  "end": "2026-11-04T07:08:36+01:00",
+  "start": "2026-11-05T07:00:01+01:00",
+  "end": "2026-11-05T07:07:41+01:00",
   "ok": true,
-  "summary": "7 neue Meldungen: P1 Update: Linux-Lücke im Netzwerkstack – Red Hat liefert Patches, Ubuntu nur im Testkanal; P2 Österreichs Tourismus: Gästedaten über Schnittstellenpartner abgeflossen, Betrug "
+  "summary": "6 neue Meldungen: P1 Update: WordPress-Lücke wird beim Core-Upgrade ausgenutzt, Behördenfrist 6. November; P2 Update: Kühlsteuerungen – sechs Filialen einer Handelskette in Rumänien betroffen; P"
  },
  "history": [
+  {
+   "start": "2026-11-05T07:00:01+01:00",
+   "end": "2026-11-05T07:07:41+01:00",
+   "ok": true,
+   "summary": "6 neue Meldungen: P1 Update: WordPress-Lücke wird beim Core-Upgrade ausgenutzt, Behördenfrist 6. November; P2 Update: Kühlsteuerungen – sechs Filialen einer Handelskette in Rumänien betroffen; P"
+  },
   {
    "start": "2026-11-04T07:00:01+01:00",
    "end": "2026-11-04T07:08:36+01:00",
@@ -83,12 +89,6 @@
    "end": "2026-10-24T07:07:18+02:00",
    "ok": true,
    "summary": "7 neue Meldungen: P1 Update: PHP2Shell – 4,2 Millionen verwundbare Dienste in Deutschland, Portale vorsorglich offline; P2 Windows Server 2016: Letzte Sicherheitsupdates am 12. Januar 2027; P3 Cloud"
-  },
-  {
-   "start": "2026-10-23T07:00:01+02:00",
-   "end": "2026-10-23T07:08:07+02:00",
-   "ok": true,
-   "summary": "8 neue Meldungen: P1 Fortinet: Außerplanmäßige Updates für Firewalls und Verwaltung, Details erst am 10. November; P2 LiteLLM: Veröffentlichungsprozess gekapert, Version 1.107.0 stiehlt Cloud-Zug"
   }
  ]
 }
