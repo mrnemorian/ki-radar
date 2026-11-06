@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05T06:07:41Z",
+ "updated": "2026-11-06T06:07:48Z",
  "topics": [
   "IT-Governance & Risiko",
   "Cyber- & IT-Regulierung",
@@ -11,6 +11,18 @@
   "Weitere Themen"
  ],
  "briefings": [
+  {
+   "date": "2026-11-06",
+   "headline": "Angriffe auf Kühlanlagen erreichen deutsche Supermärkte, falscher Support in Teams öffnet Zertifikatsdienste, Gerichtshof stärkt Auskunftsrecht",
+   "points": [
+    "Kühlanlagen in deutschen Supermärkten manipuliert, darunter Märkte von CAP, REWE und Edeka; die Staatsanwaltschaft ermittelt",
+    "Angreifer geben sich in Microsoft Teams als Support aus und lassen sich über schlecht konfigurierte Zertifikatsdienste Zertifikate für Administratorkonten ausstellen",
+    "Hotelsoftware vioma: Buchungsdaten von Gästen abgeflossen, Betrugsversuche erwartet",
+    "Gerichtshof der Europäischen Union: Das Auskunftsrecht darf nicht pauschal ausgeschlossen werden",
+    "OpenAI erzeugt automatisiert 948 funktionierende Linux-Exploits und zeigt damit, wie schnell Lücken künftig angegriffen werden können"
+   ],
+   "count": 5
+  },
   {
    "date": "2026-11-05",
    "headline": "WordPress-Lücke mit Behördenfrist am 6. November, Kühlsteuerungs-Vorfälle jetzt auch in Rumänien, britische Cyberbehörde warnt vor Ransomware mit Künstlicher Intelligenz",
@@ -356,18 +368,6 @@
     "Google pausiert sein Prämienprogramm für Open-Source-Schwachstellen wegen einer Flut von Meldungen, die mit Künstlicher Intelligenz erzeugt wurden."
    ],
    "count": 5
-  },
-  {
-   "date": "2026-10-05",
-   "headline": "Citrix liefert Updates für die neue Lücke, Wien und die Technische Universität Dänemarks zeigen, wie gefährlich vergessene Altdaten und Testablagen sind.",
-   "points": [
-    "Update Citrix NetScaler: Seit der Nacht auf Sonntag gibt es Updates für die Lücke CVE-2026-88779 in der Single-Sign-on-Funktion. Die amerikanische Cybersicherheitsbehörde hat sie in ihren Katalog aktiv ausgenutzter Schwachstellen aufgenommen.",
-    "Stadt Wien: Über eine Lücke im Webzugang wurden 26.000 Dokumente aus einer internen Dokumentationsplattform kopiert, darunter Daten von 865 Auftragnehmern.",
-    "Technische Universität Dänemarks: Mit übernommenen Konten gelangten Angreifer in die Identitätsverwaltung, die Daten reichen bis 2003 zurück.",
-    "Handel: Beim französischen Elektronikhändler LDLC sind zum vierten Mal seit 2021 Kundendaten abgeflossen.",
-    "Apple will den Vollzugriff von Programmen auf dem Mac wegen Agenten mit Künstlicher Intelligenz einschränken."
-   ],
-   "count": 6
   }
  ],
  "dossiers": [
@@ -383,17 +383,19 @@
    "title": "Betriebstechnik in Filialen und Logistik",
    "sector": "Handel & Branche",
    "ring": "jetzt handeln",
-   "status": "Nach rund 700 Supermärkten in Frankreich traf in der Nacht zum 2. November eine zweite Welle Supermärkte in mindestens neun Ländern der Europäischen Union. In Rumänien zeigten sechs Filialen einer nicht genannten Kette Temperaturspitzen, ein Angriff ist dort noch nicht bestätigt. Die britische Cyberbehörde nennt die Vorfälle in ihrem Jahresbericht, zusätzlich wird eine Lücke mit Höchstwertung in…",
-   "next_step": "Konzernweit, auch in den Ländern von REWE International, belegen lassen, dass Kühl- und Gebäudesteuerungen nicht aus dem Internet erreichbar sind und Fernwartungszugänge der Dienstleister kontrolliert werden.",
+   "status": "Nach rund 700 Supermärkten in Frankreich und einer zweiten Welle in mindestens neun Ländern sind Anfang November auch Supermärkte in Deutschland betroffen, darunter Märkte von CAP, REWE und Edeka; Kühlanlagen wurden teils auf über 50 Grad gestellt, die Staatsanwaltschaft ermittelt. Das Bundesamt für Sicherheit in der Informationstechnik rät, die Steuerungen vom Internet zu trennen und…",
+   "next_step": "Alle vernetzten Kühl-, Gebäude- und Energiesteuerungen in Filialen und Logistik erfassen, jeweils mit Owner, Erreichbarkeit aus dem Internet und Fernwartungszugängen von Herstellern und Dienstleistern. Offene Punkte mit Termin schließen und dabei lokale Alarme vorsehen, damit die Überwachung der…",
    "open_questions": [
-    "Wer ist in den Landesgesellschaften Owner der Betriebstechnik in den Filialen?",
-    "Decken Cyberversicherungen Warenverluste durch manipulierte Kühlung, wenn Steuerungen offen erreichbar waren?"
+    "Wer haftet, wenn ein Fernzugang des Herstellers oder Dienstleisters der Einfallsweg war?",
+    "Zahlt die Cyberversicherung bei Warenverlust durch manipulierte Betriebstechnik?",
+    "Ist eine Manipulation von Kühlanlagen ein meldepflichtiger erheblicher Sicherheitsvorfall nach dem Umsetzungsgesetz zur NIS-2-Richtlinie?"
    ],
    "controls": [
-    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
-    "ISO/IEC 27001 Anhang A 8.20 – Netzwerksicherheit"
+    "NIS-2-Richtlinie Art. 21 – Risikomanagementmaßnahmen im Bereich der Cybersicherheit",
+    "ISO/IEC 27001 Anhang A 8.20 – Netzwerksicherheit",
+    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen"
    ],
-   "updated": "2026-11-05"
+   "updated": "2026-11-06"
   },
   {
    "slug": "drittparteien-lieferkette",
@@ -407,17 +409,18 @@
    "title": "Drittparteien- und Lieferkettenrisiko",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Neben dem Fall Amadeus zeigen zwei neue Fälle dasselbe Muster: Bei Feratel wurden Zugangsdaten eines Schnittstellenpartners missbraucht, um Gästedaten österreichischer Tourismusbetriebe abzugreifen, und beim Sicherheitswerkzeug cPGuard verteilte ein gekaperter Update-Kanal Schadcode an 2.946 Server. Partnerschnittstellen und Software mit automatischen Updates und hohen Rechten gehören damit in…",
-   "next_step": "Zugangsdaten von Integrationspartnern sowie Software mit automatischen Updates und hohen Rechten inventarisieren und die Fähigkeit testen, Geheimnisse kurzfristig zu tauschen.",
+   "status": "Nach Amadeus, Feratel und cPGuard bestätigt nun auch der Anbieter von Hotelsoftware vioma, dass über kompromittierte Zugänge Buchungsdaten von Gästen abgeflossen sind; dazu kommt ein Phishing-Vorfall beim Buchungssystem DIRS21. In der Touristik häufen sich Abflüsse über Software- und Schnittstellenpartner, mit anschließendem Betrug unter Verwendung echter Buchungsdaten.",
+   "next_step": "Software- und Schnittstellenpartner mit Zugang zu Buchungs- oder Kundendaten nach Kritikalität einstufen. Die Absicherung ihrer Zugänge (Mehr-Faktor-Anmeldung, Protokollierung, Meldefristen) vertraglich festlegen und regelmäßig nachweisen lassen.",
    "open_questions": [
-    "Welcher Schnittstellenpartner war bei Feratel betroffen, und wie kam er an die Zugangsdaten?",
-    "Wie viele Fluggäste sind im Fall Amadeus insgesamt betroffen?"
+    "Wie schnell erfahren wir von einem Vorfall bei einem Partner der Partner?",
+    "Wer informiert Kunden, wenn Daten bei einem Dienstleister des Hotels abfließen?"
    ],
    "controls": [
     "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
-    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen"
+    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen",
+    "DSGVO Art. 28 – Auftragsverarbeiter"
    ],
-   "updated": "2026-11-04"
+   "updated": "2026-11-06"
   },
   {
    "slug": "identitaeten-zugangsdaten",
@@ -431,16 +434,18 @@
    "title": "Identitäten und Zugangsdaten",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Bei Staples erbeuteten Angreifer über Speicherabbilder Sitzungsdaten von Servicekräften und erzeugten Geschenkkarten für rund 5 Millionen Dollar. Beim Passwortmanager mSecure wurde eine verschlüsselte Kundendatenbank abgegriffen, Kunden sollen Passwörter, Zwei-Faktor-Anmeldung und Passkeys erneuern. Daneben rücken versteckte Rechteketten in Entra ID und nicht-menschliche Identitäten in den Blick.",
-   "next_step": "Genutzte Passwortmanager einschließlich der in Fachbereichen selbst beschafften erfassen und einen Ablauf für den Massentausch von Zugangsdaten vorbereiten.",
+   "status": "Neben Fällen wie Staples und mSecure zeigt Microsoft, wie Angreifer sich über Teams als Support ausgeben und dann über schlecht konfigurierte Zertifikatsdienste Zertifikate für privilegierte Konten und Domain Controller erhalten. Zertifikate, versteckte Rechteketten in Entra ID und nicht-menschliche Identitäten werden damit zu eigenen Prüfobjekten.",
+   "next_step": "Zertifikatsvorlagen und die Web-Registrierung der Active Directory Certificate Services prüfen, den erweiterten Schutz der Anmeldung aktivieren, Anfragen von Externen über Teams und erlaubte Fernwartungswerkzeuge einschränken und Zertifikate in die Prüfung der Berechtigungen aufnehmen.",
    "open_questions": [
-    "Welche Passwortmanager sind im Konzern freigegeben und welche werden tatsächlich genutzt?"
+    "Wer ist Owner der Zertifikatsinfrastruktur und ihrer Vorlagen?",
+    "Werden ausgestellte Zertifikate bei Vorfällen genauso schnell gesperrt wie Passwörter zurückgesetzt?"
    ],
    "controls": [
-    "ISO/IEC 27001 Anhang A 5.17 – Authentisierungsinformationen",
-    "ISO/IEC 27001 Anhang A 5.18 – Zugangsrechte"
+    "ISO/IEC 27001 Anhang A 5.18 – Zugangsrechte",
+    "ISO/IEC 27001 Anhang A 8.2 – Privilegierte Zugangsrechte",
+    "IT-Kontrollen der Abschlussprüfung – Zugriffsverwaltung"
    ],
-   "updated": "2026-11-05"
+   "updated": "2026-11-06"
   },
   {
    "slug": "kritische-schwachstellen-perimeter",
@@ -1064,14 +1069,14 @@
  "signals": [
   {
    "theme": "Digital Fairness Act",
-   "why": "Die Kommission will den Vorschlag vorläufig am 11. November vorlegen, der Termin ist aber nicht final. Erwartet werden Regeln zu Dark Patterns, Abofallen und personalisierter Ansprache, die Onlinehandel, Kunden-Apps und Preisgestaltung mit Künstlicher Intelligenz betreffen würden.",
-   "count": 22,
+   "why": "Der Wissenschaftliche Dienst des Europäischen Parlaments erwartet den Vorschlag im vierten Quartal 2026. Er soll manipulative Gestaltung, personalisierte Preise und digitale Verträge regeln und würde damit Onlinehandel und Kundenprogramme direkt treffen.",
+   "count": 23,
    "first_seen": "2026-09-30",
-   "last_seen": "2026-11-05",
+   "last_seen": "2026-11-06",
    "evidence": [
+    "https://eprs.europarl.europa.eu/contents/publications/EPRS/2026/10/EPRS_BRI(2026)791529.html",
     "https://newsletter.digitalfairnessact.com/p/digital-fairness-act-targeted-for",
     "https://www.freshfields.com/en/our-thinking/campaigns/tech-data-and-ai-the-digital-frontier/eu-digital-strategy/navigating-the-eus-digital-fairness-act",
-    "https://eprs.europarl.europa.eu/contents/publications/EPRS/2026/10/EPRS_BRI(2026)791529.html",
     "https://www.europarl.europa.eu/legislative-train/theme-protecting-our-democracy-upholding-our-values/file-digital-fairness-act",
     "https://www.privacylaws.com/news/eu-proposal-on-digital-fairness-act-expected-by-the-end-of-2026/"
    ]
@@ -1105,6 +1110,20 @@
    ]
   },
   {
+   "theme": "Schwachstellensuche durch Künstliche Intelligenz",
+   "why": "OpenAI erzeugt automatisiert Hunderte funktionierende Exploits zu geringen Kosten pro Exploit. Patch-Fristen und die Einstufung lokaler Lücken müssen sich wahrscheinlich bald danach richten.",
+   "count": 6,
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-11-06",
+   "evidence": [
+    "https://thehackernews.com/2026/11/openai-ai-pipeline-generates-948-linux.html",
+    "https://newcivilengineer.com/latest/highly-likely-ai-will-be-used-in-ransomware-attack-on-uk-critical-infrastructure-03-11-2026",
+    "https://thehackernews.com/2026/11/red-hat-patches-98-rated-linux-tcp-rce.html",
+    "https://www.heise.de/news/Erneut-kritischer-Bug-in-Linux-TCP-IP-aufgedeckt-Updates-in-Arbeit-11506050.html",
+    "https://www.heise.de/news/Ausserplanmaessige-Fortinet-Updates-Details-Fehlanzeige-aber-dringend-11497171.html"
+   ]
+  },
+  {
    "theme": "Cloud-Souveränität und Cloud and AI Development Act",
    "why": "Der zuständige Ausschuss des Europäischen Parlaments will seinen Berichtsentwurf am 1. Dezember vorlegen und Mitte März abstimmen. Die Souveränitätsstufen könnten künftig Einkauf und Cloud-Strategie großer Unternehmen prägen.",
    "count": 6,
@@ -1116,20 +1135,6 @@
     "https://www.mlex.com/mlex/technology/articles/2535003",
     "https://www.eesc.europa.eu/en/our-work/opinions-information-reports/opinions/cloud-and-ai-development-act",
     "https://www.datenschutzticker.de/2026/09/cada-europas-cloud-und-ki-infrastruktur-im-fokus/"
-   ]
-  },
-  {
-   "theme": "Schwachstellensuche durch Künstliche Intelligenz",
-   "why": "Nach Einschätzung der britischen Cyberbehörde finden Angreifer mit Künstlicher Intelligenz lange geduldete Schwachstellen in viel größerem Umfang. Akzeptierte Risiken und aufgeschobene Patches werden dadurch schneller zum Einfallstor.",
-   "count": 5,
-   "first_seen": "2026-10-20",
-   "last_seen": "2026-11-05",
-   "evidence": [
-    "https://newcivilengineer.com/latest/highly-likely-ai-will-be-used-in-ransomware-attack-on-uk-critical-infrastructure-03-11-2026",
-    "https://thehackernews.com/2026/11/red-hat-patches-98-rated-linux-tcp-rce.html",
-    "https://www.heise.de/news/Erneut-kritischer-Bug-in-Linux-TCP-IP-aufgedeckt-Updates-in-Arbeit-11506050.html",
-    "https://www.heise.de/news/Ausserplanmaessige-Fortinet-Updates-Details-Fehlanzeige-aber-dringend-11497171.html",
-    "https://www.heise.de/news/PwnEscape-Kritische-Luecke-in-Linux-Kernel-erlaubt-VM-Ausbruch-11492131.html"
    ]
   },
   {
@@ -1171,6 +1176,19 @@
    ]
   },
   {
+   "theme": "Rechtsverordnung zum Dachgesetz Kritische Infrastrukturen",
+   "why": "Das Gesetz gilt seit März 2026, die Verordnung mit den Schwellenwerten lag aber nach Fachberichten im Oktober noch immer nur als Entwurf vor. Erst sie entscheidet, welche Anlagen im Sektor Ernährung registriert werden müssen.",
+   "count": 4,
+   "first_seen": "2026-09-30",
+   "last_seen": "2026-11-06",
+   "evidence": [
+    "https://christopher-helm.com/kritis-betreiber-schwellenwert-rechtsverordnung/",
+    "https://cms.law/de/deu/legal-updates/kritis-verordnung-was-betreiber-kritischer-anlagen-jetzt-wissen-muessen",
+    "https://ag.kritis.info/2026/05/28/referentenentwurf-des-bmi-verordnung-zur-bestimmung-kritischer-anlagen-nach-dem-kritis-dachgesetz-kritisverordnung-kritisv/",
+    "https://christopher-helm.com/kritis-dachgesetz-registrierungsfrist-gestrichen/"
+   ]
+  },
+  {
    "theme": "Prüfungsleitfaden für Werkzeuge mit Künstlicher Intelligenz",
    "why": "Der internationale Standardsetzer für Abschlussprüfungen wollte am 28. Oktober einen ersten Leitfaden zum Qualitätsmanagement beim Einsatz von Prüfwerkzeugen mit Künstlicher Intelligenz verabschieden, die Veröffentlichung wird im November erwartet. Der Leitfaden prägt, wie Abschlussprüfer Künstliche Intelligenz einsetzen und dokumentieren.",
    "count": 4,
@@ -1178,19 +1196,6 @@
    "last_seen": "2026-11-01",
    "evidence": [
     "https://www.iaasb.org/news-events/2026-10/iaasb-enews-october-2026"
-   ]
-  },
-  {
-   "theme": "Rechtsverordnung zum Dachgesetz Kritische Infrastrukturen",
-   "why": "Die Verordnung mit den Schwellenwerten für kritische Anlagen liegt weiter nur als Entwurf vor. Erst mit ihr greifen Registrierung beim Bundesamt innerhalb von drei Monaten, Risikoanalysen und Resilienzpläne, was die Lebensmittelversorgung direkt betrifft.",
-   "count": 3,
-   "first_seen": "2026-09-30",
-   "last_seen": "2026-10-22",
-   "evidence": [
-    "https://cms.law/de/deu/legal-updates/kritis-verordnung-was-betreiber-kritischer-anlagen-jetzt-wissen-muessen",
-    "https://christopher-helm.com/kritis-betreiber-schwellenwert-rechtsverordnung/",
-    "https://ag.kritis.info/2026/05/28/referentenentwurf-des-bmi-verordnung-zur-bestimmung-kritischer-anlagen-nach-dem-kritis-dachgesetz-kritisverordnung-kritisv/",
-    "https://christopher-helm.com/kritis-dachgesetz-registrierungsfrist-gestrichen/"
    ]
   },
   {
@@ -1330,6 +1335,112 @@
  ],
  "news": [
   {
+   "title": "Hotelsoftware vioma: Buchungsdaten von Gästen abgeflossen",
+   "summary": "Der Anbieter von Hotelsoftware vioma hat einen Sicherheitsvorfall in seinem Reservierungssystem bestätigt: Über eine inzwischen geschlossene Schwachstelle wurden Buchungsdaten von Gästen unbefugt abgerufen, darunter Namen, Kontaktdaten und Aufenthaltszeiträume. Kreditkartendaten sind nach bisherigem Stand nicht betroffen, der Anbieter warnt aber vor gezielten Phishing- und Betrugsversuchen mit Bezug auf konkrete Buchungen.",
+   "relevance": "Nach Amadeus und Feratel ist dies ein weiterer Fall, in dem Daten aus der Touristik über Software- und Schnittstellenpartner abfließen. Reiseveranstalter sollten prüfen, wie Partner ihre Zugänge absichern, und Kunden klar sagen, über welche Kanäle niemals Zahlungen angefordert werden.",
+   "source": "Borns IT- und Windows-Blog",
+   "url": "https://borncity.com/blog/2026/11/05/cybervorfall-bei-vioma-hotellerie-tourismus-mit-abfluss-von-buchungsdaten/",
+   "id": "2026-11-06-vioma-buchungsdaten-hotels",
+   "topic": "Handel & Branche",
+   "impact": "mittel",
+   "published": "2026-11-05",
+   "tags": [
+    "Touristik",
+    "Drittparteien",
+    "Betrug"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen",
+    "DSGVO Art. 28 – Auftragsverarbeiter",
+    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette"
+   ],
+   "roles": [
+    "Einkauf & Drittparteien",
+    "Datenschutz"
+   ],
+   "countries": [
+    "DE",
+    "AT"
+   ],
+   "dossier": "drittparteien-lieferkette",
+   "priority": 3,
+   "primary": false,
+   "added": "2026-11-06T06:07:48Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Laut Quelle wurden die Daten über eine Schwachstelle in einer Schnittstelle abgerufen, Passwörter und Zugangsdaten waren nicht direkt betroffen; von kompromittierten Zugängen ist keine Rede. DIRS21 erscheint nur als Titel eines verwandten Artikels, der Phishing-Vorfall mit Reservierungsdaten und…"
+   }
+  },
+  {
+   "title": "Gerichtshof der Europäischen Union: Auskunftsrecht darf nicht pauschal ausgeschlossen werden",
+   "summary": "Mit Urteil vom 5. November 2026 (Rechtssache C-205/25) hat der Gerichtshof der Europäischen Union entschieden: Datenschutzbehörden, die Beschwerden bearbeiten, gelten gegenüber dem Beschwerdeführer als Verantwortliche und müssen ihm nach Artikel 15 der Datenschutz-Grundverordnung Auskunft geben. Eine nationale Vorschrift, die dieses Recht pauschal ausschließt, verstößt gegen Unionsrecht. Beschränkungen nach Artikel 23 sind nur zulässig, wenn sie verhältnismäßig sind. Anlass war ein Streit mit dem Bayerischen Landesamt für Datenschutzaufsicht.",
+   "relevance": "Wer sich über ein Unternehmen beschwert, kann künftig leichter erfahren, welche Daten über ihn im Beschwerdeverfahren verarbeitet werden. Das kann auch Stellungnahmen des Unternehmens betreffen, soweit sie Daten über ihn enthalten. Für eigene Auskunftsprozesse bestätigt das Urteil: Ausnahmen brauchen eine Abwägung im Einzelfall, Pauschalregeln reichen nicht.",
+   "source": "beck-aktuell",
+   "url": "https://www.beck-aktuell.de/heute-im-recht/rechtsprechung/eugh-c20525-dsgvo-auskunfspflichten-datenschutzbehoerde-bayern-lindenberg-2026-11-05",
+   "id": "2026-11-06-eugh-auskunftsrecht-c-205-25",
+   "topic": "Datenschutz & Datenrecht",
+   "impact": "mittel",
+   "published": "2026-11-05",
+   "tags": [
+    "Auskunftsrecht",
+    "Rechtsprechung",
+    "Aufsicht"
+   ],
+   "controls": [
+    "DSGVO Art. 15 – Auskunftsrecht der betroffenen Person",
+    "DSGVO Art. 23 – Beschränkungen"
+   ],
+   "roles": [
+    "Datenschutz"
+   ],
+   "countries": [
+    "EU",
+    "DE"
+   ],
+   "dossier": null,
+   "priority": 4,
+   "primary": false,
+   "added": "2026-11-06T06:07:48Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Urteil vom 5. November 2026, Rechtssache C-205/25, Bayerisches Landesamt für Datenschutzaufsicht; Einordnung als Verantwortliche, Auskunft nach Artikel 15, pauschaler Ausschluss unverhältnismäßig nach Artikel 23 – alles belegt."
+   }
+  },
+  {
+   "title": "OpenAI: Automatisierte Pipeline erzeugt 948 funktionierende Linux-Exploits",
+   "summary": "OpenAI hat eine automatisierte Pipeline mit Künstlicher Intelligenz beschrieben, die in einem 30-stündigen Lauf 948 funktionierende Exploits erzeugte, mit denen sich unter Linux lokal Administratorrechte erlangen lassen. Die Kosten lagen bei rund 1,2 Millionen Dollar.",
+   "relevance": "Wenn sich solche Verfahren verbreiten, liegt zwischen dem Bekanntwerden einer Lücke und einem funktionierenden Angriff noch weniger Zeit. Lokale Lücken, die oft später gepatcht werden als Lücken an Randsystemen, sollten bei Patch-Fristen und Härtung neu bewertet werden.",
+   "source": "The Hacker News",
+   "url": "https://thehackernews.com/2026/11/openai-ai-pipeline-generates-948-linux.html",
+   "id": "2026-11-06-openai-948-linux-exploits",
+   "topic": "Weitere Themen",
+   "impact": "info",
+   "published": "2026-11-05",
+   "tags": [
+    "Schwachstellen",
+    "Künstliche Intelligenz",
+    "Patch-Management"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 8.8 – Handhabung technischer Schwachstellen",
+    "IT-Kontrollen der Abschlussprüfung – Änderungsmanagement"
+   ],
+   "roles": [
+    "IT-Risiko"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "kritische-schwachstellen-perimeter",
+   "priority": 5,
+   "primary": false,
+   "added": "2026-11-06T06:07:48Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Artikel vom 5. November 2026; 948 funktionierende Exploits zur lokalen Rechteausweitung auf root, Lauf von 30 Stunden laut Überschrift, Kosten 1.213.430 Dollar. Die 30 Stunden beziehen sich im Zitat streng genommen auf die Reproduktion der Schwachstellen, die Überschrift spricht aber von einem…"
+   }
+  },
+  {
    "title": "Update: WordPress-Lücke wird beim Core-Upgrade ausgenutzt, Behördenfrist 6. November",
    "summary": "Die amerikanische Cybersicherheitsbehörde hat die WordPress-Lücke CVE-2026-119977 am 3. November in ihren Katalog aktiv ausgenutzter Schwachstellen aufgenommen. Bundesbehörden dort müssen die Korrekturen bis 6. November einspielen. Neu ist, wie die Lücke ausgenutzt wird: Angreifer ohne Anmeldung nutzen ein kurzes Zeitfenster während vollständiger Core-Upgrades und greifen über vorhersehbare, aus dem Netz erreichbare Ablagepfade an. Ein Sicherheitsanbieter zählte 12.632 blockierte Angriffe in 24 Stunden.",
    "relevance": "Gerade die Aktualisierung öffnet hier das Angriffsfenster. Das Inventar aller WordPress-Installationen muss deshalb vollständig sein, auch Kampagnen- und Markenseiten bei Agenturen, und die Korrektur sollte vor dem nächsten Upgrade eingespielt werden. Prüfenswert ist auch, ob Agenturen und Hoster als Drittparteien mit Patch-Pflichten erfasst sind.",
@@ -1429,6 +1540,43 @@
    "check": {
     "verdict": "ok",
     "note": "Datum 4. November 2026 stimmt. Die Empfehlungen, die verschlüsselte Datenbank und das Fehlen von Hinweisen auf einen Zugriff auf die Inhalte sind belegt. Die beiden letzten Angaben stammen aus Antworten des Kundendienstes, die Kunden weitergegeben haben."
+   }
+  },
+  {
+   "title": "Update: Kühlanlagen – Angriffe erreichen Supermärkte in Deutschland",
+   "summary": "Laut ZDFheute sind nach Frankreich und weiteren europäischen Ländern auch Supermärkte in Deutschland betroffen: Manipulierte Kühlanlagen werden unter anderem aus einem Edeka-Markt im niederbayerischen Reisbach, einem Markt in Wetter an der Ruhr, aus Wuppertal und einem REWE-Markt in Raesfeld gemeldet. In Reisbach wurden die Anlagen laut Bericht auf bis zu 50 Grad hochgeheizt, in mehreren Märkten mussten große Mengen Lebensmittel entsorgt werden. Die Staatsanwaltschaft ermittelt, das Bundesamt für Sicherheit in der Informationstechnik hatte bereits im Oktober dazu aufgerufen, aus dem Internet erreichbare Steuerungsanlagen nach dem Stand der Technik abzusichern.",
+   "relevance": "Damit trifft das Szenario den deutschen Lebensmittelhandel direkt, auch einen Markt unter der Marke REWE. Für Informationstechnik-Governance, Risiko und Compliance eines Handelskonzerns heißt das: Wer vernetzte Kühl- und Gebäudesteuerungen betreibt, sollte belegen können, welche davon aus dem Internet erreichbar sind, wer sie verantwortet und wie Dienstleister darauf zugreifen.",
+   "source": "ZDFheute",
+   "url": "https://www.zdfheute.de/politik/deutschland/cyberangriff-supermaerkte-nrw-bayern-temperatur-100.html",
+   "id": "2026-11-06-kuehlanlagen-deutschland-supermaerkte",
+   "topic": "Handel & Branche",
+   "impact": "hoch",
+   "published": "2026-11-03",
+   "tags": [
+    "Betriebstechnik",
+    "Filialen",
+    "Lebensmittelhandel"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Risikomanagementmaßnahmen im Bereich der Cybersicherheit",
+    "ISO/IEC 27001 Anhang A 8.20 – Netzwerksicherheit",
+    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Management",
+    "Einkauf & Drittparteien"
+   ],
+   "countries": [
+    "DE"
+   ],
+   "dossier": "betriebstechnik-filialen-logistik",
+   "priority": 1,
+   "primary": false,
+   "added": "2026-11-06T06:07:48Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Artikel vom 3. November 2026. Die 50 Grad betreffen Reisbach, nicht Raesfeld; für Raesfeld nennt der Artikel nur Beeinträchtigungen der Kühltechnik. CAP-Märkte werden nicht genannt (in Wetter ist es ein von der Arbeiterwohlfahrt betriebener Markt, für Wuppertal wird nur eine manipulierte…"
    }
   },
   {
@@ -1696,6 +1844,42 @@
    "check": {
     "verdict": "ok",
     "note": "Datum 3. November 2026 stimmt. Die Quelle bestätigt die neun Länder, das Zitat von Kommissar Hansen, die externe Danfoss-Kühlsteuerung in Schweden, ältere Danfoss-Modelle in Estland, die erste Welle in Frankreich am 12. Oktober und dass sich niemand bekannt hat. Laut Quelle stiegen die…"
+   }
+  },
+  {
+   "title": "Falscher Support über Microsoft Teams: Angreifer lassen sich Zertifikate für Administratoren ausstellen",
+   "summary": "Microsoft hat zwei Einbrüche untersucht, bei denen sich Angreifer über Microsoft Teams als interner Helpdesk ausgaben und per Quick Assist Fernzugriff erhielten. Danach nutzten sie unsicher konfigurierte Active Directory Certificate Services, um Anmeldezertifikate für privilegierte Konten und in einem Fall für einen Domain Controller zu bekommen. In einem Fall wurden Unternehmensdaten auf einen externen Server kopiert. Eine Lücke in Teams selbst wurde nicht ausgenutzt. Windows Server 2025 schaltet den erweiterten Schutz der Anmeldung für diese Zertifikatsdienste standardmäßig ein, bei den Versionen 2022 und 2019 muss er von Hand aktiviert werden.",
+   "relevance": "Social Engineering trifft hier auf eine oft vergessene Zertifikatsinfrastruktur. Mit einem Zertifikat brauchen Angreifer kein Passwort mehr, ein Zurücksetzen des Passworts hilft dann nicht. Zertifikatsvorlagen gehören deshalb in die regelmäßige Prüfung der Berechtigungen, und Anfragen von Externen über Teams sollten nur eingeschränkt möglich sein.",
+   "source": "The Hacker News",
+   "url": "https://thehackernews.com/2026/11/attackers-pose-as-it-support-on.html",
+   "id": "2026-11-06-teams-support-zertifikatsdienste",
+   "topic": "IT-Governance & Risiko",
+   "impact": "mittel",
+   "published": "2026-11-02",
+   "tags": [
+    "Social Engineering",
+    "Zertifikatsdienste",
+    "Identitäten"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 5.18 – Zugangsrechte",
+    "ISO/IEC 27001 Anhang A 6.3 – Informationssicherheitsbewusstsein, -ausbildung und -schulung",
+    "IT-Kontrollen der Abschlussprüfung – Zugriffsverwaltung"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Revision & Prüfung"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "identitaeten-zugangsdaten",
+   "priority": 2,
+   "primary": false,
+   "added": "2026-11-06T06:07:48Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Artikel ist auf den 2. November 2026 datiert, nicht auf den 3. November. Inhalt stimmt: zwei Einbrüche, Quick Assist, unsicher konfigurierte Zertifikatsdienste, ein Zertifikat für einen Domain Controller, Daten auf externen Server kopiert, keine Lücke in Teams, erweiterter Schutz standardmäßig in…"
    }
   },
   {
@@ -9444,54 +9628,6 @@
    "url": "https://lawandtechnology.eu/en/ai-literacy-digital-omnibus-article-4-ai-act/",
    "published": "2026-07-27",
    "added": "2026-09-29T09:00:00Z"
-  },
-  {
-   "title": "Italien: Grundlegende Sicherheitsmaßnahmen nach der NIS-2-Richtlinie bis 31. Oktober fällig",
-   "summary": "In Italien müssen wesentliche und wichtige Einrichtungen, die bereits 2025 in die nationale Liste aufgenommen wurden, bis 31. Oktober 2026 die grundlegenden Sicherheitsmaßnahmen umgesetzt haben: 87 Anforderungen für wichtige und 116 für wesentliche Einrichtungen, unter anderem zu Risikoanalyse, Vorfallbehandlung, Lieferkette und Schulung. Die Meldepflicht für erhebliche Vorfälle gilt seit Januar 2026 mit Vorabmeldung binnen 24 Stunden und vollständiger Meldung binnen 72 Stunden; erstmals 2026 aufgenommene Einrichtungen haben bis 31. Juli 2027 Zeit. Für wesentliche Einrichtungen drohen bis zu 10 Millionen Euro oder 2 Prozent des weltweiten Jahresumsatzes, Leitungsorgane haften persönlich.",
-   "relevance": "Für Konzerne mit Gesellschaften in mehreren Ländern von REWE International wächst die Zahl paralleler nationaler Fristen, Portale und Meldewege: Ein gemeinsamer Kontrollrahmen braucht Länderanhänge mit eigenen Nachweisen und Fristen.",
-   "source": "IusPrivacy",
-   "url": "https://www.iusprivacy.eu/normativa/nis2-in-italia-tutti-gli-adempimenti-e-le-scadenze-per-le-imprese",
-   "id": "2026-10-03-italien-nis2-frist-31-oktober",
-   "topic": "Cyber- & IT-Regulierung",
-   "impact": "hoch",
-   "published": "2026-07-08",
-   "tags": [
-    "NIS-2",
-    "Italien",
-    "Frist"
-   ],
-   "controls": [
-    "NIS-2-Richtlinie Art. 21 – Risikomanagementmaßnahmen",
-    "NIS-2-Richtlinie Art. 23 – Berichtspflichten",
-    "NIS-2-Richtlinie Art. 20 – Governance und Verantwortung der Leitungsorgane"
-   ],
-   "roles": [
-    "IT-Risiko",
-    "Management"
-   ],
-   "countries": [
-    "IT"
-   ],
-   "dossier": "nis2-umsetzung",
-   "priority": 2,
-   "primary": false,
-   "added": "2026-10-03T05:07:14Z",
-   "check": {
-    "verdict": "abweichung",
-    "note": "Der Inhalt stimmt mit der Quelle überein: 87 und 116 Anforderungen, Meldung binnen 24 und 72 Stunden, Fristen 31. Oktober 2026 und 31. Juli 2027, bis zu 10 Millionen Euro oder 2 Prozent. Als Datum war nur der Monat angegeben, die Quelle nennt den 8. Juli 2026."
-   }
-  },
-  {
-   "title": "Leitlinien des Europäischen Datenschutzausschusses zu Anonymisierung und Web-Scraping für Künstliche Intelligenz: Konsultation bis 30.10.",
-   "summary": "Der Europäische Datenschutzausschuss hat Leitlinien zur Anonymisierung (02/2026) und zum Web-Scraping für generative Künstliche Intelligenz angenommen. Für Anonymisierung gilt danach ein Drei-Kriterien-Test: keine Isolierung einzelner Datensätze, keine Verknüpfung, keine Rückschlüsse. Beide Leitlinien sind bis zum 30. Oktober 2026 zur Stellungnahme offen.",
-   "relevance": "Der Test ist relevant, wenn Trainings- und Testdaten oder Daten für abrufgestützte Generierung (Retrieval-Augmented Generation) als „anonymisiert“ gelten und damit außerhalb der Datenschutz-Grundverordnung behandelt werden sollen. Diese Einstufungen sollten gemeinsam mit dem Datenschutz überprüft werden. Wer eine Stellungnahme abgeben will, hat dafür noch einen Monat Zeit.",
-   "source": "EDPB",
-   "url": "https://www.edpb.europa.eu/news/edpb-sheds-light-on-anonymisation-and-web-scraping-for-generative-ai-and-adopts-final-version_en",
-   "id": "2026-07-edpb-anonymisierung-web-scraping-konsultation",
-   "topic": "Datenschutz & Datenrecht",
-   "impact": "mittel",
-   "published": "2026-07-08",
-   "added": "2026-09-29T22:03:17Z"
   }
  ],
  "monthly": [

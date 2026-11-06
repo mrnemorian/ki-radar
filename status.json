@@ -1,11 +1,17 @@
 {
  "last_run": {
-  "start": "2026-11-05T07:00:01+01:00",
-  "end": "2026-11-05T07:07:41+01:00",
+  "start": "2026-11-06T07:00:01+01:00",
+  "end": "2026-11-06T07:07:49+01:00",
   "ok": true,
-  "summary": "6 neue Meldungen: P1 Update: WordPress-Lücke wird beim Core-Upgrade ausgenutzt, Behördenfrist 6. November; P2 Update: Kühlsteuerungen – sechs Filialen einer Handelskette in Rumänien betroffen; P"
+  "summary": "5 neue Meldungen: P1 Update: Kühlanlagen – Angriffe erreichen Supermärkte in Deutschland; P2 Falscher Support über Microsoft Teams: Angreifer lassen sich Zertifikate für Administratoren ausstell"
  },
  "history": [
+  {
+   "start": "2026-11-06T07:00:01+01:00",
+   "end": "2026-11-06T07:07:49+01:00",
+   "ok": true,
+   "summary": "5 neue Meldungen: P1 Update: Kühlanlagen – Angriffe erreichen Supermärkte in Deutschland; P2 Falscher Support über Microsoft Teams: Angreifer lassen sich Zertifikate für Administratoren ausstell"
+  },
   {
    "start": "2026-11-05T07:00:01+01:00",
    "end": "2026-11-05T07:07:41+01:00",
@@ -83,12 +89,6 @@
    "end": "2026-10-25T07:09:50+01:00",
    "ok": true,
    "summary": "5 neue Meldungen: P1 Update: Italien – ab 31. Oktober zählen funktionierende Nachweise statt Richtlinien; P2 Update: ConnectWise-Angriff – staatsnahe Gruppe nutzte Agenten-Framework ARTEX; P3 Rum"
-  },
-  {
-   "start": "2026-10-24T07:00:01+02:00",
-   "end": "2026-10-24T07:07:18+02:00",
-   "ok": true,
-   "summary": "7 neue Meldungen: P1 Update: PHP2Shell – 4,2 Millionen verwundbare Dienste in Deutschland, Portale vorsorglich offline; P2 Windows Server 2016: Letzte Sicherheitsupdates am 12. Januar 2027; P3 Cloud"
   }
  ]
 }

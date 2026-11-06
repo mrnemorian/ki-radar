@@ -1,0 +1,271 @@
+{
+ "format": "tiefgang",
+ "chapters": [
+  {
+   "title": "Begrüßung",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Guten Morgen, liebe IT-GRC-Kolleginnen und -Kollegen, willkommen beim IT-GRC Radar. Heute ist Freitag, der sechste November 2026, und freitags nehmen wir uns ein bisschen mehr Zeit."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Gut so. Ein Thema, das uns seit Oktober begleitet, ist diese Woche endgültig in Deutschland angekommen. Der Kaffee steht, wir können loslegen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Dann der Fahrplan: drei Meldungen, danach ein Tiefgang zur Betriebstechnik in den Filialen, die Zahl der Woche, unser Owner-Moment und zum Schluss ein Blick auf den Radar."
+    }
+   ]
+  },
+  {
+   "title": "Kühlanlagen in Deutschland",
+   "news_id": "2026-11-06-kuehlanlagen-deutschland-supermaerkte",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Da gibt es Neues zu den Angriffen auf Kühlanlagen. Laut Zweitem Deutschen Fernsehen sind jetzt auch Supermärkte in Deutschland betroffen: ein Markt in Wetter an der Ruhr, eine Anlage in Wuppertal, ein REWE-Markt in Raesfeld und ein Edeka-Markt im niederbayerischen Reisbach."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und das ist nicht nur ein bisschen zu warm. In Reisbach wurden die Anlagen laut Bericht auf bis zu 50 Grad hochgeheizt, und mehrere Märkte mussten große Mengen Lebensmittel in den Müll werfen. Die Staatsanwaltschaft ermittelt, wer dahintersteckt, ist offen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Ehrlich gesagt hatte ich nach Frankreich und der zweiten Welle in neun Ländern gehofft, dass Deutschland verschont bleibt."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Hoffnung ist leider keine Kontrolle. Das Bundesamt für Sicherheit in der Informationstechnik hatte schon im Oktober dazu aufgerufen, aus dem Internet erreichbare Steuerungsanlagen nach dem Stand der Technik abzusichern. Für einen Handelskonzern lautet die Frage nicht mehr, ob es ihn treffen könnte. Sie lautet: Können wir belegen, dass unsere Steuerungen nicht offen im Netz hängen?"
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Darauf kommen wir gleich im Tiefgang zurück."
+    }
+   ]
+  },
+  {
+   "title": "Falscher Support in Teams",
+   "news_id": "2026-11-06-teams-support-zertifikatsdienste",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Zweite Meldung, und die klingt nach einem ganz normalen Montagmorgen. Microsoft hat zwei Einbrüche untersucht, bei denen sich Angreifer über [en]Microsoft Teams[/en] als interner [en]Helpdesk[/en] ausgegeben haben."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Lass mich raten: Hallo, hier ist der Support, ich müsste mal kurz auf Ihren Rechner."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Ziemlich genau so. Über [en]Quick Assist[/en] haben sie Fernzugriff bekommen. Dann haben sie schlecht konfigurierte [en]Active Directory Certificate Services[/en] ausgenutzt und sich Zertifikate für privilegierte Konten ausstellen lassen, in einem Fall sogar für einen [en]Domain Controller[/en]."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und das macht mich nervös: Eine Lücke in Teams gab es gar nicht. Da trifft [en]Social Engineering[/en] auf eine Zertifikatsinfrastruktur, die vor Jahren eingerichtet und dann vergessen wurde. Wer so ein Zertifikat hat, braucht kein Passwort mehr, und ein neues Passwort hilft dann auch nicht."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Was empfiehlt Microsoft?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Unerwartete Support-Anfragen über einen bekannten internen Kanal gegenprüfen. Anfragen von Externen in Teams und die erlaubten Fernwartungswerkzeuge einschränken. Und den erweiterten Schutz der Anmeldung für die Zertifikatsdienste einschalten: Bei Windows Server 2025 ist er schon an, bei 2022 und 2019 muss man ihn selbst aktivieren. Für die Prüfung heißt das: Zertifikatsvorlagen gehören in die Prüfung der Berechtigungen, nicht nur Gruppen und Rollen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Also noch eine Zeile in der Excel-Liste."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Aber eine wichtige. Vermutlich wichtiger als die halbe Liste darüber."
+    }
+   ]
+  },
+  {
+   "title": "Buchungsdaten bei vioma",
+   "news_id": "2026-11-06-vioma-buchungsdaten-hotels",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Dritte Meldung, diesmal aus der Touristik. Der Anbieter von Hotelsoftware vioma hat einen Sicherheitsvorfall bestätigt. Über eine Schwachstelle im Reservierungssystem wurden Buchungsdaten von Gästen abgerufen, Kreditkartendaten nach bisherigem Stand nicht."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Trotzdem wird mit Betrug gerechnet. Das kennen wir vom Fall Feratel in Österreich: Wer echte Buchungsdaten hat, schreibt sehr glaubwürdige Nachrichten und bittet um eine erneute Anzahlung."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und kurz davor wurde auch beim Buchungssystem DIRS21 über Phishing berichtet."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Für einen Reiseveranstalter ist das ein Muster, kein Einzelfall. Angegriffen wird nicht die eigene Plattform, sondern die Systeme und Schnittstellen bei den Partnern, über die Hotels und Veranstalter Daten austauschen. In die Lieferantenbewertung gehört deshalb die Frage, wie die Partner ihre Systeme und Zugänge absichern. Und Kunden sollten klar erfahren, über welche Kanäle niemals Zahlungen angefordert werden."
+    }
+   ]
+  },
+  {
+   "title": "Tiefgang: Betriebstechnik in Filialen",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Jetzt zum Tiefgang, und wir bleiben bei den Kühlanlagen. Kurz zusammengefasst: im Oktober rund 700 Supermärkte in Frankreich, in der Nacht zum zweiten November eine zweite Welle in mindestens neun Ländern, und jetzt Deutschland. Wo stehen wir?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Bei einem Risiko, das lange kaum jemand auf dem Schirm hatte, weil es nicht nach Informationstechnik aussieht. Kühlregale, Gebäudetechnik, Energie, das lief oft über die Haustechnik oder über Dienstleister. Und viele dieser Steuerungen wurden für die Fernwartung ans Netz gehängt, weil das bequem ist."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Moment, heißt das, die Hintertür war im Grunde ein [en]Feature[/en]?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "So hart würde ich das nicht sagen. Aber ein gewollter Zugang ohne starke Absicherung nützt Angreifern genauso wie eine Lücke."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Ich nehme mal die Gegenposition ein. Ein Kühlregal ist kein Kassensystem, da laufen weder Kartendaten noch Kundendaten durch. Warum soll sich die Governance der Informationstechnik darum kümmern und nicht die Haustechnik?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Weil der Schaden echt ist. Wenn ein Markt über Nacht seine ganze Kühlware entsorgen muss, ist das Warenverlust, Umsatzausfall und im schlimmsten Fall ein Problem der Lebensmittelsicherheit. Die Lebensmittelversorgung ist kritische Infrastruktur. Die NIS-2-Richtlinie, also die Richtlinie über Netz- und Informationssicherheit, verlangt Risikomanagement für Netz- und Informationssysteme, und die stehen eben auch im Technikraum der Filiale."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Mein Gegenargument bleibt trotzdem: Man kann nicht jede Kältemaschine in ein Informationssicherheits-Managementsystem pressen. Das sind Tausende Geräte, verschiedene Hersteller, verschiedene Dienstleister."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Da hast du einen Punkt. Wer mit dem vollen Kontrollkatalog anrückt, scheitert an der Masse. Ich würde es deshalb klein schneiden. Erstens: Was ist überhaupt aus dem Internet erreichbar? Das kann man von außen prüfen. Zweitens: Wer hat Fernzugriff, und wie ist der abgesichert? Drittens: Wer ist Owner?"
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Ah, da ist sie wieder, die Owner-Frage."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Hier ist sie wirklich der Kern. Die Empfehlung des Bundesamts klingt einfach: erreichbare Steuerungsanlagen nach dem Stand der Technik absichern. Aber jemand muss das beim Dienstleister einfordern, im Vertrag festschreiben und regelmäßig nachprüfen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Was spricht denn gegen eine hektische Sofortmaßnahme? Einfach alles vom Netz nehmen?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Dass man sich damit selbst schaden kann. Fällt die Fernüberwachung weg, merkt im Zweifel niemand, wenn eine Anlage ausfällt. Die Abschaltung braucht also einen Ersatz: lokale Alarme, einen abgesicherten Zugang und klare Absprachen mit dem Wartungsdienstleister. Sicherheit, die die Kühlung gefährdet, ist auch keine Sicherheit."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und warum ist das ein Thema für den Vorstand?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Weil seit Oktober niemand mehr sagen kann, er habe von dem Risiko nichts gewusst. Die Warnungen sind öffentlich, die Vorfälle auch. Wer jetzt noch offen erreichbare Steuerungen hat, muss mit unangenehmen Fragen rechnen, intern und vielleicht auch von außen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Fassen wir die nächsten Schritte zusammen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Alle vernetzten Kühl-, Gebäude- und Energiesteuerungen in Filialen und Logistik erfassen, jeweils mit Owner. Von außen prüfen, was erreichbar ist. Die Fernzugänge von Herstellern und Dienstleistern erfassen und auf virtuelles privates Netz mit Mehr-Faktor-Anmeldung umstellen, mit passenden Vertragsklauseln. Und einen Notfallplan für den Fall, dass nachts trotzdem die Temperatur steigt, einschließlich der Frage, ob das ein meldepflichtiger Sicherheitsvorfall ist."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Offen bleibt, wer haftet, wenn der Zugang des Herstellers der Einfallsweg war."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Das wird spannend. Mit dem neuen Produkthaftungsrecht ab dem neunten Dezember 2026 und dem [en]Cyber Resilience Act[/en] verschiebt sich einiges in Richtung Hersteller. Die eigene Sorgfalt nimmt einem aber niemand ab."
+    }
+   ]
+  },
+  {
+   "title": "Zahl der Woche",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Zeit für die Zahl der Woche."
+    },
+    {
+     "speaker": "Florian",
+     "text": "2.946. So viele Server haben laut einem Bericht von dieser Woche Schadcode erhalten, weil Angreifer den Update-Kanal des Sicherheitswerkzeugs cPGuard gekapert hatten."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Ausgerechnet ein Sicherheitswerkzeug."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Genau das ist die Ironie. Software mit automatischen Updates und hohen Rechten bekommt einen Vertrauensvorschuss. Und so etwas gehört ins Drittparteienregister, zusammen mit der Frage, was passiert, wenn der Update-Kanal selbst kompromittiert ist."
+    }
+   ]
+  },
+  {
+   "title": "Owner-Moment der Woche",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Und der Owner-Moment der Woche?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Für mich die Zertifikatsdienste aus der Teams-Meldung. So eine Infrastruktur wird einmal eingerichtet und läuft dann jahrelang still vor sich hin. Fragt man, wer die Zertifikatsvorlagen verantwortet, schauen sich alle gegenseitig an."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Das Netzwerkteam verweist auf den Verzeichnisdienst, der Verzeichnisdienst auf die Sicherheit, und die Sicherheit sagt, das war ein Projekt von vor zehn Jahren."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und genau in dieser Lücke kommen die Angreifer durch. Die Lehre daraus: Jede Komponente, die Identitäten ausstellen kann, braucht einen benannten Owner und einen festen Platz in der Prüfung der Berechtigungen. Das gilt für die Zertifikatsdienste genauso wie für die Kühlsteuerung vom Anfang."
+    }
+   ]
+  },
+  {
+   "title": "Auf dem Radar",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Zum Schluss: Was haben wir auf dem Radar?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Die Schwachstellensuche durch Künstliche Intelligenz. OpenAI hat eine automatisierte Pipeline beschrieben, die in einem 30-stündigen Lauf 948 funktionierende [en]Exploits[/en] erzeugt hat, mit denen man unter Linux Administratorrechte bekommt. Kosten: rund 1,2 Millionen Dollar."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Klingt teuer, ist pro [en]Exploit[/en] aber eigentlich wenig."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Eben. Wenn sich das verbreitet, liegt zwischen einer bekannten Lücke und einem funktionierenden Angriff noch weniger Zeit. Lokale Lücken, die wir heute gern auf später schieben, werden dann schneller wichtig. Das sollte man bei den Patch-Fristen im Hinterkopf haben."
+    }
+   ]
+  },
+  {
+   "title": "Abschied",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Das war das IT-GRC Radar für diese Woche. Alle Quellen findet ihr wie immer auf der Webseite."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Schönes Wochenende. Und falls euch am Montag der Support über Teams anschreibt: Ruft lieber kurz zurück, bevor ihr klickt."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Bis Montag."
+    }
+   ]
+  }
+ ]
+}
