@@ -1,0 +1,137 @@
+{
+ "format": "tag",
+ "chapters": [
+  {
+   "title": "Begrüßung",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Guten Morgen, liebe IT-GRC-Kolleginnen und -Kollegen, und willkommen beim IT-GRC Radar am Samstag, dem siebten November 2026. Heute ist ein überschaubarer Tag mit drei Meldungen, und eine davon kennen wir schon ziemlich gut."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Lass mich raten: Kühlschränke. Ehrlich gesagt hätte ich nicht gedacht, dass Kühltechnik mal unser Stammgast wird."
+    }
+   ]
+  },
+  {
+   "title": "Brüssel prüft die Supermärkte",
+   "news_id": "2026-11-07-eu-kommission-prueft-vorsorge-supermaerkte",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Richtig geraten. Da gibt es Neues zu den Angriffen auf Kühlsteuerungen in Supermärkten. Die Europäische Kommission will jetzt prüfen, wie gut Supermärkte gegen solche Angriffe gewappnet sind. Lebensmittelkommissar Christophe Hansen nennt das einen gezielten Versuch, die Lebensmittelversorgung zu stören."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Das ist eine andere Tonlage als noch vor drei Wochen. Wenn ein Kommissar von Lebensmittelversorgung spricht, reden wir nicht mehr über Haustechnik, sondern über kritische Infrastruktur."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Konkret soll das Sicherheitskollegium der Kommission die Notfallvorkehrungen der Händler bewerten und wie schnell sie reagieren können. Einen Termin gibt es noch nicht. Zuletzt waren Märkte in mindestens sechs Ländern der Europäischen Union betroffen, gemeldet wurden Temperaturen bis 50 Grad."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Moment, heißt das, Brüssel fragt demnächst, wer die Kühlsteuerung eigentlich verantwortet? Dann ist das ewige „Wer ist eigentlich [en]Owner[/en]?“ keine Folie für den Workshop mehr. Dann braucht man eine Antwort, und zwar schriftlich."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und was gehört in diese Antwort?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ein Inventar aller fernwartbaren Steuerungen in Filialen und Lagern. Dazu, wer von außen zugreift und über welchen Weg, und ein geübter Plan für den Fall, dass die Kühlung ausfällt. Der belgische Kühltechnikdienstleister Sabcobel sagt, ältere Geräte brauchen teils neue Hardware. Das ist dann kein [en]Ticket[/en] mehr, sondern eine Budgetfrage."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und eine Frage für den Einkauf."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Genau. Die Fernwartung gehört in die Verträge, mit klaren Pflichten zu Zugang, Protokollierung und Updates. Sonst prüft am Ende die Kommission, was wir selbst nie aufgeschrieben haben."
+    }
+   ]
+  },
+  {
+   "title": "Ivanti und die Angriffskette",
+   "news_id": "2026-11-07-ivanti-connect-secure-frist-13-november",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Zweites Thema, ebenfalls ein Update: Ivanti Connect Secure, die Fernzugangslösung, die uns seit Wochen begleitet. Die amerikanische Cybersicherheitsbehörde hat zwei weitere Lücken als aktiv ausgenutzt gelistet."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Natürlich hat sie das."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Die erste, CVE-2026-111357, erlaubt angemeldeten Angreifern mehr Rechte, die Behördenfrist dafür war schon der zweite November. Die zweite, CVE-2026-118527, erlaubt das Hochladen schädlicher Dateien an einen bekannten Ort, hier endet die Frist am dreizehnten November. Beide gehören zu einer Angriffskette mit einer Umgehung der Anmeldung, die seit Mitte Oktober gelistet ist."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und das ist der eigentliche Punkt. Einzeln wirken die Lücken harmlos, die zweite hat nur einen mittleren Schweregrad. Zusammen ergeben sie den Weg ins Netz. Wer stur nach Schweregrad sortiert, legt genau diese Lücke nach hinten."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Was heißt das praktisch?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Auf Version 25.1.1.3 beziehungsweise 22.8R2.6 aktualisieren und nach Spuren früherer Einbrüche suchen, nicht nur Updates einspielen. Und fürs Kontrollregister: Die Liste aktiv ausgenutzter Schwachstellen hat Vorrang vor der reinen Punktzahl. Das freut auch die Abschlussprüfer, wenn sie in der Audit-Saison nach dem Änderungsmanagement fragen."
+    }
+   ]
+  },
+  {
+   "title": "Digital Fairness Act",
+   "news_id": "2026-11-07-digital-fairness-act-11-november",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Drittens, aus der Verbraucherpolitik: Ein Entwurf des Digital Fairness Act wird für den elften November erwartet."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Erwartet. Das Wort lieben wir ja."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Die Kanzlei CMS erwartet Regeln zu [en]Dark Patterns[/en], zur einfachen Kündigung von Abonnements, zu automatischen Verlängerungen und zu personalisierten Preisen. In Kraft sieht sie das Gesetz frühestens Ende 2028."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Klingt nach Verbraucherrecht, trifft aber die Informationstechnik. Im [en]Shop[/en], in der [en]App[/en] und im Kundenprogramm stecken die Entscheidungen im Design und in den Algorithmen. Wer heute schon festhält, warum welche Gestaltung gewählt wurde, spart sich später die Archäologie in alten Excel-Listen."
+    }
+   ]
+  },
+  {
+   "title": "Auf dem Radar",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Und auf dem Radar: Exportkontrollen. Klingt erst einmal weit weg."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ist es nicht ganz. Die Kommission hat im September eine aktualisierte Liste für Güter mit doppeltem Verwendungszweck beschlossen, unter anderem für Chips für Hochleistungsrechnen. Die Veröffentlichung im Amtsblatt wird für November erwartet. Wer Rechenleistung für Künstliche Intelligenz einkauft oder zwischen Ländern verschiebt, sollte die Exportkontrolle früh mit an den Tisch holen."
+    }
+   ]
+  },
+  {
+   "title": "Abschied",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Das war es für heute. Alle Quellen findet ihr wie immer auf der Webseite."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Schönes Wochenende. Und wer im Supermarkt am Kühlregal vorbeikommt, darf das ab sofort als Weiterbildung verbuchen."
+    }
+   ]
+  }
+ ]
+}

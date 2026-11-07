@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06T06:07:48Z",
+ "updated": "2026-11-07T06:06:48Z",
  "topics": [
   "IT-Governance & Risiko",
   "Cyber- & IT-Regulierung",
@@ -11,6 +11,17 @@
   "Weitere Themen"
  ],
  "briefings": [
+  {
+   "date": "2026-11-07",
+   "headline": "Brüssel will die Notfallvorsorge der Supermärkte prüfen, die Behördenfrist für Ivanti endet am 13. November, der Digital Fairness Act steht vor der Tür.",
+   "points": [
+    "Kühlanlagen: Die Europäische Kommission will die Vorsorge der Supermärkte prüfen, der Lebensmittelkommissar spricht von einem gezielten Angriff auf die Lebensmittelversorgung",
+    "Ivanti Connect Secure: zwei weitere Glieder einer Angriffskette offiziell als ausgenutzt gelistet, Behördenfrist 13. November",
+    "Digital Fairness Act: Vorschlag laut vorläufiger Tagesordnung der Kommission am 11. November",
+    "Auf dem Radar: Exportkontrollen für Rechenchips"
+   ],
+   "count": 3
+  },
   {
    "date": "2026-11-06",
    "headline": "Angriffe auf Kühlanlagen erreichen deutsche Supermärkte, falscher Support in Teams öffnet Zertifikatsdienste, Gerichtshof stärkt Auskunftsrecht",
@@ -356,18 +367,6 @@
     "Ukraine: Erpresser greifen die größte Supermarktkette ATB an und behaupten, Daten von Kunden, Beschäftigten und Lieferanten erbeutet zu haben."
    ],
    "count": 5
-  },
-  {
-   "date": "2026-10-06",
-   "headline": "Exchange-Update muss nachinstalliert werden, OpenAI kennzeichnet Texte mit Wasserzeichen, Aufsichtsbehörden warnen vor ChatGPT-Werbung",
-   "points": [
-    "Exchange Server: Eine zweite Fassung der September-Updates schließt die Rechteausweitung CVE-2026-96940. Wer im September schon gepatcht hat, muss trotzdem nachinstallieren.",
-    "OpenAI kennzeichnet Texte von ChatGPT und Codex in der Europäischen Union mit einem unsichtbaren Wasserzeichen. In der Programmierschnittstelle bleibt es standardmäßig aus.",
-    "Datenschutzaufsichten in Berlin, Niedersachsen und Hamburg warnen vor personalisierter Werbung in ChatGPT, die auf Chats beruht. Damit wird die private Nutzung für dienstliche Inhalte noch riskanter.",
-    "Polnisches Reiseportal Wakacje.pl: Angreifer erbeuten über das Kundenmanagementsystem und Postfächer von Beschäftigten die Passdaten von Kunden.",
-    "Google pausiert sein Prämienprogramm für Open-Source-Schwachstellen wegen einer Flut von Meldungen, die mit Künstlicher Intelligenz erzeugt wurden."
-   ],
-   "count": 5
   }
  ],
  "dossiers": [
@@ -383,19 +382,18 @@
    "title": "Betriebstechnik in Filialen und Logistik",
    "sector": "Handel & Branche",
    "ring": "jetzt handeln",
-   "status": "Nach rund 700 Supermärkten in Frankreich und einer zweiten Welle in mindestens neun Ländern sind Anfang November auch Supermärkte in Deutschland betroffen, darunter Märkte von CAP, REWE und Edeka; Kühlanlagen wurden teils auf über 50 Grad gestellt, die Staatsanwaltschaft ermittelt. Das Bundesamt für Sicherheit in der Informationstechnik rät, die Steuerungen vom Internet zu trennen und…",
-   "next_step": "Alle vernetzten Kühl-, Gebäude- und Energiesteuerungen in Filialen und Logistik erfassen, jeweils mit Owner, Erreichbarkeit aus dem Internet und Fernwartungszugängen von Herstellern und Dienstleistern. Offene Punkte mit Termin schließen und dabei lokale Alarme vorsehen, damit die Überwachung der…",
+   "status": "Nach rund 700 Supermärkten in Frankreich hat Anfang November eine zweite Welle Märkte in mehreren Ländern getroffen, darunter Deutschland und Rumänien. Die Europäische Kommission will jetzt die Notfallvorsorge der Supermärkte prüfen, Lebensmittelkommissar Hansen spricht von einem gezielten Angriff auf die Lebensmittelversorgung.",
+   "next_step": "Das Inventar aller fernwartbaren Kühl- und Gebäudesteuerungen mit Verantwortlichen und Zugangswegen vervollständigen, Steuerungen vom Internet trennen, Fernwartungsverträge prüfen und Notfallpläne für Kühlausfälle üben. Die Prüfung durch die Kommission beobachten.",
    "open_questions": [
-    "Wer haftet, wenn ein Fernzugang des Herstellers oder Dienstleisters der Einfallsweg war?",
-    "Zahlt die Cyberversicherung bei Warenverlust durch manipulierte Betriebstechnik?",
-    "Ist eine Manipulation von Kühlanlagen ein meldepflichtiger erheblicher Sicherheitsvorfall nach dem Umsetzungsgesetz zur NIS-2-Richtlinie?"
+    "Welche Anforderungen leitet die Kommission aus ihrer Prüfung für den Lebensmittelhandel ab?",
+    "Wer trägt die Kosten für den Austausch von Altgeräten ohne Updates?",
+    "Werden Kühlsteuerungen künftig ausdrücklich bei den Pflichten nach der NIS-2-Richtlinie geprüft?"
    ],
    "controls": [
-    "NIS-2-Richtlinie Art. 21 – Risikomanagementmaßnahmen im Bereich der Cybersicherheit",
-    "ISO/IEC 27001 Anhang A 8.20 – Netzwerksicherheit",
-    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen"
+    "NIS-2-Richtlinie Art. 21 – Aufrechterhaltung des Betriebs und Krisenmanagement",
+    "ISO/IEC 27001 Anhang A 5.22 – Überwachung und Überprüfung von Lieferantendienstleistungen"
    ],
-   "updated": "2026-11-06"
+   "updated": "2026-11-07"
   },
   {
    "slug": "drittparteien-lieferkette",
@@ -459,17 +457,17 @@
    "title": "Kritische Schwachstellen in Randsystemen und Kernanwendungen",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Bei Ivanti Connect Secure, Drupal Commerce, Synology und den Siemens-Gateways IoT2050 laufen weiter Angriffe. Neu offiziell als ausgenutzt gelistet ist die WordPress-Lücke CVE-2026-119977, die während Core-Upgrades angegriffen wird; die Behördenfrist endet am 6. November, bei VMware ESX am 11. November. Die britische Cyberbehörde erwartet, dass Künstliche Intelligenz lange geduldete…",
-   "next_step": "WordPress-Inventar einschließlich Agenturseiten abgleichen und die Korrektur vor dem nächsten Upgrade einspielen. Akzeptierte Schwachstellenrisiken mit Ablaufdatum versehen.",
+   "status": "Bei Ivanti Connect Secure sind zwei weitere Glieder der Angriffskette offiziell als ausgenutzt gelistet. Die Behördenfrist für das zweite endet am 13. November, die für VMware ESX am 11. November. Bei Drupal Commerce, Synology und den Siemens-Gateways IoT2050 laufen weiter Angriffe.",
+   "next_step": "Fernzugänge auf abgesicherte Versionen bringen und auf Kompromittierung prüfen. Im Kontrollrahmen festlegen, dass der Katalog aktiv ausgenutzter Schwachstellen bei der Priorisierung Vorrang vor dem reinen Schweregrad hat.",
    "open_questions": [
-    "Sind alle öffentlich erreichbaren Webseiten der Marken im Inventar erfasst?",
-    "Wie oft werden akzeptierte Risiken tatsächlich neu bewertet?"
+    "Sind weitere Glieder der Ivanti-Angriffskette noch unbekannt?",
+    "Reicht Aktualisieren allein, oder müssen Fernzugänge nach früher Ausnutzung neu aufgesetzt werden?"
    ],
    "controls": [
-    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
-    "NIS-2-Richtlinie Art. 21 – Umgang mit Schwachstellen"
+    "ISO/IEC 27001 Anhang A 8.8 – Umgang mit technischen Schwachstellen",
+    "NIS-2-Richtlinie Art. 21 – Umgang mit und Offenlegung von Schwachstellen"
    ],
-   "updated": "2026-11-05"
+   "updated": "2026-11-07"
   },
   {
    "slug": "lebenszyklus-altsysteme",
@@ -879,6 +877,17 @@
    "added": "2026-10-07"
   },
   {
+   "date": "2026-11-13",
+   "title": "Ivanti-Lücke CVE-2026-118527: behördliche Patch-Frist",
+   "detail": "Wer Ivanti Connect Secure betreibt, sollte auf Version 25.1.1.3 oder 22.8R2.6 aktualisieren und die Fernzugänge auf Spuren früherer Kompromittierung prüfen.",
+   "scope": "global",
+   "url": "https://securityaffairs.com/?p=202175",
+   "primary": false,
+   "checked": true,
+   "dossier": "kritische-schwachstellen-perimeter",
+   "added": "2026-11-07"
+  },
+  {
    "date": "2026-12-02",
    "title": "Verordnung über Künstliche Intelligenz: Übergang für Kennzeichnung synthetischer Inhalte endet",
    "detail": "Systeme zur Erzeugung synthetischer Inhalte, die vor dem 2. August 2026 in Verkehr gebracht wurden, müssen bis dahin die Transparenzpflichten nach Artikel 50 Absatz 2 erfüllen.",
@@ -1069,16 +1078,16 @@
  "signals": [
   {
    "theme": "Digital Fairness Act",
-   "why": "Der Wissenschaftliche Dienst des Europäischen Parlaments erwartet den Vorschlag im vierten Quartal 2026. Er soll manipulative Gestaltung, personalisierte Preise und digitale Verträge regeln und würde damit Onlinehandel und Kundenprogramme direkt treffen.",
-   "count": 23,
+   "why": "Laut vorläufiger Tagesordnung legt die Kommission den Vorschlag am 11. November vor. Er dürfte Gestaltung, Abonnementverwaltung und Personalisierung in Onlineshops und Apps regeln.",
+   "count": 24,
    "first_seen": "2026-09-30",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "evidence": [
+    "https://www.mlex.com/mlex/data-privacy-security/articles/2531216",
     "https://eprs.europarl.europa.eu/contents/publications/EPRS/2026/10/EPRS_BRI(2026)791529.html",
     "https://newsletter.digitalfairnessact.com/p/digital-fairness-act-targeted-for",
     "https://www.freshfields.com/en/our-thinking/campaigns/tech-data-and-ai-the-digital-frontier/eu-digital-strategy/navigating-the-eus-digital-fairness-act",
-    "https://www.europarl.europa.eu/legislative-train/theme-protecting-our-democracy-upholding-our-values/file-digital-fairness-act",
-    "https://www.privacylaws.com/news/eu-proposal-on-digital-fairness-act-expected-by-the-end-of-2026/"
+    "https://www.europarl.europa.eu/legislative-train/theme-protecting-our-democracy-upholding-our-values/file-digital-fairness-act"
    ]
   },
   {
@@ -1240,6 +1249,16 @@
    "evidence": [
     "https://www.techuk.org/insights/news/dispatch-from-brussels-updates-on-eu-tech-policy-09-10",
     "https://www.politico.eu/article/eu-lawmakers-ai-apocalypse-warnings-brussels-scrambles-ai-rules-gaps/"
+   ]
+  },
+  {
+   "theme": "Exportkontrollen für Rechenchips",
+   "why": "Die Kommission hat am 14. September eine aktualisierte Liste für Güter mit doppeltem Verwendungszweck beschlossen, die unter anderem integrierte Schaltungen für Hochleistungsrechnen erfasst. Die Veröffentlichung im Amtsblatt wird für November erwartet. Wer Rechenleistung für Künstliche Intelligenz einkauft oder über Ländergrenzen verlagert, muss Exportkontrollfragen mitdenken.",
+   "count": 1,
+   "first_seen": "2026-11-07",
+   "last_seen": "2026-11-07",
+   "evidence": [
+    "https://www.ashurstperkinscoie.com/en/insights/the-european-commission-updates-the-eu-dual-use-export-control-list/"
    ]
   },
   {
@@ -1540,6 +1559,42 @@
    "check": {
     "verdict": "ok",
     "note": "Datum 4. November 2026 stimmt. Die Empfehlungen, die verschlüsselte Datenbank und das Fehlen von Hinweisen auf einen Zugriff auf die Inhalte sind belegt. Die beiden letzten Angaben stammen aus Antworten des Kundendienstes, die Kunden weitergegeben haben."
+   }
+  },
+  {
+   "title": "Update: Kühlanlagen – Europäische Kommission will Vorsorge der Supermärkte prüfen",
+   "summary": "Nach der zweiten Angriffswelle auf Kühlsteuerungen will die Europäische Kommission prüfen, wie gut Supermärkte gegen solche Angriffe gewappnet sind. Das Sicherheitskollegium der Kommission soll die Notfallvorkehrungen und die Reaktionsgeschwindigkeit der Händler bewerten, ein Termin steht noch nicht fest. Lebensmittelkommissar Christophe Hansen nennt die Angriffe einen gezielten Versuch, die Lebensmittelversorgung zu stören. Neu gegenüber dem bisherigen Stand ist diese politische Einordnung auf Ebene der Europäischen Union. Der belgische Kühltechnikdienstleister Sabcobel sagt, ältere Anlagen bräuchten zum Schutz teils neue Hardware.",
+   "relevance": "Kühlsteuerungen in Filialen und Lagern rücken damit in die Nähe der Aufsicht über kritische Infrastruktur. Ein Inventar fernwartbarer Steuerungen mit klaren Verantwortlichen, Fernwartungsklauseln in den Verträgen und geübte Notfallpläne für Kühlausfälle sollten belegbar sein. Für Altgeräte ohne Updates kann zusätzlicher Investitionsbedarf entstehen.",
+   "source": "The Next Web",
+   "url": "https://thenextweb.com/news/eu-commission-probe-supermarket-fridge-hacks",
+   "id": "2026-11-07-eu-kommission-prueft-vorsorge-supermaerkte",
+   "topic": "Cyber- & IT-Regulierung",
+   "impact": "hoch",
+   "published": "2026-11-03",
+   "tags": [
+    "Betriebstechnik",
+    "Lebensmittelversorgung",
+    "Notfallvorsorge"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Aufrechterhaltung des Betriebs und Krisenmanagement",
+    "ISO/IEC 27001 Anhang A 5.30 – Bereitschaft der Informations- und Kommunikationstechnik für die Betriebskontinuität"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Management",
+    "Einkauf & Drittparteien"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "betriebstechnik-filialen-logistik",
+   "priority": 1,
+   "primary": false,
+   "added": "2026-11-07T06:06:48Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Die Quelle ist am 3. November 2026 erschienen. Sie bestätigt die Prüfung durch das Sicherheitskollegium der Kommission, die Bewertung der Notfallvorkehrungen und der Reaktionsgeschwindigkeit, dass noch kein Termin feststeht, das Zitat von Christophe Hansen zur gezielten Störung der…"
    }
   },
   {
@@ -2090,6 +2145,39 @@
    "check": {
     "verdict": "ok",
     "note": "Datum 1. November, Zeitraum August 2023 bis September 2026 und die fehlenden Angaben sind belegt."
+   }
+  },
+  {
+   "title": "Update: Ivanti Connect Secure – zwei weitere ausgenutzte Lücken, Behördenfrist 13. November",
+   "summary": "Die amerikanische Cybersicherheitsbehörde hat zwei weitere Lücken der Fernzugangslösung Ivanti Connect Secure in ihren Katalog aktiv ausgenutzter Schwachstellen aufgenommen. CVE-2026-111357 erlaubt angemeldeten Angreifern eine Rechteausweitung, die Frist dafür lief am 2. November ab. CVE-2026-118527 erlaubt das Hochladen schädlicher Dateien an einen bekannten Speicherort, die Frist endet am 13. November. Beide gehören zu einer Angriffskette mit der seit 13. Oktober gelisteten Umgehung der Anmeldung CVE-2026-104935. Abgesichert sind die Versionen 25.1.1.3 und 22.8R2.6.",
+   "relevance": "Die zweite Lücke hat für sich genommen nur einen mittleren Schweregrad, ist in der Kette aber ein Baustein des Einbruchs. Eine Priorisierung allein nach Schweregrad greift deshalb zu kurz. Fernzugänge sollten aktualisiert und auf Spuren früherer Kompromittierung geprüft werden, und das Vorgehen gehört nachvollziehbar dokumentiert ins Schwachstellen- und Änderungsmanagement.",
+   "source": "Security Affairs",
+   "url": "https://securityaffairs.com/?p=202175",
+   "id": "2026-11-07-ivanti-connect-secure-frist-13-november",
+   "topic": "IT-Governance & Risiko",
+   "impact": "hoch",
+   "published": "2026-10-31",
+   "tags": [
+    "Fernzugang",
+    "aktiv ausgenutzt",
+    "Behördenfrist"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 8.8 – Umgang mit technischen Schwachstellen",
+    "IT-Kontrollen der Abschlussprüfung – Änderungsmanagement"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Revision & Prüfung"
+   ],
+   "countries": [],
+   "dossier": "kritische-schwachstellen-perimeter",
+   "priority": 2,
+   "primary": false,
+   "added": "2026-11-07T06:06:48Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Die Quelle ist am 31. Oktober 2026 erschienen. Belegt sind: CVE-2026-111357 (Rechteausweitung, Frist 2. November 2026), CVE-2026-118527 (Hochladen von Dateien an einen bekannten Speicherort, Bewertung 4,3, Frist 13. November 2026), die Angriffskette mit CVE-2026-104935 (im Katalog seit 13. Oktober…"
    }
   },
   {
@@ -4141,6 +4229,38 @@
    "check": {
     "verdict": "ok",
     "note": "Sechs Lücken am 20. Oktober: vier im Plex Media Server, eine Befehlseinschleusung in SiteGuard und eine Lücke im Suchpfad des Siemens Software Center. Die Nummern stimmen, eine konkrete Frist nennt die Warnung nicht."
+   }
+  },
+  {
+   "title": "Update: Digital Fairness Act – Vorschlag laut vorläufiger Tagesordnung am 11. November",
+   "summary": "Die Kanzlei CMS erwartet den Entwurf des Digital Fairness Act am 11. November 2026, zusammen mit einer Überarbeitung der Verordnung über die Zusammenarbeit der Verbraucherschutzbehörden bei der grenzüberschreitenden Durchsetzung. Sie rechnet mit Regeln zu manipulativer Gestaltung (Dark Patterns), zu Kündigung und automatischer Verlängerung von Abonnements, zu Influencer-Werbung und zu personalisierten Preisen. In Kraft sieht sie das Gesetz frühestens Ende 2028.",
+   "relevance": "In Onlineshops, Apps, Kundenprogrammen und der Reisebuchung betreffen die Regeln Gestaltung und Algorithmen, also die Informationstechnik selbst. Es lohnt sich, Designentscheidungen und Personalisierungslogik schon jetzt nachvollziehbar zu dokumentieren und den Vorschlag nach der Veröffentlichung gemeinsam mit Recht und Datenschutz zu bewerten.",
+   "source": "CMS",
+   "url": "https://cms.law/en/aut/legal-updates/inside-the-eu-s-planned-digital-fairness-act-digital-design-subscription-traps-and-influencer-marketing",
+   "id": "2026-11-07-digital-fairness-act-11-november",
+   "topic": "Weitere Themen",
+   "impact": "info",
+   "published": "2026-10-19",
+   "tags": [
+    "Verbraucherrecht",
+    "Onlinehandel",
+    "Dark Patterns"
+   ],
+   "controls": [],
+   "roles": [
+    "Management",
+    "Datenschutz"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": null,
+   "priority": 3,
+   "primary": false,
+   "added": "2026-11-07T06:06:48Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Datum (19. Oktober 2026) und das erwartete Datum 11. November 2026 stimmen. Die Quelle nennt aber keine vorläufige Tagesordnung der Kommission und sagt nicht, dass sich der Zeitplan noch ändern kann. Sie sagt nur, der Entwurf werde am 11. November erwartet. Statt einer allgemeinen Initiative zur…"
    }
   },
   {
