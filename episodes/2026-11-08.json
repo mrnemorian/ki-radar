@@ -1,0 +1,179 @@
+{
+ "format": "tag",
+ "chapters": [
+  {
+   "title": "Begrüßung",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Guten Morgen, liebe IT-GRC-Kolleginnen und -Kollegen, willkommen beim IT-GRC Radar am Sonntag, dem achten November 2026."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Sonntag, und trotzdem geht es wieder um Kühlregale. Ich glaube, die verfolgen uns inzwischen bis ins Wochenende."
+    }
+   ]
+  },
+  {
+   "title": "Kühlanlagen vom Netz",
+   "news_id": "2026-11-08-eu-erklaerung-kuehlanlagen-vom-netz",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Da gibt es Neues zu den Angriffen auf Kühlsteuerungen. Am vierten November haben die Agentur der Europäischen Union für Cybersicherheit, die Europäische Kommission, Europol und die Netzwerke der nationalen Notfallteams und Krisenbehörden eine gemeinsame Erklärung veröffentlicht."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und die ist ungewöhnlich deutlich. Organisationen sollen sofort handeln und die betroffenen Anlagen weniger angreifbar machen. Für die konkreten Maßnahmen verweist die Erklärung auf die Warnungen der nationalen Notfallteams."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Sofort handeln, schön und gut. Aber wer entscheidet das eigentlich im Markt?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Genau, und das finde ich den spannendsten Teil. Technik, Einkauf und Versicherung gehören an einen Tisch, und zwar bevor jemand im Markt den Stecker zieht."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Klingt nach dem Klassiker: Wer ist eigentlich Owner der Kühltheke?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ehrlich gesagt ist das die eigentliche Frage. Für einen Konzern mit sehr vielen Filialen heißt das: ein Inventar der fernwartbaren Anlagen, eine Übersicht über die Zugänge der Dienstleister und eine klare Entscheidung, wer abschalten darf."
+    }
+   ]
+  },
+  {
+   "title": "Cyberpolicen und Kühlgut",
+   "news_id": "2026-11-08-cyberpolicen-kuehlgut-deckungsluecke",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Passend dazu: Eine Auswertung von 21 Cyber-Tarifen für Einzelhändler zeigt, dass nur sechs grundsätzlich verdorbenes Kühlgut nach einem Cyberangriff abdecken."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Fünfzehn also nicht. Verdorbene Ware gilt als Sachschaden, Cyberpolicen zahlen eher für Forensik, Betriebsunterbrechung und Erpressung. Und manche Sachversicherung schließt Cyberangriffe ausdrücklich aus."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Heißt im schlimmsten Fall: Beide Policen zeigen aufeinander?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "So ungefähr. Wer Versicherungen verantwortet, sollte Sublimits und Sicherheitsauflagen für Kühlanlagen prüfen. Und das Kumulrisiko, wenn viele Märkte dieselbe Technik nutzen. Das passt in keine Excel-Zeile, gehört aber in die Risikobewertung."
+    }
+   ]
+  },
+  {
+   "title": "OpenSSH-Lücke",
+   "news_id": "2026-11-08-openssh-sshole-ausgenutzt",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Jetzt zu einer Lücke in OpenSSH, der verbreiteten Software für verschlüsselte Fernzugänge. Sie heißt SSHole, die Kennung ist CVE-2026-123158."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Origineller Name. Betroffen sind Linux-Systeme mit der Bibliothek musl ohne [en]Pluggable Authentication Modules[/en], typischerweise Alpine Linux. Mit einem überlangen, beliebigen Passwort kommt man auf Konten, bei denen die Passwortanmeldung eigentlich abgeschaltet ist."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und das wird schon ausgenutzt?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ein Sicherheitsdienstleister meldet erste Versuche weniger als neun Stunden nach der Veröffentlichung und einen [en]Root[/en]-Zugriff auf einem [en]Honeypot[/en]. Behoben ist die Lücke in Version 10.6p2 vom fünften November. Alpine steckt in vielen [en]Container Images[/en], also lohnt ein Blick über die klassischen Server hinaus."
+    }
+   ]
+  },
+  {
+   "title": "DigiCert-Migration",
+   "news_id": "2026-11-08-digicert-migration-datenabfluss",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "DigiCert, ein großer Anbieter von Zertifikaten, meldet einen Datenabfluss. Ein internes System war nach einer Servermigration aus dem Internet erreichbar, vorher nur über ein virtuelles privates Netz."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Betroffen sind vor allem Kontaktdaten, zu einem kleineren Teil auch Ausweisdokumente aus der Zertifikatsprüfung. Laut Ursachenanalyse wurde die Migration als Infrastruktur-[en]Change[/en] behandelt und nicht als Sicherheitsänderung."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Das ist fast schon ein Lehrbuchsatz."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Für jede Prüfung des Änderungsmanagements, ja. Die Kernsysteme waren laut Anbieter nicht betroffen. Trotzdem sollte man die Lieferantenbewertung aktualisieren und vor [en]Phishing[/en] mit angeblichen Benachrichtigungen warnen."
+    }
+   ]
+  },
+  {
+   "title": "Bußgeld wegen Löschung",
+   "news_id": "2026-11-08-griechenland-bussgeld-beschaeftigtendaten",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Aus dem Datenschutz: Die griechische Aufsicht hat gegen Teleperformance Griechenland 100.000 Euro verhängt."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Das Unternehmen hat Daten eines Beschäftigten gelöscht, obwohl Rechtsansprüche anhängig waren, und Auskunftsanfragen schlecht bearbeitet. Außerdem fehlten Informationen zur Aufbewahrung."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Also zu früh gelöscht statt zu spät. Auch mal etwas Neues."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Genau das macht den Fall lehrreich. Löschkonzepte brauchen eine Ausnahme für laufende Streitigkeiten, einen sogenannten [en]Legal Hold[/en]. Bei sehr vielen Beschäftigten ist das kein Randthema."
+    }
+   ]
+  },
+  {
+   "title": "Alte Apple-Lücke",
+   "news_id": "2026-11-08-apple-luecke-behoerdenfrist",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Kurz noch: Die amerikanische Cybersicherheitsbehörde hat am vierten November eine alte, längst behobene Apple-Lücke als ausgenutzt gelistet. Bundesbehörden sollen sie bis zum achtzehnten November schließen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Angreifer nutzen solche alten Lücken, um Schadsoftware zum Datendiebstahl zu verteilen. Wer Mac-Geräte mit alten Ständen betreibt, sollte einen Blick auf die Ausnahmen in der Patchliste werfen."
+    }
+   ]
+  },
+  {
+   "title": "Auf dem Radar",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Auf dem Radar: der Digital Fairness Act."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Die Kommission hatte den elften November im Kalender, im Gespräch ist auch der achtzehnte. Für den Onlinehandel geht es um manipulative Gestaltung und personalisierte Angebote. Und der Quantum Act steht ebenfalls auf der Novemberagenda."
+    }
+   ]
+  },
+  {
+   "title": "Abschied",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Das war das IT-GRC Radar für heute. Alle Quellen findet ihr auf der Webseite."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und wer heute noch fünf Minuten hat: kurz prüfen, ob irgendwo eine Kühltheke im Internet hängt. Bis morgen."
+    }
+   ]
+  }
+ ]
+}

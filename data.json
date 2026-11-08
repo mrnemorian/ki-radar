@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07T06:06:48Z",
+ "updated": "2026-11-08T06:06:01Z",
  "topics": [
   "IT-Governance & Risiko",
   "Cyber- & IT-Regulierung",
@@ -11,6 +11,18 @@
   "Weitere Themen"
  ],
  "briefings": [
+  {
+   "date": "2026-11-08",
+   "headline": "Behörden fordern: Kühlanlagen sofort vom Netz. Dazu Lücken in Cyberpolicen, eine ausgenutzte OpenSSH-Lücke und ein Migrationsfehler bei DigiCert.",
+   "points": [
+    "Behörden der Europäischen Union verlangen in einer gemeinsamen Erklärung, fernsteuerbare Kühlanlagen sofort vom Internet zu trennen. Vor dem Kappen der Verbindung zum Dienstleister sollen Unternehmen ihre Versicherungsbedingungen prüfen.",
+    "Nur 6 von 21 Cyber-Tarifen für Händler decken verdorbenes Kühlgut nach einem Angriff ab.",
+    "OpenSSH-Lücke „SSHole“ wird wenige Stunden nach Veröffentlichung ausgenutzt, betroffen ist vor allem Alpine Linux.",
+    "DigiCert: Eine Servermigration wurde nicht als Sicherheitsänderung behandelt. Dadurch waren Kundendaten und Ausweisdokumente erreichbar.",
+    "Griechenland: 100.000 Euro Bußgeld, weil Daten eines Beschäftigten trotz laufender Rechtsansprüche gelöscht wurden"
+   ],
+   "count": 6
+  },
   {
    "date": "2026-11-07",
    "headline": "Brüssel will die Notfallvorsorge der Supermärkte prüfen, die Behördenfrist für Ivanti endet am 13. November, der Digital Fairness Act steht vor der Tür.",
@@ -355,18 +367,6 @@
     "Gekaperte Registrierungsstellen für Länderdomains und ein angeklagter Ransomware-Wiederhersteller zeigen weitere Risiken bei Dienstleistern."
    ],
    "count": 7
-  },
-  {
-   "date": "2026-10-07",
-   "headline": "Kritische Lücke in Atlassian-Produkten, Dienstleister als Einfallstor bei ASOS und Angriffe mit Künstlicher Intelligenz auf koreanische Banken",
-   "points": [
-    "Atlassian schließt eine kritische Lücke in Jira, Confluence und weiteren selbst betriebenen Produkten: ohne Anmeldung lassen sich Dateien lesen. Der Hersteller rät, sofort zu aktualisieren oder die Systeme notfalls abzuschalten.",
-    "ASOS bestätigt einen Datenvorfall: Angreifer missbrauchten Plattformen von Drittanbietern für die Kundenkommunikation und schickten Push-Nachrichten an Kundinnen und Kunden.",
-    "Südkorea: Angriffe mit Werkzeugen der Künstlichen Intelligenz treffen mehrere Großbanken. Die Finanzaufsicht ordnet eine Sicherheitsüberprüfung der ganzen Branche an.",
-    "OpenAI informiert mehr als 100 Organisationen über fehlgeleitete Aktivität eigener Agenten aus Training und Tests.",
-    "Ukraine: Erpresser greifen die größte Supermarktkette ATB an und behaupten, Daten von Kunden, Beschäftigten und Lieferanten erbeutet zu haben."
-   ],
-   "count": 5
   }
  ],
  "dossiers": [
@@ -380,20 +380,21 @@
     }
    ],
    "title": "Betriebstechnik in Filialen und Logistik",
-   "sector": "Handel & Branche",
+   "sector": "Cyber- & IT-Regulierung",
    "ring": "jetzt handeln",
-   "status": "Nach rund 700 Supermärkten in Frankreich hat Anfang November eine zweite Welle Märkte in mehreren Ländern getroffen, darunter Deutschland und Rumänien. Die Europäische Kommission will jetzt die Notfallvorsorge der Supermärkte prüfen, Lebensmittelkommissar Hansen spricht von einem gezielten Angriff auf die Lebensmittelversorgung.",
-   "next_step": "Das Inventar aller fernwartbaren Kühl- und Gebäudesteuerungen mit Verantwortlichen und Zugangswegen vervollständigen, Steuerungen vom Internet trennen, Fernwartungsverträge prüfen und Notfallpläne für Kühlausfälle üben. Die Prüfung durch die Kommission beobachten.",
+   "status": "Nach der zweiten Angriffswelle am 1. und 2. November fordern die Agentur der Europäischen Union für Cybersicherheit, die Kommission, Europol und die Netzwerke der Notfallteams und Krisenbehörden seit 4. November, fernsteuerbare Kühlanlagen sofort vom Internet zu trennen. Amerikanische Behörden folgten am 5. November. Laut einer Auswertung decken nur 6 von 21 Cyber-Tarifen für Händler verdorbenes…",
+   "next_step": "Inventar der fernwartbaren Kühl- und Gebäudetechnik mit Internetbezug abgleichen. Dienstleisterzugänge und Abschaltbefugnisse festlegen. Die Deckung von Sachschäden aus Cyberangriffen mit dem Versicherungsbereich prüfen.",
    "open_questions": [
-    "Welche Anforderungen leitet die Kommission aus ihrer Prüfung für den Lebensmittelhandel ab?",
-    "Wer trägt die Kosten für den Austausch von Altgeräten ohne Updates?",
-    "Werden Kühlsteuerungen künftig ausdrücklich bei den Pflichten nach der NIS-2-Richtlinie geprüft?"
+    "Wer darf im Ernstfall die Verbindung zum Kältedienstleister trennen, ohne Gewährleistung oder Versicherungsschutz zu gefährden?",
+    "Greift bei verdorbener Ware die Cyber- oder die Sachversicherung?",
+    "Welche Pflichten aus der NIS-2-Umsetzung und dem Cyber Resilience Act gelten für Betreiber und Hersteller der Kühlsteuerungen?"
    ],
    "controls": [
-    "NIS-2-Richtlinie Art. 21 – Aufrechterhaltung des Betriebs und Krisenmanagement",
-    "ISO/IEC 27001 Anhang A 5.22 – Überwachung und Überprüfung von Lieferantendienstleistungen"
+    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
+    "ISO/IEC 27001 Anhang A 8.22 – Trennung von Netzwerken",
+    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen"
    ],
-   "updated": "2026-11-07"
+   "updated": "2026-11-08"
   },
   {
    "slug": "drittparteien-lieferkette",
@@ -457,17 +458,16 @@
    "title": "Kritische Schwachstellen in Randsystemen und Kernanwendungen",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Bei Ivanti Connect Secure sind zwei weitere Glieder der Angriffskette offiziell als ausgenutzt gelistet. Die Behördenfrist für das zweite endet am 13. November, die für VMware ESX am 11. November. Bei Drupal Commerce, Synology und den Siemens-Gateways IoT2050 laufen weiter Angriffe.",
-   "next_step": "Fernzugänge auf abgesicherte Versionen bringen und auf Kompromittierung prüfen. Im Kontrollrahmen festlegen, dass der Katalog aktiv ausgenutzter Schwachstellen bei der Priorisierung Vorrang vor dem reinen Schweregrad hat.",
+   "status": "Bei Ivanti Connect Secure endet die Behördenfrist am 13. November, bei VMware ESX am 11. November. Neu: Die OpenSSH-Lücke SSHole wird wenige Stunden nach Veröffentlichung ausgenutzt. Eine alte Apple-Lücke steht mit Frist 18. November auf der Liste aktiv ausgenutzter Schwachstellen.",
+   "next_step": "Systeme und Container-Images auf Basis von Alpine Linux auf OpenSSH 10.6p2 prüfen, Patch-Ausnahmen für Apple-Geräte und Browser überprüfen.",
    "open_questions": [
-    "Sind weitere Glieder der Ivanti-Angriffskette noch unbekannt?",
-    "Reicht Aktualisieren allein, oder müssen Fernzugänge nach früher Ausnutzung neu aufgesetzt werden?"
+    "Erfasst das Schwachstellenmanagement Container-Images genauso zuverlässig wie Server?"
    ],
    "controls": [
     "ISO/IEC 27001 Anhang A 8.8 – Umgang mit technischen Schwachstellen",
-    "NIS-2-Richtlinie Art. 21 – Umgang mit und Offenlegung von Schwachstellen"
+    "NIS-2-Richtlinie Art. 21 – Umgang mit Schwachstellen"
    ],
-   "updated": "2026-11-07"
+   "updated": "2026-11-08"
   },
   {
    "slug": "lebenszyklus-altsysteme",
@@ -888,6 +888,17 @@
    "added": "2026-11-07"
   },
   {
+   "date": "2026-11-18",
+   "title": "Apple-Lücke CVE-2024-27834: behördliche Patch-Frist",
+   "detail": "Die amerikanische Cybersicherheitsbehörde verlangt von Bundesbehörden, die aktiv ausgenutzte Lücke zu schließen. Unternehmen sollten Altstände bei Apple-Geräten und Browsern ebenfalls bis dahin beseitigen.",
+   "scope": "global",
+   "url": "https://thehackernews.com/2026/11/hackers-exploit-patched-apple-flaw-to.html",
+   "primary": false,
+   "checked": true,
+   "dossier": "kritische-schwachstellen-perimeter",
+   "added": "2026-11-08"
+  },
+  {
    "date": "2026-12-02",
    "title": "Verordnung über Künstliche Intelligenz: Übergang für Kennzeichnung synthetischer Inhalte endet",
    "detail": "Systeme zur Erzeugung synthetischer Inhalte, die vor dem 2. August 2026 in Verkehr gebracht wurden, müssen bis dahin die Transparenzpflichten nach Artikel 50 Absatz 2 erfüllen.",
@@ -1078,10 +1089,10 @@
  "signals": [
   {
    "theme": "Digital Fairness Act",
-   "why": "Laut vorläufiger Tagesordnung legt die Kommission den Vorschlag am 11. November vor. Er dürfte Gestaltung, Abonnementverwaltung und Personalisierung in Onlineshops und Apps regeln.",
-   "count": 24,
+   "why": "Die Kommission hat den Vorschlag für November auf der Agenda, neben dem 11. November ist laut Bericht auch der 18. November im Gespräch. Für den Onlinehandel geht es um manipulative Gestaltung, Abofallen und unfaire Personalisierung.",
+   "count": 25,
    "first_seen": "2026-09-30",
-   "last_seen": "2026-11-07",
+   "last_seen": "2026-11-08",
    "evidence": [
     "https://www.mlex.com/mlex/data-privacy-security/articles/2531216",
     "https://eprs.europarl.europa.eu/contents/publications/EPRS/2026/10/EPRS_BRI(2026)791529.html",
@@ -1219,6 +1230,17 @@
    ]
   },
   {
+   "theme": "Cyberversicherung bei vorsorglicher Abschaltung",
+   "why": "Die Behörden der Europäischen Union raten ausdrücklich, vor dem Trennen der Verbindung zum Kältedienstleister die Versicherungsbedingungen zu prüfen. Notfallmaßnahmen können also den Versicherungsschutz berühren.",
+   "count": 2,
+   "first_seen": "2026-10-24",
+   "last_seen": "2026-11-08",
+   "evidence": [
+    "https://securityaffairs.com/?p=202528",
+    "https://www.insurancebusinessmag.com/uk/news/cyber/uk-councils-and-met-police-among-sites-pulled-offline-after-ncsc-alert-594424.aspx"
+   ]
+  },
+  {
    "theme": "Aktive Cyberabwehr durch Bundesbehörden",
    "why": "Der Innenausschuss des Bundestages hat am 5. Oktober 2026 den Gesetzentwurf zur Stärkung der Cybersicherheit mit neuen Befugnissen zur aktiven Cyberabwehr und Datenerhebung angehört; Sachverständige kritisieren zersplitterte Zuständigkeiten. Für Betreiber Kritischer Infrastrukturen kann das Eingriffe in Systeme Dritter und neue Mitwirkungsfragen bringen.",
    "count": 2,
@@ -1249,6 +1271,16 @@
    "evidence": [
     "https://www.techuk.org/insights/news/dispatch-from-brussels-updates-on-eu-tech-policy-09-10",
     "https://www.politico.eu/article/eu-lawmakers-ai-apocalypse-warnings-brussels-scrambles-ai-rules-gaps/"
+   ]
+  },
+  {
+   "theme": "Quantum Act der Europäischen Union",
+   "why": "Der Quantum Act steht laut Bericht ebenfalls auf der Novemberagenda der Kommission. Er soll unter anderem einheitliche Standards für Post-Quanten-Kryptografie in der Europäischen Union voranbringen.",
+   "count": 1,
+   "first_seen": "2026-11-08",
+   "last_seen": "2026-11-08",
+   "evidence": [
+    "https://www.mlex.com/mlex/data-privacy-security/articles/2531216"
    ]
   },
   {
@@ -1289,16 +1321,6 @@
    "last_seen": "2026-10-26",
    "evidence": [
     "https://www.heise.de/news/W3C-Ein-Auftrag-ist-kein-Freibrief-fuer-KI-Agenten-11497919.html"
-   ]
-  },
-  {
-   "theme": "Cyberversicherung bei vorsorglicher Abschaltung",
-   "why": "Nach den PHP2Shell-Abschaltungen diskutiert die Versicherungsbranche, ob vorsorgliche Abschaltungen als Betriebsunterbrechung gedeckt sind. Das sollte vor der nächsten Notabschaltung mit dem Versicherer geklärt sein.",
-   "count": 1,
-   "first_seen": "2026-10-24",
-   "last_seen": "2026-10-24",
-   "evidence": [
-    "https://www.insurancebusinessmag.com/uk/news/cyber/uk-councils-and-met-police-among-sites-pulled-offline-after-ncsc-alert-594424.aspx"
    ]
   },
   {
@@ -1353,6 +1375,104 @@
   }
  ],
  "news": [
+  {
+   "title": "OpenSSH-Lücke „SSHole“: Angriffe wenige Stunden nach Veröffentlichung",
+   "summary": "Die Lücke CVE-2026-123158 in OpenSSH, der verbreiteten Software für verschlüsselte Fernzugänge, betrifft Linux-Systeme mit der Bibliothek musl ohne Pluggable Authentication Modules, typischerweise Alpine Linux. Angreifer können sich mit einem überlangen, beliebigen Passwort an Konten anmelden, bei denen die Passwortanmeldung deaktiviert ist. Ein Sicherheitsdienstleister meldet erste Angriffsversuche weniger als neun Stunden nach Veröffentlichung und einen Root-Zugriff auf einem Honeypot. Behoben ist die Lücke in OpenSSH 10.6p2 vom 5. November.",
+   "relevance": "Alpine Linux steckt in vielen Container-Images. Deshalb reicht ein Blick auf klassische Server nicht. Inventar und Patchprozess müssen auch Container-Images und Software-Stücklisten erfassen.",
+   "source": "The Hacker News",
+   "url": "https://thehackernews.com/2026/11/hackers-exploited-openssh-sshole-flaw.html",
+   "id": "2026-11-08-openssh-sshole-ausgenutzt",
+   "topic": "IT-Governance & Risiko",
+   "impact": "mittel",
+   "published": "2026-11-06",
+   "tags": [
+    "Schwachstelle",
+    "Linux",
+    "Container"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 8.8 – Umgang mit technischen Schwachstellen",
+    "NIS-2-Richtlinie Art. 21 – Umgang mit Schwachstellen"
+   ],
+   "roles": [
+    "IT-Risiko"
+   ],
+   "countries": [],
+   "dossier": "kritische-schwachstellen-perimeter",
+   "priority": 3,
+   "primary": false,
+   "added": "2026-11-08T06:06:01Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum, Kennung, betroffene Systeme (musl ohne Pluggable Authentication Modules, Alpine Linux), weniger als neun Stunden, Root-Zugriff auf dem Honeypot (laut Previdian) und Version 10.6p2 vom 5. November (laut Versionshinweisen von OpenSSH) sind belegt."
+   }
+  },
+  {
+   "title": "DigiCert: Migrationsfehler machte Kundendaten und Ausweisdokumente erreichbar",
+   "summary": "Der Zertifikatsanbieter DigiCert meldet einen Datenabfluss. Ein internes Geschäftssystem war nach einer Servermigration aus dem Internet erreichbar, vorher nur über ein virtuelles privates Netz. Betroffen sind vor allem geschäftliche Kontaktdaten, in einem kleineren Teil auch Ausweisdokumente aus der Zertifikatsprüfung. Laut Ursachenanalyse wurde die Migration als Infrastrukturänderung behandelt, nicht als Sicherheitsänderung. Die Kernsysteme zur Ausstellung von Zertifikaten waren laut Anbieter nicht betroffen.",
+   "relevance": "Der Fall zeigt eine typische Lücke im Änderungsmanagement: Migrationen ohne Bewertung der neuen Angriffsfläche. Zusätzlich sollten Lieferantenbewertung und Warnhinweise vor Phishing mit gefälschten Benachrichtigungen aktualisiert werden.",
+   "source": "BleepingComputer",
+   "url": "https://bleepingcomputer.com/news/security/digicert-data-breach-exposes-customer-information-identity-documents",
+   "id": "2026-11-08-digicert-migration-datenabfluss",
+   "topic": "IT-Governance & Risiko",
+   "impact": "mittel",
+   "published": "2026-11-05",
+   "tags": [
+    "Änderungsmanagement",
+    "Zertifikate",
+    "Drittparteien"
+   ],
+   "controls": [
+    "IT-Kontrollen der Abschlussprüfung – Änderungsmanagement",
+    "ISO/IEC 27001 Anhang A 8.32 – Änderungssteuerung",
+    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen"
+   ],
+   "roles": [
+    "Revision & Prüfung",
+    "Einkauf & Drittparteien",
+    "IT-Risiko"
+   ],
+   "countries": [],
+   "dossier": "drittparteien-lieferkette",
+   "priority": 4,
+   "primary": false,
+   "added": "2026-11-08T06:06:01Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Der Artikel erschien am 5. November, nicht am 6. Die Inhalte sind belegt. Die Aussage zur Infrastrukturänderung steht in der Ursachenanalyse von DigiCert im verlinkten Mozilla-Fehlerbericht, nicht im Artikel selbst."
+   }
+  },
+  {
+   "title": "Alte Apple-Lücke wird für Datendiebstahl genutzt, Behördenfrist 18. November",
+   "summary": "Die amerikanische Cybersicherheitsbehörde hat am 4. November die längst behobene Apple-Lücke CVE-2024-27834 in ihren Katalog aktiv ausgenutzter Schwachstellen aufgenommen. Bundesbehörden sollen sie bis 18. November schließen. Laut einem Sicherheitsbericht nutzen Angreifer alte Lücken in Safari und Chrome, um Schadsoftware zum Diebstahl von Daten zu verteilen.",
+   "relevance": "Altstände bei Browsern und Apple-Geräten fallen oft durch das Raster des Patchmanagements. Ausnahmen und nicht verwaltete Geräte sollten überprüft werden.",
+   "source": "The Hacker News",
+   "url": "https://thehackernews.com/2026/11/hackers-exploit-patched-apple-flaw-to.html",
+   "id": "2026-11-08-apple-luecke-behoerdenfrist",
+   "topic": "IT-Governance & Risiko",
+   "impact": "info",
+   "published": "2026-11-05",
+   "tags": [
+    "Schwachstelle",
+    "Apple",
+    "Patchmanagement"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 8.8 – Umgang mit technischen Schwachstellen"
+   ],
+   "roles": [
+    "IT-Risiko"
+   ],
+   "countries": [],
+   "dossier": "kritische-schwachstellen-perimeter",
+   "priority": 6,
+   "primary": false,
+   "added": "2026-11-08T06:06:01Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Der Artikel erschien am 5. November, nicht am 6. Die Behörde hat die Lücke laut Artikel am Mittwoch, dem 4. November, in den Katalog aufgenommen, nicht am 5. Frist, Kennung und Sicherheitsbericht (Sekoia) stimmen."
+   }
+  },
   {
    "title": "Hotelsoftware vioma: Buchungsdaten von Gästen abgeflossen",
    "summary": "Der Anbieter von Hotelsoftware vioma hat einen Sicherheitsvorfall in seinem Reservierungssystem bestätigt: Über eine inzwischen geschlossene Schwachstelle wurden Buchungsdaten von Gästen unbefugt abgerufen, darunter Namen, Kontaktdaten und Aufenthaltszeiträume. Kreditkartendaten sind nach bisherigem Stand nicht betroffen, der Anbieter warnt aber vor gezielten Phishing- und Betrugsversuchen mit Bezug auf konkrete Buchungen.",
@@ -1457,6 +1577,43 @@
    "check": {
     "verdict": "ok",
     "note": "Artikel vom 5. November 2026; 948 funktionierende Exploits zur lokalen Rechteausweitung auf root, Lauf von 30 Stunden laut Überschrift, Kosten 1.213.430 Dollar. Die 30 Stunden beziehen sich im Zitat streng genommen auf die Reproduktion der Schwachstellen, die Überschrift spricht aber von einem…"
+   }
+  },
+  {
+   "title": "Update: Kühlsteuerungen – Behörden der Europäischen Union fordern sofortige Trennung vom Internet",
+   "summary": "Die Agentur der Europäischen Union für Cybersicherheit, die Europäische Kommission, Europol sowie die Netzwerke der nationalen Computer-Notfallteams und der Cyberkrisenbehörden haben am 4. November eine gemeinsame Erklärung zu Cybervorfällen bei gewerblichen Kühlanlagen in mehreren Mitgliedstaaten veröffentlicht. Sie raten Organisationen, sofort zu handeln und die Angriffsfläche der betroffenen Systeme zu verringern. Für konkrete Maßnahmen verweist die Erklärung auf die Warnungen der nationalen Computer-Notfallteams.",
+   "relevance": "Neu gegenüber dem bisherigen Stand ist eine abgestimmte, konkrete Handlungsempfehlung auf Ebene der Europäischen Union. Sie verbindet Technik, Dienstleisterverträge und Versicherung. Für einen Lebensmittelhändler mit vielen Filialen gehören Inventar, Fernwartungszugänge und Abschaltbefugnisse jetzt auf die Tagesordnung des Managements.",
+   "source": "Agentur der Europäischen Union für Cybersicherheit",
+   "url": "https://www.enisa.europa.eu/node/19616",
+   "id": "2026-11-08-eu-erklaerung-kuehlanlagen-vom-netz",
+   "topic": "Cyber- & IT-Regulierung",
+   "impact": "hoch",
+   "published": "2026-11-04",
+   "tags": [
+    "Betriebstechnik",
+    "Kühlanlagen",
+    "Behördenwarnung"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
+    "ISO/IEC 27001 Anhang A 8.22 – Trennung von Netzwerken",
+    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Einkauf & Drittparteien",
+    "Management"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "betriebstechnik-filialen-logistik",
+   "priority": 1,
+   "primary": true,
+   "added": "2026-11-08T06:06:01Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Datum und Herausgeber stimmen. Weder die Erklärung noch die verlinkte Warnung des Netzwerks der Computer-Notfallteams nennt die konkreten Empfehlungen: sofortige Trennung vom Internet, Firmware-Aktualisierung, Änderung der Standardpasswörter, Trennung vom Büronetz und Prüfung der…"
    }
   },
   {
@@ -1902,6 +2059,42 @@
    }
   },
   {
+   "title": "Griechenland: 100.000 Euro, weil Beschäftigtendaten trotz laufender Ansprüche gelöscht wurden",
+   "summary": "Die griechische Datenschutzaufsicht hat gegen den Dienstleister Teleperformance Griechenland ein Bußgeld von 100.000 Euro verhängt. Das Unternehmen hatte Daten eines Beschäftigten gelöscht, obwohl Rechtsansprüche anhängig waren, und Auskunftsanfragen mangelhaft bearbeitet. Die Behörde bemängelte außerdem unzureichende Schutzmaßnahmen und fehlende Informationen zur Aufbewahrung.",
+   "relevance": "Löschkonzepte müssen eine Ausnahme für laufende Streitigkeiten vorsehen (Legal Hold) und mit dem Auskunftsprozess verzahnt sein. In einem Konzern mit sehr vielen Beschäftigten ist das ein prüfbarer Kontrollpunkt.",
+   "source": "MLex",
+   "url": "https://www.mlex.com/mlex/articles/2545046",
+   "id": "2026-11-08-griechenland-bussgeld-beschaeftigtendaten",
+   "topic": "Datenschutz & Datenrecht",
+   "impact": "mittel",
+   "published": "2026-11-02",
+   "tags": [
+    "Beschäftigtendaten",
+    "Löschkonzept",
+    "Bußgeld"
+   ],
+   "controls": [
+    "DSGVO Art. 17 – Recht auf Löschung",
+    "DSGVO Art. 15 – Auskunftsrecht",
+    "DSGVO Art. 13 – Informationspflicht"
+   ],
+   "roles": [
+    "Datenschutz"
+   ],
+   "countries": [
+    "GR",
+    "EU"
+   ],
+   "dossier": null,
+   "priority": 5,
+   "primary": false,
+   "added": "2026-11-08T06:06:01Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Der Artikel steht teilweise hinter einer Bezahlschranke. Die frei sichtbare Zusammenfassung vom 2. November belegt Betrag, Unternehmen, Löschung trotz anhängiger Ansprüche, mangelhafte Bearbeitung der Auskunftsanfragen, unzureichende Schutzmaßnahmen und fehlende Informationen zur Aufbewahrung."
+   }
+  },
+  {
    "title": "Falscher Support über Microsoft Teams: Angreifer lassen sich Zertifikate für Administratoren ausstellen",
    "summary": "Microsoft hat zwei Einbrüche untersucht, bei denen sich Angreifer über Microsoft Teams als interner Helpdesk ausgaben und per Quick Assist Fernzugriff erhielten. Danach nutzten sie unsicher konfigurierte Active Directory Certificate Services, um Anmeldezertifikate für privilegierte Konten und in einem Fall für einen Domain Controller zu bekommen. In einem Fall wurden Unternehmensdaten auf einen externen Server kopiert. Eine Lücke in Teams selbst wurde nicht ausgenutzt. Windows Server 2025 schaltet den erweiterten Schutz der Anmeldung für diese Zertifikatsdienste standardmäßig ein, bei den Versionen 2022 und 2019 muss er von Hand aktiviert werden.",
    "relevance": "Social Engineering trifft hier auf eine oft vergessene Zertifikatsinfrastruktur. Mit einem Zertifikat brauchen Angreifer kein Passwort mehr, ein Zurücksetzen des Passworts hilft dann nicht. Zertifikatsvorlagen gehören deshalb in die regelmäßige Prüfung der Berechtigungen, und Anfragen von Externen über Teams sollten nur eingeschränkt möglich sein.",
@@ -2145,6 +2338,38 @@
    "check": {
     "verdict": "ok",
     "note": "Datum 1. November, Zeitraum August 2023 bis September 2026 und die fehlenden Angaben sind belegt."
+   }
+  },
+  {
+   "title": "Update: Kühlanlagen – nur 6 von 21 Cyber-Tarifen decken verdorbene Ware",
+   "summary": "Eine Auswertung von 21 Cyberversicherungstarifen für Einzelhändler zeigt: Nur sechs decken grundsätzlich verdorbenes Kühlgut nach einem Cyberangriff ab. Verdorbene Ware gilt als Sachschaden, Cyberpolicen zielen eher auf Forensik, Betriebsunterbrechung und Erpressung. Klassische Sachversicherungen schließen Cyberangriffe teilweise aus. Fachleute empfehlen, Sublimits und Sicherheitsauflagen für Kühlanlagen zu prüfen. Sie weisen außerdem auf Kumulrisiken hin.",
+   "relevance": "Bisher ging es um mögliche Kürzungen wegen grober Fahrlässigkeit, jetzt wird die strukturelle Lücke zwischen Cyber- und Sachversicherung sichtbar. Für die Risikobewertung von Angriffen auf Filialtechnik sollten Versicherungs-, Risiko- und Informationssicherheitsverantwortliche die Deckung gemeinsam bewerten.",
+   "source": "Versicherungsbote",
+   "url": "https://www.versicherungsbote.de/id/4952845/Cyber-Angriffe-auf-Supermaerkte-Grosse-Deckungsluecken-bei-Cyberversicherungen-im-Einzelhandel/",
+   "id": "2026-11-08-cyberpolicen-kuehlgut-deckungsluecke",
+   "topic": "Weitere Themen",
+   "impact": "mittel",
+   "published": "2026-11",
+   "tags": [
+    "Cyberversicherung",
+    "Kühlanlagen",
+    "Risikotransfer"
+   ],
+   "controls": [],
+   "roles": [
+    "IT-Risiko",
+    "Management"
+   ],
+   "countries": [
+    "DE"
+   ],
+   "dossier": "betriebstechnik-filialen-logistik",
+   "priority": 2,
+   "primary": false,
+   "added": "2026-11-08T06:06:01Z",
+   "check": {
+    "verdict": "nicht prüfbar",
+    "note": "Die Seite verweigert den Zugriff (Fehler 403, auch die mobile Fassung). Laut Suchergebnissen stammt die Zahl „6 von 21 Tarifen“ aus einer Auswertung von CyberDirekt. Das genaue Datum sowie Sachschaden, Sublimits und Kumulrisiko ließen sich nicht prüfen."
    }
   },
   {
