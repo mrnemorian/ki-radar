@@ -1,11 +1,17 @@
 {
  "last_run": {
-  "start": "2026-11-08T07:00:01+01:00",
-  "end": "2026-11-08T07:06:01+01:00",
+  "start": "2026-11-09T07:00:01+01:00",
+  "end": "2026-11-09T07:06:57+01:00",
   "ok": true,
-  "summary": "6 neue Meldungen: P1 Update: Kühlsteuerungen – Behörden der Europäischen Union fordern sofortige Trennung vom Internet; P2 Update: Kühlanlagen – nur 6 von 21 Cyber-Tarifen decken verdorbene Wa"
+  "summary": "5 neue Meldungen: P1 Update: Kühlanlagen – Angriffe waren vorbereitet, Steuerungen oft mit Werkspasswort; P2 Microsoft 365: Neue Meldeklausel im Datenschutz-Addendum sorgt für Unsicherheit; P3 Man"
  },
  "history": [
+  {
+   "start": "2026-11-09T07:00:01+01:00",
+   "end": "2026-11-09T07:06:57+01:00",
+   "ok": true,
+   "summary": "5 neue Meldungen: P1 Update: Kühlanlagen – Angriffe waren vorbereitet, Steuerungen oft mit Werkspasswort; P2 Microsoft 365: Neue Meldeklausel im Datenschutz-Addendum sorgt für Unsicherheit; P3 Man"
+  },
   {
    "start": "2026-11-08T07:00:01+01:00",
    "end": "2026-11-08T07:06:01+01:00",
@@ -83,12 +89,6 @@
    "end": "2026-10-28T07:00:07+01:00",
    "ok": false,
    "summary": "Recherche lieferte kein verwertbares Ergebnis"
-  },
-  {
-   "start": "2026-10-27T07:00:01+01:00",
-   "end": "2026-10-27T07:07:55+01:00",
-   "ok": true,
-   "summary": "6 neue Meldungen: P1 Arista VeloCloud Orchestrator: Aktiv ausgenutzte Lücke in der Steuerung von Standortnetzen; P2 Amadeus: Über missbrauchtes Konto Buchungsdaten von Korean Air und Asiana abgeflos"
   }
  ]
 }

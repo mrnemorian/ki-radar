@@ -1,0 +1,167 @@
+{
+ "format": "tag",
+ "chapters": [
+  {
+   "title": "Begrüßung",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Guten Morgen, liebe IT-GRC-Kolleginnen und -Kollegen, willkommen beim IT-GRC Radar am Montag, dem neunten November 2026."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Montag. Also erst der Kalender, dann der Kaffee. Oder umgekehrt, je nachdem, wie voll die Woche ist."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Sie ist voll. Fangen wir genau damit an."
+    }
+   ]
+  },
+  {
+   "title": "Die Woche",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Morgen, am zehnten November, gibt es das letzte Sicherheitsupdate für Windows 11 Version 23H2 in den Unternehmens- und Bildungsausgaben. Am selben Tag will Fortinet die Details zu seinen außerplanmäßig geschlossenen Lücken nachreichen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Wer die Fortinet-Updates im Oktober verschoben hat, bekommt morgen also schriftlich, warum das keine gute Idee war."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Am elften November endet die behördliche Frist für die Protokollierungslücke in VMware ESX. Und am dreizehnten November gleich zweimal: Die Konsultation des Europäischen Datenschutzausschusses zur Bußgeld-Methodik endet, und die Patch-Frist für die Ivanti-Lücke läuft ab."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Meine Frist der Woche ist Ivanti am dreizehnten. Fernzugänge sind das Eingangstor, und bei Connect Secure lief eine ganze Angriffskette. Wer dazu noch eine offene Zeile in der Excel-Liste hat, schließt sie heute, nicht Freitagnachmittag."
+    }
+   ]
+  },
+  {
+   "title": "Kühlanlagen: Angriffe waren vorbereitet",
+   "news_id": "2026-11-09-kuehlanlagen-aufklaerungswelle-standardpasswoerter",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Da gibt es Neues zu den Angriffen auf Kühlanlagen. Laut Euronews hat die Sicherheitsfirma Lupovis vom zwanzigsten bis dreißigsten Oktober über 276 Zugriffsversuche von 91 verschiedenen Akteuren auf ihren Lockfallen gezählt, also auf ihren [en]Honeypots[/en]. Und zwar nur in Europa."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Moment, heißt das, man hätte das zehn Tage vorher kommen sehen können?"
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Zumindest hat jemand sehr systematisch angeklopft. Und die Tür war oft offen: Viele Steuerungen hingen direkt im Internet, mit Werkszugangsdaten. Laut Bericht Benutzer Supervisor, Passwort 12345."
+    },
+    {
+     "speaker": "Florian",
+     "text": "12345. Das ist kein Einbruch mehr, das ist eine Einladung. Für einen Händler heißt das: ein Inventar aller fernwartbaren Anlagen in Filialen und Lagern, Werkspasswörter als eigener Prüfpunkt, und der Wartungsdienstleister gehört in die Drittparteiensteuerung. Getroffen hat es übrigens auch Blutbanken in Frankreich, das ist alles andere als harmlos."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und wer ist bei der Kühltheke eigentlich Owner? Facility, Informationstechnik oder der Dienstleister?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Genau die Frage, die man vor dem Vorfall klären möchte. Nicht währenddessen."
+    }
+   ]
+  },
+  {
+   "title": "Microsoft 365: neue Meldeklausel",
+   "news_id": "2026-11-09-microsoft-365-datenschutz-addendum-meldeklausel",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Zweites Thema: Microsoft hat sein Datenschutz-Addendum geändert, gültig seit erstem November. Neu ist, dass Microsoft offensichtlich illegale Inhalte zu Kindesmissbrauch an Behörden melden kann."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und in den sozialen Netzwerken wurde daraus sofort: Microsoft durchsucht alles."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Rechtsanwalt Stefan Hessel sieht das laut heise gelassener. Die Meldung setze Kenntnis voraus, sie sei kein Recht zum systematischen Durchsuchen, und Microsoft bleibe Auftragsverarbeiter."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Trotzdem gehört so eine Änderung in einen geordneten Prozess: Folgenabschätzungen prüfen, interne Abläufe für Verdachtsfälle festlegen. Und ehrlich, wer liest bei euch die Änderungen am Addendum, wenn sie als Rundmail kommen?"
+    }
+   ]
+  },
+  {
+   "title": "Manipuliertes Analyse-Skript",
+   "news_id": "2026-11-09-apt29-analyse-skript-manipuliert",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Dann eine Geschichte über fremde Skripte. Eine Gruppe, die Sekoia mit mittlerer bis hoher Sicherheit der staatsnahen Gruppe APT29 zuordnet, hat Ende August das Analyse-Skript eines ukrainischen Anbieters verändert. Tausende Webseiten hatten es eingebunden, Handy-Nutzer bekamen passende Angriffsketten."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ziel war hier nicht der Handel, aber das Muster ist unser Problem: Jedes eingebundene [en]Tracking[/en]-Skript läuft mit vollen Rechten auf der eigenen Seite. Der Kartenzahlungsstandard PCI DSS verlangt dafür auf Zahlungsseiten schon ein Inventar und eine Überwachung. Das sollte man ruhig auf den ganzen Shop ausdehnen."
+    }
+   ]
+  },
+  {
+   "title": "ChatGPT: Sicherheitsmodus ausgehebelt",
+   "news_id": "2026-11-09-chatgpt-lockdown-mode-umgangen",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Check Point hat den [en]Lockdown Mode[/en] von ChatGPT ausgehebelt. Über die Code-Vorschau konnten Chat-Inhalte zu Angreifern abfließen, etwa über einen präparierten Assistenten. OpenAI hat die Lücke geschlossen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Die Lehre ist unbequem: Eine Sicherheitseinstellung in einem Dienst Künstlicher Intelligenz ist eine Kontrolle mit Restrisiko, kein Freibrief. Wer sensible Daten in Assistenten zulässt, braucht Regeln, auch für fremde Assistenten."
+    }
+   ]
+  },
+  {
+   "title": "Mindfactory",
+   "news_id": "2026-11-09-mindfactory-cyberangriff",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Und kurz: Der Hardwarehändler Mindfactory meldet einen Cyberangriff. Möglicherweise betroffen sind Kontaktdaten und verschlüsselt gespeicherte Passwörter, alle Passwörter wurden zurückgesetzt."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ein Detail lohnt sich: Die Kartendaten lagen beim Zahlungsdienstleister, nicht im Shop. Wenig speichern ist immer noch die günstigste Kontrolle, die es gibt."
+    }
+   ]
+  },
+  {
+   "title": "Auf dem Radar",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Was ist bei dir auf dem Radar?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Der Quantum Act. Laut MLex will die Kommission ihn am achtzehnten November vorschlagen, und der Entwurf könnte Anbieter, die von außerhalb der Europäischen Union kontrolliert werden, von öffentlichen Aufträgen ausschließen. Für uns erst einmal indirekt, aber ein weiteres Signal in Sachen Souveränität."
+    }
+   ]
+  },
+  {
+   "title": "Abschied",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Das war es für heute. Alle Quellen findet ihr wie immer auf der Webseite."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und denkt an Ivanti am Freitag. Bis morgen."
+    }
+   ]
+  }
+ ]
+}

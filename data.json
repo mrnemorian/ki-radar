@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T06:06:01Z",
+ "updated": "2026-11-09T06:06:56Z",
  "topics": [
   "IT-Governance & Risiko",
   "Cyber- & IT-Regulierung",
@@ -11,6 +11,18 @@
   "Weitere Themen"
  ],
  "briefings": [
+  {
+   "date": "2026-11-09",
+   "headline": "Angriffe auf Kühlanlagen waren vorbereitet, Microsoft ändert sein Datenschutz-Addendum, und eingebundene Skripte und Assistenten werden zu Wegen für Datenabfluss",
+   "points": [
+    "Kühlanlagen: Vor den Angriffen vom 2. und 3. November gab es eine Aufklärungswelle mit über 276 Zugriffsversuchen, viele Steuerungen liefen noch mit Werkspasswörtern",
+    "Microsoft 365: Eine neue Meldeklausel im Datenschutz-Addendum gilt seit 1. November und sorgt für Unsicherheit, Fachanwälte raten zu geordneter Prüfung statt Alarm",
+    "Eine staatsnahe Gruppe hat das Skript eines Webanalyse-Anbieters manipuliert und so Tausende Webseiten zum Angriffsweg gemacht, eine Lehre für Skripte im Onlineshop",
+    "Der Lockdown Mode in ChatGPT ließ sich aushebeln: Auch Sicherheitseinstellungen von Assistenten mit Künstlicher Intelligenz behalten ein Restrisiko",
+    "Diese Woche: Ivanti-Frist am 13. November ist die Frist der Woche"
+   ],
+   "count": 5
+  },
   {
    "date": "2026-11-08",
    "headline": "Behörden fordern: Kühlanlagen sofort vom Netz. Dazu Lücken in Cyberpolicen, eine ausgenutzte OpenSSH-Lücke und ein Migrationsfehler bei DigiCert.",
@@ -355,18 +367,6 @@
     "Gastnetze in Hotels und offen erreichbare Server für Künstliche Intelligenz bleiben Einfallstore für Zugangsdaten und Schadsoftware."
    ],
    "count": 6
-  },
-  {
-   "date": "2026-10-08",
-   "headline": "Atlassian-Lücke wird angegriffen, FortiBleed sperrt Administratoren aus, und ein ausgelassener Patch kostet einen Dienstleister den Auftrag der Bundespolizei.",
-   "points": [
-    "Atlassian: Die kritische Lücke CVE-2026-21589 in den Data-Center-Produkten wird seit der Veröffentlichung von Angriffscode aktiv ausgenutzt.",
-    "FortiBleed: Laut der amerikanischen Bundespolizei sperren Angreifer mit geleakten Zugangsdaten die Administratoren von Fortinet-Firewalls aus und bereiten so Ransomware vor.",
-    "Die amerikanische Bundespolizei beendet die Zusammenarbeit mit einem Dienstleister, der einen kritischen Patch für Oracle PeopleSoft nicht eingespielt hatte.",
-    "Digital Omnibus: Die Mitgliedstaaten verschieben ihre Position zur Reform der Datenschutz-Grundverordnung auf den 11. Oktober.",
-    "Gekaperte Registrierungsstellen für Länderdomains und ein angeklagter Ransomware-Wiederhersteller zeigen weitere Risiken bei Dienstleistern."
-   ],
-   "count": 7
   }
  ],
  "dossiers": [
@@ -380,21 +380,21 @@
     }
    ],
    "title": "Betriebstechnik in Filialen und Logistik",
-   "sector": "Cyber- & IT-Regulierung",
+   "sector": "Handel & Branche",
    "ring": "jetzt handeln",
-   "status": "Nach der zweiten Angriffswelle am 1. und 2. November fordern die Agentur der Europäischen Union für Cybersicherheit, die Kommission, Europol und die Netzwerke der Notfallteams und Krisenbehörden seit 4. November, fernsteuerbare Kühlanlagen sofort vom Internet zu trennen. Amerikanische Behörden folgten am 5. November. Laut einer Auswertung decken nur 6 von 21 Cyber-Tarifen für Händler verdorbenes…",
-   "next_step": "Inventar der fernwartbaren Kühl- und Gebäudetechnik mit Internetbezug abgleichen. Dienstleisterzugänge und Abschaltbefugnisse festlegen. Die Deckung von Sachschäden aus Cyberangriffen mit dem Versicherungsbereich prüfen.",
+   "status": "Nach den Angriffen vom 2. und 3. November auf Supermärkte in neun Ländern und Blutbanken in Frankreich zeigt eine Auswertung von Lupovis eine Aufklärungswelle vom 20. bis 30. Oktober mit über 276 Zugriffsversuchen von 91 Akteuren. Viele Steuerungen waren direkt im Internet erreichbar und liefen mit Werkszugangsdaten; Behörden der Europäischen Union und der Vereinigten Staaten fordern die…",
+   "next_step": "Inventar aller fernwartbaren Anlagen in Filialen und Lagern vervollständigen, Werkspasswörter und direkte Internet-Erreichbarkeit als Prüfpunkte aufnehmen und Fernwartungszugänge der Dienstleister vertraglich und technisch regeln.",
    "open_questions": [
-    "Wer darf im Ernstfall die Verbindung zum Kältedienstleister trennen, ohne Gewährleistung oder Versicherungsschutz zu gefährden?",
-    "Greift bei verdorbener Ware die Cyber- oder die Sachversicherung?",
-    "Welche Pflichten aus der NIS-2-Umsetzung und dem Cyber Resilience Act gelten für Betreiber und Hersteller der Kühlsteuerungen?"
+    "Wer ist für Kühl-, Gebäude- und Lagertechnik Owner: Facility Management, Informationstechnik oder der Dienstleister?",
+    "Decken bestehende Cyberversicherungen verdorbene Ware und vorsorgliche Abschaltungen ab?",
+    "Werden Aufklärungswellen gegen Betriebstechnik künftig früh genug erkannt?"
    ],
    "controls": [
     "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
-    "ISO/IEC 27001 Anhang A 8.22 – Trennung von Netzwerken",
-    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen"
+    "ISO/IEC 27001 Anhang A 5.17 – Authentisierungsinformationen",
+    "ISO/IEC 27001 Anhang A 8.20 – Netzwerksicherheit"
    ],
-   "updated": "2026-11-08"
+   "updated": "2026-11-09"
   },
   {
    "slug": "drittparteien-lieferkette",
@@ -408,18 +408,18 @@
    "title": "Drittparteien- und Lieferkettenrisiko",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Nach Amadeus, Feratel und cPGuard bestätigt nun auch der Anbieter von Hotelsoftware vioma, dass über kompromittierte Zugänge Buchungsdaten von Gästen abgeflossen sind; dazu kommt ein Phishing-Vorfall beim Buchungssystem DIRS21. In der Touristik häufen sich Abflüsse über Software- und Schnittstellenpartner, mit anschließendem Betrug unter Verwendung echter Buchungsdaten.",
-   "next_step": "Software- und Schnittstellenpartner mit Zugang zu Buchungs- oder Kundendaten nach Kritikalität einstufen. Die Absicherung ihrer Zugänge (Mehr-Faktor-Anmeldung, Protokollierung, Meldefristen) vertraglich festlegen und regelmäßig nachweisen lassen.",
+   "status": "Neben den Abflüssen über Touristik-Software wie Amadeus, Feratel und vioma zeigt ein manipuliertes Analyse-Skript des Anbieters Plerdy, dass auch eingebundene Webskripte Tausende Seiten auf einmal zum Angriffsweg machen. Zugleich gilt seit 1. November ein geändertes Datenschutz-Addendum von Microsoft, dessen neue Meldeklausel unterschiedlich ausgelegt wird.",
+   "next_step": "Fremde Skripte in Shops und Kundenportalen inventarisieren und überwachen und Vertragsänderungen zentraler Cloud-Anbieter über einen festen Prüfprozess mit Datenschutz und Einkauf bewerten.",
    "open_questions": [
-    "Wie schnell erfahren wir von einem Vorfall bei einem Partner der Partner?",
-    "Wer informiert Kunden, wenn Daten bei einem Dienstleister des Hotels abfließen?"
+    "Gibt es ein vollständiges Inventar eingebundener Drittanbieter-Skripte außerhalb der Zahlungsseiten?",
+    "Wer bemerkt und bewertet einseitige Vertragsänderungen großer Cloud-Anbieter?"
    ],
    "controls": [
     "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
     "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen",
     "DSGVO Art. 28 – Auftragsverarbeiter"
    ],
-   "updated": "2026-11-06"
+   "updated": "2026-11-09"
   },
   {
    "slug": "identitaeten-zugangsdaten",
@@ -682,17 +682,17 @@
    "title": "Sicherheit agentischer Künstlicher Intelligenz",
    "sector": "AI-Governance",
    "ring": "vorbereiten",
-   "status": "Neben fehlgeleiteten Agenten bei OpenAI zeigt ein neuer Angriff: Schon eine präparierte AGENTS.md im Download-Ordner reicht, um Coding-Agenten zu kapern. Die Hersteller sehen keinen Patch-Bedarf, damit liegt die Kontrolle bei den Anwendern; erste Prüfungen mit Verhaltenstests für Agenten sind verfügbar.",
-   "next_step": "Nutzungsregeln für Coding-Agenten festlegen (Arbeitsverzeichnisse, Rechte, Token-Laufzeiten) und in die Entwicklerrichtlinie aufnehmen.",
+   "status": "Nach präparierten Dateien, die Coding-Agenten kapern, und fehlgeleiteten Agenten bei OpenAI zeigt Check Point, dass sich auch der Lockdown Mode von ChatGPT über präparierte Assistenten und Prompts umgehen ließ; die Lücke ist geschlossen. Die Kontrolle über Datenflüsse in Assistenten liegt damit weiter stark bei den Anwendern.",
+   "next_step": "Regeln für die Nutzung fremder Assistenten und für zulässige Daten in Diensten Künstlicher Intelligenz festlegen und Sicherheitseinstellungen der Anbieter als Kontrollen mit Restrisiko bewerten.",
    "open_questions": [
-    "Wer ist Owner für Agenten auf Entwicklerrechnern?",
-    "Wie werden Anweisungsdateien in Repositories geprüft?"
+    "Welche fremden Assistenten und Erweiterungen sind im Konzern tatsächlich im Einsatz?",
+    "Wie werden Vorfälle mit Diensten Künstlicher Intelligenz erkannt und gemeldet?"
    ],
    "controls": [
-    "ISO/IEC 42001 Anhang A – Nutzung von Systemen Künstlicher Intelligenz",
-    "ISO/IEC 27001 Anhang A 8.28 – Sichere Codierung"
+    "ISO/IEC 42001 – Managementsystem für Künstliche Intelligenz",
+    "ISO/IEC 27001 Anhang A 5.10 – Zulässiger Gebrauch von Informationen und anderen Werten"
    ],
-   "updated": "2026-10-26"
+   "updated": "2026-11-09"
   },
   {
    "slug": "dsgvo-reform-digital-omnibus",
@@ -1089,16 +1089,16 @@
  "signals": [
   {
    "theme": "Digital Fairness Act",
-   "why": "Die Kommission hat den Vorschlag für November auf der Agenda, neben dem 11. November ist laut Bericht auch der 18. November im Gespräch. Für den Onlinehandel geht es um manipulative Gestaltung, Abofallen und unfaire Personalisierung.",
-   "count": 25,
+   "why": "Ein hochrangiger Kommissionsbeamter hat bestätigt, dass eine breite Gruppe von Technologieunternehmen einer Reform der Verbraucherdurchsetzung unterliegen wird; der Vorschlag zum Digital Fairness Act wird im vierten Quartal erwartet. Für Onlinehandel und Reiseportale geht es um Gestaltung, Abos und personalisierte Preise.",
+   "count": 26,
    "first_seen": "2026-09-30",
-   "last_seen": "2026-11-08",
+   "last_seen": "2026-11-09",
    "evidence": [
+    "https://www.mlex.com/mlex/articles/2545552",
     "https://www.mlex.com/mlex/data-privacy-security/articles/2531216",
     "https://eprs.europarl.europa.eu/contents/publications/EPRS/2026/10/EPRS_BRI(2026)791529.html",
     "https://newsletter.digitalfairnessact.com/p/digital-fairness-act-targeted-for",
-    "https://www.freshfields.com/en/our-thinking/campaigns/tech-data-and-ai-the-digital-frontier/eu-digital-strategy/navigating-the-eus-digital-fairness-act",
-    "https://www.europarl.europa.eu/legislative-train/theme-protecting-our-democracy-upholding-our-values/file-digital-fairness-act"
+    "https://www.freshfields.com/en/our-thinking/campaigns/tech-data-and-ai-the-digital-frontier/eu-digital-strategy/navigating-the-eus-digital-fairness-act"
    ]
   },
   {
@@ -1230,6 +1230,28 @@
    ]
   },
   {
+   "theme": "Quantum Act der Europäischen Union",
+   "why": "Laut MLex soll die Kommission den Quantum Act am 18. November vorschlagen; der Entwurf könnte von außerhalb der Europäischen Union kontrollierte Anbieter von öffentlichen Aufträgen ausschließen. Das wäre ein weiteres Souveränitätssignal mit möglicher Wirkung auf künftige Anbieterauswahl und Kryptografie-Planung.",
+   "count": 2,
+   "first_seen": "2026-11-08",
+   "last_seen": "2026-11-09",
+   "evidence": [
+    "https://www.mlex.com/mlex/articles/2543650",
+    "https://www.mlex.com/mlex/data-privacy-security/articles/2531216"
+   ]
+  },
+  {
+   "theme": "Cyberpolicen schließen Künstliche Intelligenz aus",
+   "why": "Versicherer nehmen Risiken aus Entwicklung und Betrieb Künstlicher Intelligenz zunehmend aus Cyber- und Haftpflichtpolicen heraus oder verschieben sie in Zusatzdeckungen. Bei Erneuerungen sollten Deckungslücken für den eigenen Einsatz Künstlicher Intelligenz geprüft werden.",
+   "count": 2,
+   "first_seen": "2026-10-30",
+   "last_seen": "2026-11-09",
+   "evidence": [
+    "https://www.fenwick.com/insights/publications/end-silent-ai-emerging-ai-exclusions-coverage-fragmentation-and-practical-implications",
+    "https://www.theinsurer.com/cyber-risk/news/debate-intensifies-rise-over-where-ai-risk-belongs-2026-10-22/"
+   ]
+  },
+  {
    "theme": "Cyberversicherung bei vorsorglicher Abschaltung",
    "why": "Die Behörden der Europäischen Union raten ausdrücklich, vor dem Trennen der Verbindung zum Kältedienstleister die Versicherungsbedingungen zu prüfen. Notfallmaßnahmen können also den Versicherungsschutz berühren.",
    "count": 2,
@@ -1274,16 +1296,6 @@
    ]
   },
   {
-   "theme": "Quantum Act der Europäischen Union",
-   "why": "Der Quantum Act steht laut Bericht ebenfalls auf der Novemberagenda der Kommission. Er soll unter anderem einheitliche Standards für Post-Quanten-Kryptografie in der Europäischen Union voranbringen.",
-   "count": 1,
-   "first_seen": "2026-11-08",
-   "last_seen": "2026-11-08",
-   "evidence": [
-    "https://www.mlex.com/mlex/data-privacy-security/articles/2531216"
-   ]
-  },
-  {
    "theme": "Exportkontrollen für Rechenchips",
    "why": "Die Kommission hat am 14. September eine aktualisierte Liste für Güter mit doppeltem Verwendungszweck beschlossen, die unter anderem integrierte Schaltungen für Hochleistungsrechnen erfasst. Die Veröffentlichung im Amtsblatt wird für November erwartet. Wer Rechenleistung für Künstliche Intelligenz einkauft oder über Ländergrenzen verlagert, muss Exportkontrollfragen mitdenken.",
    "count": 1,
@@ -1301,16 +1313,6 @@
    "last_seen": "2026-11-02",
    "evidence": [
     "https://axios.com/2026/10/22/ai-agents-banks-unauthorized-accounts-access"
-   ]
-  },
-  {
-   "theme": "Cyberpolicen schließen Künstliche Intelligenz aus",
-   "why": "Makler wehren sich gegen Ausschlüsse für Risiken aus Künstlicher Intelligenz in Cyberversicherungen, und die Versicherer sind sich uneins, welche Policen solche Risiken decken sollen. Das betrifft die Versicherbarkeit von Vorfällen mit Agenten und automatisierten Systemen.",
-   "count": 1,
-   "first_seen": "2026-10-30",
-   "last_seen": "2026-10-30",
-   "evidence": [
-    "https://www.theinsurer.com/cyber-risk/news/debate-intensifies-rise-over-where-ai-risk-belongs-2026-10-22/"
    ]
   },
   {
@@ -1376,6 +1378,114 @@
  ],
  "news": [
   {
+   "title": "Update: Kühlanlagen – Angriffe waren vorbereitet, Steuerungen oft mit Werkspasswort",
+   "summary": "Laut Euronews hat die Sicherheitsfirma Lupovis vom 20. bis 30. Oktober über 276 Zugriffsversuche von 91 verschiedenen Akteuren auf Kühlsteuerungen registriert, nur in Europa und mit Höhepunkt am 26. Oktober. Bei den Angriffen am 2. und 3. November auf Supermärkte in neun Ländern und mehrere Blutbanken in Frankreich wurden Steuerungen vom Typ Danfoss AK-SM genutzt, die direkt im Internet erreichbar waren und vielfach noch Werkszugangsdaten verwendeten. Täter und Motiv sind weiter unklar.",
+   "relevance": "Neu ist, dass sich die Angriffe zehn Tage vorher abgezeichnet haben und dass schon Standardpasswörter als Einfallstor reichten. Handelskonzerne sollten fernwartbare Anlagen in Filialen und Lagern inventarisieren, Werkspasswörter als eigenen Prüfpunkt führen und Wartungsdienstleister in die Drittparteiensteuerung aufnehmen.",
+   "source": "Euronews",
+   "url": "https://de.euronews.com/2026/11/07/hacker-sondieren-europas-kuhlanlagen-vor-cyberangriff-auf-supermarkte-und-blutbanken",
+   "id": "2026-11-09-kuehlanlagen-aufklaerungswelle-standardpasswoerter",
+   "topic": "Handel & Branche",
+   "impact": "hoch",
+   "published": "2026-11-07",
+   "tags": [
+    "Betriebstechnik",
+    "Kühlanlagen",
+    "Standardpasswörter"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
+    "ISO/IEC 27001 Anhang A 5.17 – Authentisierungsinformationen",
+    "ISO/IEC 27001 Anhang A 8.20 – Netzwerksicherheit"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Einkauf & Drittparteien",
+    "Management"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "betriebstechnik-filialen-logistik",
+   "priority": 1,
+   "primary": false,
+   "added": "2026-11-09T06:06:56Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum, Zahlen, Zeiträume, Namen und Kernaussage stimmen mit der Quelle überein. „Nur in Europa“ bezieht sich auf die Sensoren von Lupovis. Die Quelle nennt die Täterschaft unklar, gibt aber auch die Einschätzung von Lupovis wieder, es könne sich um einen staatlichen Akteur und womöglich um…"
+   }
+  },
+  {
+   "title": "Microsoft 365: Neue Meldeklausel im Datenschutz-Addendum sorgt für Unsicherheit",
+   "summary": "Seit 1. November 2026 gilt ein überarbeitetes Datenschutz-Addendum von Microsoft, nach dem Microsoft offensichtlich illegale Inhalte zu sexuellem Kindesmissbrauch an Behörden melden kann, etwa an das amerikanische Zentrum für vermisste und ausgebeutete Kinder. In Fachblogs wurde das als Grundlage für ein flächendeckendes Durchsuchen von Cloud-Inhalten gelesen. Rechtsanwalt Stefan Hessel hält dagegen, die Meldung setze Kenntnis voraus und Microsoft bleibe bei regulären Cloud-Diensten Auftragsverarbeiter; Rechtsanwalt Johannes Nehlsen empfiehlt ergänzende Datenschutzhinweise, die Überprüfung von Folgenabschätzungen und interne Abläufe für Verdachtsfälle.",
+   "relevance": "Vertragsänderungen bei zentralen Cloud-Anbietern brauchen einen festen Prozess: Wer prüft sie, wer bewertet die Wirkung auf Folgenabschätzungen und Verzeichnisse, wer entscheidet? Für einen Konzern mit vielen Beschäftigten- und Kundendaten ist das eine typische Kontrolle in der Drittparteiensteuerung.",
+   "source": "heise online",
+   "url": "https://www.heise.de/en/news/New-M365-privacy-clause-sparks-confusion-11516141.html",
+   "id": "2026-11-09-microsoft-365-datenschutz-addendum-meldeklausel",
+   "topic": "Datenschutz & Datenrecht",
+   "impact": "mittel",
+   "published": "2026-11-06",
+   "tags": [
+    "Microsoft 365",
+    "Auftragsverarbeitung",
+    "Vertragsmanagement"
+   ],
+   "controls": [
+    "DSGVO Art. 28 – Auftragsverarbeiter",
+    "DSGVO Art. 35 – Datenschutz-Folgenabschätzung",
+    "ISO/IEC 27001 Anhang A 5.20 – Informationssicherheit in Lieferantenvereinbarungen"
+   ],
+   "roles": [
+    "Datenschutz",
+    "Einkauf & Drittparteien"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "drittparteien-lieferkette",
+   "priority": 2,
+   "primary": false,
+   "added": "2026-11-09T06:06:56Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum, Inkrafttreten am 1. November 2026, Meldeklausel und die Aussagen von Hessel und Nehlsen stimmen mit der Quelle überein. Der Text der Klausel im Addendum selbst wurde nicht geprüft."
+   }
+  },
+  {
+   "title": "Onlinehändler Mindfactory: Kontaktdaten und verschlüsselte Passwörter möglicherweise betroffen",
+   "summary": "Der Hardwarehändler Mindfactory hat Kunden und Datenschutzbehörde über einen Cyberangriff informiert und Strafanzeige erstattet. Möglicherweise betroffen sind Anschriften, E-Mail-Adressen, Telefonnummern und verschlüsselt gespeicherte Passwörter; alle Shop-Passwörter wurden zurückgesetzt und werden künftig mit einem moderneren Verfahren gespeichert. Bank- und Kartendaten liegen laut Unternehmen bei den Zahlungsdienstleistern und seien nicht betroffen.",
+   "relevance": "Der Fall zeigt zwei Kontrollen, die im Onlinehandel den Schaden begrenzen: Kartendaten gar nicht erst im Shop speichern und Passwörter mit aktuellen Verfahren schützen. Beides lässt sich in Prüfungen gezielt nachfragen.",
+   "source": "heise online",
+   "url": "https://www.heise.de/news/Mindfactory-informiert-Kunden-ueber-Cyberangriff-11515963.html",
+   "id": "2026-11-09-mindfactory-cyberangriff",
+   "topic": "Handel & Branche",
+   "impact": "info",
+   "published": "2026-11-06",
+   "tags": [
+    "Onlinehandel",
+    "Datenpanne",
+    "Passwörter"
+   ],
+   "controls": [
+    "DSGVO Art. 32 – Sicherheit der Verarbeitung",
+    "DSGVO Art. 33 – Meldung von Verletzungen an die Aufsichtsbehörde"
+   ],
+   "roles": [
+    "Datenschutz",
+    "IT-Risiko"
+   ],
+   "countries": [
+    "DE"
+   ],
+   "dossier": null,
+   "priority": 5,
+   "primary": false,
+   "added": "2026-11-09T06:06:56Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Die Quelle nennt kein Datum für die Information von Kunden und Behörde; der 6. November 2026 ist nur als Datum der Artikel-Aktualisierungen belegt. Auch eine Websuche ergab dafür keinen Beleg. Das Veröffentlichungsdatum 6. November 2026 passt zu diesen Aktualisierungen, ein ursprüngliches…"
+   }
+  },
+  {
    "title": "OpenSSH-Lücke „SSHole“: Angriffe wenige Stunden nach Veröffentlichung",
    "summary": "Die Lücke CVE-2026-123158 in OpenSSH, der verbreiteten Software für verschlüsselte Fernzugänge, betrifft Linux-Systeme mit der Bibliothek musl ohne Pluggable Authentication Modules, typischerweise Alpine Linux. Angreifer können sich mit einem überlangen, beliebigen Passwort an Konten anmelden, bei denen die Passwortanmeldung deaktiviert ist. Ein Sicherheitsdienstleister meldet erste Angriffsversuche weniger als neun Stunden nach Veröffentlichung und einen Root-Zugriff auf einem Honeypot. Behoben ist die Lücke in OpenSSH 10.6p2 vom 5. November.",
    "relevance": "Alpine Linux steckt in vielen Container-Images. Deshalb reicht ein Blick auf klassische Server nicht. Inventar und Patchprozess müssen auch Container-Images und Software-Stücklisten erfassen.",
@@ -1405,6 +1515,41 @@
    "check": {
     "verdict": "ok",
     "note": "Datum, Kennung, betroffene Systeme (musl ohne Pluggable Authentication Modules, Alpine Linux), weniger als neun Stunden, Root-Zugriff auf dem Honeypot (laut Previdian) und Version 10.6p2 vom 5. November (laut Versionshinweisen von OpenSSH) sind belegt."
+   }
+  },
+  {
+   "title": "ChatGPT: Sicherheitsmodus ausgehebelt, Chat-Inhalte konnten abfließen",
+   "summary": "Check Point Research hat am 5. November 2026 gezeigt, dass sich der Lockdown Mode von ChatGPT über die Vorschau von Code-Blöcken umgehen ließ. Über einen präparierten Assistenten, einen manipulierten Prompt oder einen geteilten Chat konnten Nachrichten unbemerkt an einen Server der Angreifer gesendet oder gefälschte Update-Hinweise eingeblendet werden. OpenAI hat die Lücke nach Meldung geschlossen.",
+   "relevance": "Sicherheitseinstellungen von Diensten mit Künstlicher Intelligenz sind Kontrollen mit Restrisiko, kein Ersatz für Regeln dazu, welche Daten in Assistenten gelangen dürfen und welche fremden Assistenten genutzt werden. Das gehört in Richtlinien zur Nutzung Künstlicher Intelligenz und in die Risikobewertung.",
+   "source": "The Hacker News",
+   "url": "https://thehackernews.com/2026/11/researchers-bypass-chatgpt-lockdown.html",
+   "id": "2026-11-09-chatgpt-lockdown-mode-umgangen",
+   "topic": "AI-Governance",
+   "impact": "mittel",
+   "published": "2026-11-05",
+   "tags": [
+    "Prompt Injection",
+    "Datenabfluss",
+    "Assistenten"
+   ],
+   "controls": [
+    "ISO/IEC 42001 – Managementsystem für Künstliche Intelligenz",
+    "ISO/IEC 27001 Anhang A 5.10 – Zulässiger Gebrauch von Informationen und anderen Werten"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Datenschutz"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "agentische-ki-sicherheit",
+   "priority": 4,
+   "primary": false,
+   "added": "2026-11-09T06:06:56Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Der Artikel nennt als genaues Datum den 5. November 2026, die Meldung nur den Monat. Die Inhalte stimmen mit dem Artikel und dem Bericht von Check Point überein. Laut Check Point lief der Abfluss ohne jedes Zutun nur in der Desktop-Anwendung ChatGPT Classic, im Browser ist für das Öffnen des…"
    }
   },
   {
@@ -1577,6 +1722,42 @@
    "check": {
     "verdict": "ok",
     "note": "Artikel vom 5. November 2026; 948 funktionierende Exploits zur lokalen Rechteausweitung auf root, Lauf von 30 Stunden laut Überschrift, Kosten 1.213.430 Dollar. Die 30 Stunden beziehen sich im Zitat streng genommen auf die Reproduktion der Schwachstellen, die Überschrift spricht aber von einem…"
+   }
+  },
+  {
+   "title": "Manipuliertes Analyse-Skript: Staatsnahe Gruppe macht Tausende Webseiten zum Angriffsweg",
+   "summary": "Laut Sekoia hat eine Gruppe, die mit mittlerer bis hoher Sicherheit der russischen Gruppe APT29 zugeordnet wird, zwischen 27. August und 3. September 2026 das Tracking-Skript des ukrainischen Webanalyse-Anbieters Plerdy verändert, das Tausende überwiegend ukrainische Webseiten einbinden. Das eingeschleuste Skript erfasste Browser und Geräte der Besucher und lieferte passende Angriffsketten für iPhone und Android aus. Für alle genutzten Lücken gab es bereits Updates.",
+   "relevance": "Jedes fremde Skript im eigenen Onlineshop läuft mit den Rechten der eigenen Seite. Der Kartenzahlungsstandard PCI DSS verlangt für Zahlungsseiten bereits ein Skript-Inventar und eine Änderungserkennung; der Fall spricht dafür, das auf alle Shop- und Kundenseiten auszuweiten und Webanalyse-Anbieter als Drittparteien mit Risiko zu behandeln.",
+   "source": "The Hacker News",
+   "url": "https://thehackernews.com/2026/11/apt29-linked-hackers-hijack-web.html",
+   "id": "2026-11-09-apt29-analyse-skript-manipuliert",
+   "topic": "IT-Governance & Risiko",
+   "impact": "mittel",
+   "published": "2026-11-04",
+   "tags": [
+    "Supply Chain",
+    "Webskripte",
+    "Onlinehandel"
+   ],
+   "controls": [
+    "PCI DSS 4.0 Anforderung 6.4.3 – Verwaltung von Skripten auf Zahlungsseiten",
+    "PCI DSS 4.0 Anforderung 11.6.1 – Erkennung von Änderungen an Zahlungsseiten",
+    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Einkauf & Drittparteien"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "drittparteien-lieferkette",
+   "priority": 3,
+   "primary": false,
+   "added": "2026-11-09T06:06:56Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Der Artikel nennt als genaues Datum den 4. November 2026, die Meldung nur den Monat. Die mittlere bis hohe Sicherheit der Zuordnung, „Tausende überwiegend ukrainische Webseiten“ und die bereits verfügbaren Updates stehen nicht bei The Hacker News, aber im dort verlinkten Bericht von Sekoia. Sekoia…"
    }
   },
   {
