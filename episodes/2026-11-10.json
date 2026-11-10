@@ -1,0 +1,143 @@
+{
+ "format": "tag",
+ "chapters": [
+  {
+   "title": "Begrüßung",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Guten Morgen, liebe IT-GRC-Kolleginnen und -Kollegen, willkommen beim IT-GRC Radar am Dienstag, dem zehnten November 2026. Heute geht es um eine politische Zuschreibung, eine Lücke im Fernzugang und zwei Lehrstücke über Dienstleister."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Also das volle Programm vor dem ersten Kaffee. Ich hatte ehrlich gesagt gehofft, die Kühlanlagen wären endlich durch."
+    }
+   ]
+  },
+  {
+   "title": "Kühlanlagen: Iran beschuldigt",
+   "news_id": "2026-11-10-kuehlanlagen-iran-zuschreibung",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Leider nein, da gibt es Neues zu den Angriffen auf Kühlanlagen. Der französische Außenminister Jean-Noël Barrot hat am Montag erklärt, dass die Revolutionsgarden des Iran hinter den Angriffen vom elften und zwölften Oktober stecken. Betroffen waren laut Barrot rund 700 Standorte in Frankreich."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Das ist eine echte Zäsur. Bisher lag das irgendwo zwischen Vandalismus und Experiment, jetzt steht offiziell ein staatlicher Akteur dahinter."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Frankreich hat den iranischen Botschafter einbestellt und will Sanktionen der Europäischen Union erwirken. Und die Pariser Staatsanwaltschaft ermittelt."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Für uns heißt das zweierlei. Erstens gehört Betriebstechnik in Filialen ins Bedrohungsmodell für staatliche Angreifer, nicht nur für Gelegenheitstäter. Zweitens sollte jemand die Cyberpolice aufschlagen und nachlesen, was dort zu Krieg und staatlichen Angriffen steht."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Moment, heißt das, die Versicherung könnte sagen: Das war ein Staat, also nicht unser Problem?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Genau diese Frage sollte man klären, bevor der Schaden da ist. Und ausnahmsweise ist die Owner-Frage einfach: Versicherung, Recht und Informationssicherheit setzen sich zusammen. Gut, einfach im Sinne von drei Ownern."
+    }
+   ]
+  },
+  {
+   "title": "SonicWall: Fernzugang ausgehebelt",
+   "news_id": "2026-11-10-sonicwall-fernzugang-mfa",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Zweites Thema, ganz handfest. Die amerikanische Cybersicherheitsbehörde hat eine Lücke in SonicOS, dem Betriebssystem der SonicWall-Firewalls, als aktiv ausgenutzt gelistet. Sie trägt die Kennung CVE-2026-19868 und erlaubt es, mit gültigen Zugangsdaten für ein anderes Anmeldeverfahren die Anmeldung am verschlüsselten Fernzugang zu umgehen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und zwar inklusive Mehr-Faktor-Anmeldung, wenn die über [en]Single Sign-on[/en] erzwungen wird. Also genau die Kontrolle, auf die wir in jeder Audit-Saison stolz verweisen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Die Behördenfrist endet am zwanzigsten November. SonicWall hat [en]Updates[/en] veröffentlicht, die auch noch weitere Lücken schließen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Wer SonicWall nutzt, auch bei Dienstleistern oder kleineren Landesgesellschaften, sollte nicht bis zur Frist warten. Und danach die Anmeldeprotokolle durchsehen, denn ein [en]Patch[/en] schließt die Tür, er verrät einem aber nicht, wer schon drin war."
+    }
+   ]
+  },
+  {
+   "title": "N-central vom Netz",
+   "news_id": "2026-11-10-n-able-n-central-offline",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Bleiben wir bei Werkzeugen mit viel Macht. N-able hat am neunten November die gehosteten Server seiner Fernwartungsplattform N-central weltweit vom Netz genommen, auch in Europa. Auslöser war, dass ein Forscher angeblich 33 [en]Zero Days[/en] veröffentlicht hat."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Das Unternehmen sagt, es habe bisher keine aktive Ausnutzung festgestellt. Trotzdem: Über solche Plattformen verwalten Dienstleister oft Tausende Endgeräte ihrer Kunden."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Also ein Thema für die Lieferantensteuerung, auch wenn man N-central selbst gar nicht betreibt?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Genau. Die Frage an die Dienstleister lautet: Mit welchen Fernwartungswerkzeugen arbeitet ihr bei uns, und was passiert, wenn die einen Tag ausfallen? Die ehrliche Antwort steht selten in der Excel-Liste mit den Lieferanten."
+    }
+   ]
+  },
+  {
+   "title": "Iris Plaza: Cloud als Einfallstor",
+   "news_id": "2026-11-10-iris-plaza-cloud-datenabfluss",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Vom Werkzeug zum Händler. Iris Plaza, der Onlineshop des japanischen Herstellers und Händlers Iris Ohyama, meldet möglicherweise betroffene Daten von rund 7,7 Millionen Menschen. Ende Oktober fand sich eine verdächtige Datei in einem externen [en]Cloud[/en]-Dienst, am achtundzwanzigsten Oktober ging der Shop vom Netz."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Kartendaten lagen laut Unternehmen nicht in dieser Umgebung, verschlüsselte Passwörter dagegen schon. Das Muster kennen wir: Nicht der Shop selbst, sondern ein angebundener Dienst ist das Einfallstor."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Das ist fast schon das Leitmotiv der letzten Wochen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Leider ja. Für einen großen Onlinehandel heißt das: wissen, welche Kundendaten bei welchem [en]Cloud[/en]-Dienst liegen, und dort genauso streng auf Verschlüsselung und Löschfristen achten wie im eigenen Betrieb."
+    }
+   ]
+  },
+  {
+   "title": "Auf dem Radar",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Auf dem Radar: Morgen, am elften November, könnte die Europäische Kommission laut Planung ihren Vorschlag für den [en]Digital Fairness Act[/en] vorlegen. Bestätigt ist das aber nicht."
+    },
+    {
+     "speaker": "Florian",
+     "text": "[en]Dark Patterns[/en], Abo-Fallen, Preiswerbung, das träfe den Onlinehandel direkt. Ich wette trotzdem noch nicht darauf, der Termin hat sich schon öfter verschoben."
+    }
+   ]
+  },
+  {
+   "title": "Abschied",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Das war das IT-GRC Radar für heute. Alle Quellen findet ihr wie immer auf der Webseite."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und wer heute fünf Minuten übrig hat: mal kurz in die Cyberpolice schauen. Bis morgen."
+    }
+   ]
+  }
+ ]
+}

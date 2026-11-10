@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09T06:06:56Z",
+ "updated": "2026-11-10T06:06:24Z",
  "topics": [
   "IT-Governance & Risiko",
   "Cyber- & IT-Regulierung",
@@ -11,6 +11,17 @@
   "Weitere Themen"
  ],
  "briefings": [
+  {
+   "date": "2026-11-10",
+   "headline": "Frankreich macht Irans Revolutionsgarden für Kühlanlagen-Angriffe verantwortlich, SonicWall-Lücke mit Frist 20. November, Fernwartungsplattform N-central offline",
+   "points": [
+    "Update Kühlanlagen: Frankreich nennt die Revolutionsgarden des Iran als Urheber des Angriffs vom 12. Oktober, beantragt Sanktionen der Europäischen Union und ermittelt strafrechtlich",
+    "SonicWall-Firewalls: Ausgenutzte Lücke CVE-2026-19868 umgeht die Anmeldung am Fernzugang samt Mehr-Faktor-Anmeldung, Behördenfrist 20. November",
+    "N-able nimmt gehostete Server der Fernwartungsplattform N-central weltweit vom Netz, auch in Europa, nachdem angeblich 33 Zero Days veröffentlicht wurden",
+    "Onlineshop Iris Plaza: Daten von rund 7,7 Millionen Menschen über externen Cloud-Dienst möglicherweise abgeflossen"
+   ],
+   "count": 4
+  },
   {
    "date": "2026-11-09",
    "headline": "Angriffe auf Kühlanlagen waren vorbereitet, Microsoft ändert sein Datenschutz-Addendum, und eingebundene Skripte und Assistenten werden zu Wegen für Datenabfluss",
@@ -355,18 +366,6 @@
     "Cloud-Souveränität: Ein Berichterstatter im Parlament will nur noch zwei Souveränitätsstufen und 80 Prozent der neuen Rechenzentrumskapazität für europäische Anbieter."
    ],
    "count": 6
-  },
-  {
-   "date": "2026-10-09",
-   "headline": "Bußgeld von 825 Millionen Euro gegen Uber für automatisierte Entscheidungen, Ransomware legt japanische Cloud lahm, Auftragsverarbeiter haftet selbst.",
-   "points": [
-    "Niederländische Datenschutzbehörde verhängt 824,99 Millionen Euro gegen Uber wegen automatischer Kontosperren ohne menschliche Entscheidung und fehlender Information über Profiling.",
-    "Ransomware trifft den japanischen Cloud-Anbieter IDC Frontier: 495 Unternehmen und Kommunen betroffen, Angreifer behaupten über 550.000 gelöschte Snapshots.",
-    "Schwedische Datenschutzbehörde bestraft den Dienstleister Miljödata direkt wegen unzureichender Sicherheit, nachdem Daten von 2,2 Millionen Menschen veröffentlicht wurden.",
-    "Update zu ASOS: Social Engineering gegen Beschäftigte öffnete den Zugang zu Kommunikationsplattformen von Drittanbietern.",
-    "Gastnetze in Hotels und offen erreichbare Server für Künstliche Intelligenz bleiben Einfallstore für Zugangsdaten und Schadsoftware."
-   ],
-   "count": 6
   }
  ],
  "dossiers": [
@@ -380,21 +379,21 @@
     }
    ],
    "title": "Betriebstechnik in Filialen und Logistik",
-   "sector": "Handel & Branche",
+   "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Nach den Angriffen vom 2. und 3. November auf Supermärkte in neun Ländern und Blutbanken in Frankreich zeigt eine Auswertung von Lupovis eine Aufklärungswelle vom 20. bis 30. Oktober mit über 276 Zugriffsversuchen von 91 Akteuren. Viele Steuerungen waren direkt im Internet erreichbar und liefen mit Werkszugangsdaten; Behörden der Europäischen Union und der Vereinigten Staaten fordern die…",
-   "next_step": "Inventar aller fernwartbaren Anlagen in Filialen und Lagern vervollständigen, Werkspasswörter und direkte Internet-Erreichbarkeit als Prüfpunkte aufnehmen und Fernwartungszugänge der Dienstleister vertraglich und technisch regeln.",
+   "status": "Frankreich hat am 9. November die Islamischen Revolutionsgarden des Iran offiziell als Urheber des Angriffs vom 12. Oktober auf rund 700 Supermärkte benannt, will Sanktionen der Europäischen Union erwirken und ermittelt strafrechtlich. Vorausgegangen waren eine Aufklärungswelle im Oktober und weitere Angriffe am 2. und 3. November in neun Ländern; viele Steuerungen waren direkt erreichbar und…",
+   "next_step": "Bestand und Fernwartungszugänge der Kühl- und Gebäudesteuerungen vollständig erfassen, Trennung vom Internet belegen und Cyberversicherung auf Kriegs- und Staatsausschlüsse prüfen.",
    "open_questions": [
-    "Wer ist für Kühl-, Gebäude- und Lagertechnik Owner: Facility Management, Informationstechnik oder der Dienstleister?",
-    "Decken bestehende Cyberversicherungen verdorbene Ware und vorsorgliche Abschaltungen ab?",
-    "Werden Aufklärungswellen gegen Betriebstechnik künftig früh genug erkannt?"
+    "Greifen Kriegs- oder Staatsausschlüsse in Cyberpolicen nach einer offiziellen staatlichen Zuschreibung?",
+    "Folgen den Sanktionen konkrete Vorgaben der Europäischen Kommission für Händler?",
+    "Wer verantwortet Betriebstechnik in den Filialen: Informationstechnik, Facility Management oder der Dienstleister?"
    ],
    "controls": [
-    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
-    "ISO/IEC 27001 Anhang A 5.17 – Authentisierungsinformationen",
+    "NIS-2-Richtlinie Art. 21 – Risikomanagementmaßnahmen",
+    "ISO/IEC 27001 Anhang A 5.7 – Bedrohungsinformationen",
     "ISO/IEC 27001 Anhang A 8.20 – Netzwerksicherheit"
    ],
-   "updated": "2026-11-09"
+   "updated": "2026-11-10"
   },
   {
    "slug": "drittparteien-lieferkette",
@@ -408,18 +407,18 @@
    "title": "Drittparteien- und Lieferkettenrisiko",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Neben den Abflüssen über Touristik-Software wie Amadeus, Feratel und vioma zeigt ein manipuliertes Analyse-Skript des Anbieters Plerdy, dass auch eingebundene Webskripte Tausende Seiten auf einmal zum Angriffsweg machen. Zugleich gilt seit 1. November ein geändertes Datenschutz-Addendum von Microsoft, dessen neue Meldeklausel unterschiedlich ausgelegt wird.",
-   "next_step": "Fremde Skripte in Shops und Kundenportalen inventarisieren und überwachen und Vertragsänderungen zentraler Cloud-Anbieter über einen festen Prüfprozess mit Datenschutz und Einkauf bewerten.",
+   "status": "Nach den Abflüssen über Touristik-Software und ein manipuliertes Analyse-Skript hat N-able am 9. November die gehostete Fernwartungsplattform N-central weltweit vom Netz genommen, nachdem angeblich 33 unbekannte Lücken veröffentlicht wurden. Beim Onlineshop Iris Plaza sind über einen externen Cloud-Dienst Daten von rund 7,7 Millionen Menschen möglicherweise abgeflossen.",
+   "next_step": "Bei kritischen Dienstleistern abfragen, welche Fernwartungswerkzeuge und Cloud-Dienste sie einsetzen, und für deren Ausfall Notfallpläne und Meldewege vertraglich absichern.",
    "open_questions": [
-    "Gibt es ein vollständiges Inventar eingebundener Drittanbieter-Skripte außerhalb der Zahlungsseiten?",
-    "Wer bemerkt und bewertet einseitige Vertragsänderungen großer Cloud-Anbieter?"
+    "Welche Fernwartungsplattformen setzen unsere Dienstleister ein, und wie schnell würden sie einen Ausfall melden?",
+    "Wo liegen Kundendaten bei Unterauftragnehmern außerhalb der eigenen Kontrollen?"
    ],
    "controls": [
     "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
     "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen",
     "DSGVO Art. 28 – Auftragsverarbeiter"
    ],
-   "updated": "2026-11-09"
+   "updated": "2026-11-10"
   },
   {
    "slug": "identitaeten-zugangsdaten",
@@ -458,16 +457,17 @@
    "title": "Kritische Schwachstellen in Randsystemen und Kernanwendungen",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Bei Ivanti Connect Secure endet die Behördenfrist am 13. November, bei VMware ESX am 11. November. Neu: Die OpenSSH-Lücke SSHole wird wenige Stunden nach Veröffentlichung ausgenutzt. Eine alte Apple-Lücke steht mit Frist 18. November auf der Liste aktiv ausgenutzter Schwachstellen.",
-   "next_step": "Systeme und Container-Images auf Basis von Alpine Linux auf OpenSSH 10.6p2 prüfen, Patch-Ausnahmen für Apple-Geräte und Browser überprüfen.",
+   "status": "Neu ist eine ausgenutzte Lücke im Fernzugang der SonicWall-Firewalls, die auch die Mehr-Faktor-Anmeldung umgehen kann; die Behördenfrist endet am 20. November. Daneben laufen die Fristen für VMware ESX am 11. November, Ivanti Connect Secure am 13. November und eine Apple-Lücke am 18. November; die OpenSSH-Lücke SSHole wird seit Anfang November ausgenutzt.",
+   "next_step": "Fernzugänge und Firewalls aller Gesellschaften und Dienstleister mit den Fristen abgleichen, Updates einspielen und Anmeldeprotokolle auf frühere Zugriffe prüfen.",
    "open_questions": [
-    "Erfasst das Schwachstellenmanagement Container-Images genauso zuverlässig wie Server?"
+    "Sind Randsysteme bei Dienstleistern und kleineren Landesgesellschaften im Schwachstellenprozess vollständig erfasst?",
+    "Wie wird nachgewiesen, dass nach dem Update keine Hintertür zurückgeblieben ist?"
    ],
    "controls": [
     "ISO/IEC 27001 Anhang A 8.8 – Umgang mit technischen Schwachstellen",
-    "NIS-2-Richtlinie Art. 21 – Umgang mit Schwachstellen"
+    "IT-Kontrollen der Abschlussprüfung – Zugriffsschutz"
    ],
-   "updated": "2026-11-08"
+   "updated": "2026-11-10"
   },
   {
    "slug": "lebenszyklus-altsysteme",
@@ -899,6 +899,17 @@
    "added": "2026-11-08"
   },
   {
+   "date": "2026-11-20",
+   "title": "SonicWall-Lücke CVE-2026-19868: behördliche Patch-Frist",
+   "detail": "Betreiber von SonicWall-Firewalls mit Fernzugang sollten die Updates gegen die ausgenutzte Umgehung der Anmeldung einspielen und Zugriffe prüfen; die Frist gilt formal für amerikanische Bundesbehörden.",
+   "scope": "global",
+   "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
+   "primary": true,
+   "checked": true,
+   "dossier": "kritische-schwachstellen-perimeter",
+   "added": "2026-11-10"
+  },
+  {
    "date": "2026-12-02",
    "title": "Verordnung über Künstliche Intelligenz: Übergang für Kennzeichnung synthetischer Inhalte endet",
    "detail": "Systeme zur Erzeugung synthetischer Inhalte, die vor dem 2. August 2026 in Verkehr gebracht wurden, müssen bis dahin die Transparenzpflichten nach Artikel 50 Absatz 2 erfüllen.",
@@ -1089,16 +1100,16 @@
  "signals": [
   {
    "theme": "Digital Fairness Act",
-   "why": "Ein hochrangiger Kommissionsbeamter hat bestätigt, dass eine breite Gruppe von Technologieunternehmen einer Reform der Verbraucherdurchsetzung unterliegen wird; der Vorschlag zum Digital Fairness Act wird im vierten Quartal erwartet. Für Onlinehandel und Reiseportale geht es um Gestaltung, Abos und personalisierte Preise.",
-   "count": 26,
+   "why": "Laut voraussichtlicher Planung könnte die Europäische Kommission den Vorschlag am 11. November vorlegen, bestätigt ist das nicht. Regeln zu Dark Patterns, Abo-Fallen und Preiswerbung würden Onlinehandel und Reiseportale direkt treffen.",
+   "count": 27,
    "first_seen": "2026-09-30",
-   "last_seen": "2026-11-09",
+   "last_seen": "2026-11-10",
    "evidence": [
+    "https://www.evz.de/aktuelles/pressemitteilungen/digital-fairness-act/",
     "https://www.mlex.com/mlex/articles/2545552",
     "https://www.mlex.com/mlex/data-privacy-security/articles/2531216",
     "https://eprs.europarl.europa.eu/contents/publications/EPRS/2026/10/EPRS_BRI(2026)791529.html",
-    "https://newsletter.digitalfairnessact.com/p/digital-fairness-act-targeted-for",
-    "https://www.freshfields.com/en/our-thinking/campaigns/tech-data-and-ai-the-digital-frontier/eu-digital-strategy/navigating-the-eus-digital-fairness-act"
+    "https://newsletter.digitalfairnessact.com/p/digital-fairness-act-targeted-for"
    ]
   },
   {
@@ -1219,6 +1230,18 @@
    ]
   },
   {
+   "theme": "Kriegsausschluss in Cyberversicherungen",
+   "why": "Mit der offiziellen Zuschreibung der Kühlanlagen-Angriffe an die Revolutionsgarden des Iran steht erstmals ein Angriff auf Supermärkte unter staatlichem Vorzeichen. Das kann Ausschlüsse für Krieg und staatliche Angriffe in Cyberpolicen berühren.",
+   "count": 3,
+   "first_seen": "2026-09-30",
+   "last_seen": "2026-11-10",
+   "evidence": [
+    "https://www.france24.com/en/europe/20261109-iran-revolutionary-guards-behind-cyberattacks-on-supermarket-fridges-says-french-fm-barrot",
+    "https://versicherungswirtschaft-heute.de/politik-und-regulierung/2026-10-19/warum-frankreichs-supermarkt-hack-auch-deutsche-ketten-bedroht/",
+    "https://www.asscompact.de/nachrichten/cyberversicherung-stand-der-dinge-bei-den-kriegsklauseln"
+   ]
+  },
+  {
    "theme": "Grundschutz++ zertifizierbar ab 2027",
    "why": "Das Bundesamt für Sicherheit in der Informationstechnik will die Methodik Ende Oktober vorstellen. Ab dem 1. Januar 2027 sollen Zertifizierungsanträge nach ISO/IEC 27001 auf Basis von Grundschutz++ möglich sein. Die maschinenlesbaren Anforderungen könnten das Kontrollmanagement automatisieren und Tabellenlisten ablösen.",
    "count": 3,
@@ -1271,17 +1294,6 @@
    "evidence": [
     "https://www.bundestag.de/ausschuesse/inneres/anhoerungen/1216962-1216962",
     "https://www.bundestag.de/dokumente/textarchiv/2026/kw41-pa-inneres-cybersicherheit-1221640"
-   ]
-  },
-  {
-   "theme": "Kriegsausschluss in Cyberversicherungen",
-   "why": "Nach den Angriffen auf Kühlanlagen erwartet die Versicherungswirtschaft, dass Leistungen gekürzt oder verweigert werden, falls staatliche Täter bestätigt werden. Das macht Cyberrisiken eines Konzerns schwerer versicherbar.",
-   "count": 2,
-   "first_seen": "2026-09-30",
-   "last_seen": "2026-10-19",
-   "evidence": [
-    "https://versicherungswirtschaft-heute.de/politik-und-regulierung/2026-10-19/warum-frankreichs-supermarkt-hack-auch-deutsche-ketten-bedroht/",
-    "https://www.asscompact.de/nachrichten/cyberversicherung-stand-der-dinge-bei-den-kriegsklauseln"
    ]
   },
   {
@@ -1377,6 +1389,143 @@
   }
  ],
  "news": [
+  {
+   "title": "Fernwartungsplattform N-central: N-able nimmt gehostete Server weltweit vom Netz",
+   "summary": "N-able hat am 9. November seine gehosteten Server der Fernwartungsplattform N-central in Amerika, im asiatisch-pazifischen Raum und in Europa vom Netz genommen. Auslöser war die Veröffentlichung von angeblich 33 bisher unbekannten Lücken durch einen Forscher. Das Unternehmen gibt an, bislang keine aktive Ausnutzung festgestellt zu haben.",
+   "relevance": "Plattformen für Fernwartung und Fernüberwachung werden häufig von Dienstleistern für Informationstechnik eingesetzt und verwalten Tausende Endgeräte; ein Ausfall oder eine Kompromittierung schlägt direkt auf Kunden durch. In der Lieferantensteuerung sollte bekannt sein, welche Fernwartungswerkzeuge Dienstleister einsetzen und wie ein Ausfall überbrückt wird.",
+   "source": "Cyber Security News",
+   "url": "https://cybersecuritynews.com/n-able-takes-n-central-servers-offline/",
+   "id": "2026-11-10-n-able-n-central-offline",
+   "topic": "IT-Governance & Risiko",
+   "impact": "mittel",
+   "published": "2026-11-10",
+   "tags": [
+    "Fernwartung",
+    "Dienstleister",
+    "Zero Day"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
+    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen"
+   ],
+   "roles": [
+    "Einkauf & Drittparteien",
+    "IT-Risiko"
+   ],
+   "countries": [],
+   "dossier": "drittparteien-lieferkette",
+   "priority": 3,
+   "primary": false,
+   "added": "2026-11-10T06:06:24Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Der Artikel stammt vom 10. November. Die Abschaltung am 9. November, die Regionen, die 33 angeblichen Lücken und die Aussage, dass keine aktive Ausnutzung festgestellt wurde, stimmen."
+   }
+  },
+  {
+   "title": "Update: Kühlanlagen – Frankreich macht Irans Revolutionsgarden verantwortlich",
+   "summary": "Der französische Außenminister Jean-Noël Barrot hat am 9. November erklärt, dass die Islamischen Revolutionsgarden des Iran die Angriffe vom 11. und 12. Oktober auf Kühlanlagen französischer Supermärkte ausgeführt haben; laut Barrot waren 700 Standorte betroffen. Frankreich hat den iranischen Botschafter einbestellt und will Sanktionen auf Ebene der Europäischen Union erwirken; die Pariser Staatsanwaltschaft hat ein Ermittlungsverfahren gegen den Leiter der Cybereinheit Shahid Kaveh und seine zwei Stellvertreter eröffnet. Neu gegenüber dem bisherigen Stand ist die offizielle staatliche Zuschreibung.",
+   "relevance": "Betriebstechnik in Filialen und Logistik gehört damit ins Bedrohungsmodell für staatliche Angreifer, mit Folgen für Risikobewertung, Notfallplanung und Berichterstattung an den Vorstand. Zugleich sollten Kriegs- und Staatsausschlüsse in Cyberversicherungen geprüft werden, weil eine staatliche Zuschreibung die Deckung berühren kann.",
+   "source": "France 24",
+   "url": "https://www.france24.com/en/europe/20261109-iran-revolutionary-guards-behind-cyberattacks-on-supermarket-fridges-says-french-fm-barrot",
+   "id": "2026-11-10-kuehlanlagen-iran-zuschreibung",
+   "topic": "Weitere Themen",
+   "impact": "hoch",
+   "published": "2026-11-09",
+   "tags": [
+    "Betriebstechnik",
+    "Geopolitik",
+    "Zuschreibung"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Risikomanagementmaßnahmen",
+    "ISO/IEC 27001 Anhang A 5.7 – Bedrohungsinformationen"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Management"
+   ],
+   "countries": [
+    "EU",
+    "FR"
+   ],
+   "dossier": "betriebstechnik-filialen-logistik",
+   "priority": 1,
+   "primary": false,
+   "added": "2026-11-10T06:06:24Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Datum und Zuschreibung stimmen. Die Quelle nennt 700 Standorte, aber keine Gesamtzahl von etwa 10.000 Supermärkten. Die mindestens 15 Brände in Kühlmöbeln kommen in der Quelle nicht vor. Die Angriffe fanden am 11. und 12. Oktober statt. Den Tatvorwurf „organisierte Cyberkriminalität im Interesse…"
+   }
+  },
+  {
+   "title": "SonicWall-Firewalls: Ausgenutzte Lücke umgeht Mehr-Faktor-Anmeldung, Frist 20. November",
+   "summary": "Die amerikanische Cybersicherheitsbehörde hat die Lücke CVE-2026-19868 in SonicOS, dem Betriebssystem der SonicWall-Firewalls, in ihren Katalog aktiv ausgenutzter Schwachstellen aufgenommen. Die Schwachstelle im verschlüsselten Fernzugang erlaubt es Angreifern mit gültigen Zugangsdaten für ein anderes Anmeldeverfahren, die SAML-Anmeldung und eine darüber erzwungene Mehr-Faktor-Anmeldung zu umgehen. SonicWall hat Updates veröffentlicht, die auch weitere schwerwiegende Lücken schließen; amerikanische Bundesbehörden müssen bis 20. November handeln.",
+   "relevance": "Fernzugänge sind ein bevorzugter Einstieg für Ransomware; betroffen sein können auch Dienstleister und kleinere Landesgesellschaften. Neben dem Update sollten Anmeldeprotokolle auf frühere unberechtigte Zugriffe geprüft werden, weil die Mehr-Faktor-Anmeldung hier als Kontrolle versagt.",
+   "source": "The Hacker News",
+   "url": "https://thehackernews.com/2026/11/cisa-flags-sonicwall-sonicos-mfa-bypass.html",
+   "id": "2026-11-10-sonicwall-fernzugang-mfa",
+   "topic": "IT-Governance & Risiko",
+   "impact": "hoch",
+   "published": "2026-11-09",
+   "tags": [
+    "Schwachstelle",
+    "Fernzugang",
+    "Mehr-Faktor-Anmeldung"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 8.8 – Umgang mit technischen Schwachstellen",
+    "IT-Kontrollen der Abschlussprüfung – Zugriffsschutz"
+   ],
+   "roles": [
+    "IT-Risiko"
+   ],
+   "countries": [],
+   "dossier": "kritische-schwachstellen-perimeter",
+   "priority": 2,
+   "primary": false,
+   "added": "2026-11-10T06:06:24Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Datum, Kennung, Katalogaufnahme und Frist 20. November stimmen (auch laut Katalog der Behörde). Die Zahl von insgesamt sieben geschlossenen Lücken ist nicht belegt, der Artikel nennt vier Kennungen. Für die Umgehung braucht man gültige Zugangsdaten für ein anderes Anmeldeverfahren, es ist keine…"
+   }
+  },
+  {
+   "title": "Onlineshop Iris Plaza: Daten von 7,7 Millionen Menschen über Cloud-Dienst betroffen",
+   "summary": "Iris Plaza, der Onlineshop der japanischen Iris-Ohyama-Gruppe, entdeckte Ende Oktober eine verdächtige Datei in einem externen Cloud-Dienst und nahm den Shop am 28. Oktober vom Netz. Möglicherweise betroffen sind Daten von rund 7,7 Millionen Menschen, darunter verschlüsselt gespeicherte Passwörter; Kartendaten lagen laut Unternehmen nicht in dem betroffenen Cloud-Dienst.",
+   "relevance": "Wieder führt der Angriffsweg über einen angebundenen Dienst statt über den Shop selbst. Für einen großen Onlinehandel heißt das: wissen, welche Kundendaten bei welchem Cloud-Dienst liegen, und dort dieselben Anforderungen an Verschlüsselung, Zugriff und Löschung durchsetzen wie im eigenen Betrieb.",
+   "source": "BleepingComputer",
+   "url": "https://www.bleepingcomputer.com/news/security/iris-ohyama-data-cloud-breach-exposes-info-of-77-million-customers/",
+   "id": "2026-11-10-iris-plaza-cloud-datenabfluss",
+   "topic": "Handel & Branche",
+   "impact": "mittel",
+   "published": "2026-11-08",
+   "tags": [
+    "Onlinehandel",
+    "Cloud",
+    "Kundendaten"
+   ],
+   "controls": [
+    "DSGVO Art. 28 – Auftragsverarbeiter",
+    "DSGVO Art. 32 – Sicherheit der Verarbeitung",
+    "ISO/IEC 27001 Anhang A 5.23 – Informationssicherheit bei der Nutzung von Cloud-Diensten"
+   ],
+   "roles": [
+    "Datenschutz",
+    "Einkauf & Drittparteien"
+   ],
+   "countries": [
+    "JP"
+   ],
+   "dossier": "drittparteien-lieferkette",
+   "priority": 4,
+   "primary": false,
+   "added": "2026-11-10T06:06:24Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Der Artikel ist vom 8. November 2026. Der 28. Oktober ist der Tag, an dem der Shop vom Netz ging, das Entdeckungsdatum nennt die Quelle nur als Ende Oktober. Dass die Benachrichtigung der Kunden am 5. November begann, steht nicht in der Quelle (am 5. November gab es eine Mitteilung des…"
+   }
+  },
   {
    "title": "Update: Kühlanlagen – Angriffe waren vorbereitet, Steuerungen oft mit Werkspasswort",
    "summary": "Laut Euronews hat die Sicherheitsfirma Lupovis vom 20. bis 30. Oktober über 276 Zugriffsversuche von 91 verschiedenen Akteuren auf Kühlsteuerungen registriert, nur in Europa und mit Höhepunkt am 26. Oktober. Bei den Angriffen am 2. und 3. November auf Supermärkte in neun Ländern und mehrere Blutbanken in Frankreich wurden Steuerungen vom Typ Danfoss AK-SM genutzt, die direkt im Internet erreichbar waren und vielfach noch Werkszugangsdaten verwendeten. Täter und Motiv sind weiter unklar.",
