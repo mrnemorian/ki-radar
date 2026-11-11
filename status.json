@@ -1,11 +1,17 @@
 {
  "last_run": {
-  "start": "2026-11-10T07:00:01+01:00",
-  "end": "2026-11-10T07:06:24+01:00",
+  "start": "2026-11-11T07:00:01+01:00",
+  "end": "2026-11-11T07:05:08+01:00",
   "ok": true,
-  "summary": "4 neue Meldungen: P1 Update: Kühlanlagen – Frankreich macht Irans Revolutionsgarden verantwortlich; P2 SonicWall-Firewalls: Ausgenutzte Lücke umgeht Mehr-Faktor-Anmeldung, Frist 20. November; P3 F"
+  "summary": "3 neue Meldungen: P1 Microsoft-Patchday: Ausgenutzte Outlook-Lücke gibt Anmelde-Hashes preis, Frist 24. November; P2 Update: Digital Fairness Act – Entwurf verbietet zehn manipulative Designs, Vors"
  },
  "history": [
+  {
+   "start": "2026-11-11T07:00:01+01:00",
+   "end": "2026-11-11T07:05:08+01:00",
+   "ok": true,
+   "summary": "3 neue Meldungen: P1 Microsoft-Patchday: Ausgenutzte Outlook-Lücke gibt Anmelde-Hashes preis, Frist 24. November; P2 Update: Digital Fairness Act – Entwurf verbietet zehn manipulative Designs, Vors"
+  },
   {
    "start": "2026-11-10T07:00:01+01:00",
    "end": "2026-11-10T07:06:24+01:00",
@@ -81,12 +87,6 @@
   {
    "start": "2026-10-30T07:00:01+01:00",
    "end": "2026-10-30T07:00:06+01:00",
-   "ok": false,
-   "summary": "Recherche lieferte kein verwertbares Ergebnis"
-  },
-  {
-   "start": "2026-10-29T07:00:01+01:00",
-   "end": "2026-10-29T07:00:05+01:00",
    "ok": false,
    "summary": "Recherche lieferte kein verwertbares Ergebnis"
   }

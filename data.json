@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10T06:06:24Z",
+ "updated": "2026-11-11T06:05:08Z",
  "topics": [
   "IT-Governance & Risiko",
   "Cyber- & IT-Regulierung",
@@ -11,6 +11,17 @@
   "Weitere Themen"
  ],
  "briefings": [
+  {
+   "date": "2026-11-11",
+   "headline": "Ausgenutzte Outlook-Lücke mit Frist 24. November, Digital Fairness Act vor der Vorstellung, Ahold Delhaize nennt die Kosten seines Cyberangriffs",
+   "points": [
+    "Microsoft-Patchday: Eine Outlook-Lücke wird bereits ausgenutzt und gibt Anmelde-Hashes preis. Geschlossen wird sie nur über die Office-Updates, die Behördenfrist endet am 24. November.",
+    "Digital Fairness Act: Laut einem bekannt gewordenen Entwurf sollen zehn manipulative Designs, versteckte Gebühren und erschwerte Kündigungen verboten werden. Vorgesehen sind Bußgelder bis 6 Prozent des weltweiten Umsatzes.",
+    "Ahold Delhaize: Der Cyberangriff vom Oktober kostet 200 bis 250 Millionen Euro Umsatz und 75 bis 100 Millionen Euro operatives Ergebnis.",
+    "Auf dem Radar: Künstliche Intelligenz findet Zero Days, und Einkaufsassistenten bekommen erstmals eigene Verbraucherregeln."
+   ],
+   "count": 3
+  },
   {
    "date": "2026-11-10",
    "headline": "Frankreich macht Irans Revolutionsgarden für Kühlanlagen-Angriffe verantwortlich, SonicWall-Lücke mit Frist 20. November, Fernwartungsplattform N-central offline",
@@ -354,18 +365,6 @@
     "Italien: Bußgeld wegen verschwiegener Fahrzeugortung und unbeantworteter Auskunftsanfragen von Beschäftigten; mutmaßliches Kernmitglied von Qilin in Deutschland festgenommen."
    ],
    "count": 6
-  },
-  {
-   "date": "2026-10-10",
-   "headline": "Neue kritische Citrix-Lücke, Microsoft beendet Updates für veraltetes Windows 2027, und missbrauchte Dienstleisterzugänge legen Millionen Datensätze offen.",
-   "points": [
-    "Citrix: Die kritische NetScaler-Lücke CVE-2026-107406 betrifft Geräte mit Single Sign-on über Security Assertion Markup Language. Sie wird noch nicht ausgenutzt, sollte aber sofort gepatcht werden.",
-    "Microsoft tauscht die Zertifikate von Windows Update. Nicht unterstützte Windows-Versionen bekommen ab Mai beziehungsweise Juni 2027 keine Updates mehr; im Handel sollten Kassen und Geräte in Filiallagern geprüft werden.",
-    "Dänemark: Über den legalen Zugang eines kleinen Unternehmens wurden 8,8 Millionen Einträge im Personenregister abgefragt. Aufgefallen ist das erst bei der Rechnungsstellung.",
-    "Japan: Der Angriff auf den Cloud-Anbieter IDC Frontier trifft 6,09 Millionen Kundenkonten von JR East. Dazu kommen Datenabflüsse beim Reiseportal Skyticket und bei der Handelskette Bookoff.",
-    "Cloud-Souveränität: Ein Berichterstatter im Parlament will nur noch zwei Souveränitätsstufen und 80 Prozent der neuen Rechenzentrumskapazität für europäische Anbieter."
-   ],
-   "count": 6
   }
  ],
  "dossiers": [
@@ -455,19 +454,19 @@
     }
    ],
    "title": "Kritische Schwachstellen in Randsystemen und Kernanwendungen",
-   "sector": "IT-Governance & Risiko",
+   "sector": "Cyber- & IT-Regulierung",
    "ring": "jetzt handeln",
-   "status": "Neu ist eine ausgenutzte Lücke im Fernzugang der SonicWall-Firewalls, die auch die Mehr-Faktor-Anmeldung umgehen kann; die Behördenfrist endet am 20. November. Daneben laufen die Fristen für VMware ESX am 11. November, Ivanti Connect Secure am 13. November und eine Apple-Lücke am 18. November; die OpenSSH-Lücke SSHole wird seit Anfang November ausgenutzt.",
-   "next_step": "Fernzugänge und Firewalls aller Gesellschaften und Dienstleister mit den Fristen abgleichen, Updates einspielen und Anmeldeprotokolle auf frühere Zugriffe prüfen.",
+   "status": "Neu ist die ausgenutzte Outlook-Lücke CVE-2026-124194 aus dem November-Patchday. Sie gibt Anmelde-Hashes preis, wird nur über die Office-Updates geschlossen und hat eine Behördenfrist bis 24. November. Daneben laufen die Fristen für Ivanti Connect Secure am 13. November, eine Apple-Lücke am 18. November und SonicWall am 20. November.",
+   "next_step": "Prüfen, ob die Office-Verteilung getrennt gemessen wird und die Outlook-Lücke bis 24. November auf allen Clients geschlossen ist. Ausgehende Anmeldeverbindungen ins Internet blockieren und die neue Signierung von NTLM-Nachrichten auswerten.",
    "open_questions": [
-    "Sind Randsysteme bei Dienstleistern und kleineren Landesgesellschaften im Schwachstellenprozess vollständig erfasst?",
-    "Wie wird nachgewiesen, dass nach dem Update keine Hintertür zurückgeblieben ist?"
+    "Erfasst die Patch-Kennzahl Office-Updates überhaupt oder nur Windows?",
+    "Wie weit lässt sich NTLM in Altsystemen und Filialtechnik zurückdrängen?"
    ],
    "controls": [
-    "ISO/IEC 27001 Anhang A 8.8 – Umgang mit technischen Schwachstellen",
-    "IT-Kontrollen der Abschlussprüfung – Zugriffsschutz"
+    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
+    "NIS-2-Richtlinie Art. 21 – Umgang mit und Offenlegung von Schwachstellen"
    ],
-   "updated": "2026-11-10"
+   "updated": "2026-11-11"
   },
   {
    "slug": "lebenszyklus-altsysteme",
@@ -719,6 +718,28 @@
    "updated": "2026-10-30"
   },
   {
+   "slug": "digital-fairness-act",
+   "created": "2026-11-11",
+   "ring_history": [
+    {
+     "date": "2026-11-11",
+     "ring": "beobachten"
+    }
+   ],
+   "title": "Digital Fairness Act",
+   "sector": "Weitere Themen",
+   "ring": "beobachten",
+   "status": "Ein bekannt gewordener Entwurf sieht Verbote für zehn manipulative Designs und versteckte Gebühren vor, außerdem Kündigungsknopf, Regeln für Einkaufsassistenten mit Künstlicher Intelligenz und Bußgelder bis 6 Prozent des weltweiten Umsatzes. Die Kommission wollte den Vorschlag am 11. November vorstellen. Danach entscheiden Parlament und Rat, die Bundesregierung ist skeptisch.",
+   "next_step": "Den offiziellen Vorschlag mit dem Entwurf abgleichen. Ein Inventar der Kundenoberflächen, Abonnements, Preisdarstellungen und Chatbots im Service anlegen und Verantwortliche benennen.",
+   "open_questions": [
+    "Kommen Regeln zu personalisierten Preisen in den endgültigen Vorschlag?",
+    "Wie verhalten sich die Pflichten für Einkaufsassistenten zur Verordnung über Künstliche Intelligenz?",
+    "Ab wann gilt die Verordnung realistisch, wenn sie zwölf Monate nach Inkrafttreten anwendbar wird?"
+   ],
+   "controls": [],
+   "updated": "2026-11-11"
+  },
+  {
    "slug": "zahlungsverkehr-pci-dss",
    "created": "2026-10-03",
    "ring_history": [
@@ -908,6 +929,17 @@
    "checked": true,
    "dossier": "kritische-schwachstellen-perimeter",
    "added": "2026-11-10"
+  },
+  {
+   "date": "2026-11-24",
+   "title": "Outlook-Lücke CVE-2026-124194: behördliche Patch-Frist",
+   "detail": "Die amerikanische Cybersicherheitsbehörde verlangt von Bundesbehörden das Schließen der ausgenutzten Outlook-Lücke. Das Datum ist ein Richtwert für alle Betreiber von Outlook-Clients, geschlossen wird die Lücke über die Office-Updates.",
+   "scope": "global",
+   "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+   "primary": true,
+   "checked": true,
+   "dossier": "kritische-schwachstellen-perimeter",
+   "added": "2026-11-11"
   },
   {
    "date": "2026-12-02",
@@ -1127,6 +1159,20 @@
    ]
   },
   {
+   "theme": "Schwachstellensuche durch Künstliche Intelligenz",
+   "why": "Die ausgenutzte Outlook-Lücke aus dem November-Patchday wurde von Forschern mithilfe des Modells Claude gefunden. Werden mehr Lücken schneller gefunden, steigen Patch-Last und Fristendruck, und Patch-Prozesse und Ressourcenplanung müssen sich darauf einstellen.",
+   "count": 7,
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-11-11",
+   "evidence": [
+    "https://cyberinsider.com/microsoft-november-2026-patch-tuesday-outlook-zero-day/",
+    "https://thehackernews.com/2026/11/openai-ai-pipeline-generates-948-linux.html",
+    "https://newcivilengineer.com/latest/highly-likely-ai-will-be-used-in-ransomware-attack-on-uk-critical-infrastructure-03-11-2026",
+    "https://thehackernews.com/2026/11/red-hat-patches-98-rated-linux-tcp-rce.html",
+    "https://www.heise.de/news/Erneut-kritischer-Bug-in-Linux-TCP-IP-aufgedeckt-Updates-in-Arbeit-11506050.html"
+   ]
+  },
+  {
    "theme": "Autonome Angriffe durch Agenten",
    "why": "Die Angriffssuite ARTEX taucht in immer mehr Vorfällen auf, zuletzt bei WorkOS. Automatisierte Erkundung verkürzt die Zeit zwischen Schwachstelle und Einbruch auch bei internen Nebenanwendungen.",
    "count": 7,
@@ -1138,20 +1184,6 @@
     "https://bleepingcomputer.com/news/security/hacker-used-artex-ai-and-claude-agents-to-target-south-korean-banks",
     "https://www.kedglobal.com/banking-finance/newsView/ked202610040005",
     "https://www.securityweek.com/zammad-zero-days-exploited-in-ai-powered-divd-hack/"
-   ]
-  },
-  {
-   "theme": "Schwachstellensuche durch Künstliche Intelligenz",
-   "why": "OpenAI erzeugt automatisiert Hunderte funktionierende Exploits zu geringen Kosten pro Exploit. Patch-Fristen und die Einstufung lokaler Lücken müssen sich wahrscheinlich bald danach richten.",
-   "count": 6,
-   "first_seen": "2026-10-20",
-   "last_seen": "2026-11-06",
-   "evidence": [
-    "https://thehackernews.com/2026/11/openai-ai-pipeline-generates-948-linux.html",
-    "https://newcivilengineer.com/latest/highly-likely-ai-will-be-used-in-ransomware-attack-on-uk-critical-infrastructure-03-11-2026",
-    "https://thehackernews.com/2026/11/red-hat-patches-98-rated-linux-tcp-rce.html",
-    "https://www.heise.de/news/Erneut-kritischer-Bug-in-Linux-TCP-IP-aufgedeckt-Updates-in-Arbeit-11506050.html",
-    "https://www.heise.de/news/Ausserplanmaessige-Fortinet-Updates-Details-Fehlanzeige-aber-dringend-11497171.html"
    ]
   },
   {
@@ -1308,6 +1340,16 @@
    ]
   },
   {
+   "theme": "Regeln für Einkaufsagenten",
+   "why": "Der Entwurf des Digital Fairness Act regelt erstmals Einkaufsassistenten mit Künstlicher Intelligenz. Nutzer sollen festlegen können, welche Käufe ihre Bestätigung brauchen, und bezahlte Empfehlungen müssen gekennzeichnet werden. Das betrifft künftige Agenten-Schnittstellen von Onlineshops.",
+   "count": 1,
+   "first_seen": "2026-11-11",
+   "last_seen": "2026-11-11",
+   "evidence": [
+    "https://de.euronews.com/2026/11/09/digital-fairness-act-eu-kommission-will-zehn-manipulative-online-designs-verbieten"
+   ]
+  },
+  {
    "theme": "Exportkontrollen für Rechenchips",
    "why": "Die Kommission hat am 14. September eine aktualisierte Liste für Güter mit doppeltem Verwendungszweck beschlossen, die unter anderem integrierte Schaltungen für Hochleistungsrechnen erfasst. Die Veröffentlichung im Amtsblatt wird für November erwartet. Wer Rechenleistung für Künstliche Intelligenz einkauft oder über Ländergrenzen verlagert, muss Exportkontrollfragen mitdenken.",
    "count": 1,
@@ -1390,6 +1432,44 @@
  ],
  "news": [
   {
+   "title": "Microsoft-Patchday: Ausgenutzte Outlook-Lücke gibt Anmelde-Hashes preis, Frist 24. November",
+   "summary": "Microsoft hat am 10. November 1.094 Schwachstellen geschlossen, darunter die bereits ausgenutzte Outlook-Lücke CVE-2026-124194. Öffnet jemand eine präparierte Nachrichtendatei, verbindet sich Outlook ohne die übliche Warnung mit einem Server des Angreifers und gibt dabei den NTLMv2-Hash der Windows-Anmeldung preis. Das Vorschaufenster ist laut Microsoft kein Angriffsweg. Behoben wird die Lücke nur über die Office-Sicherheitsupdates, nicht über das kumulative Windows-Update. Zusätzlich bieten Windows-Clients jetzt standardmäßig die Signierung von NTLM-Nachrichten an.",
+   "relevance": "In großen Arbeitsplatzlandschaften werden Office- und Windows-Updates oft getrennt verteilt und gemessen. Eine Patch-Kennzahl, die nur Windows erfasst, meldet dann Erfolg, obwohl die Clients verwundbar bleiben. Zu prüfen sind außerdem das Blockieren ausgehender Anmeldeverbindungen ins Internet und die Abhängigkeit von NTLM.",
+   "source": "CyberInsider",
+   "url": "https://cyberinsider.com/microsoft-november-2026-patch-tuesday-outlook-zero-day/",
+   "id": "2026-11-11-outlook-zero-day-patchday-november",
+   "topic": "Cyber- & IT-Regulierung",
+   "impact": "hoch",
+   "published": "2026-11-10",
+   "tags": [
+    "Zero Day",
+    "Outlook",
+    "Patch-Management"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
+    "NIS-2-Richtlinie Art. 21 – Umgang mit und Offenlegung von Schwachstellen",
+    "IT-Kontrollen der Abschlussprüfung – Änderungsmanagement"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Revision & Prüfung"
+   ],
+   "countries": [
+    "EU",
+    "DE",
+    "AT"
+   ],
+   "dossier": "kritische-schwachstellen-perimeter",
+   "priority": 1,
+   "primary": false,
+   "added": "2026-11-11T06:05:08Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum 10. November 2026, 1.094 Schwachstellen, CVE-2026-124194, NTLMv2-Hash, Vorschaufenster kein Angriffsweg, Behebung nur über Office-Updates und NTLM-Signierung stehen alle so in der Quelle. Die Frist 24. November im Titel nennt CyberInsider nicht, sie ist aber über den Katalog der…"
+   }
+  },
+  {
    "title": "Fernwartungsplattform N-central: N-able nimmt gehostete Server weltweit vom Netz",
    "summary": "N-able hat am 9. November seine gehosteten Server der Fernwartungsplattform N-central in Amerika, im asiatisch-pazifischen Raum und in Europa vom Netz genommen. Auslöser war die Veröffentlichung von angeblich 33 bisher unbekannten Lücken durch einen Forscher. Das Unternehmen gibt an, bislang keine aktive Ausnutzung festgestellt zu haben.",
    "relevance": "Plattformen für Fernwartung und Fernüberwachung werden häufig von Dienstleistern für Informationstechnik eingesetzt und verwalten Tausende Endgeräte; ein Ausfall oder eine Kompromittierung schlägt direkt auf Kunden durch. In der Lieferantensteuerung sollte bekannt sein, welche Fernwartungswerkzeuge Dienstleister einsetzen und wie ein Ausfall überbrückt wird.",
@@ -1420,6 +1500,38 @@
    "check": {
     "verdict": "abweichung",
     "note": "Der Artikel stammt vom 10. November. Die Abschaltung am 9. November, die Regionen, die 33 angeblichen Lücken und die Aussage, dass keine aktive Ausnutzung festgestellt wurde, stimmen."
+   }
+  },
+  {
+   "title": "Update: Digital Fairness Act – Entwurf verbietet zehn manipulative Designs, Vorstellung geplant",
+   "summary": "Euronews liegt ein Entwurf vor. Danach wollte die Europäische Kommission den Digital Fairness Act am Mittwoch, dem 11. November, vorstellen. Eine offizielle Veröffentlichung war bei Redaktionsschluss nicht bestätigt. Neu gegenüber dem bisherigen Stand sind Details: Zehn manipulative Designs sollen ohne Schadensnachweis verboten werden, etwa erschwerte Kündigung, vorangekreuzte Zusatzartikel, falsche Knappheitshinweise und Gebühren, die erst an der Kasse erscheinen. Dazu kommen ein sichtbarer Kündigungsknopf, Erinnerungen vor automatischer Verlängerung, ein Recht auf einen Menschen im Kundenservice und Regeln für Einkaufsassistenten mit Künstlicher Intelligenz. Vorgesehen sind Bußgelder bis 6 Prozent des weltweiten Umsatzes, Anwendung zwölf Monate nach Inkrafttreten.",
+   "relevance": "Onlineshop, Lieferservice, Abonnements und Reiseportale eines Handels- und Touristikkonzerns wären direkt betroffen, vom Checkout bis zum Kundenservice mit Chatbots. Wer jetzt ein Inventar der Kundenoberflächen und Preisdarstellungen anlegt, verkürzt später die Umsetzung, und die Kontrollverantwortung zwischen E-Commerce, Recht und Informationstechnik lässt sich früh klären.",
+   "source": "Euronews",
+   "url": "https://de.euronews.com/2026/11/09/digital-fairness-act-eu-kommission-will-zehn-manipulative-online-designs-verbieten",
+   "id": "2026-11-11-update-digital-fairness-act-entwurf",
+   "topic": "Weitere Themen",
+   "impact": "mittel",
+   "published": "2026-11-09",
+   "tags": [
+    "Verbraucherschutz",
+    "Dark Patterns",
+    "E-Commerce"
+   ],
+   "controls": [],
+   "roles": [
+    "Management",
+    "Datenschutz"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "digital-fairness-act",
+   "priority": 2,
+   "primary": false,
+   "added": "2026-11-11T06:05:08Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum 9. November 2026 stimmt. Entwurf liegt Euronews vor, Vorstellung am Mittwoch (11. November), zehn verbotene Designs ohne Schadensnachweis, Kündigungsknopf, Erinnerungen, Recht auf einen Menschen, Regeln für Einkaufsassistenten, bis 6 Prozent des Umsatzes und Anwendung nach zwölf Monaten…"
    }
   },
   {
@@ -1871,6 +1983,41 @@
    "check": {
     "verdict": "ok",
     "note": "Artikel vom 5. November 2026; 948 funktionierende Exploits zur lokalen Rechteausweitung auf root, Lauf von 30 Stunden laut Überschrift, Kosten 1.213.430 Dollar. Die 30 Stunden beziehen sich im Zitat streng genommen auf die Reproduktion der Schwachstellen, die Überschrift spricht aber von einem…"
+   }
+  },
+  {
+   "title": "Update: Ahold Delhaize – Cyberangriff kostet bis zu 250 Millionen Euro Umsatz",
+   "summary": "Mit den Zahlen zum dritten Quartal beziffert Ahold Delhaize den Cyberangriff erstmals: Erwartet werden 200 bis 250 Millionen Euro weniger Umsatz und 75 bis 100 Millionen Euro weniger operatives Ergebnis im vierten Quartal. Die Angreifer trafen Onlinehandel und Lieferketten in den Benelux-Staaten und den Vereinigten Staaten. Laut Vorstandschef war das meiste nach zwei Wochen eingedämmt, weitere Kosten für Aufarbeitung und Reparatur werden erwartet.",
+   "relevance": "Erstmals nennt ein großer europäischer Lebensmittelhändler belastbare Zahlen für einen Cyberangriff. Sie eignen sich als Vergleich für die Business-Impact-Analyse, für Wiederanlaufziele von Onlineshop und Logistik und für die Diskussion im Vorstand über Budget und Versicherungssumme.",
+   "source": "DutchNews",
+   "url": "https://www.dutchnews.nl/2026/11/cyberattack-to-cost-ahold-delhaize-up-to-e250m-in-lost-sales/",
+   "id": "2026-11-11-update-ahold-delhaize-kosten-cyberangriff",
+   "topic": "Handel & Branche",
+   "impact": "mittel",
+   "published": "2026-11-04",
+   "tags": [
+    "Wettbewerber",
+    "Resilienz",
+    "Schadenshöhe"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Aufrechterhaltung des Betriebs und Krisenmanagement",
+    "ISO/IEC 27001 Anhang A 5.30 – Bereitschaft der Informations- und Kommunikationstechnik für Business Continuity"
+   ],
+   "roles": [
+    "Management",
+    "IT-Risiko"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": null,
+   "priority": 3,
+   "primary": false,
+   "added": "2026-11-11T06:05:08Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Datum, Spannen, betroffene Bereiche, Aussage des Vorstandschefs und weitere Kosten stimmen. Eine frühere Schätzung im Oktober von 120 bis 150 Millionen Euro, die nur Albert Heijn betraf, erwähnt die Quelle nicht. Deshalb fehlt auch der Beleg für die Formulierung erstmals für den ganzen Konzern."
    }
   },
   {

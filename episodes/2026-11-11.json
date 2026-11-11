@@ -1,0 +1,157 @@
+{
+ "format": "tag",
+ "chapters": [
+  {
+   "title": "Begrüßung",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Guten Morgen, liebe IT-GRC-Kolleginnen und -Kollegen, willkommen beim IT-GRC Radar. Heute ist Mittwoch, der elfte November 2026."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Der Elfte im Elften. Im Rheinland beginnt heute die fünfte Jahreszeit, und wir reden über Outlook. Passt irgendwie."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Drei Themen heute: eine ausgenutzte Lücke mit Frist, ein Verbraucherschutzgesetz, das heute vorgestellt werden soll, und die Rechnung, die ein Wettbewerber für seinen Cyberangriff aufmacht."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Klingt nach einer ordentlichen Portion für eine Tasse Kaffee."
+    }
+   ]
+  },
+  {
+   "title": "Outlook-Lücke",
+   "news_id": "2026-11-11-outlook-zero-day-patchday-november",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Fangen wir mit dem Dringendsten an. Microsoft hat gestern am [en]Patch Tuesday[/en] 1.094 Lücken geschlossen. Eine davon wird bereits ausgenutzt, und zwar in Outlook."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Moment, gut tausend? Das ist mal eine Hausnummer für einen einzigen Dienstag."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Stimmt. Der Angriff läuft so: Jemand schickt eine präparierte Nachrichtendatei. Wird sie geöffnet, verbindet sich Outlook ohne die übliche Warnung mit einem Server des Angreifers und verrät dabei den [en]Hash[/en] der Windows-Anmeldung."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Mit so einem [en]Hash[/en] kann ein Angreifer je nach Umgebung Passwörter knacken oder Anmeldungen weiterreichen. Das Vorschaufenster ist laut Microsoft kein Angriffsweg, die Datei muss geöffnet werden."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Die amerikanische Cybersicherheitsbehörde gibt ihren Bundesbehörden Zeit bis zum vierundzwanzigsten November. Wo ist der Haken?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Der Haken ist ein Klassiker. Geschlossen wird die Lücke über die Office-Updates, nicht über das Windows-Sammelupdate. Wer im [en]Reporting[/en] nur Windows sieht, meldet grün und ist trotzdem offen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Also wieder die alte Frage, wer eigentlich [en]Owner[/en] der Office-Pakete ist."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Genau die. Ich würde prüfen, ob Office in der [en]Patch[/en]-Kennzahl überhaupt auftaucht und ob ausgehende Anmeldeverbindungen ins Internet blockiert sind. Kleiner Lichtblick: Windows-Clients bieten jetzt standardmäßig an, diese Anmeldenachrichten zu signieren. Das erschwert das Weiterreichen."
+    }
+   ]
+  },
+  {
+   "title": "Digital Fairness Act",
+   "news_id": "2026-11-11-update-digital-fairness-act-entwurf",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Da gibt es Neues zum Digital Fairness Act. Euronews konnte einen Entwurf einsehen, und vorstellen wollte die Europäische Kommission den Vorschlag heute."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ehrlich gesagt glaube ich nach so vielen verschobenen Terminen erst daran, wenn das Dokument online ist."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Verständlich. Zum Inhalt: Zehn manipulative Designs sollen verboten werden, und eine Behörde muss keinen Schaden nachweisen. Gemeint sind zum Beispiel Kündigungen, die viel schwerer sind als der Abschluss, vorangekreuzte Zusatzartikel, falsche Knappheitshinweise und Gebühren, die erst an der Kasse auftauchen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Das sogenannte [en]Drip Pricing[/en]. Für einen Händler mit Onlineshop, Lieferservice und Reiseportal ist das kein Randthema, es geht direkt um den [en]Checkout[/en]."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Dazu kommen ein gut sichtbarer Kündigungsknopf, Erinnerungen vor der automatischen Verlängerung, ein Recht auf einen Menschen im Kundenservice und erstmals Regeln für Einkaufsassistenten mit Künstlicher Intelligenz."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ein Recht auf einen Menschen hätte ich gern auch bei manchem internen Ticketsystem. Im Ernst: Wer [en]Chatbots[/en] im Service einsetzt, sollte das schon jetzt mit den Transparenzpflichten aus der Verordnung über Künstliche Intelligenz zusammen betrachten."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und die Sanktionen?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Bis zu 6 Prozent des weltweiten Umsatzes, gelten soll das zwölf Monate nach Inkrafttreten. Parlament und Mitgliedstaaten müssen noch zustimmen, und die Bundesregierung ist skeptisch. Also beobachten, aber eine Bestandsaufnahme der Shop-Oberflächen kann man jetzt schon anfangen."
+    }
+   ]
+  },
+  {
+   "title": "Kosten bei Ahold Delhaize",
+   "news_id": "2026-11-11-update-ahold-delhaize-kosten-cyberangriff",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Da gibt es Neues zum Angriff auf Ahold Delhaize. Der Konzern nennt jetzt Zahlen: 200 bis 250 Millionen Euro weniger Umsatz im vierten Quartal, beim operativen Ergebnis 75 bis 100 Millionen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und das ist noch nicht alles. Kosten für Aufarbeitung und Reparatur kommen laut Unternehmen noch dazu."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Der Vorstandschef sagt, das meiste sei nach zwei Wochen eingedämmt gewesen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Zwei Wochen klingen kurz und kosten trotzdem einen dreistelligen Millionenbetrag. Für die [en]Business Impact[/en] Analyse ist das ein echter Vergleichswert, viel überzeugender als jede Annahme aus der Excel-Tabelle. Wer im Vorstand über Wiederanlaufzeiten von Onlineshop und Logistik spricht, hat jetzt eine Zahl in der Hand."
+    }
+   ]
+  },
+  {
+   "title": "Auf dem Radar",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Was steht auf dem Radar?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Die Outlook-Lücke von vorhin haben Forscher mithilfe des Modells Claude gefunden. Schwachstellensuche durch Künstliche Intelligenz ist damit im Alltag angekommen. Für uns heißt das: mehr Lücken, kürzere Fristen und mehr Arbeit beim Patchen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Bei über tausend Lücken im Monat glaube ich das sofort."
+    }
+   ]
+  },
+  {
+   "title": "Abschied",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Das war das IT-GRC Radar für heute. Alle Quellen findet ihr wie immer auf der Webseite."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und wer heute feiert: erst die Office-Updates, dann der Karneval. Bis morgen."
+    }
+   ]
+  }
+ ]
+}
