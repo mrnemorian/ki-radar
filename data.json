@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11T06:05:08Z",
+ "updated": "2026-11-12T06:07:01Z",
  "topics": [
   "IT-Governance & Risiko",
   "Cyber- & IT-Regulierung",
@@ -11,6 +11,18 @@
   "Weitere Themen"
  ],
  "briefings": [
+  {
+   "date": "2026-11-12",
+   "headline": "Die Kommission legt den Digital Fairness Act vor, Chrome schließt eine angegriffene Lücke, und mehrere Datenabflüsse laufen erneut über Dienstleister.",
+   "points": [
+    "Digital Fairness Act vorgestellt: Verbote manipulativer Gestaltung, einfache Abo-Kündigung, Bußgelder bis 6 Prozent des weltweiten Umsatzes, jetzt beraten Parlament und Rat",
+    "Chrome: Lücke CVE-2026-125350 wird bereits angegriffen, Update auf Version 157 nötig, Browser auf Chromium-Basis ziehen nach",
+    "Casinos Austria: Daten aus dem Webshop über das System eines externen Dienstleisters abgeflossen, rund 150.000 Kunden",
+    "Händler Nitori: bis zu 37,62 Millionen Kundendatensätze, Angreifer vermutlich seit Mitte Oktober unbemerkt im Netz",
+    "Newsletter-Dienst Arara und Infrastrukturanbieter Fireworks AI: Einbrüche bei Dienstleistern treffen viele Kunden auf einmal"
+   ],
+   "count": 6
+  },
   {
    "date": "2026-11-11",
    "headline": "Ausgenutzte Outlook-Lücke mit Frist 24. November, Digital Fairness Act vor der Vorstellung, Ahold Delhaize nennt die Kosten seines Cyberangriffs",
@@ -353,18 +365,6 @@
     "Frist der Woche: Am 13. Oktober erscheinen die letzten Sicherheitsupdates für Windows Server 2012 und 2012 R2"
    ],
    "count": 3
-  },
-  {
-   "date": "2026-10-11",
-   "headline": "Microsoft beendet im Oktober die letzten Sicherheitsupdates für Windows Server 2012 und Exchange 2016 und 2019, Altsysteme werden zum Prüfungsthema",
-   "points": [
-    "Windows Server 2012 und 2012 R2 erhalten am 13. Oktober die letzten Extended Security Updates, für Exchange Server 2016 und 2019 endet das Programm am 31. Oktober ohne weitere Verlängerung.",
-    "Update Südkorea: Angriffe auf Großbanken liefen über die Angriffssuite ARTEX mit Agenten, abgeleitete Versionen des Werkzeugs kursieren öffentlich.",
-    "Griechenland: Datenschutzbehörde belegt Ministerium und Auftragsverarbeiter wegen veralteter Systeme und fehlendem Vertrag zur Auftragsverarbeitung mit Bußgeldern.",
-    "Schweizer Marktplatz Ricardo: Namen, Adressen und Telefonnummern aus rund 890.000 Nutzerkonten abgeflossen.",
-    "Italien: Bußgeld wegen verschwiegener Fahrzeugortung und unbeantworteter Auskunftsanfragen von Beschäftigten; mutmaßliches Kernmitglied von Qilin in Deutschland festgenommen."
-   ],
-   "count": 6
   }
  ],
  "dossiers": [
@@ -406,18 +406,18 @@
    "title": "Drittparteien- und Lieferkettenrisiko",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Nach den Abflüssen über Touristik-Software und ein manipuliertes Analyse-Skript hat N-able am 9. November die gehostete Fernwartungsplattform N-central weltweit vom Netz genommen, nachdem angeblich 33 unbekannte Lücken veröffentlicht wurden. Beim Onlineshop Iris Plaza sind über einen externen Cloud-Dienst Daten von rund 7,7 Millionen Menschen möglicherweise abgeflossen.",
-   "next_step": "Bei kritischen Dienstleistern abfragen, welche Fernwartungswerkzeuge und Cloud-Dienste sie einsetzen, und für deren Ausfall Notfallpläne und Meldewege vertraglich absichern.",
+   "status": "Neben der Abschaltung der Fernwartungsplattform N-central zeigen neue Fälle, wie einzelne Dienstleister viele Kunden mitreißen: Bei Casinos Austria flossen Webshop-Daten über einen externen Dienstleister ab, beim Newsletter-Dienst Arara sind bis zu 77 Millionen Adressen betroffen. Bei Fireworks AI lagen Chat-Verläufe von Notion-Kunden offen, ein Einbruch dort lief über einen Cloud-Anbieter.",
+   "next_step": "Marketing-, Webshop- und Dienste mit Künstlicher Intelligenz mit Datenmenge und Unterauftragnehmern ins Drittparteien-Inventar aufnehmen; Meldefristen und Prüfrechte in den Verträgen prüfen.",
    "open_questions": [
-    "Welche Fernwartungsplattformen setzen unsere Dienstleister ein, und wie schnell würden sie einen Ausfall melden?",
-    "Wo liegen Kundendaten bei Unterauftragnehmern außerhalb der eigenen Kontrollen?"
+    "Sind Werkzeuge, die Fachbereiche selbst beauftragen, im Lieferantenmanagement vollständig erfasst?",
+    "Wie wird die vierte Ebene, also die Dienstleister der Dienstleister, sichtbar?"
    ],
    "controls": [
     "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
     "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen",
     "DSGVO Art. 28 – Auftragsverarbeiter"
    ],
-   "updated": "2026-11-10"
+   "updated": "2026-11-12"
   },
   {
    "slug": "identitaeten-zugangsdaten",
@@ -454,19 +454,18 @@
     }
    ],
    "title": "Kritische Schwachstellen in Randsystemen und Kernanwendungen",
-   "sector": "Cyber- & IT-Regulierung",
+   "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Neu ist die ausgenutzte Outlook-Lücke CVE-2026-124194 aus dem November-Patchday. Sie gibt Anmelde-Hashes preis, wird nur über die Office-Updates geschlossen und hat eine Behördenfrist bis 24. November. Daneben laufen die Fristen für Ivanti Connect Secure am 13. November, eine Apple-Lücke am 18. November und SonicWall am 20. November.",
-   "next_step": "Prüfen, ob die Office-Verteilung getrennt gemessen wird und die Outlook-Lücke bis 24. November auf allen Clients geschlossen ist. Ausgehende Anmeldeverbindungen ins Internet blockieren und die neue Signierung von NTLM-Nachrichten auswerten.",
+   "status": "Neu ist eine bereits angegriffene Chrome-Lücke (CVE-2026-125350), die beim Aufruf präparierter Webseiten auslöst und mit Version 157 geschlossen ist. Daneben laufen die Behördenfristen für Ivanti Connect Secure am 13. November, Apple am 18. November, SonicWall am 20. November und die Outlook-Lücke am 24. November.",
+   "next_step": "Browser-Updates auf allen Geräteklassen nachweisen, einschließlich Kiosk-, Kassen- und Terminalserver-Umgebungen, und die offenen Behördenfristen nachverfolgen.",
    "open_questions": [
-    "Erfasst die Patch-Kennzahl Office-Updates überhaupt oder nur Windows?",
-    "Wie weit lässt sich NTLM in Altsystemen und Filialtechnik zurückdrängen?"
+    "Wann ziehen Edge und andere Browser auf Chromium-Basis nach?"
    ],
    "controls": [
     "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
-    "NIS-2-Richtlinie Art. 21 – Umgang mit und Offenlegung von Schwachstellen"
+    "IT-Kontrollen der Abschlussprüfung – Änderungsmanagement"
    ],
-   "updated": "2026-11-11"
+   "updated": "2026-11-12"
   },
   {
    "slug": "lebenszyklus-altsysteme",
@@ -727,17 +726,17 @@
     }
    ],
    "title": "Digital Fairness Act",
-   "sector": "Weitere Themen",
+   "sector": "Handel & Branche",
    "ring": "beobachten",
-   "status": "Ein bekannt gewordener Entwurf sieht Verbote für zehn manipulative Designs und versteckte Gebühren vor, außerdem Kündigungsknopf, Regeln für Einkaufsassistenten mit Künstlicher Intelligenz und Bußgelder bis 6 Prozent des weltweiten Umsatzes. Die Kommission wollte den Vorschlag am 11. November vorstellen. Danach entscheiden Parlament und Rat, die Bundesregierung ist skeptisch.",
-   "next_step": "Den offiziellen Vorschlag mit dem Entwurf abgleichen. Ein Inventar der Kundenoberflächen, Abonnements, Preisdarstellungen und Chatbots im Service anlegen und Verantwortliche benennen.",
+   "status": "Die Kommission hat den Digital Fairness Act am 11. November 2026 zusammen mit einer Überarbeitung der Verordnung über die Zusammenarbeit der Verbraucherschutzbehörden vorgestellt. Er zielt auf manipulative Gestaltung, suchtfördernde Funktionen, Abo-Kündigung, Influencer-Werbung und unfaire Personalisierung, bei großen grenzüberschreitenden Fällen sind Bußgelder bis 6 Prozent des weltweiten…",
+   "next_step": "Bestandsaufnahme der betroffenen Funktionen in Onlineshop, Lieferservice, Apps und Reiseportalen (Knappheitshinweise, Abo-Modelle, personalisierte Preise) und Klärung der Verantwortlichen; Verhandlungen in Parlament und Rat beobachten.",
    "open_questions": [
-    "Kommen Regeln zu personalisierten Preisen in den endgültigen Vorschlag?",
-    "Wie verhalten sich die Pflichten für Einkaufsassistenten zur Verordnung über Künstliche Intelligenz?",
-    "Ab wann gilt die Verordnung realistisch, wenn sie zwölf Monate nach Inkrafttreten anwendbar wird?"
+    "Welche Gestaltungsmuster bleiben nach den Verhandlungen auf der Verbotsliste?",
+    "Wie streng werden die Transparenzpflichten für personalisierte und dynamische Preise?",
+    "Wie lang wird die Übergangszeit nach Inkrafttreten?"
    ],
    "controls": [],
-   "updated": "2026-11-11"
+   "updated": "2026-11-12"
   },
   {
    "slug": "zahlungsverkehr-pci-dss",
@@ -1239,6 +1238,19 @@
    ]
   },
   {
+   "theme": "Kriegsausschluss in Cyberversicherungen",
+   "why": "Nachdem Frankreich die Angriffe auf Kühlanlagen in Supermärkten den Revolutionsgarden des Iran zugeschrieben hat, diskutieren Makler, ob Versicherer sich auf Kriegs- oder Staatsausschlüsse berufen können; manche Kunden haben mehrere unterschiedliche Formulierungen in einem Versicherungsprogramm. Für Händler wird die Frage, wann ein Angriff als staatlich gilt, zum Deckungsrisiko.",
+   "count": 4,
+   "first_seen": "2026-09-30",
+   "last_seen": "2026-11-12",
+   "evidence": [
+    "https://www.insurancebusinessmag.com/uk/news/cyber/france-blames-iran-for-fridge-hacks-as-brokers-confront-cyberphysical-exposures-596719.aspx",
+    "https://www.france24.com/en/europe/20261109-iran-revolutionary-guards-behind-cyberattacks-on-supermarket-fridges-says-french-fm-barrot",
+    "https://versicherungswirtschaft-heute.de/politik-und-regulierung/2026-10-19/warum-frankreichs-supermarkt-hack-auch-deutsche-ketten-bedroht/",
+    "https://www.asscompact.de/nachrichten/cyberversicherung-stand-der-dinge-bei-den-kriegsklauseln"
+   ]
+  },
+  {
    "theme": "Rechtsverordnung zum Dachgesetz Kritische Infrastrukturen",
    "why": "Das Gesetz gilt seit März 2026, die Verordnung mit den Schwellenwerten lag aber nach Fachberichten im Oktober noch immer nur als Entwurf vor. Erst sie entscheidet, welche Anlagen im Sektor Ernährung registriert werden müssen.",
    "count": 4,
@@ -1259,18 +1271,6 @@
    "last_seen": "2026-11-01",
    "evidence": [
     "https://www.iaasb.org/news-events/2026-10/iaasb-enews-october-2026"
-   ]
-  },
-  {
-   "theme": "Kriegsausschluss in Cyberversicherungen",
-   "why": "Mit der offiziellen Zuschreibung der Kühlanlagen-Angriffe an die Revolutionsgarden des Iran steht erstmals ein Angriff auf Supermärkte unter staatlichem Vorzeichen. Das kann Ausschlüsse für Krieg und staatliche Angriffe in Cyberpolicen berühren.",
-   "count": 3,
-   "first_seen": "2026-09-30",
-   "last_seen": "2026-11-10",
-   "evidence": [
-    "https://www.france24.com/en/europe/20261109-iran-revolutionary-guards-behind-cyberattacks-on-supermarket-fridges-says-french-fm-barrot",
-    "https://versicherungswirtschaft-heute.de/politik-und-regulierung/2026-10-19/warum-frankreichs-supermarkt-hack-auch-deutsche-ketten-bedroht/",
-    "https://www.asscompact.de/nachrichten/cyberversicherung-stand-der-dinge-bei-den-kriegsklauseln"
    ]
   },
   {
@@ -1432,6 +1432,74 @@
  ],
  "news": [
   {
+   "title": "Update: Digital Fairness Act – Kommission legt Vorschlag mit Bußgeldern bis 6 Prozent vor",
+   "summary": "Die Europäische Kommission hat am 11. November den Digital Fairness Act vorgestellt, zusammen mit einer Richtlinie zur Vereinfachung und einer Überarbeitung der Verordnung über die Zusammenarbeit der Verbraucherschutzbehörden. Der Vorschlag richtet sich gegen manipulative Gestaltung (Dark Patterns), suchtfördernde Funktionen, schwer kündbare Abonnements, Werbung mit Influencern und unfaire Personalisierung. Bei großen grenzüberschreitenden Verstößen sind Bußgelder bis 6 Prozent des weltweiten Jahresumsatzes vorgesehen. Neu gegenüber dem bisherigen Stand: Der Vorschlag liegt jetzt offiziell vor und geht an Parlament und Rat.",
+   "relevance": "Für einen Konzern mit großem Onlinehandel, Lieferservice und Reiseportalen werden Shop-Gestaltung, Knappheitshinweise, Abo-Modelle und personalisierte Preise zum Compliance-Thema. Schon jetzt lohnt eine Bestandsaufnahme, wer diese Funktionen verantwortet und wie Änderungen dokumentiert werden.",
+   "source": "Europäische Kommission",
+   "url": "https://commission.europa.eu/news-and-media/news/making-your-online-experience-fairer-2026-11-11_en",
+   "id": "2026-11-12-digital-fairness-act-vorgestellt",
+   "topic": "Handel & Branche",
+   "impact": "mittel",
+   "published": "2026-11-11",
+   "tags": [
+    "Verbraucherschutz",
+    "Dark Patterns",
+    "Onlinehandel"
+   ],
+   "controls": [],
+   "roles": [
+    "Management",
+    "Datenschutz"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "digital-fairness-act",
+   "priority": 1,
+   "primary": true,
+   "added": "2026-11-12T06:07:01Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum 11. November 2026 und die Themen stehen in der Meldung der Kommission. Die Vereinfachungsrichtlinie und die Überarbeitung der Verordnung über die Zusammenarbeit der Verbraucherschutzbehörden stehen auf der verlinkten Seite der Kommission zum Digital Fairness Act. Die Bußgelder bis 6 Prozent…"
+   }
+  },
+  {
+   "title": "Chrome: Update schließt bereits angegriffene Lücke CVE-2026-125350",
+   "summary": "Google hat Chrome aktualisiert, weil eine Lücke bereits für Angriffe genutzt wird. Es handelt sich um einen Speicherfehler (Use-after-free), der schon beim Aufruf präparierter Webseiten ausgelöst werden kann. Geschlossen ist die Lücke in den Versionen 157.0.8103.50 und 157.0.8103.51, andere Browser auf Chromium-Basis wie Edge dürften in Kürze Updates liefern.",
+   "relevance": "Browser laufen auf Büro-Arbeitsplätzen, Kiosk-Geräten, Kassen-Clients und Terminalservern. Das Schwachstellenmanagement sollte prüfen, ob automatische Updates dort wirklich ankommen und die Browser auch neu gestartet werden.",
+   "source": "heise online",
+   "url": "https://heise.de/news/Chrome-Update-stopft-attackiertes-Sicherheitsleck-11518215.html",
+   "id": "2026-11-12-chrome-angegriffene-luecke",
+   "topic": "IT-Governance & Risiko",
+   "impact": "hoch",
+   "published": "2026-11-10",
+   "tags": [
+    "Zero Day",
+    "Browser",
+    "Patch-Management"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
+    "NIS-2-Richtlinie Art. 21 – Umgang mit und Offenlegung von Schwachstellen"
+   ],
+   "roles": [
+    "IT-Risiko"
+   ],
+   "countries": [
+    "EU",
+    "DE",
+    "AT"
+   ],
+   "dossier": "kritische-schwachstellen-perimeter",
+   "priority": 2,
+   "primary": false,
+   "added": "2026-11-12T06:07:01Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum 10. November 2026, Kennung, Use-after-free-Fehler, Auslösung über präparierte Webseiten, Versionen 157.0.8103.50 und .51 sowie der Hinweis auf Edge stimmen mit heise überein."
+   }
+  },
+  {
    "title": "Microsoft-Patchday: Ausgenutzte Outlook-Lücke gibt Anmelde-Hashes preis, Frist 24. November",
    "summary": "Microsoft hat am 10. November 1.094 Schwachstellen geschlossen, darunter die bereits ausgenutzte Outlook-Lücke CVE-2026-124194. Öffnet jemand eine präparierte Nachrichtendatei, verbindet sich Outlook ohne die übliche Warnung mit einem Server des Angreifers und gibt dabei den NTLMv2-Hash der Windows-Anmeldung preis. Das Vorschaufenster ist laut Microsoft kein Angriffsweg. Behoben wird die Lücke nur über die Office-Sicherheitsupdates, nicht über das kumulative Windows-Update. Zusätzlich bieten Windows-Clients jetzt standardmäßig die Signierung von NTLM-Nachrichten an.",
    "relevance": "In großen Arbeitsplatzlandschaften werden Office- und Windows-Updates oft getrennt verteilt und gemessen. Eine Patch-Kennzahl, die nur Windows erfasst, meldet dann Erfolg, obwohl die Clients verwundbar bleiben. Zu prüfen sind außerdem das Blockieren ausgehender Anmeldeverbindungen ins Internet und die Abhängigkeit von NTLM.",
@@ -1500,6 +1568,41 @@
    "check": {
     "verdict": "abweichung",
     "note": "Der Artikel stammt vom 10. November. Die Abschaltung am 9. November, die Regionen, die 33 angeblichen Lücken und die Aussage, dass keine aktive Ausnutzung festgestellt wurde, stimmen."
+   }
+  },
+  {
+   "title": "Einrichtungshändler Nitori: Bis zu 37,62 Millionen Kundendatensätze betroffen",
+   "summary": "Der japanische Möbel- und Einrichtungshändler Nitori hat am 9. November mitgeteilt, dass möglicherweise bis zu 37,62 Millionen Kundendatensätze abgeflossen sind, darunter E-Mail- und Postadressen von Mitgliedern und Onlinekunden. Der unbefugte Zugriff wurde am 6. November bestätigt, laut externer Untersuchung begann der Einbruch Mitte bis Ende Oktober. Passwörter und Kartendaten sind laut Unternehmen nicht betroffen.",
+   "relevance": "Für Händler mit großen Kundenprogrammen zeigt der Fall, wie viele Datensätze bei einem Einbruch auf einmal betroffen sein können und wie lange Angreifer unbemerkt bleiben. Erkennungszeit und Protokollauswertung sollten als eigene Kennzahlen im Risikobericht stehen.",
+   "source": "The Star",
+   "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/11/09/cyberattack-puts-3762-million-nitori-customer-records-at-risk",
+   "id": "2026-11-12-nitori-37-millionen-datensaetze",
+   "topic": "Handel & Branche",
+   "impact": "mittel",
+   "published": "2026-11-09",
+   "tags": [
+    "Wettbewerber",
+    "Kundendaten",
+    "Erkennungszeit"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 8.16 – Überwachung von Aktivitäten",
+    "DSGVO Art. 33 – Meldung von Verletzungen des Schutzes personenbezogener Daten"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Datenschutz"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": null,
+   "priority": 4,
+   "primary": false,
+   "added": "2026-11-12T06:07:01Z",
+   "check": {
+    "verdict": "ok",
+    "note": "37,62 Millionen Datensätze, Mitteilung am 9. November, Bestätigung am 6. November, Einbruch zwischen Mitte und Ende Oktober, keine Passwörter und Kartendaten: alles belegt."
    }
   },
   {
@@ -2815,6 +2918,112 @@
    "check": {
     "verdict": "ok",
     "note": "Datum 1. November, Zeitraum August 2023 bis September 2026 und die fehlenden Angaben sind belegt."
+   }
+  },
+  {
+   "title": "Casinos Austria: Webshop-Daten über externen Dienstleister abgeflossen",
+   "summary": "Unbekannte haben sich Anfang November über das System eines externen Dienstleisters Zugang zum Webshop von Casinos Austria verschafft. Dabei wurden Berichten zufolge Daten von rund 150.000 Kunden abgegriffen, Bank- und Kreditkartendaten sind laut Unternehmen nicht betroffen. Die Sicherheitslücke ist laut Unternehmen geschlossen.",
+   "relevance": "Der Fall zeigt erneut, dass Webshops über Dienstleister angreifbar sind und der Reputationsschaden beim Händler selbst entsteht. Verträge sollten Meldefristen, Protokollierung und Prüfrechte festlegen, damit die 72-Stunden-Meldung an die Aufsicht auch bei Vorfällen beim Dienstleister einzuhalten ist.",
+   "source": "news.at",
+   "url": "https://www.news.at/wirtschaft/cyberangriff-auf-casinos-kundendaten-weg-bankdaten-nicht",
+   "id": "2026-11-12-casinos-austria-dienstleister",
+   "topic": "Datenschutz & Datenrecht",
+   "impact": "mittel",
+   "published": "2026-11",
+   "tags": [
+    "Österreich",
+    "Webshop",
+    "Dienstleister"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen",
+    "DSGVO Art. 28 – Auftragsverarbeiter",
+    "DSGVO Art. 33 – Meldung von Verletzungen des Schutzes personenbezogener Daten"
+   ],
+   "roles": [
+    "Einkauf & Drittparteien",
+    "Datenschutz"
+   ],
+   "countries": [
+    "AT"
+   ],
+   "dossier": "drittparteien-lieferkette",
+   "priority": 3,
+   "primary": false,
+   "added": "2026-11-12T06:07:01Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Den Zeitraum 2. bis 5. November nennt die Quelle nicht, dort steht nur „Anfang der Woche“ (Artikel aktualisiert am 7. November 2026). Dass die Datenschutzbehörde informiert wurde, steht nicht in der Quelle."
+   }
+  },
+  {
+   "title": "Newsletter-Dienst Arara: Bis zu 77 Millionen E-Mail-Adressen, SEGA bestätigt 2,2 Millionen",
+   "summary": "Beim japanischen E-Mail-Versanddienst Arara könnten nach Angaben des Mutterkonzerns Paycloud rund 77 Millionen E-Mail-Adressen abgeflossen sein; gezählt werden Adressen, nicht Personen. SEGA bestätigte am 9. November, dass 2.196.044 Newsletter-Adressen betroffen sind. Berichten zufolge könnten rund 380 Firmenkunden betroffen sein, diese Zahl ist nicht unabhängig bestätigt.",
+   "relevance": "Newsletter- und Marketing-Werkzeuge werden oft vom Marketing beauftragt und fallen aus dem klassischen Lieferantenmanagement heraus. Sie gehören mit Datenmenge, Auftragsverarbeitungsvertrag und Löschkonzept ins Drittparteien-Inventar.",
+   "source": "Infosecurity Magazine",
+   "url": "https://www.infosecurity-magazine.com/news/email-sega-customers-vendor-breach/",
+   "id": "2026-11-12-arara-newsletter-dienst",
+   "topic": "Datenschutz & Datenrecht",
+   "impact": "mittel",
+   "published": "2026-11",
+   "tags": [
+    "Marketing-Dienstleister",
+    "Newsletter",
+    "Konzentrationsrisiko"
+   ],
+   "controls": [
+    "DSGVO Art. 28 – Auftragsverarbeiter",
+    "ISO/IEC 27001 Anhang A 5.20 – Behandlung der Informationssicherheit in Lieferantenvereinbarungen"
+   ],
+   "roles": [
+    "Einkauf & Drittparteien",
+    "Datenschutz"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "drittparteien-lieferkette",
+   "priority": 5,
+   "primary": false,
+   "added": "2026-11-12T06:07:01Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Monteroza wird in der Quelle nicht erwähnt. Die übrigen Angaben (77 Millionen Adressen, SEGA mit 2,196 Millionen am 9. November, rund 380 Firmenkunden laut Japan Times) sind belegt."
+   }
+  },
+  {
+   "title": "Notion: Einbruch bei Anbieter Fireworks AI legte Chat-Verläufe mit Künstlicher Intelligenz offen",
+   "summary": "Notion meldet, dass ein Einbruch bei seinem Infrastrukturanbieter für Künstliche Intelligenz, Fireworks AI, Chat-Verläufe aus Notion AI in einer kleinen Zahl von Arbeitsbereichen offengelegt hat; betroffen sind laut Notion weniger als ein Prozent der Nutzer. Fireworks AI hat zudem einen weiteren Einbruch gemeldet: Ein Angreifer gelangte über einen externen Cloud-Anbieter in die Entwicklungsumgebung des Unternehmens.",
+   "relevance": "Eingaben in Assistenten mit Künstlicher Intelligenz können vertrauliche Geschäfts- und Personaldaten enthalten und liegen oft bei Unterauftragnehmern, die der Kunde nicht kennt. Die Governance für Künstliche Intelligenz sollte je Anwendung festhalten, wo Modelle betrieben werden, ob Eingaben gespeichert werden und wie Unterauftragnehmer geprüft sind.",
+   "source": "BleepingComputer",
+   "url": "https://www.bleepingcomputer.com/news/security/notion-says-fireworks-breach-exposed-customer-ai-chat-transcripts/",
+   "id": "2026-11-12-fireworks-notion-ki-chats",
+   "topic": "AI-Governance",
+   "impact": "mittel",
+   "published": "2026-11",
+   "tags": [
+    "Unterauftragnehmer",
+    "Chat-Verläufe",
+    "Supply Chain"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 5.23 – Informationssicherheit für die Nutzung von Cloud-Diensten",
+    "ISO/IEC 42001 Anhang A.10 – Beziehungen zu Dritten und Kunden"
+   ],
+   "roles": [
+    "Einkauf & Drittparteien",
+    "IT-Risiko"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "drittparteien-lieferkette",
+   "priority": 6,
+   "primary": false,
+   "added": "2026-11-12T06:07:01Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Laut Quelle gelangte der Angreifer über einen externen Cloud-Anbieter in die Entwicklungsumgebung (development environment), nicht auf Entwicklungsrechner. Datum 11. November 2026 und die übrigen Angaben stimmen."
    }
   },
   {

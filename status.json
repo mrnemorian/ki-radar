@@ -1,11 +1,17 @@
 {
  "last_run": {
-  "start": "2026-11-11T07:00:01+01:00",
-  "end": "2026-11-11T07:05:08+01:00",
+  "start": "2026-11-12T07:00:01+01:00",
+  "end": "2026-11-12T07:07:01+01:00",
   "ok": true,
-  "summary": "3 neue Meldungen: P1 Microsoft-Patchday: Ausgenutzte Outlook-Lücke gibt Anmelde-Hashes preis, Frist 24. November; P2 Update: Digital Fairness Act – Entwurf verbietet zehn manipulative Designs, Vors"
+  "summary": "6 neue Meldungen: P1 Update: Digital Fairness Act – Kommission legt Vorschlag mit Bußgeldern bis 6 Prozent vor; P2 Chrome: Update schließt bereits angegriffene Lücke CVE-2026-125350; P3 Casinos A"
  },
  "history": [
+  {
+   "start": "2026-11-12T07:00:01+01:00",
+   "end": "2026-11-12T07:07:01+01:00",
+   "ok": true,
+   "summary": "6 neue Meldungen: P1 Update: Digital Fairness Act – Kommission legt Vorschlag mit Bußgeldern bis 6 Prozent vor; P2 Chrome: Update schließt bereits angegriffene Lücke CVE-2026-125350; P3 Casinos A"
+  },
   {
    "start": "2026-11-11T07:00:01+01:00",
    "end": "2026-11-11T07:05:08+01:00",
@@ -83,12 +89,6 @@
    "end": "2026-10-30T09:56:20+01:00",
    "ok": true,
    "summary": "7 neue Meldungen: P1 Update: GitLab-Lücke wird ausgenutzt, dazu ein Zero Day in Cisco-Firewalls; P2 Onlinehandel: Ausgenutzte Lücke in Adobe Commerce und Magento, 953 Shops kompromittiert; P3 Update"
-  },
-  {
-   "start": "2026-10-30T07:00:01+01:00",
-   "end": "2026-10-30T07:00:06+01:00",
-   "ok": false,
-   "summary": "Recherche lieferte kein verwertbares Ergebnis"
   }
  ]
 }

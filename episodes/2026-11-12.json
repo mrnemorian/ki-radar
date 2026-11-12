@@ -1,0 +1,191 @@
+{
+ "format": "tag",
+ "chapters": [
+  {
+   "title": "Begrüßung",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Guten Morgen, liebe IT-GRC-Kolleginnen und -Kollegen, willkommen beim IT-GRC Radar am Donnerstag, dem zwölften November 2026."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Morgen! Heute viel Lieferkette, ein bisschen Browser und endlich ein Gesetzesvorschlag, auf den wir wochenlang gewartet haben."
+    }
+   ]
+  },
+  {
+   "title": "Digital Fairness Act vorgestellt",
+   "news_id": "2026-11-12-digital-fairness-act-vorgestellt",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Da gibt es Neues zum [en]Digital Fairness Act[/en]: Die Europäische Kommission hat ihn am Mittwoch tatsächlich vorgestellt, zusammen mit einer Reform der Zusammenarbeit der Verbraucherschutzbehörden."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ehrlich gesagt hatte ich nach den vielen Terminverschiebungen schon nicht mehr dran geglaubt. Inhaltlich geht es um [en]Dark Patterns[/en], suchtfördernde Funktionen, einfache Kündigung von Abos, Werbung mit Influencern und unfaire Personalisierung."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und wie teuer kann es werden?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Bei großen grenzüberschreitenden Fällen bis zu 6 Prozent des weltweiten Umsatzes. Noch ist es nur ein Vorschlag, jetzt verhandeln Parlament und Rat. Trotzdem sollte jeder, der im Onlineshop Knappheitshinweise oder Preislogik baut, schon heute wissen, wer dafür Owner ist."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Die ewige Frage."
+    }
+   ]
+  },
+  {
+   "title": "Chrome-Lücke wird angegriffen",
+   "news_id": "2026-11-12-chrome-angegriffene-luecke",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Dann das Pflichtprogramm: Google hat Chrome aktualisiert, weil eine Lücke bereits angegriffen wird."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ein Speicherfehler, der schon beim Aufruf einer präparierten Webseite ausgelöst werden kann, Kennung CVE-2026-125350. Geschlossen ist er in Version 157, Edge und andere Browser auf Chromium-Basis dürften bald nachziehen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Browser aktualisieren sich doch von selbst, oder?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Theoretisch. Praktisch lohnt ein Blick auf Kiosk-Geräte, Kassen-Clients und Terminalserver. Da läuft gern ein Browser, den seit Wochen niemand neu gestartet hat."
+    }
+   ]
+  },
+  {
+   "title": "Casinos Austria",
+   "news_id": "2026-11-12-casinos-austria-dienstleister",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Nach Österreich: Bei Casinos Austria sind Daten aus dem Webshop abgeflossen, und zwar über das System eines externen Dienstleisters."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Der Angriff war Anfang November, Berichten zufolge rund 150.000 Kunden, Bankdaten laut Unternehmen nicht betroffen. Die Lücke ist laut Unternehmen inzwischen geschlossen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Also wieder der Klassiker: eigener Shop, fremde Systeme."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Genau. Die Kunden sehen unseren Namen, nicht den des Dienstleisters. Meldewege, Protokollierung und Prüfrechte gehören in den Vertrag, bevor etwas passiert."
+    }
+   ]
+  },
+  {
+   "title": "Nitori",
+   "news_id": "2026-11-12-nitori-37-millionen-datensaetze",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Der japanische Einrichtungshändler Nitori meldet möglicherweise 37,62 Millionen betroffene Kundendatensätze."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Bestätigt am sechsten November, der Einbruch geschah aber laut externer Untersuchung schon zwischen Mitte und Ende Oktober. Betroffen sind E-Mail- und Postadressen, Passwörter und Kartendaten laut Unternehmen nicht."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Bis zu drei Wochen unbemerkt, das ist lang."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Das ist die eigentliche Lehre. In der nächsten Prüfung zählt nicht nur, ob wir Angriffe abwehren, sondern wie schnell wir sie in den Protokollen sehen. Und Postadresse plus E-Mail reicht für sehr überzeugendes [en]Phishing[/en]."
+    }
+   ]
+  },
+  {
+   "title": "Newsletter-Dienst Arara",
+   "news_id": "2026-11-12-arara-newsletter-dienst",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Passend dazu: Beim japanischen Newsletter-Versanddienst Arara könnten bis zu 77 Millionen E-Mail-Adressen abgeflossen sein, SEGA bestätigt allein 2,2 Millionen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Gezählt werden Adressen, nicht Menschen, und die Zahl von bis zu 380 betroffenen Firmenkunden ist nicht bestätigt. Das Muster ist aber eindeutig."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Moment, ein einziger Versanddienst reißt also Hunderte Marken mit?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Genau das. Newsletter-Werkzeuge beauftragt oft das Marketing, am Lieferantenmanagement vorbei. Wer dafür nur eine Excel-Liste mit Ansprechpartnern hat, ergänzt heute mal die Spalte Datenmenge."
+    }
+   ]
+  },
+  {
+   "title": "Fireworks AI und Notion",
+   "news_id": "2026-11-12-fireworks-notion-ki-chats",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Noch ein Dienstleister-Fall, diesmal mit Künstlicher Intelligenz: Notion meldet, dass ein Einbruch beim Infrastrukturanbieter Fireworks AI Chat-Verläufe in einigen Arbeitsbereichen offengelegt hat."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Laut Notion weniger als ein Prozent der Nutzer. Fireworks meldet außerdem einen weiteren Einbruch, der über einen kompromittierten Cloud-Anbieter lief."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Also der Dienstleister des Dienstleisters."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Willkommen auf der vierten Ebene der [en]Supply Chain[/en]. Für jede Anwendung mit Künstlicher Intelligenz sollten wir wissen, bei welchem Anbieter das Modell läuft und ob Eingaben gespeichert werden. Das gehört ins Verzeichnis, nicht ins Bauchgefühl."
+    }
+   ]
+  },
+  {
+   "title": "Auf dem Radar",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Und was steht heute auf dem Radar?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Der Kriegsausschluss in Cyberversicherungen. Seit Frankreich die Angriffe auf Kühlanlagen den Revolutionsgarden des Iran zuschreibt, diskutieren Makler, ob Versicherer sich auf solche Klauseln berufen können. Manche Kunden haben mehrere unterschiedliche Formulierungen in einem einzigen Versicherungsprogramm."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Also die Policen lesen, bevor ein Schaden kommt."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Am besten zusammen mit der Rechtsabteilung und einem sehr starken Kaffee."
+    }
+   ]
+  },
+  {
+   "title": "Abschied",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Das war das IT-GRC Radar für heute. Alle Quellen findet ihr wie immer auf der Webseite."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Bis morgen, und schaut kurz nach euren Browsern."
+    }
+   ]
+  }
+ ]
+}
