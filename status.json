@@ -1,11 +1,17 @@
 {
  "last_run": {
-  "start": "2026-11-12T07:00:01+01:00",
-  "end": "2026-11-12T07:07:01+01:00",
+  "start": "2026-11-13T07:00:01+01:00",
+  "end": "2026-11-13T07:07:23+01:00",
   "ok": true,
-  "summary": "6 neue Meldungen: P1 Update: Digital Fairness Act – Kommission legt Vorschlag mit Bußgeldern bis 6 Prozent vor; P2 Chrome: Update schließt bereits angegriffene Lücke CVE-2026-125350; P3 Casinos A"
+  "summary": "4 neue Meldungen: P1 Webhoster Mittwald: Angriff über eigene Schnittstelle für Agenten, erneut im Krisenmodus; P2 Kassengesetz: Bundestag berät digitale Belege, Kassenpflicht und Nachschau ab 2028;"
  },
  "history": [
+  {
+   "start": "2026-11-13T07:00:01+01:00",
+   "end": "2026-11-13T07:07:23+01:00",
+   "ok": true,
+   "summary": "4 neue Meldungen: P1 Webhoster Mittwald: Angriff über eigene Schnittstelle für Agenten, erneut im Krisenmodus; P2 Kassengesetz: Bundestag berät digitale Belege, Kassenpflicht und Nachschau ab 2028;"
+  },
   {
    "start": "2026-11-12T07:00:01+01:00",
    "end": "2026-11-12T07:07:01+01:00",
@@ -83,12 +89,6 @@
    "end": "2026-10-31T07:07:21+01:00",
    "ok": true,
    "summary": "7 neue Meldungen: P1 Oracle E-Business Suite: Angriffsversuche auf kritische Lücke ohne Anmeldung; P2 Linux: Kritische Lücke im Netzwerkstack seit 2015, Updates noch nicht überall verfügbar; P3 Ma"
-  },
-  {
-   "start": "2026-10-30T09:48:13+01:00",
-   "end": "2026-10-30T09:56:20+01:00",
-   "ok": true,
-   "summary": "7 neue Meldungen: P1 Update: GitLab-Lücke wird ausgenutzt, dazu ein Zero Day in Cisco-Firewalls; P2 Onlinehandel: Ausgenutzte Lücke in Adobe Commerce und Magento, 953 Shops kompromittiert; P3 Update"
   }
  ]
 }

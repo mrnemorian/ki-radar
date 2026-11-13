@@ -1,0 +1,283 @@
+{
+ "format": "tiefgang",
+ "chapters": [
+  {
+   "title": "Begrüßung",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Guten Morgen, liebe IT-GRC-Kolleginnen und -Kollegen, willkommen beim IT-GRC Radar am Freitag, dem dreizehnten November 2026. Freitag heißt Tiefgang, und heute nehmen wir uns in Ruhe noch einmal die Kühlanlagen in den Filialen vor."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Freitag, der Dreizehnte, und wir reden über Kühlregale, die heizen. Passender kann man ein Datum kaum füllen. Aber vorher gibt es ein paar Meldungen, die es in sich haben."
+    }
+   ]
+  },
+  {
+   "title": "Mittwald und die Agenten-Schnittstelle",
+   "news_id": "2026-11-13-mittwald-mcp-server-angriff",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Fangen wir an mit dem Webhoster Mittwald aus Nordrhein-Westfalen. Der steckt laut heise seit gestern wieder im Krisenmodus. Das Einfallstor war ausgerechnet der eigene Server für das [en]Model Context Protocol[/en], also die Schnittstelle, über die Kunden ihre Assistenten mit Künstlicher Intelligenz an die Plattform anbinden."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Das ist der Teil, bei dem ich hellhörig werde. Da baut jemand eine bequeme, moderne Schnittstelle für Agenten, und genau die wird zur Hintertür. Das ist kein Forschungsszenario mehr, das ist ein realer Betriebsausfall."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Moment, war der Angriff nicht schon letzte Woche?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Der erste, ja. Ab dem fünften November waren Zugänge gesperrt und wurden bis zum siebten schrittweise wieder freigegeben. In der Nacht auf den zwölften November waren dann Fernzugang, Verwaltungsoberfläche und Kundencenter erneut nicht erreichbar, die Firmenwebseite auch. Das Unternehmen spricht von offensichtlich durch Künstliche Intelligenz unterstützten Profis."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Was heißt das für einen Konzern, der dort gar nichts hostet?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Zwei Dinge. Erstens gehören solche Agenten-Schnittstellen ins Inventar wie jeder andere privilegierte Zugang, mit Owner, Berechtigungen, Laufzeit der [en]Session Tokens[/en] und Protokollierung. Zweitens sollte die Bewertung von Dienstleistern fragen, ob ein Anbieter solche Schnittstellen auf unsere Daten anbietet."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Also noch eine Spalte in der Excel-Liste."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ehrlich gesagt eine der wichtigeren. Und wenn sie leer bleibt, weiß man wenigstens, wo man nachfragen muss."
+    }
+   ]
+  },
+  {
+   "title": "Kassengesetz im Bundestag",
+   "news_id": "2026-11-13-kassengesetz-erste-lesung",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Zweites Thema, auf den ersten Blick ganz analog: die Kasse. Der Bundestag hat am sechsten November in erster Lesung den Regierungsentwurf zur Fortentwicklung von Kassenaufzeichnungen beraten."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Für den Lebensmittelhandel ist das kein Randthema. Ab 2028 soll die Pflicht entfallen, einen Papierbeleg auszuhändigen. Und ab 2028 soll eine elektronische Kasse mit zertifizierter Sicherheitseinrichtung Pflicht werden, sobald der Gesamtumsatz bei 100.000 Euro oder mehr liegt."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Große Händler haben doch längst elektronische Kassen. Wo ist da die Neuigkeit?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Die Kassenpflicht selbst ist für sie eher Formsache. Spannend ist der Rest. Die unangekündigte Kassen-Nachschau soll künftig auch das örtliche Finanzamt am Standort durchführen können, also potenziell in jeder Filiale. Und wer Manipulationssoftware gewerblich vertreibt oder einsetzt, dem drohen bis zu drei Jahre Freiheitsstrafe."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und der digitale Beleg?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Der ist eine Frage für Informationstechnik und Datenschutz zugleich. Wenn der Bon nicht mehr auf Papier kommt, muss er irgendwo bereitliegen, und dann reden wir über Verfügbarkeit, Aufbewahrung, Zugriffsschutz und darüber, welche Kundendaten dabei anfallen. Beschlossen ist noch nichts, aber 2028 ist in Projektjahren übermorgen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und in Audit-Jahren gefühlt vorgestern."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Genau. Ich würde das jetzt schon zusammen mit der E-Rechnung ab dem ersten Januar 2027 in die Planung der steuerrelevanten Kontrollen aufnehmen."
+    }
+   ]
+  },
+  {
+   "title": "Vier ausgenutzte Lücken",
+   "news_id": "2026-11-13-kev-aspera-freeswitch-gpustack-openssh",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Kurz noch zu Schwachstellen. Die amerikanische Cybersicherheitsbehörde hat am neunten November vier aktiv ausgenutzte Lücken in ihren Katalog aufgenommen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Betroffen sind IBM Aspera Faspex für den Austausch großer Dateien, die Telefonie-Software FreeSWITCH, die Plattform GPUStack für Modelle der Künstlichen Intelligenz und OpenSSH auf schlanken Linux-Systemen wie Alpine Linux. Die Behördenfrist lief gestern ab, Updates gibt es für alle vier."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Dateiaustausch, Telefonie, Plattform für Künstliche Intelligenz. Das klingt nach Systemen, die gern neben dem offiziellen Patch-Kalender laufen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Genau das ist der Punkt. So etwas betreibt oft ein Fachbereich oder ein Dienstleister. Und wer Container auf Basis von Alpine Linux nutzt, sollte nachsehen, ob dort ein Fernzugangsdienst läuft, den niemand auf dem Zettel hat. Übrigens endet heute auch die Behördenfrist für die Ivanti-Lücke."
+    }
+   ]
+  },
+  {
+   "title": "Tiefgang: Betriebstechnik in Filialen und Logistik",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Dann zum Tiefgang. Wir nehmen uns das Dossier Betriebstechnik in Filialen und Logistik vor. Zur Erinnerung: Am zwölften Oktober wurden in Frankreich die Kühlanlagen von rund 700 Supermärkten manipuliert."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und es ging weiter. Nach einer Aufklärungswelle im Oktober gab es am zweiten und dritten November weitere Angriffe in neun Ländern, und viele Steuerungen waren direkt aus dem Internet erreichbar. Am neunten November hat Frankreich dann offiziell die Islamischen Revolutionsgarden des Iran als Urheber benannt, will Sanktionen der Europäischen Union erwirken und ermittelt strafrechtlich."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Das ist ein ziemlicher Sprung. Von der Kühltheke, die zu warm wird, zur staatlichen Zuschreibung."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und das verschiebt die Einordnung. Bisher hätte man sagen können, das ist ein Thema für Haustechnik und Wartungsfirma. Jetzt ist es eine Frage der Versorgungssicherheit in einem Sektor, der zur kritischen Infrastruktur zählt."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und die europäische Ebene? Die Agentur der Europäischen Union für Cybersicherheit hat diese Woche ja ihren Bericht vorgelegt."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Am zehnten November, ja. Ihr Direktor hat die Vorfälle an Kühlsystemen ausdrücklich als Beleg für operative Schwächen genannt. Der Bericht sieht den Reifegrad im Schnitt bei 71,53 von 100 Punkten und mahnt vor allem bessere Krisenkoordination an."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Gut, dann spiele ich mal die Gegenseite. Die einfache Antwort wäre doch: Steuerungen vom Internet trennen, fertig."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Das wäre auch meine erste Antwort. Eine Kühlsteuerung, die von überall erreichbar ist, ist schlicht nicht vertretbar."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Aber ganz so einfach ist es nicht. Hersteller und Wartungsfirmen brauchen Fernzugriff, Alarme müssen irgendwo ankommen, und wenn bei Hunderten Filialen jedes Mal ein Techniker hinfahren muss, wird es teuer und langsam."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Stimmt, und deshalb heißt Trennen nicht Abschalten. Es heißt: kein direkter Zugang aus dem Internet, sondern ein kontrollierter Fernzugang über einen zentralen Weg, mit Mehr-Faktor-Anmeldung, Protokollierung und zeitlich begrenzten Freischaltungen für den Dienstleister."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Dann haben wir aber die nächste Baustelle. Wer ist eigentlich Owner? Haustechnik, Informationstechnik, Filialbetrieb oder der Dienstleister?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Die ewige Frage, und ehrlich gesagt der Kern des Problems. Solche Anlagen stehen oft weder in der Inventarliste der Informationstechnik noch im Risikoregister. Solange niemand zuständig ist, schließt auch niemand die Lücke."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Ein Gegenargument hätte ich noch. Bisher ging es vor allem um verdorbene Ware, nicht um einen Totalausfall. Rechtfertigt das wirklich ein Großprojekt?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Man sollte es nicht dramatisieren, da hast du recht. Aber Warenverlust in Hunderten Filialen gleichzeitig ist eben ein Versorgungsthema. Und wenn ein Staat als Urheber benannt ist, stellt sich auch die Frage, ob Cyberpolicen wegen Kriegsausschlüssen überhaupt greifen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Also ganz konkret: Was sollten Governance, Risiko und Compliance in einem großen Handelskonzern jetzt anstoßen?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Erstens ein vollständiges Inventar aller Kühl- und Gebäudesteuerungen in Filialen und Lagern, mit Hersteller, Softwarestand und Erreichbarkeit. Zweitens von außen prüfen lassen, was davon tatsächlich aus dem Internet erreichbar ist. Drittens die Wartungsverträge durchgehen: Welche Fernzugriffe sind vereinbart, und wer verwaltet die Zugangsdaten?"
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und viertens?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Viertens eine klare Zuständigkeit festlegen und das Szenario ins Notfallmanagement aufnehmen. Was passiert, wenn in fünfzig Filialen gleichzeitig der Temperaturalarm losgeht? Wer entscheidet über die Ware, wer meldet an welche Behörde? Das ist genau die Krisenkoordination, die auch der europäische Bericht anmahnt."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Klingt nach einem Workshop, für den man nicht genug Stühle hat."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Lieber zu wenige Stühle als zu wenige Beteiligte."
+    }
+   ]
+  },
+  {
+   "title": "Zahl der Woche",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Zahl der Woche. Was hast du mitgebracht?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "54,76. So viele von 100 Punkten erreichen die nationalen Reaktionsteams für Sicherheitsvorfälle im Schnitt im Index der Agentur der Europäischen Union für Cybersicherheit. Beim Lieferkettenmanagement liegt der Wert dagegen bei 89,91."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Auf dem Papier ist die Lieferkette also im Griff, und wenn es brennt, hakt es."
+    },
+    {
+     "speaker": "Florian",
+     "text": "So kann man es lesen. Richtlinien schreiben können wir offenbar besser als gemeinsam reagieren. Kommt einem aus dem eigenen Alltag nicht ganz unbekannt vor."
+    }
+   ]
+  },
+  {
+   "title": "Owner-Moment der Woche",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Und der Owner-Moment der Woche?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Für mich ist das Mittwald, ganz ohne Häme. Eine Schnittstelle für Assistenten mit Künstlicher Intelligenz ist schnell gebaut und für Kunden attraktiv. Aber sie ist eben auch ein neuer privilegierter Weg in die Plattform und braucht dieselbe Sorgfalt wie jeder Administratorzugang."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Also: Wer eine neue Tür einbaut, muss auch wissen, wer sie bewacht."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Genau. Die Lehre für uns: Neue Agenten-Funktionen gehören vor dem Start in den Freigabeprozess, mit Owner, Berechtigungskonzept und Protokollierung, und nicht erst in die Nachbetrachtung."
+    }
+   ]
+  },
+  {
+   "title": "Auf dem Radar",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Auf dem Radar."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Die Normen zum [en]Cyber Resilience Act[/en]. Die ersten beiden Grundlagenteile der Normenreihe EN 40000, also Begriffe und Grundsätze der Cyberresilienz, sollten Anfang November als Europäische Normen ratifiziert werden. Für einen Konzern, der vernetzte Geräte und Software einkauft, wird das der Maßstab, an dem man Lieferanten künftig misst."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Also schon mal in die Einkaufsbedingungen schielen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Schielen reicht noch. Aber nicht mehr lange."
+    }
+   ]
+  },
+  {
+   "title": "Abschied",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Das war unser Freitag. Alle Quellen findet ihr wie immer auf der Webseite. Kommt gut ins Wochenende."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und schaut vorher noch kurz nach, wo eure Kühltheken eigentlich hängen. Im Netz, meine ich. Bis Montag."
+    }
+   ]
+  }
+ ]
+}

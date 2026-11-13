@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12T06:07:01Z",
+ "updated": "2026-11-13T06:07:23Z",
  "topics": [
   "IT-Governance & Risiko",
   "Cyber- & IT-Regulierung",
@@ -11,6 +11,17 @@
   "Weitere Themen"
  ],
  "briefings": [
+  {
+   "date": "2026-11-13",
+   "headline": "Agenten-Schnittstelle als Einfallstor bei Mittwald, Kassengesetz im Bundestag und Lücken bei der europäischen Krisenkoordination",
+   "points": [
+    "Webhoster Mittwald: Angriff über den eigenen Server für Agenten-Schnittstellen, seit 12. November erneut zentrale Zugänge offline",
+    "Kassengesetz in erster Lesung: digitale Belege, Kassenpflicht und erweiterte Kassen-Nachschau ab 2028 geplant",
+    "Vier neu gelistete, aktiv ausgenutzte Lücken in IBM Aspera Faspex, FreeSWITCH, GPUStack und OpenSSH",
+    "Agentur der Europäischen Union für Cybersicherheit: Reifegrad 71,53 von 100, Schwächen bei Krisenkoordination und nationalen Reaktionsteams"
+   ],
+   "count": 4
+  },
   {
    "date": "2026-11-12",
    "headline": "Die Kommission legt den Digital Fairness Act vor, Chrome schließt eine angegriffene Lücke, und mehrere Datenabflüsse laufen erneut über Dienstleister.",
@@ -354,17 +365,6 @@
     "Agenten mit Künstlicher Intelligenz: Anthropic trennt Testmodelle vom Internet. Die ASOS-Angreifer melden auch einen Einbruch bei Air France-KLM."
    ],
    "count": 7
-  },
-  {
-   "date": "2026-10-12",
-   "headline": "Stille Sicherheitskorrekturen und uralte Lücken fordern das Schwachstellenmanagement, der Entwurf zur Datenschutzreform wird konkret.",
-   "points": [
-    "AnyDesk unter Linux: Angriffscode veröffentlicht, der vor jeder Anmeldung volle Rechte verschafft – behoben ohne Sicherheitshinweis",
-    "Staatliche chinesische Angreifer nutzen Schwachstellen von 2015 bis 2023, die Cybersicherheitsbehörde der Vereinigten Staaten setzte eine Patch-Frist bis 11. Oktober",
-    "Update Digital Omnibus: Der Entwurf des Rats sieht Meldungen von Datenschutzverletzungen nur noch bei hohem Risiko und innerhalb von 96 Stunden vor",
-    "Frist der Woche: Am 13. Oktober erscheinen die letzten Sicherheitsupdates für Windows Server 2012 und 2012 R2"
-   ],
-   "count": 3
   }
  ],
  "dossiers": [
@@ -420,6 +420,31 @@
    "updated": "2026-11-12"
   },
   {
+   "slug": "steuerliche-digitalpflichten",
+   "created": "2026-11-13",
+   "ring_history": [
+    {
+     "date": "2026-11-13",
+     "ring": "jetzt handeln"
+    }
+   ],
+   "title": "E-Rechnung und Kassenpflichten",
+   "sector": "Handel & Branche",
+   "ring": "jetzt handeln",
+   "status": "Ab dem 1. Januar 2027 müssen Unternehmen mit mehr als 800.000 Euro Vorjahresumsatz elektronische Rechnungen ausstellen, die Nichtbeanstandung nach früheren Schreiben endet am 31. Dezember 2026. Der Bundestag hat am 6. November 2026 in erster Lesung den Entwurf zu Kassenaufzeichnungen beraten, der ab 2028 die Papierbelegpflicht abschaffen, eine Kassenpflicht einführen und die Kassen-Nachschau…",
+   "next_step": "E-Rechnungs-Fähigkeit bis Jahresende absichern und die geplanten Kassenpflichten, insbesondere die Bereitstellung digitaler Belege, frühzeitig in die Planung steuerrelevanter Kontrollen und Datenschutzkonzepte aufnehmen.",
+   "open_questions": [
+    "Wie verändert sich der Gesetzentwurf im Finanzausschuss?",
+    "Welche Anforderungen an Verfügbarkeit und Aufbewahrung gelten für digital bereitgestellte Belege?"
+   ],
+   "controls": [
+    "Abgabenordnung § 146a – Ordnungsvorschrift für elektronische Aufzeichnungssysteme",
+    "GoBD – Unveränderbarkeit und Aufbewahrung",
+    "IT-Kontrollen der Abschlussprüfung – Änderungsmanagement"
+   ],
+   "updated": "2026-11-13"
+  },
+  {
    "slug": "identitaeten-zugangsdaten",
    "created": "2026-10-02",
    "ring_history": [
@@ -456,16 +481,16 @@
    "title": "Kritische Schwachstellen in Randsystemen und Kernanwendungen",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Neu ist eine bereits angegriffene Chrome-Lücke (CVE-2026-125350), die beim Aufruf präparierter Webseiten auslöst und mit Version 157 geschlossen ist. Daneben laufen die Behördenfristen für Ivanti Connect Secure am 13. November, Apple am 18. November, SonicWall am 20. November und die Outlook-Lücke am 24. November.",
-   "next_step": "Browser-Updates auf allen Geräteklassen nachweisen, einschließlich Kiosk-, Kassen- und Terminalserver-Umgebungen, und die offenen Behördenfristen nachverfolgen.",
+   "status": "Seit dem 9. November stehen aktiv ausgenutzte Lücken in IBM Aspera Faspex, FreeSWITCH, GPUStack und OpenSSH auf schlanken Linux-Systemen im Katalog der amerikanischen Cybersicherheitsbehörde. Die Behördenfrist für Ivanti Connect Secure endet am 13. November, es folgen Apple am 18., SonicWall am 20. und die Outlook-Lücke am 24. November.",
+   "next_step": "Systeme außerhalb des zentralen Patch-Managements, etwa Dateiaustausch, Telefonie und Plattformen für Künstliche Intelligenz in Fachbereichen, gezielt abfragen und die laufenden Behördenfristen als interne Zielmarken nutzen.",
    "open_questions": [
-    "Wann ziehen Edge und andere Browser auf Chromium-Basis nach?"
+    "Sind Container-Images mit Alpine Linux und laufendem Fernzugangsdienst im Bestand bekannt?"
    ],
    "controls": [
     "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
-    "IT-Kontrollen der Abschlussprüfung – Änderungsmanagement"
+    "NIS-2-Richtlinie Art. 21 – Behandlung und Offenlegung von Schwachstellen"
    ],
-   "updated": "2026-11-12"
+   "updated": "2026-11-13"
   },
   {
    "slug": "lebenszyklus-altsysteme",
@@ -503,18 +528,47 @@
    "title": "NIS-2-Umsetzung",
    "sector": "Cyber- & IT-Regulierung",
    "ring": "jetzt handeln",
-   "status": "In Deutschland gilt das Umsetzungsgesetz seit 6. Dezember 2025, in Österreich das Netz- und Informationssystemsicherheitsgesetz 2026 seit 1. Oktober 2026 mit Registrierung bis Jahresende. In Italien müssen die 2025 gelisteten Einrichtungen bis 31. Oktober 2026 funktionierende, belegbare Maßnahmen vorweisen, danach werden Kontrollen erwartet; Rumänien hat am 29. September 2026 das erste Bußgeld…",
-   "next_step": "Für die italienischen Einheiten die Nachweise wie Wiederherstellungstests, Multi-Faktor-Authentifizierung, Inventar mit Verantwortlichen und Leitungsbeschluss abrufbar machen; in allen Ländern von REWE International die Meldewege und Fristen mit Zeitstempeln üben.",
+   "status": "In Deutschland gilt das Umsetzungsgesetz seit 6. Dezember 2025, in Österreich das Netz- und Informationssystemsicherheitsgesetz 2026 seit 1. Oktober 2026 mit Registrierung bis Jahresende, in Italien werden nach dem 31. Oktober 2026 Kontrollen erwartet. Der Bericht der Agentur der Europäischen Union für Cybersicherheit vom 10. November sieht den durchschnittlichen Reifegrad bei 71,53 von 100…",
+   "next_step": "Registrierung in Österreich abschließen und Notfall- sowie Meldeprozesse an den Prioritäten des europäischen Berichts spiegeln, insbesondere Krisenkoordination über Ländergrenzen hinweg.",
    "open_questions": [
-    "Wann und wie beginnt die italienische Cybersicherheitsagentur mit formellen Kontrollen?",
-    "Wenden die Aufsichten in Mittel- und Südosteuropa Meldefristen gegenüber Unternehmen ebenso streng an wie gegenüber Behörden?"
+    "Wie stark richten die nationalen Aufsichten ihre ersten Prüfungen an den Prioritäten der Agentur aus?",
+    "Wie werden Meldungen an mehrere nationale Stellen bei einem länderübergreifenden Vorfall koordiniert?"
    ],
    "controls": [
-    "NIS-2-Richtlinie Art. 20 – Governance",
-    "NIS-2-Richtlinie Art. 21 – Risikomanagementmaßnahmen",
-    "NIS-2-Richtlinie Art. 23 – Berichtspflichten"
+    "NIS-2-Richtlinie Art. 21 – Risikomanagementmaßnahmen im Bereich der Cybersicherheit",
+    "NIS-2-Richtlinie Art. 23 – Berichtspflichten",
+    "NIS-2-Richtlinie Art. 20 – Governance und Leitungsverantwortung"
    ],
-   "updated": "2026-10-25"
+   "updated": "2026-11-13"
+  },
+  {
+   "slug": "agentische-ki-sicherheit",
+   "created": "2026-09-30",
+   "ring_history": [
+    {
+     "date": "2026-09-30",
+     "ring": "vorbereiten"
+    },
+    {
+     "date": "2026-11-13",
+     "ring": "jetzt handeln"
+    }
+   ],
+   "title": "Sicherheit agentischer Künstlicher Intelligenz",
+   "sector": "AI-Governance",
+   "ring": "jetzt handeln",
+   "status": "Beim Webhoster Mittwald war der eigene Server für das Model Context Protocol, über den Kunden Assistenten anbinden, das Einfallstor; seit dem 12. November sind erneut zentrale Verwaltungszugänge offline. Zuvor hatten präparierte Dateien für Coding-Agenten und der umgangene Lockdown Mode von ChatGPT gezeigt, dass die Schnittstellen zwischen Assistenten und Systemen selbst zum Angriffsziel werden.",
+   "next_step": "Alle eigenen und von Dienstleistern betriebenen Schnittstellen für Agenten inventarisieren, mit Owner, Berechtigungen, Laufzeit der Sitzungsschlüssel und Protokollierung, und neue Agenten-Funktionen vor dem Start in den Freigabeprozess aufnehmen.",
+   "open_questions": [
+    "Welche Dienstleister bieten bereits Agenten-Schnittstellen auf Systeme mit Kunden- oder Beschäftigtendaten an?",
+    "Wie werden Zugriffe von Agenten getrennt von menschlichen Zugriffen protokolliert und überwacht?"
+   ],
+   "controls": [
+    "ISO/IEC 42001 – Managementsystem für Künstliche Intelligenz",
+    "ISO/IEC 27001 Anhang A 8.5 – Sichere Authentisierung",
+    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette"
+   ],
+   "updated": "2026-11-13"
   },
   {
    "slug": "ai-act",
@@ -667,30 +721,6 @@
     "IT-Kontrollen der Abschlussprüfung – Änderungsmanagement"
    ],
    "updated": "2026-10-23"
-  },
-  {
-   "slug": "agentische-ki-sicherheit",
-   "created": "2026-09-30",
-   "ring_history": [
-    {
-     "date": "2026-09-30",
-     "ring": "vorbereiten"
-    }
-   ],
-   "title": "Sicherheit agentischer Künstlicher Intelligenz",
-   "sector": "AI-Governance",
-   "ring": "vorbereiten",
-   "status": "Nach präparierten Dateien, die Coding-Agenten kapern, und fehlgeleiteten Agenten bei OpenAI zeigt Check Point, dass sich auch der Lockdown Mode von ChatGPT über präparierte Assistenten und Prompts umgehen ließ; die Lücke ist geschlossen. Die Kontrolle über Datenflüsse in Assistenten liegt damit weiter stark bei den Anwendern.",
-   "next_step": "Regeln für die Nutzung fremder Assistenten und für zulässige Daten in Diensten Künstlicher Intelligenz festlegen und Sicherheitseinstellungen der Anbieter als Kontrollen mit Restrisiko bewerten.",
-   "open_questions": [
-    "Welche fremden Assistenten und Erweiterungen sind im Konzern tatsächlich im Einsatz?",
-    "Wie werden Vorfälle mit Diensten Künstlicher Intelligenz erkannt und gemeldet?"
-   ],
-   "controls": [
-    "ISO/IEC 42001 – Managementsystem für Künstliche Intelligenz",
-    "ISO/IEC 27001 Anhang A 5.10 – Zulässiger Gebrauch von Informationen und anderen Werten"
-   ],
-   "updated": "2026-11-09"
   },
   {
    "slug": "dsgvo-reform-digital-omnibus",
@@ -1144,6 +1174,20 @@
    ]
   },
   {
+   "theme": "Schwachstellensuche durch Künstliche Intelligenz",
+   "why": "Das Bundesamt für Sicherheit in der Informationstechnik zählt 17.539 neue Schwachstellen im zweiten Quartal 2026 nach 10.803 im ersten und vermutet als mögliche Ursache die Schwachstellensuche mit Künstlicher Intelligenz. Patch-Zyklen und Ressourcen für das Schwachstellenmanagement geraten damit weiter unter Druck.",
+   "count": 8,
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-11-13",
+   "evidence": [
+    "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Cyber-Sicherheitslage/Lageberichte/Monatsbericht_Lage-Cybernation/Lage_Angriffsflaeche/Lage-Angriffsflaeche.html",
+    "https://cyberinsider.com/microsoft-november-2026-patch-tuesday-outlook-zero-day/",
+    "https://thehackernews.com/2026/11/openai-ai-pipeline-generates-948-linux.html",
+    "https://newcivilengineer.com/latest/highly-likely-ai-will-be-used-in-ransomware-attack-on-uk-critical-infrastructure-03-11-2026",
+    "https://thehackernews.com/2026/11/red-hat-patches-98-rated-linux-tcp-rce.html"
+   ]
+  },
+  {
    "theme": "Neue Prüfungsstandards für Prüfungsnachweise",
    "why": "Die Konsultation zu den überarbeiteten Standards ISA 330, ISA 500 und ISA 520 läuft bis 15. Dezember 2026 und soll den stärkeren Technikeinsatz in Unternehmen berücksichtigen. Das verändert, welche Nachweise Abschlussprüfer zu allgemeinen IT-Kontrollen verlangen.",
    "count": 8,
@@ -1158,20 +1202,6 @@
    ]
   },
   {
-   "theme": "Schwachstellensuche durch Künstliche Intelligenz",
-   "why": "Die ausgenutzte Outlook-Lücke aus dem November-Patchday wurde von Forschern mithilfe des Modells Claude gefunden. Werden mehr Lücken schneller gefunden, steigen Patch-Last und Fristendruck, und Patch-Prozesse und Ressourcenplanung müssen sich darauf einstellen.",
-   "count": 7,
-   "first_seen": "2026-10-20",
-   "last_seen": "2026-11-11",
-   "evidence": [
-    "https://cyberinsider.com/microsoft-november-2026-patch-tuesday-outlook-zero-day/",
-    "https://thehackernews.com/2026/11/openai-ai-pipeline-generates-948-linux.html",
-    "https://newcivilengineer.com/latest/highly-likely-ai-will-be-used-in-ransomware-attack-on-uk-critical-infrastructure-03-11-2026",
-    "https://thehackernews.com/2026/11/red-hat-patches-98-rated-linux-tcp-rce.html",
-    "https://www.heise.de/news/Erneut-kritischer-Bug-in-Linux-TCP-IP-aufgedeckt-Updates-in-Arbeit-11506050.html"
-   ]
-  },
-  {
    "theme": "Autonome Angriffe durch Agenten",
    "why": "Die Angriffssuite ARTEX taucht in immer mehr Vorfällen auf, zuletzt bei WorkOS. Automatisierte Erkundung verkürzt die Zeit zwischen Schwachstelle und Einbruch auch bei internen Nebenanwendungen.",
    "count": 7,
@@ -1183,6 +1213,19 @@
     "https://bleepingcomputer.com/news/security/hacker-used-artex-ai-and-claude-agents-to-target-south-korean-banks",
     "https://www.kedglobal.com/banking-finance/newsView/ked202610040005",
     "https://www.securityweek.com/zammad-zero-days-exploited-in-ai-powered-divd-hack/"
+   ]
+  },
+  {
+   "theme": "Normen zum Cyber Resilience Act",
+   "why": "Die ersten horizontalen Teile der Normenreihe EN 40000 zu Begriffen und Grundsätzen der Cyberresilienz sollten nach Abschluss der Abstimmung bei den europäischen Normungsorganisationen Anfang November ratifiziert werden. Sie werden zum Maßstab für Anforderungen an Lieferanten vernetzter Produkte und Software.",
+   "count": 6,
+   "first_seen": "2026-10-11",
+   "last_seen": "2026-11-13",
+   "evidence": [
+    "https://www.ibf-solutions.com/en/news-and-knowledge/technical-papers-and-news-on-ce-marking/current-status-of-standardisation-for-the-cyber-resilience-act",
+    "https://compliance.globalnorm.de/en/product-compliance-news/detail/eu-cyber-resilience-act-cra-standards-en-40000-1-x-series/",
+    "https://www.cyberresilienceact.eu/state-of-play.html",
+    "https://www.cyberresilienceact.eu/news/cra-standardisation-deadlines-pushed-back-two-months.html"
    ]
   },
   {
@@ -1209,18 +1252,6 @@
     "https://www.bundestag.de/dokumente/textarchiv/2026/kw42-de-digitale-identitaeten-gesetz-1223586",
     "https://www.bundestag.de/dokumente/textarchiv/2026/kw42-pa-digitales-identitaeten-1224678",
     "https://www.heise.de/news/EUDI-Wallet-Anhoerung-mit-viel-Kritik-an-d-you-Planung-11477850.html"
-   ]
-  },
-  {
-   "theme": "Normen zum Cyber Resilience Act",
-   "why": "Die Grundlagennormen EN 40000-1-1 und EN 40000-1-2 zur Cyberresilienz von Produkten mit digitalen Elementen wurden im Oktober 2026 von den Mitgliedern der europäischen Normungsorganisation CENELEC angenommen, Veröffentlichung geplant am 25. November 2026. Sie werden zur Messlatte für Sicherheitsanforderungen beim Einkauf vernetzter Produkte und Software.",
-   "count": 5,
-   "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15",
-   "evidence": [
-    "https://compliance.globalnorm.de/en/product-compliance-news/detail/eu-cyber-resilience-act-cra-standards-en-40000-1-x-series/",
-    "https://www.cyberresilienceact.eu/state-of-play.html",
-    "https://www.cyberresilienceact.eu/news/cra-standardisation-deadlines-pushed-back-two-months.html"
    ]
   },
   {
@@ -1432,6 +1463,42 @@
  ],
  "news": [
   {
+   "title": "Webhoster Mittwald: Angriff über eigene Schnittstelle für Agenten, erneut im Krisenmodus",
+   "summary": "Eine Woche nach einem Angriff über den unternehmenseigenen Server für das Model Context Protocol, über den Kunden Assistenten mit Künstlicher Intelligenz an die Plattform anbinden, sind beim Hoster Mittwald seit der Nacht auf den 12. November erneut Fernzugang, Verwaltungsoberfläche und Kundencenter nicht erreichbar. Nach dem ersten Angriff waren Zugänge ab dem 5. November gesperrt und bis zum 7. November schrittweise wieder freigegeben worden. Mittwald beschreibt die Angreifer als offensichtlich durch Künstliche Intelligenz unterstützte Profis, die bei Kunden gehosteten Webseiten seien nicht betroffen.",
+   "relevance": "Schnittstellen, über die Agenten auf Systeme zugreifen, sind privilegierte Zugänge und gehören ins Inventar, ins Berechtigungsmanagement und in die Bewertung von Dienstleistern. Wer solche Schnittstellen selbst einführt oder bei Anbietern nutzt, sollte Laufzeit der Sitzungsschlüssel, Protokollierung und Abschaltwege klären.",
+   "source": "heise online",
+   "url": "https://www.heise.de/news/Angriff-ueber-MCP-Server-Webhoster-Mittwald-im-Krisenmodus-11522728.html",
+   "id": "2026-11-13-mittwald-mcp-server-angriff",
+   "topic": "AI-Governance",
+   "impact": "hoch",
+   "published": "2026-11-12",
+   "tags": [
+    "Agenten",
+    "Model Context Protocol",
+    "Hoster"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
+    "ISO/IEC 27001 Anhang A 8.5 – Sichere Authentisierung",
+    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Einkauf & Drittparteien"
+   ],
+   "countries": [
+    "DE"
+   ],
+   "dossier": "agentische-ki-sicherheit",
+   "priority": 1,
+   "primary": false,
+   "added": "2026-11-13T06:07:23Z",
+   "check": {
+    "verdict": "ok",
+    "note": "heise vom 12. November 2026 bestätigt: Angriff über den eigenen Server für das Model Context Protocol, Einschränkungen ab 5. November mit schrittweiser Freigabe bis 7. November, in der Nacht des 12. November erneut kein Zugang zu SSH, mStudio und Kundencenter. heise gibt indirekt wieder, es handle…"
+   }
+  },
+  {
    "title": "Update: Digital Fairness Act – Kommission legt Vorschlag mit Bußgeldern bis 6 Prozent vor",
    "summary": "Die Europäische Kommission hat am 11. November den Digital Fairness Act vorgestellt, zusammen mit einer Richtlinie zur Vereinfachung und einer Überarbeitung der Verordnung über die Zusammenarbeit der Verbraucherschutzbehörden. Der Vorschlag richtet sich gegen manipulative Gestaltung (Dark Patterns), suchtfördernde Funktionen, schwer kündbare Abonnements, Werbung mit Influencern und unfaire Personalisierung. Bei großen grenzüberschreitenden Verstößen sind Bußgelder bis 6 Prozent des weltweiten Jahresumsatzes vorgesehen. Neu gegenüber dem bisherigen Stand: Der Vorschlag liegt jetzt offiziell vor und geht an Parlament und Rat.",
    "relevance": "Für einen Konzern mit großem Onlinehandel, Lieferservice und Reiseportalen werden Shop-Gestaltung, Knappheitshinweise, Abo-Modelle und personalisierte Preise zum Compliance-Thema. Schon jetzt lohnt eine Bestandsaufnahme, wer diese Funktionen verantwortet und wie Änderungen dokumentiert werden.",
@@ -1461,6 +1528,73 @@
    "check": {
     "verdict": "ok",
     "note": "Datum 11. November 2026 und die Themen stehen in der Meldung der Kommission. Die Vereinfachungsrichtlinie und die Überarbeitung der Verordnung über die Zusammenarbeit der Verbraucherschutzbehörden stehen auf der verlinkten Seite der Kommission zum Digital Fairness Act. Die Bußgelder bis 6 Prozent…"
+   }
+  },
+  {
+   "title": "Aktiv ausgenutzt: Lücken in IBM Aspera Faspex, FreeSWITCH, GPUStack und OpenSSH",
+   "summary": "Die amerikanische Cybersicherheitsbehörde hat am 9. November vier aktiv ausgenutzte Schwachstellen in ihren Katalog aufgenommen und Bundesbehörden eine Frist bis 12. November gesetzt. Betroffen sind die Dateiaustausch-Software IBM Aspera Faspex (CVE-2026-123218, Versionen 5.0.0 bis 5.0.19), die Telefonie-Software FreeSWITCH (CVE-2026-116779), die Plattform GPUStack für Modelle Künstlicher Intelligenz (CVE-2026-102895) und OpenSSH auf schlanken Linux-Systemen wie Alpine Linux ohne Pluggable Authentication Modules (CVE-2026-123158). Für alle vier Lücken stehen Updates bereit.",
+   "relevance": "Dateiaustausch, Telefonie und Plattformen für Künstliche Intelligenz laufen oft in Fachbereichen oder bei Dienstleistern außerhalb des zentralen Patch-Managements. Auch Container-Images auf Basis von Alpine Linux sollten auf laufende Fernzugangsdienste geprüft werden.",
+   "source": "eSecurity Planet",
+   "url": "https://www.esecurityplanet.com/vulnerabilities/news-cisa-kev-gpustack-freeswitch-openssh-ibm-november-2026/",
+   "id": "2026-11-13-kev-aspera-freeswitch-gpustack-openssh",
+   "topic": "IT-Governance & Risiko",
+   "impact": "mittel",
+   "published": "2026-11-10",
+   "tags": [
+    "Schwachstellen",
+    "Patch-Management",
+    "Dateiaustausch"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
+    "NIS-2-Richtlinie Art. 21 – Behandlung und Offenlegung von Schwachstellen"
+   ],
+   "roles": [
+    "IT-Risiko"
+   ],
+   "countries": [],
+   "dossier": "kritische-schwachstellen-perimeter",
+   "priority": 3,
+   "primary": false,
+   "added": "2026-11-13T06:07:23Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Artikel vom 10. November 2026. Aufnahme am 9. November und Frist 12. November stimmen, ebenso alle Kennungen und die Versionen 5.0.0 bis 5.0.19 für Aspera Faspex. OpenSSH ist auf Systemen mit musl ohne Pluggable Authentication Modules betroffen, etwa Alpine Linux. Für OpenSSH verweist die Quelle…"
+   }
+  },
+  {
+   "title": "Agentur für Cybersicherheit: Fortschritte, aber Lücken bei der Krisenkoordination",
+   "summary": "Die Agentur der Europäischen Union für Cybersicherheit bewertet die Bedrohungslage in ihrem neuen Bericht zur Lage der Cybersicherheit weiter als erheblich. Der Index nach der NIS-2-Richtlinie (Richtlinie über Netz- und Informationssicherheit) liegt 2026 im Schnitt bei 71,53 von 100 Punkten. Das Lieferkettenmanagement erreicht 89,91 Punkte, nationale Reaktionsteams für Sicherheitsvorfälle nur 54,76, und 17 statt bisher 7 Mitgliedstaaten haben eine nationale Richtlinie zur Offenlegung von Schwachstellen. Direktor Juhan Lepassaar nannte die Vorfälle an Kühlsystemen als Beleg für operative Schwächen.",
+   "relevance": "Die fünf Prioritäten des Berichts, darunter Krisenreaktion, Resilienz kritischer Infrastruktur und Lieferkettenrisiken, zeigen, worauf nationale Aufsichten voraussichtlich achten werden. Für einen Lebensmittelhändler, der in vielen Mitgliedstaaten tätig ist, lohnt der Abgleich der eigenen Notfall- und Meldeprozesse mit diesen Schwerpunkten.",
+   "source": "Eunews",
+   "url": "https://www.eunews.it/en/2026/11/10/european-cybersecurity-is-improving-but-gaps-remain-in-coordination-and-crisis-management/",
+   "id": "2026-11-13-enisa-lage-cybersicherheit-union",
+   "topic": "Cyber- & IT-Regulierung",
+   "impact": "mittel",
+   "published": "2026-11-10",
+   "tags": [
+    "Lagebericht",
+    "Krisenmanagement",
+    "NIS-2"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Risikomanagementmaßnahmen im Bereich der Cybersicherheit",
+    "NIS-2-Richtlinie Art. 23 – Berichtspflichten"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Management"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "nis2-umsetzung",
+   "priority": 4,
+   "primary": false,
+   "added": "2026-11-13T06:07:23Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Eunews vom 10. November 2026 bestätigt: Bedrohungslage erheblich, Index 71,53 von 100, Lieferketten 89,91, nationale Reaktionsteams 54,76, Zahl der Mitgliedstaaten mit Richtlinie zur Offenlegung von Schwachstellen von sieben auf 17 gestiegen. Lepassaar nennt Vorfälle an Kühlsystemen (im Original…"
    }
   },
   {
@@ -1776,6 +1910,42 @@
    "check": {
     "verdict": "ok",
     "note": "Datum, Zahlen, Zeiträume, Namen und Kernaussage stimmen mit der Quelle überein. „Nur in Europa“ bezieht sich auf die Sensoren von Lupovis. Die Quelle nennt die Täterschaft unklar, gibt aber auch die Einschätzung von Lupovis wieder, es könne sich um einen staatlichen Akteur und womöglich um…"
+   }
+  },
+  {
+   "title": "Kassengesetz: Bundestag berät digitale Belege, Kassenpflicht und Nachschau ab 2028",
+   "summary": "Der Bundestag hat am 6. November 2026 in erster Lesung den Regierungsentwurf zur Fortentwicklung von Kassenaufzeichnungen und zur Bekämpfung von Steuerhinterziehung (Drucksache 21/8867) beraten. Ab 2028 soll die Pflicht zur Ausgabe von Papierbelegen entfallen und für Unternehmen ab 100.000 Euro Gesamtumsatz eine elektronische Kasse mit zertifizierter Sicherheitseinrichtung Pflicht werden. Die unangekündigte Kassen-Nachschau soll auch das örtliche Finanzamt am Standort durchführen können, Vertrieb und Einsatz von Manipulationssoftware sollen mit Geldstrafe oder bis zu drei Jahren Freiheitsstrafe bedroht werden.",
+   "relevance": "Für Filialhändler verlagern sich Belegbereitstellung, Aufbewahrung und Prüfungen weiter in die Informationstechnik: Digitale Belege brauchen eine sichere, verfügbare Bereitstellung und ein Datenschutzkonzept, und Nachschauen können jede Filiale treffen. Die steuerrelevanten Kontrollen sollten gemeinsam mit der E-Rechnung geplant werden.",
+   "source": "Deutscher Bundestag",
+   "url": "https://www.bundestag.de/dokumente/textarchiv/2026/kw45-de-kassenaufzeichnungen-1225122",
+   "id": "2026-11-13-kassengesetz-erste-lesung",
+   "topic": "Handel & Branche",
+   "impact": "mittel",
+   "published": "2026-11-06",
+   "tags": [
+    "Kassen",
+    "Digitaler Beleg",
+    "Steuern"
+   ],
+   "controls": [
+    "Abgabenordnung § 146a – Ordnungsvorschrift für elektronische Aufzeichnungssysteme",
+    "GoBD – Unveränderbarkeit und Aufbewahrung",
+    "DSGVO Art. 32 – Sicherheit der Verarbeitung"
+   ],
+   "roles": [
+    "Revision & Prüfung",
+    "Management"
+   ],
+   "countries": [
+    "DE"
+   ],
+   "dossier": "steuerliche-digitalpflichten",
+   "priority": 2,
+   "primary": true,
+   "added": "2026-11-13T06:07:23Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Erste Lesung am 6. November 2026 und Drucksache 21/8867 bestätigt. Belegt sind auch: Papierbelege entfallen ab 2028, elektronische Kasse mit zertifizierter Sicherheitseinrichtung ab 100.000 Euro Gesamtumsatz ab 2028, Nachschau durch das Finanzamt am Ort der Tätigkeit und Strafrahmen von Geldstrafe…"
    }
   },
   {
