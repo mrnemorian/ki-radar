@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T06:07:23Z",
+ "updated": "2026-11-14T06:05:54Z",
  "topics": [
   "IT-Governance & Risiko",
   "Cyber- & IT-Regulierung",
@@ -11,6 +11,18 @@
   "Weitere Themen"
  ],
  "briefings": [
+  {
+   "date": "2026-11-14",
+   "headline": "Angreifer nutzen Lücken in Barracuda-Mail-Gateways aus, das Parlament legt seinen Entwurf zur Cloud-Souveränität vor, Expedia meldet einen unbestätigten Großdiebstahl.",
+   "points": [
+    "Barracuda Email Security Gateway: Zwei verkettete Lücken verschaffen Root-Rechte und werden bereits ausgenutzt, die Patches müssen von Hand eingespielt werden",
+    "Cloud and AI Development Act: Berichtsentwurf im Europäischen Parlament, Abstimmung im Ausschuss voraussichtlich Mitte März 2027",
+    "Expedia: Eine neue Gruppe behauptet, Hunderte Millionen Reise- und Buchungsdatensätze erbeutet zu haben, bestätigt ist das nicht",
+    "Cyber Resilience Act: Das Bundesamt für Sicherheit in der Informationstechnik fragt bis 19. November ab, welche Unterstützung Unternehmen brauchen",
+    "Amplifon: 1,3 Millionen Betroffene, die Benachrichtigung kam rund neun Monate nach der Entdeckung"
+   ],
+   "count": 5
+  },
   {
    "date": "2026-11-13",
    "headline": "Agenten-Schnittstelle als Einfallstor bei Mittwald, Kassengesetz im Bundestag und Lücken bei der europäischen Krisenkoordination",
@@ -353,18 +365,6 @@
     "Kommission will Normen zu Rechtsakten kostenlos machen; Digital Omnibus im Rat weiter blockiert"
    ],
    "count": 7
-  },
-  {
-   "date": "2026-10-13",
-   "headline": "Der europäische Lebensmittelhandel wird direkt angegriffen: Kühlsteuerungen in Frankreich manipuliert, Ahold Delhaize schaltet Systeme ab, TUI Belgien meldet ein Datenleck.",
-   "points": [
-    "Frankreich: Angreifer übernehmen Kühlsteuerungen in 250 bis 350 Supermärkten. Betriebstechnik in den Filialen gehört ins Risikoinventar.",
-    "Ahold Delhaize: Die meisten Verteilzentren von Albert Heijn stehen still, Webseite, App und Lieferdienst sind offline. Die Kassen laufen weiter.",
-    "TUI Belgien: Betrüger nutzen echte Buchungsdaten für Phishing. Ursache und Umfang sind noch offen.",
-    "Lebenszyklus: Windows 11 Version 23H2 in den Unternehmensausgaben bekommt am 10. November das letzte Update, Let's Encrypt verkürzt die Laufzeit von Zertifikaten ab Februar 2027 auf 64 Tage.",
-    "Agenten mit Künstlicher Intelligenz: Anthropic trennt Testmodelle vom Internet. Die ASOS-Angreifer melden auch einen Einbruch bei Air France-KLM."
-   ],
-   "count": 7
   }
  ],
  "dossiers": [
@@ -481,16 +481,17 @@
    "title": "Kritische Schwachstellen in Randsystemen und Kernanwendungen",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Seit dem 9. November stehen aktiv ausgenutzte Lücken in IBM Aspera Faspex, FreeSWITCH, GPUStack und OpenSSH auf schlanken Linux-Systemen im Katalog der amerikanischen Cybersicherheitsbehörde. Die Behördenfrist für Ivanti Connect Secure endet am 13. November, es folgen Apple am 18., SonicWall am 20. und die Outlook-Lücke am 24. November.",
-   "next_step": "Systeme außerhalb des zentralen Patch-Managements, etwa Dateiaustausch, Telefonie und Plattformen für Künstliche Intelligenz in Fachbereichen, gezielt abfragen und die laufenden Behördenfristen als interne Zielmarken nutzen.",
+   "status": "Neu sind zwei verkettete, aktiv ausgenutzte Lücken im Email Security Gateway von Barracuda, die Root-Rechte verschaffen; die Patches müssen von Hand eingespielt werden und betreffen weitere Produktlinien. Die Behördenfristen für Apple am 18., SonicWall am 20. und die Outlook-Lücke am 24. November laufen weiter.",
+   "next_step": "Inventar aller Barracuda-Produkte und anderer Randsysteme abgleichen, die von Hand eingespielten Patches nachweisen und Mail-Gateways auf Spuren einer Kompromittierung prüfen.",
    "open_questions": [
-    "Sind Container-Images mit Alpine Linux und laufendem Fernzugangsdienst im Bestand bekannt?"
+    "Wie zuverlässig werden Patches, die von Hand einzuspielen sind, bei Sicherheitsgeräten erkannt und nachgehalten?",
+    "Sind die Verwaltungsoberflächen aller Randsysteme vom Internet getrennt?"
    ],
    "controls": [
-    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
-    "NIS-2-Richtlinie Art. 21 – Behandlung und Offenlegung von Schwachstellen"
+    "NIS-2-Richtlinie Art. 21 – Umgang mit und Offenlegung von Schwachstellen",
+    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen"
    ],
-   "updated": "2026-11-13"
+   "updated": "2026-11-14"
   },
   {
    "slug": "lebenszyklus-altsysteme",
@@ -635,17 +636,17 @@
    "title": "Cloud-Souveränität und Abhängigkeiten",
    "sector": "IT-Governance & Risiko",
    "ring": "vorbereiten",
-   "status": "Amazon Web Services hatte die Trennung seiner europäischen souveränen Cloud vom globalen Netz für den 24. Oktober 2026 angekündigt, Ergebnisse liegen noch nicht vor. Laut Tagesschau wollen die deutschen Nachrichtendienste für eingestufte Daten die abgeschottete Google Distributed Cloud nutzen, Kosten über 500 Millionen Euro; im Handel positioniert sich Schwarz Digits mit Fujitsu für souveräne…",
-   "next_step": "Souveränitätsanforderungen nach Schutzbedarf staffeln, für kritische Anwendungen Betriebsmodell, Trennbarkeit und Exit-Fähigkeit dokumentieren und den Bericht von Amazon Web Services zum Trenntest auswerten.",
+   "status": "Seit dem 11. November 2026 liegt im Europäischen Parlament der Berichtsentwurf zum Cloud and AI Development Act vor. Er fordert gemeinsame Standards für Cloud-Dienste, mehr öffentliche Aufträge an europäische Anbieter und einen stärkeren Schutz kritischer Sektoren; abgestimmt wird voraussichtlich Mitte März 2027 im Ausschuss und im April 2027 im Plenum. Ergebnisse der angekündigten Trennung der…",
+   "next_step": "Abhängigkeits- und Ausstiegsanalysen für zentrale Cloud-Verträge aktualisieren und die Beratung der Ausschüsse am 1. Dezember 2026 verfolgen.",
    "open_questions": [
-    "Was belegt der Trenntest von Amazon Web Services tatsächlich?",
-    "Zählt für Souveränität die Herkunft des Anbieters oder das Betriebsmodell?"
+    "Werden die Anforderungen an die Souveränität auf private Betreiber kritischer Infrastrukturen ausgeweitet?",
+    "Wie fügt sich der neue Rahmen in bestehende Cloud-Prüfkataloge wie den Kriterienkatalog C5 ein?"
    ],
    "controls": [
-    "ISO/IEC 27001 Anhang A 5.23 – Informationssicherheit für die Nutzung von Cloud-Diensten",
+    "ISO/IEC 27001 Anhang A 5.23 – Informationssicherheit bei der Nutzung von Cloud-Diensten",
     "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette"
    ],
-   "updated": "2026-10-27"
+   "updated": "2026-11-14"
   },
   {
    "slug": "cyber-resilience-act",
@@ -659,17 +660,17 @@
    "title": "Cyber Resilience Act",
    "sector": "Cyber- & IT-Regulierung",
    "ring": "vorbereiten",
-   "status": "Seit dem 11. September 2026 gelten Meldepflichten für Hersteller, der Bundestag hat das Durchführungsgesetz beschlossen, und die ersten Normen der Reihe EN 40000 sollen am 25. November erscheinen. Ab 9. Dezember 2026 gilt zudem das neue Produkthaftungsrecht, das Software als Produkt erfasst und fehlende Sicherheitsupdates haftungsrelevant macht; Verstöße gegen den Cyber Resilience Act können…",
-   "next_step": "Ermitteln, bei welchen Eigenmarken, Importen und Plattformangeboten ein Handelskonzern Herstellerpflichten oder Haftung tragen kann, und Sicherheitsupdates sowie Schwachstellenmeldungen vertraglich bei Lieferanten verankern.",
+   "status": "Seit dem 11. September 2026 gelten die Meldepflichten für Hersteller, die zentralen Sicherheitsanforderungen gelten ab dem 11. Dezember 2027. Das Bundesamt für Sicherheit in der Informationstechnik fragt bis 19. November 2026 ab, welche Unterstützung Unternehmen brauchen. Die ersten Normen der Reihe EN 40000 werden für den 25. November erwartet, ab dem 9. Dezember 2026 gilt das neue…",
+   "next_step": "Für jede Produktgruppe klären, ob der Konzern als Händler, Einführer oder Hersteller von Produkten mit digitalen Elementen auftritt, und Prüfschritte für die Händlerpflichten im Sortiment festlegen.",
    "open_questions": [
-    "Wann gilt ein Händler bei Eigenmarken mit Software als Hersteller?",
-    "Wie werden Haftungsrisiken aus fehlenden Updates gegenüber Lieferanten abgesichert?"
+    "Wo werden Eigenmarken mit digitalen Elementen zu Herstellerpflichten?",
+    "Welche Nachweise verlangen Händler künftig von Lieferanten vernetzter Produkte?"
    ],
    "controls": [
-    "Cyber Resilience Act – Sicherheitsupdates und Schwachstellenbehandlung",
+    "Cyber Resilience Act Art. 20 – Pflichten der Händler",
     "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen"
    ],
-   "updated": "2026-11-02"
+   "updated": "2026-11-14"
   },
   {
    "slug": "post-quanten-kryptografie",
@@ -816,17 +817,6 @@
   }
  ],
  "deadlines": [
-  {
-   "date": "2026-10-30",
-   "title": "Ende der Konsultation zu Leitlinien des Datenschutzausschusses zur Anonymisierung",
-   "detail": "Unternehmen, die Kunden- oder Beschäftigtendaten anonymisiert für Analysen oder Künstliche Intelligenz nutzen, können bis dahin Stellung nehmen und sollten ihre Verfahren gegen die drei Kriterien prüfen.",
-   "scope": "EU",
-   "url": "https://www.edpb.europa.eu/public-consultations/guidelines-022026-on-anonymisation_en",
-   "primary": true,
-   "checked": true,
-   "dossier": null,
-   "added": "2026-10-20"
-  },
   {
    "date": "2026-10-31",
    "title": "Italien: grundlegende Sicherheitsmaßnahmen nach NIS-2 umgesetzt",
@@ -1136,6 +1126,17 @@
    "checked": true
   },
   {
+   "date": "2027-12-11",
+   "title": "Cyber Resilience Act: zentrale Sicherheitsanforderungen gelten",
+   "detail": "Hersteller, Einführer und Händler von Produkten mit digitalen Elementen müssen die wesentlichen Cybersicherheitsanforderungen erfüllen beziehungsweise deren Einhaltung prüfen.",
+   "scope": "EU",
+   "url": "https://eur-lex.europa.eu/eli/reg/2024/2847/oj",
+   "primary": true,
+   "checked": true,
+   "dossier": "cyber-resilience-act",
+   "added": "2026-11-14"
+  },
+  {
    "date": "2030-12-31",
    "title": "Post-Quanten-Kryptografie: Hochrisiko-Anwendungen umgestellt",
    "detail": "Nach der Leitlinie von Bund und Bundesamt sollen Hochrisiko-Anwendungen auch in Unternehmen und kritischen Infrastrukturen spätestens Ende 2030 quantensicher sein, die Gesamtmigration bis 2035.",
@@ -1243,6 +1244,20 @@
    ]
   },
   {
+   "theme": "Rechtsverordnung zum Dachgesetz Kritische Infrastrukturen",
+   "why": "Die Verordnung, die die betroffenen Anlagen festlegt, ist weiterhin nicht erlassen. Die Registrierungsfrist beginnt erst drei Monate nach ihrem Inkrafttreten, was für Betreiber in der Lebensmittelversorgung kurzfristig Handlungsdruck auslösen kann.",
+   "count": 5,
+   "first_seen": "2026-09-30",
+   "last_seen": "2026-11-14",
+   "evidence": [
+    "https://www.ihk.de/koeln/hauptnavigation/recht-steuern/uebersicht-arbeitsrecht/kritis-dachgesetz-was-unternehmen-jetzt-wissen-und-tun-muessen-7012562",
+    "https://christopher-helm.com/kritis-betreiber-schwellenwert-rechtsverordnung/",
+    "https://cms.law/de/deu/legal-updates/kritis-verordnung-was-betreiber-kritischer-anlagen-jetzt-wissen-muessen",
+    "https://ag.kritis.info/2026/05/28/referentenentwurf-des-bmi-verordnung-zur-bestimmung-kritischer-anlagen-nach-dem-kritis-dachgesetz-kritisverordnung-kritisv/",
+    "https://christopher-helm.com/kritis-dachgesetz-registrierungsfrist-gestrichen/"
+   ]
+  },
+  {
    "theme": "Digitale Identitäts-Wallet der Europäischen Union",
    "why": "Der Bundestag hat am 15. Oktober 2026 das Gesetz für die europäische digitale Identitäts-Wallet beschlossen. Für Händler und Reiseanbieter werden Altersnachweise, Identifizierung und Kundenanmeldung über die Wallet absehbar ein Thema für Prozesse und Datenschutz.",
    "count": 5,
@@ -1279,19 +1294,6 @@
     "https://www.france24.com/en/europe/20261109-iran-revolutionary-guards-behind-cyberattacks-on-supermarket-fridges-says-french-fm-barrot",
     "https://versicherungswirtschaft-heute.de/politik-und-regulierung/2026-10-19/warum-frankreichs-supermarkt-hack-auch-deutsche-ketten-bedroht/",
     "https://www.asscompact.de/nachrichten/cyberversicherung-stand-der-dinge-bei-den-kriegsklauseln"
-   ]
-  },
-  {
-   "theme": "Rechtsverordnung zum Dachgesetz Kritische Infrastrukturen",
-   "why": "Das Gesetz gilt seit März 2026, die Verordnung mit den Schwellenwerten lag aber nach Fachberichten im Oktober noch immer nur als Entwurf vor. Erst sie entscheidet, welche Anlagen im Sektor Ernährung registriert werden müssen.",
-   "count": 4,
-   "first_seen": "2026-09-30",
-   "last_seen": "2026-11-06",
-   "evidence": [
-    "https://christopher-helm.com/kritis-betreiber-schwellenwert-rechtsverordnung/",
-    "https://cms.law/de/deu/legal-updates/kritis-verordnung-was-betreiber-kritischer-anlagen-jetzt-wissen-muessen",
-    "https://ag.kritis.info/2026/05/28/referentenentwurf-des-bmi-verordnung-zur-bestimmung-kritischer-anlagen-nach-dem-kritis-dachgesetz-kritisverordnung-kritisv/",
-    "https://christopher-helm.com/kritis-dachgesetz-registrierungsfrist-gestrichen/"
    ]
   },
   {
@@ -1368,6 +1370,16 @@
    "evidence": [
     "https://www.techuk.org/insights/news/dispatch-from-brussels-updates-on-eu-tech-policy-09-10",
     "https://www.politico.eu/article/eu-lawmakers-ai-apocalypse-warnings-brussels-scrambles-ai-rules-gaps/"
+   ]
+  },
+  {
+   "theme": "Betrug über Einkaufsagenten",
+   "why": "Vor dem Weihnachtsgeschäft warnen Sicherheitsfachleute, dass gefälschte Shops gezielt Assistenten ansteuern, die im Auftrag von Kunden einkaufen. Für Händler stellen sich Fragen zur Erkennung echter Agenten, zur Haftung bei Fehlkäufen und zum Schutz der eigenen Marke.",
+   "count": 1,
+   "first_seen": "2026-11-14",
+   "last_seen": "2026-11-14",
+   "evidence": [
+    "https://allaboutcookies.org/ai-holiday-shopping-fake-store-scams"
    ]
   },
   {
@@ -1499,6 +1511,41 @@
    }
   },
   {
+   "title": "Cloud and AI Development Act: Parlament legt Berichtsentwurf für mehr Unabhängigkeit vor",
+   "summary": "Im Europäischen Parlament wurde am 11. November 2026 der gemeinsame Berichtsentwurf zum Cloud and AI Development Act vorgestellt. Die Abgeordneten fordern gemeinsame Standards für Cloud-Dienste, mehr Investitionen, mehr öffentliche Aufträge an europäische Anbieter, einen stärkeren Schutz kritischer Sektoren und schnellere Genehmigungen für Rechenzentren. Laut Kommission kontrollieren drei außereuropäische Hyperscaler mehr als 70 Prozent des europäischen Cloud-Markts. Die Ausschüsse beraten am 1. Dezember 2026, über den Entwurf abgestimmt wird voraussichtlich Mitte März 2027 im Ausschuss und im April 2027 im Plenum.",
+   "relevance": "Für einen Konzern mit großen Cloud-Abhängigkeiten entsteht noch keine Pflicht. Die Richtung ist aber klar: Souveränität wird ein Kriterium bei Beschaffung und Risikobewertung. Ausstiegs- und Abhängigkeitsanalysen für zentrale Cloud-Verträge sollten vor der Abstimmung im Plenum auf dem aktuellen Stand sein.",
+   "source": "Euronews",
+   "url": "https://www.euronews.com/2026/11/11/eu-lawmakers-push-to-reduce-europes-dependence-on-foreign-cloud-providers",
+   "id": "2026-11-14-cloud-ai-development-act-parlament",
+   "topic": "IT-Governance & Risiko",
+   "impact": "mittel",
+   "published": "2026-11-11",
+   "tags": [
+    "Cloud-Souveränität",
+    "Gesetzgebung",
+    "Abhängigkeiten"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 5.23 – Informationssicherheit bei der Nutzung von Cloud-Diensten",
+    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette"
+   ],
+   "roles": [
+    "Management",
+    "Einkauf & Drittparteien"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "cloud-souveraenitaet",
+   "priority": 2,
+   "primary": false,
+   "added": "2026-11-14T06:05:54Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum 11. November 2026 stimmt. Die Forderungen, die Angabe der Kommission zu mehr als 70 Prozent Marktanteil und der Zeitplan (1. Dezember, Mitte März 2027, April 2027) stehen so in der Quelle."
+   }
+  },
+  {
    "title": "Update: Digital Fairness Act – Kommission legt Vorschlag mit Bußgeldern bis 6 Prozent vor",
    "summary": "Die Europäische Kommission hat am 11. November den Digital Fairness Act vorgestellt, zusammen mit einer Richtlinie zur Vereinfachung und einer Überarbeitung der Verordnung über die Zusammenarbeit der Verbraucherschutzbehörden. Der Vorschlag richtet sich gegen manipulative Gestaltung (Dark Patterns), suchtfördernde Funktionen, schwer kündbare Abonnements, Werbung mit Influencern und unfaire Personalisierung. Bei großen grenzüberschreitenden Verstößen sind Bußgelder bis 6 Prozent des weltweiten Jahresumsatzes vorgesehen. Neu gegenüber dem bisherigen Stand: Der Vorschlag liegt jetzt offiziell vor und geht an Parlament und Rat.",
    "relevance": "Für einen Konzern mit großem Onlinehandel, Lieferservice und Reiseportalen werden Shop-Gestaltung, Knappheitshinweise, Abo-Modelle und personalisierte Preise zum Compliance-Thema. Schon jetzt lohnt eine Bestandsaufnahme, wer diese Funktionen verantwortet und wie Änderungen dokumentiert werden.",
@@ -1528,6 +1575,42 @@
    "check": {
     "verdict": "ok",
     "note": "Datum 11. November 2026 und die Themen stehen in der Meldung der Kommission. Die Vereinfachungsrichtlinie und die Überarbeitung der Verordnung über die Zusammenarbeit der Verbraucherschutzbehörden stehen auf der verlinkten Seite der Kommission zum Digital Fairness Act. Die Bußgelder bis 6 Prozent…"
+   }
+  },
+  {
+   "title": "Barracuda-Mail-Gateways: Verkettete Lücken werden für Root-Zugriff ausgenutzt",
+   "summary": "Barracuda bestätigt, dass Angreifer die Lücken CVE-2026-116606 und CVE-2026-111560 im Email Security Gateway gegen eine kleine Zahl von Organisationen ausnutzen. Zusammen umgehen sie die Autorisierung und erlauben Befehle mit Root-Rechten, Voraussetzung ist der Zugang zur Verwaltungsoberfläche. Die Patches sind seit Anfang November verfügbar und werden in der Regel automatisch verteilt; wo das nicht geschehen ist, müssen sie von Hand eingespielt werden. CVE-2026-111560 betrifft auch Load Balancer, Message Archiver, Web Application Firewall und Web Security Gateway.",
+   "relevance": "Mail-Gateways stehen an der zentralen Stelle des Nachrichtenverkehrs. Wird ein Gateway übernommen, können Angreifer Mails mitlesen und Schadsoftware einschleusen. Wichtig sind ein vollständiges Inventar aller betroffenen Produktlinien, ein Nachweis über die von Hand eingespielten Patches und eine Verwaltungsoberfläche, die nicht aus dem Internet erreichbar ist.",
+   "source": "BleepingComputer",
+   "url": "https://bleepingcomputer.com/news/security/hackers-exploit-barracuda-email-security-gateway-flaws-to-get-root-access",
+   "id": "2026-11-14-barracuda-esg-ausgenutzt",
+   "topic": "IT-Governance & Risiko",
+   "impact": "hoch",
+   "published": "2026-11-10",
+   "tags": [
+    "Schwachstellen",
+    "E-Mail-Sicherheit",
+    "Patch-Management"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Umgang mit und Offenlegung von Schwachstellen",
+    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen"
+   ],
+   "roles": [
+    "IT-Risiko"
+   ],
+   "countries": [
+    "EU",
+    "DE",
+    "AT"
+   ],
+   "dossier": "kritische-schwachstellen-perimeter",
+   "priority": 1,
+   "primary": false,
+   "added": "2026-11-14T06:05:54Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Datum 10. November 2026, die Lücken und die Kernaussage stimmen. Laut Quelle werden die Patches aber automatisch verteilt. Von Hand einspielen muss man sie nur, wenn sie nicht automatisch angekommen sind. Die Zusammenfassung behauptet, sie müssten generell von Hand eingespielt werden."
    }
   },
   {
@@ -3088,6 +3171,114 @@
    "check": {
     "verdict": "ok",
     "note": "Datum 1. November, Zeitraum August 2023 bis September 2026 und die fehlenden Angaben sind belegt."
+   }
+  },
+  {
+   "title": "Expedia: Neue Gruppe behauptet Diebstahl von Hunderten Millionen Reisedatensätzen",
+   "summary": "Eine neue Gruppe namens n0n behauptet, bei Expedia Group Hunderte Millionen Datensätze erbeutet zu haben, darunter E-Mail-Adressen, Daten aus dem Treueprogramm, Reiseprofile, Buchungen, Token sowie gültige Zugangsdaten zur Datenplattform. Die Gruppe droht mit Veröffentlichung, wenn Expedia nicht zahlt. Der Vorgang wurde am 9. November 2026 erfasst. Zum Zeitpunkt des Berichts hatte Expedia sich nicht geäußert, die Angaben sind nicht überprüft.",
+   "relevance": "Große Reiseplattformen sind ein wichtiger Vertriebsweg in der Touristik. Gelangen Buchungsdaten in Umlauf, folgen meist Betrugsversuche im Namen von Hotels oder Veranstaltern. Kundenservice, Betrugsabwehr und Kommunikation sollten vorbereitet sein, auch wenn eigene Systeme nicht betroffen sind.",
+   "source": "Cybernews",
+   "url": "https://cybernews.com/security/expedia-data-breach-claim/",
+   "id": "2026-11-14-expedia-datendiebstahl-behauptet",
+   "topic": "Handel & Branche",
+   "impact": "mittel",
+   "published": "2026-11",
+   "tags": [
+    "Touristik",
+    "Datenabfluss",
+    "Erpressung"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen",
+    "DSGVO Art. 34 – Benachrichtigung der betroffenen Person"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Datenschutz",
+    "Einkauf & Drittparteien"
+   ],
+   "countries": [
+    "EU",
+    "DE",
+    "AT"
+   ],
+   "dossier": null,
+   "priority": 3,
+   "primary": false,
+   "added": "2026-11-14T06:05:54Z",
+   "check": {
+    "verdict": "nicht prüfbar",
+    "note": "Die Quelle verweigert den Abruf (Zugriff gesperrt). Laut Suchergebnissen deckt der Cybernews-Artikel die Kernaussage: Die Gruppe n0n behauptet Hunderte Millionen Datensätze erbeutet zu haben, droht mit Veröffentlichung, und es gibt keine Stellungnahme von Expedia. Nicht prüfbar sind das Datum 9.…"
+   }
+  },
+  {
+   "title": "Cyber Resilience Act: Bundesamt fragt bis 19. November nach dem Unterstützungsbedarf",
+   "summary": "Das Bundesamt für Sicherheit in der Informationstechnik fragt in einer anonymen Kurzumfrage von etwa fünf bis sieben Minuten, welche Unterstützung Unternehmen bei der Umsetzung des Cyber Resilience Act brauchen. Die Umfrage läuft bis 19. November 2026, die Industrie- und Handelskammern machen auf sie aufmerksam. Die Meldepflichten gelten seit 11. September 2026, die zentralen Sicherheitsanforderungen ab 11. Dezember 2027.",
+   "relevance": "Der Cyber Resilience Act verpflichtet nicht nur Hersteller, sondern auch Einführer und Händler, die Produkte mit digitalen Elementen anbieten. Wer im Sortiment vernetzte Geräte führt, kann über die Umfrage auf praxisnahe Leitfäden hinwirken und sollte die eigene Rolle je Produktgruppe klären.",
+   "source": "Industrie- und Handelskammer Hagen",
+   "url": "https://www.ihk.de/hagen/digitalisierung/digitalrecht2/neuer-inhalt2026-11-umfrage-cra-7220776",
+   "id": "2026-11-14-bsi-umfrage-cyber-resilience-act",
+   "topic": "Cyber- & IT-Regulierung",
+   "impact": "info",
+   "published": "2026-11",
+   "tags": [
+    "Cyber Resilience Act",
+    "Händlerpflichten",
+    "Umfrage"
+   ],
+   "controls": [
+    "Cyber Resilience Act Art. 20 – Pflichten der Händler"
+   ],
+   "roles": [
+    "Einkauf & Drittparteien",
+    "IT-Risiko"
+   ],
+   "countries": [
+    "DE",
+    "EU"
+   ],
+   "dossier": "cyber-resilience-act",
+   "priority": 4,
+   "primary": false,
+   "added": "2026-11-14T06:05:54Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Die Umfrage des Bundesamts ist anonym, dauert fünf bis sieben Minuten und läuft bis 19. November 2026. Die Meldepflichten gelten seit 11. September 2026, die wesentlichen Anforderungen ab 11. Dezember 2027. Alles steht so auf der Seite der Kammer Hagen. Die Seite nennt kein Datum, passt aber…"
+   }
+  },
+  {
+   "title": "Hörgerätehändler Amplifon: 1,3 Millionen Betroffene, Benachrichtigung nach neun Monaten",
+   "summary": "Amplifon Americas, die amerikanische Tochter des Hörakustik-Händlers, meldet einen Datenabfluss mit 1.332.826 Betroffenen, darunter Namen, Kontaktdaten, Geburtsdaten, Ausweisnummern sowie Gesundheits- und Versicherungsdaten. Die Angreifer kopierten die Dateien zwischen dem 18. Januar und dem 8. Februar 2026, entdeckt wurde der Zugriff am 11. Februar, die Behördenmeldung in Texas folgte im November. Missbrauch der Daten ist dem Unternehmen bisher nicht bekannt.",
+   "relevance": "Zwischen Entdeckung und Benachrichtigung lagen rund neun Monate. Das zeigt, wie lange die Analyse großer Datenbestände dauern kann. Unter der Datenschutz-Grundverordnung gilt für die Meldung an die Aufsicht eine Frist von 72 Stunden, deshalb sollten Meldeprozesse auch mit unvollständigen Erkenntnissen geübt werden.",
+   "source": "SecurityWeek",
+   "url": "https://securityweek.com/amplifon-americas-data-breach-impacts-1-3-million",
+   "id": "2026-11-14-amplifon-datenabfluss",
+   "topic": "Datenschutz & Datenrecht",
+   "impact": "info",
+   "published": "2026-11",
+   "tags": [
+    "Datenpanne",
+    "Gesundheitsdaten",
+    "Meldefristen"
+   ],
+   "controls": [
+    "DSGVO Art. 33 – Meldung von Verletzungen an die Aufsichtsbehörde",
+    "ISO/IEC 27001 Anhang A 5.26 – Reaktion auf Informationssicherheitsvorfälle"
+   ],
+   "roles": [
+    "Datenschutz",
+    "IT-Risiko"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": null,
+   "priority": 5,
+   "primary": false,
+   "added": "2026-11-14T06:05:54Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Die Originalseite verweigert den Abruf. Über die Suche bestätigen mehrere Berichte und die Meldung beim Generalstaatsanwalt von Texas alle Angaben: 1.332.826 Betroffene, Kopieren der Dateien vom 18. Januar bis 8. Februar 2026, Entdeckung am 11. Februar, die genannten Datenarten und kein bekannter…"
    }
   },
   {

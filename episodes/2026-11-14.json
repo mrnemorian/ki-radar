@@ -1,0 +1,173 @@
+{
+ "format": "tag",
+ "chapters": [
+  {
+   "title": "Begrüßung",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Guten Morgen, liebe IT-GRC-Kolleginnen und -Kollegen, willkommen beim IT-GRC Radar am Samstag, dem vierzehnten November 2026."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Samstag, da hofft man ja auf eine ruhige Lage. Ganz so ruhig ist es dann aber doch nicht."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Stimmt. Heute geht es um angegriffene Mail-[en]Gateways[/en], um Europas Pläne für die [en]Cloud[/en], um einen angeblich riesigen Datendiebstahl in der Reisebranche, um eine kleine Umfrage und um die Frage, wie lang neun Monate eigentlich sind."
+    }
+   ]
+  },
+  {
+   "title": "Barracuda-Gateways",
+   "news_id": "2026-11-14-barracuda-esg-ausgenutzt",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Zuerst Barracuda. Zwei Lücken im [en]Email Security Gateway[/en] werden aktiv ausgenutzt, das hat der Hersteller am Montag bestätigt. Zusammen verschaffen sie Angreifern [en]Root[/en]-Rechte auf dem Gerät."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und das ist ausgerechnet die Kiste, die vor dem Postfach steht und Schadsoftware herausfiltern soll. Wer die übernimmt, sitzt mitten im Mailverkehr."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Die [en]Patches[/en] gibt es seit Anfang November. Laut Barracuda sind bisher nur wenige Organisationen betroffen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Wenige ist relativ. Der entscheidende Punkt: Die [en]Patches[/en] kommen normalerweise automatisch, aber wo das nicht passiert ist, muss man sie von Hand einspielen. Und eine der Lücken steckt auch in anderen Produkten, etwa in der [en]Web Application Firewall[/en] und im Archiv für Nachrichten."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Moment, dann reicht es also nicht, nur die Mail-Geräte durchzugehen?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Genau. Man braucht das ganze Inventar. Und zwar das echte, nicht die Excel-Liste vom letzten [en]Audit[/en]."
+    }
+   ]
+  },
+  {
+   "title": "Cloud-Souveränität",
+   "news_id": "2026-11-14-cloud-ai-development-act-parlament",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Da gibt es Neues zur Souveränität in der [en]Cloud[/en]. Im Europäischen Parlament wurde am elften November der Berichtsentwurf zum [en]Cloud and AI Development Act[/en] vorgestellt."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Die Abgeordneten wollen gemeinsame Standards, mehr öffentliche Aufträge an europäische Anbieter und mehr Schutz für kritische Sektoren. Laut Kommission kontrollieren drei außereuropäische Anbieter mehr als 70 Prozent des europäischen Marktes."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und wann wird es konkret?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Abstimmung im Ausschuss voraussichtlich Mitte März 2027, im Plenum dann im April. Morgen entsteht also keine Pflicht. Die Analyse der Abhängigkeiten bei den großen Verträgen sollte man trotzdem nicht bis April liegen lassen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Also wieder die Frage, wer für die [en]Exit[/en]-Strategie eigentlich [en]Owner[/en] ist."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Diese Frage überlebt jede Verordnung."
+    }
+   ]
+  },
+  {
+   "title": "Expedia",
+   "news_id": "2026-11-14-expedia-datendiebstahl-behauptet",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Dann die Reisebranche. Eine neue Gruppe behauptet, bei Expedia Hunderte Millionen Datensätze erbeutet zu haben, darunter Buchungen, Reiseprofile und Daten aus dem Treueprogramm. Sie droht mit Veröffentlichung."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Wichtig ist hier der Konjunktiv. Bestätigt ist nichts, und Expedia hatte sich zum Zeitpunkt des Berichts nicht geäußert."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Warum sollte uns das trotzdem interessieren?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Weil große Reiseplattformen in der Touristik ein wichtiger Vertriebsweg sind. Wenn Buchungsdaten kursieren, folgen meist [en]Phishing[/en]-Nachrichten im Namen von Hotel oder Veranstalter. Kundenservice und Betrugsabwehr sollten wissen, was sie sagen, bevor das Telefon klingelt."
+    }
+   ]
+  },
+  {
+   "title": "Umfrage zum Cyber Resilience Act",
+   "news_id": "2026-11-14-bsi-umfrage-cyber-resilience-act",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Kurz zum [en]Cyber Resilience Act[/en]. Das Bundesamt für Sicherheit in der Informationstechnik fragt bis zum neunzehnten November in einer anonymen Umfrage, welche Unterstützung Unternehmen brauchen. Dauer: fünf bis sieben Minuten."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Das klingt nach einem Thema für Hersteller, betrifft aber auch den Handel. Wer Produkte mit digitalen Elementen verkauft, hat eigene Sorgfaltspflichten als Händler. Ab dem elften Dezember 2027 gelten dann die zentralen Sicherheitsanforderungen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Sieben Minuten für passendere Leitfäden. Das ist ein besseres Verhältnis als in den meisten Abstimmungsrunden."
+    }
+   ]
+  },
+  {
+   "title": "Amplifon",
+   "news_id": "2026-11-14-amplifon-datenabfluss",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Und dann noch: Der Hörgerätehändler Amplifon meldet in den Vereinigten Staaten einen Datenabfluss mit gut 1,3 Millionen Betroffenen, darunter Gesundheits- und Ausweisdaten."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Bemerkenswert ist die zeitliche Abfolge. Kopiert wurden die Daten zwischen Mitte Januar und Anfang Februar, entdeckt wurde der Zugriff am elften Februar, und jetzt im November kommen die Benachrichtigungen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Also neun Monate."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Die Datenschutz-Grundverordnung gibt für die Meldung an die Aufsicht 72 Stunden. Für uns heißt das: den Meldeprozess ruhig mal gegen die Uhr testen und nicht nur gegen das Organigramm."
+    }
+   ]
+  },
+  {
+   "title": "Auf dem Radar",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Auf dem Radar: Betrug über Einkaufsagenten."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Vor dem Weihnachtsgeschäft warnen Sicherheitsfachleute, dass gefälschte Shops gezielt Assistenten ins Visier nehmen, die im Auftrag von Kunden einkaufen. Für Händler stellt sich dann die Frage, wie man echte Agenten von Betrügern unterscheidet und wer am Ende für den Fehlkauf haftet."
+    }
+   ]
+  },
+  {
+   "title": "Abschied",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Das war das IT-GRC Radar für diesen Samstag. Alle Quellen findet ihr wie immer auf der Webseite."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Schönes Wochenende. Und wer ein Barracuda-Gerät betreibt, spielt die [en]Patches[/en] vielleicht schon heute ein und nicht erst am Montag."
+    }
+   ]
+  }
+ ]
+}

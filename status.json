@@ -1,11 +1,17 @@
 {
  "last_run": {
-  "start": "2026-11-13T07:00:01+01:00",
-  "end": "2026-11-13T07:07:23+01:00",
+  "start": "2026-11-14T07:00:01+01:00",
+  "end": "2026-11-14T07:05:54+01:00",
   "ok": true,
-  "summary": "4 neue Meldungen: P1 Webhoster Mittwald: Angriff über eigene Schnittstelle für Agenten, erneut im Krisenmodus; P2 Kassengesetz: Bundestag berät digitale Belege, Kassenpflicht und Nachschau ab 2028;"
+  "summary": "5 neue Meldungen: P1 Barracuda-Mail-Gateways: Verkettete Lücken werden für Root-Zugriff ausgenutzt; P2 Cloud and AI Development Act: Parlament legt Berichtsentwurf für mehr Unabhängigkeit vor; P3 "
  },
  "history": [
+  {
+   "start": "2026-11-14T07:00:01+01:00",
+   "end": "2026-11-14T07:05:54+01:00",
+   "ok": true,
+   "summary": "5 neue Meldungen: P1 Barracuda-Mail-Gateways: Verkettete Lücken werden für Root-Zugriff ausgenutzt; P2 Cloud and AI Development Act: Parlament legt Berichtsentwurf für mehr Unabhängigkeit vor; P3 "
+  },
   {
    "start": "2026-11-13T07:00:01+01:00",
    "end": "2026-11-13T07:07:23+01:00",
@@ -83,12 +89,6 @@
    "end": "2026-11-01T07:09:17+01:00",
    "ok": true,
    "summary": "5 neue Meldungen: P1 Update: PHP2Shell – Angriffe auf Verwaltungszugänge von Palo-Alto-Firewalls; P2 Onlinehandel: Lücke in Drupal Commerce wird aktiv ausgenutzt; P3 WordPress: Fast 63.000 Angriff"
-  },
-  {
-   "start": "2026-10-31T07:00:01+01:00",
-   "end": "2026-10-31T07:07:21+01:00",
-   "ok": true,
-   "summary": "7 neue Meldungen: P1 Oracle E-Business Suite: Angriffsversuche auf kritische Lücke ohne Anmeldung; P2 Linux: Kritische Lücke im Netzwerkstack seit 2015, Updates noch nicht überall verfügbar; P3 Ma"
   }
  ]
 }
