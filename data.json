@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14T06:05:54Z",
+ "updated": "2026-11-15T06:06:53Z",
  "topics": [
   "IT-Governance & Risiko",
   "Cyber- & IT-Regulierung",
@@ -11,6 +11,18 @@
   "Weitere Themen"
  ],
  "briefings": [
+  {
+   "date": "2026-11-15",
+   "headline": "Check-Point-Gateways werden für Backdoors und Löschangriffe missbraucht, der Bundestag beschließt neue Cyberabwehr, Drittanbieter-Zugänge treffen die Touristik",
+   "points": [
+    "Check Point: Angriffe über PHP2Shell und eine Rechteausweitung auf Root, Behördenfrist für CVE-2026-123039 am 16. November",
+    "Bundestag beschließt Gesetz zur Stärkung der Cybersicherheit: Anbieter digitaler Dienste sollen Warnungen des Bundesamts an Kunden weitergeben",
+    "Kritische Lücke im Apache-Webserver: Version 2.4.71 schließt das Modul für das Protokoll HTTP/2",
+    "Touristik: Kempinski-Daten über den Zugang eines Partners abgegriffen, bei Amadeus lief der Zugriff offenbar drei Jahre lang",
+    "Gerichtshof der Europäischen Union: Generalanwalt will bei provozierten Datenschutzverstößen keinen Schadensersatz"
+   ],
+   "count": 7
+  },
   {
    "date": "2026-11-14",
    "headline": "Angreifer nutzen Lücken in Barracuda-Mail-Gateways aus, das Parlament legt seinen Entwurf zur Cloud-Souveränität vor, Expedia meldet einen unbestätigten Großdiebstahl.",
@@ -353,18 +365,6 @@
     "Studie: Nur 11 Prozent der Unternehmen haben eigene Abläufe für Sicherheitsvorfälle mit Künstlicher Intelligenz."
    ],
    "count": 6
-  },
-  {
-   "date": "2026-10-14",
-   "headline": "Angriffe auf Kühlsteuerungen treffen weitere Hersteller, Microsoft schließt eine ausgenutzte Lücke, und bei Amadeus lagen Passdaten von Reisenden offen.",
-   "points": [
-    "Französisches Computer-Notfallteam erweitert Warnung: neben Danfoss auch Fernsteuerungen von Copeland und Dixell kompromittiert, Zurücksetzen allein reicht nicht",
-    "Microsoft-Patchday mit 1.411 Lücken, darunter die ausgenutzte CVE-2026-96951; Behörde der Vereinigten Staaten setzt Frist bis 16. Oktober",
-    "Amadeus: Passdaten und Buchungscodes von Reisenden und Kennungen deutscher Reisebüros waren über eine ungeschützte Schnittstelle einsehbar",
-    "SAP-Patchday mit Lücke vom Höchstwert 10, Ahold Delhaize findet bislang keinen Datenabfluss",
-    "Kommission will Normen zu Rechtsakten kostenlos machen; Digital Omnibus im Rat weiter blockiert"
-   ],
-   "count": 7
   }
  ],
  "dossiers": [
@@ -406,18 +406,18 @@
    "title": "Drittparteien- und Lieferkettenrisiko",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Neben der Abschaltung der Fernwartungsplattform N-central zeigen neue Fälle, wie einzelne Dienstleister viele Kunden mitreißen: Bei Casinos Austria flossen Webshop-Daten über einen externen Dienstleister ab, beim Newsletter-Dienst Arara sind bis zu 77 Millionen Adressen betroffen. Bei Fireworks AI lagen Chat-Verläufe von Notion-Kunden offen, ein Einbruch dort lief über einen Cloud-Anbieter.",
-   "next_step": "Marketing-, Webshop- und Dienste mit Künstlicher Intelligenz mit Datenmenge und Unterauftragnehmern ins Drittparteien-Inventar aufnehmen; Meldefristen und Prüfrechte in den Verträgen prüfen.",
+   "status": "Beim Buchungsdienstleister Amadeus lief der unbefugte Zugriff offenbar von August 2023 bis September 2026, mindestens 344.800 Buchungen bei sieben Fluggesellschaften sind betroffen. Bei Kempinski wurde der Zugang eines Technologiepartners missbraucht, die Gästedaten dienen nun für Zahlungsbetrug; zuvor hatten N-central, Casinos Austria und Arara gezeigt, wie einzelne Dienstleister viele Kunden…",
+   "next_step": "Partnerzugänge zu Buchungs- und Kundensystemen rezertifizieren und mit Mehr-Faktor-Anmeldung absichern; Meldefristen und Protokollierungspflichten in Verträgen mit zentralen Dienstleistern prüfen.",
    "open_questions": [
-    "Sind Werkzeuge, die Fachbereiche selbst beauftragen, im Lieferantenmanagement vollständig erfasst?",
-    "Wie wird die vierte Ebene, also die Dienstleister der Dienstleister, sichtbar?"
+    "Wie schnell müssen zentrale Dienstleister Vorfälle vertraglich melden?",
+    "Werden Protokolle der Dienstleister so lange aufbewahrt, dass auch jahrelange Zugriffe nachvollziehbar sind?"
    ],
    "controls": [
     "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
     "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen",
-    "DSGVO Art. 28 – Auftragsverarbeiter"
+    "ISO/IEC 27001 Anhang A 5.22 – Überwachung und Überprüfung von Lieferantendienstleistungen"
    ],
-   "updated": "2026-11-12"
+   "updated": "2026-11-15"
   },
   {
    "slug": "steuerliche-digitalpflichten",
@@ -481,17 +481,17 @@
    "title": "Kritische Schwachstellen in Randsystemen und Kernanwendungen",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Neu sind zwei verkettete, aktiv ausgenutzte Lücken im Email Security Gateway von Barracuda, die Root-Rechte verschaffen; die Patches müssen von Hand eingespielt werden und betreffen weitere Produktlinien. Die Behördenfristen für Apple am 18., SonicWall am 20. und die Outlook-Lücke am 24. November laufen weiter.",
-   "next_step": "Inventar aller Barracuda-Produkte und anderer Randsysteme abgleichen, die von Hand eingespielten Patches nachweisen und Mail-Gateways auf Spuren einer Kompromittierung prüfen.",
+   "status": "Angreifer kombinieren die PHP2Shell-Lücken in Check-Point-Gateways mit einer Rechteausweitung auf Root (CVE-2026-123039), installieren eine Backdoor und löschten in einem Fall einen Virtualisierungsserver; die Behördenfrist endet am 16. November. Dazu kommt eine kritische Lücke im HTTP/2-Modul des Apache-Webservers, die Fristen für Apple am 18., SonicWall am 20. und Outlook am 24. November…",
+   "next_step": "Check-Point-Geräte sofort patchen und auf Spuren der Backdoor und auf Zugriffe auf die Virtualisierung prüfen; Apache-Bestände einschließlich eingebetteter Produkte von Dritten erfassen.",
    "open_questions": [
-    "Wie zuverlässig werden Patches, die von Hand einzuspielen sind, bei Sicherheitsgeräten erkannt und nachgehalten?",
-    "Sind die Verwaltungsoberflächen aller Randsysteme vom Internet getrennt?"
+    "Wie viele Appliances von Dritten enthalten verwundbare Apache-Versionen?",
+    "Wird bei Randsystemen nach dem Patchen systematisch nach Spuren einer Kompromittierung gesucht?"
    ],
    "controls": [
-    "NIS-2-Richtlinie Art. 21 – Umgang mit und Offenlegung von Schwachstellen",
+    "NIS-2-Richtlinie Art. 21 – Umgang mit Schwachstellen",
     "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen"
    ],
-   "updated": "2026-11-14"
+   "updated": "2026-11-15"
   },
   {
    "slug": "lebenszyklus-altsysteme",
@@ -818,39 +818,6 @@
  ],
  "deadlines": [
   {
-   "date": "2026-10-31",
-   "title": "Italien: grundlegende Sicherheitsmaßnahmen nach NIS-2 umgesetzt",
-   "detail": "Wesentliche und wichtige Einrichtungen, die 2025 in die italienische Liste aufgenommen wurden, müssen die Maßnahmen nach den Vorgaben der nationalen Cybersicherheitsagentur umgesetzt und nachweisbar haben.",
-   "scope": "IT",
-   "url": "https://www.iusprivacy.eu/normativa/nis2-in-italia-tutti-gli-adempimenti-e-le-scadenze-per-le-imprese",
-   "primary": false,
-   "checked": true,
-   "dossier": "nis2-umsetzung",
-   "added": "2026-10-03"
-  },
-  {
-   "date": "2026-10-31",
-   "title": "Exchange Server 2016 und 2019: Ende der Extended Security Updates",
-   "detail": "Betreiber von Exchange Server 2016 und 2019 erhalten nach Oktober 2026 keine Updates mehr, auch nicht mit bezahlter Verlängerung; Migration auf Subscription Edition oder Exchange Online abschließen.",
-   "scope": "global",
-   "url": "https://techcommunity.microsoft.com/blog/exchange/announcing-period-2-exchange-20162019-extended-security-update-esu-program/4511603",
-   "primary": false,
-   "checked": true,
-   "dossier": "lebenszyklus-altsysteme",
-   "added": "2026-10-11"
-  },
-  {
-   "date": "2026-10-31",
-   "title": "Auslaufphase für Standards zu Zahlungssoftware auf handelsüblichen Geräten endet",
-   "detail": "Für die Standards zur Geheimzahl-Eingabe und zum kontaktlosen Bezahlen auf handelsüblichen Geräten sowie das 3-D Secure Software Development Kit nimmt der PCI Security Standards Council danach keine neuen Einreichungen an; Händler sollten den Status ihrer mobilen Bezahllösungen klären.",
-   "scope": "global",
-   "url": "https://www.pcisecuritystandards.org/wp-content/uploads/2026/05/PCI_SPoC_and_PCI_CPoC_Sunset_Bulletin.pdf",
-   "primary": true,
-   "checked": true,
-   "dossier": "zahlungsverkehr-pci-dss",
-   "added": "2026-10-26"
-  },
-  {
    "date": "2026-11-01",
    "title": "Behördliche Frist zum Schließen der GitLab- und Cisco-Firewall-Lücken",
    "detail": "Die amerikanische Cybersicherheitsbehörde verlangt von den Bundesbehörden bis zu diesem Tag die Behebung von CVE-2026-97229 in GitLab und CVE-2026-76418 in Cisco-Firewalls; Unternehmen können die Frist als Maßstab für eigene Updates nehmen.",
@@ -926,6 +893,17 @@
    "checked": true,
    "dossier": "kritische-schwachstellen-perimeter",
    "added": "2026-11-07"
+  },
+  {
+   "date": "2026-11-16",
+   "title": "Check-Point-Lücke CVE-2026-123039: behördliche Patch-Frist",
+   "detail": "Betreiber von Check-Point-Gateways und Management-Servern der Versionen R81 bis R82.20 sollten die Updates einspielen und auf Kompromittierung prüfen.",
+   "scope": "global",
+   "url": "https://thehackernews.com/2026/11/hackers-exploit-php2shell-flaws-in.html",
+   "primary": false,
+   "checked": true,
+   "dossier": "kritische-schwachstellen-perimeter",
+   "added": "2026-11-15"
   },
   {
    "date": "2026-11-18",
@@ -1244,6 +1222,20 @@
    ]
   },
   {
+   "theme": "Kriegsausschluss in Cyberversicherungen",
+   "why": "Nachdem Frankreich die Angriffe auf Supermarkt-Kühlanlagen den Revolutionsgarden des Iran zugeschrieben hat, stellt sich die Frage, ob Versicherer Schäden aus staatlichen Angriffen über Kriegsausschlüsse ablehnen. Die eigenen Policenbedingungen sollten darauf geprüft werden.",
+   "count": 5,
+   "first_seen": "2026-09-30",
+   "last_seen": "2026-11-15",
+   "evidence": [
+    "https://www.insurancebusinessmag.com/us/news/breaking-news/the-iran-wars-hidden-insurance-crisis-570333.aspx",
+    "https://www.insurancebusinessmag.com/uk/news/cyber/france-blames-iran-for-fridge-hacks-as-brokers-confront-cyberphysical-exposures-596719.aspx",
+    "https://www.france24.com/en/europe/20261109-iran-revolutionary-guards-behind-cyberattacks-on-supermarket-fridges-says-french-fm-barrot",
+    "https://versicherungswirtschaft-heute.de/politik-und-regulierung/2026-10-19/warum-frankreichs-supermarkt-hack-auch-deutsche-ketten-bedroht/",
+    "https://www.asscompact.de/nachrichten/cyberversicherung-stand-der-dinge-bei-den-kriegsklauseln"
+   ]
+  },
+  {
    "theme": "Rechtsverordnung zum Dachgesetz Kritische Infrastrukturen",
    "why": "Die Verordnung, die die betroffenen Anlagen festlegt, ist weiterhin nicht erlassen. Die Registrierungsfrist beginnt erst drei Monate nach ihrem Inkrafttreten, was für Betreiber in der Lebensmittelversorgung kurzfristig Handlungsdruck auslösen kann.",
    "count": 5,
@@ -1281,19 +1273,6 @@
     "https://digital-strategy.ec.europa.eu/en/policies/post-quantum-cryptography",
     "https://www.whitehouse.gov/wp-content/uploads/2026/06/M-26-15-Execution-of-the-Migration-to-Post-Quantum-Cryptography.pdf",
     "https://www.heise.de/news/CA-Bewerbung-CDN-Anbieter-Cloudflare-will-bald-selber-Zertifikate-ausstellen-11469864.html"
-   ]
-  },
-  {
-   "theme": "Kriegsausschluss in Cyberversicherungen",
-   "why": "Nachdem Frankreich die Angriffe auf Kühlanlagen in Supermärkten den Revolutionsgarden des Iran zugeschrieben hat, diskutieren Makler, ob Versicherer sich auf Kriegs- oder Staatsausschlüsse berufen können; manche Kunden haben mehrere unterschiedliche Formulierungen in einem Versicherungsprogramm. Für Händler wird die Frage, wann ein Angriff als staatlich gilt, zum Deckungsrisiko.",
-   "count": 4,
-   "first_seen": "2026-09-30",
-   "last_seen": "2026-11-12",
-   "evidence": [
-    "https://www.insurancebusinessmag.com/uk/news/cyber/france-blames-iran-for-fridge-hacks-as-brokers-confront-cyberphysical-exposures-596719.aspx",
-    "https://www.france24.com/en/europe/20261109-iran-revolutionary-guards-behind-cyberattacks-on-supermarket-fridges-says-french-fm-barrot",
-    "https://versicherungswirtschaft-heute.de/politik-und-regulierung/2026-10-19/warum-frankreichs-supermarkt-hack-auch-deutsche-ketten-bedroht/",
-    "https://www.asscompact.de/nachrichten/cyberversicherung-stand-der-dinge-bei-den-kriegsklauseln"
    ]
   },
   {
@@ -1370,6 +1349,16 @@
    "evidence": [
     "https://www.techuk.org/insights/news/dispatch-from-brussels-updates-on-eu-tech-policy-09-10",
     "https://www.politico.eu/article/eu-lawmakers-ai-apocalypse-warnings-brussels-scrambles-ai-rules-gaps/"
+   ]
+  },
+  {
+   "theme": "Agenten-Freigabe bei Kartendaten",
+   "why": "Der Rat für Sicherheitsstandards im Kartenzahlungsverkehr empfiehlt, dass Agenten mit Künstlicher Intelligenz Operationen mit unverschlüsselten Kartendaten nur nach ausdrücklicher Freigabe durch Menschen ausführen. Das könnte zur Prüffrage bei Kundenservice und Zahlungsprozessen werden.",
+   "count": 1,
+   "first_seen": "2026-11-15",
+   "last_seen": "2026-11-15",
+   "evidence": [
+    "https://helpnetsecurity.com/2026/10/09/pci-ssc-payment-environments-ai-security-guidance"
    ]
   },
   {
@@ -1474,6 +1463,143 @@
   }
  ],
  "news": [
+  {
+   "title": "Check-Point-Gateways: Angreifer kombinieren PHP2Shell mit Root-Lücke, Behördenfrist 16. November",
+   "summary": "Angreifer nutzen nicht gepatchte Security Gateways von Check Point über die PHP2Shell-Lücken und eine bisher unbekannte Rechteausweitung im Betriebssystem Gaia (CVE-2026-123039) und installieren die Backdoor TSGA. In einem Fall wurde danach ein Virtualisierungsserver mit VMware ESXi angegriffen, dort hat ein Wiper Dateien gelöscht. Nach ersten Angriffen gegen israelische Organisationen ab dem 30. Oktober folgte am 2. November eine breitere Welle in mehreren Ländern; die amerikanische Cybersicherheitsbehörde setzt ihren Bundesbehörden eine Patch-Frist bis 16. November.",
+   "relevance": "Firewalls und Gateways sind Randsysteme mit Durchgriff ins Rechenzentrum. Patchen allein reicht nicht: Betroffene Versionen brauchen eine Suche nach Spuren einer Kompromittierung und ein Prüfen der Zugänge zur Virtualisierung.",
+   "source": "The Hacker News",
+   "url": "https://thehackernews.com/2026/11/hackers-exploit-php2shell-flaws-in.html",
+   "id": "2026-11-15-check-point-gateways-php2shell-root-backdoor",
+   "topic": "IT-Governance & Risiko",
+   "impact": "hoch",
+   "published": "2026-11-13",
+   "tags": [
+    "Firewall",
+    "aktiv ausgenutzt",
+    "Wiper"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Umgang mit Schwachstellen",
+    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
+    "ISO/IEC 27001 Anhang A 5.26 – Reaktion auf Informationssicherheitsvorfälle"
+   ],
+   "roles": [
+    "IT-Risiko"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "kritische-schwachstellen-perimeter",
+   "priority": 1,
+   "primary": false,
+   "added": "2026-11-15T06:06:53Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Quelle vom 13. November 2026 bestätigt die Lücke CVE-2026-123039 mit Rechteausweitung auf Root, die Backdoor TSGA, die seitliche Bewegung zu einem VMware-ESXi-Server mit dem Wiper destroy_v6, die Angriffe gegen israelische Organisationen ab dem 30. Oktober, die breitere Welle am 2. November und…"
+   }
+  },
+  {
+   "title": "Bundestag beschließt Cyberabwehrgesetz: Diensteanbieter sollen Warnungen weitergeben",
+   "summary": "Der Bundestag hat am 12. November 2026 das Gesetz zur Stärkung der Cybersicherheit beschlossen. Das Bundeskriminalamt darf damit schädlichen Datenverkehr unterbinden und umleiten, Bundeskriminalamt und Bundespolizei dürfen Daten in fremden Systemen löschen oder verändern, etwa auf Servern, von denen Angriffe ausgehen; das Bundesamt für Sicherheit in der Informationstechnik soll Angriffe besser erkennen. Anbieter digitaler Dienste sollen Warnungen des Bundesamts an betroffene Kunden weitergeben, dazu kommt ein freiwilliger Schutz bei der Namensauflösung gegen bekannte Schadseiten. Der Bundesrat muss noch zustimmen.",
+   "relevance": "Für einen Konzern mit Onlinehandel und Kundenkonten entsteht eine mögliche Weitergabepflicht. Zu klären ist, wer Warnungen des Bundesamts empfängt, bewertet und an Kunden weitergibt.",
+   "source": "Universität des Saarlandes, Juristisches Internetprojekt",
+   "url": "https://www.jura.uni-saarland.de/gesetz-zur-staerkung-der-cybersicherheit-bundestag-beschliesst-aktive-cyberabwehr-durch-bka-und-bundespolizei/",
+   "id": "2026-11-15-bundestag-gesetz-staerkung-cybersicherheit",
+   "topic": "Cyber- & IT-Regulierung",
+   "impact": "mittel",
+   "published": "2026-11-13",
+   "tags": [
+    "Cyberabwehr",
+    "Gesetzgebung",
+    "Bundesamt"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 5.5 – Kontakt mit Behörden",
+    "ISO/IEC 27001 Anhang A 5.24 – Planung des Vorfallmanagements"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Management"
+   ],
+   "countries": [
+    "DE"
+   ],
+   "dossier": null,
+   "priority": 2,
+   "primary": false,
+   "added": "2026-11-15T06:06:53Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Datum, Löschbefugnis, Warnpflicht, Schutz bei der Namensauflösung und Zustimmung des Bundesrats sind belegt. Die Befugnis, Datenverkehr umzuleiten, nennt die Quelle aber nur für das Bundeskriminalamt, nicht für die Bundespolizei."
+   }
+  },
+  {
+   "title": "Apache-Webserver: Kritische Lücke im HTTP/2-Modul erlaubt Codeeinschleusung",
+   "summary": "Im Modul mod_http2 des Webservers Apache steckt eine kritische Lücke (CVE-2026-119618), über die sich Code aus der Ferne einschleusen lässt. Betroffen sind nur Server, die das Protokoll HTTP/2 unterstützen; die Ausnutzung gilt als schwierig. Die Version 2.4.71 behebt den Fehler.",
+   "relevance": "Apache läuft oft auch eingebettet in Appliances und Produkten von Dritten. Entscheidend sind ein vollständiges Inventar und Nachfragen bei Herstellern, nicht nur das Patchen der eigenen Webserver.",
+   "source": "heise online",
+   "url": "https://www.heise.de/en/news/Critical-Apache2-vulnerability-allows-code-injection-11523215.html",
+   "id": "2026-11-15-apache-mod-http2-kritische-luecke",
+   "topic": "IT-Governance & Risiko",
+   "impact": "mittel",
+   "published": "2026-11-12",
+   "tags": [
+    "Webserver",
+    "Schwachstelle"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
+    "ISO/IEC 27001 Anhang A 5.9 – Inventar der Informationen und anderer Werte"
+   ],
+   "roles": [
+    "IT-Risiko"
+   ],
+   "countries": [],
+   "dossier": "kritische-schwachstellen-perimeter",
+   "priority": 3,
+   "primary": false,
+   "added": "2026-11-15T06:06:53Z",
+   "check": {
+    "verdict": "ok",
+    "note": "heise online vom 12. November 2026 bestätigt die Lücke CVE-2026-119618 in mod_http2 mit der Einstufung kritisch, dass nur Server mit HTTP/2 betroffen sind und dass die Ausnutzung als schwierig gilt. Als gepatchte Version nennt heise die Version 2.4.71."
+   }
+  },
+  {
+   "title": "Kempinski: Gästedaten über Zugang eines Technologiepartners abgegriffen",
+   "summary": "Die Hotelgruppe Kempinski bestätigt, dass eine unbefugte Person die Zugangsdaten eines externen Technologiepartners missbraucht und Reservierungsdaten von Gästen abgerufen hat, darunter Namen, Telefonnummern, E-Mail-Adressen und Buchungsdetails. Betrüger verschicken damit gefälschte Zahlungsaufforderungen zu echten Buchungen; die Gäste wurden am 11. November 2026 benachrichtigt. Zahlungsdaten sind laut Kempinski nicht betroffen.",
+   "relevance": "Für Reiseveranstalter zeigt der Fall die Kette aus Zugang eines Partners, echten Buchungsdaten und glaubwürdigem Betrug. Partnerzugänge zu Buchungssystemen brauchen Mehr-Faktor-Anmeldung und regelmäßige Rezertifizierung, dazu vorbereitete Kundenhinweise.",
+   "source": "LoyaltyLobby",
+   "url": "https://loyaltylobby.com/2026/11/12/kempinski-data-breach-guests-targeted-in-phishing-scams",
+   "id": "2026-11-15-kempinski-gaestedaten-partnerzugang",
+   "topic": "Handel & Branche",
+   "impact": "mittel",
+   "published": "2026-11-12",
+   "tags": [
+    "Touristik",
+    "Drittanbieter",
+    "Betrug"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen",
+    "ISO/IEC 27001 Anhang A 5.18 – Zugangsrechte",
+    "DSGVO Art. 34 – Benachrichtigung der betroffenen Person"
+   ],
+   "roles": [
+    "Einkauf & Drittparteien",
+    "Datenschutz"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "drittparteien-lieferkette",
+   "priority": 4,
+   "primary": false,
+   "added": "2026-11-15T06:06:53Z",
+   "check": {
+    "verdict": "nicht prüfbar",
+    "note": "Die Quelle verweigert den Abruf (Fehler 403). Eine Websuche fand keinen weiteren Bericht über einen Vorfall bei Kempinski."
+   }
+  },
   {
    "title": "Webhoster Mittwald: Angriff über eigene Schnittstelle für Agenten, erneut im Krisenmodus",
    "summary": "Eine Woche nach einem Angriff über den unternehmenseigenen Server für das Model Context Protocol, über den Kunden Assistenten mit Künstlicher Intelligenz an die Plattform anbinden, sind beim Hoster Mittwald seit der Nacht auf den 12. November erneut Fernzugang, Verwaltungsoberfläche und Kundencenter nicht erreichbar. Nach dem ersten Angriff waren Zugänge ab dem 5. November gesperrt und bis zum 7. November schrittweise wieder freigegeben worden. Mittwald beschreibt die Angreifer als offensichtlich durch Künstliche Intelligenz unterstützte Profis, die bei Kunden gehosteten Webseiten seien nicht betroffen.",
@@ -1785,6 +1911,42 @@
    "check": {
     "verdict": "abweichung",
     "note": "Der Artikel stammt vom 10. November. Die Abschaltung am 9. November, die Regionen, die 33 angeblichen Lücken und die Aussage, dass keine aktive Ausnutzung festgestellt wurde, stimmen."
+   }
+  },
+  {
+   "title": "Update: Amadeus – Zugriff lief offenbar drei Jahre, mindestens 344.800 Buchungen",
+   "summary": "Finnair meldet 116.000 kompromittierte Reservierungen und ist damit die siebte große Fluggesellschaft, die vom Vorfall beim Buchungsdienstleister Amadeus betroffen ist; insgesamt sind es mindestens 344.800 Buchungen. Neu ist der Zeitraum: Der unbefugte Zugriff soll von August 2023 bis September 2026 gelaufen sein, die Fluggesellschaften wurden erst Ende Oktober 2026 informiert. Betroffen sind Namen, Buchungsnummern, Reiserouten und Buchungsklassen.",
+   "relevance": "Ein drei Jahre unentdeckter Zugriff bei einem zentralen Dienstleister zeigt, wie wichtig vertragliche Meldefristen, Protokollierungspflichten und Nachweise beim Anbieter sind. Für die Touristik ist das eine Vorlage für die nächste Lieferantenprüfung.",
+   "source": "Paddle Your Own Kanoo",
+   "url": "https://www.paddleyourownkanoo.com/2026/11/09/finnair-says-116000-reservations-have-been-compromised-in-massive-data-breach/",
+   "id": "2026-11-15-update-amadeus-zugriff-drei-jahre",
+   "topic": "Handel & Branche",
+   "impact": "mittel",
+   "published": "2026-11-09",
+   "tags": [
+    "Touristik",
+    "Drittanbieter",
+    "Erkennungsdauer"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
+    "ISO/IEC 27001 Anhang A 5.22 – Überwachung und Überprüfung von Lieferantendienstleistungen",
+    "ISO/IEC 27001 Anhang A 8.15 – Protokollierung"
+   ],
+   "roles": [
+    "Einkauf & Drittparteien",
+    "IT-Risiko"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "drittparteien-lieferkette",
+   "priority": 5,
+   "primary": false,
+   "added": "2026-11-15T06:06:53Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Quelle vom 9. November 2026 bestätigt Finnair als siebte Fluggesellschaft, insgesamt mindestens 344.800 Buchungen, den Zeitraum von August 2023 bis September 2026, die Information erst Ende Oktober und die betroffenen Datenarten. Überschrift und Aufzählung nennen 116.000 Reservierungen, der…"
    }
   },
   {
@@ -3171,6 +3333,72 @@
    "check": {
     "verdict": "ok",
     "note": "Datum 1. November, Zeitraum August 2023 bis September 2026 und die fehlenden Angaben sind belegt."
+   }
+  },
+  {
+   "title": "Generalanwalt: Kein Schadensersatz bei provozierten Datenschutzverstößen",
+   "summary": "Ein Generalanwalt am Gerichtshof der Europäischen Union hat am 5. November 2026 in der Rechtssache C-654/25 Schlussanträge gestellt. Danach könnte ein Anspruch auf Schadensersatz nach der Datenschutz-Grundverordnung ausscheiden, wenn ein Verstoß gezielt provoziert wurde. Ob der Gerichtshof folgt, ist offen.",
+   "relevance": "Händler mit vielen Kundenkontakten sehen sich oft massenhaften Auskunfts- und Schadensersatzforderungen gegenüber. Ein Urteil in diesem Sinn würde die Abwehr erleichtern, ändert aber nichts an sauberen Prozessen zur Beantwortung von Anfragen.",
+   "source": "Shopbetreiber-Blog",
+   "url": "https://shopbetreiber-blog.de/eugh-generalanwalt-kein-schadensersatz-bei-provozierten-datenschutzverstoessen",
+   "id": "2026-11-15-generalanwalt-provozierte-datenschutzverstoesse",
+   "topic": "Datenschutz & Datenrecht",
+   "impact": "info",
+   "published": "2026-11",
+   "tags": [
+    "Schadensersatz",
+    "Rechtsprechung"
+   ],
+   "controls": [
+    "DSGVO Art. 82 – Haftung und Recht auf Schadenersatz",
+    "DSGVO Art. 15 – Auskunftsrecht der betroffenen Person"
+   ],
+   "roles": [
+    "Datenschutz"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": null,
+   "priority": 6,
+   "primary": false,
+   "added": "2026-11-15T06:06:53Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Der Beitrag ist auf den 10. November 2026 datiert. Er bestätigt die Schlussanträge vom 5. November 2026 in der Rechtssache C-654/25, die Kernaussage zum provozierten Verstoß und dass offen ist, ob der Gerichtshof folgt."
+   }
+  },
+  {
+   "title": "Entwaldungsverordnung: Bundestag beschließt Durchführungsgesetz mit hohen Bußgeldern",
+   "summary": "Laut einem Bericht hat der Bundestag am 12. November 2026 das deutsche Durchführungsgesetz zur Entwaldungsverordnung der Europäischen Union beschlossen. Bei Verstößen drohen Bußgelder bis 100.000 Euro, bei größeren Unternehmen bis zu 4 Prozent des Jahresumsatzes in der Europäischen Union; Händler müssen sich laut Bericht ab dem 30. Dezember auf die Pflichten einstellen. Betroffen sind unter anderem Kaffee, Holzmöbel und Papier.",
+   "relevance": "Sorgfaltserklärungen und Rückverfolgbarkeit hängen an verlässlichen Lieferanten- und Herkunftsdaten in den Systemen. Für Governance, Risiko und Compliance in der Informationstechnik geht es um Datenqualität, Schnittstellen und Nachweisfähigkeit.",
+   "source": "wortfilter.de",
+   "url": "https://wortfilter.de/eudr-onlinehaendler-massnahmenplan/",
+   "id": "2026-11-15-entwaldungsverordnung-durchfuehrungsgesetz",
+   "topic": "Weitere Themen",
+   "impact": "info",
+   "published": "2026-11",
+   "tags": [
+    "Lieferkette",
+    "Sorgfaltspflichten",
+    "Bußgelder"
+   ],
+   "controls": [],
+   "roles": [
+    "Management",
+    "Einkauf & Drittparteien"
+   ],
+   "countries": [
+    "DE",
+    "EU"
+   ],
+   "dossier": null,
+   "priority": 7,
+   "primary": false,
+   "added": "2026-11-15T06:06:53Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Der Beitrag vom 13. November 2026 bestätigt den Bundestagsbeschluss vom 12. November 2026, Bußgelder bis 100.000 Euro beziehungsweise bis 4 Prozent des Jahresumsatzes in der Europäischen Union und den Geltungsbeginn am 30. Dezember 2026 für mittlere und große Unternehmen. Kaffee, Holzmöbel und…"
    }
   },
   {

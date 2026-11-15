@@ -1,0 +1,195 @@
+{
+ "format": "tag",
+ "chapters": [
+  {
+   "title": "Begrüßung",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Guten Morgen, liebe IT-GRC-Kolleginnen und -Kollegen, willkommen beim IT-GRC Radar am Sonntag, dem fünfzehnten November 2026."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Sonntag, und trotzdem haben wir eine Frist für morgen. Wochenenden kennen Angreifer offenbar nicht."
+    }
+   ]
+  },
+  {
+   "title": "Check Point unter Beschuss",
+   "news_id": "2026-11-15-check-point-gateways-php2shell-root-backdoor",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Damit zum wichtigsten Thema. Angreifer nutzen ungepatchte [en]Security Gateways[/en] von Check Point aus, erst über die PHP2Shell-Lücken, dann über eine neue Lücke im Betriebssystem der Geräte, die Root-Rechte bringt."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und dabei bleibt es nicht. Laut Check Point wurde eine [en]Backdoor[/en] installiert, und in einem Fall haben die Angreifer danach einen Virtualisierungsserver angegriffen und mit einem [en]Wiper[/en] Dateien gelöscht."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Moment, die [en]Firewall[/en] als Sprungbrett ins Rechenzentrum?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Genau das. Die amerikanische Cybersicherheitsbehörde hat die Lücke CVE-2026-123039 als aktiv ausgenutzt gelistet, die Frist für Bundesbehörden endet am sechzehnten November, also morgen. Wer solche Geräte betreibt, sollte nicht nur patchen, sondern auch nach Spuren suchen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Also nicht nur ein Häkchen in der [en]Patch[/en]-Liste."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Eben. Ein [en]Patch[/en] auf einem übernommenen Gerät ist wie ein neues Schloss, wenn der Einbrecher schon im Wohnzimmer sitzt."
+    }
+   ]
+  },
+  {
+   "title": "Neues Cyberabwehrgesetz",
+   "news_id": "2026-11-15-bundestag-gesetz-staerkung-cybersicherheit",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Thema zwei kommt aus Berlin. Der Bundestag hat am zwölften November das Gesetz zur Stärkung der Cybersicherheit beschlossen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Bekannt geworden ist es als [en]Hackback[/en]-Gesetz. Bundeskriminalamt und Bundespolizei dürfen Daten in fremden Systemen löschen oder verändern, etwa auf Servern, von denen Angriffe ausgehen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und was hat ein Handelskonzern damit zu tun?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Anbieter digitaler Dienste sollen Warnungen des Bundesamts für Sicherheit in der Informationstechnik an betroffene Kunden weitergeben. Der Bundesrat muss noch zustimmen, aber die Frage stellt sich schon jetzt: Wer im Haus würde so eine Warnung empfangen und weiterleiten?"
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Ah, die gute alte Frage nach dem [en]Owner[/en]."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Die wird uns alle überleben."
+    }
+   ]
+  },
+  {
+   "title": "Apache-Lücke",
+   "news_id": "2026-11-15-apache-mod-http2-kritische-luecke",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Dann eine Lücke, die fast jeder irgendwo hat, im Webserver Apache."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Im Modul für das Protokoll HTTP 2 lässt sich Code einschleusen. Die Ausnutzung gilt als schwierig, die Version 2.4.71 behebt den Fehler."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Schwierig heißt aber nicht unmöglich."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Richtig. Und Apache steckt oft in [en]Appliances[/en] von Dritten. Das Inventar ist hier die eigentliche Arbeit."
+    }
+   ]
+  },
+  {
+   "title": "Kempinski",
+   "news_id": "2026-11-15-kempinski-gaestedaten-partnerzugang",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Ab in die Touristik. Bei der Hotelgruppe Kempinski hat jemand den Zugang eines externen Technologiepartners missbraucht und Reservierungsdaten von Gästen abgerufen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Damit verschicken Betrüger jetzt gefälschte Zahlungsaufforderungen zu echten Buchungen. Benachrichtigt wurden die Gäste am elften November."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Mit echten Buchungsdaten wird [en]Phishing[/en] natürlich verdammt glaubwürdig."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Deshalb gehören Zugänge von Partnern zu Buchungssystemen mit Mehr-Faktor-Anmeldung abgesichert und regelmäßig überprüft. Und ein fertiger Kundenhinweis sollte in der Schublade liegen."
+    }
+   ]
+  },
+  {
+   "title": "Update Amadeus",
+   "news_id": "2026-11-15-update-amadeus-zugriff-drei-jahre",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Da gibt es Neues zum Vorfall beim Buchungsdienstleister Amadeus."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Finnair meldet 116.000 betroffene Reservierungen, insgesamt sind es mindestens 344.800 Buchungen bei sieben Fluggesellschaften. Viel bemerkenswerter ist aber der Zeitraum, von August 2023 bis September 2026."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Drei Jahre? Ehrlich gesagt hätte ich erwartet, dass das früher jemand merkt."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ich auch. Für Verträge heißt das: Meldefristen und Protokollierung beim Dienstleister festschreiben und sich die Nachweise auch zeigen lassen."
+    }
+   ]
+  },
+  {
+   "title": "Provozierte Verstöße",
+   "news_id": "2026-11-15-generalanwalt-provozierte-datenschutzverstoesse",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Kurz zum Datenschutz. Ein Generalanwalt am Gerichtshof der Europäischen Union meint, bei gezielt provozierten Datenschutzverstößen könnte der Schadensersatz entfallen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Für Onlinehändler mit massenhaften Forderungen wäre das eine Entlastung. Aber das sind Schlussanträge, noch kein Urteil."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Also die Excel-Liste mit den Anfragen schön weiterpflegen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Wie immer."
+    }
+   ]
+  },
+  {
+   "title": "Auf dem Radar",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Was steht auf dem Radar?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Kriegsausschlüsse in Cyberversicherungen. Frankreich schreibt die Angriffe auf Supermarkt-Kühlanlagen den Revolutionsgarden des Iran zu. Da lohnt ein Blick in die eigenen Policen, bevor der Schaden da ist."
+    }
+   ]
+  },
+  {
+   "title": "Abschied",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Das war das IT-GRC Radar für heute. Alle Quellen findet ihr wie immer auf der Webseite."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und morgen früh zuerst Check Point, dann der Kaffee. Bis bald."
+    }
+   ]
+  }
+ ]
+}
