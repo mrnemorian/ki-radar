@@ -1,0 +1,163 @@
+{
+ "format": "tag",
+ "chapters": [
+  {
+   "title": "Begrüßung",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Guten Morgen, liebe IT-GRC-Kolleginnen und -Kollegen, willkommen beim IT-GRC Radar. Heute ist Montag, der sechzehnte November 2026."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Montag, und die Fristenliste ist schon wieder länger als meine Kaffeetasse. Fangen wir am besten genau da an."
+    }
+   ]
+  },
+  {
+   "title": "Die Woche",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Gerne. Heute endet die Behördenfrist für die Check-Point-Lücke, mit der Angreifer bis zu [en]Root[/en]-Rechten kommen. Am achtzehnten November folgt die alte Apple-Lücke, und am neunzehnten endet die Umfrage des Bundesamts für Sicherheit in der Informationstechnik zum [en]Cyber Resilience Act[/en]."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Meine Frist der Woche ist Freitag, der zwanzigste November: die SonicWall-Lücke, mit der sich die Mehr-Faktor-Anmeldung umgehen lässt."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Warum gerade die?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Weil sie genau die Kontrolle aushebelt, die wir in jedem [en]Audit[/en] als Antwort auf fast alles anführen. Da sollte niemand bis Freitagabend warten."
+    }
+   ]
+  },
+  {
+   "title": "N-central trotz Hotfix",
+   "news_id": "2026-11-16-n-central-angriffe-trotz-hotfix",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Da gibt es Neues zur Fernwartungsplattform N-central. Zwei neue Angriffsketten werden aktiv ausgenutzt. Ein Sicherheitsdienstleister fand Schadsoftware zum Schürfen von Kryptowährung auf 21 Servern, und 19 davon hatten den zweiten [en]Hotfix[/en] schon installiert."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Moment, gepatcht und trotzdem befallen? Das ist der Albtraum jeder Patch-Statistik. Grün im [en]Dashboard[/en] heißt hier eben nicht sicher."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Der Hersteller verlangt, die alte Programmierschnittstelle abzuschalten und Agenten und Sonden zu aktualisieren. Ein dritter [en]Hotfix[/en] wird gerade vorbereitet und stufenweise verteilt."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Für einen großen Konzern heißt das: nicht nur fragen, ob wir das Werkzeug selbst betreiben, sondern auch, welche Dienstleister damit auf unsere Systeme kommen. Und ein Treffer ist laut den Forschern eine vollständige Kompromittierung, keine Aufräumaktion."
+    }
+   ]
+  },
+  {
+   "title": "Meta und die Fotogalerie",
+   "news_id": "2026-11-16-italien-meta-805-millionen-galerie",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Zweitens: Die italienische Datenschutzbehörde hat gegen Meta 805 Millionen Euro verhängt. Die Facebook-App für Android griff standardmäßig auf die Fotogalerie von rund 20 Millionen Menschen in Italien zu, ohne eigene Einwilligung."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Spannend ist die Rechtsgrundlage. Das ist nicht die Datenschutz-Grundverordnung, sondern das italienische Recht zur ePrivacy-Richtlinie. Und dafür gibt es keine federführende Behörde in Irland."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Heißt also, jede nationale Behörde kann selbst zugreifen?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Genau. Für Händler mit Apps in mehreren Ländern heißt das: Jede Berechtigung auf dem Handy braucht einen klaren Zweck und eine eigene Einwilligung. Eine Sammelfreigabe für alles ist kein Einwilligungskonzept, sondern eine Wette."
+    }
+   ]
+  },
+  {
+   "title": "Fireworks AI und Cursor",
+   "news_id": "2026-11-16-fireworks-schluessel-cursor-marktplatz",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Drittens ein Update zum Einbruch bei Fireworks AI. Cursor sagt, ein dort entwendeter Schlüssel habe am Ende zu einer manipulierten Erweiterung im eigenen Marktplatz geführt. In Protokollen von [en]Coding[/en]-Agenten standen teils ungeschwärzte Zugangsdaten."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Also Fireworks, Notion, Uber und jetzt Cursor. Ein einziger Modellanbieter, und plötzlich sitzt die halbe [en]Supply Chain[/en] mit am Tisch."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Was nimmt man daraus mit?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Dass ins Lieferantenmanagement gehört, welche Daten wir Anbietern von Künstlicher Intelligenz geben und ob da jemand schwärzt. In der Excel-Liste steht davon meistens nichts."
+    }
+   ]
+  },
+  {
+   "title": "Operation Endgame",
+   "news_id": "2026-11-16-operation-endgame-zugangsdaten",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Viertens eine gute Nachricht: Die Operation Endgame hat Server hinter Gootloader, CastleRAT und StealC abgeschaltet. Das Bundeskriminalamt spricht von rund 6,4 Millionen gestohlenen Zugangsdaten von über 40.000 Opfern."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Gut für alle, aber auch ein Auftrag. Betroffene werden benachrichtigt, also braucht es einen eingeübten Ablauf zum Zurücksetzen. Und Achtung: Echte Polizeimails enthalten laut den Ermittlern keine Links."
+    }
+   ]
+  },
+  {
+   "title": "AMD SEV-SNP",
+   "news_id": "2026-11-16-amd-sev-snp-mior-skyfall",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Fünftens kurz: Forscher zeigen zwei Angriffe auf vertrauliche virtuelle Maschinen mit AMD SEV-SNP. Ein bösartiger Host kann Daten auslesen, in einem Fall sogar den Integritätsnachweis fälschen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Das trifft genau die Technik, mit der gern Souveränität in der [en]Cloud[/en] versprochen wird. Nötig ist allerdings die Kontrolle über den [en]Hypervisor[/en], also kein Grund zur Panik, aber einer, nach den Firmware-Updates im November und Dezember zu fragen."
+    }
+   ]
+  },
+  {
+   "title": "Auf dem Radar",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Auf dem Radar: Cyberversicherer verabschieden sich vom stillschweigenden Schutz für Schäden durch Künstliche Intelligenz."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und die Ausschlüsse stehen oft nicht fett auf Seite eins, sondern stecken im Aufbau der Bedingungen. Vor der nächsten Verlängerung also lieber gemeinsam mit Einkauf und Rechtsabteilung lesen."
+    }
+   ]
+  },
+  {
+   "title": "Abschied",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Das war unser Montag. Alle Quellen findet ihr wie immer auf der Webseite."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und falls ihr diese Woche den [en]Owner[/en] für die Fernwartung sucht: viel Erfolg. Bis morgen."
+    }
+   ]
+  }
+ ]
+}

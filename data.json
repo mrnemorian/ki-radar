@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T06:06:53Z",
+ "updated": "2026-11-16T06:06:40Z",
  "topics": [
   "IT-Governance & Risiko",
   "Cyber- & IT-Regulierung",
@@ -11,6 +11,18 @@
   "Weitere Themen"
  ],
  "briefings": [
+  {
+   "date": "2026-11-16",
+   "headline": "Fernwartungsplattform N-central trotz Hotfix angegriffen, Italien verhängt 805 Millionen Euro gegen Meta, Kette um Fireworks AI erreicht Cursor",
+   "points": [
+    "N-central: 19 von 21 befallenen Servern hatten den zweiten Hotfix schon installiert, die alte Programmierschnittstelle muss abgeschaltet werden",
+    "Italienische Datenschutzbehörde: 805 Millionen Euro gegen Meta, weil die App ohne eigene Einwilligung auf die Fotogalerie zugriff, ohne Federführung über Irland",
+    "Update Fireworks AI: Ein entwendeter Schlüssel führte zu einer manipulierten Erweiterung im Marktplatz von Cursor",
+    "Operation Endgame: 6,4 Millionen gestohlene Zugangsdaten sichergestellt, Betroffene werden benachrichtigt",
+    "Vertrauliche virtuelle Maschinen mit AMD SEV-SNP: Zwei Angriffe aus der Forschung, Firmware-Updates kommen im November und Dezember"
+   ],
+   "count": 5
+  },
   {
    "date": "2026-11-15",
    "headline": "Check-Point-Gateways werden für Backdoors und Löschangriffe missbraucht, der Bundestag beschließt neue Cyberabwehr, Drittanbieter-Zugänge treffen die Touristik",
@@ -353,18 +365,6 @@
     "Außerdem: verdeckte Fernarbeiter aus Nordkorea, Stellungnahme zu Datenbrillen, Bußgeld gegen Emirates wegen Gesundheitsdaten von Fluggästen."
    ],
    "count": 8
-  },
-  {
-   "date": "2026-10-15",
-   "headline": "Bundesamt fordert Absicherung von Kühlsteuerungen, aktiv ausgenutzte Lücken an Firewall, Mail-Gateway und Fernzugang, Leitlinie zur Post-Quanten-Kryptografie.",
-   "points": [
-    "Update Betriebstechnik: Das Bundesamt für Sicherheit in der Informationstechnik richtet die Cybersicherheitsempfehlung Nummer 154 ausdrücklich an Betreiber von Anlagen zur Lebensmittelkühlung.",
-    "Vier neue aktiv ausgenutzte Lücken im Katalog der Behörde der Vereinigten Staaten (Palo Alto Networks, Cisco, AhsayCBS), dazu wird Ivanti Connect Secure angegriffen.",
-    "Gemeinsame Leitlinie von Bund und Bundesamt zur Post-Quanten-Kryptografie: Hochrisiko-Anwendungen bis Ende 2030 umstellen.",
-    "Verbraucherschützer verklagen Lidl wegen fehlender Datenschutzhinweise an Selbstbedienungskassen.",
-    "Studie: Nur 11 Prozent der Unternehmen haben eigene Abläufe für Sicherheitsvorfälle mit Künstlicher Intelligenz."
-   ],
-   "count": 6
   }
  ],
  "dossiers": [
@@ -406,18 +406,18 @@
    "title": "Drittparteien- und Lieferkettenrisiko",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Beim Buchungsdienstleister Amadeus lief der unbefugte Zugriff offenbar von August 2023 bis September 2026, mindestens 344.800 Buchungen bei sieben Fluggesellschaften sind betroffen. Bei Kempinski wurde der Zugang eines Technologiepartners missbraucht, die Gästedaten dienen nun für Zahlungsbetrug; zuvor hatten N-central, Casinos Austria und Arara gezeigt, wie einzelne Dienstleister viele Kunden…",
-   "next_step": "Partnerzugänge zu Buchungs- und Kundensystemen rezertifizieren und mit Mehr-Faktor-Anmeldung absichern; Meldefristen und Protokollierungspflichten in Verträgen mit zentralen Dienstleistern prüfen.",
+   "status": "Bei der Fernwartungsplattform N-central werden zwei neue Angriffsketten aktiv ausgenutzt, 19 von 21 befallenen Servern hatten den zweiten Hotfix bereits installiert. Zugleich zeigt der Fall Fireworks AI, wie ein entwendeter Schlüssel eines Modellanbieters Notion, Uber und den Marktplatz von Cursor traf; bei Amadeus sind mindestens 344.800 Buchungen betroffen.",
+   "next_step": "Von Dienstleistern mit Fernwartungswerkzeugen Nachweise zu Patch-Stand und abgeschalteter alter Programmierschnittstelle einfordern und Datenweitergaben an Anbieter Künstlicher Intelligenz im Lieferantenregister erfassen.",
    "open_questions": [
-    "Wie schnell müssen zentrale Dienstleister Vorfälle vertraglich melden?",
-    "Werden Protokolle der Dienstleister so lange aufbewahrt, dass auch jahrelange Zugriffe nachvollziehbar sind?"
+    "Welche Dienstleister greifen mit N-central oder vergleichbaren Plattformen auf Konzernsysteme zu?",
+    "Werden Zugangsdaten in Daten, die an Anbieter Künstlicher Intelligenz gehen, nachweislich geschwärzt?"
    ],
    "controls": [
     "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
     "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen",
-    "ISO/IEC 27001 Anhang A 5.22 – Überwachung und Überprüfung von Lieferantendienstleistungen"
+    "ISO/IEC 27001 Anhang A 5.22 – Überwachung, Überprüfung und Änderungsmanagement von Lieferantendienstleistungen"
    ],
-   "updated": "2026-11-15"
+   "updated": "2026-11-16"
   },
   {
    "slug": "steuerliche-digitalpflichten",
@@ -456,18 +456,16 @@
    "title": "Identitäten und Zugangsdaten",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Neben Fällen wie Staples und mSecure zeigt Microsoft, wie Angreifer sich über Teams als Support ausgeben und dann über schlecht konfigurierte Zertifikatsdienste Zertifikate für privilegierte Konten und Domain Controller erhalten. Zertifikate, versteckte Rechteketten in Entra ID und nicht-menschliche Identitäten werden damit zu eigenen Prüfobjekten.",
-   "next_step": "Zertifikatsvorlagen und die Web-Registrierung der Active Directory Certificate Services prüfen, den erweiterten Schutz der Anmeldung aktivieren, Anfragen von Externen über Teams und erlaubte Fernwartungswerkzeuge einschränken und Zertifikate in die Prüfung der Berechtigungen aufnehmen.",
+   "status": "Die Operation Endgame hat rund 6,4 Millionen gestohlene Zugangsdaten von über 40.000 Opfern sichergestellt, Betroffene werden über Behörden und Internetanbieter benachrichtigt. Daneben bleiben falscher Support über Teams, schlecht konfigurierte Zertifikatsdienste, versteckte Rechteketten in Entra ID und nicht-menschliche Identitäten eigene Prüfobjekte.",
+   "next_step": "Prozess für eingehende Hinweise auf abgeflossene Zugangsdaten festlegen und üben, einschließlich Zurücksetzen und Warnung vor gefälschten Behördenmails.",
    "open_questions": [
-    "Wer ist Owner der Zertifikatsinfrastruktur und ihrer Vorlagen?",
-    "Werden ausgestellte Zertifikate bei Vorfällen genauso schnell gesperrt wie Passwörter zurückgesetzt?"
+    "Wer im Konzern nimmt Benachrichtigungen von Behörden über abgeflossene Zugangsdaten entgegen?"
    ],
    "controls": [
-    "ISO/IEC 27001 Anhang A 5.18 – Zugangsrechte",
-    "ISO/IEC 27001 Anhang A 8.2 – Privilegierte Zugangsrechte",
-    "IT-Kontrollen der Abschlussprüfung – Zugriffsverwaltung"
+    "ISO/IEC 27001 Anhang A 5.17 – Authentisierungsinformationen",
+    "ISO/IEC 27001 Anhang A 5.18 – Zugangsrechte"
    ],
-   "updated": "2026-11-06"
+   "updated": "2026-11-16"
   },
   {
    "slug": "kritische-schwachstellen-perimeter",
@@ -558,18 +556,16 @@
    "title": "Sicherheit agentischer Künstlicher Intelligenz",
    "sector": "AI-Governance",
    "ring": "jetzt handeln",
-   "status": "Beim Webhoster Mittwald war der eigene Server für das Model Context Protocol, über den Kunden Assistenten anbinden, das Einfallstor; seit dem 12. November sind erneut zentrale Verwaltungszugänge offline. Zuvor hatten präparierte Dateien für Coding-Agenten und der umgangene Lockdown Mode von ChatGPT gezeigt, dass die Schnittstellen zwischen Assistenten und Systemen selbst zum Angriffsziel werden.",
-   "next_step": "Alle eigenen und von Dienstleistern betriebenen Schnittstellen für Agenten inventarisieren, mit Owner, Berechtigungen, Laufzeit der Sitzungsschlüssel und Protokollierung, und neue Agenten-Funktionen vor dem Start in den Freigabeprozess aufnehmen.",
+   "status": "Bei Cursor führte ein bei Fireworks AI entwendeter Schlüssel zu Protokollen von Coding-Agenten mit ungeschwärzten Zugangsdaten und schließlich zu einer manipulierten Erweiterung im Marktplatz. Zuvor waren der eigene Server für das Model Context Protocol beim Webhoster Mittwald und präparierte Dateien für Coding-Agenten das Einfallstor.",
+   "next_step": "Für eingesetzte Coding-Agenten und Assistenten klären, welche Protokolle an Anbieter fließen, ob Datenschutz-Modi aktiv sind und aus welchen Marktplätzen Erweiterungen bezogen werden dürfen.",
    "open_questions": [
-    "Welche Dienstleister bieten bereits Agenten-Schnittstellen auf Systeme mit Kunden- oder Beschäftigtendaten an?",
-    "Wie werden Zugriffe von Agenten getrennt von menschlichen Zugriffen protokolliert und überwacht?"
+    "Gibt es eine Freigabeliste für Erweiterungen von Entwicklerwerkzeugen mit Künstlicher Intelligenz?"
    ],
    "controls": [
-    "ISO/IEC 42001 – Managementsystem für Künstliche Intelligenz",
-    "ISO/IEC 27001 Anhang A 8.5 – Sichere Authentisierung",
-    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette"
+    "ISO/IEC 27001 Anhang A 8.28 – Sichere Codierung",
+    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen"
    ],
-   "updated": "2026-11-13"
+   "updated": "2026-11-16"
   },
   {
    "slug": "ai-act",
@@ -817,17 +813,6 @@
   }
  ],
  "deadlines": [
-  {
-   "date": "2026-11-01",
-   "title": "Behördliche Frist zum Schließen der GitLab- und Cisco-Firewall-Lücken",
-   "detail": "Die amerikanische Cybersicherheitsbehörde verlangt von den Bundesbehörden bis zu diesem Tag die Behebung von CVE-2026-97229 in GitLab und CVE-2026-76418 in Cisco-Firewalls; Unternehmen können die Frist als Maßstab für eigene Updates nehmen.",
-   "scope": "global",
-   "url": "https://thehackernews.com/2026/10/cisa-adds-actively-exploited-gitlab-rce.html",
-   "primary": false,
-   "checked": true,
-   "dossier": "kritische-schwachstellen-perimeter",
-   "added": "2026-11-01"
-  },
   {
    "date": "2026-11-06",
    "title": "WordPress-Lücke CVE-2026-119977: behördliche Patch-Frist",
@@ -1195,6 +1180,20 @@
    ]
   },
   {
+   "theme": "Rechtsverordnung zum Dachgesetz Kritische Infrastrukturen",
+   "why": "Die Verordnung mit den Schwellenwerten, auch für die Lebensmittelversorgung, steht weiter aus; im Lobbyregister wird im Oktober 2026 noch über die Schwellenwerte gerungen. Erst mit ihr wird klar, welche Anlagen sich registrieren müssen.",
+   "count": 6,
+   "first_seen": "2026-09-30",
+   "last_seen": "2026-11-16",
+   "evidence": [
+    "https://www.lobbyregister.bundestag.de/media/9d/d8/864204/Lobbyregister-Regelungsvorhaben-Detailansicht-RV0001662-2026-10-22_10-43-51.pdf",
+    "https://www.ihk.de/koeln/hauptnavigation/recht-steuern/uebersicht-arbeitsrecht/kritis-dachgesetz-was-unternehmen-jetzt-wissen-und-tun-muessen-7012562",
+    "https://christopher-helm.com/kritis-betreiber-schwellenwert-rechtsverordnung/",
+    "https://cms.law/de/deu/legal-updates/kritis-verordnung-was-betreiber-kritischer-anlagen-jetzt-wissen-muessen",
+    "https://ag.kritis.info/2026/05/28/referentenentwurf-des-bmi-verordnung-zur-bestimmung-kritischer-anlagen-nach-dem-kritis-dachgesetz-kritisverordnung-kritisv/"
+   ]
+  },
+  {
    "theme": "Normen zum Cyber Resilience Act",
    "why": "Die ersten horizontalen Teile der Normenreihe EN 40000 zu Begriffen und Grundsätzen der Cyberresilienz sollten nach Abschluss der Abstimmung bei den europäischen Normungsorganisationen Anfang November ratifiziert werden. Sie werden zum Maßstab für Anforderungen an Lieferanten vernetzter Produkte und Software.",
    "count": 6,
@@ -1236,20 +1235,6 @@
    ]
   },
   {
-   "theme": "Rechtsverordnung zum Dachgesetz Kritische Infrastrukturen",
-   "why": "Die Verordnung, die die betroffenen Anlagen festlegt, ist weiterhin nicht erlassen. Die Registrierungsfrist beginnt erst drei Monate nach ihrem Inkrafttreten, was für Betreiber in der Lebensmittelversorgung kurzfristig Handlungsdruck auslösen kann.",
-   "count": 5,
-   "first_seen": "2026-09-30",
-   "last_seen": "2026-11-14",
-   "evidence": [
-    "https://www.ihk.de/koeln/hauptnavigation/recht-steuern/uebersicht-arbeitsrecht/kritis-dachgesetz-was-unternehmen-jetzt-wissen-und-tun-muessen-7012562",
-    "https://christopher-helm.com/kritis-betreiber-schwellenwert-rechtsverordnung/",
-    "https://cms.law/de/deu/legal-updates/kritis-verordnung-was-betreiber-kritischer-anlagen-jetzt-wissen-muessen",
-    "https://ag.kritis.info/2026/05/28/referentenentwurf-des-bmi-verordnung-zur-bestimmung-kritischer-anlagen-nach-dem-kritis-dachgesetz-kritisverordnung-kritisv/",
-    "https://christopher-helm.com/kritis-dachgesetz-registrierungsfrist-gestrichen/"
-   ]
-  },
-  {
    "theme": "Digitale Identitäts-Wallet der Europäischen Union",
    "why": "Der Bundestag hat am 15. Oktober 2026 das Gesetz für die europäische digitale Identitäts-Wallet beschlossen. Für Händler und Reiseanbieter werden Altersnachweise, Identifizierung und Kundenanmeldung über die Wallet absehbar ein Thema für Prozesse und Datenschutz.",
    "count": 5,
@@ -1286,6 +1271,17 @@
    ]
   },
   {
+   "theme": "Cyberpolicen schließen Künstliche Intelligenz aus",
+   "why": "Versicherer verabschieden sich vom stillschweigenden Schutz für Schäden mit Bezug zu Künstlicher Intelligenz, oft versteckt im Aufbau der Bedingungen statt in einer sichtbaren Klausel. Vor der nächsten Verlängerung sollten Risikomanagement, Einkauf und Rechtsabteilung die Bedingungen gemeinsam prüfen.",
+   "count": 3,
+   "first_seen": "2026-10-30",
+   "last_seen": "2026-11-16",
+   "evidence": [
+    "https://www.fenwick.com/insights/publications/end-silent-ai-emerging-ai-exclusions-coverage-fragmentation-and-practical-implications",
+    "https://www.theinsurer.com/cyber-risk/news/debate-intensifies-rise-over-where-ai-risk-belongs-2026-10-22/"
+   ]
+  },
+  {
    "theme": "Grundschutz++ zertifizierbar ab 2027",
    "why": "Das Bundesamt für Sicherheit in der Informationstechnik will die Methodik Ende Oktober vorstellen. Ab dem 1. Januar 2027 sollen Zertifizierungsanträge nach ISO/IEC 27001 auf Basis von Grundschutz++ möglich sein. Die maschinenlesbaren Anforderungen könnten das Kontrollmanagement automatisieren und Tabellenlisten ablösen.",
    "count": 3,
@@ -1305,17 +1301,6 @@
    "evidence": [
     "https://www.mlex.com/mlex/articles/2543650",
     "https://www.mlex.com/mlex/data-privacy-security/articles/2531216"
-   ]
-  },
-  {
-   "theme": "Cyberpolicen schließen Künstliche Intelligenz aus",
-   "why": "Versicherer nehmen Risiken aus Entwicklung und Betrieb Künstlicher Intelligenz zunehmend aus Cyber- und Haftpflichtpolicen heraus oder verschieben sie in Zusatzdeckungen. Bei Erneuerungen sollten Deckungslücken für den eigenen Einsatz Künstlicher Intelligenz geprüft werden.",
-   "count": 2,
-   "first_seen": "2026-10-30",
-   "last_seen": "2026-11-09",
-   "evidence": [
-    "https://www.fenwick.com/insights/publications/end-silent-ai-emerging-ai-exclusions-coverage-fragmentation-and-practical-implications",
-    "https://www.theinsurer.com/cyber-risk/news/debate-intensifies-rise-over-where-ai-risk-belongs-2026-10-22/"
    ]
   },
   {
@@ -1463,6 +1448,182 @@
   }
  ],
  "news": [
+  {
+   "title": "Italien: 805 Millionen Euro gegen Meta wegen Zugriff auf die Fotogalerie ohne Einwilligung",
+   "summary": "Die italienische Datenschutzbehörde Garante hat gegen Meta ein Bußgeld von 805 Millionen Euro verhängt. Die Facebook-App für Android schlug Fotos aus der Galerie zum Teilen vor, das war standardmäßig aktiviert und erfasste rund 20 Millionen Menschen in Italien, ohne eigene, ausdrückliche Einwilligung. Grundlage ist das italienische Umsetzungsrecht zur ePrivacy-Richtlinie, für das es kein Verfahren mit federführender Behörde gibt; Meta muss die Funktion binnen 60 Tagen standardmäßig abschalten und will Rechtsmittel einlegen.",
+   "relevance": "Für Händler mit eigenen Apps in mehreren Ländern zeigt der Fall: Zugriffe auf das Endgerät brauchen eine zweckgebundene, eigene Einwilligung, und nationale Behörden können ohne Umweg über eine federführende Behörde selbst vorgehen. Sammelberechtigungen und Voreinstellungen in Kunden-Apps gehören damit auf die Prüfliste.",
+   "source": "The Hacker News",
+   "url": "https://thehackernews.com/2026/11/italy-fines-meta-805-million-over.html",
+   "id": "2026-11-16-italien-meta-805-millionen-galerie",
+   "topic": "Datenschutz & Datenrecht",
+   "impact": "hoch",
+   "published": "2026-11-15",
+   "tags": [
+    "Bußgeld",
+    "Apps",
+    "Einwilligung"
+   ],
+   "controls": [
+    "ePrivacy-Richtlinie Art. 5 Abs. 3 – Zugriff auf Informationen im Endgerät",
+    "DSGVO Art. 25 – Datenschutz durch Technikgestaltung und datenschutzfreundliche Voreinstellungen"
+   ],
+   "roles": [
+    "Datenschutz",
+    "Management"
+   ],
+   "countries": [
+    "IT",
+    "EU"
+   ],
+   "dossier": null,
+   "priority": 2,
+   "primary": false,
+   "added": "2026-11-16T06:06:40Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum 15. November, 805 Millionen Euro, rund 20 Millionen Android-Nutzer, standardmäßig aktiviert, Artikel 122 des italienischen Datenschutzgesetzes zur Umsetzung der ePrivacy-Richtlinie, kein Verfahren mit federführender Behörde, Frist von 60 Tagen und geplante Rechtsmittel sind belegt."
+   }
+  },
+  {
+   "title": "Update: Fireworks AI – entwendeter Schlüssel führte zu manipulierter Erweiterung bei Cursor",
+   "summary": "Der Hersteller des Entwicklerwerkzeugs Cursor teilt mit, ein Zugangsschlüssel, den er Fireworks AI ausgestellt hatte und der beim Einbruch dort offengelegt wurde, sei der Ausgangspunkt gewesen. In den kopierten Protokollen von Coding-Agenten standen teils ungeschwärzte Zugangsdaten, über die der Angreifer weitere Werkzeuge erreichte und am 29. Oktober eine manipulierte Erweiterung für bis zu 5.000 Nutzer in den Marktplatz brachte. Nach Medienberichten traf derselbe Einbruch bei Fireworks AI auch Uber und Notion.",
+   "relevance": "Ein einzelner Anbieter von Modellen für Künstliche Intelligenz wurde zum gemeinsamen Einfallstor mehrerer Unternehmen. Lieferantenbewertungen sollten erfassen, welche Daten an solche Anbieter fließen und ob Zugangsdaten vor der Weitergabe geschwärzt werden.",
+   "source": "The Hacker News",
+   "url": "https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html",
+   "id": "2026-11-16-fireworks-schluessel-cursor-marktplatz",
+   "topic": "AI-Governance",
+   "impact": "mittel",
+   "published": "2026-11-15",
+   "tags": [
+    "Supply Chain",
+    "Coding-Agenten",
+    "Zugangsdaten"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen",
+    "ISO/IEC 27001 Anhang A 5.17 – Authentisierungsinformationen"
+   ],
+   "roles": [
+    "Einkauf & Drittparteien",
+    "IT-Risiko"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "agentische-ki-sicherheit",
+   "priority": 3,
+   "primary": false,
+   "added": "2026-11-16T06:06:40Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum 15. November belegt. Schlüssel an Fireworks ausgestellt und dort offengelegt, ungeschwärzte Zugangsdaten in Protokollen von Coding-Agenten, 29. Oktober, höchstens 5.000 Nutzer sowie Uber (laut TechCrunch) und Notion sind belegt."
+   }
+  },
+  {
+   "title": "Update: N-central – Angriffe treffen auch Server mit zweitem Hotfix",
+   "summary": "Bei der Fernwartungsplattform N-central werden zwei neue Angriffsketten (4EverAble2Shell und Agent2Shell) aktiv ausgenutzt. Ein Sicherheitsdienstleister fand Schadsoftware zum Schürfen der Kryptowährung Monero auf 21 Servern, 19 davon hatten den zweiten Hotfix bereits installiert. N-able verlangt, die alte Programmierschnittstelle abzuschalten und Agenten und Sonden zu aktualisieren; laut einem Nachtrag vom 16. November bereitet N-able einen dritten Hotfix vor, der stufenweise verteilt wird.",
+   "relevance": "Werkzeuge zur Fernwartung bei Dienstleistern geben Zugriff auf viele Endgeräte zugleich, ein grüner Patch-Status allein reicht hier nicht als Nachweis. Ein Konzern sollte prüfen, welche Dienstleister solche Plattformen nutzen, und Treffer wie eine vollständige Kompromittierung behandeln.",
+   "source": "The Hacker News",
+   "url": "https://thehackernews.com/2026/11/hackers-exploit-n-central-flaws-to.html",
+   "id": "2026-11-16-n-central-angriffe-trotz-hotfix",
+   "topic": "IT-Governance & Risiko",
+   "impact": "hoch",
+   "published": "2026-11-13",
+   "tags": [
+    "Fernwartung",
+    "Dienstleister",
+    "Patch-Management"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
+    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen",
+    "ISO/IEC 27001 Anhang A 8.8 – Umgang mit technischen Schwachstellen"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Einkauf & Drittparteien"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "drittparteien-lieferkette",
+   "priority": 1,
+   "primary": false,
+   "added": "2026-11-16T06:06:40Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Datum, Zahlen (21 Server, 19 mit zweitem Hotfix) und Namen der Angriffsketten stimmen. Dass der dritte Hotfix in der Erprobung sei, steht so nicht in der Quelle: Laut Nachtrag vom 16. November wird er vorbereitet und stufenweise verteilt, zuerst an gehostete Umgebungen, am Montag dann an Kunden…"
+   }
+  },
+  {
+   "title": "Operation Endgame: 6,4 Millionen gestohlene Zugangsdaten sichergestellt",
+   "summary": "Eine internationale Polizeiaktion hat Server hinter den Schadprogrammen Gootloader, CastleRAT und StealC abgeschaltet, laut Europol insgesamt 235 Server und 257 Domains. Das Bundeskriminalamt spricht von rund 6,4 Millionen gestohlenen Zugangsdaten von mehr als 40.000 Opfern. Das Bundesamt für Sicherheit in der Informationstechnik, Internetanbieter und Notfallteams benachrichtigen Betroffene; echte Polizeimails enthalten laut den Ermittlern keine Links.",
+   "relevance": "Benachrichtigungen über abgeflossene Zugangsdaten können auch Beschäftigte und Dienstkonten betreffen. Ein eingeübter Prozess zum Prüfen und Zurücksetzen solcher Zugangsdaten und eine Warnung vor gefälschten Behördenmails sind jetzt sinnvoll.",
+   "source": "The Hacker News",
+   "url": "https://thehackernews.com/2026/11/operation-endgame-takes-down-gootloader.html",
+   "id": "2026-11-16-operation-endgame-zugangsdaten",
+   "topic": "Weitere Themen",
+   "impact": "mittel",
+   "published": "2026-11-13",
+   "tags": [
+    "Strafverfolgung",
+    "Infostealer",
+    "Zugangsdaten"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 5.17 – Authentisierungsinformationen",
+    "ISO/IEC 27001 Anhang A 5.24 – Planung und Vorbereitung des Managements von Informationssicherheitsvorfällen"
+   ],
+   "roles": [
+    "IT-Risiko"
+   ],
+   "countries": [
+    "DE",
+    "EU"
+   ],
+   "dossier": "identitaeten-zugangsdaten",
+   "priority": 4,
+   "primary": false,
+   "added": "2026-11-16T06:06:40Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum 13. November, 235 Server und 257 Domains laut Europol, 6,4 Millionen Zugangsdaten von mehr als 40.000 Opfern laut Bundeskriminalamt sind belegt. Das Bundesamt für Sicherheit in der Informationstechnik hilft in Deutschland bei der Benachrichtigung, Internetanbieter und Notfallteams werden für…"
+   }
+  },
+  {
+   "title": "Vertrauliche virtuelle Maschinen: Zwei Angriffe auf AMD SEV-SNP gezeigt",
+   "summary": "Forscher zeigen mit Mior und Skyfall zwei Angriffe, mit denen ein bösartiger Host Daten aus vertraulichen virtuellen Maschinen mit der Technik AMD SEV-SNP auslesen kann. Mior kann zudem den Speicher verändern und den signierten Nachweis der Integrität fälschen, beide Angriffe setzen aber die Kontrolle über den Hypervisor voraus. AMD plant Firmware-Updates für Skyfall im November und für Mior im Dezember 2026, die über die Serverhersteller verteilt werden.",
+   "relevance": "Vertrauliche Rechenumgebungen werden oft als Baustein für souveräne Cloud-Angebote genannt. Wer sich darauf stützt, sollte bei Cloud-Anbietern den Firmware-Stand und die Aussagekraft der Integritätsnachweise erfragen.",
+   "source": "The Hacker News",
+   "url": "https://thehackernews.com/2026/11/new-mior-and-skyfall-attacks-let-rogue.html",
+   "id": "2026-11-16-amd-sev-snp-mior-skyfall",
+   "topic": "IT-Governance & Risiko",
+   "impact": "info",
+   "published": "2026-11-13",
+   "tags": [
+    "Confidential Computing",
+    "Cloud",
+    "Souveränität"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 5.23 – Informationssicherheit für die Nutzung von Cloud-Diensten"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Einkauf & Drittparteien"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "cloud-souveraenitaet",
+   "priority": 5,
+   "primary": false,
+   "added": "2026-11-16T06:06:40Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum 13. November belegt. Mior kann Speicher lesen und verändern und den Nachweis fälschen, Skyfall nur lesen. Beide brauchen einen bösartigen Host beziehungsweise Hypervisor. Firmware für Skyfall im November, für Mior im Dezember, verteilt über die Serverhersteller."
+   }
+  },
   {
    "title": "Check-Point-Gateways: Angreifer kombinieren PHP2Shell mit Root-Lücke, Behördenfrist 16. November",
    "summary": "Angreifer nutzen nicht gepatchte Security Gateways von Check Point über die PHP2Shell-Lücken und eine bisher unbekannte Rechteausweitung im Betriebssystem Gaia (CVE-2026-123039) und installieren die Backdoor TSGA. In einem Fall wurde danach ein Virtualisierungsserver mit VMware ESXi angegriffen, dort hat ein Wiper Dateien gelöscht. Nach ersten Angriffen gegen israelische Organisationen ab dem 30. Oktober folgte am 2. November eine breitere Welle in mehreren Ländern; die amerikanische Cybersicherheitsbehörde setzt ihren Bundesbehörden eine Patch-Frist bis 16. November.",
