@@ -1,0 +1,163 @@
+{
+ "format": "tag",
+ "chapters": [
+  {
+   "title": "Begrüßung",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Guten Morgen, liebe IT-GRC-Kolleginnen und -Kollegen, willkommen beim IT-GRC Radar. Heute ist Dienstag, der siebzehnte November 2026."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Morgen. Ein eher ruhiger Dienstag, aber mit einem Thema, das uns seit Wochen nicht loslässt."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Die Kühlanlagen, genau. Dazu kommen eine manipulierte Bezahlseite, Beschäftigtendaten bei einem Cloud-Anbieter und etwas für die Revision."
+    }
+   ]
+  },
+  {
+   "title": "Sanktionen wegen Kühlanlagen",
+   "news_id": "2026-11-17-update-kuehlanlagen-eu-sanktionen-iran",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Da gibt es Neues zu den manipulierten Kühlanlagen in Supermärkten. Die Außenbeauftragte der Europäischen Union, Kaja Kallas, hat am Montag nach dem Treffen der Außenminister gesagt, die Union bereite weitere Sanktionen gegen Iran vor."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Moment, aus einem Angriff auf Supermärkte wird jetzt offiziell Außenpolitik?"
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "So sieht es aus. Frankreich macht Iran für die Angriffe vom elften und zwölften Oktober verantwortlich. Iran bestreitet alles."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Für uns heißt das zweierlei. Erstens hat sich ein staatsnaher Akteur gezielt den Lebensmittelhandel ausgesucht. Das gehört als eigenes Szenario ins Risikoregister und nicht unter Sonstiges."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und zweitens?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Die Versicherung. Wird ein Angriff einem Staat zugeschrieben, lohnt sich ein Blick in die Police, was sie dazu sagt. Lieber jetzt als nach dem Schaden. Die eigentliche Hausaufgabe bleibt aber gleich: Steuerungen raus aus dem offenen Internet und die Fernwartung der Hersteller kennen."
+    }
+   ]
+  },
+  {
+   "title": "Bezahlseite bei Fandango",
+   "news_id": "2026-11-17-fandango-kartendaten-bezahlseite",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Zweites Thema, Kartenzahlung. Der amerikanische Kinoticket-Anbieter Fandango benachrichtigt seit gestern seine Kunden. Vom achten bis elften Oktober konnte ein Unbefugter Zahlungsdaten direkt auf der Bezahlseite abgreifen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Welche Daten genau?"
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Kartennummer, Prüfziffer, Ablaufdatum, Postleitzahl und E-Mail-Adresse. Eine Zahl der Betroffenen nennt Fandango nicht. Berichten zufolge war eingeschleuster Code auf der Bezahlseite die Ursache."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Vier Tage reichen völlig. Genau deshalb verlangt der Sicherheitsstandard der Kartenindustrie ein Inventar aller Skripte auf Bezahlseiten und eine Erkennung, wenn sich diese Seiten verändern."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Also die beiden Anforderungen, über die in jedem [en]Assessment[/en] diskutiert wird."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Genau die. Die ehrliche Frage lautet: Würden wir eine Änderung in Stunden bemerken, oder erst, wenn die Kartenherausgeber anrufen? Und bitte nicht mit einer Excel-Liste antworten, die zuletzt in der Audit-Saison angefasst wurde."
+    }
+   ]
+  },
+  {
+   "title": "TSMC und der Cloud-Anbieter",
+   "news_id": "2026-11-17-tsmc-beschaeftigtendaten-cloud-anbieter",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Drittens: Der Chiphersteller TSMC hat bestätigt, dass Daten aktueller und früherer Beschäftigter auf einer fremden Webseite gelandet sind."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Über die eigenen Systeme?"
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Laut TSMC nicht. Die Daten stimmen mit Beständen bei einem [en]Cloud[/en]-Anbieter überein, dessen Namen das Unternehmen nicht nennt. Die Angreifer sprechen von mehreren zehntausend Datensätzen und wollen drei Bitcoin."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Das Muster kennen wir dieses Jahr zur Genüge: Das Unternehmen selbst ist sauber, der Dienstleister nicht. Personal- und Lohnsysteme bekommen bei der Lieferantenbewertung oft weniger Aufmerksamkeit als die Kasse."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Was würdest du prüfen?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Wer hält welche Beschäftigtendaten in welcher [en]Cloud[/en], und wer ist [en]Owner[/en] für diesen Vertrag. Wenn drei Abteilungen gleichzeitig sagen, wir nicht, dann ist das schon der Befund."
+    }
+   ]
+  },
+  {
+   "title": "Prüfwerkzeug der Internen Revision",
+   "news_id": "2026-11-17-interne-revision-pruefwerkzeug-ki",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Und etwas für die Prüfer. Der internationale Berufsverband der Internen Revision hat Anfang November ein Werkzeug für die Prüfung Künstlicher Intelligenz in Banken veröffentlicht."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Banken? Wir verkaufen Brot und Reisen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Schon, aber das Werkzeug hilft bei der Prüfung der [en]Governance[/en] und beim Management von Modellrisiken, ergänzend zu den globalen Revisionsstandards."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und genau das lässt sich übertragen. Absatzprognose und Preisgestaltung sind auch Modelle mit Risiko. Sich bei der am strengsten regulierten Branche inspirieren zu lassen, spart der Revision ein paar Wochen."
+    }
+   ]
+  },
+  {
+   "title": "Auf dem Radar",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Auf dem Radar: der [en]Quantum Act[/en] der Europäischen Union. Einem Fachdienst zufolge soll die Kommission den Entwurf morgen vorlegen. Anbieter, die von außerhalb der Union kontrolliert werden, könnten bei öffentlichen Aufträgen außen vor bleiben."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ob der Termin hält, wird sich zeigen. Zusammen mit der Vorgabe, Hochrisiko-Anwendungen bis Ende 2030 auf Post-Quanten-Kryptografie umzustellen, wird das aber langsam ein Thema für die Lieferanten. Und die ersten Normen zum [en]Cyber Resilience Act[/en] stehen auch kurz vor der Veröffentlichung."
+    }
+   ]
+  },
+  {
+   "title": "Abschied",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Das war es für heute. Alle Quellen findet ihr wie immer auf der Webseite."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und vielleicht bis morgen einmal einen Blick in die Cyberpolice werfen. Bis dann."
+    }
+   ]
+  }
+ ]
+}

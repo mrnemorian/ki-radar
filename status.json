@@ -1,11 +1,17 @@
 {
  "last_run": {
-  "start": "2026-11-16T07:00:01+01:00",
-  "end": "2026-11-16T07:06:40+01:00",
+  "start": "2026-11-17T07:00:01+01:00",
+  "end": "2026-11-17T07:05:23+01:00",
   "ok": true,
-  "summary": "5 neue Meldungen: P1 Update: N-central – Angriffe treffen auch Server mit zweitem Hotfix; P2 Italien: 805 Millionen Euro gegen Meta wegen Zugriff auf die Fotogalerie ohne Einwilligung; P3 Update: Fi"
+  "summary": "4 neue Meldungen: P1 Update: Kühlanlagen – Europäische Union bereitet Sanktionen gegen Iran vor; P2 Ticketanbieter Fandango: Kartendaten vier Tage lang auf der Bezahlseite abgegriffen; P3 TSMC: Be"
  },
  "history": [
+  {
+   "start": "2026-11-17T07:00:01+01:00",
+   "end": "2026-11-17T07:05:23+01:00",
+   "ok": true,
+   "summary": "4 neue Meldungen: P1 Update: Kühlanlagen – Europäische Union bereitet Sanktionen gegen Iran vor; P2 Ticketanbieter Fandango: Kartendaten vier Tage lang auf der Bezahlseite abgegriffen; P3 TSMC: Be"
+  },
   {
    "start": "2026-11-16T07:00:01+01:00",
    "end": "2026-11-16T07:06:40+01:00",
@@ -83,12 +89,6 @@
    "end": "2026-11-04T07:08:36+01:00",
    "ok": true,
    "summary": "7 neue Meldungen: P1 Update: Linux-Lücke im Netzwerkstack – Red Hat liefert Patches, Ubuntu nur im Testkanal; P2 Österreichs Tourismus: Gästedaten über Schnittstellenpartner abgeflossen, Betrug "
-  },
-  {
-   "start": "2026-11-03T07:00:02+01:00",
-   "end": "2026-11-03T07:08:28+01:00",
-   "ok": true,
-   "summary": "6 neue Meldungen: P1 Update: Kühlsteuerungen – zweite Angriffswelle trifft Supermärkte in neun Ländern; P2 Progress WS_FTP Server: 15 Lücken, Administratorzugangsdaten ohne Anmeldung abgreifbar;"
   }
  ]
 }

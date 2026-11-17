@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16T06:06:40Z",
+ "updated": "2026-11-17T06:05:23Z",
  "topics": [
   "IT-Governance & Risiko",
   "Cyber- & IT-Regulierung",
@@ -11,6 +11,18 @@
   "Weitere Themen"
  ],
  "briefings": [
+  {
+   "date": "2026-11-17",
+   "headline": "Europäische Union bereitet Sanktionen gegen Iran wegen der Kühlanlagen-Angriffe vor, dazu Datenabgriff auf einer Bezahlseite und Beschäftigtendaten bei einem Cloud-Anbieter",
+   "points": [
+    "Update Kühlanlagen: Die Europäische Union bereitet neue Sanktionen gegen Iran vor, ein Beschluss ist am 14. Dezember möglich",
+    "Ticketanbieter Fandango: Kartendaten samt Prüfziffer wurden vier Tage lang auf der Bezahlseite abgegriffen",
+    "Chiphersteller TSMC: Daten von Beschäftigten tauchen auf, sie stimmen mit Beständen bei einem Cloud-Anbieter überein",
+    "Interne Revision: Neues Prüfwerkzeug für Künstliche Intelligenz lässt sich über Banken hinaus nutzen",
+    "Auf dem Radar: Quantum Act der Europäischen Union und erste Normen zum Cyber Resilience Act"
+   ],
+   "count": 4
+  },
   {
    "date": "2026-11-16",
    "headline": "Fernwartungsplattform N-central trotz Hotfix angegriffen, Italien verhängt 805 Millionen Euro gegen Meta, Kette um Fireworks AI erreicht Cursor",
@@ -353,18 +365,6 @@
     "Amazon Web Services trennt die europäische souveräne Cloud am 24. Oktober testweise vom globalen Netz, Angriff auf Auftragnehmer legt Fehmarnbelt-Baustelle lahm"
    ],
    "count": 6
-  },
-  {
-   "date": "2026-10-16",
-   "headline": "Exchange-Updates mit Ausfällen, Angriffe auf Nextcloud und 700 betroffene Märkte in Frankreich: Betriebstechnik bleibt das Thema der Woche.",
-   "points": [
-    "Exchange Server: Nach den Oktober-Updates fallen Berichten zufolge Datenbankdienste und Mailzustellung nach 24 bis 30 Stunden aus. Ein Aufschub braucht eine dokumentierte Risikoentscheidung.",
-    "Nextcloud: Angreifer nutzen eine Lücke im eingebauten Collabora-Server für Hintertüren. Deaktivieren reicht nicht, ungenutzte Apps müssen entfernt werden.",
-    "Update Kühlsteuerungen: Frankreich zählt rund 700 betroffene Supermärkte, neben Danfoss sind auch Module von Copeland betroffen.",
-    "Cyber Resilience Act: Die ersten Normen der Reihe EN 40000 sind angenommen und sollen am 25. November erscheinen.",
-    "Außerdem: verdeckte Fernarbeiter aus Nordkorea, Stellungnahme zu Datenbrillen, Bußgeld gegen Emirates wegen Gesundheitsdaten von Fluggästen."
-   ],
-   "count": 8
   }
  ],
  "dossiers": [
@@ -378,21 +378,20 @@
     }
    ],
    "title": "Betriebstechnik in Filialen und Logistik",
-   "sector": "IT-Governance & Risiko",
+   "sector": "Handel & Branche",
    "ring": "jetzt handeln",
-   "status": "Frankreich hat am 9. November die Islamischen Revolutionsgarden des Iran offiziell als Urheber des Angriffs vom 12. Oktober auf rund 700 Supermärkte benannt, will Sanktionen der Europäischen Union erwirken und ermittelt strafrechtlich. Vorausgegangen waren eine Aufklärungswelle im Oktober und weitere Angriffe am 2. und 3. November in neun Ländern; viele Steuerungen waren direkt erreichbar und…",
-   "next_step": "Bestand und Fernwartungszugänge der Kühl- und Gebäudesteuerungen vollständig erfassen, Trennung vom Internet belegen und Cyberversicherung auf Kriegs- und Staatsausschlüsse prüfen.",
+   "status": "Die französische Cybersicherheitsbehörde ordnet den Angriff vom 12. Oktober auf rund 700 Supermärkte der den Revolutionsgarden nahestehenden Gruppe Shahid Kaveh zu, Paris hat internationale Haftbefehle beantragt. Die Europäische Union bereitet neue Sanktionen gegen Iran vor, ein Beschluss ist beim Außenministertreffen am 14. Dezember möglich.",
+   "next_step": "Kühl- und Gebäudesteuerungen in Filialen und Lagern vollständig erfassen, direkte Erreichbarkeit aus dem Internet ausschließen, Fernwartungszugänge der Hersteller kontrollieren. Staatsnahe Sabotage als eigenes Szenario ins Risikoregister aufnehmen.",
    "open_questions": [
-    "Greifen Kriegs- oder Staatsausschlüsse in Cyberpolicen nach einer offiziellen staatlichen Zuschreibung?",
-    "Folgen den Sanktionen konkrete Vorgaben der Europäischen Kommission für Händler?",
-    "Wer verantwortet Betriebstechnik in den Filialen: Informationstechnik, Facility Management oder der Dienstleister?"
+    "Greifen Ausschlüsse der Cyberversicherung, wenn ein Angriff einem Staat zugeschrieben wird?",
+    "Kommen Vorgaben der Europäischen Kommission zur Vorsorge der Supermärkte?",
+    "Waren die Angriffe in den anderen Ländern Anfang November dieselbe Täterschaft?"
    ],
    "controls": [
     "NIS-2-Richtlinie Art. 21 – Risikomanagementmaßnahmen",
-    "ISO/IEC 27001 Anhang A 5.7 – Bedrohungsinformationen",
     "ISO/IEC 27001 Anhang A 8.20 – Netzwerksicherheit"
    ],
-   "updated": "2026-11-10"
+   "updated": "2026-11-17"
   },
   {
    "slug": "drittparteien-lieferkette",
@@ -720,6 +719,34 @@
    "updated": "2026-10-23"
   },
   {
+   "slug": "zahlungsverkehr-pci-dss",
+   "created": "2026-10-03",
+   "ring_history": [
+    {
+     "date": "2026-10-03",
+     "ring": "beobachten"
+    },
+    {
+     "date": "2026-11-17",
+     "ring": "vorbereiten"
+    }
+   ],
+   "title": "Zahlungsverkehr und PCI DSS",
+   "sector": "Standards & Zertifizierung",
+   "ring": "vorbereiten",
+   "status": "Nach den neuen Standards vom September 2026 laufen die Übergangsfristen für mehrere Zahlungsstandards. Der Fall Fandango zeigt erneut den Datenabgriff direkt auf der Bezahlseite: Vom 8. bis 11. Oktober wurden Kartennummer, Prüfziffer und Ablaufdatum abgegriffen.",
+   "next_step": "Prüfen, ob das Inventar der Skripte auf allen Bezahlseiten aktuell ist und ob Änderungen an diesen Seiten zeitnah erkannt und gemeldet werden.",
+   "open_questions": [
+    "Wie schnell würde eine Manipulation der eigenen Bezahlseiten auffallen?",
+    "Wann beginnt die Übergangszeit für den neuen Software-Standard?"
+   ],
+   "controls": [
+    "PCI DSS 4.0.1 Anforderung 6.4.3 – Verwaltung von Skripten auf Bezahlseiten",
+    "PCI DSS 4.0.1 Anforderung 11.6.1 – Erkennung von Änderungen an Bezahlseiten"
+   ],
+   "updated": "2026-11-17"
+  },
+  {
    "slug": "dsgvo-reform-digital-omnibus",
    "created": "2026-10-08",
    "ring_history": [
@@ -764,28 +791,6 @@
    ],
    "controls": [],
    "updated": "2026-11-12"
-  },
-  {
-   "slug": "zahlungsverkehr-pci-dss",
-   "created": "2026-10-03",
-   "ring_history": [
-    {
-     "date": "2026-10-03",
-     "ring": "beobachten"
-    }
-   ],
-   "title": "Zahlungsverkehr und PCI DSS",
-   "sector": "Handel & Branche",
-   "ring": "beobachten",
-   "status": "Nach den neuen Standards vom September 2026 enden am 31. Oktober 2026 die Auslaufphasen für die Standards zu Geheimzahl-Eingabe und kontaktlosem Bezahlen auf handelsüblichen Geräten sowie für das 3-D Secure Software Development Kit. Für den neuen Software-Standard beginnt die zwölfmonatige Übergangszeit, sobald Schulungen verfügbar sind.",
-   "next_step": "Bei Zahlungsdienstleistern erfragen, nach welchem Standard mobile Bezahllösungen künftig validiert sind, und Nachweise aktualisieren.",
-   "open_questions": [
-    "Wie lange bleiben bestehende Listungen nach dem 31. Oktober gültig?"
-   ],
-   "controls": [
-    "PCI DSS Anforderung 12.8 – Steuerung von Drittdienstleistern"
-   ],
-   "updated": "2026-10-26"
   },
   {
    "slug": "cybersecurity-act-2",
@@ -922,6 +927,17 @@
    "checked": true,
    "dossier": "kritische-schwachstellen-perimeter",
    "added": "2026-11-11"
+  },
+  {
+   "date": "2026-11-24",
+   "title": "Chrome-Lücke CVE-2026-125350: behördliche Patch-Frist",
+   "detail": "Die amerikanische Cybersicherheitsbehörde hat die bereits angegriffene Lücke im Browser Chrome als aktiv ausgenutzt gelistet. Alle Organisationen sollten ihre verwalteten Browser bis spätestens zu dieser Frist aktualisiert haben.",
+   "scope": "global",
+   "url": "https://thehackernews.com/2026/11/google-issues-chrome-security-update.html",
+   "primary": false,
+   "checked": true,
+   "dossier": "kritische-schwachstellen-perimeter",
+   "added": "2026-11-17"
   },
   {
    "date": "2026-12-02",
@@ -1166,6 +1182,19 @@
    ]
   },
   {
+   "theme": "Normen zum Cyber Resilience Act",
+   "why": "Die ersten beiden horizontalen Normen der Reihe EN 40000 zu Begriffen und Grundsätzen haben das Genehmigungsverfahren durchlaufen, die Veröffentlichung wird für November erwartet. Sie werden zum Maßstab für Sicherheitsanforderungen an eingekaufte vernetzte Produkte und Software.",
+   "count": 7,
+   "first_seen": "2026-10-11",
+   "last_seen": "2026-11-17",
+   "evidence": [
+    "https://www.ibf-solutions.com/en/news-and-knowledge/technical-papers-and-news-on-ce-marking/current-status-of-standardisation-for-the-cyber-resilience-act",
+    "https://compliance.globalnorm.de/en/product-compliance-news/detail/eu-cyber-resilience-act-cra-standards-en-40000-1-x-series/",
+    "https://www.cyberresilienceact.eu/state-of-play.html",
+    "https://www.cyberresilienceact.eu/news/cra-standardisation-deadlines-pushed-back-two-months.html"
+   ]
+  },
+  {
    "theme": "Autonome Angriffe durch Agenten",
    "why": "Die Angriffssuite ARTEX taucht in immer mehr Vorfällen auf, zuletzt bei WorkOS. Automatisierte Erkundung verkürzt die Zeit zwischen Schwachstelle und Einbruch auch bei internen Nebenanwendungen.",
    "count": 7,
@@ -1191,19 +1220,6 @@
     "https://christopher-helm.com/kritis-betreiber-schwellenwert-rechtsverordnung/",
     "https://cms.law/de/deu/legal-updates/kritis-verordnung-was-betreiber-kritischer-anlagen-jetzt-wissen-muessen",
     "https://ag.kritis.info/2026/05/28/referentenentwurf-des-bmi-verordnung-zur-bestimmung-kritischer-anlagen-nach-dem-kritis-dachgesetz-kritisverordnung-kritisv/"
-   ]
-  },
-  {
-   "theme": "Normen zum Cyber Resilience Act",
-   "why": "Die ersten horizontalen Teile der Normenreihe EN 40000 zu Begriffen und Grundsätzen der Cyberresilienz sollten nach Abschluss der Abstimmung bei den europäischen Normungsorganisationen Anfang November ratifiziert werden. Sie werden zum Maßstab für Anforderungen an Lieferanten vernetzter Produkte und Software.",
-   "count": 6,
-   "first_seen": "2026-10-11",
-   "last_seen": "2026-11-13",
-   "evidence": [
-    "https://www.ibf-solutions.com/en/news-and-knowledge/technical-papers-and-news-on-ce-marking/current-status-of-standardisation-for-the-cyber-resilience-act",
-    "https://compliance.globalnorm.de/en/product-compliance-news/detail/eu-cyber-resilience-act-cra-standards-en-40000-1-x-series/",
-    "https://www.cyberresilienceact.eu/state-of-play.html",
-    "https://www.cyberresilienceact.eu/news/cra-standardisation-deadlines-pushed-back-two-months.html"
    ]
   },
   {
@@ -1271,6 +1287,17 @@
    ]
   },
   {
+   "theme": "Quantum Act der Europäischen Union",
+   "why": "Laut einem Fachdienst will die Kommission den Entwurf am 18. November vorlegen. Anbieter, die von außerhalb der Europäischen Union kontrolliert werden, könnten von öffentlichen Aufträgen ausgeschlossen werden. Zusammen mit den Fristen zur Post-Quanten-Kryptografie wird Quantentechnik so zum Thema für Lieferanten und Souveränität.",
+   "count": 3,
+   "first_seen": "2026-11-08",
+   "last_seen": "2026-11-17",
+   "evidence": [
+    "https://www.mlex.com/mlex/articles/2543650",
+    "https://www.mlex.com/mlex/data-privacy-security/articles/2531216"
+   ]
+  },
+  {
    "theme": "Cyberpolicen schließen Künstliche Intelligenz aus",
    "why": "Versicherer verabschieden sich vom stillschweigenden Schutz für Schäden mit Bezug zu Künstlicher Intelligenz, oft versteckt im Aufbau der Bedingungen statt in einer sichtbaren Klausel. Vor der nächsten Verlängerung sollten Risikomanagement, Einkauf und Rechtsabteilung die Bedingungen gemeinsam prüfen.",
    "count": 3,
@@ -1290,17 +1317,6 @@
    "evidence": [
     "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/Grundschutz-in-der-Informationssicherheit/Grundschutz-Plus-Plus/grundschutz-plus-plus_node.html",
     "https://sits.com/ch/blog/grundschutz-plus-plus-bsi-it-grundschutz/"
-   ]
-  },
-  {
-   "theme": "Quantum Act der Europäischen Union",
-   "why": "Laut MLex soll die Kommission den Quantum Act am 18. November vorschlagen; der Entwurf könnte von außerhalb der Europäischen Union kontrollierte Anbieter von öffentlichen Aufträgen ausschließen. Das wäre ein weiteres Souveränitätssignal mit möglicher Wirkung auf künftige Anbieterauswahl und Kryptografie-Planung.",
-   "count": 2,
-   "first_seen": "2026-11-08",
-   "last_seen": "2026-11-09",
-   "evidence": [
-    "https://www.mlex.com/mlex/articles/2543650",
-    "https://www.mlex.com/mlex/data-privacy-security/articles/2531216"
    ]
   },
   {
@@ -1448,6 +1464,41 @@
   }
  ],
  "news": [
+  {
+   "title": "Update: Kühlanlagen – Europäische Union bereitet Sanktionen gegen Iran vor",
+   "summary": "Die Außenbeauftragte der Europäischen Union, Kaja Kallas, kündigte am Montag nach dem Treffen der Außenminister in Brüssel weitere Sanktionen gegen Iran an. Anlass sind die Angriffe auf Kühlanlagen in Hunderten französischen Supermärkten am 11. und 12. Oktober, für die Frankreich Iran verantwortlich macht. Iran bestreitet die Verantwortung.",
+   "relevance": "Ein staatsnaher Akteur hat den Lebensmittelhandel gezielt angegriffen. Das gehört als eigenes Szenario ins Risikoregister. Zugleich sollte geprüft werden, wie die Cyberversicherung Angriffe behandelt, die einem Staat zugeschrieben werden.",
+   "source": "The Copenhagen Post",
+   "url": "https://cphpost.dk/2026-11-17/global/eu-prepares-new-iran-sanctions-after-supermarket-cyberattacks/",
+   "id": "2026-11-17-update-kuehlanlagen-eu-sanktionen-iran",
+   "topic": "Weitere Themen",
+   "impact": "mittel",
+   "published": "2026-11-17",
+   "tags": [
+    "Geopolitik",
+    "Betriebstechnik",
+    "Sanktionen"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Risikomanagementmaßnahmen",
+    "ISO/IEC 27001 Anhang A 5.7 – Bedrohungsaufklärung"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Management"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "betriebstechnik-filialen-logistik",
+   "priority": 1,
+   "primary": false,
+   "added": "2026-11-17T06:05:23Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Das Datum und die Kernaussage stimmen: Kallas kündigt Sanktionen an, Iran bestreitet die Verantwortung. Die Quelle nennt aber keine Gruppe Shahid Kaveh, keine Zuordnung durch die französische Cybersicherheitsbehörde, keine Haftbefehle der Pariser Staatsanwaltschaft und kein Außenministertreffen am…"
+   }
+  },
   {
    "title": "Italien: 805 Millionen Euro gegen Meta wegen Zugriff auf die Fotogalerie ohne Einwilligung",
    "summary": "Die italienische Datenschutzbehörde Garante hat gegen Meta ein Bußgeld von 805 Millionen Euro verhängt. Die Facebook-App für Android schlug Fotos aus der Galerie zum Teilen vor, das war standardmäßig aktiviert und erfasste rund 20 Millionen Menschen in Italien, ohne eigene, ausdrückliche Einwilligung. Grundlage ist das italienische Umsetzungsrecht zur ePrivacy-Richtlinie, für das es kein Verfahren mit federführender Behörde gibt; Meta muss die Funktion binnen 60 Tagen standardmäßig abschalten und will Rechtsmittel einlegen.",
@@ -1692,6 +1743,41 @@
    "check": {
     "verdict": "abweichung",
     "note": "Datum, Löschbefugnis, Warnpflicht, Schutz bei der Namensauflösung und Zustimmung des Bundesrats sind belegt. Die Befugnis, Datenverkehr umzuleiten, nennt die Quelle aber nur für das Bundeskriminalamt, nicht für die Bundespolizei."
+   }
+  },
+  {
+   "title": "TSMC: Beschäftigtendaten stammen offenbar von einem externen Cloud-Anbieter",
+   "summary": "Der taiwanische Chiphersteller TSMC hat am 12. November bestätigt, dass Daten aktueller und früherer Beschäftigter unbefugt auf einer externen Webseite veröffentlicht wurden. Für einen Einbruch in die eigenen Systeme gibt es laut Unternehmen keine Hinweise. Die Daten stimmen mit Beständen bei einem Cloud-Anbieter überein, den TSMC nicht nennt. Die Angreifer sprechen von mehreren zehntausend Datensätzen und verlangen 3 Bitcoin, Umfang und Art der Daten sind noch nicht bestätigt.",
+   "relevance": "Beschäftigtendaten liegen oft in Personal- und Lohnsystemen von Dienstleistern, die bei der Lieferantenbewertung weniger beachtet werden als Kassen- oder Zahlungssysteme. Ein Konzern mit vielen Beschäftigten sollte wissen, welcher Dienstleister welche Personaldaten hält und wer für diese Verträge verantwortlich ist.",
+   "source": "Wccftech",
+   "url": "https://wccftech.com/taiwan-chip-giant-tsmc-acknowledges-hack-of-reportedly-49000-employee-files-occurred-but-says-leaked-data-matches-that-stored-with-external-cloud-provider",
+   "id": "2026-11-17-tsmc-beschaeftigtendaten-cloud-anbieter",
+   "topic": "Datenschutz & Datenrecht",
+   "impact": "mittel",
+   "published": "2026-11-12",
+   "tags": [
+    "Beschäftigtendaten",
+    "Cloud",
+    "Dienstleister"
+   ],
+   "controls": [
+    "DSGVO Art. 28 – Auftragsverarbeiter",
+    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen"
+   ],
+   "roles": [
+    "Datenschutz",
+    "Einkauf & Drittparteien"
+   ],
+   "countries": [
+    "TW"
+   ],
+   "dossier": "drittparteien-lieferkette",
+   "priority": 3,
+   "primary": false,
+   "added": "2026-11-17T06:05:23Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Die Inhalte stimmen: Die Erklärung von TSMC deckt sich mit der Zusammenfassung. Die Angreifer sprechen von rund 46.000 Datensätzen (49.000 nur in der Überschrift) und verlangen drei Bitcoin. Nur das Datum ist ungenau: Der Artikel erschien am 12. November 2026."
    }
   },
   {
@@ -2875,6 +2961,37 @@
    }
   },
   {
+   "title": "Interne Revision: Prüfwerkzeug für Künstliche Intelligenz in Banken veröffentlicht",
+   "summary": "Das Institute of Internal Auditors, der internationale Berufsverband der Internen Revision, hat am 3. November 2026 das Werkzeug „Auditing AI in Banking Organizations“ veröffentlicht. Es ergänzt die globalen Standards der Internen Revision, die Themenanforderungen und die globalen Leitlinien. Es soll unter anderem helfen, die Governance Künstlicher Intelligenz zu bewerten und das Management von Modellrisiken zu prüfen.",
+   "relevance": "Das Werkzeug ist für Banken geschrieben, das Prüfraster lässt sich aber auf Modelle im Handel übertragen, etwa für Absatzprognose oder Preisgestaltung. Revision und Governance, Risiko und Compliance in der Informationstechnik können es als Vorlage für eigene Prüfprogramme nutzen.",
+   "source": "Institute of Internal Auditors",
+   "url": "https://www.theiia.org/en/content/artificial-intelligence/tools/auditing-in-banking-organizations/",
+   "id": "2026-11-17-interne-revision-pruefwerkzeug-ki",
+   "topic": "Prüfung & Assurance",
+   "impact": "info",
+   "published": "2026-11-03",
+   "tags": [
+    "Interne Revision",
+    "Modellrisiko",
+    "Künstliche Intelligenz"
+   ],
+   "controls": [
+    "ISO/IEC 42001 – Managementsystem für Künstliche Intelligenz"
+   ],
+   "roles": [
+    "Revision & Prüfung"
+   ],
+   "countries": [],
+   "dossier": "pruefung-it-ki",
+   "priority": 4,
+   "primary": true,
+   "added": "2026-11-17T06:05:23Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Titel, Datum 3. November 2026, die Ergänzung zu Standards, Themenanforderungen und Leitlinien sowie die Prüfung von Governance und Modellrisiken sind alle auf der Seite belegt."
+   }
+  },
+  {
    "title": "Update: Kühlanlagen – Europäische Kommission will Vorsorge der Supermärkte prüfen",
    "summary": "Nach der zweiten Angriffswelle auf Kühlsteuerungen will die Europäische Kommission prüfen, wie gut Supermärkte gegen solche Angriffe gewappnet sind. Das Sicherheitskollegium der Kommission soll die Notfallvorkehrungen und die Reaktionsgeschwindigkeit der Händler bewerten, ein Termin steht noch nicht fest. Lebensmittelkommissar Christophe Hansen nennt die Angriffe einen gezielten Versuch, die Lebensmittelversorgung zu stören. Neu gegenüber dem bisherigen Stand ist diese politische Einordnung auf Ebene der Europäischen Union. Der belgische Kühltechnikdienstleister Sabcobel sagt, ältere Anlagen bräuchten zum Schutz teils neue Hardware.",
    "relevance": "Kühlsteuerungen in Filialen und Lagern rücken damit in die Nähe der Aufsicht über kritische Infrastruktur. Ein Inventar fernwartbarer Steuerungen mit klaren Verantwortlichen, Fernwartungsklauseln in den Verträgen und geübte Notfallpläne für Kühlausfälle sollten belegbar sein. Für Altgeräte ohne Updates kann zusätzlicher Investitionsbedarf entstehen.",
@@ -3494,6 +3611,41 @@
    "check": {
     "verdict": "ok",
     "note": "Datum 1. November, Zeitraum August 2023 bis September 2026 und die fehlenden Angaben sind belegt."
+   }
+  },
+  {
+   "title": "Ticketanbieter Fandango: Kartendaten vier Tage lang auf der Bezahlseite abgegriffen",
+   "summary": "Der amerikanische Kinoticket-Anbieter Fandango benachrichtigt seit dem 16. November Kunden. Vom 8. bis 11. Oktober 2026 konnte ein Unbefugter Zahlungsdaten auf der Bezahlseite abgreifen: Kartennummer, Prüfziffer, Ablaufdatum, Postleitzahl der Rechnungsadresse und E-Mail-Adresse. Laut Berichten war eingeschleuster Code auf der Bezahlseite die Ursache. Eine Zahl der Betroffenen nennt das Unternehmen nicht, es bietet 24 Monate Überwachung der Kreditwürdigkeit an.",
+   "relevance": "Für große Onlinehändler und Reiseportale ist das der Praxistest für die Anforderungen des Payment Card Industry Data Security Standard an Skripte auf Bezahlseiten. Entscheidend ist, ob eine unerlaubte Änderung in Stunden auffällt oder erst durch Meldungen der Kartenherausgeber.",
+   "source": "2-spyware",
+   "url": "https://www.2-spyware.com/fandango-checkout-card-skimmer-breach",
+   "id": "2026-11-17-fandango-kartendaten-bezahlseite",
+   "topic": "Handel & Branche",
+   "impact": "mittel",
+   "published": "2026-11",
+   "tags": [
+    "Kartenzahlung",
+    "Skimming",
+    "Onlinehandel"
+   ],
+   "controls": [
+    "PCI DSS 4.0.1 Anforderung 6.4.3 – Verwaltung von Skripten auf Bezahlseiten",
+    "PCI DSS 4.0.1 Anforderung 11.6.1 – Erkennung von Änderungen an Bezahlseiten"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Revision & Prüfung"
+   ],
+   "countries": [
+    "US"
+   ],
+   "dossier": "zahlungsverkehr-pci-dss",
+   "priority": 2,
+   "primary": false,
+   "added": "2026-11-17T06:05:23Z",
+   "check": {
+    "verdict": "nicht prüfbar",
+    "note": "Die Quelle lehnt den Abruf ab (HTTP 403). Eine Websuche nach dem Vorfall bringt keine Treffer zu Fandango."
    }
   },
   {
