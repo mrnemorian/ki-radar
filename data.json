@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17T06:05:23Z",
+ "updated": "2026-11-18T06:05:36Z",
  "topics": [
   "IT-Governance & Risiko",
   "Cyber- & IT-Regulierung",
@@ -11,6 +11,18 @@
   "Weitere Themen"
  ],
  "briefings": [
+  {
+   "date": "2026-11-18",
+   "headline": "Kritische Java-Lücke Java4Shell verlangt eine Bestandsaufnahme, Datenschützer nehmen 2027 die Bewerberauswahl ins Visier, geleakte Cloud-Schlüssel sind in Sekunden weg",
+   "points": [
+    "Java4Shell: Kritische Lücke in der Java-Laufzeit OpenJDK erlaubt Speicherüberschreibung ohne Anmeldung, Oracle liefert seit 17. November Updates",
+    "Europäischer Datenschutzausschuss: Gemeinsame Prüfaktion 2027 zu automatisierten Entscheidungen im Recruiting, auch mit Künstlicher Intelligenz",
+    "Docker Hub: In öffentlichen Images platzierte Cloud-Schlüssel wurden laut Forschern innerhalb von Sekunden abgegriffen, über 75.000 Zugriffe",
+    "Supermarktkette Coles meldet Cybervorfall, Betrieb läuft, bisher keine Hinweise auf Datenabfluss",
+    "Übernommenes Konto bei Hugging Face zeigt Manipulationsrisiko bei offenen Modellen"
+   ],
+   "count": 5
+  },
   {
    "date": "2026-11-17",
    "headline": "Europäische Union bereitet Sanktionen gegen Iran wegen der Kühlanlagen-Angriffe vor, dazu Datenabgriff auf einer Bezahlseite und Beschäftigtendaten bei einem Cloud-Anbieter",
@@ -353,18 +365,6 @@
     "Auf dem Radar: Der Digital Fairness Act ist als Vorschlag der Kommission für das vierte Quartal 2026 angekündigt."
    ],
    "count": 3
-  },
-  {
-   "date": "2026-10-17",
-   "headline": "Aktiv ausgenutzte Lücke in Fernwartungssoftware, Tausende Kühlsteuerungen weiter offen im Netz, Bundestag regelt Aufsicht zum Cyber Resilience Act",
-   "points": [
-    "BeyondTrust Remote Support: Zero Day seit Ende August ausgenutzt, Behörde der Vereinigten Staaten fordert neben dem Patch auch Forensik und das Wechseln aller gespeicherten Zugangsdaten",
-    "Update Kühlsteuerungen: mindestens 4.500 Danfoss-Schnittstellen weiter aus dem Internet erreichbar, Berichte über Angriffe auch in Deutschland, Spanien, Portugal, Polen und Belgien",
-    "Bundestag beschließt Durchführungsgesetz zum Cyber Resilience Act: Bundesamt für Sicherheit in der Informationstechnik wird Marktüberwachungsbehörde",
-    "Österreich: Kurznachrichten mit Text-Absender werden nur noch mit registrierter Kennung zugestellt, direkter Versand aus dem Ausland untersagt",
-    "Amazon Web Services trennt die europäische souveräne Cloud am 24. Oktober testweise vom globalen Netz, Angriff auf Auftragnehmer legt Fehmarnbelt-Baustelle lahm"
-   ],
-   "count": 6
   }
  ],
  "dossiers": [
@@ -455,16 +455,16 @@
    "title": "Identitäten und Zugangsdaten",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Die Operation Endgame hat rund 6,4 Millionen gestohlene Zugangsdaten von über 40.000 Opfern sichergestellt, Betroffene werden über Behörden und Internetanbieter benachrichtigt. Daneben bleiben falscher Support über Teams, schlecht konfigurierte Zertifikatsdienste, versteckte Rechteketten in Entra ID und nicht-menschliche Identitäten eigene Prüfobjekte.",
-   "next_step": "Prozess für eingehende Hinweise auf abgeflossene Zugangsdaten festlegen und üben, einschließlich Zurücksetzen und Warnung vor gefälschten Behördenmails.",
+   "status": "Ein Experiment mit Docker Hub zeigt, dass in öffentlichen Container-Images platzierte Cloud-Schlüssel innerhalb von Sekunden abgegriffen und über 75.000 Mal abgerufen wurden. Daneben bleiben die von der Operation Endgame sichergestellten Zugangsdaten, falscher Support über Teams und versteckte Rechteketten in Entra ID eigene Prüfobjekte.",
+   "next_step": "Secret Scanning in Build-Pipelines verpflichtend machen, Laufzeiten nicht-menschlicher Zugangsdaten verkürzen und den Prozess zum sofortigen Sperren geleakter Schlüssel testen.",
    "open_questions": [
-    "Wer im Konzern nimmt Benachrichtigungen von Behörden über abgeflossene Zugangsdaten entgegen?"
+    "Sind Dienstleister vertraglich zu Secret Scanning und sofortiger Rotation verpflichtet?"
    ],
    "controls": [
     "ISO/IEC 27001 Anhang A 5.17 – Authentisierungsinformationen",
     "ISO/IEC 27001 Anhang A 5.18 – Zugangsrechte"
    ],
-   "updated": "2026-11-16"
+   "updated": "2026-11-18"
   },
   {
    "slug": "kritische-schwachstellen-perimeter",
@@ -478,17 +478,17 @@
    "title": "Kritische Schwachstellen in Randsystemen und Kernanwendungen",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Angreifer kombinieren die PHP2Shell-Lücken in Check-Point-Gateways mit einer Rechteausweitung auf Root (CVE-2026-123039), installieren eine Backdoor und löschten in einem Fall einen Virtualisierungsserver; die Behördenfrist endet am 16. November. Dazu kommt eine kritische Lücke im HTTP/2-Modul des Apache-Webservers, die Fristen für Apple am 18., SonicWall am 20. und Outlook am 24. November…",
-   "next_step": "Check-Point-Geräte sofort patchen und auf Spuren der Backdoor und auf Zugriffe auf die Virtualisierung prüfen; Apache-Bestände einschließlich eingebetteter Produkte von Dritten erfassen.",
+   "status": "Mit Java4Shell (CVE-2026-114938) kommt eine kritische Lücke in der Java-Laufzeit OpenJDK hinzu, für die Oracle seit 17. November Updates liefert; Angriffe sind noch nicht bekannt. Offen bleiben die Behördenfristen für SonicWall am 20. sowie Outlook und Chrome am 24. November.",
+   "next_step": "Java-Laufzeiten einschließlich mitgelieferter Versionen in Drittprodukten und der Prozessorplattform inventarisieren, Lieferanten nach Patchstand fragen und laufende Fristen bis 24. November nachhalten.",
    "open_questions": [
-    "Wie viele Appliances von Dritten enthalten verwundbare Apache-Versionen?",
-    "Wird bei Randsystemen nach dem Patchen systematisch nach Spuren einer Kompromittierung gesucht?"
+    "Welche Drittprodukte liefern betroffene Java-Versionen mit, ohne dass es im Bestand sichtbar ist?",
+    "Wann tauchen erste funktionierende Angriffe auf Java4Shell auf?"
    ],
    "controls": [
-    "NIS-2-Richtlinie Art. 21 – Umgang mit Schwachstellen",
-    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen"
+    "ISO/IEC 27001 Anhang A 8.8 – Handhabung technischer Schwachstellen",
+    "IT-Kontrollen der Abschlussprüfung – Änderungsmanagement"
    ],
-   "updated": "2026-11-15"
+   "updated": "2026-11-18"
   },
   {
    "slug": "lebenszyklus-altsysteme",
@@ -603,17 +603,17 @@
    "title": "Automatisierte Entscheidungen und algorithmisches Management",
    "sector": "Datenschutz & Datenrecht",
    "ring": "vorbereiten",
-   "status": "Nach dem Bußgeld von 824,99 Millionen Euro gegen Uber und dem Urteil des Bundesgerichtshofs vom 21. Oktober 2026 zu Scores sieht nun auch eine Generalanwältin am Gerichtshof der Europäischen Union die automatische Ablehnung von Rechnungs- oder Ratenkauf als mögliche verbotene automatisierte Entscheidung. Die Ausnahme für die Vertragserfüllung soll eng gelten, die Beweislast trägt der Händler.",
-   "next_step": "Automatisierte Entscheidungen im Onlinehandel, in der Preisgestaltung und in der Personaleinsatzplanung erfassen und für jede Entscheidungslogik, Datengrundlage und menschliche Prüfschritte dokumentieren, auch bei Zahlungsdienstleistern.",
+   "status": "Nach dem Urteil des Bundesgerichtshofs zu Scores und dem Schlussantrag zum Rechnungskauf hat der Europäische Datenschutzausschuss am 11. November automatisierte Entscheidungen im Recruiting zum Thema der gemeinsamen Prüfaktion 2027 gemacht. Im Fokus steht Artikel 22 der Datenschutz-Grundverordnung, eine menschliche Prüfung zählt nur, wenn sie inhaltlich erfolgt.",
+   "next_step": "Vorauswahl-, Ranking- und Bewertungsfunktionen in Bewerber- und Personalsystemen inventarisieren, menschliche Prüfung dokumentieren und Datenschutz-Folgenabschätzungen mit Betriebsrat und Datenschutz abstimmen.",
    "open_questions": [
-    "Folgt der Gerichtshof den Schlussanträgen in der Rechtssache C-568/25?",
-    "Wie wirkt sich der Digital Omnibus auf das Verbot automatisierter Entscheidungen aus?"
+    "Welche nationalen Aufsichtsbehörden beteiligen sich an der Prüfaktion 2027?",
+    "Wie streng legen Aufsichten die Anforderungen an eine echte menschliche Prüfung aus?"
    ],
    "controls": [
     "DSGVO Art. 22 – Automatisierte Entscheidungen im Einzelfall",
-    "DSGVO Art. 5 Abs. 2 – Rechenschaftspflicht"
+    "DSGVO Art. 35 – Datenschutz-Folgenabschätzung"
    ],
-   "updated": "2026-11-03"
+   "updated": "2026-11-18"
   },
   {
    "slug": "cloud-souveraenitaet",
@@ -1154,6 +1154,20 @@
    ]
   },
   {
+   "theme": "Neue Prüfungsstandards für Prüfungsnachweise",
+   "why": "Bis 15. Dezember 2026 läuft die Konsultation zu überarbeiteten internationalen Prüfungsstandards zu Prüfungshandlungen und Prüfungsnachweisen, die auch den Einsatz von Technologie in der Prüfung betreffen. Das wirkt mittelbar auf Nachweisanforderungen an allgemeine IT-Kontrollen.",
+   "count": 9,
+   "first_seen": "2026-09-30",
+   "last_seen": "2026-11-18",
+   "evidence": [
+    "https://acts.co.za/news/blog/2026/08/iaasb-proposed-revisions-core-auditing-standards",
+    "https://www.iaasb.org/news-events/2026-10/iaasb-enews-october-2026",
+    "https://ifacweb.blob.core.windows.net/publicfiles/2026-08/IAASB-Audit-Evidence-Risk-Response-ISA-500-Exposure-Draft.pdf",
+    "https://www.iaasb.org/publications/proposed-revisions-audit-evidence-risk-response-isa-330-isa-500-isa-520",
+    "https://www.iaasb.org/consultations-projects/audit-evidence-and-risk-response-isa-330-isa-500-isa-520"
+   ]
+  },
+  {
    "theme": "Schwachstellensuche durch Künstliche Intelligenz",
    "why": "Das Bundesamt für Sicherheit in der Informationstechnik zählt 17.539 neue Schwachstellen im zweiten Quartal 2026 nach 10.803 im ersten und vermutet als mögliche Ursache die Schwachstellensuche mit Künstlicher Intelligenz. Patch-Zyklen und Ressourcen für das Schwachstellenmanagement geraten damit weiter unter Druck.",
    "count": 8,
@@ -1165,20 +1179,6 @@
     "https://thehackernews.com/2026/11/openai-ai-pipeline-generates-948-linux.html",
     "https://newcivilengineer.com/latest/highly-likely-ai-will-be-used-in-ransomware-attack-on-uk-critical-infrastructure-03-11-2026",
     "https://thehackernews.com/2026/11/red-hat-patches-98-rated-linux-tcp-rce.html"
-   ]
-  },
-  {
-   "theme": "Neue Prüfungsstandards für Prüfungsnachweise",
-   "why": "Die Konsultation zu den überarbeiteten Standards ISA 330, ISA 500 und ISA 520 läuft bis 15. Dezember 2026 und soll den stärkeren Technikeinsatz in Unternehmen berücksichtigen. Das verändert, welche Nachweise Abschlussprüfer zu allgemeinen IT-Kontrollen verlangen.",
-   "count": 8,
-   "first_seen": "2026-09-30",
-   "last_seen": "2026-10-27",
-   "evidence": [
-    "https://www.iaasb.org/news-events/2026-10/iaasb-enews-october-2026",
-    "https://ifacweb.blob.core.windows.net/publicfiles/2026-08/IAASB-Audit-Evidence-Risk-Response-ISA-500-Exposure-Draft.pdf",
-    "https://www.iaasb.org/publications/proposed-revisions-audit-evidence-risk-response-isa-330-isa-500-isa-520",
-    "https://www.iaasb.org/consultations-projects/audit-evidence-and-risk-response-isa-330-isa-500-isa-520",
-    "https://www.accountingtoday.com/news/iaasb-proposes-to-revise-audit-standards-for-new-risks-and-tech"
    ]
   },
   {
@@ -1353,6 +1353,16 @@
    ]
   },
   {
+   "theme": "Cloud-Anbieter als Gatekeeper",
+   "why": "Die Europäische Kommission will laut Berichten bis Jahresende entscheiden, ob Amazon Web Services und Microsoft Azure als Gatekeeper nach dem Gesetz über digitale Märkte eingestuft werden. Das könnte Anbieterwechsel und Mehrfach-Cloud-Strategien erleichtern und die Exit-Planung verändern.",
+   "count": 1,
+   "first_seen": "2026-11-18",
+   "last_seen": "2026-11-18",
+   "evidence": [
+    "https://thenextweb.com/news/eu-dma-aws-azure-cloud-gatekeeper-probe"
+   ]
+  },
+  {
    "theme": "Agenten-Freigabe bei Kartendaten",
    "why": "Der Rat für Sicherheitsstandards im Kartenzahlungsverkehr empfiehlt, dass Agenten mit Künstlicher Intelligenz Operationen mit unverschlüsselten Kartendaten nur nach ausdrücklicher Freigabe durch Menschen ausführen. Das könnte zur Prüffrage bei Kundenservice und Zahlungsprozessen werden.",
    "count": 1,
@@ -1465,6 +1475,110 @@
  ],
  "news": [
   {
+   "title": "Java4Shell: Kritische Lücke in OpenJDK erlaubt Angriffe ohne Anmeldung",
+   "summary": "Die als Java4Shell bezeichnete Lücke CVE-2026-114938 steckt im Base64-Decoder der offenen Java-Laufzeit OpenJDK und erlaubt entfernten Angreifern ohne Zugangsdaten, Speicher zu überschreiben und im schlimmsten Fall Code auszuführen. Laut Berichten betroffen sind Systeme mit x86-64-Prozessoren mit der Prozessorerweiterung AVX-512 sowie OpenJDK ab Version 17.0.6 und neuere Versionen. Oracle hat am 17. November im Rahmen seines Sicherheitsupdates Korrekturen veröffentlicht, Angriffe in freier Wildbahn sind bislang nicht bekannt.",
+   "relevance": "Java steckt in großen Handelskonzernen typischerweise in Warenwirtschaft, Logistik und vielen Produkten von Drittanbietern, oft unsichtbar mitgeliefert. Gefragt sind eine schnelle Bestandsaufnahme der Laufzeiten einschließlich der Prozessorplattform, Nachfragen bei Lieferanten und ein nachweisbar dokumentiertes Patchen für das Änderungsmanagement.",
+   "source": "BleepingComputer",
+   "url": "https://www.bleepingcomputer.com/news/security/critical-java4shell-flaw-allows-rce-attacks-on-major-java-applications/",
+   "id": "2026-11-18-java4shell-openjdk",
+   "topic": "IT-Governance & Risiko",
+   "impact": "hoch",
+   "published": "2026-11-17",
+   "tags": [
+    "Java",
+    "Schwachstelle",
+    "Patchmanagement"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 8.8 – Handhabung technischer Schwachstellen",
+    "IT-Kontrollen der Abschlussprüfung – Änderungsmanagement",
+    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Einkauf & Drittparteien"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "kritische-schwachstellen-perimeter",
+   "priority": 1,
+   "primary": false,
+   "added": "2026-11-18T06:05:36Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Datum, Nummer der Lücke, Base64-Decoder, AVX-512, Versionsangabe ab 17.0.6 und Oracle-Update am 17. November sind belegt. Dass Java 8 und 11 nicht betroffen sind, steht nicht in der Quelle; die Quelle erwähnt diese Versionen gar nicht."
+   }
+  },
+  {
+   "title": "Docker Hub: Geleakte Cloud-Schlüssel werden innerhalb von Sekunden abgegriffen",
+   "summary": "Forscher der Stony Brook University haben Zugangsschlüssel für Cloud-Konten gezielt in öffentliche Container-Images auf Docker Hub und weiteren Plattformen gelegt. Laut Bericht wurden die Schlüssel innerhalb von Sekunden entdeckt und genutzt, die Images wurden im Verlauf des Experiments mehr als 75.000 Mal heruntergeladen.",
+   "relevance": "Das Experiment zeigt, dass ein versehentlich veröffentlichter Schlüssel sofort als kompromittiert gelten muss. Wirksame Kontrollen sind automatisches Secret Scanning in der Build-Pipeline, kurze Laufzeiten für Schlüssel und ein eingeübter Prozess für sofortiges Sperren und Rotieren, auch bei Dienstleistern.",
+   "source": "BleepingComputer",
+   "url": "https://www.bleepingcomputer.com/news/security/cloud-keys-leaked-in-docker-hub-images-are-stolen-within-seconds/",
+   "id": "2026-11-18-docker-hub-schluessel-sekunden",
+   "topic": "IT-Governance & Risiko",
+   "impact": "mittel",
+   "published": "2026-11-17",
+   "tags": [
+    "Zugangsdaten",
+    "Container",
+    "Cloud"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 5.17 – Authentisierungsinformationen",
+    "ISO/IEC 27001 Anhang A 8.28 – Sichere Programmierung"
+   ],
+   "roles": [
+    "IT-Risiko"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "identitaeten-zugangsdaten",
+   "priority": 3,
+   "primary": false,
+   "added": "2026-11-18T06:05:36Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Die Zahl 75.000 bezieht sich auf das Herunterladen der Images, nicht auf Abrufe der Schlüssel; die Schlüssel für Amazon Web Services erhielten über 140.000 Aufrufe. Insgesamt wurden 300 Köder-Images auf acht Plattformen veröffentlicht, nicht nur auf Docker Hub. Datum, Forscher und die Entdeckung…"
+   }
+  },
+  {
+   "title": "Hugging Face: Konto des Sprachmodells Kokoro übernommen, Gewichte manipulierbar",
+   "summary": "Forscher haben das Konto für das verbreitete Sprachausgabe-Modell Kokoro auf der Plattform Hugging Face übernommen. Sie zeigten, dass sie die Modellgewichte so verändern konnten, dass die erzeugte Sprache vom eingegebenen Text abweicht.",
+   "relevance": "Offene Modelle sind Teil der Software-Lieferkette, etwa im Kundenservice. Versionen sollten festgeschrieben, Prüfsummen kontrolliert und Modellquellen wie jede andere Drittkomponente bewertet werden.",
+   "source": "BleepingComputer",
+   "url": "https://www.bleepingcomputer.com/news/security/researchers-hijack-hugging-face-account-for-popular-kokoro-ai-model/",
+   "id": "2026-11-18-hugging-face-kokoro-konto",
+   "topic": "AI-Governance",
+   "impact": "info",
+   "published": "2026-11-17",
+   "tags": [
+    "Modell-Lieferkette",
+    "Künstliche Intelligenz"
+   ],
+   "controls": [
+    "ISO/IEC 42001 – Managementsystem für Künstliche Intelligenz",
+    "ISO/IEC 27001 Anhang A 5.21 – Informationssicherheit in der Lieferkette"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Einkauf & Drittparteien"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "agentische-ki-sicherheit",
+   "priority": 5,
+   "primary": false,
+   "added": "2026-11-18T06:05:36Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum und Kernaussage belegt: Kontoübernahme über eine neu registrierte Domain mit anschließendem Zurücksetzen des Passworts, veränderte Gewichte erzeugten Sprache, die vom eingegebenen Text abweicht (nur lokal getestet, nicht hochgeladen)."
+   }
+  },
+  {
    "title": "Update: Kühlanlagen – Europäische Union bereitet Sanktionen gegen Iran vor",
    "summary": "Die Außenbeauftragte der Europäischen Union, Kaja Kallas, kündigte am Montag nach dem Treffen der Außenminister in Brüssel weitere Sanktionen gegen Iran an. Anlass sind die Angriffe auf Kühlanlagen in Hunderten französischen Supermärkten am 11. und 12. Oktober, für die Frankreich Iran verantwortlich macht. Iran bestreitet die Verantwortung.",
    "relevance": "Ein staatsnaher Akteur hat den Lebensmittelhandel gezielt angegriffen. Das gehört als eigenes Szenario ins Risikoregister. Zugleich sollte geprüft werden, wie die Cyberversicherung Angriffe behandelt, die einem Staat zugeschrieben werden.",
@@ -1497,6 +1611,41 @@
    "check": {
     "verdict": "abweichung",
     "note": "Das Datum und die Kernaussage stimmen: Kallas kündigt Sanktionen an, Iran bestreitet die Verantwortung. Die Quelle nennt aber keine Gruppe Shahid Kaveh, keine Zuordnung durch die französische Cybersicherheitsbehörde, keine Haftbefehle der Pariser Staatsanwaltschaft und kein Außenministertreffen am…"
+   }
+  },
+  {
+   "title": "Supermarktkette Coles meldet Cybervorfall, Betrieb läuft weiter",
+   "summary": "Die australische Supermarktkette Coles hat am 16. November an der australischen Börse einen Cybervorfall in ihrer Informationstechnik gemeldet. Filialen und Onlineshop arbeiten normal, bislang gibt es keine Hinweise auf abgeflossene Kunden-, Beschäftigten- oder Lieferantendaten; Coles arbeitet mit dem australischen Cybersicherheitszentrum und externen Fachleuten. Offen sind betroffene Systeme, Angriffsweg und eine mögliche Lösegeldforderung.",
+   "relevance": "Nach Ahold Delhaize trifft es erneut einen großen Lebensmittelhändler. Der Fall zeigt den Wert einer frühen, knappen Meldung: Krisenkommunikation und Meldewege nach der NIS-2-Richtlinie (Richtlinie über Netz- und Informationssicherheit) sollten als vorbereitete Bausteine vorliegen.",
+   "source": "iTnews",
+   "url": "https://www.itnews.com.au/news/coles-group-investigating-a-cyber-incident-630361",
+   "id": "2026-11-18-coles-cybervorfall",
+   "topic": "Handel & Branche",
+   "impact": "mittel",
+   "published": "2026-11-16",
+   "tags": [
+    "Lebensmittelhandel",
+    "Vorfall",
+    "Krisenkommunikation"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 23 – Berichtspflichten",
+    "ISO/IEC 27001 Anhang A 5.26 – Reaktion auf Informationssicherheitsvorfälle"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Management"
+   ],
+   "countries": [
+    "AU"
+   ],
+   "dossier": null,
+   "priority": 4,
+   "primary": false,
+   "added": "2026-11-18T06:05:36Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum 16. November, Meldung an die Börse, normaler Betrieb, keine Hinweise auf Datenabfluss, Zusammenarbeit mit dem australischen Cybersicherheitszentrum und externen Fachleuten sind belegt. Betroffene Systeme, Angriffsweg und Lösegeld nennt die Quelle nicht."
    }
   },
   {
@@ -1743,6 +1892,42 @@
    "check": {
     "verdict": "abweichung",
     "note": "Datum, Löschbefugnis, Warnpflicht, Schutz bei der Namensauflösung und Zustimmung des Bundesrats sind belegt. Die Befugnis, Datenverkehr umzuleiten, nennt die Quelle aber nur für das Bundeskriminalamt, nicht für die Bundespolizei."
+   }
+  },
+  {
+   "title": "Datenschutzausschuss: Prüfaktion 2027 zu automatisierter Bewerberauswahl",
+   "summary": "Der Europäische Datenschutzausschuss hat automatisierte Entscheidungen im Recruiting als Thema seiner gemeinsamen Durchsetzungsaktion 2027 gewählt; im Zentrum steht das Recht, keiner ausschließlich automatisierten Entscheidung unterworfen zu werden, wenn automatisierte Werkzeuge zur Bewerberauswahl eingesetzt werden. Zugleich hat der Ausschuss die endgültigen Empfehlungen für verbindliche interne Datenschutzvorschriften von Auftragsverarbeitern beschlossen, die Inhaber je nach Lage im Antragsverfahren oder mit ihrer jährlichen Aktualisierung 2028 umsetzen sollen.",
+   "relevance": "Für einen Arbeitgeber mit sehr vielen Bewerbungen sind Vorauswahl-Werkzeuge und Bewertungsfunktionen in Bewerberportalen damit ein absehbares Prüfobjekt der Aufsicht. Es lohnt sich jetzt, solche Funktionen zu inventarisieren, die menschliche Prüfung nachweisbar zu machen und Datenschutz-Folgenabschätzungen zu aktualisieren.",
+   "source": "LexisNexis",
+   "url": "https://www.lexisnexis.co.uk/legal/news/edpb-adopts-korea-adequacy-statement-processor-bcr-recommendations-selects-2027-enforcement-topic",
+   "id": "2026-11-18-datenschutzausschuss-pruefaktion-recruiting",
+   "topic": "Datenschutz & Datenrecht",
+   "impact": "mittel",
+   "published": "2026-11-12",
+   "tags": [
+    "Recruiting",
+    "Automatisierte Entscheidungen",
+    "Aufsicht"
+   ],
+   "controls": [
+    "DSGVO Art. 22 – Automatisierte Entscheidungen im Einzelfall",
+    "DSGVO Art. 35 – Datenschutz-Folgenabschätzung",
+    "DSGVO Art. 47 – Verbindliche interne Datenschutzvorschriften"
+   ],
+   "roles": [
+    "Datenschutz",
+    "Management"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "algorithmisches-management",
+   "priority": 2,
+   "primary": false,
+   "added": "2026-11-18T06:05:36Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Thema der Prüfaktion 2027, endgültige Empfehlungen für Auftragsverarbeiter-Regeln und die jährliche Aktualisierung 2028 sind belegt. Das Sitzungsdatum 11. November steht nicht in der Quelle (laut Website des Ausschusses fand die Plenarsitzung offenbar am 10. November statt). Künstliche Intelligenz…"
    }
   },
   {

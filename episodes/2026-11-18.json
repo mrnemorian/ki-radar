@@ -1,0 +1,157 @@
+{
+ "format": "tag",
+ "chapters": [
+  {
+   "title": "Begrüßung",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Guten Morgen, liebe IT-GRC-Kolleginnen und -Kollegen, willkommen beim IT-GRC Radar am Mittwoch, dem achtzehnten November 2026. Heute geht es um Java, um Bewerbungsverfahren und um Schlüssel, die schneller weg sind, als der Kaffee kalt wird."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Klingt nach einem Tag, an dem die Inventarliste mal wieder die Hauptrolle spielt. Leg los."
+    }
+   ]
+  },
+  {
+   "title": "Java4Shell",
+   "news_id": "2026-11-18-java4shell-openjdk",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Die wichtigste Meldung: eine kritische Lücke in OpenJDK, der offenen Java-Laufzeit, getauft auf den Namen Java4Shell. Der Fehler steckt im Base64-Decoder. Ein Angreifer ohne Anmeldung kann Speicher überschreiben und im schlimmsten Fall Code ausführen. Oracle hat am siebzehnten November Updates geliefert."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Der Name soll natürlich an [en]Log4Shell[/en] erinnern, Marketing können Sicherheitsforscher inzwischen auch. Die gute Nachricht: Angriffe in freier Wildbahn sind bisher nicht bekannt. Und betroffen sind laut Berichten nur Server mit einer bestimmten Prozessorerweiterung namens AVX-512."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Moment, heißt das, ich muss jetzt nicht nur wissen, wo Java läuft, sondern auch auf welchem Prozessor?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ehrlich gesagt: ja. Betroffen sein sollen Java 17 ab Version 17.0.6 und neuere Versionen. In großen Handelskonzernen steckt Java typischerweise in Warenwirtschaft und Logistik, und oft gebündelt in Produkten von Drittanbietern, wo man es gar nicht sieht."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Also wieder die Frage: Wer ist eigentlich Owner der mitgelieferten Laufzeit?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Genau die. Ich würde bei Lieferanten nachfragen, die Software-Stücklisten anfordern und das Patchen sauber dokumentieren. Spätestens in der Abschlussprüfung schaut jemand beim Änderungsmanagement genau hin."
+    }
+   ]
+  },
+  {
+   "title": "Prüfaktion Recruiting",
+   "news_id": "2026-11-18-datenschutzausschuss-pruefaktion-recruiting",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Zweites Thema, Datenschutz. Der Europäische Datenschutzausschuss hat vergangene Woche festgelegt, worauf die Aufsichtsbehörden 2027 gemeinsam schauen: automatisierte Entscheidungen im Recruiting."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Für große Arbeitgeber ist das ein Volltreffer. Im Kern geht es um Artikel 22 der Datenschutz-Grundverordnung, also das Recht, keiner rein automatisierten Entscheidung unterworfen zu werden. Und ein Mensch im Prozess zählt nur, wenn er wirklich prüft."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Der berühmte Klick auf Bestätigen reicht also nicht."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Nein. Das passt zu unserem Dossier zum algorithmischen Management, Stichwort Bundesgerichtshof und Scores im Oktober. Jetzt wäre ein guter Zeitpunkt, Vorauswahl-Funktionen in Bewerberportalen zu inventarisieren und die Folgenabschätzungen zu prüfen, gemeinsam mit dem Betriebsrat."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Am Rande hat der Ausschuss auch die endgültigen Empfehlungen für verbindliche interne Datenschutzvorschriften von Auftragsverarbeitern beschlossen. Wer solche Regeln hat, passt sie spätestens mit der jährlichen Aktualisierung 2028 an."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Das trifft vor allem Dienstleister, ist aber ein netter Prüfpunkt für den Einkauf."
+    }
+   ]
+  },
+  {
+   "title": "Schlüssel auf Docker Hub",
+   "news_id": "2026-11-18-docker-hub-schluessel-sekunden",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Drittens ein Experiment, das wehtut. Forscher der Stony Brook University haben Cloud-Schlüssel absichtlich in öffentliche Images auf Docker Hub gelegt. Die waren laut Bericht innerhalb von Sekunden abgegriffen, und die Images wurden insgesamt über 75.000 Mal heruntergeladen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "75.000. Da hilft kein, wir löschen das gleich wieder. [en]Secrets[/en] gehören nie in Images, [en]Secret Scanning[/en] in der [en]Pipeline[/en] ist Pflicht, und ein geleakter Schlüssel gilt sofort als kompromittiert."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Also nicht erst Ticket, dann Excel-Liste, dann nächste Woche rotieren."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Genau. Die Excel-Liste ist leider langsamer als der Angreifer."
+    }
+   ]
+  },
+  {
+   "title": "Vorfall bei Coles",
+   "news_id": "2026-11-18-coles-cybervorfall",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Aus dem Handel: Die australische Supermarktkette Coles hat am sechzehnten November einen Cybervorfall an die Börse gemeldet. Filialen und Onlineshop laufen, bisher gibt es keine Hinweise auf abgeflossene Kunden-, Beschäftigten- oder Lieferantendaten."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Offen ist, welche Systeme betroffen sind und wie die Angreifer hineinkamen. Nach Ahold Delhaize wieder ein großer Lebensmittelhändler. Was ich mitnehme: Die Meldung kam früh, knapp und klar. So etwas sollte man vorher als Baustein vorbereitet haben, für die Krisenkommunikation und für die Meldepflichten nach der NIS-2-Richtlinie, also der Richtlinie über Netz- und Informationssicherheit."
+    }
+   ]
+  },
+  {
+   "title": "Modell-Konto übernommen",
+   "news_id": "2026-11-18-hugging-face-kokoro-konto",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Kurz noch: Forscher haben das Konto des beliebten Sprachmodells Kokoro auf der Plattform Hugging Face übernommen und gezeigt, dass sie die Modellgewichte verändern konnten."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Dann sagt die Sprachausgabe plötzlich etwas anderes als der Text. Wer offene Modelle nutzt, sollte Versionen festschreiben und Prüfsummen kontrollieren, wie bei jeder anderen Komponente in der [en]Supply Chain[/en]."
+    }
+   ]
+  },
+  {
+   "title": "Auf dem Radar",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Und was hast du auf dem Radar?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Die Europäische Kommission will laut Berichten bis Jahresende entscheiden, ob Amazon Web Services und Microsoft Azure als [en]Gatekeeper[/en] nach dem Gesetz über digitale Märkte gelten. Das könnte Anbieterwechsel erleichtern und ist damit ein Fall für unser Dossier zur Cloud-Souveränität."
+    }
+   ]
+  },
+  {
+   "title": "Abschied",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Das war das IT-GRC Radar für heute. Alle Quellen findet ihr wie immer auf der Webseite."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und schaut heute mal nach, wo überall Java läuft. Bis morgen."
+    }
+   ]
+  }
+ ]
+}
