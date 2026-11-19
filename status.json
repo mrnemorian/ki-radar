@@ -1,11 +1,17 @@
 {
  "last_run": {
-  "start": "2026-11-18T07:00:01+01:00",
-  "end": "2026-11-18T07:05:36+01:00",
+  "start": "2026-11-19T07:00:01+01:00",
+  "end": "2026-11-19T07:07:39+01:00",
   "ok": true,
-  "summary": "5 neue Meldungen: P1 Java4Shell: Kritische Lücke in OpenJDK erlaubt Angriffe ohne Anmeldung; P2 Datenschutzausschuss: Prüfaktion 2027 zu automatisierter Bewerberauswahl; P3 Docker Hub: Geleakte Clou"
+  "summary": "6 neue Meldungen: P1 Puppet: Kritische Lücke in Konfigurationsservern wird ausgenutzt, Behördenfrist 1. Dezember; P2 Update: Expedia bestätigt Angriff über kompromittierten Datenplattform-Anbieter"
  },
  "history": [
+  {
+   "start": "2026-11-19T07:00:01+01:00",
+   "end": "2026-11-19T07:07:39+01:00",
+   "ok": true,
+   "summary": "6 neue Meldungen: P1 Puppet: Kritische Lücke in Konfigurationsservern wird ausgenutzt, Behördenfrist 1. Dezember; P2 Update: Expedia bestätigt Angriff über kompromittierten Datenplattform-Anbieter"
+  },
   {
    "start": "2026-11-18T07:00:01+01:00",
    "end": "2026-11-18T07:05:36+01:00",
@@ -83,12 +89,6 @@
    "end": "2026-11-06T07:07:49+01:00",
    "ok": true,
    "summary": "5 neue Meldungen: P1 Update: Kühlanlagen – Angriffe erreichen Supermärkte in Deutschland; P2 Falscher Support über Microsoft Teams: Angreifer lassen sich Zertifikate für Administratoren ausstell"
-  },
-  {
-   "start": "2026-11-05T07:00:01+01:00",
-   "end": "2026-11-05T07:07:41+01:00",
-   "ok": true,
-   "summary": "6 neue Meldungen: P1 Update: WordPress-Lücke wird beim Core-Upgrade ausgenutzt, Behördenfrist 6. November; P2 Update: Kühlsteuerungen – sechs Filialen einer Handelskette in Rumänien betroffen; P"
   }
  ]
 }

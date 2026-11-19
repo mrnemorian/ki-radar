@@ -1,0 +1,163 @@
+{
+ "format": "tag",
+ "chapters": [
+  {
+   "title": "Begrüßung",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Guten Morgen, liebe IT-GRC-Kolleginnen und -Kollegen, willkommen beim IT-GRC Radar am Donnerstag, dem neunzehnten November 2026. Heute geht es um einen Konfigurationsserver mit Behördenfrist, Neues von Expedia und eine Vorlage aus Brüssel."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Klingt nach einem Donnerstag, an dem die Excel-Liste mit den offenen [en]Patches[/en] wieder eine Zeile länger wird."
+    }
+   ]
+  },
+  {
+   "title": "Puppet-Lücke",
+   "news_id": "2026-11-19-puppet-server-ausgenutzt",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Genau damit fangen wir an. Die amerikanische Cybersicherheitsbehörde hat eine Lücke in Puppet Enterprise als aktiv ausgenutzt gelistet, die Frist für Bundesbehörden ist der erste Dezember 2026. Wer ein signiertes Agenten-Zertifikat hat, kann damit Code auf dem Puppet-Server ausführen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und das ist unangenehm, weil so ein Konfigurationsserver Tausende Systeme steuert. Wer den kontrolliert, verteilt Änderungen im großen Stil. Sozusagen [en]Change Management[/en] ohne Freigabe."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Moment, man braucht doch erst einmal ein Zertifikat?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ja, aber wenn die Zertifizierungsstelle Anfragen ohne strenge Prüfung automatisch signiert, ist diese Hürde laut Behörde womöglich keine mehr. Also auf die korrigierten Versionen aktualisieren und die automatische Signierung kritisch anschauen. Spätestens in der nächsten Audit-Saison fragt sonst die Abschlussprüfung danach."
+    }
+   ]
+  },
+  {
+   "title": "Update Expedia",
+   "news_id": "2026-11-19-update-expedia-qubole",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Da gibt es Neues zu Expedia. Bisher hatten wir nur die Behauptungen einer Gruppe. Jetzt hat Expedia am zwölften November bestätigt, dass die Angreifer über einen kompromittierten Anbieter einer Datenplattform hereingekommen sind."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Forscher von Wiz und Sentra führen das auf einen gestohlenen Schlüssel des Anbieters Qubole zurück. Die behaupteten 830 Millionen Datensätze aus dem Treueprogramm hat Expedia allerdings nicht bestätigt."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und was ist die Lehre für einen Handels- und Touristikkonzern?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ehrlich gesagt die unbequemste von allen. Bei vielen Qubole-Kunden waren laut Berichten die Zugriffsrollen in der [en]Cloud[/en] noch aktiv, obwohl sie die Plattform längst nicht mehr nutzten. Der Vertrag ist gekündigt, die Tür steht noch offen. Zum [en]Offboarding[/en] eines Dienstleisters gehört deshalb der Nachweis, dass auch die technischen Zugänge weg sind."
+    }
+   ]
+  },
+  {
+   "title": "Grundrechte-Folgenabschätzung",
+   "news_id": "2026-11-19-ai-act-grundrechte-folgenabschaetzung",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Dann zur Verordnung über Künstliche Intelligenz. Die Kommission hat am sechzehnten November eine Vorlage für die Grundrechte-Folgenabschätzung vorgelegt. Rückmeldungen sind bis zum fünfzehnten Januar 2027 möglich, die Pflicht gilt ab dem zweiten Dezember 2027."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Wichtig ist, wen sie trifft: vor allem öffentliche Stellen, Anbieter öffentlicher Dienstleistungen und Betreiber von Systemen, die die Kreditwürdigkeit prüfen oder Versicherungsrisiken bewerten."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Also für den Handel eher ein Randthema?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Als Pflicht ja, als Werkzeug nein. Die Vorlage taugt als Muster für andere Hochrisiko-Anwendungen, etwa in der Personalauswahl. Und wer sie mit der Datenschutz-Folgenabschätzung verzahnt, muss dieselbe Frage nicht in zwei Formularen beantworten."
+    }
+   ]
+  },
+  {
+   "title": "Maersk-Altsystem",
+   "news_id": "2026-11-19-maersk-altsystem-uebernahme",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Bei Maersk sind Daten aus einem Altsystem abgeflossen, das aus der 2022 übernommenen LF Logistics stammt. Die Gruppe WhiteArmor fordert 5 Millionen Dollar, ihre weiteren Angaben sind aber unbestätigt."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Der klassische Fall: Nach dem Zukauf läuft das alte System weiter, weil die Migration ja bald kommt. Vier Jahre später fragt dann jemand: Wer ist hier eigentlich [en]Owner[/en]?"
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und wann sollte die Antwort feststehen?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Am besten schon beim Vertragsabschluss, und zwar zusammen mit einem Datum, bis zu dem das System stillgelegt oder eingegliedert ist."
+    }
+   ]
+  },
+  {
+   "title": "Wyndham-App",
+   "news_id": "2026-11-19-wyndham-app-passwort",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Kurz noch zur Hotelgruppe Wyndham. Ein Forscher fand in deren Android-App ein Passwort, mit dem er auf eine interne Kundendatenbank zugreifen konnte."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Nach Applebee's der zweite solche Fall in wenigen Wochen. Die Suche nach eingebetteten Geheimnissen gehört vor jede Freigabe einer App, nicht erst in die Aufarbeitung danach."
+    }
+   ]
+  },
+  {
+   "title": "Sanktionen gegen NoName",
+   "news_id": "2026-11-19-eu-sanktionen-noname",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Außerdem hat die Europäische Union am sechzehnten November die Hackergruppe NoName057 16 sanktioniert, zusammen mit einer russischen Propagandafirma."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Die Gruppe reklamiert Angriffe auf Unternehmen in der Europäischen Union für sich. Für Webshops und Buchungsportale heißt das: Schutz gegen Überlastungsangriffe und Notfallpläne ruhig noch einmal durchgehen."
+    }
+   ]
+  },
+  {
+   "title": "Auf dem Radar",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Auf dem Radar haben wir heute ruhende Zugriffsrollen von Dienstleistern."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Der Qubole-Fall wird nicht der letzte bleiben. In vielen [en]Cloud[/en]-Konten liegen vermutlich Rollen für Anbieter, an die sich niemand mehr erinnert. Eine Inventur lohnt sich vor dem nächsten Vorfall, nicht danach."
+    }
+   ]
+  },
+  {
+   "title": "Abschied",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Das war das IT-GRC Radar für heute. Alle Quellen findet ihr wie immer auf der Webseite."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Bis morgen. Und schaut ruhig mal nach, wer bei euch eigentlich die Puppet-Server betreut."
+    }
+   ]
+  }
+ ]
+}

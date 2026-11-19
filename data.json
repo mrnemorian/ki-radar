@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T06:05:36Z",
+ "updated": "2026-11-19T06:07:39Z",
  "topics": [
   "IT-Governance & Risiko",
   "Cyber- & IT-Regulierung",
@@ -11,6 +11,18 @@
   "Weitere Themen"
  ],
  "briefings": [
+  {
+   "date": "2026-11-19",
+   "headline": "Ausgenutzte Puppet-Lücke mit Frist 1. Dezember, Expedia bestätigt Angriff über Dienstleister, Brüssel legt Vorlage zur Grundrechte-Folgenabschätzung vor",
+   "points": [
+    "Puppet Enterprise: Lücke in Konfigurationsservern wird aktiv ausgenutzt, Behördenfrist 1. Dezember 2026",
+    "Update Expedia: Angriff lief über einen kompromittierten Datenplattform-Anbieter, Zugriffsrollen blieben nach Vertragsende aktiv",
+    "Verordnung über Künstliche Intelligenz: Vorlage zur Grundrechte-Folgenabschätzung in Konsultation bis 15. Januar 2027",
+    "Maersk: Datenabfluss aus Altsystem einer Übernahme von 2022",
+    "Wyndham-App mit eingebettetem Passwort, Sanktionen der Europäischen Union gegen Hackergruppe NoName057(16)"
+   ],
+   "count": 6
+  },
   {
    "date": "2026-11-18",
    "headline": "Kritische Java-Lücke Java4Shell verlangt eine Bestandsaufnahme, Datenschützer nehmen 2027 die Bewerberauswahl ins Visier, geleakte Cloud-Schlüssel sind in Sekunden weg",
@@ -354,17 +366,6 @@
     "Update Ahold Delhaize: Albert Heijn liefert ab Freitag wieder aus, Delhaize bestellte im Notbetrieb über Altsysteme"
    ],
    "count": 5
-  },
-  {
-   "date": "2026-10-18",
-   "headline": "Angreifer kapern die Firewall-Verwaltung eines Dienstleisters, Albert Heijn liefert seit fast einer Woche nicht, und Norwegen bestraft fehlende eigene Einwilligungsprüfung.",
-   "points": [
-    "Über die übernommene zentrale FortiManager-Konsole eines Telekommunikations-Dienstleisters flossen Konfigurationen und Schlüsselmaterial von über 500 Kunden-Firewalls ab; die genutzte Fortinet-Lücke steht seit 16. Oktober im Katalog aktiv ausgenutzter Schwachstellen.",
-    "Update Ahold Delhaize: Albert Heijn liefert bis mindestens Dienstag nicht, Kundenkarte, Rabatte und Kundenservice sind ausgefallen, Hinweise auf Datenabfluss gibt es bisher nicht.",
-    "Norwegen verhängt 8,6 Millionen Euro gegen den Werbetechnik-Anbieter Xandr: Wer Daten übernimmt, muss die Einwilligung selbst prüfen und kann sich nicht auf den Partner verlassen.",
-    "Auf dem Radar: Der Digital Fairness Act ist als Vorschlag der Kommission für das vierte Quartal 2026 angekündigt."
-   ],
-   "count": 3
   }
  ],
  "dossiers": [
@@ -405,18 +406,18 @@
    "title": "Drittparteien- und Lieferkettenrisiko",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Bei der Fernwartungsplattform N-central werden zwei neue Angriffsketten aktiv ausgenutzt, 19 von 21 befallenen Servern hatten den zweiten Hotfix bereits installiert. Zugleich zeigt der Fall Fireworks AI, wie ein entwendeter Schlüssel eines Modellanbieters Notion, Uber und den Marktplatz von Cursor traf; bei Amadeus sind mindestens 344.800 Buchungen betroffen.",
-   "next_step": "Von Dienstleistern mit Fernwartungswerkzeugen Nachweise zu Patch-Stand und abgeschalteter alter Programmierschnittstelle einfordern und Datenweitergaben an Anbieter Künstlicher Intelligenz im Lieferantenregister erfassen.",
+   "status": "Expedia hat am 12. November bestätigt, dass Angreifer über einen kompromittierten Datenplattform-Anbieter eingedrungen sind. Forscher verweisen auf einen gestohlenen Schlüssel von Qubole und auf Zugriffsrollen, die nach Vertragsende aktiv geblieben waren. Zuvor hatten N-central, Fireworks AI und Amadeus gezeigt, wie Zugänge von Dienstleistern zum Einfallstor werden.",
+   "next_step": "Kontenübergreifende Rollen und Zugriffsschlüssel externer Anbieter in allen Cloud-Konten inventarisieren, ungenutzte entziehen und den Offboarding-Prozess um einen technischen Nachweis ergänzen.",
    "open_questions": [
-    "Welche Dienstleister greifen mit N-central oder vergleichbaren Plattformen auf Konzernsysteme zu?",
-    "Werden Zugangsdaten in Daten, die an Anbieter Künstlicher Intelligenz gehen, nachweislich geschwärzt?"
+    "Wie wird belegt, dass Zugänge beendeter Dienstleister tatsächlich entfernt sind?",
+    "Wie viele Kundendatensätze sind bei Expedia tatsächlich betroffen?"
    ],
    "controls": [
-    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
     "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen",
-    "ISO/IEC 27001 Anhang A 5.22 – Überwachung, Überprüfung und Änderungsmanagement von Lieferantendienstleistungen"
+    "ISO/IEC 27001 Anhang A 5.18 – Zugangsrechte",
+    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette"
    ],
-   "updated": "2026-11-16"
+   "updated": "2026-11-19"
   },
   {
    "slug": "steuerliche-digitalpflichten",
@@ -478,17 +479,17 @@
    "title": "Kritische Schwachstellen in Randsystemen und Kernanwendungen",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Mit Java4Shell (CVE-2026-114938) kommt eine kritische Lücke in der Java-Laufzeit OpenJDK hinzu, für die Oracle seit 17. November Updates liefert; Angriffe sind noch nicht bekannt. Offen bleiben die Behördenfristen für SonicWall am 20. sowie Outlook und Chrome am 24. November.",
-   "next_step": "Java-Laufzeiten einschließlich mitgelieferter Versionen in Drittprodukten und der Prozessorplattform inventarisieren, Lieferanten nach Patchstand fragen und laufende Fristen bis 24. November nachhalten.",
+   "status": "Seit 17. November wird die Lücke CVE-2026-115731 in den Konfigurationsservern von Puppet Enterprise aktiv ausgenutzt, die Behördenfrist endet am 1. Dezember. Offen sind außerdem die Fristen für SonicWall am 20. sowie für Outlook und Chrome am 24. November; für die OpenJDK-Lücke Java4Shell liefert Oracle seit 17. November Updates.",
+   "next_step": "Den Bestand an Puppet- und OpenVox-Servern feststellen, die korrigierten Versionen einspielen und die automatische Zertifikatssignierung abschalten oder absichern.",
    "open_questions": [
-    "Welche Drittprodukte liefern betroffene Java-Versionen mit, ohne dass es im Bestand sichtbar ist?",
-    "Wann tauchen erste funktionierende Angriffe auf Java4Shell auf?"
+    "Welche Konfigurationsserver signieren Agenten-Zertifikate automatisch?",
+    "Sind Konfigurationsserver im Inventar als kritische Systeme eingestuft?"
    ],
    "controls": [
-    "ISO/IEC 27001 Anhang A 8.8 – Handhabung technischer Schwachstellen",
-    "IT-Kontrollen der Abschlussprüfung – Änderungsmanagement"
+    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
+    "NIS-2-Richtlinie Art. 21 – Umgang mit und Offenlegung von Schwachstellen"
    ],
-   "updated": "2026-11-18"
+   "updated": "2026-11-19"
   },
   {
    "slug": "lebenszyklus-altsysteme",
@@ -502,17 +503,16 @@
    "title": "Lebenszyklus und Altsysteme",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Exchange Server 2016 und 2019 erhalten am 31. Oktober 2026 die letzten Extended Security Updates. In den Unternehmensausgaben folgt Windows 11 Version 23H2 am 10. November 2026, Windows Server 2016 am 12. Januar 2027. Dazu kommen ältere PHP-Versionen ohne Updates und kürzere Zertifikatslaufzeiten ab Februar 2027.",
-   "next_step": "Für jede Frist die betroffenen Systeme mit Verantwortlichen erfassen. Für Systeme, die nicht rechtzeitig migriert werden, Risikoakzeptanz und Ausgleichsmaßnahmen dokumentieren, bevor die Abschlussprüfung danach fragt.",
+   "status": "Exchange Server 2016 und 2019 haben am 31. Oktober 2026 die letzten Updates erhalten, Windows Server 2016 folgt am 12. Januar 2027. Der Fall Maersk zeigt zusätzlich das Risiko übernommener Altsysteme: Die Daten flossen aus einem System der 2022 gekauften LF Logistics ab.",
+   "next_step": "Altsysteme aus Zukäufen ins Inventar aufnehmen, für jedes einen Owner benennen und Termine für Stilllegung oder Eingliederung festlegen.",
    "open_questions": [
-    "Wie viele Server mit Windows Server 2016 stützen Anwendungen, die für den Abschluss relevant sind?",
-    "Gibt es für Windows Server 2016 bezahlte Verlängerungen der Sicherheitsupdates?"
+    "Welche Systeme aus früheren Übernahmen laufen noch außerhalb der Konzernüberwachung?"
    ],
    "controls": [
-    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
-    "IT-Kontrollen der Abschlussprüfung – Betrieb"
+    "ISO/IEC 27001 Anhang A 5.9 – Inventar der Informationen und anderen damit verbundenen Werte",
+    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen"
    ],
-   "updated": "2026-10-24"
+   "updated": "2026-11-19"
   },
   {
    "slug": "nis2-umsetzung",
@@ -578,18 +578,17 @@
    "title": "Verordnung über Künstliche Intelligenz",
    "sector": "AI-Governance",
    "ring": "jetzt handeln",
-   "status": "Die Transparenzpflichten nach Artikel 50 gelten seit 2. August 2026, der Übergang für die Kennzeichnung synthetischer Inhalte endet am 2. Dezember 2026. Am 19. Oktober 2026 wurde mit EN 18286 die erste harmonisierte Norm im Amtsblatt veröffentlicht, die für das Qualitätsmanagement nach Artikel 17 eine Konformitätsvermutung begründet; die Hochrisiko-Pflichten nach Anhang III gelten ab 2. Dezember…",
-   "next_step": "Bestand an Systemen Künstlicher Intelligenz nach Anbieter- und Betreiberrolle einordnen und EN 18286 als Maßstab für eigene Entwicklungen und Lieferantenanforderungen prüfen.",
+   "status": "Die Transparenzpflichten nach Artikel 50 gelten seit 2. August 2026, die Übergangsfrist für die Kennzeichnung synthetischer Inhalte endet am 2. Dezember 2026. Seit 16. November liegt der Entwurf einer Vorlage für die Grundrechte-Folgenabschätzung nach Artikel 27 zur Konsultation bis 15. Januar 2027 vor; die Hochrisiko-Pflichten nach Anhang III gelten einschließlich dieser Abschätzung ab 2.…",
+   "next_step": "Prüfen, ob Anwendungen zur Kreditwürdigkeitsprüfung unter Artikel 27 fallen, und die Vorlage mit dem Verfahren der Datenschutz-Folgenabschätzung abgleichen.",
    "open_questions": [
-    "Welche weiteren harmonisierten Normen folgen bis Ende 2027?",
-    "Wann veröffentlicht die Kommission die endgültigen Leitlinien zur Einstufung als Hochrisiko-System?"
+    "Wie stark ändert sich die Vorlage nach der Konsultation?",
+    "Welche Anwendungen im Konzern erfüllen die Kriterien für Hochrisiko-Systeme nach Anhang III?"
    ],
    "controls": [
-    "KI-Verordnung Art. 17 – Qualitätsmanagementsystem",
-    "KI-Verordnung Art. 50 – Transparenzpflichten",
+    "Verordnung über Künstliche Intelligenz Art. 27 – Grundrechte-Folgenabschätzung",
     "ISO/IEC 42001 – Managementsystem für Künstliche Intelligenz"
    ],
-   "updated": "2026-10-22"
+   "updated": "2026-11-19"
   },
   {
    "slug": "algorithmisches-management",
@@ -940,6 +939,17 @@
    "added": "2026-11-17"
   },
   {
+   "date": "2026-12-01",
+   "title": "Puppet-Lücke CVE-2026-115731: behördliche Patch-Frist",
+   "detail": "Wer Puppet Enterprise oder Puppet Core betreibt, sollte bis dahin die korrigierten Versionen einspielen und die Zertifikatssignierung prüfen.",
+   "scope": "global",
+   "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
+   "primary": true,
+   "checked": true,
+   "dossier": "kritische-schwachstellen-perimeter",
+   "added": "2026-11-19"
+  },
+  {
    "date": "2026-12-02",
    "title": "Verordnung über Künstliche Intelligenz: Übergang für Kennzeichnung synthetischer Inhalte endet",
    "detail": "Systeme zur Erzeugung synthetischer Inhalte, die vor dem 2. August 2026 in Verkehr gebracht wurden, müssen bis dahin die Transparenzpflichten nach Artikel 50 Absatz 2 erfüllen.",
@@ -1050,6 +1060,17 @@
    "added": "2026-10-24"
   },
   {
+   "date": "2027-01-15",
+   "title": "Ende der Konsultation zur Vorlage für die Grundrechte-Folgenabschätzung",
+   "detail": "Betreiber von Hochrisiko-Systemen nach Artikel 27 können bis dahin Rückmeldungen zum Entwurf der Kommission geben.",
+   "scope": "EU",
+   "url": "https://digital-strategy.ec.europa.eu/en/news/commission-seeks-feedback-draft-template-fundamental-rights-impact-assessment-under-ai-act",
+   "primary": true,
+   "checked": true,
+   "dossier": "ai-act",
+   "added": "2026-11-19"
+  },
+  {
    "date": "2027-02-10",
    "title": "Let's Encrypt: Zertifikate standardmäßig nur noch 64 Tage gültig",
    "detail": "Betreiber von Webseiten und Schnittstellen mit Zertifikaten von Let's Encrypt müssen feste Erneuerungsintervalle durch eine automatische Erneuerung ersetzen.",
@@ -1105,6 +1126,17 @@
    "checked": true
   },
   {
+   "date": "2027-12-02",
+   "title": "Verordnung über Künstliche Intelligenz: Pflicht zur Grundrechte-Folgenabschätzung",
+   "detail": "Betroffene Betreiber von Hochrisiko-Systemen, etwa zur Kreditwürdigkeitsprüfung, müssen vor dem Einsatz eine Grundrechte-Folgenabschätzung durchführen.",
+   "scope": "EU",
+   "url": "https://digital-strategy.ec.europa.eu/en/news/commission-seeks-feedback-draft-template-fundamental-rights-impact-assessment-under-ai-act",
+   "primary": true,
+   "checked": true,
+   "dossier": "ai-act",
+   "added": "2026-11-19"
+  },
+  {
    "date": "2027-12-11",
    "title": "Cyber Resilience Act: zentrale Sicherheitsanforderungen gelten",
    "detail": "Hersteller, Einführer und Händler von Produkten mit digitalen Elementen müssen die wesentlichen Cybersicherheitsanforderungen erfüllen beziehungsweise deren Einhaltung prüfen.",
@@ -1155,15 +1187,15 @@
   },
   {
    "theme": "Neue Prüfungsstandards für Prüfungsnachweise",
-   "why": "Bis 15. Dezember 2026 läuft die Konsultation zu überarbeiteten internationalen Prüfungsstandards zu Prüfungshandlungen und Prüfungsnachweisen, die auch den Einsatz von Technologie in der Prüfung betreffen. Das wirkt mittelbar auf Nachweisanforderungen an allgemeine IT-Kontrollen.",
-   "count": 9,
+   "why": "Die Konsultation des internationalen Standardsetzers für Prüfung zu den Standards ISA 330, 500 und 520 endet am 15. Dezember 2026. Die neue Definition von Prüfungsnachweisen für das digitale Umfeld wird verändern, wie Abschlussprüfer Daten und Systeme der Unternehmen nutzen.",
+   "count": 10,
    "first_seen": "2026-09-30",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "evidence": [
+    "https://www.iaasb.org/publications/proposed-revisions-audit-evidence-risk-response-isa-330-isa-500-isa-520",
     "https://acts.co.za/news/blog/2026/08/iaasb-proposed-revisions-core-auditing-standards",
     "https://www.iaasb.org/news-events/2026-10/iaasb-enews-october-2026",
     "https://ifacweb.blob.core.windows.net/publicfiles/2026-08/IAASB-Audit-Evidence-Risk-Response-ISA-500-Exposure-Draft.pdf",
-    "https://www.iaasb.org/publications/proposed-revisions-audit-evidence-risk-response-isa-330-isa-500-isa-520",
     "https://www.iaasb.org/consultations-projects/audit-evidence-and-risk-response-isa-330-isa-500-isa-520"
    ]
   },
@@ -1353,6 +1385,16 @@
    ]
   },
   {
+   "theme": "Ruhende Zugriffsrollen von Dienstleistern",
+   "why": "Beim Angriff über Qubole blieben kontenübergreifende Cloud-Rollen nach Ende der Nutzung aktiv und öffneten über ein Dutzend Kundenumgebungen. Die Inventur und das Entziehen solcher Rollen dürften zum festen Prüfpunkt im Drittparteienmanagement werden.",
+   "count": 1,
+   "first_seen": "2026-11-19",
+   "last_seen": "2026-11-19",
+   "evidence": [
+    "https://thehackernews.com/2026/11/hackers-exploit-quboles-trusted-aws.html"
+   ]
+  },
+  {
    "theme": "Cloud-Anbieter als Gatekeeper",
    "why": "Die Europäische Kommission will laut Berichten bis Jahresende entscheiden, ob Amazon Web Services und Microsoft Azure als Gatekeeper nach dem Gesetz über digitale Märkte eingestuft werden. Das könnte Anbieterwechsel und Mehrfach-Cloud-Strategien erleichtern und die Exit-Planung verändern.",
    "count": 1,
@@ -1474,6 +1516,40 @@
   }
  ],
  "news": [
+  {
+   "title": "Puppet: Kritische Lücke in Konfigurationsservern wird ausgenutzt, Behördenfrist 1. Dezember",
+   "summary": "Die amerikanische Cybersicherheitsbehörde hat die Lücke CVE-2026-115731 in Puppet Enterprise am 17. November in ihren Katalog aktiv ausgenutzter Schwachstellen aufgenommen und Bundesbehörden eine Frist bis 1. Dezember 2026 gesetzt. Wer ein von der Zertifizierungsstelle signiertes Agenten-Zertifikat besitzt, kann über präparierte Berichte Code auf dem Puppet-Server ausführen; signiert die Zertifizierungsstelle Anfragen ohne strenge Prüfung, kommen womöglich auch Angreifer ohne Anmeldung an ein solches Zertifikat. Behoben ist die Lücke in Puppet Enterprise 2026.0.1, 2025.12.1 und 2023.8.13 sowie in Puppet Core 9.1.3 und 8.22.2.",
+   "relevance": "Konfigurationsserver steuern oft Tausende Systeme und sind damit ein Hebel, um eine ganze Landschaft auf einmal zu kompromittieren. Neben dem Patch gehört die automatische Zertifikatssignierung auf den Prüfstand – das berührt auch das Änderungsmanagement in den allgemeinen Kontrollen der Informationstechnik.",
+   "source": "The Hacker News",
+   "url": "https://thehackernews.com/2026/11/hackers-exploiting-critical-puppet-rce.html",
+   "id": "2026-11-19-puppet-server-ausgenutzt",
+   "topic": "IT-Governance & Risiko",
+   "impact": "hoch",
+   "published": "2026-11-18",
+   "tags": [
+    "Schwachstelle",
+    "Konfigurationsmanagement",
+    "Behördenfrist"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
+    "NIS-2-Richtlinie Art. 21 – Umgang mit und Offenlegung von Schwachstellen",
+    "IT-Kontrollen der Abschlussprüfung – Änderungsmanagement"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Revision & Prüfung"
+   ],
+   "countries": [],
+   "dossier": "kritische-schwachstellen-perimeter",
+   "priority": 1,
+   "primary": false,
+   "added": "2026-11-19T06:07:39Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Die Quelle bestätigt alles: veröffentlicht am 18. November 2026, die Lücke CVE-2026-115731 wurde am 17. November in den Katalog aufgenommen, die Frist ist der 1. Dezember 2026. Auch die Voraussetzung eines signierten Agenten-Zertifikats, der Hinweis auf die automatische Signierung und alle…"
+   }
+  },
   {
    "title": "Java4Shell: Kritische Lücke in OpenJDK erlaubt Angriffe ohne Anmeldung",
    "summary": "Die als Java4Shell bezeichnete Lücke CVE-2026-114938 steckt im Base64-Decoder der offenen Java-Laufzeit OpenJDK und erlaubt entfernten Angreifern ohne Zugangsdaten, Speicher zu überschreiben und im schlimmsten Fall Code auszuführen. Laut Berichten betroffen sind Systeme mit x86-64-Prozessoren mit der Prozessorerweiterung AVX-512 sowie OpenJDK ab Version 17.0.6 und neuere Versionen. Oracle hat am 17. November im Rahmen seines Sicherheitsupdates Korrekturen veröffentlicht, Angriffe in freier Wildbahn sind bislang nicht bekannt.",
@@ -1611,6 +1687,41 @@
    "check": {
     "verdict": "abweichung",
     "note": "Das Datum und die Kernaussage stimmen: Kallas kündigt Sanktionen an, Iran bestreitet die Verantwortung. Die Quelle nennt aber keine Gruppe Shahid Kaveh, keine Zuordnung durch die französische Cybersicherheitsbehörde, keine Haftbefehle der Pariser Staatsanwaltschaft und kein Außenministertreffen am…"
+   }
+  },
+  {
+   "title": "Künstliche Intelligenz: Kommission legt Vorlage zur Grundrechte-Folgenabschätzung vor",
+   "summary": "Die Europäische Kommission hat am 16. November den Entwurf einer Vorlage samt Erläuterungen für die Grundrechte-Folgenabschätzung nach Artikel 27 der Verordnung über Künstliche Intelligenz veröffentlicht; Rückmeldungen sind bis 15. Januar 2027 möglich. Die Pflicht gilt ab 2. Dezember 2027. Sie trifft vor allem öffentliche Stellen und private Anbieter öffentlicher Dienstleistungen, außerdem Betreiber von Hochrisiko-Systemen, die die Kreditwürdigkeit prüfen oder Risiken bei Lebens- und Krankenversicherungen bewerten. Betroffene Betreiber können den Fragebogen zudem freiwillig testen.",
+   "relevance": "Für einen Handelskonzern greift die Pflicht nur in Teilbereichen, etwa bei Bonitätsprüfungen. Die Vorlage eignet sich aber als Muster für die Risikobewertung anderer Hochrisiko-Anwendungen wie der Personalauswahl und sollte mit der Datenschutz-Folgenabschätzung verzahnt werden.",
+   "source": "Europäische Kommission",
+   "url": "https://digital-strategy.ec.europa.eu/en/news/commission-seeks-feedback-draft-template-fundamental-rights-impact-assessment-under-ai-act",
+   "id": "2026-11-19-ai-act-grundrechte-folgenabschaetzung",
+   "topic": "AI-Governance",
+   "impact": "mittel",
+   "published": "2026-11-16",
+   "tags": [
+    "Grundrechte-Folgenabschätzung",
+    "Konsultation",
+    "Hochrisiko"
+   ],
+   "controls": [
+    "Verordnung über Künstliche Intelligenz Art. 27 – Grundrechte-Folgenabschätzung",
+    "DSGVO Art. 35 – Datenschutz-Folgenabschätzung"
+   ],
+   "roles": [
+    "Datenschutz",
+    "Management"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "ai-act",
+   "priority": 3,
+   "primary": true,
+   "added": "2026-11-19T06:07:39Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Die Seite der Kommission bestätigt: veröffentlicht am 16. November 2026, Entwurf einer Vorlage samt Erläuterungen, Rückmeldungen bis 15. Januar 2027, Pflicht ab 2. Dezember 2027, freiwilliger Test möglich (Interessenbekundung bis 4. Dezember 2026). Wer betroffen ist, steht nicht auf der Seite…"
    }
   },
   {
@@ -1892,6 +2003,39 @@
    "check": {
     "verdict": "abweichung",
     "note": "Datum, Löschbefugnis, Warnpflicht, Schutz bei der Namensauflösung und Zustimmung des Bundesrats sind belegt. Die Befugnis, Datenverkehr umzuleiten, nennt die Quelle aber nur für das Bundeskriminalamt, nicht für die Bundespolizei."
+   }
+  },
+  {
+   "title": "Maersk: Datenabfluss aus Altsystem einer Übernahme von 2022",
+   "summary": "Die Reederei Maersk hat bestätigt, dass Unbefugte auf ein lokales System zugegriffen und Daten abgezogen haben. Das System stammt aus der 2022 übernommenen LF Logistics; nach bisherigem Stand seien keine sensiblen Daten betroffen, und der Betrieb laufe weiter. Die Gruppe WhiteArmor fordert 5 Millionen Dollar und behauptet, rund 100 Gigabyte Daten, darunter fast 30.000 Datensätze zu Fahrern sowie Klartext-Passwörter, erbeutet zu haben – das ist unabhängig nicht bestätigt.",
+   "relevance": "Übernommene Gesellschaften bringen Altsysteme mit, die oft außerhalb von Inventar, Patch-Prozess und Überwachung des Konzerns weiterlaufen. Integrationsprojekte nach Zukäufen brauchen einen benannten Owner und ein festes Datum, bis zu dem solche Systeme stillgelegt oder eingegliedert sind.",
+   "source": "SecureWorld",
+   "url": "https://www.secureworld.io/industry-news/maersk-breach-inherited-ma-risk",
+   "id": "2026-11-19-maersk-altsystem-uebernahme",
+   "topic": "IT-Governance & Risiko",
+   "impact": "mittel",
+   "published": "2026-11-12",
+   "tags": [
+    "Unternehmenskauf",
+    "Altsysteme",
+    "Logistik"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 5.9 – Inventar der Informationen und anderen damit verbundenen Werte",
+    "NIS-2-Richtlinie Art. 21 – Sicherheit bei Erwerb, Entwicklung und Wartung"
+   ],
+   "roles": [
+    "Management",
+    "IT-Risiko"
+   ],
+   "countries": [],
+   "dossier": "lebenszyklus-altsysteme",
+   "priority": 4,
+   "primary": false,
+   "added": "2026-11-19T06:07:39Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Die Quelle nennt fast 30.000 Datensätze zu Fahrern und Klartext-Passwörter ohne Anzahl. Die Angabe von über 16.000 Fahrern mit Klartext-Passwörtern steht dort nicht. Der Artikel erschien am 12. November 2026."
    }
   },
   {
@@ -2343,6 +2487,39 @@
    "check": {
     "verdict": "abweichung",
     "note": "Der Artikel stammt vom 10. November. Die Abschaltung am 9. November, die Regionen, die 33 angeblichen Lücken und die Aussage, dass keine aktive Ausnutzung festgestellt wurde, stimmen."
+   }
+  },
+  {
+   "title": "Hotelkonzern Wyndham: Passwort in der App öffnete interne Kundendatenbank",
+   "summary": "Ein Sicherheitsforscher fand im Quellcode der Android-App der Hotelgruppe Wyndham ein Passwort, mit dem er auf eine bei Salesforce betriebene interne Datenbank mit Kundendaten zugreifen konnte. Wyndham nennt rund 129 Millionen Mitglieder im Treueprogramm. Ob sich frühere unbefugte Zugriffe nachträglich prüfen lassen, wollte das Unternehmen nicht sagen.",
+   "relevance": "Nach Applebee's ist das binnen weniger Wochen der zweite Fall, in dem Zugangsdaten in einer Kunden-App steckten. Händler und Reiseanbieter mit eigenen Apps sollten vor jeder Veröffentlichung verbindlich nach eingebetteten Geheimnissen suchen und ihre Protokolle so führen, dass sich Zugriffe nachträglich auswerten lassen.",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/11/09/hotel-giant-wyndham-exposed-customer-data-after-app-security-lapse/",
+   "id": "2026-11-19-wyndham-app-passwort",
+   "topic": "Handel & Branche",
+   "impact": "info",
+   "published": "2026-11-09",
+   "tags": [
+    "Kunden-App",
+    "Zugangsdaten",
+    "Hotellerie"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 8.28 – Sichere Codierung",
+    "DSGVO Art. 32 – Sicherheit der Verarbeitung"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Datenschutz"
+   ],
+   "countries": [],
+   "dossier": "identitaeten-zugangsdaten",
+   "priority": 5,
+   "primary": false,
+   "added": "2026-11-19T06:07:39Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Die Quelle bestätigt: veröffentlicht am 9. November 2026, Passwort im Quellcode der Android-App, interne Datenbank bei Salesforce, 129 Millionen Mitglieder im Treueprogramm. Ob sich frühere Zugriffe prüfen lassen, wollte Wyndham nicht sagen."
    }
   },
   {
@@ -3796,6 +3973,75 @@
    "check": {
     "verdict": "ok",
     "note": "Datum 1. November, Zeitraum August 2023 bis September 2026 und die fehlenden Angaben sind belegt."
+   }
+  },
+  {
+   "title": "Update: Expedia bestätigt Angriff über kompromittierten Datenplattform-Anbieter",
+   "summary": "Expedia hat am 12. November bestätigt, dass Angreifer über einen kompromittierten externen Anbieter einer Datenplattform in die eigenen Systeme gelangt sind; bisher gab es nur die Behauptungen der Gruppe n0n. Laut den Forschern von Wiz und Sentra lief der Zugriff über einen gestohlenen Schlüssel des Anbieters Qubole. Die Gruppe behauptet unter anderem, 830 Millionen Datensätze aus dem Treueprogramm erbeutet zu haben, was Expedia nicht bestätigt.",
+   "relevance": "Berichten zufolge waren bei vielen Qubole-Kunden kontenübergreifende Zugriffsrollen in der Cloud noch aktiv, obwohl sie die Plattform längst nicht mehr nutzten. Für einen Handels- und Touristikkonzern heißt das: Beim Offboarding von Dienstleistern muss nachweisbar sein, dass auch die technischen Zugänge entzogen sind.",
+   "source": "SC Media",
+   "url": "https://www.scworld.com/brief/expedia-confirms-data-breach-following-supply-chain-attack",
+   "id": "2026-11-19-update-expedia-qubole",
+   "topic": "Handel & Branche",
+   "impact": "mittel",
+   "published": "2026-11",
+   "tags": [
+    "Supply Chain",
+    "Cloud-Zugänge",
+    "Touristik"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen",
+    "ISO/IEC 27001 Anhang A 5.18 – Zugangsrechte",
+    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette"
+   ],
+   "roles": [
+    "Einkauf & Drittparteien",
+    "IT-Risiko",
+    "Datenschutz"
+   ],
+   "countries": [],
+   "dossier": "drittparteien-lieferkette",
+   "priority": 2,
+   "primary": false,
+   "added": "2026-11-19T06:07:39Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "SC Media blockiert den automatischen Abruf. Geprüft wurde deshalb anhand von Daily Security Review, Security Affairs und Skift. Die Kernaussagen stimmen: Bestätigung am 12. November, Datenplattform-Anbieter, gestohlener Qubole-Schlüssel laut Wiz und Sentra, Gruppe n0n, 830 Millionen Datensätze.…"
+   }
+  },
+  {
+   "title": "Europäische Union sanktioniert Hackergruppe NoName057(16) und russische Propagandafirma",
+   "summary": "Der Rat der Europäischen Union hat am 16. November wegen hybrider Aktivitäten und Cyberangriffen 30 Personen und zwei Organisationen auf seine Sanktionslisten gesetzt. Darunter ist die Gruppe NoName057(16), die Angriffe auf Behörden, kritische Infrastruktur und Unternehmen in der Europäischen Union für sich reklamiert. Es gelten Vermögenssperren und Einreiseverbote; Unternehmen in der Europäischen Union dürfen den Gelisteten weder direkt noch indirekt Gelder bereitstellen.",
+   "relevance": "Die Gruppe ist vor allem für Überlastungsangriffe auf Webseiten bekannt. Betreiber von Webshops und Buchungsportalen sollten deshalb ihren Schutz und ihre Notfallpläne prüfen. Außerdem zeigt die Listung, dass bei Cybervorfällen mit Zahlungsforderungen auch Sanktionslisten zu prüfen sind.",
+   "source": "Kyiv Independent",
+   "url": "https://kyivindependent.com/eu-sanctions-kremlin-troll-factory-hacker-group-in-new-push-against-russian-hybrid-activities-2/",
+   "id": "2026-11-19-eu-sanktionen-noname",
+   "topic": "Weitere Themen",
+   "impact": "info",
+   "published": "2026-11",
+   "tags": [
+    "Sanktionen",
+    "Geopolitik",
+    "Überlastungsangriffe"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Aufrechterhaltung des Betriebs und Krisenmanagement"
+   ],
+   "roles": [
+    "Management",
+    "IT-Risiko"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": null,
+   "priority": 6,
+   "primary": false,
+   "added": "2026-11-19T06:07:39Z",
+   "check": {
+    "verdict": "nicht prüfbar",
+    "note": ""
    }
   },
   {
