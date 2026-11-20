@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T06:07:39Z",
+ "updated": "2026-11-20T06:07:42Z",
  "topics": [
   "IT-Governance & Risiko",
   "Cyber- & IT-Regulierung",
@@ -11,6 +11,18 @@
   "Weitere Themen"
  ],
  "briefings": [
+  {
+   "date": "2026-11-20",
+   "headline": "Manipulierte Optimizely-Skripte lesen Kartendaten auf 178 Webseiten mit, dazu Datenabfluss bei Air Baltic über einen Dienstleister",
+   "points": [
+    "Über eine Schwäche bei der Anmeldung zu Optimizely gelangte Schadcode in Kundenprojekte: Kartendaten wurden direkt auf den Webseiten von 178 Organisationen abgegriffen",
+    "Der Rat für Sicherheitsstandards der Kartenbranche erklärt in einer neuen Handreichung, was er von Dienstleistern erwartet",
+    "Air Baltic: Bei einem externen Dienstleister für Informationstechnik sind rund 618.000 Buchungen betroffen, die Online-Verwaltung künftiger Buchungen ist teils gesperrt",
+    "Irland verhängt 11 Millionen Euro gegen den Tinder-Betreiber wegen seines Umgangs mit Auskunftsanfragen",
+    "Lücke in Apache Roller wird ohne Anmeldung ausgenutzt; Rückmeldungen zum Digital Fairness Act sind bis 13. Januar 2027 möglich"
+   ],
+   "count": 6
+  },
   {
    "date": "2026-11-19",
    "headline": "Ausgenutzte Puppet-Lücke mit Frist 1. Dezember, Expedia bestätigt Angriff über Dienstleister, Brüssel legt Vorlage zur Grundrechte-Folgenabschätzung vor",
@@ -354,18 +366,6 @@
     "Landgericht Traunstein: Erfolgreicher Angriff bedeutet nicht automatisch Haftung, Datenschutzaufsicht warnt Touristik vor Phishing mit echten Buchungsdaten"
    ],
    "count": 7
-  },
-  {
-   "date": "2026-10-19",
-   "headline": "Ein Backup-Dienstleister wird zum Einfallstor in Microsoft 365, für die E-Rechnung gibt es neue Regeln, und Versicherer prüfen die Angriffe auf Kühlanlagen.",
-   "points": [
-    "ConnectWise schaltet Cloud Backup ab: Angreifer nutzten Anwendungsidentitäten, um in mindestens 162 Microsoft-365-Umgebungen von Kunden einzudringen. Multi-Faktor-Authentifizierung half nicht.",
-    "Neues Schreiben des Bundesministeriums der Finanzen zur E-Rechnung vom 15. Oktober 2026: Die Ausstellungspflicht ab 1. Januar 2027 rückt näher.",
-    "Update Kühlsteuerungen: Cyberversicherer könnten wegen grober Fahrlässigkeit kürzen, Schäden bis 200.000 Euro pro Hypermarkt",
-    "H&M: Angreifer behaupten Datendiebstahl, der wahrscheinliche Weg führt über den Anbieter von Lagerautomatisierung GreyOrange",
-    "Update Ahold Delhaize: Albert Heijn liefert ab Freitag wieder aus, Delhaize bestellte im Notbetrieb über Altsysteme"
-   ],
-   "count": 5
   }
  ],
  "dossiers": [
@@ -406,18 +406,18 @@
    "title": "Drittparteien- und Lieferkettenrisiko",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Expedia hat am 12. November bestätigt, dass Angreifer über einen kompromittierten Datenplattform-Anbieter eingedrungen sind. Forscher verweisen auf einen gestohlenen Schlüssel von Qubole und auf Zugriffsrollen, die nach Vertragsende aktiv geblieben waren. Zuvor hatten N-central, Fireworks AI und Amadeus gezeigt, wie Zugänge von Dienstleistern zum Einfallstor werden.",
-   "next_step": "Kontenübergreifende Rollen und Zugriffsschlüssel externer Anbieter in allen Cloud-Konten inventarisieren, ungenutzte entziehen und den Offboarding-Prozess um einen technischen Nachweis ergänzen.",
+   "status": "Nach Expedia (gestohlener Schlüssel von Qubole, Zugriffsrollen auch nach Vertragsende aktiv) meldet Air Baltic rund 618.000 betroffene Buchungen bei einem externen Dienstleister. Gleichzeitig wurde über Optimizely Schadcode an 178 Organisationen verteilt, ohne dass diese selbst etwas ausgerollt hatten.",
+   "next_step": "Bei Dienstleistern mit Zugriff auf Kundendaten oder Webseiten Schreibrechte, Meldepflichten und das Entziehen von Zugängen nach Vertragsende prüfen und im Notfallplan vorsehen, wie Missbrauchswege rasch gesperrt werden.",
    "open_questions": [
-    "Wie wird belegt, dass Zugänge beendeter Dienstleister tatsächlich entfernt sind?",
-    "Wie viele Kundendatensätze sind bei Expedia tatsächlich betroffen?"
+    "Welche Dienstleister können Inhalte auf Kundenwebseiten ändern, ohne dass eine eigene Freigabe nötig ist?",
+    "Ist das Offboarding von Dienstleistern ein Prozess mit klarer Zuständigkeit?"
    ],
    "controls": [
+    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
     "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen",
-    "ISO/IEC 27001 Anhang A 5.18 – Zugangsrechte",
-    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette"
+    "ISO/IEC 27001 Anhang A 5.22 – Überwachung von Lieferantendienstleistungen"
    ],
-   "updated": "2026-11-19"
+   "updated": "2026-11-20"
   },
   {
    "slug": "steuerliche-digitalpflichten",
@@ -479,17 +479,16 @@
    "title": "Kritische Schwachstellen in Randsystemen und Kernanwendungen",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Seit 17. November wird die Lücke CVE-2026-115731 in den Konfigurationsservern von Puppet Enterprise aktiv ausgenutzt, die Behördenfrist endet am 1. Dezember. Offen sind außerdem die Fristen für SonicWall am 20. sowie für Outlook und Chrome am 24. November; für die OpenJDK-Lücke Java4Shell liefert Oracle seit 17. November Updates.",
-   "next_step": "Den Bestand an Puppet- und OpenVox-Servern feststellen, die korrigierten Versionen einspielen und die automatische Zertifikatssignierung abschalten oder absichern.",
+   "status": "Die Puppet-Lücke CVE-2026-115731 wird ausgenutzt, die Behördenfrist endet am 1. Dezember; die Frist für Outlook und Chrome endet am 24. November. Neu kommt die aktiv ausgenutzte Lücke CVE-2026-129448 in Apache Roller hinzu, die ohne Anmeldung angreifbar ist und für die noch keine Behördenfrist gilt.",
+   "next_step": "Randsysteme wie Blog- und Redaktionssoftware ins Inventar aufnehmen und Patches auch dann nach eigener Bewertung priorisieren, wenn noch keine Behördenfrist besteht.",
    "open_questions": [
-    "Welche Konfigurationsserver signieren Agenten-Zertifikate automatisch?",
-    "Sind Konfigurationsserver im Inventar als kritische Systeme eingestuft?"
+    "Sind Blog- und Redaktionssysteme im Inventar und Patchprozess vollständig erfasst?"
    ],
    "controls": [
     "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
-    "NIS-2-Richtlinie Art. 21 – Umgang mit und Offenlegung von Schwachstellen"
+    "NIS-2-Richtlinie Art. 21 – Umgang mit Schwachstellen"
    ],
-   "updated": "2026-11-19"
+   "updated": "2026-11-20"
   },
   {
    "slug": "lebenszyklus-altsysteme",
@@ -589,6 +588,39 @@
     "ISO/IEC 42001 – Managementsystem für Künstliche Intelligenz"
    ],
    "updated": "2026-11-19"
+  },
+  {
+   "slug": "zahlungsverkehr-pci-dss",
+   "created": "2026-10-03",
+   "ring_history": [
+    {
+     "date": "2026-10-03",
+     "ring": "beobachten"
+    },
+    {
+     "date": "2026-11-17",
+     "ring": "vorbereiten"
+    },
+    {
+     "date": "2026-11-20",
+     "ring": "jetzt handeln"
+    }
+   ],
+   "title": "Zahlungsverkehr und PCI DSS",
+   "sector": "Handel & Branche",
+   "ring": "jetzt handeln",
+   "status": "Nach Fandango im Oktober zeigt der Fall Optimizely vom 16. November, dass Kartendaten auch über Skripte vertrauter Marketingdienstleister abgegriffen werden: 178 Organisationen lieferten manipulierten Code aus. Der Rat für Sicherheitsstandards der Kartenbranche hat am 10. November eine Handreichung zu den Erwartungen an Dienstleister veröffentlicht.",
+   "next_step": "Für alle Bezahl- und Anmeldeseiten ein Verzeichnis der Skripte von Drittanbietern und ihrer Schreibrechte erstellen, prüfen, ob die Erkennung von Änderungen wirklich alarmiert, und die Verantwortungsmatrizen der Dienstleister mit der neuen Handreichung abgleichen.",
+   "open_questions": [
+    "Wer ist für Skripte auf der Bezahlseite zuständig: Marketing, E-Commerce oder Informationssicherheit?",
+    "Verschärfen Kartenorganisationen ihre Erwartungen an Dienstleister mit Schreibzugriff auf Bezahlseiten?"
+   ],
+   "controls": [
+    "PCI DSS v4.0.1 Anforderung 6.4.3 – Verwaltung von Skripten auf Bezahlseiten",
+    "PCI DSS v4.0.1 Anforderung 11.6.1 – Erkennung von Änderungen an Bezahlseiten",
+    "PCI DSS v4.0.1 Anforderung 12.8 – Steuerung externer Dienstleister"
+   ],
+   "updated": "2026-11-20"
   },
   {
    "slug": "algorithmisches-management",
@@ -718,34 +750,6 @@
    "updated": "2026-10-23"
   },
   {
-   "slug": "zahlungsverkehr-pci-dss",
-   "created": "2026-10-03",
-   "ring_history": [
-    {
-     "date": "2026-10-03",
-     "ring": "beobachten"
-    },
-    {
-     "date": "2026-11-17",
-     "ring": "vorbereiten"
-    }
-   ],
-   "title": "Zahlungsverkehr und PCI DSS",
-   "sector": "Standards & Zertifizierung",
-   "ring": "vorbereiten",
-   "status": "Nach den neuen Standards vom September 2026 laufen die Übergangsfristen für mehrere Zahlungsstandards. Der Fall Fandango zeigt erneut den Datenabgriff direkt auf der Bezahlseite: Vom 8. bis 11. Oktober wurden Kartennummer, Prüfziffer und Ablaufdatum abgegriffen.",
-   "next_step": "Prüfen, ob das Inventar der Skripte auf allen Bezahlseiten aktuell ist und ob Änderungen an diesen Seiten zeitnah erkannt und gemeldet werden.",
-   "open_questions": [
-    "Wie schnell würde eine Manipulation der eigenen Bezahlseiten auffallen?",
-    "Wann beginnt die Übergangszeit für den neuen Software-Standard?"
-   ],
-   "controls": [
-    "PCI DSS 4.0.1 Anforderung 6.4.3 – Verwaltung von Skripten auf Bezahlseiten",
-    "PCI DSS 4.0.1 Anforderung 11.6.1 – Erkennung von Änderungen an Bezahlseiten"
-   ],
-   "updated": "2026-11-17"
-  },
-  {
    "slug": "dsgvo-reform-digital-omnibus",
    "created": "2026-10-08",
    "ring_history": [
@@ -779,17 +783,16 @@
     }
    ],
    "title": "Digital Fairness Act",
-   "sector": "Handel & Branche",
+   "sector": "Weitere Themen",
    "ring": "beobachten",
-   "status": "Die Kommission hat den Digital Fairness Act am 11. November 2026 zusammen mit einer Überarbeitung der Verordnung über die Zusammenarbeit der Verbraucherschutzbehörden vorgestellt. Er zielt auf manipulative Gestaltung, suchtfördernde Funktionen, Abo-Kündigung, Influencer-Werbung und unfaire Personalisierung, bei großen grenzüberschreitenden Fällen sind Bußgelder bis 6 Prozent des weltweiten…",
-   "next_step": "Bestandsaufnahme der betroffenen Funktionen in Onlineshop, Lieferservice, Apps und Reiseportalen (Knappheitshinweise, Abo-Modelle, personalisierte Preise) und Klärung der Verantwortlichen; Verhandlungen in Parlament und Rat beobachten.",
+   "status": "Die Kommission hat den Digital Fairness Act am 11. November 2026 vorgestellt, mit Bußgeldern bis 6 Prozent des weltweiten Umsatzes bei großen grenzüberschreitenden Fällen. Seit 18. November läuft die achtwöchige Konsultation zum Vorschlag, sie endet am 13. Januar 2027.",
+   "next_step": "Bis zum 13. Januar 2027 über Verbände Stellung nehmen und intern erfassen, welche Abo-Abläufe, Gestaltungen und Personalisierungen betroffen wären.",
    "open_questions": [
-    "Welche Gestaltungsmuster bleiben nach den Verhandlungen auf der Verbotsliste?",
-    "Wie streng werden die Transparenzpflichten für personalisierte und dynamische Preise?",
-    "Wie lang wird die Übergangszeit nach Inkrafttreten?"
+    "Wie weit reicht der Begriff der unfairen Personalisierung bei Preisen und Angeboten?",
+    "Wie wird die Aufsicht mit den Datenschutzbehörden abgestimmt?"
    ],
    "controls": [],
-   "updated": "2026-11-12"
+   "updated": "2026-11-20"
   },
   {
    "slug": "cybersecurity-act-2",
@@ -1060,6 +1063,17 @@
    "added": "2026-10-24"
   },
   {
+   "date": "2027-01-13",
+   "title": "Ende der Konsultation zum Digital Fairness Act",
+   "detail": "Unternehmen und Verbände können bis zu diesem Tag Rückmeldungen zum Vorschlag der Kommission gegen manipulative Gestaltung und unfaire Personalisierung abgeben.",
+   "scope": "EU",
+   "url": "https://www.mlex.com/mlex/technology/articles/2551644/eight-week-consultation-on-eu-digital-fairness-act-opened",
+   "primary": false,
+   "checked": false,
+   "dossier": "digital-fairness-act",
+   "added": "2026-11-20"
+  },
+  {
    "date": "2027-01-15",
    "title": "Ende der Konsultation zur Vorlage für die Grundrechte-Folgenabschätzung",
    "detail": "Betreiber von Hochrisiko-Systemen nach Artikel 27 können bis dahin Rückmeldungen zum Entwurf der Kommission geben.",
@@ -1200,6 +1214,19 @@
    ]
   },
   {
+   "theme": "Normen zum Cyber Resilience Act",
+   "why": "Die Teile EN 40000-1-1 und 1-2 haben Anfang Oktober die formale Abstimmung durchlaufen, der Teil zum Umgang mit Schwachstellen liegt nur als Entwurf vor. Eine Vermutung der Konformität entsteht erst mit der Veröffentlichung im Amtsblatt. Das betrifft Eigenmarken mit digitalen Elementen und Einkaufsbedingungen für vernetzte Produkte.",
+   "count": 8,
+   "first_seen": "2026-10-11",
+   "last_seen": "2026-11-20",
+   "evidence": [
+    "https://www.ibf-solutions.com/en/news-and-knowledge/technical-papers-and-news-on-ce-marking/current-status-of-standardisation-for-the-cyber-resilience-act",
+    "https://compliance.globalnorm.de/en/product-compliance-news/detail/eu-cyber-resilience-act-cra-standards-en-40000-1-x-series/",
+    "https://www.cyberresilienceact.eu/state-of-play.html",
+    "https://www.cyberresilienceact.eu/news/cra-standardisation-deadlines-pushed-back-two-months.html"
+   ]
+  },
+  {
    "theme": "Schwachstellensuche durch Künstliche Intelligenz",
    "why": "Das Bundesamt für Sicherheit in der Informationstechnik zählt 17.539 neue Schwachstellen im zweiten Quartal 2026 nach 10.803 im ersten und vermutet als mögliche Ursache die Schwachstellensuche mit Künstlicher Intelligenz. Patch-Zyklen und Ressourcen für das Schwachstellenmanagement geraten damit weiter unter Druck.",
    "count": 8,
@@ -1211,19 +1238,6 @@
     "https://thehackernews.com/2026/11/openai-ai-pipeline-generates-948-linux.html",
     "https://newcivilengineer.com/latest/highly-likely-ai-will-be-used-in-ransomware-attack-on-uk-critical-infrastructure-03-11-2026",
     "https://thehackernews.com/2026/11/red-hat-patches-98-rated-linux-tcp-rce.html"
-   ]
-  },
-  {
-   "theme": "Normen zum Cyber Resilience Act",
-   "why": "Die ersten beiden horizontalen Normen der Reihe EN 40000 zu Begriffen und Grundsätzen haben das Genehmigungsverfahren durchlaufen, die Veröffentlichung wird für November erwartet. Sie werden zum Maßstab für Sicherheitsanforderungen an eingekaufte vernetzte Produkte und Software.",
-   "count": 7,
-   "first_seen": "2026-10-11",
-   "last_seen": "2026-11-17",
-   "evidence": [
-    "https://www.ibf-solutions.com/en/news-and-knowledge/technical-papers-and-news-on-ce-marking/current-status-of-standardisation-for-the-cyber-resilience-act",
-    "https://compliance.globalnorm.de/en/product-compliance-news/detail/eu-cyber-resilience-act-cra-standards-en-40000-1-x-series/",
-    "https://www.cyberresilienceact.eu/state-of-play.html",
-    "https://www.cyberresilienceact.eu/news/cra-standardisation-deadlines-pushed-back-two-months.html"
    ]
   },
   {
@@ -1309,6 +1323,18 @@
    ]
   },
   {
+   "theme": "Cyberpolicen schließen Künstliche Intelligenz aus",
+   "why": "Cyberversicherer prüfen ihre Risiken aus Künstlicher Intelligenz neu, vor allem über die Wortlaute ihrer Policen. Makler halten einen marktweiten Ausschluss für denkbar, ähnlich wie beim Kriegsausschluss. Das kann Deckungen bei Verlängerungen schmälern.",
+   "count": 4,
+   "first_seen": "2026-10-30",
+   "last_seen": "2026-11-20",
+   "evidence": [
+    "https://www.insurancebusinessmag.com/uk/news/cyber/cyber-insurers-reassess-ai-exposure-as-mythos-shifts-focus-to-policy-coverage-573271.aspx",
+    "https://www.fenwick.com/insights/publications/end-silent-ai-emerging-ai-exclusions-coverage-fragmentation-and-practical-implications",
+    "https://www.theinsurer.com/cyber-risk/news/debate-intensifies-rise-over-where-ai-risk-belongs-2026-10-22/"
+   ]
+  },
+  {
    "theme": "Prüfungsleitfaden für Werkzeuge mit Künstlicher Intelligenz",
    "why": "Der internationale Standardsetzer für Abschlussprüfungen wollte am 28. Oktober einen ersten Leitfaden zum Qualitätsmanagement beim Einsatz von Prüfwerkzeugen mit Künstlicher Intelligenz verabschieden, die Veröffentlichung wird im November erwartet. Der Leitfaden prägt, wie Abschlussprüfer Künstliche Intelligenz einsetzen und dokumentieren.",
    "count": 4,
@@ -1327,17 +1353,6 @@
    "evidence": [
     "https://www.mlex.com/mlex/articles/2543650",
     "https://www.mlex.com/mlex/data-privacy-security/articles/2531216"
-   ]
-  },
-  {
-   "theme": "Cyberpolicen schließen Künstliche Intelligenz aus",
-   "why": "Versicherer verabschieden sich vom stillschweigenden Schutz für Schäden mit Bezug zu Künstlicher Intelligenz, oft versteckt im Aufbau der Bedingungen statt in einer sichtbaren Klausel. Vor der nächsten Verlängerung sollten Risikomanagement, Einkauf und Rechtsabteilung die Bedingungen gemeinsam prüfen.",
-   "count": 3,
-   "first_seen": "2026-10-30",
-   "last_seen": "2026-11-16",
-   "evidence": [
-    "https://www.fenwick.com/insights/publications/end-silent-ai-emerging-ai-exclusions-coverage-fragmentation-and-practical-implications",
-    "https://www.theinsurer.com/cyber-risk/news/debate-intensifies-rise-over-where-ai-risk-belongs-2026-10-22/"
    ]
   },
   {
@@ -1517,6 +1532,38 @@
  ],
  "news": [
   {
+   "title": "Update: Digital Fairness Act – Rückmeldungen zum Vorschlag bis 13. Januar 2027",
+   "summary": "Seit 18. November läuft eine achtwöchige Konsultation der Kommission zum Vorschlag für den Digital Fairness Act, sie endet am 13. Januar 2027. Neu gegenüber dem bisherigen Stand ist damit die Frist für Rückmeldungen zum Vorschlag vom 11. November. Er richtet sich gegen manipulative Gestaltung, irreführendes Influencer-Marketing, suchtfördernde Funktionen und unfaire Personalisierung.",
+   "relevance": "Onlinehandel, Abonnements, Kundenbindungsprogramme und personalisierte Angebote fallen direkt in den Anwendungsbereich. Das Zeitfenster eignet sich, um über Verbände Stellung zu nehmen und intern zu erfassen, welche Gestaltungen und Personalisierungen betroffen wären.",
+   "source": "MLex",
+   "url": "https://www.mlex.com/mlex/technology/articles/2551644/eight-week-consultation-on-eu-digital-fairness-act-opened",
+   "id": "2026-11-20-update-digital-fairness-act-rueckmeldung",
+   "topic": "Weitere Themen",
+   "impact": "mittel",
+   "published": "2026-11-18",
+   "tags": [
+    "Verbraucherrecht",
+    "Konsultation",
+    "Personalisierung"
+   ],
+   "controls": [],
+   "roles": [
+    "Management",
+    "Datenschutz"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "digital-fairness-act",
+   "priority": 6,
+   "primary": false,
+   "added": "2026-11-20T06:07:42Z",
+   "check": {
+    "verdict": "nicht prüfbar",
+    "note": "MLex verweigert den Zugriff (Fehler 403). Laut anderen Quellen wurde der Vorschlag am 11. November angenommen. Pocketgamer nennt als Zeitraum für Rückmeldungen 17. November 2026 bis 14. Januar 2027 und schreibt, dass die Frist bis zur Übersetzung in alle Amtssprachen täglich verlängert wird. Das…"
+   }
+  },
+  {
    "title": "Puppet: Kritische Lücke in Konfigurationsservern wird ausgenutzt, Behördenfrist 1. Dezember",
    "summary": "Die amerikanische Cybersicherheitsbehörde hat die Lücke CVE-2026-115731 in Puppet Enterprise am 17. November in ihren Katalog aktiv ausgenutzter Schwachstellen aufgenommen und Bundesbehörden eine Frist bis 1. Dezember 2026 gesetzt. Wer ein von der Zertifizierungsstelle signiertes Agenten-Zertifikat besitzt, kann über präparierte Berichte Code auf dem Puppet-Server ausführen; signiert die Zertifizierungsstelle Anfragen ohne strenge Prüfung, kommen womöglich auch Angreifer ohne Anmeldung an ein solches Zertifikat. Behoben ist die Lücke in Puppet Enterprise 2026.0.1, 2025.12.1 und 2023.8.13 sowie in Puppet Core 9.1.3 und 8.22.2.",
    "relevance": "Konfigurationsserver steuern oft Tausende Systeme und sind damit ein Hebel, um eine ganze Landschaft auf einmal zu kompromittieren. Neben dem Patch gehört die automatische Zertifikatssignierung auf den Prüfstand – das berührt auch das Änderungsmanagement in den allgemeinen Kontrollen der Informationstechnik.",
@@ -1548,6 +1595,109 @@
    "check": {
     "verdict": "ok",
     "note": "Die Quelle bestätigt alles: veröffentlicht am 18. November 2026, die Lücke CVE-2026-115731 wurde am 17. November in den Katalog aufgenommen, die Frist ist der 1. Dezember 2026. Auch die Voraussetzung eines signierten Agenten-Zertifikats, der Hinweis auf die automatische Signierung und alle…"
+   }
+  },
+  {
+   "title": "Optimizely: Gekaperte Skripte lesen Kartendaten auf Webseiten von 178 Organisationen mit",
+   "summary": "Ein Angreifer nutzte am 16. November eine Schwachstelle in Optimizely Web Experimentation aus und schleuste schädliches JavaScript in Kundenprojekte ein. Laut Report URI waren 188 Skripte bei 178 Organisationen befallen, darunter Zoom und große Nachrichtenseiten. Der Code las Kartennummer, Ablaufdatum und Prüfnummer aus den eigenen Formularfeldern der Webseiten aus. Eingebettete Bezahlfelder externer Zahlungsdienstleister waren den Berichten zufolge nicht betroffen. Zusätzlich enthielt der Code einen Austausch von Kryptowährungsadressen und einen Lader für Angriffe auf Apple-Geräte. Optimizely hat die Lücke nach eigenen Angaben geschlossen.",
+   "relevance": "Werkzeuge für Marketing und Experimente, die Inhalte auf Bezahl- und Anmeldeseiten ändern können, sind Teil der Kartenumgebung und der Lieferkette. Für Onlinehändler und Reiseportale sind deshalb jetzt ein Bestandsverzeichnis aller Skripte, eine Erkennung von Änderungen und eine Klärung der Schreibrechte beim Anbieter fällig.",
+   "source": "The Hacker News",
+   "url": "https://thehackernews.com/2026/11/hijacked-optimizely-scripts-served-card.html",
+   "id": "2026-11-20-optimizely-skimmer-lieferkette",
+   "topic": "Handel & Branche",
+   "impact": "hoch",
+   "published": "2026-11-17",
+   "tags": [
+    "Web-Skimming",
+    "Supply Chain",
+    "Onlinehandel"
+   ],
+   "controls": [
+    "PCI DSS v4.0.1 Anforderung 6.4.3 – Verwaltung von Skripten auf Bezahlseiten",
+    "PCI DSS v4.0.1 Anforderung 11.6.1 – Erkennung von Änderungen an Bezahlseiten",
+    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Einkauf & Drittparteien"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "zahlungsverkehr-pci-dss",
+   "priority": 1,
+   "primary": false,
+   "added": "2026-11-20T06:07:42Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Die Quelle nennt eine Schwachstelle in Experimentation und sagt ausdrücklich, dass nicht bekannt ist, wie sie funktionierte. Eine Schwäche bei der Kontoanmeldung ist nicht belegt. Alles andere stimmt: Datum, Zahlen, Opfer und Funktionen des Schadcodes."
+   }
+  },
+  {
+   "title": "Air Baltic: Rund 618.000 Buchungen über externen Dienstleister betroffen",
+   "summary": "Air Baltic meldet einen unbefugten Zugriff bei einem nicht genannten externen Dienstleister für Informationstechnik. Betroffen sind rund 618.000 Buchungsdatensätze aus Online-Check-ins zwischen dem 18. Juli und dem 12. November 2026, darunter Namen, Buchungsnummern und Flugdaten. Zahlungsdaten und Reisedokumente sind nach Angaben der Airline nicht betroffen. Bei rund 11.800 Buchungen für künftige Flüge wurde der Online-Zugriff aus Sicherheitsgründen abgeschaltet.",
+   "relevance": "Ein weiterer Fall aus der Touristik, in dem Buchungsdaten bei einem Dienstleister abfließen. Lehrreich ist die Reaktion: Die Airline hat den möglichen Missbrauchsweg aktiv gesperrt, statt nur zu informieren. Das gehört in Notfallpläne für Vorfälle bei Dienstleistern.",
+   "source": "news.at",
+   "url": "https://www.news.at/ausflugsziele/datenleck-bei-air-baltic-betrifft-mehr-als-600000-buchungen",
+   "id": "2026-11-20-airbaltic-dienstleister-buchungen",
+   "topic": "IT-Governance & Risiko",
+   "impact": "mittel",
+   "published": "2026-11-17",
+   "tags": [
+    "Touristik",
+    "Drittparteien",
+    "Buchungsdaten"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
+    "DSGVO Art. 28 – Auftragsverarbeiter",
+    "DSGVO Art. 34 – Benachrichtigung der betroffenen Person"
+   ],
+   "roles": [
+    "Einkauf & Drittparteien",
+    "Datenschutz"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "drittparteien-lieferkette",
+   "priority": 3,
+   "primary": false,
+   "added": "2026-11-20T06:07:42Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Artikel vom 17. November 2026. Die Quelle sagt nicht ausdrücklich, dass die eigenen Systeme der Airline unberührt blieben. Als Grund für die Abschaltung nennt sie nur Sicherheitsgründe, Betrug mit Umbuchungen kommt nicht vor."
+   }
+  },
+  {
+   "title": "Apache Roller: Lücke ohne Anmeldung wird aktiv ausgenutzt, eine Behördenfrist gibt es noch nicht",
+   "summary": "Die Apache Software Foundation meldet, dass die Lücke CVE-2026-129448 in der Blog-Software Apache Roller aktiv ausgenutzt wird. Über die Schnittstelle für entfernte Aufrufe lassen sich ohne Anmeldung nicht vertrauenswürdige Daten einschleusen. Betroffen sind die Versionen 4.0.0 bis 6.1.4, empfohlen wird das Update auf 6.1.6 oder neuer. Die Schnittstelle in der Verwaltung abzuschalten, schützt ältere Versionen nicht.",
+   "relevance": "Blog- und Redaktionssysteme laufen oft am Rand der Unternehmensseiten und fehlen in Inventaren. Fehlt eine Behördenfrist, muss die eigene Bewertung der Ausnutzung den Takt für das Patchen vorgeben.",
+   "source": "Openwall oss-security",
+   "url": "https://www.openwall.com/lists/oss-security/2026/11/17/5",
+   "id": "2026-11-20-apache-roller-ausgenutzt",
+   "topic": "IT-Governance & Risiko",
+   "impact": "mittel",
+   "published": "2026-11-17",
+   "tags": [
+    "Schwachstelle",
+    "Patchmanagement"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
+    "IT-Kontrollen der Abschlussprüfung – Änderungsmanagement"
+   ],
+   "roles": [
+    "IT-Risiko"
+   ],
+   "countries": [],
+   "dossier": "kritische-schwachstellen-perimeter",
+   "priority": 5,
+   "primary": false,
+   "added": "2026-11-20T06:07:42Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Die Quelle empfiehlt 6.1.6 oder neuer, Version 6.1.7 wird nicht erwähnt. Der Katalog aktiv ausgenutzter Schwachstellen der amerikanischen Cybersicherheitsbehörde kommt in der Quelle nicht vor. Datum, Kennung, Versionsbereich und aktive Ausnutzung stimmen."
    }
   },
   {
@@ -1828,6 +1978,39 @@
    "check": {
     "verdict": "ok",
     "note": "Datum 15. November belegt. Schlüssel an Fireworks ausgestellt und dort offengelegt, ungeschwärzte Zugangsdaten in Protokollen von Coding-Agenten, 29. Oktober, höchstens 5.000 Nutzer sowie Uber (laut TechCrunch) und Notion sind belegt."
+   }
+  },
+  {
+   "title": "Irland: 11 Millionen Euro gegen Tinder-Betreiber wegen Umgangs mit Auskunftsanfragen",
+   "summary": "Die irische Datenschutzkommission hat am 13. November eine Geldbuße von 11 Millionen Euro und eine Verwarnung gegen den Tinder-Betreiber MTCH verhängt. Anlass war eine Untersuchung zu Anfragen von Tinder-Nutzern nach ihren personenbezogenen Daten. Zusätzlich muss das Unternehmen die Verarbeitung binnen drei Monaten in Einklang mit dem Recht bringen.",
+   "relevance": "Prozesse für Auskunftsanfragen sind bußgeldfähig, auch wenn der Rat in der Datenschutzreform die Abweisung unbegründeter Anfragen erleichtern will. Konzerne mit Millionen von Kundenkonten sollten Fristentreue, Vollständigkeit und Ablehnungsgründe ihrer Auskunftsprozesse prüfen.",
+   "source": "Data Protection Commission Ireland",
+   "url": "https://www.dataprotection.ie/en/news-media/latest-news/data-protection-commission-fines-mtch-eu11-million-following-inquiry-tinder-users-personal-data",
+   "id": "2026-11-20-irland-mtch-auskunft-bussgeld",
+   "topic": "Datenschutz & Datenrecht",
+   "impact": "mittel",
+   "published": "2026-11-13",
+   "tags": [
+    "Auskunftsrecht",
+    "Bußgeld"
+   ],
+   "controls": [
+    "DSGVO Art. 12 – Transparente Information und Modalitäten",
+    "DSGVO Art. 15 – Auskunftsrecht der betroffenen Person"
+   ],
+   "roles": [
+    "Datenschutz"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "dsgvo-reform-digital-omnibus",
+   "priority": 4,
+   "primary": false,
+   "added": "2026-11-20T06:07:42Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Pressemitteilung vom 13. November 2026. Bestätigt sind 11 Millionen Euro, die Verwarnung, das Recht auf Auskunft und die Anordnung, die Verarbeitung binnen drei Monaten rechtskonform zu machen."
    }
   },
   {
@@ -2277,6 +2460,38 @@
    "check": {
     "verdict": "ok",
     "note": "Datum 11. November 2026 und die Themen stehen in der Meldung der Kommission. Die Vereinfachungsrichtlinie und die Überarbeitung der Verordnung über die Zusammenarbeit der Verbraucherschutzbehörden stehen auf der verlinkten Seite der Kommission zum Digital Fairness Act. Die Bußgelder bis 6 Prozent…"
+   }
+  },
+  {
+   "title": "Kartenstandard: Neue Handreichung erklärt die Erwartungen an Dienstleister",
+   "summary": "Der Rat für Sicherheitsstandards der Kartenbranche hat am 10. November die Handreichung „Understanding PCI DSS Service Providers“ veröffentlicht. Sie soll Händlern, Dienstleistern, Prüfern und den Banken der Händler zeigen, was der Kartenstandard Payment Card Industry Data Security Standard von externen Dienstleistern erwartet.",
+   "relevance": "Händler mit vielen Zahlungs-, Hosting- und Marketingdienstleistern können damit Verantwortungsmatrizen, Nachweise und Dienstleisterlisten für die nächste Bewertung abgleichen. Der Fall Optimizely zeigt, wie dringend die Frage ist, wer welche Anforderung tatsächlich abdeckt.",
+   "source": "PCI Security Standards Council Blog",
+   "url": "https://blog.pcisecuritystandards.org",
+   "id": "2026-11-20-pci-handreichung-dienstleister",
+   "topic": "Standards & Zertifizierung",
+   "impact": "mittel",
+   "published": "2026-11-10",
+   "tags": [
+    "Kartenzahlung",
+    "Dienstleistersteuerung"
+   ],
+   "controls": [
+    "PCI DSS v4.0.1 Anforderung 12.8 – Steuerung externer Dienstleister",
+    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen"
+   ],
+   "roles": [
+    "Einkauf & Drittparteien",
+    "Revision & Prüfung"
+   ],
+   "countries": [],
+   "dossier": "zahlungsverkehr-pci-dss",
+   "priority": 2,
+   "primary": true,
+   "added": "2026-11-20T06:07:42Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Blogbeitrag vom 10. November 2026. Titel und Zielgruppen (Händler, Dienstleister, Prüfer, Banken der Händler) sind bestätigt."
    }
   },
   {

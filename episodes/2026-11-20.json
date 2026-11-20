@@ -1,0 +1,285 @@
+{
+ "format": "tiefgang",
+ "chapters": [
+  {
+   "title": "Begrüßung",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Guten Morgen, liebe IT-GRC-Kolleginnen und -Kollegen, willkommen beim IT-GRC Radar. Heute ist Freitag, der zwanzigste November 2026, und freitags nehmen wir uns etwas mehr Zeit."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Gut so. Nach dieser Woche brauche ich ohnehin einen zweiten Kaffee, bevor wir über Bezahlseiten reden."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Genau dort fangen wir an. Danach geht es tiefer in den Zahlungsverkehr, und am Ende gibt es wie immer die Zahl der Woche und den [en]Owner[/en]-Moment."
+    }
+   ]
+  },
+  {
+   "title": "Optimizely als Kartenabgreifer",
+   "news_id": "2026-11-20-optimizely-skimmer-lieferkette",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Am sechzehnten November hat ein Angreifer eine Schwachstelle in Optimizely ausgenutzt. Das ist ein Werkzeug für Experimente auf Webseiten, also für die Frage, welche Variante einer Seite besser ankommt. Darüber kam schädliches [en]JavaScript[/en] in Kundenprojekte, gezählt wurden 188 befallene Skripte bei 178 Organisationen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und das ist der Teil, der mir die Laune verdirbt. Keine dieser Firmen hat selbst etwas ausgerollt. Der Code kam einfach über einen Dienstleister, der ohnehin auf der Seite eingebunden war."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Was hat der Code gemacht?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Er hat Kartennummer, Ablaufdatum und Prüfnummer mitgelesen, wenn Kunden sie in die eigenen Formularfelder der Seite eingetippt haben. Eingebettete Bezahlfelder externer Zahlungsdienstleister waren den Berichten zufolge nicht betroffen. Dazu kamen ein Austausch von Kryptowährungsadressen und ein Lader für Angriffe auf Apple-Geräte."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Moment, ein Werkzeug fürs Marketing wird also zum [en]Card Skimmer[/en]?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ein Werkzeug fürs Marketing mit Schreibrechten auf der Bezahlseite, ja. Wer im Onlinehandel [en]Tag Manager[/en], [en]Testing[/en]-Werkzeuge und Chatfenster auf der Kasse laufen hat, sollte heute fragen: Wer darf dort was ändern, und wer bemerkt es? Bereinigt war das Ganze zwar noch am selben Abend, aber für den Abgriff von Karten reichen wenige Stunden."
+    }
+   ]
+  },
+  {
+   "title": "Handreichung zu Dienstleistern",
+   "news_id": "2026-11-20-pci-handreichung-dienstleister",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Passend dazu hat der Rat für Sicherheitsstandards der Kartenbranche am zehnten November eine neue Handreichung veröffentlicht. Sie erklärt, was der Kartenstandard von Dienstleistern erwartet."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Klingt trocken, beantwortet aber genau die Frage von eben. Händler, Dienstleister, Prüfer und die Banken der Händler sollen damit besser verstehen, welche Pflichten beim Dienstleister liegen und welche beim Händler bleiben."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Also endlich eine Antwort auf das ewige „Liegt das jetzt bei uns oder beim Anbieter?“"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Zumindest eine bessere Grundlage. Ich würde die Handreichung neben die eigene Dienstleisterliste legen und jede Verantwortungsmatrix noch einmal prüfen. Und ja, diese Liste ist vermutlich eine Excel-Datei mit drei Versionen im Namen."
+    }
+   ]
+  },
+  {
+   "title": "Air Baltic und der Dienstleister",
+   "news_id": "2026-11-20-airbaltic-dienstleister-buchungen",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Da gibt es Neues zu unserem Dauerthema Drittparteien, diesmal aus der Luftfahrt. Air Baltic meldet rund 618.000 betroffene Buchungsdatensätze bei einem externen Dienstleister für Informationstechnik."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Betroffen sind Online-[en]Check-ins[/en] zwischen dem achtzehnten Juli und dem zwölften November, mit Namen, Buchungsnummern und Flugdaten. Zahlungsdaten und Reisedokumente sind nicht betroffen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Den Dienstleister nennt die Airline aber nicht."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Richtig, und einen Zusammenhang mit Amadeus hat bisher niemand belegt, das sollte man nicht vermischen. Bemerkenswert finde ich die Reaktion: Für rund 11.800 künftige Buchungen wurde der Online-Zugriff aus Sicherheitsgründen abgeschaltet. Für eine Touristik ist das ein gutes Muster. Nicht nur informieren, sondern den Weg für den Missbrauch schließen."
+    }
+   ]
+  },
+  {
+   "title": "Bußgeld wegen Auskunftsanfragen",
+   "news_id": "2026-11-20-irland-mtch-auskunft-bussgeld",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Kurz zum Datenschutz. Die irische Datenschutzkommission hat am dreizehnten November den Tinder-Betreiber MTCH mit 11 Millionen Euro belegt. Es ging um Anfragen von Nutzern nach ihren Daten, dazu kommt eine Frist von drei Monaten, um das abzustellen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Auskunftsprozesse gelten oft als Fleißarbeit fürs Postfach. Dieser Fall zeigt, dass sie bußgeldfähig sind. Der Rat will in der Datenschutzreform zwar das Abweisen unbegründeter Anfragen erleichtern, aber bis daraus Recht wird, gilt das heutige."
+    }
+   ]
+  },
+  {
+   "title": "Lücke in Apache Roller",
+   "news_id": "2026-11-20-apache-roller-ausgenutzt",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Dann noch etwas für die [en]Patch[/en]-Liste. In Apache Roller, einer [en]Blog[/en]-Software, wird eine Lücke in der Schnittstelle für entfernte Aufrufe aktiv ausgenutzt, ganz ohne Anmeldung."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Betroffen sind die Versionen 4.0.0 bis 6.1.4, empfohlen wird das Update auf 6.1.6 oder neuer. Tückisch ist, dass das Abschalten der Schnittstelle ältere Versionen nicht schützt. Wer Roller betreibt, sollte also nicht auf den Schalter in der Verwaltung vertrauen, sondern aktualisieren."
+    }
+   ]
+  },
+  {
+   "title": "Frist zum Digital Fairness Act",
+   "news_id": "2026-11-20-update-digital-fairness-act-rueckmeldung",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Und ein Update zum [en]Digital Fairness Act[/en]. Laut dem Fachdienst MLex nimmt die Kommission Rückmeldungen zu ihrem Vorschlag bis zum dreizehnten Januar 2027 entgegen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Für Onlinehändler mit Abos, Personalisierung und Kundenbindungsprogrammen ist das das Zeitfenster, sich über die Verbände einzubringen. Damit ist das kein Thema nur für die Rechtsabteilung."
+    }
+   ]
+  },
+  {
+   "title": "Tiefgang: Zahlungsverkehr und Kartenstandard",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Kommen wir zum Tiefgang, unserem Dossier Zahlungsverkehr und Kartenstandard, also dem [en]Payment Card Industry Data Security Standard[/en]. Warum gerade jetzt?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Weil diese Woche zeigt, dass der Angriff dort stattfindet, wo der Kunde tippt. Im Oktober wurden bei Fandango vier Tage lang Kartendaten auf der Bezahlseite abgegriffen. Jetzt Optimizely, nur dass das Skript nicht vom Händler kam, sondern von einem Dienstleister, dem man vertraut."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Der Standard hat dafür doch eigene Anforderungen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ja, zwei sogar. Skripte auf Bezahlseiten sollen erfasst, begründet und gegen Manipulation gesichert sein, und Änderungen an der Bezahlseite sollen erkannt werden. In der Praxis heißt das: Jemand muss wissen, welche Skripte auf der Kasse laufen. Und zwar alle, auch die, die das Marketing über eine bequeme Oberfläche einbindet."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Ich übernehme mal die Gegenposition. Mit eingebetteten Bezahlfeldern des Zahlungsdienstleisters ist das Problem doch gelöst. Die waren bei Optimizely ja gerade nicht betroffen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Das ist das stärkste Argument, und ein Stück weit stimmt es. Wer Kartendaten gar nicht erst in eigenen Feldern erfasst, nimmt dem [en]Skimmer[/en] die Beute. Aber dieselbe Schadsoftware hatte noch andere Aufgaben, den Austausch von Kryptoadressen und Angriffe auf Apple-Geräte. Die interessieren sich nicht für Bezahlfelder."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Also hält dein Contra gegen mein Pro: Die Bezahlseite ist nicht die einzige Seite, die zählt."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Genau. Auf Anmeldung, Kundenkonto und Treueprogramm laufen oft dieselben Skripte. Fairerweise muss man aber auch sagen: Ein vollständiges Verzeichnis der Skripte über viele Shops und Länder ist teuer, und jede zusätzliche Freigabe bremst das Marketing. Da gibt es Widerstand, und zwar zu Recht, wenn die Kontrolle am Ende nur Papier produziert."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Was wäre denn ein vernünftiger nächster Schritt?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Drei Dinge. Erstens für Bezahl- und Anmeldeseiten feststellen, welche Skripte von Drittanbietern laufen und wer sie ändern darf, auch auf Seiten des Anbieters. Zweitens prüfen, ob die Erkennung von Änderungen wirklich Alarm schlägt oder nur still protokolliert. Drittens die Verträge ansehen, also Meldepflichten und Zugriffsrechte, und dabei die neue Handreichung zu Dienstleistern als Maßstab nehmen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und wer ist [en]Owner[/en]? Ich frage für die Revision."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ehrlich gesagt: In vielen Häusern gehört das Werkzeug dem Marketing, die Seite dem Onlinegeschäft und der Kartenstandard der Informationssicherheit. Drei Owner sind im Zweifel keiner. Das sollte man festlegen, bevor es die Prüfer tun."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und welche Frage bleibt offen?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ob die Kartenbranche nach solchen Fällen ihre Erwartungen an Dienstleister mit Schreibzugriff auf Bezahlseiten verschärft. Das ist reine Beobachtung, keine Prognose, aber ich würde es im Blick behalten."
+    }
+   ]
+  },
+  {
+   "title": "Zahl der Woche",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Die Zahl der Woche lautet 178."
+    },
+    {
+     "speaker": "Florian",
+     "text": "So viele Organisationen haben laut der Auswertung von Report URI ein manipuliertes Optimizely-Skript ausgeliefert. Wichtig ist, dass hier Skripte und Organisationen gezählt werden, nicht betroffene Besucher. Wie viele Karten wirklich abgeflossen sind, lässt sich von außen nicht sagen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Die Zahl zeigt also vor allem, wie weit eine einzige Schwachstelle bei einem Dienstleister reicht."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Genau. Eine Lücke bei einem Anbieter, 178 Organisationen. So sieht Konzentrationsrisiko im Kleinen aus."
+    }
+   ]
+  },
+  {
+   "title": "Owner-Moment der Woche",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Und der [en]Owner[/en]-Moment der Woche?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Der geht an einen Klassiker aus dem Fall Expedia. Forscher verweisen auf einen gestohlenen Schlüssel von Qubole und auf Zugriffsrollen, die nach dem Ende des Vertrags aktiv geblieben waren."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Der Vertrag endet, der Zugang lebt weiter."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und niemand fühlt sich zuständig, weil der Einkauf den Vertrag beendet und die Technik nie davon erfahren hat. Die Lehre ist unspektakulär: Das Offboarding von Dienstleistern ist ein Prozess mit einem Verantwortlichen und kein Häkchen in der Vertragsverwaltung."
+    }
+   ]
+  },
+  {
+   "title": "Auf dem Radar",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Auf dem Radar haben wir die Normen zum [en]Cyber Resilience Act[/en]."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Laut einem Fachbeitrag haben Anfang Oktober die ersten beiden Teile der Normenreihe EN 40000, nämlich Begriffe und Grundsätze, die formale Abstimmung durchlaufen. Der Teil zum Umgang mit Schwachstellen liegt noch als Entwurf vor. Und erst eine Veröffentlichung im Amtsblatt begründet die Vermutung, dass ein Produkt den Anforderungen entspricht."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und warum ist das für uns relevant?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Weil Händler mit Eigenmarken, die digitale Elemente enthalten, und mit Einkaufsbedingungen für vernetzte Produkte daran hängen. Die zentralen Anforderungen gelten ab dem elften Dezember 2027, und das ist näher, als es klingt."
+    }
+   ]
+  },
+  {
+   "title": "Abschied",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Das war unser Freitag. Alle Quellen findet ihr wie immer auf der Webseite."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und wer am Wochenende etwas Ruhe hat, kann ja mal nachsehen, welche Skripte auf der eigenen Kasse laufen. Entspannender, als es klingt. Na ja, fast."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Ein schönes Wochenende, und bis Montag."
+    }
+   ]
+  }
+ ]
+}
