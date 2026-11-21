@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T06:07:42Z",
+ "updated": "2026-11-21T06:07:11Z",
  "topics": [
   "IT-Governance & Risiko",
   "Cyber- & IT-Regulierung",
@@ -11,6 +11,18 @@
   "Weitere Themen"
  ],
  "briefings": [
+  {
+   "date": "2026-11-21",
+   "headline": "Patch-Frist am Montag für vCenter, SAP NetWeaver, Expressway und Roller – dazu bestätigt Brüssel einen Angriff mit einem frei verfügbaren Werkzeug Künstlicher Intelligenz.",
+   "points": [
+    "Vier aktiv ausgenutzte Lücken, darunter SAP NetWeaver und VMware vCenter: Behördenfrist 23. November.",
+    "VMware vCenter: Mutmaßlich chinesisch verbundene Angreifer seit September aktiv, Einstieg über einen Zero Day in einem Fernwartungswerkzeug.",
+    "Europäische Kommission bestätigt eine von Künstlicher Intelligenz erzeugte Angriffskampagne mit einem öffentlich verfügbaren Werkzeug.",
+    "Gemeinsame Leitlinien zu Verordnung über Künstliche Intelligenz und Datenschutz-Grundverordnung verspäten sich womöglich bis Anfang 2027.",
+    "Souveräne Cloud: Workday gründet eigene Gesellschaft in Irland, die Europäische Zentralbank warnt vor Anbieterkonzentration."
+   ],
+   "count": 5
+  },
   {
    "date": "2026-11-20",
    "headline": "Manipulierte Optimizely-Skripte lesen Kartendaten auf 178 Webseiten mit, dazu Datenabfluss bei Air Baltic über einen Dienstleister",
@@ -354,18 +366,6 @@
     "Notebooksbilliger: Daten einer mittleren fünfstelligen Zahl von Kunden betroffen, auch Bankverbindungen möglich"
    ],
    "count": 7
-  },
-  {
-   "date": "2026-10-20",
-   "headline": "Ahold Delhaize bestätigt Ausfälle bis Mittel- und Südosteuropa, Linux-Lücke bedroht Virtualisierung, Angriff legt Personalplattform lahm",
-   "points": [
-    "Ahold Delhaize: Webseiten, Apps und Teile der Infrastruktur in den Vereinigten Staaten und Europa offline, zweiter großer Angriff in zwei Jahren",
-    "PwnEscape: Kritische Linux-Lücke lässt virtuelle Maschinen aus der Isolation ausbrechen, gefunden mit Künstlicher Intelligenz für unter 700 Dollar",
-    "Bullhorn: Software für Personaldienstleister nach Cyberangriff abgeschaltet, Datenabfluss noch ungeklärt",
-    "Anonymisierung: Konsultation des Europäischen Datenschutzausschusses endet am 30. Oktober",
-    "Landgericht Traunstein: Erfolgreicher Angriff bedeutet nicht automatisch Haftung, Datenschutzaufsicht warnt Touristik vor Phishing mit echten Buchungsdaten"
-   ],
-   "count": 7
   }
  ],
  "dossiers": [
@@ -479,16 +479,18 @@
    "title": "Kritische Schwachstellen in Randsystemen und Kernanwendungen",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Die Puppet-Lücke CVE-2026-115731 wird ausgenutzt, die Behördenfrist endet am 1. Dezember; die Frist für Outlook und Chrome endet am 24. November. Neu kommt die aktiv ausgenutzte Lücke CVE-2026-129448 in Apache Roller hinzu, die ohne Anmeldung angreifbar ist und für die noch keine Behördenfrist gilt.",
-   "next_step": "Randsysteme wie Blog- und Redaktionssoftware ins Inventar aufnehmen und Patches auch dann nach eigener Bewertung priorisieren, wenn noch keine Behördenfrist besteht.",
+   "status": "Seit 20. November stehen VMware vCenter (CVE-2026-123890), SAP NetWeaver (CVE-2025-42884), Cisco Expressway (CVE-2026-76466) und Apache Roller (CVE-2026-129448) im Katalog aktiv ausgenutzter Lücken, die Behördenfrist endet am 23. November; bei vCenter waren Angreifer laut Mandiant bereits seit September aktiv. Die Fristen für Outlook und Chrome (24. November) und Puppet (1. Dezember) laufen…",
+   "next_step": "Patch-Stand für SAP NetWeaver 7.50, vCenter, Expressway und Roller einschließlich Dienstleistersystemen belegen und bei vCenter nach unbekannten Administratorkonten und Änderungen an der Einmalanmeldung suchen.",
    "open_questions": [
-    "Sind Blog- und Redaktionssysteme im Inventar und Patchprozess vollständig erfasst?"
+    "Welche Systeme laufen bei Dienstleistern und werden dort nach welcher Frist gepatcht?",
+    "Wie weit zurück reicht die forensische Prüfung bei vCenter, wenn Angriffe seit September bekannt sind?"
    ],
    "controls": [
     "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
-    "NIS-2-Richtlinie Art. 21 – Umgang mit Schwachstellen"
+    "NIS-2-Richtlinie Art. 21 – Umgang mit Schwachstellen",
+    "IT-Kontrollen der Abschlussprüfung – Zugriffsschutz"
    ],
-   "updated": "2026-11-20"
+   "updated": "2026-11-21"
   },
   {
    "slug": "lebenszyklus-altsysteme",
@@ -554,16 +556,17 @@
    "title": "Sicherheit agentischer Künstlicher Intelligenz",
    "sector": "AI-Governance",
    "ring": "jetzt handeln",
-   "status": "Bei Cursor führte ein bei Fireworks AI entwendeter Schlüssel zu Protokollen von Coding-Agenten mit ungeschwärzten Zugangsdaten und schließlich zu einer manipulierten Erweiterung im Marktplatz. Zuvor waren der eigene Server für das Model Context Protocol beim Webhoster Mittwald und präparierte Dateien für Coding-Agenten das Einfallstor.",
-   "next_step": "Für eingesetzte Coding-Agenten und Assistenten klären, welche Protokolle an Anbieter fließen, ob Datenschutz-Modi aktiv sind und aus welchen Marktplätzen Erweiterungen bezogen werden dürfen.",
+   "status": "Die Europäische Kommission hat am 19. November bestätigt, dass sie Ziel einer von Künstlicher Intelligenz erzeugten Angriffskampagne mit einem öffentlich verfügbaren Werkzeug war; laut Politico handelt es sich um ARTEX, das schon beim Einbruch bei WorkOS eingesetzt wurde. Daneben bleiben manipulierte Erweiterungen und gestohlene Schlüssel bei Coding-Agenten (Cursor, Fireworks AI) eigene…",
+   "next_step": "Annahmen zu Angriffsgeschwindigkeit und Erkennungszeiten im Risikoregister prüfen und ein Planspiel mit verkürzten Reaktionszeiten durchführen.",
    "open_questions": [
-    "Gibt es eine Freigabeliste für Erweiterungen von Entwicklerwerkzeugen mit Künstlicher Intelligenz?"
+    "Reichen bestehende Erkennungsregeln für automatisierte Angriffe mit hoher Taktung?",
+    "Wer entscheidet im Notfall über vorsorgliche Abschaltungen und nach welchen Kriterien?"
    ],
    "controls": [
-    "ISO/IEC 27001 Anhang A 8.28 – Sichere Codierung",
-    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen"
+    "NIS-2-Richtlinie Art. 21 – Bewältigung von Sicherheitsvorfällen",
+    "ISO/IEC 27001 Anhang A 5.7 – Informationen über die Bedrohungslage"
    ],
-   "updated": "2026-11-16"
+   "updated": "2026-11-21"
   },
   {
    "slug": "ai-act",
@@ -577,17 +580,18 @@
    "title": "Verordnung über Künstliche Intelligenz",
    "sector": "AI-Governance",
    "ring": "jetzt handeln",
-   "status": "Die Transparenzpflichten nach Artikel 50 gelten seit 2. August 2026, die Übergangsfrist für die Kennzeichnung synthetischer Inhalte endet am 2. Dezember 2026. Seit 16. November liegt der Entwurf einer Vorlage für die Grundrechte-Folgenabschätzung nach Artikel 27 zur Konsultation bis 15. Januar 2027 vor; die Hochrisiko-Pflichten nach Anhang III gelten einschließlich dieser Abschätzung ab 2.…",
-   "next_step": "Prüfen, ob Anwendungen zur Kreditwürdigkeitsprüfung unter Artikel 27 fallen, und die Vorlage mit dem Verfahren der Datenschutz-Folgenabschätzung abgleichen.",
+   "status": "Die Transparenzpflichten nach Artikel 50 gelten seit 2. August 2026, die Übergangsfrist für die Kennzeichnung synthetischer Inhalte endet am 2. Dezember 2026; die Vorlage für die Grundrechte-Folgenabschätzung ist bis 15. Januar 2027 in Konsultation. Die gemeinsamen Leitlinien mit dem Europäischen Datenschutzausschuss zum Zusammenspiel mit der Datenschutz-Grundverordnung könnten sich laut…",
+   "next_step": "Kennzeichnung synthetischer Inhalte bis 2. Dezember sicherstellen und Datenschutz- und Grundrechte-Folgenabschätzung für Hochrisiko-Kandidaten vorerst mit dokumentierten eigenen Annahmen verzahnen.",
    "open_questions": [
-    "Wie stark ändert sich die Vorlage nach der Konsultation?",
-    "Welche Anwendungen im Konzern erfüllen die Kriterien für Hochrisiko-Systeme nach Anhang III?"
+    "Wann erscheinen die gemeinsamen Leitlinien zur Datenschutz-Grundverordnung tatsächlich?",
+    "Wie weit lassen sich Datenschutz- und Grundrechte-Folgenabschätzung in einem Verfahren bündeln?"
    ],
    "controls": [
     "Verordnung über Künstliche Intelligenz Art. 27 – Grundrechte-Folgenabschätzung",
-    "ISO/IEC 42001 – Managementsystem für Künstliche Intelligenz"
+    "Verordnung über Künstliche Intelligenz Art. 50 – Transparenzpflichten",
+    "DSGVO Art. 35 – Datenschutz-Folgenabschätzung"
    ],
-   "updated": "2026-11-19"
+   "updated": "2026-11-21"
   },
   {
    "slug": "zahlungsverkehr-pci-dss",
@@ -662,17 +666,17 @@
    "title": "Cloud-Souveränität und Abhängigkeiten",
    "sector": "IT-Governance & Risiko",
    "ring": "vorbereiten",
-   "status": "Seit dem 11. November 2026 liegt im Europäischen Parlament der Berichtsentwurf zum Cloud and AI Development Act vor. Er fordert gemeinsame Standards für Cloud-Dienste, mehr öffentliche Aufträge an europäische Anbieter und einen stärkeren Schutz kritischer Sektoren; abgestimmt wird voraussichtlich Mitte März 2027 im Ausschuss und im April 2027 im Plenum. Ergebnisse der angekündigten Trennung der…",
-   "next_step": "Abhängigkeits- und Ausstiegsanalysen für zentrale Cloud-Verträge aktualisieren und die Beratung der Ausschüsse am 1. Dezember 2026 verfolgen.",
+   "status": "Seit 11. November liegt im Europäischen Parlament der Berichtsentwurf zum Cloud and AI Development Act vor, Abstimmungen sind für März und April 2027 geplant. Anbieter reagieren mit eigenen Strukturen: Workday will seine souveräne Cloud ab 2027 über eine eigenständige Gesellschaft in Irland betreiben, und die Europäische Zentralbank nennt die Konzentration auf wenige Cloud- und Modellanbieter…",
+   "next_step": "Für zentrale Cloud- und Software-as-a-Service-Anbieter Abhängigkeiten, Ausstiegspläne und vertraglich zugesicherte Souveränitätsmerkmale erfassen und in Ausschreibungskriterien übernehmen.",
    "open_questions": [
-    "Werden die Anforderungen an die Souveränität auf private Betreiber kritischer Infrastrukturen ausgeweitet?",
-    "Wie fügt sich der neue Rahmen in bestehende Cloud-Prüfkataloge wie den Kriterienkatalog C5 ein?"
+    "Wie prüfbar sind Souveränitätszusagen wie unabhängige Leitungsgremien?",
+    "Welche Anforderungen bringt der Cloud and AI Development Act für kritische Sektoren?"
    ],
    "controls": [
-    "ISO/IEC 27001 Anhang A 5.23 – Informationssicherheit bei der Nutzung von Cloud-Diensten",
+    "ISO/IEC 27001 Anhang A 5.23 – Informationssicherheit für die Nutzung von Cloud-Diensten",
     "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette"
    ],
-   "updated": "2026-11-14"
+   "updated": "2026-11-21"
   },
   {
    "slug": "cyber-resilience-act",
@@ -821,17 +825,6 @@
  ],
  "deadlines": [
   {
-   "date": "2026-11-06",
-   "title": "WordPress-Lücke CVE-2026-119977: behördliche Patch-Frist",
-   "detail": "Die amerikanische Cybersicherheitsbehörde verlangt die Korrektur der beim Core-Upgrade ausgenutzten WordPress-Lücke bis zu diesem Tag. Betreiber von WordPress-Seiten sollten sie als Richtwert nehmen und vor dem nächsten Upgrade patchen.",
-   "scope": "global",
-   "url": "https://thehackernews.com/2026/11/cisa-confirms-hackers-exploiting.html",
-   "primary": false,
-   "checked": true,
-   "dossier": "kritische-schwachstellen-perimeter",
-   "added": "2026-11-05"
-  },
-  {
    "date": "2026-11-10",
    "title": "Windows 11 Version 23H2 Enterprise und Education: letztes Sicherheitsupdate",
    "detail": "Unternehmen mit Geräten auf Windows 11 Version 23H2 in den Ausgaben Enterprise, Education und IoT Enterprise müssen vorher auf eine unterstützte Version wie 25H2 wechseln.",
@@ -918,6 +911,17 @@
    "checked": true,
    "dossier": "kritische-schwachstellen-perimeter",
    "added": "2026-11-10"
+  },
+  {
+   "date": "2026-11-23",
+   "title": "vCenter, SAP NetWeaver, Expressway und Roller: behördliche Patch-Frist",
+   "detail": "Die amerikanische Behörde für Cybersicherheit und Infrastruktursicherheit verlangt das Schließen von CVE-2026-123890, CVE-2025-42884, CVE-2026-76466 und CVE-2026-129448 bis 23. November; für Unternehmen ein Maßstab für die Dringlichkeit.",
+   "scope": "global",
+   "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+   "primary": true,
+   "checked": true,
+   "dossier": "kritische-schwachstellen-perimeter",
+   "added": "2026-11-21"
   },
   {
    "date": "2026-11-24",
@@ -1214,6 +1218,20 @@
    ]
   },
   {
+   "theme": "Autonome Angriffe durch Agenten",
+   "why": "Die Europäische Kommission wurde von einer Kampagne mit einem öffentlich verfügbaren Angriffswerkzeug Künstlicher Intelligenz getroffen. Die Einstiegshürde für schnelle, automatisierte Angriffe sinkt damit auch gegenüber Unternehmen.",
+   "count": 8,
+   "first_seen": "2026-09-30",
+   "last_seen": "2026-11-21",
+   "evidence": [
+    "https://www.helpnetsecurity.com/2026/11/20/european-commission-ai-generated-cyberattack-publicly-available-tool/",
+    "https://www.bleepingcomputer.com/news/security/workos-says-attacker-used-artex-ai-to-breach-internal-sales-app/",
+    "https://www.theregister.com/cyber-crime/2026/10/28/123-reg-discloses-ai-cyberattack-on-customer-data-suspects-china-nexus/5305936",
+    "https://bleepingcomputer.com/news/security/hacker-used-artex-ai-and-claude-agents-to-target-south-korean-banks",
+    "https://www.kedglobal.com/banking-finance/newsView/ked202610040005"
+   ]
+  },
+  {
    "theme": "Normen zum Cyber Resilience Act",
    "why": "Die Teile EN 40000-1-1 und 1-2 haben Anfang Oktober die formale Abstimmung durchlaufen, der Teil zum Umgang mit Schwachstellen liegt nur als Entwurf vor. Eine Vermutung der Konformität entsteht erst mit der Veröffentlichung im Amtsblatt. Das betrifft Eigenmarken mit digitalen Elementen und Einkaufsbedingungen für vernetzte Produkte.",
    "count": 8,
@@ -1238,20 +1256,6 @@
     "https://thehackernews.com/2026/11/openai-ai-pipeline-generates-948-linux.html",
     "https://newcivilengineer.com/latest/highly-likely-ai-will-be-used-in-ransomware-attack-on-uk-critical-infrastructure-03-11-2026",
     "https://thehackernews.com/2026/11/red-hat-patches-98-rated-linux-tcp-rce.html"
-   ]
-  },
-  {
-   "theme": "Autonome Angriffe durch Agenten",
-   "why": "Die Angriffssuite ARTEX taucht in immer mehr Vorfällen auf, zuletzt bei WorkOS. Automatisierte Erkundung verkürzt die Zeit zwischen Schwachstelle und Einbruch auch bei internen Nebenanwendungen.",
-   "count": 7,
-   "first_seen": "2026-09-30",
-   "last_seen": "2026-11-04",
-   "evidence": [
-    "https://www.bleepingcomputer.com/news/security/workos-says-attacker-used-artex-ai-to-breach-internal-sales-app/",
-    "https://www.theregister.com/cyber-crime/2026/10/28/123-reg-discloses-ai-cyberattack-on-customer-data-suspects-china-nexus/5305936",
-    "https://bleepingcomputer.com/news/security/hacker-used-artex-ai-and-claude-agents-to-target-south-korean-banks",
-    "https://www.kedglobal.com/banking-finance/newsView/ked202610040005",
-    "https://www.securityweek.com/zammad-zero-days-exploited-in-ai-powered-divd-hack/"
    ]
   },
   {
@@ -1400,6 +1404,16 @@
    ]
   },
   {
+   "theme": "Konzentrationsrisiko bei Cloud-Anbietern",
+   "why": "Die Europäische Zentralbank stuft die Abhängigkeit von wenigen Cloud- und Modellanbietern als Stabilitätsrisiko ein. Das kann Aufsichtserwartungen und Prüfungsfragen zu Ausstiegsplänen auch außerhalb des Finanzsektors prägen.",
+   "count": 1,
+   "first_seen": "2026-11-21",
+   "last_seen": "2026-11-21",
+   "evidence": [
+    "https://www.banque-france.fr/en/press-release/risks-ai-valuations-fiscal-imbalances-and-geoeconomic-tensions-weigh-financial-stability-outlook"
+   ]
+  },
+  {
    "theme": "Ruhende Zugriffsrollen von Dienstleistern",
    "why": "Beim Angriff über Qubole blieben kontenübergreifende Cloud-Rollen nach Ende der Nutzung aktiv und öffneten über ein Dutzend Kundenumgebungen. Die Inventur und das Entziehen solcher Rollen dürften zum festen Prüfpunkt im Drittparteienmanagement werden.",
    "count": 1,
@@ -1531,6 +1545,187 @@
   }
  ],
  "news": [
+  {
+   "title": "Update: Apache Roller und drei weitere Lücken – Behördenfrist schon am 23. November",
+   "summary": "Die amerikanische Behörde für Cybersicherheit und Infrastruktursicherheit hat am 20. November vier aktiv ausgenutzte Lücken in ihren Katalog aufgenommen: VMware vCenter (CVE-2026-123890), Apache Roller (CVE-2026-129448), Cisco Expressway (CVE-2026-76466) und SAP NetWeaver 7.50 (CVE-2025-42884). Bundesbehörden müssen bis 23. November patchen; für SAP NetWeaver nennt der Bericht den SAP-Hinweis 3660969, für Roller Version 6.1.6.",
+   "relevance": "SAP NetWeaver und vCenter sind in großen Handelskonzernen typische Kernsysteme; die Dreitagesfrist zeigt, wie dringend die Behörde die Lage einschätzt. Patch-Status und Ausnahmen sollten vor Montag belegt sein, auch für Systeme bei Dienstleistern.",
+   "source": "SecurityOnline",
+   "url": "https://securityonline.info/cisa-kev-catalog-vcenter-cisco-expressway/",
+   "id": "2026-11-21-kev-vcenter-sap-expressway-roller-frist",
+   "topic": "IT-Governance & Risiko",
+   "impact": "hoch",
+   "published": "2026-11-21",
+   "tags": [
+    "Schwachstellen",
+    "SAP",
+    "Patch-Frist"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
+    "NIS-2-Richtlinie Art. 21 – Umgang mit Schwachstellen",
+    "IT-Kontrollen der Abschlussprüfung – Änderungsmanagement"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Revision & Prüfung"
+   ],
+   "countries": [
+    "EU",
+    "DE",
+    "AT"
+   ],
+   "dossier": "kritische-schwachstellen-perimeter",
+   "priority": 1,
+   "primary": false,
+   "added": "2026-11-21T06:07:11Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Datum, Kennnummern, Frist, SAP-Hinweis und Roller-Version stimmen mit der Quelle überein. Die Quelle sagt aber nicht, dass es für Apache Roller vorher keine Behördenfrist gab. Laut Katalog der Behörde wurde die Lücke erst am 20. November aufgenommen. Der Satz über die angeblich neue Frist ist…"
+   }
+  },
+  {
+   "title": "VMware vCenter: Angreifer seit September aktiv, Einstieg über Fernwartungs-Zero-Day",
+   "summary": "Broadcom hat kritische Lücken in vCenter, vSphere, VMware Tools und SDDC Manager geschlossen. Laut Mandiant nutzt die mutmaßlich chinesisch verbundene Gruppe Armory Castle die Lücke CVE-2026-123890 seit Anfang September, stiehlt Datenbanken, übernimmt den Dienst für die Einmalanmeldung und legt eigene Administratorkonten an. Der Ersteinstieg erfolgte über einen Zero Day in BeyondTrust Remote Support (CVE-2026-102764).",
+   "relevance": "Wer früh betroffen gewesen sein könnte, muss neben dem Patch auch nach fremden Administratorkonten und Änderungen an der Einmalanmeldung suchen. Die Virtualisierungsschicht und Fernwartungswerkzeuge gehören damit in die Prüfung privilegierter Zugriffe.",
+   "source": "heise online",
+   "url": "https://heise.de/news/VMware-stopft-attackierte-Sicherheitsluecken-11532009.html",
+   "id": "2026-11-21-vcenter-armory-castle-beyondtrust",
+   "topic": "IT-Governance & Risiko",
+   "impact": "hoch",
+   "published": "2026-11-20",
+   "tags": [
+    "Virtualisierung",
+    "Fernwartung",
+    "privilegierte Konten"
+   ],
+   "controls": [
+    "IT-Kontrollen der Abschlussprüfung – Zugriffsschutz",
+    "ISO/IEC 27001 Anhang A 8.2 – Privilegierte Zugangsrechte",
+    "ISO/IEC 27001 Anhang A 5.24 – Planung und Vorbereitung der Handhabung von Informationssicherheitsvorfällen"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Revision & Prüfung"
+   ],
+   "countries": [
+    "EU",
+    "DE",
+    "AT"
+   ],
+   "dossier": "kritische-schwachstellen-perimeter",
+   "priority": 2,
+   "primary": false,
+   "added": "2026-11-21T06:07:11Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Artikel vom 20. November 2026. Armory Castle, mutmaßliche Verbindung nach China, Ausnutzung seit Anfang September, Ausleitung einer Datenbank, Übernahme des Tokendienstes für die Einmalanmeldung, Anlegen eines Administratorkontos für die Einmalanmeldung und Ersteinstieg über BeyondTrust…"
+   }
+  },
+  {
+   "title": "Europäische Kommission: Angriffskampagne mit frei verfügbarem Werkzeug Künstlicher Intelligenz",
+   "summary": "Die Kommission hat am 19. November bestätigt, dass ein am 22. Oktober entdeckter Angriff eine von Künstlicher Intelligenz erzeugte Kampagne mit einem öffentlich verfügbaren Werkzeug war; mehrere Anwendungen wurden vorsorglich abgeschaltet und sind größtenteils wieder in Betrieb. Einen Datenabfluss beim Personal insgesamt hat sie bislang nicht festgestellt, eine Lösegeldforderung gab es nicht. Laut Politico erkannte das Notfallteam der Organe der Europäischen Union das Angriffswerkzeug ARTEX, das öffentlich verfügbar ist.",
+   "relevance": "Wenn frei verfügbare Werkzeuge reichen, um eine gut geschützte Institution zu treffen, sinkt die Einstiegshürde für Angriffe auf Handelskonzerne. Annahmen zu Angriffsgeschwindigkeit, Erkennungszeiten und Abschaltentscheidungen im Notfallplan sollten überprüft werden.",
+   "source": "Help Net Security",
+   "url": "https://www.helpnetsecurity.com/2026/11/20/european-commission-ai-generated-cyberattack-publicly-available-tool/",
+   "id": "2026-11-21-kommission-angriff-ki-werkzeug",
+   "topic": "IT-Governance & Risiko",
+   "impact": "mittel",
+   "published": "2026-11-20",
+   "tags": [
+    "Bedrohungslage",
+    "Künstliche Intelligenz",
+    "Notfallmanagement"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Bewältigung von Sicherheitsvorfällen",
+    "ISO/IEC 27001 Anhang A 5.7 – Informationen über die Bedrohungslage"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Management"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "agentische-ki-sicherheit",
+   "priority": 3,
+   "primary": false,
+   "added": "2026-11-21T06:07:11Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Artikel vom 20. November 2026. Bestätigung am Donnerstag (19. November), Entdeckung am 22. Oktober, vorsorglich abgeschaltete Anwendungen, kein festgestellter Datenabfluss beim Personal insgesamt, keine Lösegeldforderung und ARTEX laut Politico sind alle belegt."
+   }
+  },
+  {
+   "title": "Leitlinien zu Künstlicher Intelligenz und Datenschutz kommen womöglich erst Anfang 2027",
+   "summary": "Die gemeinsamen Leitlinien von Europäischer Kommission und Europäischem Datenschutzausschuss zum Zusammenspiel von Verordnung über Künstliche Intelligenz und Datenschutz-Grundverordnung könnten sich bis Anfang 2027 verzögern. Das sagte der Leiter des Sekretariats des Ausschusses am 19. November; ursprünglich war die Fertigstellung noch für dieses Jahr geplant.",
+   "relevance": "Für Systeme wie Personaleinsatzplanung oder Preisgestaltung müssen Datenschutz-Folgenabschätzung und Grundrechte-Folgenabschätzung vorerst ohne offizielle Auslegung verzahnt werden. Eigene Annahmen sollten dokumentiert und nach Erscheinen der Leitlinien überprüft werden.",
+   "source": "MLex",
+   "url": "https://mlex.com/mlex/artificial-intelligence/articles/2552175",
+   "id": "2026-11-21-leitlinien-ki-verordnung-datenschutz-verzoegert",
+   "topic": "AI-Governance",
+   "impact": "mittel",
+   "published": "2026-11-19",
+   "tags": [
+    "Verordnung über Künstliche Intelligenz",
+    "Datenschutz-Grundverordnung",
+    "Leitlinien"
+   ],
+   "controls": [
+    "DSGVO Art. 35 – Datenschutz-Folgenabschätzung",
+    "Verordnung über Künstliche Intelligenz Art. 27 – Grundrechte-Folgenabschätzung"
+   ],
+   "roles": [
+    "Datenschutz",
+    "Management"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "ai-act",
+   "priority": 4,
+   "primary": false,
+   "added": "2026-11-21T06:07:11Z",
+   "check": {
+    "verdict": "nicht prüfbar",
+    "note": "Die Seite von MLex verweigert die Verbindung. Die Websuche fand keine andere Quelle für eine Verzögerung bis Anfang 2027 oder für die Aussage des Sekretariatsleiters am 19. November."
+   }
+  },
+  {
+   "title": "Workday lässt souveräne Cloud künftig von eigener Gesellschaft in Irland betreiben",
+   "summary": "Workday will seinen Dienst EU Sovereign Cloud über eine eigenständige Gesellschaft in Irland betreiben, deren Leitung aus Bürgerinnen und Bürgern der Europäischen Union besteht und an europäisches Recht gebunden ist. Governance-Entscheidungen sollen unabhängig vom Mutterkonzern fallen, der Dienst soll keine kritischen Abhängigkeiten von Infrastruktur außerhalb der Europäischen Union haben und baut auf der europäischen souveränen Cloud von Amazon Web Services auf. Start ist für 2027 angekündigt.",
+   "relevance": "Für Personal- und Finanzdaten in Software-as-a-Service-Lösungen entsteht ein neues Vertragsmuster, das sich in Ausschreibungen und Drittparteienbewertungen abfragen lässt. Entscheidend ist, was vertraglich zugesichert wird und wie sich das prüfen lässt, nicht die Ankündigung.",
+   "source": "ITPro",
+   "url": "https://www.itpro.com/cloud/cloud-computing/workday-to-spin-up-new-eu-entity-to-safeguard-sovereign-cloud-service",
+   "id": "2026-11-21-workday-souveraene-cloud-irland",
+   "topic": "IT-Governance & Risiko",
+   "impact": "mittel",
+   "published": "2026-11-19",
+   "tags": [
+    "Cloud-Souveränität",
+    "Personaldaten",
+    "Software as a Service"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 5.23 – Informationssicherheit für die Nutzung von Cloud-Diensten",
+    "DSGVO Art. 28 – Auftragsverarbeiter"
+   ],
+   "roles": [
+    "Einkauf & Drittparteien",
+    "Datenschutz"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "cloud-souveraenitaet",
+   "priority": 5,
+   "primary": false,
+   "added": "2026-11-21T06:07:11Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Artikel vom 19. November 2026. Eigene Gesellschaft in Irland, Leitung durch Führungskräfte mit Staatsbürgerschaft der Europäischen Union, Bindung an europäisches Recht, unabhängige Governance, keine kritischen Abhängigkeiten außerhalb der Union, Grundlage ist die europäische souveräne Cloud von…"
+   }
+  },
   {
    "title": "Update: Digital Fairness Act – Rückmeldungen zum Vorschlag bis 13. Januar 2027",
    "summary": "Seit 18. November läuft eine achtwöchige Konsultation der Kommission zum Vorschlag für den Digital Fairness Act, sie endet am 13. Januar 2027. Neu gegenüber dem bisherigen Stand ist damit die Frist für Rückmeldungen zum Vorschlag vom 11. November. Er richtet sich gegen manipulative Gestaltung, irreführendes Influencer-Marketing, suchtfördernde Funktionen und unfaire Personalisierung.",

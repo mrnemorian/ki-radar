@@ -1,0 +1,165 @@
+{
+ "format": "tag",
+ "chapters": [
+  {
+   "title": "Begrüßung",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Guten Morgen, liebe IT-GRC-Kolleginnen und -Kollegen, willkommen beim IT-GRC Radar am Samstag, dem einundzwanzigsten November 2026."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Samstag, und trotzdem läuft am Montag schon eine [en]Patch[/en]-Frist ab. Der Kaffee ist heute also keine Kür."
+    }
+   ]
+  },
+  {
+   "title": "Patch-Frist am Montag",
+   "news_id": "2026-11-21-kev-vcenter-sap-expressway-roller-frist",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Genau damit fangen wir an. Die amerikanische Cybersicherheitsbehörde hat am Freitag vier aktiv ausgenutzte Lücken in ihren Katalog aufgenommen: VMware vCenter, SAP NetWeaver, Cisco Expressway und Apache Roller. Frist ist der dreiundzwanzigste November."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Drei Tage, die kurze Stufe für besonders kritische Fälle. Rechtlich gilt das nur für amerikanische Bundesbehörden, aber als Gradmesser für Dringlichkeit taugt es hervorragend."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Moment, Apache Roller hatten wir doch schon?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Jetzt steht die Lücke offiziell im Katalog, mit derselben kurzen Frist wie die anderen drei. Und bei SAP NetWeaver heißt die Maßnahme SAP-Hinweis 3660969. Wer erst in der [en]Asset[/en]-Liste suchen muss, ob Version 7.50 irgendwo läuft, sollte das vor Montag tun und nicht in der nächsten [en]Audit[/en]-Saison."
+    }
+   ]
+  },
+  {
+   "title": "vCenter seit September angegriffen",
+   "news_id": "2026-11-21-vcenter-armory-castle-beyondtrust",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Bei vCenter wird es richtig unangenehm, oder?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ja. Laut Mandiant nutzt eine mutmaßlich chinesisch verbundene Gruppe die Lücke schon seit Anfang September. Die Angreifer haben eine Datenbank ausgeleitet, den Dienst für die Einmalanmeldung übernommen und sich ein eigenes Administratorkonto dafür angelegt."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und wie sind die überhaupt reingekommen?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Über einen [en]Zero Day[/en] in BeyondTrust [en]Remote Support[/en], also einem Fernwartungswerkzeug. Heißt: Patchen allein reicht nicht, man muss auch nach fremden Administratorkonten suchen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Also wieder die Frage: Wer hat eigentlich Administratorrechte, und wer hat sie vergeben?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und wer ist [en]Owner[/en] der Antwort. Bei der Virtualisierungsschicht ist das auch eine Frage für die allgemeinen Kontrollen der Abschlussprüfung, nicht nur für den Betrieb."
+    }
+   ]
+  },
+  {
+   "title": "Kommission und das Angriffswerkzeug",
+   "news_id": "2026-11-21-kommission-angriff-ki-werkzeug",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Dann nach Brüssel. Die Europäische Kommission hat am Donnerstag bestätigt, dass ein Angriff auf ihre Systeme eine von Künstlicher Intelligenz erzeugte Kampagne war, mit einem öffentlich verfügbaren Werkzeug."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Entdeckt am zweiundzwanzigsten Oktober, mehrere Anwendungen wurden vorsorglich abgeschaltet und laufen inzwischen größtenteils wieder. Einen Datenabfluss beim Personal insgesamt sieht die Kommission bisher nicht, und eine Lösegeldforderung gab es nicht."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Welches Werkzeug war das?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Offiziell sagt die Kommission dazu nichts. Politico berichtet von ARTEX, einem frei verfügbaren Angriffswerkzeug. Wenn so etwas eine Institution mit eigenem Notfallteam trifft, verdienen unsere Annahmen zur Angriffsgeschwindigkeit im Risikoregister ein [en]Update[/en]."
+    }
+   ]
+  },
+  {
+   "title": "Leitlinien verspäten sich",
+   "news_id": "2026-11-21-leitlinien-ki-verordnung-datenschutz-verzoegert",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Apropos Künstliche Intelligenz: Die gemeinsamen Leitlinien von Kommission und Europäischem Datenschutzausschuss zum Zusammenspiel von Verordnung über Künstliche Intelligenz und Datenschutz-Grundverordnung verspäten sich."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Laut dem Sekretariat des Ausschusses womöglich bis Anfang 2027. Ehrlich gesagt hätte ich die deutlich früher erwartet, schließlich sollten sie noch dieses Jahr fertig werden."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Was heißt das praktisch?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Datenschutz-Folgenabschätzung und Grundrechte-Folgenabschätzung muss man vorerst selbst zusammendenken, etwa bei der Personaleinsatzplanung. Die eigenen Annahmen also sauber dokumentieren, damit man sie später nachschärfen kann."
+    }
+   ]
+  },
+  {
+   "title": "Workday und die souveräne Cloud",
+   "news_id": "2026-11-21-workday-souveraene-cloud-irland",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Zur [en]Cloud[/en]: Workday will seine europäische souveräne [en]Cloud[/en] künftig über eine eigene Gesellschaft in Irland betreiben."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Mit einer Leitung aus Bürgern der Europäischen Union, gebunden an europäisches Recht, und ohne kritische Abhängigkeiten von Infrastruktur außerhalb der Europäischen Union. Starten soll das nächstes Jahr."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Klingt doch gut."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Klingt gut, und genau deshalb sollte man es prüfen. Für Personal- und Finanzdaten ist das ein Muster, das man in Ausschreibungen abfragen kann. Aber eine Präsentationsfolie ersetzt keinen Vertrag."
+    }
+   ]
+  },
+  {
+   "title": "Auf dem Radar",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Und was steht heute auf dem Radar?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Autonome Angriffe durch Agenten. Der Fall der Kommission zeigt, dass frei verfügbare Werkzeuge genügen. Im nächsten Planspiel würde ich deshalb mit deutlich kürzeren Reaktionszeiten üben."
+    }
+   ]
+  },
+  {
+   "title": "Abschied",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Das war das IT-GRC Radar für diesen Samstag. Alle Quellen findet ihr wie immer auf der Webseite."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und wer am Montag noch SAP-Hinweise suchen wollte: Heute wäre auch ein guter Tag dafür. Schönes Wochenende."
+    }
+   ]
+  }
+ ]
+}
