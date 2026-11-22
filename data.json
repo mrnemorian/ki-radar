@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T06:07:11Z",
+ "updated": "2026-11-22T06:06:05Z",
  "topics": [
   "IT-Governance & Risiko",
   "Cyber- & IT-Regulierung",
@@ -11,6 +11,18 @@
   "Weitere Themen"
  ],
  "briefings": [
+  {
+   "date": "2026-11-22",
+   "headline": "Patch-Frist für LiteLLM am 2. Dezember, das Bundesamt stuft die Lage erstmals als „angespannt bis kritisch“ ein und Revolve meldet 1,5 Millionen Betroffene",
+   "points": [
+    "Katalog aktiv ausgenutzter Schwachstellen: LiteLLM, Synology, Apache Axis 1.x und REDCap neu gelistet, Frist für LiteLLM am 2. Dezember 2026, für Axis 1.x gibt es keinen Patch mehr",
+    "Lagebericht des Bundesamts für Sicherheit in der Informationstechnik: Lage erstmals „angespannt bis kritisch“, zwischen Bekanntwerden und Ausnutzung einer Lücke liegen nur noch rund acht Tage",
+    "Update Revolve: In einer Meldung an eine Aufsichtsbehörde stehen 1.515.073 Betroffene statt bisher rund 200.000, auch Kartendaten sind betroffen",
+    "Datenverordnung: Kommission veröffentlicht Musterklauseln für Datenzugang und Cloud-Verträge im Amtsblatt",
+    "Vor dem Black Friday tauchen Hunderte verdächtige Domains für Phishing gegen Kunden von Händlern auf"
+   ],
+   "count": 5
+  },
   {
    "date": "2026-11-21",
    "headline": "Patch-Frist am Montag für vCenter, SAP NetWeaver, Expressway und Roller – dazu bestätigt Brüssel einen Angriff mit einem frei verfügbaren Werkzeug Künstlicher Intelligenz.",
@@ -354,18 +366,6 @@
     "Zertifizierungsstelle eMudhra: Erratbare Schlüssel trotz Prüfberichten, dazu neuer Leitfaden ISO/IEC 27090 zur Sicherheit Künstlicher Intelligenz"
    ],
    "count": 6
-  },
-  {
-   "date": "2026-10-21",
-   "headline": "Eine Cloud-Zone fällt aus, ein Supportarchiv wird zum Erpressungswerkzeug: Abhängigkeiten von Dienstleistern prägen den Tag.",
-   "points": [
-    "Stromproblem in einer Londoner Google-Cloud-Zone legt fast acht Stunden lang Banken, Paketdienste und den Baumarkthändler Screwfix lahm",
-    "Erpressung von 38 Schifffahrts- und Logistikfirmen geht offenbar auf das Support- und Projektarchiv eines einzigen Softwareanbieters zurück",
-    "Studie von TÜV-Verband und Bundesamt für Sicherheit in der Informationstechnik: 74 Prozent sehen bei Agenten unklare Verantwortung als hohes Risiko",
-    "Update Ahold Delhaize: Systeme nach rund acht Tagen wieder online, Anzeige erstattet, weiter kein Hinweis auf Datenabfluss",
-    "Notebooksbilliger: Daten einer mittleren fünfstelligen Zahl von Kunden betroffen, auch Bankverbindungen möglich"
-   ],
-   "count": 7
   }
  ],
  "dossiers": [
@@ -479,18 +479,17 @@
    "title": "Kritische Schwachstellen in Randsystemen und Kernanwendungen",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Seit 20. November stehen VMware vCenter (CVE-2026-123890), SAP NetWeaver (CVE-2025-42884), Cisco Expressway (CVE-2026-76466) und Apache Roller (CVE-2026-129448) im Katalog aktiv ausgenutzter Lücken, die Behördenfrist endet am 23. November; bei vCenter waren Angreifer laut Mandiant bereits seit September aktiv. Die Fristen für Outlook und Chrome (24. November) und Puppet (1. Dezember) laufen…",
-   "next_step": "Patch-Stand für SAP NetWeaver 7.50, vCenter, Expressway und Roller einschließlich Dienstleistersystemen belegen und bei vCenter nach unbekannten Administratorkonten und Änderungen an der Einmalanmeldung suchen.",
+   "status": "Seit 18. November stehen LiteLLM, Synology DiskStation Manager, Apache Axis 1.x und REDCap im Katalog aktiv ausgenutzter Lücken, die Frist für LiteLLM endet am 2. Dezember. Der Lagebericht des Bundesamts für Sicherheit in der Informationstechnik nennt rund acht Tage zwischen Veröffentlichung und Ausnutzung und 160 neue Lücken pro Tag. Die Fristen für vCenter, SAP NetWeaver, Expressway und Roller…",
+   "next_step": "Patch-Fristen für Systeme mit Internetzugang am Acht-Tage-Wert messen. Gateways für Sprachmodelle und Netzwerkspeicher ins Schwachstelleninventar aufnehmen.",
    "open_questions": [
-    "Welche Systeme laufen bei Dienstleistern und werden dort nach welcher Frist gepatcht?",
-    "Wie weit zurück reicht die forensische Prüfung bei vCenter, wenn Angriffe seit September bekannt sind?"
+    "Sind Gateways für Sprachmodelle in Fachbereichen im zentralen Inventar erfasst?",
+    "Reichen 30-Tage-Patch-Vorgaben für kritische Lücken noch aus?"
    ],
    "controls": [
-    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
-    "NIS-2-Richtlinie Art. 21 – Umgang mit Schwachstellen",
-    "IT-Kontrollen der Abschlussprüfung – Zugriffsschutz"
+    "ISO/IEC 27001 Anhang A 8.8 – Umgang mit technischen Schwachstellen",
+    "NIS-2-Richtlinie Art. 21 – Umgang mit Schwachstellen"
    ],
-   "updated": "2026-11-21"
+   "updated": "2026-11-22"
   },
   {
    "slug": "lebenszyklus-altsysteme",
@@ -504,16 +503,15 @@
    "title": "Lebenszyklus und Altsysteme",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Exchange Server 2016 und 2019 haben am 31. Oktober 2026 die letzten Updates erhalten, Windows Server 2016 folgt am 12. Januar 2027. Der Fall Maersk zeigt zusätzlich das Risiko übernommener Altsysteme: Die Daten flossen aus einem System der 2022 gekauften LF Logistics ab.",
-   "next_step": "Altsysteme aus Zukäufen ins Inventar aufnehmen, für jedes einen Owner benennen und Termine für Stilllegung oder Eingliederung festlegen.",
+   "status": "Exchange Server 2016 und 2019 erhalten seit 31. Oktober 2026 keine Updates mehr, Windows Server 2016 folgt am 12. Januar 2027. Mit Apache Axis 1.x wird jetzt eine nicht mehr gepflegte Bibliothek aktiv angegriffen, für die es keinen Patch gibt, nur die Migration.",
+   "next_step": "Bibliotheken und Schnittstellen ohne Herstellerpflege, zum Beispiel ältere SOAP-Komponenten, in die Lebenszyklus-Übersicht aufnehmen und Ausnahmen mit Ablaufdatum versehen.",
    "open_questions": [
-    "Welche Systeme aus früheren Übernahmen laufen noch außerhalb der Konzernüberwachung?"
+    "Wer ist Owner für eingebettete Bibliotheken in Altanwendungen?"
    ],
    "controls": [
-    "ISO/IEC 27001 Anhang A 5.9 – Inventar der Informationen und anderen damit verbundenen Werte",
-    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen"
+    "ISO/IEC 27001 Anhang A 5.9 – Inventar der Informationen und anderen zugehörigen Werte"
    ],
-   "updated": "2026-11-19"
+   "updated": "2026-11-22"
   },
   {
    "slug": "nis2-umsetzung",
@@ -613,18 +611,16 @@
    "title": "Zahlungsverkehr und PCI DSS",
    "sector": "Handel & Branche",
    "ring": "jetzt handeln",
-   "status": "Nach Fandango im Oktober zeigt der Fall Optimizely vom 16. November, dass Kartendaten auch über Skripte vertrauter Marketingdienstleister abgegriffen werden: 178 Organisationen lieferten manipulierten Code aus. Der Rat für Sicherheitsstandards der Kartenbranche hat am 10. November eine Handreichung zu den Erwartungen an Dienstleister veröffentlicht.",
-   "next_step": "Für alle Bezahl- und Anmeldeseiten ein Verzeichnis der Skripte von Drittanbietern und ihrer Schreibrechte erstellen, prüfen, ob die Erkennung von Änderungen wirklich alarmiert, und die Verantwortungsmatrizen der Dienstleister mit der neuen Handreichung abgleichen.",
+   "status": "Nach Fandango und Optimizely zeigt Revolve, wie stark Betroffenenzahlen nachträglich steigen können: Statt rund 200.000 nennt eine Meldung an eine Aufsichtsbehörde 1.515.073 Personen, auch Kartennummern mit Ablaufdatum sind betroffen. Der Rat für Sicherheitsstandards der Kartenbranche hat am 10. November eine Handreichung zu den Erwartungen an Dienstleister veröffentlicht.",
+   "next_step": "Gespeicherte Kartendaten und Tokenisierung im Onlinehandel überprüfen und Meldeprozesse nach Datenschutz-Grundverordnung und Kartenstandard abstimmen.",
    "open_questions": [
-    "Wer ist für Skripte auf der Bezahlseite zuständig: Marketing, E-Commerce oder Informationssicherheit?",
-    "Verschärfen Kartenorganisationen ihre Erwartungen an Dienstleister mit Schreibzugriff auf Bezahlseiten?"
+    "Wo werden außerhalb des Zahlungsdienstleisters noch Kartendaten gespeichert?"
    ],
    "controls": [
-    "PCI DSS v4.0.1 Anforderung 6.4.3 – Verwaltung von Skripten auf Bezahlseiten",
-    "PCI DSS v4.0.1 Anforderung 11.6.1 – Erkennung von Änderungen an Bezahlseiten",
-    "PCI DSS v4.0.1 Anforderung 12.8 – Steuerung externer Dienstleister"
+    "PCI DSS Anforderung 3 – Schutz gespeicherter Kontodaten",
+    "PCI DSS Anforderung 6.4.3 – Skripte auf Bezahlseiten"
    ],
-   "updated": "2026-11-20"
+   "updated": "2026-11-22"
   },
   {
    "slug": "algorithmisches-management",
@@ -666,17 +662,16 @@
    "title": "Cloud-Souveränität und Abhängigkeiten",
    "sector": "IT-Governance & Risiko",
    "ring": "vorbereiten",
-   "status": "Seit 11. November liegt im Europäischen Parlament der Berichtsentwurf zum Cloud and AI Development Act vor, Abstimmungen sind für März und April 2027 geplant. Anbieter reagieren mit eigenen Strukturen: Workday will seine souveräne Cloud ab 2027 über eine eigenständige Gesellschaft in Irland betreiben, und die Europäische Zentralbank nennt die Konzentration auf wenige Cloud- und Modellanbieter…",
-   "next_step": "Für zentrale Cloud- und Software-as-a-Service-Anbieter Abhängigkeiten, Ausstiegspläne und vertraglich zugesicherte Souveränitätsmerkmale erfassen und in Ausschreibungskriterien übernehmen.",
+   "status": "Seit 11. November liegt der Berichtsentwurf des Parlaments zum Cloud and AI Development Act vor, Abstimmungen sind für März und April 2027 geplant. Seit 6. November stehen Musterklauseln und Standardvertragsklauseln für Cloud-Verträge nach der Datenverordnung im Amtsblatt, ab 12. Januar 2027 sind Wechselgebühren nicht mehr zulässig.",
+   "next_step": "Cloud-Verträge mit den neuen Standardvertragsklauseln abgleichen, vor allem Exit- und Wechselregelungen.",
    "open_questions": [
-    "Wie prüfbar sind Souveränitätszusagen wie unabhängige Leitungsgremien?",
-    "Welche Anforderungen bringt der Cloud and AI Development Act für kritische Sektoren?"
+    "Werden Anbieter die unverbindlichen Klauseln akzeptieren?",
+    "Welche Souveränitätsstufen verlangt der Cloud and AI Development Act am Ende?"
    ],
    "controls": [
-    "ISO/IEC 27001 Anhang A 5.23 – Informationssicherheit für die Nutzung von Cloud-Diensten",
-    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette"
+    "ISO/IEC 27001 Anhang A 5.23 – Informationssicherheit bei der Nutzung von Cloud-Diensten"
    ],
-   "updated": "2026-11-21"
+   "updated": "2026-11-22"
   },
   {
    "slug": "cyber-resilience-act",
@@ -968,6 +963,17 @@
    "checked": true
   },
   {
+   "date": "2026-12-02",
+   "title": "LiteLLM-Lücke CVE-2026-40217: behördliche Patch-Frist",
+   "detail": "Wer das Gateway für Sprachmodelle LiteLLM betreibt, sollte auf einen Stand nach dem 8. April 2026 aktualisieren.",
+   "scope": "global",
+   "url": "https://thehackernews.com/2026/11/cisa-warns-of-4-exploited-flaws-linked.html",
+   "primary": false,
+   "checked": true,
+   "dossier": "kritische-schwachstellen-perimeter",
+   "added": "2026-11-22"
+  },
+  {
    "date": "2026-12-08",
    "title": "Ende der Konsultation zur neuen Normungsverordnung",
    "detail": "Unternehmen können zum Vorschlag für kostenlose Normen und gemeinsame Spezifikationen der Kommission Stellung nehmen, etwa über ihre Verbände.",
@@ -1218,6 +1224,20 @@
    ]
   },
   {
+   "theme": "Schwachstellensuche durch Künstliche Intelligenz",
+   "why": "Laut Lagebericht des Bundesamts finden Agenten Lücken und liefern passende Exploits gleich mit, das Bundesamt sieht darin einen Haupttreiber der neuen Einstufung. Damit schrumpft die Zeit für Patches weiter.",
+   "count": 9,
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-11-22",
+   "evidence": [
+    "https://www.channelpartner.de/article/4250665/bsi-stuft-sicherheitslage-auf-angespannt-bis-kritisch-hoch.html",
+    "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Cyber-Sicherheitslage/Lageberichte/Monatsbericht_Lage-Cybernation/Lage_Angriffsflaeche/Lage-Angriffsflaeche.html",
+    "https://cyberinsider.com/microsoft-november-2026-patch-tuesday-outlook-zero-day/",
+    "https://thehackernews.com/2026/11/openai-ai-pipeline-generates-948-linux.html",
+    "https://newcivilengineer.com/latest/highly-likely-ai-will-be-used-in-ransomware-attack-on-uk-critical-infrastructure-03-11-2026"
+   ]
+  },
+  {
    "theme": "Autonome Angriffe durch Agenten",
    "why": "Die Europäische Kommission wurde von einer Kampagne mit einem öffentlich verfügbaren Angriffswerkzeug Künstlicher Intelligenz getroffen. Die Einstiegshürde für schnelle, automatisierte Angriffe sinkt damit auch gegenüber Unternehmen.",
    "count": 8,
@@ -1245,17 +1265,17 @@
    ]
   },
   {
-   "theme": "Schwachstellensuche durch Künstliche Intelligenz",
-   "why": "Das Bundesamt für Sicherheit in der Informationstechnik zählt 17.539 neue Schwachstellen im zweiten Quartal 2026 nach 10.803 im ersten und vermutet als mögliche Ursache die Schwachstellensuche mit Künstlicher Intelligenz. Patch-Zyklen und Ressourcen für das Schwachstellenmanagement geraten damit weiter unter Druck.",
-   "count": 8,
-   "first_seen": "2026-10-20",
-   "last_seen": "2026-11-13",
+   "theme": "Cloud-Souveränität und Cloud and AI Development Act",
+   "why": "Das Europäische Parlament hat am 12. November menschliche Aufsicht über Künstliche Intelligenz in den Institutionen gefordert und spricht sich für Werkzeuge aus, die in der Europäischen Union entwickelt und betrieben werden. Das deutet die Richtung für künftige Beschaffungsregeln an.",
+   "count": 7,
+   "first_seen": "2026-09-30",
+   "last_seen": "2026-11-22",
    "evidence": [
-    "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Cyber-Sicherheitslage/Lageberichte/Monatsbericht_Lage-Cybernation/Lage_Angriffsflaeche/Lage-Angriffsflaeche.html",
-    "https://cyberinsider.com/microsoft-november-2026-patch-tuesday-outlook-zero-day/",
-    "https://thehackernews.com/2026/11/openai-ai-pipeline-generates-948-linux.html",
-    "https://newcivilengineer.com/latest/highly-likely-ai-will-be-used-in-ransomware-attack-on-uk-critical-infrastructure-03-11-2026",
-    "https://thehackernews.com/2026/11/red-hat-patches-98-rated-linux-tcp-rce.html"
+    "https://www.lovguiden.dk/en/det-offentlige/europa-parlamentet/2026-11-12-european-parliament-demands-human-oversight-of-ai-in-eu-institutions",
+    "https://www.mlex.com/mlex/articles/2535003/eu-lawmakers-to-present-report-on-eu-s-cloud-and-ai-development-act-in-december",
+    "https://www.mlex.com/mlex/articles/2535003",
+    "https://www.mlex.com/mlex/technology/articles/2535003",
+    "https://www.eesc.europa.eu/en/our-work/opinions-information-reports/opinions/cloud-and-ai-development-act"
    ]
   },
   {
@@ -1270,20 +1290,6 @@
     "https://christopher-helm.com/kritis-betreiber-schwellenwert-rechtsverordnung/",
     "https://cms.law/de/deu/legal-updates/kritis-verordnung-was-betreiber-kritischer-anlagen-jetzt-wissen-muessen",
     "https://ag.kritis.info/2026/05/28/referentenentwurf-des-bmi-verordnung-zur-bestimmung-kritischer-anlagen-nach-dem-kritis-dachgesetz-kritisverordnung-kritisv/"
-   ]
-  },
-  {
-   "theme": "Cloud-Souveränität und Cloud and AI Development Act",
-   "why": "Der zuständige Ausschuss des Europäischen Parlaments will seinen Berichtsentwurf am 1. Dezember vorlegen und Mitte März abstimmen. Die Souveränitätsstufen könnten künftig Einkauf und Cloud-Strategie großer Unternehmen prägen.",
-   "count": 6,
-   "first_seen": "2026-09-30",
-   "last_seen": "2026-11-03",
-   "evidence": [
-    "https://www.mlex.com/mlex/articles/2535003/eu-lawmakers-to-present-report-on-eu-s-cloud-and-ai-development-act-in-december",
-    "https://www.mlex.com/mlex/articles/2535003",
-    "https://www.mlex.com/mlex/technology/articles/2535003",
-    "https://www.eesc.europa.eu/en/our-work/opinions-information-reports/opinions/cloud-and-ai-development-act",
-    "https://www.datenschutzticker.de/2026/09/cada-europas-cloud-und-ki-infrastruktur-im-fokus/"
    ]
   },
   {
@@ -1657,6 +1663,74 @@
    }
   },
   {
+   "title": "Aktiv ausgenutzt: LiteLLM, Synology, Apache Axis und REDCap, für Axis kein Patch mehr",
+   "summary": "Die amerikanische Cybersicherheitsbehörde hat am 18. November vier aktiv ausgenutzte Lücken in ihren Katalog aufgenommen: Synology DiskStation Manager (CVE-2024-10441), das Gateway für Sprachmodelle LiteLLM (CVE-2026-40217), Apache Axis 1.x (CVE-2026-90436) und REDCap (CVE-2026-90817). Für Synology, Axis und REDCap lief die Behördenfrist schon am 21. November ab, für LiteLLM endet sie am 2. Dezember 2026. Apache Axis 1.x wird nicht mehr gepflegt, deshalb bleibt nur der Umstieg auf eine andere Software, zwei der Lücken wurden zum Einschleusen von Kryptominern genutzt.",
+   "relevance": "Gateways für Sprachmodelle wie LiteLLM laufen oft außerhalb des klassischen Patch-Managements in Fachbereichen oder Projekten. Sie gehören deshalb ins Inventar und in die Schwachstellensteuerung. Alte SOAP-Schnittstellen auf Basis von Axis 1.x in gewachsenen Händler- und Lieferantenanbindungen sind ein typisches Altlastenrisiko ohne Patch-Option.",
+   "source": "The Hacker News",
+   "url": "https://thehackernews.com/2026/11/cisa-warns-of-4-exploited-flaws-linked.html",
+   "id": "2026-11-22-kev-litellm-synology-axis-redcap",
+   "topic": "IT-Governance & Risiko",
+   "impact": "hoch",
+   "published": "2026-11-19",
+   "tags": [
+    "Schwachstellen",
+    "Sprachmodell-Gateway",
+    "Altsysteme"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 8.8 – Umgang mit technischen Schwachstellen",
+    "NIS-2-Richtlinie Art. 21 – Umgang mit Schwachstellen",
+    "IT-Kontrollen der Abschlussprüfung – Änderungsmanagement"
+   ],
+   "roles": [
+    "IT-Risiko"
+   ],
+   "countries": [],
+   "dossier": "kritische-schwachstellen-perimeter",
+   "priority": 1,
+   "primary": false,
+   "added": "2026-11-22T06:06:05Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Der Artikel erschien am 19. November 2026. Die Aufnahme in den Katalog am Mittwoch, dem 18. November, die vier Kennungen der Lücken und die Fristen (21. November für Synology, REDCap und Axis, 2. Dezember für LiteLLM) stehen so in der Quelle. Laut Quelle wird Axis 1 nicht mehr gepflegt und hat…"
+   }
+  },
+  {
+   "title": "Lagebericht des Bundesamts: Lage erstmals „angespannt bis kritisch“, Ausnutzung nach acht Tagen",
+   "summary": "Das Bundesamt für Sicherheit in der Informationstechnik hat am 19. November seinen Lagebericht vorgestellt und die Bedrohung als „angespannt bis kritisch“ eingestuft, im Vorjahr hieß es noch „angespannt“. Laut Bericht wurden täglich rund 160 neue Schwachstellen bekannt, 35 Prozent mehr als im Vorjahr, und die Zeit zwischen Veröffentlichung und Ausnutzung sank von etwa 61 Tagen im Jahr 2024 auf etwa acht Tage im zweiten Quartal 2026. Präsidentin Claudia Plattner kritisiert, dass viele Organisationen die Sicherheit ihrer Netze überschätzen, als Treiber gilt der Einsatz Künstlicher Intelligenz durch Angreifer.",
+   "relevance": "Acht Tage bis zur Ausnutzung passen nicht zu monatlichen Patch-Zyklen und 30-Tage-Vorgaben in vielen Richtlinien. Patch-Fristen für Systeme mit Internetzugang sollten überprüft werden. Die Einstufung des Bundesamts ist außerdem ein Argument gegenüber Vorstand und Aufsichtsrat in Budgetgesprächen.",
+   "source": "ZDFheute",
+   "url": "https://www.zdfheute.de/politik/deutschland/bsi-lagebericht-warnung-cyberangriff-ki-100.html",
+   "id": "2026-11-22-bsi-lagebericht-angespannt-bis-kritisch",
+   "topic": "Cyber- & IT-Regulierung",
+   "impact": "mittel",
+   "published": "2026-11-19",
+   "tags": [
+    "Lagebericht",
+    "Bedrohungslage",
+    "Patch-Fristen"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 20 – Governance und Verantwortung der Leitungsorgane",
+    "ISO/IEC 27001 Anhang A 8.8 – Umgang mit technischen Schwachstellen"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Management"
+   ],
+   "countries": [
+    "DE"
+   ],
+   "dossier": "kritische-schwachstellen-perimeter",
+   "priority": 2,
+   "primary": false,
+   "added": "2026-11-22T06:06:05Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Datum, Zahlen (160 pro Tag, 35 Prozent, 61 und acht Tage) und die Aussage von Plattner stimmen. Das Wort „erstmals“ steht nicht in der Quelle. Die Quelle sagt nur, dass die Lage im Vorjahr als „angespannt“ eingestuft war. Das Bundesamt hatte die Lage zudem schon im Lagebericht 2021 als „angespannt…"
+   }
+  },
+  {
    "title": "Leitlinien zu Künstlicher Intelligenz und Datenschutz kommen womöglich erst Anfang 2027",
    "summary": "Die gemeinsamen Leitlinien von Europäischer Kommission und Europäischem Datenschutzausschuss zum Zusammenspiel von Verordnung über Künstliche Intelligenz und Datenschutz-Grundverordnung könnten sich bis Anfang 2027 verzögern. Das sagte der Leiter des Sekretariats des Ausschusses am 19. November; ursprünglich war die Fertigstellung noch für dieses Jahr geplant.",
    "relevance": "Für Systeme wie Personaleinsatzplanung oder Preisgestaltung müssen Datenschutz-Folgenabschätzung und Grundrechte-Folgenabschätzung vorerst ohne offizielle Auslegung verzahnt werden. Eigene Annahmen sollten dokumentiert und nach Erscheinen der Leitlinien überprüft werden.",
@@ -1790,6 +1864,40 @@
    "check": {
     "verdict": "ok",
     "note": "Die Quelle bestätigt alles: veröffentlicht am 18. November 2026, die Lücke CVE-2026-115731 wurde am 17. November in den Katalog aufgenommen, die Frist ist der 1. Dezember 2026. Auch die Voraussetzung eines signierten Agenten-Zertifikats, der Hinweis auf die automatische Signierung und alle…"
+   }
+  },
+  {
+   "title": "Vor dem Black Friday tauchen Hunderte verdächtige Domains auf",
+   "summary": "Sicherheitsforscher von Check Point beobachten vor dem Black Friday eine Welle neu registrierter Domains mit Begriffen wie „Black Friday“ oder Bezug zu bekannten Handelsmarken und Paketdiensten, fast jede fünfte davon stufen sie als riskant ein. Manche Seiten sind noch inaktiv und könnten später für Phishing-Kampagnen eingesetzt werden.",
+   "relevance": "Für große Händler geht es um Markenmissbrauch und Betrug an den eigenen Kunden. Domain-Überwachung, schnelle Takedown-Wege und abgestimmte Kundenkommunikation sollten in der Spitzenzeit vor Weihnachten bereitstehen.",
+   "source": "Netzwoche",
+   "url": "https://www.netzwoche.ch/news/2026-11-17/vor-black-friday-tauchen-hunderte-verdaechtige-domains-auf",
+   "id": "2026-11-22-black-friday-verdaechtige-domains",
+   "topic": "Handel & Branche",
+   "impact": "info",
+   "published": "2026-11-17",
+   "tags": [
+    "Phishing",
+    "Markenmissbrauch",
+    "Black Friday"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 5.7 – Informationen über Bedrohungen"
+   ],
+   "roles": [
+    "IT-Risiko"
+   ],
+   "countries": [
+    "DE",
+    "AT"
+   ],
+   "dossier": null,
+   "priority": 5,
+   "primary": false,
+   "added": "2026-11-22T06:06:05Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Datum und Check Point stimmen. Die Quelle nennt mehr als 4000 neue Domains. Dass Fake-Shops echte Händler immer überzeugender imitieren, steht nicht in der Quelle. Die spätere Nutzung inaktiver Domains für Phishing beschreibt die Quelle nur als Möglichkeit, nicht als belegten Fall."
    }
   },
   {
@@ -3177,6 +3285,40 @@
    }
   },
   {
+   "title": "Datenverordnung: Musterklauseln für Datenzugang und Cloud-Verträge im Amtsblatt",
+   "summary": "Die Empfehlung (EU) 2026/2394 der Europäischen Kommission vom 29. Oktober 2026 ist am 6. November 2026 im Amtsblatt erschienen. Sie enthält unverbindliche Mustervertragsklauseln für den Zugang zu Daten und ihre Nutzung sowie unverbindliche Standardvertragsklauseln für Verträge über Cloud Computing. Grundlage ist die Datenverordnung der Europäischen Union, der sogenannte Data Act.",
+   "relevance": "Die Klauseln sind ein Maßstab für Verhandlungen mit Cloud-Anbietern und Lieferanten vernetzter Geräte, etwa zu Wechselrechten und Exit. Einkauf und Drittparteien-Management können damit vor dem 12. Januar 2027 bestehende Verträge abgleichen, ab dann dürfen für den Wechsel des Cloud-Anbieters keine Gebühren mehr verlangt werden.",
+   "source": "umwelt-online (Wiedergabe des Amtsblatts)",
+   "url": "https://www.umwelt-online.de/recht/eu/26d/26d_2394a.htm",
+   "id": "2026-11-22-datenverordnung-musterklauseln-cloud",
+   "topic": "Datenschutz & Datenrecht",
+   "impact": "mittel",
+   "published": "2026-11-06",
+   "tags": [
+    "Datenverordnung",
+    "Cloud-Verträge",
+    "Musterklauseln"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 5.23 – Informationssicherheit bei der Nutzung von Cloud-Diensten",
+    "ISO/IEC 27001 Anhang A 5.20 – Informationssicherheit in Lieferantenvereinbarungen"
+   ],
+   "roles": [
+    "Einkauf & Drittparteien"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "cloud-souveraenitaet",
+   "priority": 4,
+   "primary": false,
+   "added": "2026-11-22T06:06:05Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Titel, Nummer 2026/2394, Datum der Annahme (29. Oktober 2026) und Veröffentlichung im Amtsblatt am 6. November 2026 stimmen. Beide Klauselsätze sind laut Titel unverbindlich. Grundlage ist Artikel 41 der Verordnung (EU) 2023/2854."
+   }
+  },
+  {
    "title": "Kassengesetz: Bundestag berät digitale Belege, Kassenpflicht und Nachschau ab 2028",
    "summary": "Der Bundestag hat am 6. November 2026 in erster Lesung den Regierungsentwurf zur Fortentwicklung von Kassenaufzeichnungen und zur Bekämpfung von Steuerhinterziehung (Drucksache 21/8867) beraten. Ab 2028 soll die Pflicht zur Ausgabe von Papierbelegen entfallen und für Unternehmen ab 100.000 Euro Gesamtumsatz eine elektronische Kasse mit zertifizierter Sicherheitseinrichtung Pflicht werden. Die unangekündigte Kassen-Nachschau soll auch das örtliche Finanzamt am Standort durchführen können, Vertrieb und Einsatz von Manipulationssoftware sollen mit Geldstrafe oder bis zu drei Jahren Freiheitsstrafe bedroht werden.",
    "relevance": "Für Filialhändler verlagern sich Belegbereitstellung, Aufbewahrung und Prüfungen weiter in die Informationstechnik: Digitale Belege brauchen eine sichere, verfügbare Bereitstellung und ein Datenschutzkonzept, und Nachschauen können jede Filiale treffen. Die steuerrelevanten Kontrollen sollten gemeinsam mit der E-Rechnung geplant werden.",
@@ -4383,6 +4525,39 @@
    "check": {
     "verdict": "ok",
     "note": "Datum 1. November, Zeitraum August 2023 bis September 2026 und die fehlenden Angaben sind belegt."
+   }
+  },
+  {
+   "title": "Update: Revolve – Meldung an eine Aufsichtsbehörde nennt 1,5 Millionen Betroffene",
+   "summary": "Der Modehändler Revolve hat laut SecurityWeek der Generalstaatsanwaltschaft von Indiana 1.515.073 Betroffene des Angriffs vom September gemeldet. Betroffen sind Namen, Kontaktdaten sowie Kartennummern mit Ablaufdatum von Kunden, die eine Karte in ihrem Konto gespeichert hatten. Wie die Angreifer eingedrungen sind, hat das Unternehmen bisher nicht erklärt.",
+   "relevance": "Der Fall zeigt, wie stark sich die Zahl der Betroffenen über verschiedene Meldewege verschieben kann. Für Händler mit gespeicherten Kartendaten unterstreicht er, dass Datenminimierung und Tokenisierung den Schaden begrenzen und dass Meldungen nach Datenschutz-Grundverordnung und Kartenstandard einheitlich gesteuert werden sollten.",
+   "source": "SecurityWeek",
+   "url": "https://securityweek.com/revolve-puts-data-breach-victim-count-at-1-5-million",
+   "id": "2026-11-22-update-revolve-1-5-millionen",
+   "topic": "Handel & Branche",
+   "impact": "mittel",
+   "published": "2026-11",
+   "tags": [
+    "Kartendaten",
+    "Onlinehandel",
+    "Meldepflichten"
+   ],
+   "controls": [
+    "PCI DSS Anforderung 3 – Schutz gespeicherter Kontodaten",
+    "DSGVO Art. 33 – Meldung an die Aufsichtsbehörde"
+   ],
+   "roles": [
+    "Datenschutz",
+    "IT-Risiko"
+   ],
+   "countries": [],
+   "dossier": "zahlungsverkehr-pci-dss",
+   "priority": 3,
+   "primary": false,
+   "added": "2026-11-22T06:06:05Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "SecurityWeek blockiert den automatischen Abruf (Fehler 403), die Prüfung lief deshalb über eine Websuche und Malwarebytes. Bestätigt sind 1.515.073 Betroffene laut Meldung an die Generalstaatsanwaltschaft von Indiana, der Angriff im September, die Datenarten und dass der Einstiegsweg unbekannt…"
    }
   },
   {

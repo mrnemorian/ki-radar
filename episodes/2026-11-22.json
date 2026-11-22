@@ -1,0 +1,165 @@
+{
+ "format": "tag",
+ "chapters": [
+  {
+   "title": "Begrüßung",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Guten Morgen, liebe IT-GRC-Kolleginnen und -Kollegen, willkommen beim IT-GRC Radar. Heute ist Sonntag, der zweiundzwanzigste November 2026."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Sonntag, und trotzdem eine Patch-Frist auf dem Zettel. Na gut, der Kaffee ist stark genug."
+    }
+   ]
+  },
+  {
+   "title": "LiteLLM und Axis",
+   "news_id": "2026-11-22-kev-litellm-synology-axis-redcap",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Fangen wir mit genau dieser Frist an. Die amerikanische Cybersicherheitsbehörde hat am achtzehnten November vier aktiv ausgenutzte Lücken gelistet: Synology-Netzwerkspeicher, LiteLLM, Apache Axis in der alten Version 1 und die Forschungssoftware REDCap."
+    },
+    {
+     "speaker": "Florian",
+     "text": "LiteLLM ist ein [en]Gateway[/en], über das Anwendungen verschiedene Sprachmodelle ansprechen. Die Behördenfrist dafür endet am zweiten Dezember 2026, bei den anderen drei ist sie schon am einundzwanzigsten November abgelaufen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und warum sollte das einen Handelskonzern jucken?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Weil solche [en]Gateways[/en] gern in Projekten entstehen, irgendwo zwischen Pilot und Produktion. Ehrlich gesagt: Die Frage ist weniger, ob man patcht, sondern ob überhaupt jemand weiß, dass das Ding läuft."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und Axis?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Da gibt es gar keinen Patch, die Version wird nicht mehr gepflegt. Es bleibt nur die Migration. Das ist eine klassische Altlast in alten Schnittstellen zu Lieferanten, und auf der Ausnahmeliste steht dann gern „temporär“, seit 2014."
+    }
+   ]
+  },
+  {
+   "title": "Lagebericht des Bundesamts",
+   "news_id": "2026-11-22-bsi-lagebericht-angespannt-bis-kritisch",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Passend dazu der Lagebericht des Bundesamts für Sicherheit in der Informationstechnik vom neunzehnten November. Die Einstufung lautet jetzt „angespannt bis kritisch“, im Vorjahr hieß es noch „angespannt“."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Die Zahl, die ich mir merken würde: Zwischen dem Bekanntwerden einer Lücke und ihrer Ausnutzung lagen 2024 noch etwa 61 Tage, im zweiten Quartal 2026 nur noch etwa acht."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Moment, acht Tage? Viele Richtlinien geben für kritische Lücken dreißig Tage vor."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Genau da liegt der Konflikt. Dazu kommen täglich rund 160 neue Schwachstellen, 35 Prozent mehr als im Vorjahr. Die Präsidentin sagt, viele Organisationen überschätzen ihre eigene Sicherheit, und dafür braucht man nicht mal ein Audit."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Was macht man also damit?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Die Patch-Fristen für Systeme mit Internetzugang überprüfen und den Bericht beim nächsten Budgetgespräch mitbringen. Eine amtliche Einstufung wirkt oft besser als jede Präsentation, die man selbst gebaut hat."
+    }
+   ]
+  },
+  {
+   "title": "Update Revolve",
+   "news_id": "2026-11-22-update-revolve-1-5-millionen",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Da gibt es Neues zum Modehändler Revolve. In einer Meldung an eine amerikanische Aufsichtsbehörde stehen jetzt 1.515.073 Betroffene."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Das ist schon eine Hausnummer. Betroffen sind Namen, Kontaktdaten und Kartennummern mit Ablaufdatum, und wie die Angreifer reingekommen sind, ist weiter offen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Was lernen wir daraus?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Erstens: Kartendaten, die man nicht speichert, kann auch niemand stehlen. Zweitens sollten die Meldungen nach Datenschutz-Grundverordnung und nach Kartenstandard aus einer Hand kommen, sonst erzählt jede Behörde eine andere Geschichte."
+    }
+   ]
+  },
+  {
+   "title": "Musterklauseln für Cloud-Verträge",
+   "news_id": "2026-11-22-datenverordnung-musterklauseln-cloud",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Etwas ruhiger, aber nützlich: Seit dem sechsten November stehen im Amtsblatt Musterklauseln der Kommission zur Datenverordnung, darunter Standardvertragsklauseln für Verträge über [en]Cloud Computing[/en]."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Die sind unverbindlich, aber ein guter Maßstab für Verhandlungen, gerade bei Wechsel und Exit. Ab dem zwölften Januar 2027 dürfen für den Wechsel des Cloud-Anbieters ohnehin keine Gebühren mehr verlangt werden."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Also Verträge rausholen und abgleichen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ja, wenn man die aktuelle Fassung findet. Bei manchen Cloud-Verträgen ist das ja schon die eigentliche Prüfung."
+    }
+   ]
+  },
+  {
+   "title": "Black Friday",
+   "news_id": "2026-11-22-black-friday-verdaechtige-domains",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Und dann noch der Black Friday. Sicherheitsforscher sehen Hunderte neu registrierte Domains mit Begriffen wie „Black Friday“, manche ruhen erst und könnten später für [en]Phishing[/en] dienen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Für Händler heißt das: Marke überwachen, [en]Takedowns[/en] vorbereiten und die Kundenkommunikation fertig in der Schublade haben, bevor die Hotline glüht."
+    }
+   ]
+  },
+  {
+   "title": "Auf dem Radar",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Auf dem Radar: die Suche nach Schwachstellen durch Künstliche Intelligenz."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Laut Lagebericht finden Angreifer Lücken mit Künstlicher Intelligenz automatisiert, und als Nächstes erwartet das Amt Angriffe durch autonome KI-Agenten. Das erklärt ziemlich gut die acht Tage von vorhin."
+    }
+   ]
+  },
+  {
+   "title": "Abschied",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Das war das IT-GRC Radar für diesen Sonntag. Alle Quellen findet ihr auf der Webseite."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und falls jemand LiteLLM im Haus findet, von dem keiner wusste: Glückwunsch, ihr habt gerade einen Owner gesucht. Schönen Sonntag."
+    }
+   ]
+  }
+ ]
+}
