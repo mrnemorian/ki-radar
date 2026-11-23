@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T06:06:05Z",
+ "updated": "2026-11-23T06:06:11Z",
  "topics": [
   "IT-Governance & Risiko",
   "Cyber- & IT-Regulierung",
@@ -11,6 +11,18 @@
   "Weitere Themen"
  ],
  "briefings": [
+  {
+   "date": "2026-11-23",
+   "headline": "Kühlsteuerungen bleiben die offene Flanke im Handel: sechs neue Lücken bei Danfoss ohne Patch, dazu eine Bilanz von 16 Vorfällen in Europa in einem Monat.",
+   "points": [
+    "Danfoss-Systemmanager AK-SM800A: sechs Lücken erlauben die Übernahme ohne Anmeldung, auch Version 5.4.0 behebt sie laut Forschern nicht",
+    "Branchenverband DigitalEurope zählt 16 Vorfälle in Europa in einem Monat, nur drei davon öffentlich einem Täter zugeordnet",
+    "JPMorgan Chase: Angreifer erbeuten Marketingdaten bei externen Dienstleistern",
+    "Entwurf zum Quantum Act: Beschaffungen in kritischen Sektoren sollen bereit für Post-Quanten-Kryptografie sein",
+    "Digital Omnibus: 1.762 Änderungsanträge im Europäischen Parlament, keine schnelle Einigung in Sicht"
+   ],
+   "count": 5
+  },
   {
    "date": "2026-11-22",
    "headline": "Patch-Frist für LiteLLM am 2. Dezember, das Bundesamt stuft die Lage erstmals als „angespannt bis kritisch“ ein und Revolve meldet 1,5 Millionen Betroffene",
@@ -354,18 +366,6 @@
     "Prüfung von Agenten: Amerikanische Wirtschaftsprüfer kombinieren Dienstleisterbericht mit Verhaltenstests"
    ],
    "count": 8
-  },
-  {
-   "date": "2026-10-22",
-   "headline": "Kritische Lücken in der Skriptsprache PHP, Rat einig beim Digital Omnibus und erste harmonisierte Norm zur Verordnung über Künstliche Intelligenz",
-   "points": [
-    "PHP2Shell: Zwei kritische Lücken in praktisch allen Versionen der Skriptsprache PHP seit Version 5, sofort patchen und Bestand von Webanwendungen klären",
-    "Update Digital Omnibus: Die Botschafter der Mitgliedstaaten haben am 21. Oktober das Verhandlungsmandat des Rates beschlossen, jetzt folgt der Trilog",
-    "Norm EN 18286 als erste harmonisierte Norm zur Verordnung über Künstliche Intelligenz im Amtsblatt veröffentlicht",
-    "Interne Revision: Verbindliche Themenanforderung zu Organisationsverhalten gilt ab 15. Dezember 2026",
-    "Zertifizierungsstelle eMudhra: Erratbare Schlüssel trotz Prüfberichten, dazu neuer Leitfaden ISO/IEC 27090 zur Sicherheit Künstlicher Intelligenz"
-   ],
-   "count": 6
   }
  ],
  "dossiers": [
@@ -381,18 +381,19 @@
    "title": "Betriebstechnik in Filialen und Logistik",
    "sector": "Handel & Branche",
    "ring": "jetzt handeln",
-   "status": "Die französische Cybersicherheitsbehörde ordnet den Angriff vom 12. Oktober auf rund 700 Supermärkte der den Revolutionsgarden nahestehenden Gruppe Shahid Kaveh zu, Paris hat internationale Haftbefehle beantragt. Die Europäische Union bereitet neue Sanktionen gegen Iran vor, ein Beschluss ist beim Außenministertreffen am 14. Dezember möglich.",
-   "next_step": "Kühl- und Gebäudesteuerungen in Filialen und Lagern vollständig erfassen, direkte Erreichbarkeit aus dem Internet ausschließen, Fernwartungszugänge der Hersteller kontrollieren. Staatsnahe Sabotage als eigenes Szenario ins Risikoregister aufnehmen.",
+   "status": "Forscher haben sechs ungepatchte Lücken im Kühlstellen-Systemmanager Danfoss AK-SM800A veröffentlicht. Sie erlauben eine Übernahme ohne Anmeldung, auch Version 5.4.0 gilt nicht als Korrektur, eine Ausnutzung ist nicht bekannt. Der Verband DigitalEurope zählt zwischen 18. Oktober und 18. November 16 Vorfälle in Europa. Frankreich ordnet die Kühlanlagen-Angriffe einer den Revolutionsgarden…",
+   "next_step": "Alle Kühl- und Gebäudesteuerungen mit Internet- oder Mobilfunkanbindung erfassen und vom offenen Internet trennen. Fernwartung nur über abgesicherte Zugänge erlauben, Sollwerte und Benutzerkonten auf Änderungen prüfen und Verträge mit Wartungsdienstleistern auf Fernzugriff und Meldewege prüfen.…",
    "open_questions": [
-    "Greifen Ausschlüsse der Cyberversicherung, wenn ein Angriff einem Staat zugeschrieben wird?",
-    "Kommen Vorgaben der Europäischen Kommission zur Vorsorge der Supermärkte?",
-    "Waren die Angriffe in den anderen Ländern Anfang November dieselbe Täterschaft?"
+    "Wann liefert Danfoss eine Korrektur für die sechs Lücken?",
+    "Wer ist Owner der Betriebstechnik in den Filialen: Facility Management oder Informationssicherheit?",
+    "Decken bestehende Cyberpolicen verdorbene Ware und Betriebsunterbrechung durch manipulierte Steuerungen?"
    ],
    "controls": [
-    "NIS-2-Richtlinie Art. 21 – Risikomanagementmaßnahmen",
-    "ISO/IEC 27001 Anhang A 8.20 – Netzwerksicherheit"
+    "NIS-2 Art. 21 – Risikomanagementmaßnahmen im Bereich der Cybersicherheit",
+    "ISO/IEC 27001 Anhang A 5.9 – Inventar der Informationen und anderen zugehörigen Werte",
+    "IEC 62443 – Sicherheit industrieller Automatisierungssysteme"
    ],
-   "updated": "2026-11-17"
+   "updated": "2026-11-23"
   },
   {
    "slug": "drittparteien-lieferkette",
@@ -406,18 +407,18 @@
    "title": "Drittparteien- und Lieferkettenrisiko",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Nach Expedia (gestohlener Schlüssel von Qubole, Zugriffsrollen auch nach Vertragsende aktiv) meldet Air Baltic rund 618.000 betroffene Buchungen bei einem externen Dienstleister. Gleichzeitig wurde über Optimizely Schadcode an 178 Organisationen verteilt, ohne dass diese selbst etwas ausgerollt hatten.",
-   "next_step": "Bei Dienstleistern mit Zugriff auf Kundendaten oder Webseiten Schreibrechte, Meldepflichten und das Entziehen von Zugängen nach Vertragsende prüfen und im Notfallplan vorsehen, wie Missbrauchswege rasch gesperrt werden.",
+   "status": "Nach Expedia, Air Baltic und Optimizely meldet JPMorgan Chase den Abfluss von Marketingdaten bei externen Dienstleistern, Visa nennt einen Dienstleister im asiatisch-pazifischen Raum. Laut der Bilanz von DigitalEurope flossen außerdem rund 100 Millionen Euro über einen Zulieferer von einer französischen Bank ab.",
+   "next_step": "Marketing-, Bonusprogramm- und Newsletter-Dienstleister in die Bewertung der Drittparteien aufnehmen. Dabei Datenminimierung, Löschfristen und Meldefristen vertraglich prüfen und ruhende Zugriffsrollen nach Vertragsende entziehen.",
    "open_questions": [
-    "Welche Dienstleister können Inhalte auf Kundenwebseiten ändern, ohne dass eine eigene Freigabe nötig ist?",
-    "Ist das Offboarding von Dienstleistern ein Prozess mit klarer Zuständigkeit?"
+    "Welche Kundendaten liegen bei Dienstleistern, die nicht als kritisch eingestuft sind?",
+    "Wie schnell erfahren wir von einem Vorfall bei einem Unterauftragnehmer?"
    ],
    "controls": [
-    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
+    "NIS-2 Art. 21 – Sicherheit der Lieferkette",
     "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen",
-    "ISO/IEC 27001 Anhang A 5.22 – Überwachung von Lieferantendienstleistungen"
+    "DSGVO Art. 28 – Auftragsverarbeiter"
    ],
-   "updated": "2026-11-20"
+   "updated": "2026-11-23"
   },
   {
    "slug": "steuerliche-digitalpflichten",
@@ -711,18 +712,19 @@
     }
    ],
    "title": "Post-Quanten-Kryptografie",
-   "sector": "Weitere Themen",
+   "sector": "Standards & Zertifizierung",
    "ring": "vorbereiten",
-   "status": "Bund und Bundesamt für Sicherheit in der Informationstechnik verlangen in ihrer Leitlinie vom 12. Oktober 2026 die Umstellung von Hochrisiko-Anwendungen bis spätestens Ende 2030. Die Gesamtmigration soll bis 2035 weitgehend abgeschlossen sein. Gleichzeitig zeigt die Gruppe Lazarus, dass auch Angreifer das Verfahren ML-KEM bereits nutzen, um Schadsoftware zu verbergen.",
-   "next_step": "Das Kryptografie-Inventar aufbauen und bei Sicherheitswerkzeugen prüfen, ob sie Verkehr mit Post-Quanten-Verfahren erkennen und auswerten können.",
+   "status": "Bund und Bundesamt für Sicherheit in der Informationstechnik verlangen die Umstellung von Hochrisiko-Anwendungen bis spätestens Ende 2030, die Gesamtmigration soll bis 2035 weitgehend abgeschlossen sein. Ein Entwurf zum Quantum Act der Europäischen Union sieht vor, dass Beschaffungen in kritischen Sektoren sechs Monate nach Inkrafttreten in der Regel bereit für Post-Quanten-Kryptografie sein…",
+   "next_step": "Kryptografie-Inventar aufbauen beziehungsweise vervollständigen und Krypto-Agilität in neue Ausschreibungen und Verträge mit langer Laufzeit aufnehmen. Den offiziellen Vorschlag zum Quantum Act und die Liste der erfassten Sektoren beobachten.",
    "open_questions": [
-    "Unterstützen eingesetzte Werkzeuge zur Netzwerkprüfung Post-Quanten-Verfahren?",
-    "Welche Anwendungen gelten als Hochrisiko-Anwendungen im Sinne der Leitlinie?"
+    "Wird der Lebensmittelhandel zu den kritischen Sektoren des Quantum Act gehören?",
+    "Welche Anbieter von Zahlungs- und Kassensystemen haben einen belastbaren Migrationsplan?"
    ],
    "controls": [
-    "ISO/IEC 27001 Anhang A 8.24 – Einsatz von Kryptografie"
+    "ISO/IEC 27001 Anhang A 8.24 – Verwendung von Kryptografie",
+    "NIS-2 Art. 21 Abs. 2 lit. h – Kryptografie und Verschlüsselung"
    ],
-   "updated": "2026-10-24"
+   "updated": "2026-11-23"
   },
   {
    "slug": "pruefung-it-ki",
@@ -760,17 +762,17 @@
    "title": "Datenschutzreform und Digital Omnibus",
    "sector": "Datenschutz & Datenrecht",
    "ring": "beobachten",
-   "status": "Der Rat hat am 21. Oktober 2026 sein Mandat beschlossen: Er streicht Browsersignale für Cookie-Präferenzen und den Widerspruch gegen das Training Künstlicher Intelligenz und erleichtert die Abweisung unbegründeter Auskunftsanfragen. Das Europäische Parlament will seine Position bis Februar festlegen, danach beginnt der Trilog.",
-   "next_step": "Position des Parlaments im Februar abwarten und bis dahin Auswirkungen auf Einwilligungsmanagement, Auskunftsprozesse und die Meldung von Datenschutzverletzungen vorbereitend bewerten.",
+   "status": "Der Rat hat am 21. Oktober 2026 sein Mandat beschlossen, unter anderem mit Erleichterungen bei unbegründeten Auskunftsanfragen. Im Europäischen Parlament liegen neben 78 Änderungen im Berichtsentwurf 1.762 weitere Änderungsanträge vor, die Fraktionen sind teils uneinig. Eine Position ist bis Februar geplant.",
+   "next_step": "Keine Prozesse auf erwartete Erleichterungen umstellen. Die Abstimmungen im Innenausschuss und im Industrieausschuss sowie den Beginn des Trilogs beobachten.",
    "open_questions": [
-    "Kommt die Meldung von Datenschutzverletzungen nur bei hohem Risiko innerhalb von 96 Stunden in den Endtext?",
-    "Wie wird das Training Künstlicher Intelligenz mit Kundendaten am Ende geregelt?"
+    "Schafft das Parlament seine Position bis Februar?",
+    "Bleibt die einheitliche Meldestelle für Cyber- und Datenschutzvorfälle im Endtext?"
    ],
    "controls": [
     "DSGVO Art. 15 – Auskunftsrecht der betroffenen Person",
     "DSGVO Art. 33 – Meldung von Verletzungen des Schutzes personenbezogener Daten"
    ],
-   "updated": "2026-10-30"
+   "updated": "2026-11-23"
   },
   {
    "slug": "digital-fairness-act",
@@ -1211,10 +1213,10 @@
   },
   {
    "theme": "Neue Prüfungsstandards für Prüfungsnachweise",
-   "why": "Die Konsultation des internationalen Standardsetzers für Prüfung zu den Standards ISA 330, 500 und 520 endet am 15. Dezember 2026. Die neue Definition von Prüfungsnachweisen für das digitale Umfeld wird verändern, wie Abschlussprüfer Daten und Systeme der Unternehmen nutzen.",
-   "count": 10,
+   "why": "Der internationale Standardsetzer für die Abschlussprüfung konsultiert bis 15. Dezember 2026 neue Regeln zu Prüfungsnachweisen, mit einem ersten Anhang zum Einsatz technischer Werkzeuge. Das wird mitbestimmen, welche Daten und Systemnachweise Abschlussprüfer künftig anfordern.",
+   "count": 11,
    "first_seen": "2026-09-30",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-23",
    "evidence": [
     "https://www.iaasb.org/publications/proposed-revisions-audit-evidence-risk-response-isa-330-isa-500-isa-520",
     "https://acts.co.za/news/blog/2026/08/iaasb-proposed-revisions-core-auditing-standards",
@@ -1225,16 +1227,16 @@
   },
   {
    "theme": "Schwachstellensuche durch Künstliche Intelligenz",
-   "why": "Laut Lagebericht des Bundesamts finden Agenten Lücken und liefern passende Exploits gleich mit, das Bundesamt sieht darin einen Haupttreiber der neuen Einstufung. Damit schrumpft die Zeit für Patches weiter.",
-   "count": 9,
+   "why": "Die Agentur der Europäischen Union für Cybersicherheit beschreibt, wie Künstliche Intelligenz Angriffe industrialisiert und die Zeit bis zur Ausnutzung verkürzt. Das setzt feste Patch-Zyklen und Ausnahmeregeln unter Druck.",
+   "count": 10,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-22",
+   "last_seen": "2026-11-23",
    "evidence": [
+    "https://euronews.com/2026/11/10/ai-is-industrialising-cyberattacks-and-shrinking-the-time-for-exploitation-says-eu-cyberse",
     "https://www.channelpartner.de/article/4250665/bsi-stuft-sicherheitslage-auf-angespannt-bis-kritisch-hoch.html",
     "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Cyber-Sicherheitslage/Lageberichte/Monatsbericht_Lage-Cybernation/Lage_Angriffsflaeche/Lage-Angriffsflaeche.html",
     "https://cyberinsider.com/microsoft-november-2026-patch-tuesday-outlook-zero-day/",
-    "https://thehackernews.com/2026/11/openai-ai-pipeline-generates-948-linux.html",
-    "https://newcivilengineer.com/latest/highly-likely-ai-will-be-used-in-ransomware-attack-on-uk-critical-infrastructure-03-11-2026"
+    "https://thehackernews.com/2026/11/openai-ai-pipeline-generates-948-linux.html"
    ]
   },
   {
@@ -1333,6 +1335,18 @@
    ]
   },
   {
+   "theme": "Quantum Act der Europäischen Union",
+   "why": "Ein Entwurf koppelt Beschaffungen in kritischen Sektoren an die Bereitschaft für Post-Quanten-Kryptografie und bevorzugt europäische Anbieter. Das könnte Anforderungen an Lieferanten schneller verschärfen als die bisherigen Leitlinien.",
+   "count": 4,
+   "first_seen": "2026-11-08",
+   "last_seen": "2026-11-23",
+   "evidence": [
+    "https://thequantuminsider.com/2026/11/10/draft-eu-quantum-act-would-favor-european-suppliers-set-computing-and-security-targets/",
+    "https://www.mlex.com/mlex/articles/2543650",
+    "https://www.mlex.com/mlex/data-privacy-security/articles/2531216"
+   ]
+  },
+  {
    "theme": "Cyberpolicen schließen Künstliche Intelligenz aus",
    "why": "Cyberversicherer prüfen ihre Risiken aus Künstlicher Intelligenz neu, vor allem über die Wortlaute ihrer Policen. Makler halten einen marktweiten Ausschluss für denkbar, ähnlich wie beim Kriegsausschluss. Das kann Deckungen bei Verlängerungen schmälern.",
    "count": 4,
@@ -1352,17 +1366,6 @@
    "last_seen": "2026-11-01",
    "evidence": [
     "https://www.iaasb.org/news-events/2026-10/iaasb-enews-october-2026"
-   ]
-  },
-  {
-   "theme": "Quantum Act der Europäischen Union",
-   "why": "Laut einem Fachdienst will die Kommission den Entwurf am 18. November vorlegen. Anbieter, die von außerhalb der Europäischen Union kontrolliert werden, könnten von öffentlichen Aufträgen ausgeschlossen werden. Zusammen mit den Fristen zur Post-Quanten-Kryptografie wird Quantentechnik so zum Thema für Lieferanten und Souveränität.",
-   "count": 3,
-   "first_seen": "2026-11-08",
-   "last_seen": "2026-11-17",
-   "evidence": [
-    "https://www.mlex.com/mlex/articles/2543650",
-    "https://www.mlex.com/mlex/data-privacy-security/articles/2531216"
    ]
   },
   {
@@ -1552,6 +1555,41 @@
  ],
  "news": [
   {
+   "title": "Ein Monat, 16 Vorfälle: Branchenverband zieht Bilanz hybrider Angriffe in Europa",
+   "summary": "Der Branchenverband DigitalEurope hat zwischen dem 18. Oktober und dem 18. November 16 Vorfälle in Europa erfasst, elf Cyberangriffe und fünf physische Angriffe. Dazu gehören die Angriffe auf Supermarkt-Kühlanlagen, ein Energieunternehmen in Norwegen, eine geschlossene Notaufnahme in Deutschland und rund 100 Millionen Euro, die über einen Zulieferer von einer französischen Bank abgeflossen sind. Nur drei Vorfälle sind öffentlich einem Täter zugeordnet. Der Verband fordert, mindestens 25 Prozent des nächsten Haushalts der Europäischen Union für Abwehr und Wiederherstellung einzusetzen.",
+   "relevance": "Der Bericht zitiert eine Beobachtung, die für Handelskonzerne wichtig ist: Steuerungen in den Filialen werden oft dem Facility Management überlassen, statt sie als Teil der Pflichten nach der NIS-2-Richtlinie (Richtlinie über Netz- und Informationssicherheit) zu behandeln. Die Abgrenzung zwischen Haustechnik und Informationssicherheit gehört deshalb ins Risikoregister und in die Rollenbeschreibungen.",
+   "source": "Euronews",
+   "url": "https://www.euronews.com/2026/11/22/hot-freezers-lost-gps-and-fake-bombs-europes-month-of-cyberattacks",
+   "id": "2026-11-23-digitaleurope-16-vorfaelle",
+   "topic": "Weitere Themen",
+   "impact": "mittel",
+   "published": "2026-11-22",
+   "tags": [
+    "Hybride Bedrohungen",
+    "Resilienz",
+    "Lagebild"
+   ],
+   "controls": [
+    "NIS-2 Art. 20 – Governance und Verantwortung der Leitungsorgane",
+    "ISO/IEC 27001 Anhang A 5.2 – Rollen und Verantwortlichkeiten für Informationssicherheit"
+   ],
+   "roles": [
+    "Management",
+    "IT-Risiko"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "betriebstechnik-filialen-logistik",
+   "priority": 2,
+   "primary": false,
+   "added": "2026-11-23T06:06:11Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum 22. November 2026 stimmt. Der Zeitraum 18. Oktober bis 18. November, 16 Vorfälle (elf Cyberangriffe, fünf physische), die genannten Beispiele, die drei öffentlichen Zuordnungen und die Forderung nach mindestens 25 Prozent des nächsten Haushalts sind belegt."
+   }
+  },
+  {
    "title": "Update: Apache Roller und drei weitere Lücken – Behördenfrist schon am 23. November",
    "summary": "Die amerikanische Behörde für Cybersicherheit und Infrastruktursicherheit hat am 20. November vier aktiv ausgenutzte Lücken in ihren Katalog aufgenommen: VMware vCenter (CVE-2026-123890), Apache Roller (CVE-2026-129448), Cisco Expressway (CVE-2026-76466) und SAP NetWeaver 7.50 (CVE-2025-42884). Bundesbehörden müssen bis 23. November patchen; für SAP NetWeaver nennt der Bericht den SAP-Hinweis 3660969, für Roller Version 6.1.6.",
    "relevance": "SAP NetWeaver und vCenter sind in großen Handelskonzernen typische Kernsysteme; die Dreitagesfrist zeigt, wie dringend die Behörde die Lage einschätzt. Patch-Status und Ausnahmen sollten vor Montag belegt sein, auch für Systeme bei Dienstleistern.",
@@ -1660,6 +1698,40 @@
    "check": {
     "verdict": "ok",
     "note": "Artikel vom 20. November 2026. Bestätigung am Donnerstag (19. November), Entdeckung am 22. Oktober, vorsorglich abgeschaltete Anwendungen, kein festgestellter Datenabfluss beim Personal insgesamt, keine Lösegeldforderung und ARTEX laut Politico sind alle belegt."
+   }
+  },
+  {
+   "title": "JPMorgan Chase: Angreifer erbeuten Marketingdaten bei externen Dienstleistern",
+   "summary": "JPMorgan Chase hat am 19. November gemeldet, dass Angreifer bei externen Dienstleistern Marketingdaten erbeutet haben. Dabei geht es vor allem um Namen und E-Mail-Adressen einiger Tausend Kunden, teils auch um Telefonnummern. Visa und Mastercard haben den Vorfall bestätigt. Kartendaten oder besonders sensible Daten waren laut Bank nicht betroffen.",
+   "relevance": "Daten bei Marketing- und Bonusprogramm-Dienstleistern taugen gut für glaubwürdiges Phishing, auch ohne Kartendaten. Für Händler mit Kundenkarten, Newslettern und Kampagnen-Dienstleistern heißt das: Diese Anbieter gehören mit Datenminimierung, Löschfristen und Meldepflichten in die Bewertung der Drittparteien.",
+   "source": "The Boston Globe",
+   "url": "https://www.bostonglobe.com/2026/11/19/business/chase-cyberattack-leaks-emails-phone-numbers/",
+   "id": "2026-11-23-chase-dienstleister-marketingdaten",
+   "topic": "IT-Governance & Risiko",
+   "impact": "mittel",
+   "published": "2026-11-19",
+   "tags": [
+    "Drittparteien",
+    "Marketingdaten",
+    "Bonusprogramm"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen",
+    "DSGVO Art. 28 – Auftragsverarbeiter",
+    "DSGVO Art. 5 Abs. 1 lit. c – Datenminimierung"
+   ],
+   "roles": [
+    "Einkauf & Drittparteien",
+    "Datenschutz"
+   ],
+   "countries": [],
+   "dossier": "drittparteien-lieferkette",
+   "priority": 3,
+   "primary": false,
+   "added": "2026-11-23T06:06:11Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Die Quelle sagt nur, dass Visa und Mastercard den Vorfall bestätigt haben. Ein Dienstleister im asiatisch-pazifischen Raum und ein Bonusprogramm kommen in der Quelle nicht vor."
    }
   },
   {
@@ -2140,6 +2212,75 @@
    "check": {
     "verdict": "abweichung",
     "note": "Das Datum und die Kernaussage stimmen: Kallas kündigt Sanktionen an, Iran bestreitet die Verantwortung. Die Quelle nennt aber keine Gruppe Shahid Kaveh, keine Zuordnung durch die französische Cybersicherheitsbehörde, keine Haftbefehle der Pariser Staatsanwaltschaft und kein Außenministertreffen am…"
+   }
+  },
+  {
+   "title": "Update: Kühlsteuerungen – sechs neue Lücken in Danfoss AK-SM800A, noch kein Patch",
+   "summary": "Forscher der niederländischen Firma Midnight Blue haben sechs Lücken im Kühlstellen-Systemmanager Danfoss AK-SM800A gefunden. Über sie lässt sich ein Gerät ohne Anmeldung aus der Ferne übernehmen. Betroffen sind alle Versionen bis 5.3.2. Laut den Forschern behebt auch die neue Version 5.4.0 die Lücken nicht. Das Bundesamt für Sicherheit in der Informationstechnik hatte 5.4.0 zunächst als nicht betroffen bezeichnet, das aber noch am selben Tag korrigiert. Eine Ausnutzung ist bisher nicht bekannt.",
+   "relevance": "Neu gegenüber dem bisherigen Stand: Diesmal geht es um ungepatchte Lücken in aktueller Firmware, nicht mehr nur um Werkspasswörter und Altgeräte. Die Behörden in Belgien, Irland und Deutschland verlangen, die Verwaltungsoberflächen vom Internet zu trennen, auch wenn sie über Mobilfunkmodems angebunden sind, und Fernwartung nur über abgesicherte Zugänge zu erlauben. Firmware-Update und neues Passwort reichen allein nicht.",
+   "source": "The Hacker News",
+   "url": "https://thehackernews.com/2026/11/six-unpatched-danfoss-refrigeration.html",
+   "id": "2026-11-23-danfoss-sechs-luecken",
+   "topic": "Handel & Branche",
+   "impact": "hoch",
+   "published": "2026-11-16",
+   "tags": [
+    "Betriebstechnik",
+    "Kühlanlagen",
+    "Danfoss"
+   ],
+   "controls": [
+    "NIS-2 Art. 21 – Risikomanagementmaßnahmen im Bereich der Cybersicherheit",
+    "ISO/IEC 27001 Anhang A 5.9 – Inventar der Informationen und anderen zugehörigen Werte",
+    "ISO/IEC 27001 Anhang A 8.20 – Netzwerksicherheit"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Einkauf & Drittparteien"
+   ],
+   "countries": [
+    "EU",
+    "DE",
+    "AT"
+   ],
+   "dossier": "betriebstechnik-filialen-logistik",
+   "priority": 1,
+   "primary": false,
+   "added": "2026-11-23T06:06:11Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum 16. November 2026 stimmt. Midnight Blue (Niederlande), sechs Lücken, alle Versionen bis 5.3.2 betroffen, 5.4.0 behebt sie laut Forschern nicht, das Bundesamt hat seine Aussage am selben Tag korrigiert und es ist keine Ausnutzung bekannt: alles belegt."
+   }
+  },
+  {
+   "title": "Update: Digital Omnibus – 1.762 Änderungsanträge im Europäischen Parlament",
+   "summary": "Laut der Bürgerrechtsorganisation European Digital Rights haben Abgeordnete zum Digital Omnibus für Datenrecht 1.762 Änderungsanträge eingereicht. Hinzu kommen die 78 Änderungen im gemeinsamen Berichtsentwurf von Innenausschuss und Industrieausschuss. Die Organisation sieht in vielen Anträgen eine weitere Schwächung der Datenschutz-Grundverordnung.",
+   "relevance": "Neu gegenüber dem bisherigen Stand: Die Zahl der Anträge macht eine zügige Positionierung des Parlaments bis Februar unwahrscheinlicher. Die Datenschutz-Grundverordnung gilt deshalb vorerst unverändert. Prozesse sollten nicht auf Erleichterungen umgebaut werden, die erst noch durch den Trilog müssen.",
+   "source": "European Digital Rights",
+   "url": "https://edri.org/?p=63830",
+   "id": "2026-11-23-omnibus-aenderungsantraege",
+   "topic": "Datenschutz & Datenrecht",
+   "impact": "info",
+   "published": "2026-11-16",
+   "tags": [
+    "Digital Omnibus",
+    "Gesetzgebung"
+   ],
+   "controls": [],
+   "roles": [
+    "Datenschutz",
+    "Management"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "dsgvo-reform-digital-omnibus",
+   "priority": 5,
+   "primary": false,
+   "added": "2026-11-23T06:06:11Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Datum und Zahlen (1.762 plus 78, zusammen 1.840) stimmen. Dass der Berichtsentwurf wegen uneiniger Fraktionen nicht alle Fragen abdeckt, steht nicht in der Quelle. Sie nennt nur Uneinigkeit der Abgeordneten über die Wirkung von Datenschutzsignalen."
    }
   },
   {
@@ -2763,6 +2904,41 @@
    "check": {
     "verdict": "ok",
     "note": "Datum 11. November 2026 und die Themen stehen in der Meldung der Kommission. Die Vereinfachungsrichtlinie und die Überarbeitung der Verordnung über die Zusammenarbeit der Verbraucherschutzbehörden stehen auf der verlinkten Seite der Kommission zum Digital Fairness Act. Die Bußgelder bis 6 Prozent…"
+   }
+  },
+  {
+   "title": "Entwurf zum Quantum Act: Beschaffung in kritischen Sektoren soll quantensicher werden",
+   "summary": "Laut einem Entwurf, über den The Quantum Insider berichtet, will die Europäische Kommission mit dem Quantum Act auch die öffentliche Beschaffung nutzen, um den Umstieg auf Post-Quanten-Kryptografie zu beschleunigen. Bei Beschaffungen in benannten kritischen Sektoren, die sechs Monate nach Inkrafttreten beginnen, sollen Infrastruktur, Geräte und Systeme in der Regel bereit für Post-Quanten-Kryptografie sein. Strategische Projekte sollen vorrangig an Anbieter gehen, die von Unternehmen aus der Europäischen Union kontrolliert werden. Ein offizieller Text liegt noch nicht vor.",
+   "relevance": "Noch ist nichts beschlossen, und welche Sektoren erfasst werden, ist offen. Der Entwurf zeigt aber, dass Anforderungen an quantensichere Verfahren über Ausschreibungen in die Lieferketten wandern. Bei Verträgen mit langer Laufzeit lohnt es sich schon jetzt, Krypto-Agilität und einen Migrationspfad zu verlangen.",
+   "source": "The Quantum Insider",
+   "url": "https://thequantuminsider.com/2026/11/10/draft-eu-quantum-act-would-favor-european-suppliers-set-computing-and-security-targets/",
+   "id": "2026-11-23-quantum-act-entwurf",
+   "topic": "Cyber- & IT-Regulierung",
+   "impact": "mittel",
+   "published": "2026-11-10",
+   "tags": [
+    "Post-Quanten-Kryptografie",
+    "Beschaffung",
+    "Souveränität"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 8.24 – Verwendung von Kryptografie",
+    "NIS-2 Art. 21 Abs. 2 lit. h – Kryptografie und Verschlüsselung"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Einkauf & Drittparteien"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "post-quanten-kryptografie",
+   "priority": 4,
+   "primary": false,
+   "added": "2026-11-23T06:06:11Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum 10. November 2026 stimmt. Die Beschaffungsregel für benannte kritische Sektoren (sechs Monate nach Inkrafttreten, in der Regel bereit für Post-Quanten-Kryptografie), der Vorrang für Unternehmen unter Kontrolle aus der Europäischen Union und die Grundlage auf einem Entwurf sind belegt."
    }
   },
   {

@@ -1,0 +1,215 @@
+{
+ "format": "tag",
+ "chapters": [
+  {
+   "title": "Begrüßung",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Guten Morgen, liebe IT-GRC-Kolleginnen und -Kollegen, willkommen beim IT-GRC Radar. Heute ist Montag, der dreiundzwanzigste November 2026."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Montag, und die erste Behördenfrist läuft schon heute ab. Der Kaffee muss also stark sein."
+    }
+   ]
+  },
+  {
+   "title": "Die Woche",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Dann gleich zur Woche. Heute endet die behördliche [en]Patch[/en]-Frist für vCenter, SAP NetWeaver, Cisco Expressway und Apache Roller."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und morgen, am vierundzwanzigsten November, folgen gleich zwei: die ausgenutzte Outlook-Lücke und die Chrome-Lücke."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Was ist für dich die Frist der Woche?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Outlook. Die Lücke gibt Anmelde-[en]Hashes[/en] preis, und Outlook läuft praktisch auf jedem Arbeitsplatz. Wer noch Rechner ohne das November-Update hat, sollte das heute klären und nicht erst in der nächsten Excel-Runde."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und gleich danach: Am ersten Dezember kommt Puppet, am zweiten Dezember LiteLLM."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Gefühlt ist der Dezember dieses Jahr schon im November angekommen."
+    }
+   ]
+  },
+  {
+   "title": "Danfoss ohne Patch",
+   "news_id": "2026-11-23-danfoss-sechs-luecken",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Da gibt es Neues zu den Kühlsteuerungen. Forscher der niederländischen Firma Midnight Blue haben sechs Lücken im Danfoss-Systemmanager AK-SM800A gefunden. Darüber lässt sich ein Gerät ohne Anmeldung aus der Ferne übernehmen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und das Unangenehme: Es gibt noch keinen [en]Patch[/en]. Betroffen sind alle Versionen bis 5.3.2, und laut den Forschern behebt auch die neue Version 5.4.0 die Lücken nicht."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Moment, hatte das Bundesamt für Sicherheit in der Informationstechnik nicht zuerst gesagt, 5.4.0 sei nicht betroffen?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ja, und das noch am selben Tag korrigiert: Man könne nicht ausschließen, dass auch 5.4.0 betroffen ist. Eine Ausnutzung dieser sechs Lücken ist bisher nicht bekannt. Aber ohne [en]Secure Boot[/en] könnte sich Schadcode sogar über einen Werksreset hinweg halten."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Was raten die Behörden?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Die Verwaltungsoberflächen raus aus dem Internet, auch wenn sie nur über Mobilfunkmodems angebunden sind. Fernwartung nur über ein [en]Virtual Private Network[/en], und Sollwerte, Abtaupläne und Benutzerkonten auf Manipulationen prüfen. Belgien und Irland sagen ausdrücklich: [en]Firmware[/en]-Update und neues Passwort reichen allein nicht."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Also wieder die Frage, wer eigentlich Owner ist. Diesmal mit Tiefkühlpizza."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und ehrlich gesagt ist das die teuerste Variante dieser Frage. Jede Steuerung braucht einen Owner im Inventar, nicht nur einen Namen im Wartungsvertrag."
+    }
+   ]
+  },
+  {
+   "title": "16 Vorfälle in einem Monat",
+   "news_id": "2026-11-23-digitaleurope-16-vorfaelle",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Passend dazu eine Bilanz. Der Branchenverband DigitalEurope zählt zwischen dem achtzehnten Oktober und dem achtzehnten November 16 Vorfälle in Europa, elf davon Cyberangriffe, fünf physische Angriffe."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Darunter die Kühlanlagen, ein Energieunternehmen in Norwegen, eine geschlossene Notaufnahme in Deutschland und rund 100 Millionen Euro, die über einen Zulieferer von einer französischen Bank abgeflossen sind. Nur drei der 16 sind öffentlich einem Täter zugeordnet."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Was nimmst du daraus mit?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Einen Satz, den ein Sicherheitsanbieter in dem Artikel sagt: Organisationen überlassen solche Steuerungen oft dem [en]Facility Management[/en], statt sie als Teil ihrer Pflichten nach der NIS-2-Richtlinie, also der Richtlinie über Netz- und Informationssicherheit, zu behandeln. Genau diese Lücke zwischen Haustechnik und Informationssicherheit gehört ins Risikoregister."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und politisch?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Der Verband will mindestens 25 Prozent des nächsten Haushalts der Europäischen Union für Abwehr und Wiederherstellung. Die eigentliche Antwort entsteht gerade in der Überarbeitung des [en]Cybersecurity Act[/en]."
+    }
+   ]
+  },
+  {
+   "title": "Chase und die Dienstleister",
+   "news_id": "2026-11-23-chase-dienstleister-marketingdaten",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Zu den Dienstleistern. JPMorgan Chase meldet, dass Angreifer bei externen Dienstleistern Marketingdaten erbeutet haben, vor allem Namen und E-Mail-Adressen einiger Tausend Kunden."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Visa und Mastercard haben den Vorfall bestätigt. Kartendaten waren laut Bank nicht betroffen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Klingt erst mal harmlos."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Bis die erste gut gemachte [en]Phishing[/en]-Mail mit echtem Namen und echter Bank im Absender kommt. Für Händler mit Kundenkarten heißt das: Marketing-Dienstleister gehören genauso in die Bewertung der Drittparteien wie das Rechenzentrum."
+    }
+   ]
+  },
+  {
+   "title": "Quantum Act",
+   "news_id": "2026-11-23-quantum-act-entwurf",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Ein Blick nach vorn. Laut einem Entwurf, über den The Quantum Insider berichtet, will die Europäische Kommission mit dem Quantum Act auch die Beschaffung steuern."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Bei Beschaffungen in kritischen Sektoren, die sechs Monate nach Inkrafttreten beginnen, sollen Systeme in der Regel bereit für Post-Quanten-Kryptografie sein. Wichtig: Das ist ein Entwurf, beschlossen ist noch nichts."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Betrifft das den Lebensmittelhandel?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Das hängt davon ab, welche Sektoren am Ende benannt werden. Aber es passt zur Leitlinie des Bundesamts, Hochrisiko-Anwendungen bis Ende 2030 umzustellen. Wer heute Verträge mit langer Laufzeit schließt, sollte Krypto-Agilität schon in die Ausschreibung schreiben."
+    }
+   ]
+  },
+  {
+   "title": "Digital Omnibus",
+   "news_id": "2026-11-23-omnibus-aenderungsantraege",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Und kurz zum [en]Digital Omnibus[/en]: Da gibt es Neues aus dem Parlament."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Laut der Bürgerrechtsorganisation European Digital Rights liegen 1.762 Änderungsanträge vor, zusätzlich zu den 78 Änderungen im Berichtsentwurf."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Also kein schneller Durchmarsch."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Nein. Die Datenschutz-Grundverordnung gilt, wie sie ist. Niemand sollte Prozesse auf Erleichterungen umbauen, die erst noch durch den Trilog müssen."
+    }
+   ]
+  },
+  {
+   "title": "Auf dem Radar",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Was steht bei dir auf dem Radar?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Die neuen Prüfungsstandards für Prüfungsnachweise. Der internationale Standardsetzer für die Abschlussprüfung konsultiert bis zum fünfzehnten Dezember, unter anderem zum Einsatz technischer Werkzeuge. Das wird beeinflussen, welche Nachweise Prüfer künftig aus unseren Systemen ziehen wollen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Also lieber jetzt mit den Prüfern reden als mitten in der [en]Audit[/en]-Saison."
+    }
+   ]
+  },
+  {
+   "title": "Abschied",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Das war das IT-GRC Radar zum Wochenstart. Alle Quellen findet ihr wie immer auf der Webseite."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und denkt an Outlook. Bis morgen."
+    }
+   ]
+  }
+ ]
+}
