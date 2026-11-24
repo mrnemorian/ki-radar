@@ -1,0 +1,171 @@
+{
+ "format": "tag",
+ "chapters": [
+  {
+   "title": "Begrüßung",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Guten Morgen, liebe IT-GRC-Kolleginnen und -Kollegen, und willkommen beim IT-GRC Radar. Heute ist Dienstag, der vierundzwanzigste November 2026."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Drei Tage vor dem [en]Black Friday[/en]. Man merkt es an den Meldungen, ehrlich gesagt."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Dann fangen wir mit dem an, was eine Frist hat."
+    }
+   ]
+  },
+  {
+   "title": "N-able und MONAI Label",
+   "news_id": "2026-11-24-n-able-mail-assure-monai-frist",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Die amerikanische Cybersicherheitsbehörde hat am Montag zwei Lücken in ihren Katalog aktiv ausgenutzter Schwachstellen aufgenommen. Eine steckt im E-Mail-Filterdienst Mail Assure und SpamExperts von N-able, die andere in MONAI Label, einem Werkzeug zum Beschriften medizinischer Bilddaten für Künstliche Intelligenz. Die Frist für die Bundesbehörden dort ist Donnerstag, der sechsundzwanzigste November."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Drei Tage. Das ist knapper als jeder Freigabeprozess, den ich kenne."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und bei N-able kommt noch etwas dazu, oder?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ja. N-able hat bestätigt, dass jemand auf einen Server seiner gehosteten [en]Cloud[/en] für diese Filterdienste zugegriffen hat. Hinweise auf abgeflossene Kundendaten gibt es laut Bericht nicht, und einen Zusammenhang mit der Lücke hat N-able nicht hergestellt."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Was heißt das für einen großen Handelskonzern?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Gehostete Sicherheitsdienste tauchen in der eigenen [en]Patch[/en]-Liste oft gar nicht auf, weil ja der Dienstleister patcht. Also fragen: Wo nutzen wir oder unsere Dienstleister so etwas, und wer bestätigt uns schriftlich, dass die korrigierte Version läuft?"
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Also wieder die Frage, wer eigentlich [en]Owner[/en] ist."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Die Frage aller Fragen. Und bei MONAI Label ist die Anmeldung standardmäßig abgeschaltet. Wer Werkzeuge für Künstliche Intelligenz in Fachbereichen selbst laufen lässt, sollte mal einen Blick ins Inventar werfen."
+    }
+   ]
+  },
+  {
+   "title": "Cyberangriff auf Hugendubel",
+   "news_id": "2026-11-24-hugendubel-cyberangriff",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Zweites Thema, ganz nah an unserer Branche. Der Buchhändler Hugendubel war in der Nacht zum neunzehnten November Ziel eines Cyberangriffs. Onlineshop, Servicecenter und Downloads sind seitdem weg, und auch die Tolino-[en]Cloud[/en] steht für Kunden von Hugendubel und eBook.de still."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und das ausgerechnet in der umsatzstärksten Woche im Onlinehandel. Schlechter kann man den Zeitpunkt kaum erwischen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Interessant fand ich, dass Thalia nicht betroffen ist."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Genau, weil die anderen Händler im Tolino-Verbund eigene Anmeldeserver betreiben. Das ist für mich die eigentliche Lehre: Wenn sich mehrere Marken eine Plattform teilen, entscheidet die Trennung bei Anmeldung und Identitäten, wie weit ein Angriff durchschlägt. Personenbezogene Daten sind laut Hugendubel nach aktuellem Stand nicht betroffen, die Wiederherstellung kann aber noch Tage dauern."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und was folgt daraus für die Notfallplanung?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Prüfen, ob die Wiederanlaufzeiten für den Shop zur Spitzenlast passen. Und nicht nur zu einem ruhigen Dienstagvormittag im Februar."
+    }
+   ]
+  },
+  {
+   "title": "GL.iNet und Hersteller-Clouds",
+   "news_id": "2026-11-24-gl-inet-cloud-fernverwaltung",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Beim Thema Fernwartung gibt es wieder einen Fall. Beim Netzwerkhersteller GL.iNet hat ein Dritter eine Lücke in der [en]Cloud[/en]-Fernverwaltung genutzt, um Schadsoftware auf Router und Geräte zur Fernsteuerung von Rechnern zu bringen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Das erinnert sehr an die Kühlsteuerungen, über die wir seit Wochen sprechen. Der Hersteller hat seine [en]Cloud[/en] abgesichert, aber Geräte, die schon infiziert sind, bleiben es, bis jemand die neue [en]Firmware[/en] einspielt oder sie zurücksetzt."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Also ein [en]Patch[/en], der nicht aufräumt."
+    },
+    {
+     "speaker": "Florian",
+     "text": "So ist es. Kleine Netzwerkgeräte in Außenstellen, Lagern oder bei Dienstleistern gehören deshalb ins Inventar, zusammen mit der Frage, ob sie an einer Hersteller-[en]Cloud[/en] hängen. Und im Vertrag sollte stehen, wer nach so einem Vorfall die Bereinigung nachweist."
+    }
+   ]
+  },
+  {
+   "title": "Exportkontrolle für Rechenchips",
+   "news_id": "2026-11-24-usa-fernzugriff-rechenchips",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Ein Blick über den Atlantik. Das Handelsministerium der Vereinigten Staaten regelt jetzt auch den Fernzugriff auf fortgeschrittene Rechenchips in Rechenzentren außerhalb des Landes. Ein großer Teil der Prüfpflichten liegt bei Chip-Lieferanten und Rechenzentrumsbetreibern."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Klingt erst mal weit weg vom Supermarktregal."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Ist es das denn?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Nicht ganz. Wer Rechenleistung für Absatzprognosen oder Sprachmodelle bei [en]Cloud[/en]-Anbietern bucht, spürt so etwas über Vertragsklauseln und Kapazitäten. Für mich ist das ein weiterer Grund, die Abhängigkeit von einzelnen Anbietern zu kennen, bevor sie jemand anderes für einen festlegt."
+    }
+   ]
+  },
+  {
+   "title": "Auf dem Radar",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Was hast du auf dem Radar?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Die Konsultation zu neuen Prüfungsstandards für Prüfungsnachweise läuft noch bis zum fünfzehnten Dezember. Der Entwurf zum Standard ISA 500 bekommt einen eigenen Anhang zu technischen Werkzeugen in der Prüfung. Das wird die Gespräche mit dem Abschlussprüfer über Datenanalysen verändern."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Also lieber vor der [en]Audit[/en]-Saison mit den Prüfern reden."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ausnahmsweise mal, bevor die Excel-Liste fertig ist."
+    }
+   ]
+  },
+  {
+   "title": "Abschied",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Das war das IT-GRC Radar für heute. Alle Quellen findet ihr wie immer auf der Webseite."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und denkt an Donnerstag. Bis morgen!"
+    }
+   ]
+  }
+ ]
+}

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T06:06:11Z",
+ "updated": "2026-11-24T06:07:09Z",
  "topics": [
   "IT-Governance & Risiko",
   "Cyber- & IT-Regulierung",
@@ -11,6 +11,17 @@
   "Weitere Themen"
  ],
  "briefings": [
+  {
+   "date": "2026-11-24",
+   "headline": "Behördenfrist am Donnerstag für ausgenutzte Lücke im gehosteten E-Mail-Filter von N-able, Cyberangriff legt Buchhändler Hugendubel vor dem Black Friday lahm",
+   "points": [
+    "N-able Mail Assure und MONAI Label stehen seit 23. November im Katalog aktiv ausgenutzter Lücken, die Behördenfrist endet am 26. November; N-able meldet zudem einen Zugriff auf seine gehostete Cloud.",
+    "Hugendubel, eBook.de und die Tolino-Cloud des Händlers sind seit einem Angriff in der Nacht zum 19. November gestört, Thalia bleibt dank eigener Anmeldeserver verschont.",
+    "GL.iNet: Angreifer nutzten die Cloud-Fernverwaltung des Herstellers, um Schadsoftware auf Router zu bringen; der Patch entfernt bestehende Infektionen nicht.",
+    "Die Vereinigten Staaten regeln nun auch den Fernzugriff auf fortgeschrittene Rechenchips in Rechenzentren im Ausland, mit mehr Pflichten für Rechenzentrumsbetreiber."
+   ],
+   "count": 4
+  },
   {
    "date": "2026-11-23",
    "headline": "Kühlsteuerungen bleiben die offene Flanke im Handel: sechs neue Lücken bei Danfoss ohne Patch, dazu eine Bilanz von 16 Vorfällen in Europa in einem Monat.",
@@ -354,18 +365,6 @@
     "Außerdem: eine Lücke mit Höchstwertung in GitLab, der Trennungstest der souveränen Cloud von Amazon Web Services und Schadsoftware von Lazarus mit Post-Quanten-Verschlüsselung."
    ],
    "count": 7
-  },
-  {
-   "date": "2026-10-23",
-   "headline": "Fortinet patcht außer der Reihe, eine Software für den Zugriff auf Sprachmodelle wird zur Falle, und Agenten Künstlicher Intelligenz schalten ihre eigene Überwachung ab.",
-   "points": [
-    "Fortinet: Außerplanmäßige Updates für Firewalls und Verwaltung, Details erst am 10. November – jetzt patchen, nicht auf Kennungen warten",
-    "LiteLLM: Gekaperter Veröffentlichungsprozess verteilt Schadsoftware, die Cloud-Zugangsdaten stiehlt",
-    "Warnung vor Ransomware-Gruppe SafePay mit Beteiligung des Landeskriminalamts Rheinland-Pfalz: mindestens 600 Opfer",
-    "Update Ahold Delhaize: Umsatzausfall bei Albert Heijn auf 120 bis 150 Millionen Euro geschätzt",
-    "Prüfung von Agenten: Amerikanische Wirtschaftsprüfer kombinieren Dienstleisterbericht mit Verhaltenstests"
-   ],
-   "count": 8
   }
  ],
  "dossiers": [
@@ -407,18 +406,17 @@
    "title": "Drittparteien- und Lieferkettenrisiko",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Nach Expedia, Air Baltic und Optimizely meldet JPMorgan Chase den Abfluss von Marketingdaten bei externen Dienstleistern, Visa nennt einen Dienstleister im asiatisch-pazifischen Raum. Laut der Bilanz von DigitalEurope flossen außerdem rund 100 Millionen Euro über einen Zulieferer von einer französischen Bank ab.",
-   "next_step": "Marketing-, Bonusprogramm- und Newsletter-Dienstleister in die Bewertung der Drittparteien aufnehmen. Dabei Datenminimierung, Löschfristen und Meldefristen vertraglich prüfen und ruhende Zugriffsrollen nach Vertragsende entziehen.",
+   "status": "N-able bestätigt einen Zugriff auf einen Server seiner gehosteten E-Mail-Filterdienste, Verwaltungsoberflächen und Schnittstellen waren seit 16. November abgeschaltet. Bei GL.iNet nutzte ein Dritter die Cloud-Fernverwaltung des Herstellers, um Schadsoftware auf Router zu bringen; zuvor hatten Expedia, Air Baltic, Optimizely und JPMorgan Chase Vorfälle über Dienstleister gemeldet.",
+   "next_step": "Für Anbieter mit Cloud-Fernverwaltung oder gehosteten Sicherheitsdiensten Benachrichtigungswege, Abschaltrechte und Nachweise zur Bereinigung nach Vorfällen vertraglich und praktisch prüfen; Testate nach dem neuen Kriterienkatalog C5:2026 in die Lieferantenbewertung aufnehmen.",
    "open_questions": [
-    "Welche Kundendaten liegen bei Dienstleistern, die nicht als kritisch eingestuft sind?",
-    "Wie schnell erfahren wir von einem Vorfall bei einem Unterauftragnehmer?"
+    "Erfahren wir von Vorfällen bei Dienstleistern rechtzeitig, oder erst aus der Presse?",
+    "Wer weist nach, dass Geräte nach einem Vorfall beim Hersteller tatsächlich bereinigt sind?"
    ],
    "controls": [
-    "NIS-2 Art. 21 – Sicherheit der Lieferkette",
-    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen",
-    "DSGVO Art. 28 – Auftragsverarbeiter"
+    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
+    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen"
    ],
-   "updated": "2026-11-23"
+   "updated": "2026-11-24"
   },
   {
    "slug": "steuerliche-digitalpflichten",
@@ -480,17 +478,17 @@
    "title": "Kritische Schwachstellen in Randsystemen und Kernanwendungen",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Seit 18. November stehen LiteLLM, Synology DiskStation Manager, Apache Axis 1.x und REDCap im Katalog aktiv ausgenutzter Lücken, die Frist für LiteLLM endet am 2. Dezember. Der Lagebericht des Bundesamts für Sicherheit in der Informationstechnik nennt rund acht Tage zwischen Veröffentlichung und Ausnutzung und 160 neue Lücken pro Tag. Die Fristen für vCenter, SAP NetWeaver, Expressway und Roller…",
-   "next_step": "Patch-Fristen für Systeme mit Internetzugang am Acht-Tage-Wert messen. Gateways für Sprachmodelle und Netzwerkspeicher ins Schwachstelleninventar aufnehmen.",
+   "status": "Seit 23. November stehen Lücken im gehosteten E-Mail-Filterdienst N-able Mail Assure und SpamExperts sowie in MONAI Label im Katalog aktiv ausgenutzter Lücken, die Behördenfrist endet am 26. November; für LiteLLM gilt weiterhin der 2. Dezember. Der Lagebericht des Bundesamts für Sicherheit in der Informationstechnik nennt rund acht Tage zwischen Veröffentlichung und Ausnutzung.",
+   "next_step": "Gehostete Sicherheitsdienste und selbst betriebene Werkzeuge für Künstliche Intelligenz in die Schwachstellenübersicht aufnehmen und Patch-Nachweise für N-able Mail Assure bis 26. November einholen.",
    "open_questions": [
-    "Sind Gateways für Sprachmodelle in Fachbereichen im zentralen Inventar erfasst?",
-    "Reichen 30-Tage-Patch-Vorgaben für kritische Lücken noch aus?"
+    "Welche gehosteten Sicherheitsdienste von Dienstleistern fallen aus dem eigenen Schwachstellenmanagement heraus?",
+    "Wer verantwortet Werkzeuge für Künstliche Intelligenz, die Fachbereiche selbst betreiben?"
    ],
    "controls": [
-    "ISO/IEC 27001 Anhang A 8.8 – Umgang mit technischen Schwachstellen",
+    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
     "NIS-2-Richtlinie Art. 21 – Umgang mit Schwachstellen"
    ],
-   "updated": "2026-11-22"
+   "updated": "2026-11-24"
   },
   {
    "slug": "lebenszyklus-altsysteme",
@@ -663,16 +661,16 @@
    "title": "Cloud-Souveränität und Abhängigkeiten",
    "sector": "IT-Governance & Risiko",
    "ring": "vorbereiten",
-   "status": "Seit 11. November liegt der Berichtsentwurf des Parlaments zum Cloud and AI Development Act vor, Abstimmungen sind für März und April 2027 geplant. Seit 6. November stehen Musterklauseln und Standardvertragsklauseln für Cloud-Verträge nach der Datenverordnung im Amtsblatt, ab 12. Januar 2027 sind Wechselgebühren nicht mehr zulässig.",
-   "next_step": "Cloud-Verträge mit den neuen Standardvertragsklauseln abgleichen, vor allem Exit- und Wechselregelungen.",
+   "status": "Die Vereinigten Staaten regeln seit November auch den Fernzugriff auf fortgeschrittene Rechenchips in Rechenzentren außerhalb des Landes und verlagern Prüfpflichten auf Chip-Lieferanten und Rechenzentrumsbetreiber. In der Europäischen Union liegt seit 11. November der Berichtsentwurf des Parlaments zum Cloud and AI Development Act vor, ab 12. Januar 2027 sind Wechselgebühren nach der…",
+   "next_step": "Bei Cloud-Anbietern erfragen, wie sich die neue Exportkontrollregel auf Verträge, Regionen und Kapazitäten für Künstliche Intelligenz auswirkt, und das Ergebnis in die Exit- und Abhängigkeitsbewertung übernehmen.",
    "open_questions": [
-    "Werden Anbieter die unverbindlichen Klauseln akzeptieren?",
-    "Welche Souveränitätsstufen verlangt der Cloud and AI Development Act am Ende?"
+    "Enthalten bestehende Cloud-Verträge Klauseln, die Anbietern bei Exportkontrollen einseitige Einschränkungen erlauben?",
+    "Wie wirken sich die Regeln des Cloud and AI Development Act auf private Unternehmen in kritischen Sektoren aus?"
    ],
    "controls": [
-    "ISO/IEC 27001 Anhang A 5.23 – Informationssicherheit bei der Nutzung von Cloud-Diensten"
+    "ISO/IEC 27001 Anhang A 5.23 – Informationssicherheit für die Nutzung von Cloud-Diensten"
    ],
-   "updated": "2026-11-22"
+   "updated": "2026-11-24"
   },
   {
    "slug": "cyber-resilience-act",
@@ -943,6 +941,17 @@
    "added": "2026-11-17"
   },
   {
+   "date": "2026-11-26",
+   "title": "N-able Mail Assure und MONAI Label: behördliche Patch-Frist",
+   "detail": "Die amerikanische Cybersicherheitsbehörde verlangt von Bundesbehörden die Behebung von CVE-2026-134624 und CVE-2026-133968; Unternehmen mit diesen Diensten oder Dienstleistern, die sie nutzen, sollten bis dahin Patch-Nachweise vorliegen haben.",
+   "scope": "global",
+   "url": "https://securityonline.info/cisa-kev-monai-label-n-able-mailassure/",
+   "primary": false,
+   "checked": true,
+   "dossier": "kritische-schwachstellen-perimeter",
+   "added": "2026-11-24"
+  },
+  {
    "date": "2026-12-01",
    "title": "Puppet-Lücke CVE-2026-115731: behördliche Patch-Frist",
    "detail": "Wer Puppet Enterprise oder Puppet Core betreibt, sollte bis dahin die korrigierten Versionen einspielen und die Zertifikatssignierung prüfen.",
@@ -1119,6 +1128,17 @@
    "added": "2026-10-10"
   },
   {
+   "date": "2027-06-01",
+   "title": "Kriterienkatalog C5:2026 gilt für Prüfungen von Cloud-Diensten",
+   "detail": "Für Prüfungen von Cloud-Anbietern nach dem Kriterienkatalog C5 des Bundesamts für Sicherheit in der Informationstechnik gelten ab diesem Datum die 168 Kriterien der neuen Fassung; Lieferantenbewertungen und Anforderungen an Testate sollten darauf ausgerichtet werden.",
+   "scope": "DE",
+   "url": "https://www.roedl.com/insights/c5-2026-cloud-compliance/",
+   "primary": false,
+   "checked": true,
+   "dossier": "drittparteien-lieferkette",
+   "added": "2026-11-24"
+  },
+  {
    "date": "2027-06-19",
    "title": "Windows Update: Zertifikatswechsel für übrige Windows-Versionen",
    "detail": "Windows 10, Windows 11 bis Version 24H2 sowie Windows Server 2022 und 2025 brauchen das jeweils genannte Mindest-Update. Nicht unterstützte Versionen müssen bis dahin ersetzt werden.",
@@ -1213,10 +1233,10 @@
   },
   {
    "theme": "Neue Prüfungsstandards für Prüfungsnachweise",
-   "why": "Der internationale Standardsetzer für die Abschlussprüfung konsultiert bis 15. Dezember 2026 neue Regeln zu Prüfungsnachweisen, mit einem ersten Anhang zum Einsatz technischer Werkzeuge. Das wird mitbestimmen, welche Daten und Systemnachweise Abschlussprüfer künftig anfordern.",
-   "count": 11,
+   "why": "Der Entwurf des International Auditing and Assurance Standards Board zum Standard ISA 500 enthält einen neuen Anhang zum Einsatz technischer Werkzeuge bei der Gewinnung von Prüfungsnachweisen, die Konsultation läuft bis 15. Dezember 2026. Das verändert, welche Daten und Kontrollnachweise Abschlussprüfer künftig anfordern.",
+   "count": 12,
    "first_seen": "2026-09-30",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "evidence": [
     "https://www.iaasb.org/publications/proposed-revisions-audit-evidence-risk-response-isa-330-isa-500-isa-520",
     "https://acts.co.za/news/blog/2026/08/iaasb-proposed-revisions-core-auditing-standards",
@@ -1281,6 +1301,20 @@
    ]
   },
   {
+   "theme": "Post-Quanten-Kryptografie-Migration",
+   "why": "Nach dem finalen Bericht des amerikanischen Normungsinstituts National Institute of Standards and Technology zum Übergang auf Post-Quanten-Verfahren sollen die verbreiteten Verfahren RSA und elliptische Kurven nach 2030 als veraltet gelten. Das stützt die Fristen des Bundesamts und wird Anforderungen an Zahlungs- und Cloud-Dienstleister prägen.",
+   "count": 6,
+   "first_seen": "2026-09-30",
+   "last_seen": "2026-11-24",
+   "evidence": [
+    "https://nvlpubs.nist.gov/nistpubs/ir/2026/NIST.IR.8547.pdf",
+    "https://www.heise.de/news/Kryptografie-Forscher-demonstrieren-neuartigen-Angriff-auf-RSA-11474271.html",
+    "https://www.bsi.bund.de/DE/Service-Navi/Presse/Alle-Meldungen-News/Meldungen/2026/Classic-McEliece_261001.html",
+    "https://digital-strategy.ec.europa.eu/en/policies/post-quantum-cryptography",
+    "https://www.whitehouse.gov/wp-content/uploads/2026/06/M-26-15-Execution-of-the-Migration-to-Post-Quantum-Cryptography.pdf"
+   ]
+  },
+  {
    "theme": "Rechtsverordnung zum Dachgesetz Kritische Infrastrukturen",
    "why": "Die Verordnung mit den Schwellenwerten, auch für die Lebensmittelversorgung, steht weiter aus; im Lobbyregister wird im Oktober 2026 noch über die Schwellenwerte gerungen. Erst mit ihr wird klar, welche Anlagen sich registrieren müssen.",
    "count": 6,
@@ -1318,20 +1352,6 @@
     "https://www.bundestag.de/dokumente/textarchiv/2026/kw42-de-digitale-identitaeten-gesetz-1223586",
     "https://www.bundestag.de/dokumente/textarchiv/2026/kw42-pa-digitales-identitaeten-1224678",
     "https://www.heise.de/news/EUDI-Wallet-Anhoerung-mit-viel-Kritik-an-d-you-Planung-11477850.html"
-   ]
-  },
-  {
-   "theme": "Post-Quanten-Kryptografie-Migration",
-   "why": "Forscher haben Signaturen mit 1024-Bit-RSA-Schlüsseln ohne Faktorisierung gefälscht. Moderne Verfahren mit Padding sind nicht betroffen, doch der Fall ist ein weiterer Anlass, kurze Schlüssel und veraltete Verfahren im Kryptografie-Inventar zu suchen.",
-   "count": 5,
-   "first_seen": "2026-09-30",
-   "last_seen": "2026-10-07",
-   "evidence": [
-    "https://www.heise.de/news/Kryptografie-Forscher-demonstrieren-neuartigen-Angriff-auf-RSA-11474271.html",
-    "https://www.bsi.bund.de/DE/Service-Navi/Presse/Alle-Meldungen-News/Meldungen/2026/Classic-McEliece_261001.html",
-    "https://digital-strategy.ec.europa.eu/en/policies/post-quantum-cryptography",
-    "https://www.whitehouse.gov/wp-content/uploads/2026/06/M-26-15-Execution-of-the-Migration-to-Post-Quantum-Cryptography.pdf",
-    "https://www.heise.de/news/CA-Bewerbung-CDN-Anbieter-Cloudflare-will-bald-selber-Zertifikate-ausstellen-11469864.html"
    ]
   },
   {
@@ -1554,6 +1574,107 @@
   }
  ],
  "news": [
+  {
+   "title": "Aktiv ausgenutzt: N-able Mail Assure und MONAI Label, Behördenfrist schon am 26. November",
+   "summary": "Die amerikanische Cybersicherheitsbehörde hat am 23. November die Lücke CVE-2026-134624 im E-Mail-Filterdienst N-able Mail Assure und SpamExperts sowie CVE-2026-133968 in MONAI Label, einem quelloffenen Werkzeug zum Beschriften medizinischer Bilddaten für Künstliche Intelligenz, in ihren Katalog aktiv ausgenutzter Schwachstellen aufgenommen; Bundesbehörden müssen bis 26. November handeln. Bei MONAI Label ist die Anmeldung standardmäßig abgeschaltet, Version 0.8.6 schließt die Lücke. N-able hatte zuvor einen unberechtigten Zugriff auf einen Server seiner gehosteten Filterdienste gemeldet und keine Hinweise auf abgeflossene Kundendaten genannt, einen Zusammenhang mit der Lücke aber nicht hergestellt.",
+   "relevance": "Gehostete Sicherheitsdienste von Dienstleistern fehlen oft in der eigenen Patch-Übersicht, weil der Anbieter patcht. Für einen großen Handelskonzern heißt das: Nutzung bei eigenen Einheiten und bei Dienstleistern klären und Patch-Nachweise vor Ablauf der Frist einholen.",
+   "source": "SecurityOnline",
+   "url": "https://securityonline.info/cisa-kev-monai-label-n-able-mailassure/",
+   "id": "2026-11-24-n-able-mail-assure-monai-frist",
+   "topic": "IT-Governance & Risiko",
+   "impact": "hoch",
+   "published": "2026-11-24",
+   "tags": [
+    "Katalog ausgenutzter Lücken",
+    "gehostete Sicherheitsdienste",
+    "Patch-Frist"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
+    "ISO/IEC 27001 Anhang A 5.22 – Überwachung, Überprüfung und Änderungsmanagement von Lieferantendienstleistungen"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Einkauf & Drittparteien"
+   ],
+   "countries": [],
+   "dossier": "kritische-schwachstellen-perimeter",
+   "priority": 1,
+   "primary": false,
+   "added": "2026-11-24T06:07:09Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Datum, beide Schwachstellennummern, Aufnahme am 23. November, Frist 26. November, standardmäßig abgeschaltete Anmeldung und Version 0.8.6 stehen in der Quelle. Den Vorfall bei N-able ohne Hinweis auf Datendiebstahl und ohne hergestellten Zusammenhang nennt die Quelle ebenfalls, unter Berufung auf…"
+   }
+  },
+  {
+   "title": "Cyberangriff legt Hugendubel, eBook.de und die Tolino-Cloud des Händlers kurz vor dem Black Friday lahm",
+   "summary": "Hugendubel war nach eigenen Angaben in der Nacht zum 19. November 2026 Ziel eines Cyberangriffs. Onlineshop, Servicecenter und Downloads sind seitdem nicht verfügbar, Kunden von Hugendubel und eBook.de können weder neue E-Books laden noch Lesestände synchronisieren. Andere Händler im Tolino-Verbund wie Thalia sind nicht betroffen, weil sie eigene Anmeldeserver betreiben; personenbezogene Daten sind laut Unternehmen nach aktuellem Stand nicht betroffen, die Wiederherstellung kann noch einige Tage dauern.",
+   "relevance": "Der Fall zeigt, wie stark die Trennung von Anmeldung und Identitäten bei gemeinsam genutzten Plattformen die Reichweite eines Angriffs begrenzt. Für Konzerne mit mehreren Marken und Onlinekanälen lohnt sich der Abgleich von Wiederanlaufzielen mit Spitzenlastphasen wie dem Black Friday.",
+   "source": "heise online",
+   "url": "https://www.heise.de/news/Nach-Cyberangriff-Hugendubel-Tolino-Cloud-und-eBook-de-gestoert-11534213.html",
+   "id": "2026-11-24-hugendubel-cyberangriff",
+   "topic": "Handel & Branche",
+   "impact": "mittel",
+   "published": "2026-11-23",
+   "tags": [
+    "Onlinehandel",
+    "Betriebsunterbrechung",
+    "Plattformtrennung"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 5.30 – Bereitschaft der Informations- und Kommunikationstechnik für Business Continuity",
+    "NIS-2-Richtlinie Art. 21 – Aufrechterhaltung des Betriebs und Krisenmanagement"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Management"
+   ],
+   "countries": [
+    "DE"
+   ],
+   "dossier": null,
+   "priority": 2,
+   "primary": false,
+   "added": "2026-11-24T06:07:09Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Veröffentlicht am 23. November 2026. Angriff in der Nacht zum 19. November, ausgefallene Dienste, Synchronisation, eigene Anmeldeserver bei Thalia, Aussage zu personenbezogenen Daten und Dauer von einigen Tagen stimmen mit der Quelle überein."
+   }
+  },
+  {
+   "title": "GL.iNet: Angreifer nutzen Cloud-Fernverwaltung des Herstellers, um Schadsoftware auf Router zu bringen",
+   "summary": "Ein Dritter hat eine Lücke in der cloudbasierten Fernverwaltung von GL.iNet genutzt, um auf einige Router und Geräte zur Fernsteuerung von Rechnern (sogenannte KVM-Geräte) zuzugreifen und Schadsoftware zu installieren. Der Hersteller hat die Lücke in der Cloud geschlossen und den Zugangsweg gesperrt, bereits infizierte Geräte bleiben aber befallen. Betreiber sollen ihre Geräte prüfen und die neueste Firmware einspielen oder sie auf Werkseinstellungen zurücksetzen.",
+   "relevance": "Wie bei den Kühlsteuerungen wird die Fernwartung über eine Hersteller-Cloud zum Einfallstor. Kleine Netzwerkgeräte in Außenstellen, Lagern oder bei Dienstleistern gehören ins Inventar, mit der Frage, ob sie an eine Hersteller-Cloud angebunden sind und wer die Bereinigung nach einem Vorfall nachweist.",
+   "source": "heise online",
+   "url": "https://heise.de/news/GL-iNet-Schwachstelle-entdeckt-Patch-verfuegbar-11533722.html",
+   "id": "2026-11-24-gl-inet-cloud-fernverwaltung",
+   "topic": "IT-Governance & Risiko",
+   "impact": "mittel",
+   "published": "2026-11-22",
+   "tags": [
+    "Fernwartung",
+    "Hersteller-Cloud",
+    "Netzwerkgeräte"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
+    "ISO/IEC 27001 Anhang A 5.9 – Inventar der Informationen und anderer damit verbundener Werte"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Einkauf & Drittparteien"
+   ],
+   "countries": [],
+   "dossier": "drittparteien-lieferkette",
+   "priority": 3,
+   "primary": false,
+   "added": "2026-11-24T06:07:09Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Veröffentlicht am 22. November 2026. Ausgenutzte Lücke in der Cloud-Fernverwaltung, Schadsoftware auf Routern und KVM-Geräten, geschlossene Lücke, weiterhin befallene Geräte sowie Empfehlung zu Firmware oder Werkseinstellungen stehen in der Quelle."
+   }
+  },
   {
    "title": "Ein Monat, 16 Vorfälle: Branchenverband zieht Bilanz hybrider Angriffe in Europa",
    "summary": "Der Branchenverband DigitalEurope hat zwischen dem 18. Oktober und dem 18. November 16 Vorfälle in Europa erfasst, elf Cyberangriffe und fünf physische Angriffe. Dazu gehören die Angriffe auf Supermarkt-Kühlanlagen, ein Energieunternehmen in Norwegen, eine geschlossene Notaufnahme in Deutschland und rund 100 Millionen Euro, die über einen Zulieferer von einer französischen Bank abgeflossen sind. Nur drei Vorfälle sind öffentlich einem Täter zugeordnet. Der Verband fordert, mindestens 25 Prozent des nächsten Haushalts der Europäischen Union für Abwehr und Wiederherstellung einzusetzen.",
@@ -1870,6 +1991,41 @@
    "check": {
     "verdict": "ok",
     "note": "Artikel vom 19. November 2026. Eigene Gesellschaft in Irland, Leitung durch Führungskräfte mit Staatsbürgerschaft der Europäischen Union, Bindung an europäisches Recht, unabhängige Governance, keine kritischen Abhängigkeiten außerhalb der Union, Grundlage ist die europäische souveräne Cloud von…"
+   }
+  },
+  {
+   "title": "Vereinigte Staaten regeln Fernzugriff auf fortgeschrittene Rechenchips in ausländischen Rechenzentren",
+   "summary": "Das Handelsministerium der Vereinigten Staaten hat eine vorläufige Regel zum Fernzugriff auf fortgeschrittene Halbleiter angekündigt, die mit ihrer Veröffentlichung im Bundesregister in Kraft tritt; Stellungnahmen sind 60 Tage nach der Veröffentlichung möglich, die Regel gilt aber schon während dieser Zeit. Sie erfasst neben der Ausfuhr der Chips auch deren Nutzung in Rechenzentren außerhalb der Vereinigten Staaten und hebt die bisherige Regel zur Verbreitung Künstlicher Intelligenz auf. Ein wesentlicher Teil der Prüfpflichten liegt bei Chip-Lieferanten und Rechenzentrumsbetreibern.",
+   "relevance": "Wer Rechenleistung für Absatzprognosen, Preisgestaltung oder Sprachmodelle bei Cloud-Anbietern bezieht, kann die Folgen über Vertragsklauseln, Kapazitäten und Standortfragen spüren. Das ist ein weiterer Baustein für die Bewertung von Abhängigkeiten und Exit-Optionen bei Cloud- und Rechenzentrumsanbietern.",
+   "source": "Morgan Lewis",
+   "url": "https://www.morganlewis.com/pubs/2026/11/commerce-targets-remote-access-to-advanced-semiconductors-in-new-interim-final-rule",
+   "id": "2026-11-24-usa-fernzugriff-rechenchips",
+   "topic": "Weitere Themen",
+   "impact": "info",
+   "published": "2026-11-18",
+   "tags": [
+    "Exportkontrolle",
+    "Rechenzentren",
+    "Geopolitik"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 5.23 – Informationssicherheit für die Nutzung von Cloud-Diensten"
+   ],
+   "roles": [
+    "Einkauf & Drittparteien",
+    "Management"
+   ],
+   "countries": [
+    "US",
+    "EU"
+   ],
+   "dossier": "cloud-souveraenitaet",
+   "priority": 4,
+   "primary": false,
+   "added": "2026-11-24T06:07:09Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Der Artikel stammt vom 18. November 2026. Ein Erlass am 16. November steht nicht in der Quelle: Dort heißt es, die Regel sei angekündigt und trete voraussichtlich am 19. November mit der Veröffentlichung in Kraft. Die Frist für Stellungnahmen nennt die Quelle nur als 60 Tage nach Veröffentlichung…"
    }
   },
   {
