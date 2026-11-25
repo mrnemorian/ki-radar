@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T06:07:09Z",
+ "updated": "2026-11-25T06:07:29Z",
  "topics": [
   "IT-Governance & Risiko",
   "Cyber- & IT-Regulierung",
@@ -11,6 +11,18 @@
   "Weitere Themen"
  ],
  "briefings": [
+  {
+   "date": "2026-11-25",
+   "headline": "Patch-Frist am Black Friday, Admin-Daten bei Microsoft lesbar, Workday-Ausfall durch Notfalltest und Daten als Bezahlung vor dem Gerichtshof",
+   "points": [
+    "Drupal, Optimizely und AntiCsrf sind als aktiv ausgenutzt gelistet, die Behördenfrist endet am 27. November. Für AntiCsrf gibt es keinen Patch.",
+    "Microsoft Entra Connect Health: Von Juli bis November waren Mandanten-Metadaten und Adressen von Administratoren lesbar. Gezieltes Phishing ist jetzt das Risiko.",
+    "Workday: Ein Test der Notfallumgebung griff auf Produktivdatenbanken zu und legte die Personalsoftware vieler Kunden lahm.",
+    "Generalanwältin am Gerichtshof der Europäischen Union: Wer mit Daten bezahlt, bekommt nichts „kostenlos“. Das betrifft auch Apps und Bonusprogramme.",
+    "Ghostscript-Lücke Upload2Shell gefährdet Upload-Funktionen. Ein Bericht nennt das zweite Quartal 2028 für die nächste Version des Kartenstandards."
+   ],
+   "count": 6
+  },
   {
    "date": "2026-11-24",
    "headline": "Behördenfrist am Donnerstag für ausgenutzte Lücke im gehosteten E-Mail-Filter von N-able, Cyberangriff legt Buchhändler Hugendubel vor dem Black Friday lahm",
@@ -353,18 +365,6 @@
     "Wettbewerber Schwarz Digits geht eine Partnerschaft für souveräne Infrastruktur mit Fujitsu und Fsas Technologies ein"
    ],
    "count": 5
-  },
-  {
-   "date": "2026-10-24",
-   "headline": "PHP2Shell trifft Millionen Dienste in Deutschland, Windows Server 2016 läuft im Januar aus, Railway und TAKKT zeigen Risiken bei Dienstleistern und Logistik.",
-   "points": [
-    "Update PHP2Shell: In Deutschland sind rund 4,2 Millionen erreichbare Dienste verwundbar. Für Versionen 8.1 und älter gibt es kein offizielles Update, erste Organisationen schalten Portale vorsorglich ab.",
-    "Windows Server 2016 bekommt am 12. Januar 2027 die letzten Sicherheitsupdates. Damit steht die nächste harte Frist im Lebenszyklus an.",
-    "Die Entwicklerplattform Railway hat teils entschlüsselte Geheimnisse ihrer Kunden verloren. Alle Schlüssel sollen getauscht werden.",
-    "Ein Cyberangriff bei TAKKT bremst Auftragsabwicklung und Lieferungen. Das Unternehmen hat den Vorfall per Ad-hoc-Mitteilung gemeldet.",
-    "Außerdem: eine Lücke mit Höchstwertung in GitLab, der Trennungstest der souveränen Cloud von Amazon Web Services und Schadsoftware von Lazarus mit Post-Quanten-Verschlüsselung."
-   ],
-   "count": 7
   }
  ],
  "dossiers": [
@@ -406,17 +406,17 @@
    "title": "Drittparteien- und Lieferkettenrisiko",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "N-able bestätigt einen Zugriff auf einen Server seiner gehosteten E-Mail-Filterdienste, Verwaltungsoberflächen und Schnittstellen waren seit 16. November abgeschaltet. Bei GL.iNet nutzte ein Dritter die Cloud-Fernverwaltung des Herstellers, um Schadsoftware auf Router zu bringen; zuvor hatten Expedia, Air Baltic, Optimizely und JPMorgan Chase Vorfälle über Dienstleister gemeldet.",
-   "next_step": "Für Anbieter mit Cloud-Fernverwaltung oder gehosteten Sicherheitsdiensten Benachrichtigungswege, Abschaltrechte und Nachweise zur Bereinigung nach Vorfällen vertraglich und praktisch prüfen; Testate nach dem neuen Kriterienkatalog C5:2026 in die Lieferantenbewertung aufnehmen.",
+   "status": "Bei Workday hat ein Test der Notfallumgebung am 13. November auf Produktivdatenbanken zugegriffen und die Personalsoftware vieler Kunden für Stunden lahmgelegt. Ein vollständiger Ursachenbericht stand zunächst aus. Zuvor hatten N-able, GL.iNet, Expedia und weitere Unternehmen Vorfälle über Dienstleister oder deren Fernverwaltung gemeldet.",
+   "next_step": "Bei wichtigen Software-as-a-Service-Anbietern Berichte über Notfalltests, Wiederanlaufziele und Ursachenberichte vertraglich einfordern und im Dienstleistermanagement nachhalten.",
    "open_questions": [
-    "Erfahren wir von Vorfällen bei Dienstleistern rechtzeitig, oder erst aus der Presse?",
-    "Wer weist nach, dass Geräte nach einem Vorfall beim Hersteller tatsächlich bereinigt sind?"
+    "Welche Wiederanlaufzeit hat Workday vertraglich zugesagt, und wurde sie eingehalten?",
+    "Decken Dienstleisterberichte Notfalltests in der Produktion ab?"
    ],
    "controls": [
-    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
+    "NIS-2 Art. 21 – Sicherheit der Lieferkette",
     "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen"
    ],
-   "updated": "2026-11-24"
+   "updated": "2026-11-25"
   },
   {
    "slug": "steuerliche-digitalpflichten",
@@ -455,16 +455,17 @@
    "title": "Identitäten und Zugangsdaten",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Ein Experiment mit Docker Hub zeigt, dass in öffentlichen Container-Images platzierte Cloud-Schlüssel innerhalb von Sekunden abgegriffen und über 75.000 Mal abgerufen wurden. Daneben bleiben die von der Operation Endgame sichergestellten Zugangsdaten, falscher Support über Teams und versteckte Rechteketten in Entra ID eigene Prüfobjekte.",
-   "next_step": "Secret Scanning in Build-Pipelines verpflichtend machen, Laufzeiten nicht-menschlicher Zugangsdaten verkürzen und den Prozess zum sofortigen Sperren geleakter Schlüssel testen.",
+   "status": "Microsoft meldet, dass über eine Lücke in Entra Connect Health von Juli bis November Mandanten-Metadaten und Adressen von Administratoren lesbar waren. Behoben ist sie seit 19. November, Kunden müssen nichts installieren. Daneben bleiben geleakte Cloud-Schlüssel in Container-Images, falscher Support über Teams und versteckte Rechteketten in Entra ID eigene Prüfobjekte.",
+   "next_step": "Benachrichtigungen in Azure Service Health prüfen, Administratoren vor gezieltem Phishing warnen und für privilegierte Konten eine phishing-resistente Anmeldung nachweisen.",
    "open_questions": [
-    "Sind Dienstleister vertraglich zu Secret Scanning und sofortiger Rotation verpflichtet?"
+    "Wie viele Mandanten waren betroffen?",
+    "Erreichen Meldungen von Cloud-Anbietern zuverlässig die zuständige Stelle im Konzern?"
    ],
    "controls": [
-    "ISO/IEC 27001 Anhang A 5.17 – Authentisierungsinformationen",
-    "ISO/IEC 27001 Anhang A 5.18 – Zugangsrechte"
+    "ISO/IEC 27001 Anhang A 8.2 – Privilegierte Zugangsrechte",
+    "IT-Kontrollen der Abschlussprüfung – Zugriffsverwaltung"
    ],
-   "updated": "2026-11-18"
+   "updated": "2026-11-25"
   },
   {
    "slug": "kritische-schwachstellen-perimeter",
@@ -478,17 +479,17 @@
    "title": "Kritische Schwachstellen in Randsystemen und Kernanwendungen",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Seit 23. November stehen Lücken im gehosteten E-Mail-Filterdienst N-able Mail Assure und SpamExperts sowie in MONAI Label im Katalog aktiv ausgenutzter Lücken, die Behördenfrist endet am 26. November; für LiteLLM gilt weiterhin der 2. Dezember. Der Lagebericht des Bundesamts für Sicherheit in der Informationstechnik nennt rund acht Tage zwischen Veröffentlichung und Ausnutzung.",
-   "next_step": "Gehostete Sicherheitsdienste und selbst betriebene Werkzeuge für Künstliche Intelligenz in die Schwachstellenübersicht aufnehmen und Patch-Nachweise für N-able Mail Assure bis 26. November einholen.",
+   "status": "Seit 24. November stehen Drupal, Optimizely Web Experimentation und die nicht mehr gepflegte Bibliothek Idunno AntiCsrf im Katalog aktiv ausgenutzter Lücken, die Behördenfrist endet am 27. November. Für Puppet gilt der 1. Dezember, für LiteLLM der 2. Dezember. Die Details zur Ghostscript-Lücke Upload2Shell sind seit 21. November öffentlich, Angriffe sind noch nicht bekannt.",
+   "next_step": "Vor dem Black Friday Drupal-Instanzen und Bezahlseiten mit Optimizely-Skripten prüfen und Ghostscript-Versionen in Upload- und Dokumentenprozessen inventarisieren.",
    "open_questions": [
-    "Welche gehosteten Sicherheitsdienste von Dienstleistern fallen aus dem eigenen Schwachstellenmanagement heraus?",
-    "Wer verantwortet Werkzeuge für Künstliche Intelligenz, die Fachbereiche selbst betreiben?"
+    "Wo stecken nicht mehr gepflegte Bibliotheken wie AntiCsrf in Eigenentwicklungen?",
+    "Decken Änderungssperren rund um Black Friday Notfall-Patches ausdrücklich ab?"
    ],
    "controls": [
     "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
-    "NIS-2-Richtlinie Art. 21 – Umgang mit Schwachstellen"
+    "NIS-2 Art. 21 – Umgang mit Schwachstellen"
    ],
-   "updated": "2026-11-24"
+   "updated": "2026-11-25"
   },
   {
    "slug": "lebenszyklus-altsysteme",
@@ -610,16 +611,16 @@
    "title": "Zahlungsverkehr und PCI DSS",
    "sector": "Handel & Branche",
    "ring": "jetzt handeln",
-   "status": "Nach Fandango und Optimizely zeigt Revolve, wie stark Betroffenenzahlen nachträglich steigen können: Statt rund 200.000 nennt eine Meldung an eine Aufsichtsbehörde 1.515.073 Personen, auch Kartennummern mit Ablaufdatum sind betroffen. Der Rat für Sicherheitsstandards der Kartenbranche hat am 10. November eine Handreichung zu den Erwartungen an Dienstleister veröffentlicht.",
-   "next_step": "Gespeicherte Kartendaten und Tokenisierung im Onlinehandel überprüfen und Meldeprozesse nach Datenschutz-Grundverordnung und Kartenstandard abstimmen.",
+   "status": "Die Optimizely-Lücke, über die Skimming-Code auf Bezahlseiten gelangte, steht seit 24. November als CVE-2026-132224 im Katalog aktiv ausgenutzter Lücken. Laut einem Fachbericht soll die nächste Version des Kartenstandards im zweiten Quartal 2028 erscheinen, bis dahin gilt Version 4.0.1.",
+   "next_step": "Skript-Inventar und Integritätsüberwachung der Bezahlseiten vor dem Black Friday prüfen und die nächste Standardrevision in die Mehrjahresplanung aufnehmen.",
    "open_questions": [
-    "Wo werden außerhalb des Zahlungsdienstleisters noch Kartendaten gespeichert?"
+    "Wann bestätigt der Rat für Sicherheitsstandards der Kartenbranche den Zeitplan offiziell?"
    ],
    "controls": [
-    "PCI DSS Anforderung 3 – Schutz gespeicherter Kontodaten",
-    "PCI DSS Anforderung 6.4.3 – Skripte auf Bezahlseiten"
+    "PCI DSS Anforderung 6.4.3 – Verwaltung von Skripten auf Bezahlseiten",
+    "PCI DSS Anforderung 11.6.1 – Erkennung von Änderungen an Bezahlseiten"
    ],
-   "updated": "2026-11-22"
+   "updated": "2026-11-25"
   },
   {
    "slug": "algorithmisches-management",
@@ -820,28 +821,6 @@
  ],
  "deadlines": [
   {
-   "date": "2026-11-10",
-   "title": "Windows 11 Version 23H2 Enterprise und Education: letztes Sicherheitsupdate",
-   "detail": "Unternehmen mit Geräten auf Windows 11 Version 23H2 in den Ausgaben Enterprise, Education und IoT Enterprise müssen vorher auf eine unterstützte Version wie 25H2 wechseln.",
-   "scope": "global",
-   "url": "https://betanews.com/article/windows-11-23h2-enterprise-education-final-patch/",
-   "primary": false,
-   "checked": true,
-   "dossier": "lebenszyklus-altsysteme",
-   "added": "2026-10-13"
-  },
-  {
-   "date": "2026-11-10",
-   "title": "Fortinet veröffentlicht Details zu außerplanmäßig geschlossenen Lücken",
-   "detail": "Betreiber von FortiOS, FortiManager, FortiAnalyzer, FortiMail und FortiAuthenticator sollten die Updates vom 22. Oktober bis dahin eingespielt haben, weil danach mit schnellen Angriffen zu rechnen ist.",
-   "scope": "global",
-   "url": "https://www.heise.de/news/Ausserplanmaessige-Fortinet-Updates-Details-Fehlanzeige-aber-dringend-11497171.html",
-   "primary": false,
-   "checked": true,
-   "dossier": "kritische-schwachstellen-perimeter",
-   "added": "2026-10-23"
-  },
-  {
    "date": "2026-11-11",
    "title": "VMware ESX: behördliche Frist zum Schließen der Protokollierungslücke",
    "detail": "Die amerikanische Cybersicherheitsbehörde verlangt von Bundesbehörden die Behebung von CVE-2026-41709; Betreiber von VMware ESX sollten die Frist als Maßstab nehmen und das Update vom Juli einspielen.",
@@ -950,6 +929,17 @@
    "checked": true,
    "dossier": "kritische-schwachstellen-perimeter",
    "added": "2026-11-24"
+  },
+  {
+   "date": "2026-11-27",
+   "title": "Drupal, Optimizely und AntiCsrf: behördliche Patch-Frist",
+   "detail": "Wer Drupal oder Optimizely Web Experimentation nutzt, sollte bis dahin patchen oder Bezahlseiten prüfen und Komponenten mit Idunno AntiCsrf ersetzen oder abschotten.",
+   "scope": "global",
+   "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
+   "primary": true,
+   "checked": true,
+   "dossier": "kritische-schwachstellen-perimeter",
+   "added": "2026-11-25"
   },
   {
    "date": "2026-12-01",
@@ -1329,6 +1319,19 @@
    ]
   },
   {
+   "theme": "Cyberpolicen schließen Künstliche Intelligenz aus",
+   "why": "Laut einem Beitrag im Insurance Journal haben mehr als 60 Versicherungsgruppen Ausschlüsse für Künstliche Intelligenz eingereicht, andere Policen schweigen zum Thema. Bei der Erneuerung von Cyberpolicen sollte das gezielt abgefragt werden.",
+   "count": 5,
+   "first_seen": "2026-10-30",
+   "last_seen": "2026-11-25",
+   "evidence": [
+    "https://www.insurancejournal.com/news/national/2026/11/13/892529.htm",
+    "https://www.insurancebusinessmag.com/uk/news/cyber/cyber-insurers-reassess-ai-exposure-as-mythos-shifts-focus-to-policy-coverage-573271.aspx",
+    "https://www.fenwick.com/insights/publications/end-silent-ai-emerging-ai-exclusions-coverage-fragmentation-and-practical-implications",
+    "https://www.theinsurer.com/cyber-risk/news/debate-intensifies-rise-over-where-ai-risk-belongs-2026-10-22/"
+   ]
+  },
+  {
    "theme": "Kriegsausschluss in Cyberversicherungen",
    "why": "Nachdem Frankreich die Angriffe auf Supermarkt-Kühlanlagen den Revolutionsgarden des Iran zugeschrieben hat, stellt sich die Frage, ob Versicherer Schäden aus staatlichen Angriffen über Kriegsausschlüsse ablehnen. Die eigenen Policenbedingungen sollten darauf geprüft werden.",
    "count": 5,
@@ -1367,18 +1370,6 @@
    ]
   },
   {
-   "theme": "Cyberpolicen schließen Künstliche Intelligenz aus",
-   "why": "Cyberversicherer prüfen ihre Risiken aus Künstlicher Intelligenz neu, vor allem über die Wortlaute ihrer Policen. Makler halten einen marktweiten Ausschluss für denkbar, ähnlich wie beim Kriegsausschluss. Das kann Deckungen bei Verlängerungen schmälern.",
-   "count": 4,
-   "first_seen": "2026-10-30",
-   "last_seen": "2026-11-20",
-   "evidence": [
-    "https://www.insurancebusinessmag.com/uk/news/cyber/cyber-insurers-reassess-ai-exposure-as-mythos-shifts-focus-to-policy-coverage-573271.aspx",
-    "https://www.fenwick.com/insights/publications/end-silent-ai-emerging-ai-exclusions-coverage-fragmentation-and-practical-implications",
-    "https://www.theinsurer.com/cyber-risk/news/debate-intensifies-rise-over-where-ai-risk-belongs-2026-10-22/"
-   ]
-  },
-  {
    "theme": "Prüfungsleitfaden für Werkzeuge mit Künstlicher Intelligenz",
    "why": "Der internationale Standardsetzer für Abschlussprüfungen wollte am 28. Oktober einen ersten Leitfaden zum Qualitätsmanagement beim Einsatz von Prüfwerkzeugen mit Künstlicher Intelligenz verabschieden, die Veröffentlichung wird im November erwartet. Der Leitfaden prägt, wie Abschlussprüfer Künstliche Intelligenz einsetzen und dokumentieren.",
    "count": 4,
@@ -1397,6 +1388,17 @@
    "evidence": [
     "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/Grundschutz-in-der-Informationssicherheit/Grundschutz-Plus-Plus/grundschutz-plus-plus_node.html",
     "https://sits.com/ch/blog/grundschutz-plus-plus-bsi-it-grundschutz/"
+   ]
+  },
+  {
+   "theme": "Konzentrationsrisiko bei Cloud-Anbietern",
+   "why": "Mitte November fielen innerhalb weniger Tage Workday, Microsoft 365 und weitere zentrale Dienste aus, laut Behörden ohne Angriff. Ausfälle großer Anbieter durch Tests und Updates könnten zum festen Prüfthema für Resilienz werden.",
+   "count": 2,
+   "first_seen": "2026-11-21",
+   "last_seen": "2026-11-25",
+   "evidence": [
+    "https://www.thousandeyes.com/blog/internet-report-workday-outage-access-issues",
+    "https://www.banque-france.fr/en/press-release/risks-ai-valuations-fiscal-imbalances-and-geoeconomic-tensions-weigh-financial-stability-outlook"
    ]
   },
   {
@@ -1430,16 +1432,6 @@
    "evidence": [
     "https://www.techuk.org/insights/news/dispatch-from-brussels-updates-on-eu-tech-policy-09-10",
     "https://www.politico.eu/article/eu-lawmakers-ai-apocalypse-warnings-brussels-scrambles-ai-rules-gaps/"
-   ]
-  },
-  {
-   "theme": "Konzentrationsrisiko bei Cloud-Anbietern",
-   "why": "Die Europäische Zentralbank stuft die Abhängigkeit von wenigen Cloud- und Modellanbietern als Stabilitätsrisiko ein. Das kann Aufsichtserwartungen und Prüfungsfragen zu Ausstiegsplänen auch außerhalb des Finanzsektors prägen.",
-   "count": 1,
-   "first_seen": "2026-11-21",
-   "last_seen": "2026-11-21",
-   "evidence": [
-    "https://www.banque-france.fr/en/press-release/risks-ai-valuations-fiscal-imbalances-and-geoeconomic-tensions-weigh-financial-stability-outlook"
    ]
   },
   {
@@ -1575,6 +1567,44 @@
  ],
  "news": [
   {
+   "title": "Update: Optimizely-Lücke und Drupal-Installer aktiv ausgenutzt, Behördenfrist 27. November",
+   "summary": "Die amerikanische Cybersicherheitsbehörde hat am 24. November drei Lücken in ihren Katalog aktiv ausgenutzter Schwachstellen aufgenommen: CVE-2026-132165 im Drupal-Installer, CVE-2026-132224 in Optimizely Web Experimentation und CVE-2026-131914 in der nicht mehr gepflegten ASP.NET-Bibliothek Idunno AntiCsrf. Für Drupal gibt es die Versionen 10.6.22, 11.3.22 und 11.4.13. Optimizely hat die Lücke auf seinen Servern geschlossen, für AntiCsrf gibt es keinen Patch. Neu gegenüber dem bisherigen Stand: Die Optimizely-Lücke, über die Skimming-Code in Kundenskripte gelangte, hat jetzt eine Kennung und eine Frist. Diese endet laut Katalogdaten am 27. November.",
+   "relevance": "Händler mit Drupal-Seiten oder Optimizely-Skripten auf Bezahlseiten sollten vor dem Black Friday patchen und den Zeitraum möglicher Datenabflüsse mit dem Zahlungsdienstleister klären. Alte Bibliotheken ohne Pflege lassen sich nur mit einer gepflegten Software-Stückliste finden.",
+   "source": "Cybersecurity and Infrastructure Security Agency",
+   "url": "https://www.cisa.gov/news-events/alerts/2026/11/24/cisa-adds-three-known-exploited-vulnerabilities-catalog",
+   "id": "2026-11-25-kev-drupal-optimizely-anticsrf",
+   "topic": "IT-Governance & Risiko",
+   "impact": "hoch",
+   "published": "2026-11-24",
+   "tags": [
+    "Aktiv ausgenutzt",
+    "Onlinehandel",
+    "Skimming"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
+    "PCI DSS Anforderung 6.4.3 – Verwaltung von Skripten auf Bezahlseiten",
+    "NIS-2 Art. 21 – Umgang mit Schwachstellen"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Einkauf & Drittparteien"
+   ],
+   "countries": [
+    "EU",
+    "DE",
+    "AT"
+   ],
+   "dossier": "kritische-schwachstellen-perimeter",
+   "priority": 1,
+   "primary": true,
+   "added": "2026-11-25T06:07:29Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Die Meldung der Behörde stammt vom 24. November 2026. Die drei Kennungen und Produkte stimmen. Laut Katalogdaten endet die Frist für alle drei Lücken am 27. November 2026. Die Drupal-Versionen 10.6.22, 11.3.22 und 11.4.13 stehen im verlinkten Drupal-Sicherheitshinweis. Laut der verlinkten…"
+   }
+  },
+  {
    "title": "Aktiv ausgenutzt: N-able Mail Assure und MONAI Label, Behördenfrist schon am 26. November",
    "summary": "Die amerikanische Cybersicherheitsbehörde hat am 23. November die Lücke CVE-2026-134624 im E-Mail-Filterdienst N-able Mail Assure und SpamExperts sowie CVE-2026-133968 in MONAI Label, einem quelloffenen Werkzeug zum Beschriften medizinischer Bilddaten für Künstliche Intelligenz, in ihren Katalog aktiv ausgenutzter Schwachstellen aufgenommen; Bundesbehörden müssen bis 26. November handeln. Bei MONAI Label ist die Anmeldung standardmäßig abgeschaltet, Version 0.8.6 schließt die Lücke. N-able hatte zuvor einen unberechtigten Zugriff auf einen Server seiner gehosteten Filterdienste gemeldet und keine Hinweise auf abgeflossene Kundendaten genannt, einen Zusammenhang mit der Lücke aber nicht hergestellt.",
    "relevance": "Gehostete Sicherheitsdienste von Dienstleistern fehlen oft in der eigenen Patch-Übersicht, weil der Anbieter patcht. Für einen großen Handelskonzern heißt das: Nutzung bei eigenen Einheiten und bei Dienstleistern klären und Patch-Nachweise vor Ablauf der Frist einholen.",
@@ -1605,6 +1635,42 @@
    "check": {
     "verdict": "ok",
     "note": "Datum, beide Schwachstellennummern, Aufnahme am 23. November, Frist 26. November, standardmäßig abgeschaltete Anmeldung und Version 0.8.6 stehen in der Quelle. Den Vorfall bei N-able ohne Hinweis auf Datendiebstahl und ohne hergestellten Zusammenhang nennt die Quelle ebenfalls, unter Berufung auf…"
+   }
+  },
+  {
+   "title": "Ghostscript-Lücke Upload2Shell: Präparierte Dateien können Upload-Funktionen kapern",
+   "summary": "Über die Lücke CVE-2026-125396 in Ghostscript lässt sich der Schutzmodus beim Verarbeiten bestimmter Schriften umgehen. Präparierte PostScript- oder PDF-Dateien können so Code ausführen, der Schweregrad liegt bei 8,5 von 10. Gefährdet sind vor allem Uploads, die Vorschaubilder erzeugen, zum Beispiel über ImageMagick oder Pillow. Genannt werden unter anderem WordPress, Roundcube, MediaWiki und das Drucksystem CUPS unter Debian 13. Behoben ist die Lücke seit 8. September mit Version 10.08.0, die Details sind seit 21. November öffentlich. Angriffe sind noch nicht bekannt.",
+   "relevance": "Ghostscript läuft oft unbemerkt als Bibliothek in Kundenportalen, Shops und Dokumentenprozessen mit. Erst eine vollständige Software-Inventur zeigt, wo nachgepatcht werden muss, bevor ein Exploit auftaucht.",
+   "source": "heise online",
+   "url": "https://www.heise.de/news/Upload2Shell-Ghostscript-Luecke-betrifft-viele-Systeme-11534768.html",
+   "id": "2026-11-25-ghostscript-upload2shell",
+   "topic": "IT-Governance & Risiko",
+   "impact": "mittel",
+   "published": "2026-11-23",
+   "tags": [
+    "Schwachstelle",
+    "Upload",
+    "Bibliotheken"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
+    "ISO/IEC 27001 Anhang A 5.9 – Inventar der Informationen und anderen zugehörigen Werte"
+   ],
+   "roles": [
+    "IT-Risiko"
+   ],
+   "countries": [
+    "EU",
+    "DE",
+    "AT"
+   ],
+   "dossier": "kritische-schwachstellen-perimeter",
+   "priority": 5,
+   "primary": false,
+   "added": "2026-11-25T06:07:29Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Der Artikel erschien am 23. November 2026. Kennung, Schweregrad 8,5, Umgehung des Schutzmodus bei Type-1-Schriften, die Wege über ImageMagick und Pillow, die genannten Systeme, Version 10.08.0 vom 8. September, Details seit 21. November und keine bekannten Angriffe stehen in der Quelle."
    }
   },
   {
@@ -1708,6 +1774,44 @@
    "check": {
     "verdict": "ok",
     "note": "Datum 22. November 2026 stimmt. Der Zeitraum 18. Oktober bis 18. November, 16 Vorfälle (elf Cyberangriffe, fünf physische), die genannten Beispiele, die drei öffentlichen Zuordnungen und die Forderung nach mindestens 25 Prozent des nächsten Haushalts sind belegt."
+   }
+  },
+  {
+   "title": "Microsoft Entra Connect Health: Lücke machte Daten von Mandanten und Administratoren lesbar",
+   "summary": "Microsoft hat Administratoren informiert, dass über eine Schwachstelle in der Schnittstelle von Entra Connect Health Unbefugte Daten von Mandanten lesen konnten. Entra Connect Health ist ein Cloud-Dienst, der lokale Identitätsinfrastruktur überwacht. Betroffen waren unter anderem E-Mail-Adressen von Administratoren und technischen Kontakten, Mandantenkennungen, Lizenzstufen und der Status der Verzeichnissynchronisation. Passwörter, Tokens und gültige Schlüssel waren laut Microsoft nicht betroffen. Die Lücke bestand seit 23. Juli, wurde am 9. November entdeckt und am 19. November auf den Servern geschlossen. Die Benachrichtigung läuft über Azure Service Health.",
+   "relevance": "Die abgeflossenen Daten taugen als Zielliste für Phishing gegen die Konten mit den meisten Rechten. Identitätsverantwortliche sollten Benachrichtigungen prüfen, Administratoren warnen und für privilegierte Konten eine phishing-resistente Anmeldung durchsetzen.",
+   "source": "BleepingComputer",
+   "url": "https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/",
+   "id": "2026-11-25-entra-connect-health-mandantendaten",
+   "topic": "IT-Governance & Risiko",
+   "impact": "mittel",
+   "published": "2026-11-21",
+   "tags": [
+    "Identitäten",
+    "Cloud-Anbieter",
+    "Phishing"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 5.23 – Informationssicherheit bei der Nutzung von Cloud-Diensten",
+    "ISO/IEC 27001 Anhang A 8.2 – Privilegierte Zugangsrechte",
+    "IT-Kontrollen der Abschlussprüfung – Zugriffsverwaltung"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Einkauf & Drittparteien"
+   ],
+   "countries": [
+    "EU",
+    "DE",
+    "AT"
+   ],
+   "dossier": "identitaeten-zugangsdaten",
+   "priority": 2,
+   "primary": false,
+   "added": "2026-11-25T06:07:29Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Der Artikel erschien am 21. November 2026. Die betroffenen Daten, die nicht betroffenen Daten und die Daten 23. Juli, 9. November und 19. November stimmen. Die Benachrichtigung über Azure Service Health ist belegt. Laut Quelle wurde die Lücke tatsächlich ausgenutzt; die Zusammenfassung sagt nur…"
    }
   },
   {
@@ -1819,6 +1923,41 @@
    "check": {
     "verdict": "ok",
     "note": "Artikel vom 20. November 2026. Bestätigung am Donnerstag (19. November), Entdeckung am 22. Oktober, vorsorglich abgeschaltete Anwendungen, kein festgestellter Datenabfluss beim Personal insgesamt, keine Lösegeldforderung und ARTEX laut Politico sind alle belegt."
+   }
+  },
+  {
+   "title": "Generalanwältin: Wer mit Daten bezahlt, bekommt keinen „kostenlosen“ Dienst",
+   "summary": "Generalanwältin Laila Medina hat am 19. November in der Rechtssache C-643/25 (Verbraucherzentrale Bundesverband gegen Meta) ihre Schlussanträge vorgelegt. Sie meint, dass die Preisgabe personenbezogener Daten zusammen mit der Einwilligung in deren kommerzielle Nutzung eine Zahlung im Sinne der Richtlinie über unlautere Geschäftspraktiken sein kann. Dann darf ein Dienst nicht als kostenlos beworben werden, außer die Daten dienen nur der Leistung oder gesetzlichen Pflichten. Datenschutz-Grundverordnung und Lauterkeitsrecht gelten nach ihrer Auffassung nebeneinander. Die Schlussanträge binden den Gerichtshof nicht.",
+   "relevance": "Folgt der Gerichtshof, müssen Händler prüfen, ob Apps, Kundenkarten und Bonusprogramme, die mit „kostenlos“ werben, Daten kommerziell nutzen. Damit wird die Einwilligungsverwaltung auch zu einem Thema des Lauterkeitsrechts.",
+   "source": "Gerichtshof der Europäischen Union",
+   "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-11/cp260169de.pdf",
+   "id": "2026-11-25-generalanwaeltin-daten-als-bezahlung",
+   "topic": "Datenschutz & Datenrecht",
+   "impact": "mittel",
+   "published": "2026-11-19",
+   "tags": [
+    "Gerichtshof der Europäischen Union",
+    "Bonusprogramme",
+    "Verbraucherrecht"
+   ],
+   "controls": [
+    "DSGVO Art. 6 und 7 – Rechtmäßigkeit und Einwilligung",
+    "DSGVO Art. 13 – Informationspflichten"
+   ],
+   "roles": [
+    "Datenschutz",
+    "Management"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": null,
+   "priority": 4,
+   "primary": true,
+   "added": "2026-11-25T06:07:29Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Den Text des PDF konnte ich nicht direkt auslesen. Die einmalige Websuche bestätigt, dass Generalanwältin Laila Medina am 19. November 2026 ihre Schlussanträge in der Rechtssache C-643/25 vorgelegt hat, mit den Kernaussagen der Zusammenfassung: Daten als Zahlung, Ausnahme nur bei ausschließlicher…"
    }
   },
   {
@@ -1991,6 +2130,41 @@
    "check": {
     "verdict": "ok",
     "note": "Artikel vom 19. November 2026. Eigene Gesellschaft in Irland, Leitung durch Führungskräfte mit Staatsbürgerschaft der Europäischen Union, Bindung an europäisches Recht, unabhängige Governance, keine kritischen Abhängigkeiten außerhalb der Union, Grundlage ist die europäische souveräne Cloud von…"
+   }
+  },
+  {
+   "title": "Kartenstandard: Nächste Version des PCI DSS laut Bericht für das zweite Quartal 2028 geplant",
+   "summary": "Der japanische Fachdienst Payment Navi berichtet, dass der Rat für Sicherheitsstandards der Kartenbranche die geltende Version 4.0.1 des Datensicherheitsstandards PCI DSS (Payment Card Industry Data Security Standard) durch eine neue Version ablösen will, Ziel ist das zweite Quartal 2028. Der Bericht stützt sich auf einen Vortrag des regionalen Direktors für Japan und Korea vom 25. September. Eine offizielle Ankündigung des Rats gibt es noch nicht.",
+   "relevance": "Wer Karten in Filialen und im Onlinehandel akzeptiert, sollte die nächste Umstellung schon in die Planung für Budget und Zertifizierung ab 2027 aufnehmen. Bis dahin bleibt Version 4.0.1 der Prüfmaßstab.",
+   "source": "Payment Navi",
+   "url": "https://paymentnavi.com/?p=186136",
+   "id": "2026-11-25-pci-dss-naechste-version-2028",
+   "topic": "Standards & Zertifizierung",
+   "impact": "info",
+   "published": "2026-11-18",
+   "tags": [
+    "Kartenzahlung",
+    "Standardrevision"
+   ],
+   "controls": [
+    "PCI DSS Anforderung 12.4 – Verantwortung der Leitung für die Einhaltung"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Revision & Prüfung"
+   ],
+   "countries": [
+    "EU",
+    "DE",
+    "AT"
+   ],
+   "dossier": "zahlungsverkehr-pci-dss",
+   "priority": 6,
+   "primary": false,
+   "added": "2026-11-25T06:07:29Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Der Artikel erschien am 18. November 2026. Ziel ist das zweite Quartal 2028 als Ablösung von Version 4.0.1, laut Vortrag des regionalen Direktors für Japan und Korea vom 25. September 2026. Eine offizielle Mitteilung des Rats wird nicht genannt."
    }
   },
   {
@@ -4857,6 +5031,45 @@
    "check": {
     "verdict": "ok",
     "note": "Datum 1. November, Zeitraum August 2023 bis September 2026 und die fehlenden Angaben sind belegt."
+   }
+  },
+  {
+   "title": "Workday: Test der Notfallumgebung greift auf Produktivdaten zu und legt Personalsoftware lahm",
+   "summary": "Am 13. November war Workday bei vielen Kunden nicht erreichbar. Beschäftigte konnten sich nicht anmelden, keine Arbeitszeit erfassen und keinen Urlaub beantragen. Laut Workday verbanden sich Dienste der Notfallumgebung unerwartet mit Produktivdatenbanken, als das wöchentliche Wartungsfenster der Notfallumgebung geprüft wurde. Daten waren teilweise inkonsistent, deshalb setzte Workday die betroffenen Produktivmandanten in den Wartungsmodus.",
+   "relevance": "Notfalltests eines Software-as-a-Service-Anbieters sind selbst ein Risiko und gehören mit Berichtspflichten und Wiederanlaufzielen in die Steuerung von Dienstleistern. Personal- und Zeitdaten, die im Störungszeitraum verarbeitet wurden, sollten nachgeprüft werden, bevor sie in Lohnabrechnung und Abschluss einfließen.",
+   "source": "Workday",
+   "url": "https://blog.workday.com/en-us/workday-data-center-outage-updates-on-status.html",
+   "id": "2026-11-25-workday-notfalltest-ausfall",
+   "topic": "Prüfung & Assurance",
+   "impact": "mittel",
+   "published": "2026-11",
+   "tags": [
+    "Resilienz",
+    "Software as a Service",
+    "Notfalltest"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 5.30 – Informations- und Kommunikationstechnik-Bereitschaft für Business Continuity",
+    "NIS-2 Art. 21 – Sicherheit der Lieferkette",
+    "IT-Kontrollen der Abschlussprüfung – Dienstleisterberichte und ergänzende Kontrollen beim Nutzer"
+   ],
+   "roles": [
+    "Einkauf & Drittparteien",
+    "Revision & Prüfung",
+    "IT-Risiko"
+   ],
+   "countries": [
+    "EU",
+    "DE",
+    "AT"
+   ],
+   "dossier": "drittparteien-lieferkette",
+   "priority": 3,
+   "primary": false,
+   "added": "2026-11-25T06:07:29Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Die angegebene Workday-Seite enthält inzwischen nur einen allgemeinen Hinweis zur Verfügbarkeit, ohne Datum, Ursache oder Folgen des Ausfalls. Die Websuche bestätigt aus mehreren Berichten den Ausfall am 13. November, die Verbindung der Notfallumgebung mit Produktivdatenbanken bei der Prüfung des…"
    }
   },
   {
@@ -12884,30 +13097,6 @@
    "source": "datenschutzticker.de",
    "url": "https://www.datenschutzticker.de/2026/07/bundestag-beschliesst-ki-durchfuehrungsgesetz/",
    "published": "2026-07-29",
-   "added": "2026-09-29T09:00:00Z"
-  },
-  {
-   "id": "2026-07-27-digital-omnibus-in-kraft",
-   "title": "Digital Omnibus in Kraft: Hochrisiko-Pflichten nach Anhang III erst ab 2. Dezember 2027",
-   "summary": "Die Verordnung 2026/1744 der Europäischen Union ist seit 27. Juli 2026 in Kraft. Die Pflichten für eigenständige Hochrisiko-Systeme Künstlicher Intelligenz (Anhang III, zum Beispiel Beschäftigung, Kreditwürdigkeit) gelten nun ab 2. Dezember 2027, für Künstliche Intelligenz in regulierten Produkten (Anhang I) ab 2. August 2028. Neu verboten sind unter anderem Systeme zur Erzeugung nicht-einvernehmlicher intimer Bilder.",
-   "relevance": "Mehr Zeit für Personal- und Scoring-Anwendungen – aber kein Freifahrtschein: Inventar und Einstufung jetzt aufbauen, damit 2027 nicht wieder knapp wird.",
-   "topic": "AI-Governance",
-   "impact": "hoch",
-   "source": "White & Case",
-   "url": "https://www.whitecase.com/insight-alert/eu-ai-omnibus-enters-force-amending-ai-act",
-   "published": "2026-07-27",
-   "added": "2026-09-29T09:00:00Z"
-  },
-  {
-   "id": "2026-07-27-art4-ki-kompetenz-neu",
-   "title": "Artikel 4 der Verordnung über Künstliche Intelligenz neu gefasst: Kompetenz im Umgang mit Künstlicher Intelligenz wird zur Bemühenspflicht",
-   "summary": "Statt „nach besten Kräften ein ausreichendes Niveau sicherzustellen“ müssen Anbieter und Betreiber nun Maßnahmen ergreifen, um die Entwicklung von Kompetenz im Umgang mit Künstlicher Intelligenz zu unterstützen. Ein bestimmtes Kompetenzniveau einzelner Personen muss ausdrücklich nicht garantiert werden.",
-   "relevance": "Die Pflicht bleibt, ist aber kontextbezogen: Schulungsmaßnahmen am tatsächlichen Einsatz Künstlicher Intelligenz ausrichten und dokumentieren – der Nachweis eines Mindestniveaus je Person entfällt.",
-   "topic": "AI-Governance",
-   "impact": "hoch",
-   "source": "lawandtechnology.eu",
-   "url": "https://lawandtechnology.eu/en/ai-literacy-digital-omnibus-article-4-ai-act/",
-   "published": "2026-07-27",
    "added": "2026-09-29T09:00:00Z"
   }
  ],

@@ -1,0 +1,179 @@
+{
+ "format": "tag",
+ "chapters": [
+  {
+   "title": "Begrüßung",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Guten Morgen, liebe IT-GRC-Kolleginnen und -Kollegen, willkommen beim IT-GRC Radar am Mittwoch, dem fünfundzwanzigsten November 2026."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Zwei Tage vor dem [en]Black Friday[/en]. Also genau die Woche, in der niemand ein Wartungsfenster haben will. Und trotzdem kommt natürlich die nächste Patch-Frist."
+    }
+   ]
+  },
+  {
+   "title": "Frist am Black Friday",
+   "news_id": "2026-11-25-kev-drupal-optimizely-anticsrf",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Genau damit fangen wir an. Die amerikanische Cybersicherheitsbehörde hat am Montag drei Lücken in ihren Katalog aktiv ausgenutzter Schwachstellen aufgenommen: im Drupal-Installer, in Optimizely Web Experimentation und in einer alten Bibliothek namens AntiCsrf. Frist ist der siebenundzwanzigste November."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Also ausgerechnet am [en]Black Friday[/en]. Bei Drupal können Angreifer über den Installer eine Seite neu aufsetzen und übernehmen, Patches gibt es. Für AntiCsrf gibt es keinen mehr, das Projekt ist eingestellt."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Moment, Optimizely hatten wir doch schon?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Da gibt es Neues: Das ist die Lücke hinter dem [en]Skimming[/en] auf fremden Bezahlseiten, jetzt mit Kennung und Frist. Der Hersteller hat auf seinen Servern korrigiert. Händler sollten trotzdem klären, wann das Skript auf ihren Bezahlseiten lief, und den Zahlungsdienstleister einbinden."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und wie findet man so eine alte Bibliothek?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Mit einer Software-Stückliste, falls man eine hat. Sonst mit viel Geduld und einer Excel-Liste."
+    }
+   ]
+  },
+  {
+   "title": "Entra Connect Health",
+   "news_id": "2026-11-25-entra-connect-health-mandantendaten",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Zweites Thema, Identitäten. Microsoft hat Administratoren informiert, dass über eine Lücke in Entra Connect Health Daten von Mandanten lesbar waren. Das ist ein [en]Cloud[/en]-Dienst, der lokale Verzeichnisdienste überwacht."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Eingebaut am dreiundzwanzigsten Juli, entdeckt am neunten November, behoben am neunzehnten. Lesbar waren unter anderem die E-Mail-Adressen von Administratoren und technischen Kontakten, Mandantenkennungen und Lizenzstufen. Passwörter und [en]Tokens[/en] laut Microsoft nicht."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Klingt erst mal harmlos."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ehrlich gesagt ist das die perfekte Zielliste für [en]Phishing[/en] gegen genau die Konten mit den meisten Rechten. Also Administratoren warnen, phishing-resistente Anmeldung durchsetzen und die Anmeldeprotokolle ansehen. Und prüfen, ob die Mitteilung von Microsoft überhaupt bei jemandem angekommen ist."
+    }
+   ]
+  },
+  {
+   "title": "Workday-Ausfall",
+   "news_id": "2026-11-25-workday-notfalltest-ausfall",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Da gibt es Neues zu den Abhängigkeiten von Dienstleistern. Am dreizehnten November fiel die Personalsoftware von Workday bei vielen Kunden aus. Beschäftigte konnten sich nicht anmelden, keine Arbeitszeit erfassen, keinen Urlaub beantragen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und die Ursache ist fast ein Lehrstück. Beim Test der [en]Disaster Recovery[/en] haben sich Dienste der Notfallumgebung unerwartet mit den Produktivdatenbanken verbunden. Daten waren teilweise inkonsistent, die Mandanten gingen in den Wartungsmodus."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Moment, der Notfalltest hat den Notfall ausgelöst?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "So ungefähr. Notfalltests von Anbietern gehören deshalb in die Vertragssteuerung, mit Berichtspflicht. Und wer in so einem Fenster Zeit- oder Lohndaten verarbeitet hat, sollte nachrechnen, bevor es die Prüfer tun."
+    }
+   ]
+  },
+  {
+   "title": "Daten als Bezahlung",
+   "news_id": "2026-11-25-generalanwaeltin-daten-als-bezahlung",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Jetzt Rechtsprechung. Die Generalanwältin am Gerichtshof der Europäischen Union meint: Wer Daten preisgibt und in ihre kommerzielle Nutzung einwilligt, kann damit bezahlen. Dann darf ein Dienst nicht als kostenlos beworben werden. Es geht um die Klage des Verbraucherzentrale Bundesverbands gegen Meta."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Spannend ist, dass Datenschutz-Grundverordnung und Lauterkeitsrecht nebeneinander gelten sollen. Eine Ausnahme gibt es nur, wenn die Daten ausschließlich für die Leistung oder für gesetzliche Pflichten genutzt werden. Im Handel betrifft das jede App und jedes Bonusprogramm, das mit gratis wirbt."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Bindend ist das aber noch nicht."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Nein, das Urteil kommt später. Trotzdem sollten sich Marketing, Datenschutz und Recht die Werbetexte schon jetzt gemeinsam ansehen. Ausnahmsweise mal ein Termin mit allen dreien, der sich lohnt."
+    }
+   ]
+  },
+  {
+   "title": "Ghostscript",
+   "news_id": "2026-11-25-ghostscript-upload2shell",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Kurz zu einer Lücke ohne bekannte Angriffe: Upload2Shell in Ghostscript, einer Bibliothek für PostScript- und PDF-Dateien. Mit präparierten Dateien lässt sich Code ausführen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Der Haken ist, dass Ghostscript oft versteckt mitläuft, etwa wenn ein Portal Vorschaubilder für hochgeladene Dateien erzeugt. Behoben ist das seit September mit Version 10.08.0, die Details sind seit dem einundzwanzigsten November öffentlich. Wer irgendwo einen [en]Upload[/en] anbietet, sollte nachsehen."
+    }
+   ]
+  },
+  {
+   "title": "Kartenstandard 2028",
+   "news_id": "2026-11-25-pci-dss-naechste-version-2028",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Und ein Blick nach vorn: Laut einem japanischen Fachdienst plant der Rat für Sicherheitsstandards der Kartenbranche die nächste Version seines Datensicherheitsstandards für das zweite Quartal 2028."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Das ist noch weit weg. Aber nach der letzten Umstellung wissen wir: Die Übergangszeit ist immer kürzer, als sie im Projektplan aussieht. Bis dahin bleibt Version 4.0.1 der Maßstab."
+    }
+   ]
+  },
+  {
+   "title": "Auf dem Radar",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Was hast du auf dem Radar?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Das Konzentrationsrisiko bei [en]Cloud[/en]-Anbietern. Neben Workday fielen in derselben Woche weitere große Dienste aus, laut Behörden ohne Angriff. Was tun wir, wenn ein zentraler Anbieter einen Tag lang weg ist? Das wird zur Prüfungsfrage."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und wer ist dafür [en]Owner[/en]?"
+    },
+    {
+     "speaker": "Florian",
+     "text": "Die ewige Frage. Wer sie zuerst beantwortet, hat schon halb gewonnen."
+    }
+   ]
+  },
+  {
+   "title": "Abschied",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Das war das IT-GRC Radar für heute. Alle Quellen findet ihr wie immer auf der Webseite."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und denkt an Freitag: erst patchen, dann shoppen. Bis morgen."
+    }
+   ]
+  }
+ ]
+}
