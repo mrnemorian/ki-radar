@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T06:07:29Z",
+ "updated": "2026-11-26T06:07:15Z",
  "topics": [
   "IT-Governance & Risiko",
   "Cyber- & IT-Regulierung",
@@ -11,6 +11,18 @@
   "Weitere Themen"
  ],
  "briefings": [
+  {
+   "date": "2026-11-26",
+   "headline": "Kühlsteuerung Danfoss jetzt amtlich angegriffen, Radware verliert Kundenschlüssel, Verwaltungsserver von Check Point gekapert",
+   "points": [
+    "Danfoss AK-SM 800A: drei ältere Lücken offiziell aktiv ausgenutzt, Behördenfristen 28. November und 9. Dezember",
+    "Radware: Zugangsdaten für Log-Speicher von Kunden abgeflossen, sofort tauschen",
+    "Check Point: 24 Management-Server über eine seit Juli bekannte Lücke übernommen",
+    "McDonald's Japan: Kaufhistorie und Standortdaten aus der App-Datenbank abgegriffen",
+    "Omnibus IV: Verzeichnis der Verarbeitungstätigkeiten soll erst ab 1.000 Beschäftigten Pflicht sein"
+   ],
+   "count": 5
+  },
   {
    "date": "2026-11-25",
    "headline": "Patch-Frist am Black Friday, Admin-Daten bei Microsoft lesbar, Workday-Ausfall durch Notfalltest und Daten als Bezahlung vor dem Gerichtshof",
@@ -353,18 +365,6 @@
     "Cyberagentur: 578 Prozent mehr Schwachstellen in großer Software als im Vorjahr, Angriffscode entsteht in Stunden"
    ],
    "count": 7
-  },
-  {
-   "date": "2026-10-25",
-   "headline": "Italien schaltet bei der NIS-2-Umsetzung auf Nachweise um, Agenten automatisieren den ConnectWise-Angriff, und Aufsichten in Südosteuropa sanktionieren.",
-   "points": [
-    "Italien: Bis 31. Oktober müssen grundlegende Sicherheitsmaßnahmen umgesetzt und funktionierend nachweisbar sein, Bußgelder bis 10 Millionen Euro oder 2 Prozent des Umsatzes",
-    "ConnectWise-Angriff: Microsoft nennt die staatsnahe chinesische Gruppe Storm-0940, die mit dem Agenten-Framework ARTEX über 2.250 Cloud-Umgebungen angriff",
-    "Rumänien verhängt das erste Bußgeld nach dem nationalen Cybersicherheitsgesetz, weil eine Meldepflicht nicht fristgerecht erfüllt wurde",
-    "Kroatien: 2,59 Millionen Euro Bußgeld, weil Fingerabdrücke von vier statt der angegebenen zwei Fingern erfasst wurden",
-    "Wettbewerber Schwarz Digits geht eine Partnerschaft für souveräne Infrastruktur mit Fujitsu und Fsas Technologies ein"
-   ],
-   "count": 5
   }
  ],
  "dossiers": [
@@ -380,19 +380,19 @@
    "title": "Betriebstechnik in Filialen und Logistik",
    "sector": "Handel & Branche",
    "ring": "jetzt handeln",
-   "status": "Forscher haben sechs ungepatchte Lücken im Kühlstellen-Systemmanager Danfoss AK-SM800A veröffentlicht. Sie erlauben eine Übernahme ohne Anmeldung, auch Version 5.4.0 gilt nicht als Korrektur, eine Ausnutzung ist nicht bekannt. Der Verband DigitalEurope zählt zwischen 18. Oktober und 18. November 16 Vorfälle in Europa. Frankreich ordnet die Kühlanlagen-Angriffe einer den Revolutionsgarden…",
-   "next_step": "Alle Kühl- und Gebäudesteuerungen mit Internet- oder Mobilfunkanbindung erfassen und vom offenen Internet trennen. Fernwartung nur über abgesicherte Zugänge erlauben, Sollwerte und Benutzerkonten auf Änderungen prüfen und Verträge mit Wartungsdienstleistern auf Fernzugriff und Meldewege prüfen.…",
+   "status": "Seit 25. November stehen drei ältere Lücken der Kühlstellen-Steuerung Danfoss AK-SM 800A im Katalog aktiv ausgenutzter Schwachstellen, die Behördenfristen enden am 28. November und 9. Dezember. Für die sechs im November veröffentlichten neuen Lücken ist weiterhin keine Korrektur und keine Ausnutzung bekannt.",
+   "next_step": "Alle Systemmanager mit Firmware-Stand erfassen, Internet-Erreichbarkeit und Fernwartungszugänge schließen und die Aktualisierung nachweisbar dokumentieren.",
    "open_questions": [
-    "Wann liefert Danfoss eine Korrektur für die sechs Lücken?",
-    "Wer ist Owner der Betriebstechnik in den Filialen: Facility Management oder Informationssicherheit?",
-    "Decken bestehende Cyberpolicen verdorbene Ware und Betriebsunterbrechung durch manipulierte Steuerungen?"
+    "Hängen die nun gelisteten Ausnutzungen mit den Kühlanlagen-Angriffen in Europa zusammen?",
+    "Wann liefert Danfoss Korrekturen für die sechs neuen Lücken?",
+    "Wer verantwortet Betriebstechnik in Filialen: Gebäudetechnik oder Informationssicherheit?"
    ],
    "controls": [
-    "NIS-2 Art. 21 – Risikomanagementmaßnahmen im Bereich der Cybersicherheit",
-    "ISO/IEC 27001 Anhang A 5.9 – Inventar der Informationen und anderen zugehörigen Werte",
+    "NIS-2-Richtlinie Art. 21 – Umgang mit Schwachstellen",
+    "ISO/IEC 27001 Anhang A 8.8 – Umgang mit technischen Schwachstellen",
     "IEC 62443 – Sicherheit industrieller Automatisierungssysteme"
    ],
-   "updated": "2026-11-23"
+   "updated": "2026-11-26"
   },
   {
    "slug": "drittparteien-lieferkette",
@@ -406,17 +406,17 @@
    "title": "Drittparteien- und Lieferkettenrisiko",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Bei Workday hat ein Test der Notfallumgebung am 13. November auf Produktivdatenbanken zugegriffen und die Personalsoftware vieler Kunden für Stunden lahmgelegt. Ein vollständiger Ursachenbericht stand zunächst aus. Zuvor hatten N-able, GL.iNet, Expedia und weitere Unternehmen Vorfälle über Dienstleister oder deren Fernverwaltung gemeldet.",
-   "next_step": "Bei wichtigen Software-as-a-Service-Anbietern Berichte über Notfalltests, Wiederanlaufziele und Ursachenberichte vertraglich einfordern und im Dienstleistermanagement nachhalten.",
+   "status": "Bei Radware war seit 19. November eine interne Verwaltungsschnittstelle der Cloud Web Application Firewall ohne Anmeldung erreichbar. Dabei flossen bei einem Teil der Kunden Zugangsdaten für deren Log-Speicher ab, Radware rät zum sofortigen Tausch. Zuvor hatten Workday, N-able, GL.iNet, Expedia und weitere Unternehmen Vorfälle über Dienstleister oder deren Fernverwaltung gemeldet.",
+   "next_step": "Erfassen, welche eigenen Zugangsdaten und Schlüssel bei Dienstleistern liegen, ihren Tausch testen und vertragliche Meldefristen prüfen.",
    "open_questions": [
-    "Welche Wiederanlaufzeit hat Workday vertraglich zugesagt, und wurde sie eingehalten?",
-    "Decken Dienstleisterberichte Notfalltests in der Produktion ab?"
+    "Wurden die bei Radware abgeflossenen Kundenschlüssel missbraucht?",
+    "Wie werden bei Dienstleistern hinterlegte Schlüssel in Lieferantenbewertungen erfasst?"
    ],
    "controls": [
-    "NIS-2 Art. 21 – Sicherheit der Lieferkette",
-    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen"
+    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen",
+    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette"
    ],
-   "updated": "2026-11-25"
+   "updated": "2026-11-26"
   },
   {
    "slug": "steuerliche-digitalpflichten",
@@ -479,17 +479,16 @@
    "title": "Kritische Schwachstellen in Randsystemen und Kernanwendungen",
    "sector": "IT-Governance & Risiko",
    "ring": "jetzt handeln",
-   "status": "Seit 24. November stehen Drupal, Optimizely Web Experimentation und die nicht mehr gepflegte Bibliothek Idunno AntiCsrf im Katalog aktiv ausgenutzter Lücken, die Behördenfrist endet am 27. November. Für Puppet gilt der 1. Dezember, für LiteLLM der 2. Dezember. Die Details zur Ghostscript-Lücke Upload2Shell sind seit 21. November öffentlich, Angriffe sind noch nicht bekannt.",
-   "next_step": "Vor dem Black Friday Drupal-Instanzen und Bezahlseiten mit Optimizely-Skripten prüfen und Ghostscript-Versionen in Upload- und Dokumentenprozessen inventarisieren.",
+   "status": "Seit 25. November stehen fünf Lücken in Mitel MiCollab, eine in Juniper Session Smart Router und eine in Xen Orchestra im Katalog aktiv ausgenutzter Lücken, die meisten Behördenfristen enden am 28. November. Angreifer haben über die seit Juli bekannte Lücke CVE-2026-16232 24 Management-Server von Check Point übernommen. Für Puppet gilt der 1. Dezember, für LiteLLM der 2. Dezember.",
+   "next_step": "Fristen bis 9. Dezember nachhalten, Verwaltungssysteme von Firewalls und Kommunikationsplattformen vorrangig patchen und veröffentlichte Kompromittierungsindikatoren prüfen.",
    "open_questions": [
-    "Wo stecken nicht mehr gepflegte Bibliotheken wie AntiCsrf in Eigenentwicklungen?",
-    "Decken Änderungssperren rund um Black Friday Notfall-Patches ausdrücklich ab?"
+    "Werden Verwaltungssysteme in den Patch-Kennzahlen getrennt ausgewiesen?"
    ],
    "controls": [
-    "ISO/IEC 27001 Anhang A 8.8 – Management technischer Schwachstellen",
-    "NIS-2 Art. 21 – Umgang mit Schwachstellen"
+    "ISO/IEC 27001 Anhang A 8.8 – Umgang mit technischen Schwachstellen",
+    "IT-Kontrollen der Abschlussprüfung – Änderungsmanagement"
    ],
-   "updated": "2026-11-25"
+   "updated": "2026-11-26"
   },
   {
    "slug": "lebenszyklus-altsysteme",
@@ -761,17 +760,16 @@
    "title": "Datenschutzreform und Digital Omnibus",
    "sector": "Datenschutz & Datenrecht",
    "ring": "beobachten",
-   "status": "Der Rat hat am 21. Oktober 2026 sein Mandat beschlossen, unter anderem mit Erleichterungen bei unbegründeten Auskunftsanfragen. Im Europäischen Parlament liegen neben 78 Änderungen im Berichtsentwurf 1.762 weitere Änderungsanträge vor, die Fraktionen sind teils uneinig. Eine Position ist bis Februar geplant.",
-   "next_step": "Keine Prozesse auf erwartete Erleichterungen umstellen. Die Abstimmungen im Innenausschuss und im Industrieausschuss sowie den Beginn des Trilogs beobachten.",
+   "status": "Zum Digital Omnibus hat der Rat am 21. Oktober 2026 sein Mandat beschlossen. Im Parlament liegen über 1.700 Änderungsanträge vor, eine Position ist bis Februar geplant. Schneller ist das Paket Omnibus IV: Nach der vorläufigen Einigung soll das Verzeichnis der Verarbeitungstätigkeiten erst ab 1.000 Beschäftigten Pflicht sein, die Plenarabstimmung war für den 23. November angesetzt.",
+   "next_step": "Ergebnis der Abstimmung, die Zustimmung des Rates und die Veröffentlichung im Amtsblatt verfolgen. Für Konzerngesellschaften prüfen, ob die Ausnahme greift.",
    "open_questions": [
-    "Schafft das Parlament seine Position bis Februar?",
-    "Bleibt die einheitliche Meldestelle für Cyber- und Datenschutzvorfälle im Endtext?"
+    "Hat das Parlament Omnibus IV am 23. November angenommen?",
+    "Wie werden Beschäftigte in Konzernstrukturen für die neue Schwelle gezählt?"
    ],
    "controls": [
-    "DSGVO Art. 15 – Auskunftsrecht der betroffenen Person",
-    "DSGVO Art. 33 – Meldung von Verletzungen des Schutzes personenbezogener Daten"
+    "DSGVO Art. 30 – Verzeichnis von Verarbeitungstätigkeiten"
    ],
-   "updated": "2026-11-23"
+   "updated": "2026-11-26"
   },
   {
    "slug": "digital-fairness-act",
@@ -820,17 +818,6 @@
   }
  ],
  "deadlines": [
-  {
-   "date": "2026-11-11",
-   "title": "VMware ESX: behördliche Frist zum Schließen der Protokollierungslücke",
-   "detail": "Die amerikanische Cybersicherheitsbehörde verlangt von Bundesbehörden die Behebung von CVE-2026-41709; Betreiber von VMware ESX sollten die Frist als Maßstab nehmen und das Update vom Juli einspielen.",
-   "scope": "global",
-   "url": "https://cybelangel.com/blog/cve-2026-41709-what-the-vmware-esx-logging-zero-day-means-for-your-business/",
-   "primary": false,
-   "checked": true,
-   "dossier": "kritische-schwachstellen-perimeter",
-   "added": "2026-11-02"
-  },
   {
    "date": "2026-11-13",
    "title": "Ende der Konsultation zur Bußgeld-Methodik des Europäischen Datenschutzausschusses",
@@ -942,6 +929,17 @@
    "added": "2026-11-25"
   },
   {
+   "date": "2026-11-28",
+   "title": "Mitel MiCollab, Juniper, Xen Orchestra und Danfoss: behördliche Patch-Frist",
+   "detail": "Die Behördenfrist für die meisten der am 25. November gelisteten aktiv ausgenutzten Lücken endet. Wer diese Produkte betreibt, sollte bis dahin aktualisiert oder abgeschottet haben.",
+   "scope": "global",
+   "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
+   "primary": true,
+   "checked": true,
+   "dossier": "kritische-schwachstellen-perimeter",
+   "added": "2026-11-26"
+  },
+  {
    "date": "2026-12-01",
    "title": "Puppet-Lücke CVE-2026-115731: behördliche Patch-Frist",
    "detail": "Wer Puppet Enterprise oder Puppet Core betreibt, sollte bis dahin die korrigierten Versionen einspielen und die Zertifikatssignierung prüfen.",
@@ -995,6 +993,17 @@
    "checked": true,
    "dossier": "cyber-resilience-act",
    "added": "2026-11-02"
+  },
+  {
+   "date": "2026-12-09",
+   "title": "Danfoss CVE-2025-41450 und Mitel CVE-2026-133311: behördliche Patch-Frist",
+   "detail": "Für die Anmeldelücke im Danfoss-Systemmanager AK-SM 800A und eine weitere MiCollab-Lücke endet die Behördenfrist. Betreiber von Kühlstellen-Steuerungen müssen bis dahin aktualisiert haben.",
+   "scope": "global",
+   "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
+   "primary": true,
+   "checked": true,
+   "dossier": "betriebstechnik-filialen-logistik",
+   "added": "2026-11-26"
   },
   {
    "date": "2026-12-15",
@@ -1223,16 +1232,16 @@
   },
   {
    "theme": "Neue Prüfungsstandards für Prüfungsnachweise",
-   "why": "Der Entwurf des International Auditing and Assurance Standards Board zum Standard ISA 500 enthält einen neuen Anhang zum Einsatz technischer Werkzeuge bei der Gewinnung von Prüfungsnachweisen, die Konsultation läuft bis 15. Dezember 2026. Das verändert, welche Daten und Kontrollnachweise Abschlussprüfer künftig anfordern.",
-   "count": 12,
+   "why": "Der internationale Standardsetzer für Abschlussprüfung will mehrere Prüfungsstandards an neue Technologierisiken anpassen, Rückmeldungen sind bis 15. Dezember 2026 möglich. Das kann verändern, welche Nachweise Prüfer zu automatisierten Kontrollen und Datenanalysen verlangen.",
+   "count": 13,
    "first_seen": "2026-09-30",
-   "last_seen": "2026-11-24",
+   "last_seen": "2026-11-26",
    "evidence": [
+    "https://accountingtoday.com/news/iaasb-proposes-to-revise-audit-standards-for-new-risks-and-tech",
     "https://www.iaasb.org/publications/proposed-revisions-audit-evidence-risk-response-isa-330-isa-500-isa-520",
     "https://acts.co.za/news/blog/2026/08/iaasb-proposed-revisions-core-auditing-standards",
     "https://www.iaasb.org/news-events/2026-10/iaasb-enews-october-2026",
-    "https://ifacweb.blob.core.windows.net/publicfiles/2026-08/IAASB-Audit-Evidence-Risk-Response-ISA-500-Exposure-Draft.pdf",
-    "https://www.iaasb.org/consultations-projects/audit-evidence-and-risk-response-isa-330-isa-500-isa-520"
+    "https://ifacweb.blob.core.windows.net/publicfiles/2026-08/IAASB-Audit-Evidence-Risk-Response-ISA-500-Exposure-Draft.pdf"
    ]
   },
   {
@@ -1250,6 +1259,19 @@
    ]
   },
   {
+   "theme": "Normen zum Cyber Resilience Act",
+   "why": "Die ersten beiden Normen der Reihe EN 40000 (Begriffe und Grundsätze der Cyber-Resilienz) haben laut Fachbericht die formale Zustimmung der europäischen Normungsorganisationen erhalten, ihre Ratifizierung war für den 2. November 2026 angesetzt. Sie werden zum Maßstab für Herstelleranforderungen und damit für Einkaufsbedingungen bei vernetzten Produkten.",
+   "count": 9,
+   "first_seen": "2026-10-11",
+   "last_seen": "2026-11-26",
+   "evidence": [
+    "https://www.ibf-solutions.com/en/news-and-knowledge/technical-papers-and-news-on-ce-marking/current-status-of-standardisation-for-the-cyber-resilience-act",
+    "https://compliance.globalnorm.de/en/product-compliance-news/detail/eu-cyber-resilience-act-cra-standards-en-40000-1-x-series/",
+    "https://www.cyberresilienceact.eu/state-of-play.html",
+    "https://www.cyberresilienceact.eu/news/cra-standardisation-deadlines-pushed-back-two-months.html"
+   ]
+  },
+  {
    "theme": "Autonome Angriffe durch Agenten",
    "why": "Die Europäische Kommission wurde von einer Kampagne mit einem öffentlich verfügbaren Angriffswerkzeug Künstlicher Intelligenz getroffen. Die Einstiegshürde für schnelle, automatisierte Angriffe sinkt damit auch gegenüber Unternehmen.",
    "count": 8,
@@ -1261,19 +1283,6 @@
     "https://www.theregister.com/cyber-crime/2026/10/28/123-reg-discloses-ai-cyberattack-on-customer-data-suspects-china-nexus/5305936",
     "https://bleepingcomputer.com/news/security/hacker-used-artex-ai-and-claude-agents-to-target-south-korean-banks",
     "https://www.kedglobal.com/banking-finance/newsView/ked202610040005"
-   ]
-  },
-  {
-   "theme": "Normen zum Cyber Resilience Act",
-   "why": "Die Teile EN 40000-1-1 und 1-2 haben Anfang Oktober die formale Abstimmung durchlaufen, der Teil zum Umgang mit Schwachstellen liegt nur als Entwurf vor. Eine Vermutung der Konformität entsteht erst mit der Veröffentlichung im Amtsblatt. Das betrifft Eigenmarken mit digitalen Elementen und Einkaufsbedingungen für vernetzte Produkte.",
-   "count": 8,
-   "first_seen": "2026-10-11",
-   "last_seen": "2026-11-20",
-   "evidence": [
-    "https://www.ibf-solutions.com/en/news-and-knowledge/technical-papers-and-news-on-ce-marking/current-status-of-standardisation-for-the-cyber-resilience-act",
-    "https://compliance.globalnorm.de/en/product-compliance-news/detail/eu-cyber-resilience-act-cra-standards-en-40000-1-x-series/",
-    "https://www.cyberresilienceact.eu/state-of-play.html",
-    "https://www.cyberresilienceact.eu/news/cra-standardisation-deadlines-pushed-back-two-months.html"
    ]
   },
   {
@@ -1567,6 +1576,149 @@
  ],
  "news": [
   {
+   "title": "Update: Kühlsteuerung Danfoss AK-SM 800A – drei Lücken offiziell als aktiv ausgenutzt gelistet",
+   "summary": "Die amerikanische Behörde für Cybersicherheit und Infrastruktursicherheit hat am 25. November zehn Lücken in ihren Katalog aktiv ausgenutzter Schwachstellen aufgenommen. Darunter sind drei ältere Lücken in der Danfoss AK-SM 800A Series (CVE-2023-25914, CVE-2023-25915, CVE-2025-41450: Pfadmanipulation, fehlerhafte Eingabeprüfung, fehlerhafte Anmeldung). Neu sind außerdem fünf Lücken in Mitel MiCollab, eine in Juniper Session Smart Router und eine in Xen Orchestra. Die Behördenfristen enden am 28. November beziehungsweise 9. Dezember, Details zu den Angriffen nennt die Behörde nicht.",
+   "relevance": "Bisher hieß es nur, dass neue Lücken offen, aber nicht ausgenutzt sind. Jetzt ist die Ausnutzung älterer Lücken amtlich. Für Filialen und Logistik heißt das: Firmware-Stand und Internet-Erreichbarkeit aller Systemmanager belegen und veraltete Versionen als akutes Risiko im Schwachstellen-Management führen.",
+   "source": "Cybersecurity and Infrastructure Security Agency",
+   "url": "https://www.cisa.gov/news-events/alerts/2026/11/25/cisa-adds-10-known-exploited-vulnerabilities-catalog",
+   "id": "2026-11-26-danfoss-kev-aktiv-ausgenutzt",
+   "topic": "Handel & Branche",
+   "impact": "hoch",
+   "published": "2026-11-25",
+   "tags": [
+    "Kühlanlagen",
+    "Betriebstechnik",
+    "aktiv ausgenutzt"
+   ],
+   "controls": [
+    "NIS-2-Richtlinie Art. 21 – Umgang mit Schwachstellen",
+    "ISO/IEC 27001 Anhang A 8.8 – Umgang mit technischen Schwachstellen"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Management"
+   ],
+   "countries": [
+    "EU",
+    "DE",
+    "AT"
+   ],
+   "dossier": "betriebstechnik-filialen-logistik",
+   "priority": 1,
+   "primary": true,
+   "added": "2026-11-26T06:07:15Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Die Behörde hat die Meldung am 25. November 2026 veröffentlicht. Alle zehn Lücken stehen so in der Quelle: drei bei Danfoss mit den genannten Nummern und Arten, fünf in Mitel MiCollab, eine bei Juniper Session Smart Router und eine in Xen Orchestra. Laut Katalog enden die Fristen am 28. November…"
+   }
+  },
+  {
+   "title": "Radware: Offene Schnittstelle legte Zugangsdaten für Log-Speicher von Cloud-Kunden frei",
+   "summary": "Am 19. November griff ein Unbefugter bei Radware auf eine interne Verwaltungsschnittstelle der Cloud Web Application Firewall zu, die ohne Anmeldung aus dem Internet erreichbar war. Abgeflossen sind Kontaktdaten und bei einem Teil der Kunden die Zugangsdaten für den Log-Export in eigene Speicher bei Amazon S3, Azure Blob Storage oder per verschlüsselter Dateiübertragung. Radware rät, diese Zugangsdaten sofort zu tauschen und Zugriffe seit dem 19. November zu prüfen. Einige Kunden meldeten bereits Warnungen über Zugriffsversuche einer unbekannten Adresse auf ihre Speicher.",
+   "relevance": "Ein Sicherheitsdienstleister wird selbst zum Einfallstor in die Cloud-Speicher seiner Kunden. Für das Drittparteien-Management heißt das: erfassen, welche eigenen Schlüssel bei Dienstleistern liegen, wie schnell sie sich tauschen lassen und ob ihre Rechte auf das Nötigste beschränkt sind.",
+   "source": "BleepingComputer",
+   "url": "https://www.bleepingcomputer.com/news/security/radware-discloses-breach-exposing-customer-cloud-access-keys/",
+   "id": "2026-11-26-radware-cloud-waf-schluessel",
+   "topic": "IT-Governance & Risiko",
+   "impact": "hoch",
+   "published": "2026-11-24",
+   "tags": [
+    "Dienstleister",
+    "Cloud-Schlüssel",
+    "Web Application Firewall"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 5.19 – Informationssicherheit in Lieferantenbeziehungen",
+    "NIS-2-Richtlinie Art. 21 – Sicherheit der Lieferkette",
+    "ISO/IEC 27001 Anhang A 5.17 – Authentisierungsinformationen"
+   ],
+   "roles": [
+    "Einkauf & Drittparteien",
+    "IT-Risiko"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "drittparteien-lieferkette",
+   "priority": 2,
+   "primary": false,
+   "added": "2026-11-26T06:07:15Z",
+   "check": {
+    "verdict": "abweichung",
+    "note": "Die Quelle spricht nur von Warnmeldungen über Zugriffsversuche einer unbekannten Adresse. Dass tatsächlich zugegriffen wurde, steht dort nicht. Datum, Schnittstelle, abgeflossene Daten und Empfehlungen stimmen."
+   }
+  },
+  {
+   "title": "Check Point: Angreifer übernehmen 24 Management-Server über eine seit Juli bekannte Lücke",
+   "summary": "Das Sicherheitsunternehmen GreyNoise hat eine Kampagne beobachtet, bei der 24 Management-Server von Check Point in 22 Organisationen aus 17 Ländern kompromittiert wurden, unter anderem in Finanzwesen, Energie und Transport. Genutzt wurde die im Juli 2026 veröffentlichte Anmeldeumgehung CVE-2026-16232 in SmartConsole. Die Angreifer stahlen Firewall-Datenbanken, Zugangsdaten und Dateien interner Zertifizierungsstellen und entluden Sicherheitsrichtlinien. Check Point betont, Lücke und Schutzmaßnahmen seien nicht neu.",
+   "relevance": "Die Verwaltungsebene von Firewalls ist ein Kronjuwel: Wer sie kontrolliert, kann den Schutz abschalten und eigene Zertifikate ausstellen. Für Patch- und Härtungsprozesse heißt das: Verwaltungssysteme so schnell aktualisieren wie die Geräte am Rand und ihre Erreichbarkeit beschränken.",
+   "source": "BleepingComputer",
+   "url": "https://www.bleepingcomputer.com/news/security/hackers-compromise-check-point-servers-in-22-organizations/",
+   "id": "2026-11-26-check-point-management-server-kampagne",
+   "topic": "IT-Governance & Risiko",
+   "impact": "mittel",
+   "published": "2026-11-24",
+   "tags": [
+    "Firewall",
+    "Patch-Management",
+    "Spionage"
+   ],
+   "controls": [
+    "ISO/IEC 27001 Anhang A 8.8 – Umgang mit technischen Schwachstellen",
+    "ISO/IEC 27001 Anhang A 8.2 – Privilegierte Zugriffsrechte"
+   ],
+   "roles": [
+    "IT-Risiko",
+    "Revision & Prüfung"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "kritische-schwachstellen-perimeter",
+   "priority": 3,
+   "primary": false,
+   "added": "2026-11-26T06:07:15Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Veröffentlicht am 24. November 2026. Diese Angaben stimmen mit der Quelle überein: 24 Server, 22 Organisationen, 17 Länder, die genannten Branchen, CVE-2026-16232 in SmartConsole mit Veröffentlichung im Juli 2026, die gestohlenen Daten, das Entladen von Richtlinien und die Stellungnahme von Check…"
+   }
+  },
+  {
+   "title": "McDonald's Japan: Kaufhistorie und Standortdaten aus der App-Datenbank abgegriffen",
+   "summary": "Angreifer haben auf die Datenbank hinter der offiziellen App von McDonald's Japan zugegriffen. Betroffen sind laut Unternehmen Kaufhistorie, Internetadressen, Standortdaten der Mobilgeräte und Kundenkennungen. Namen, E-Mail-Adressen, Telefonnummern und Kreditkartendaten sind demnach nicht betroffen.",
+   "relevance": "Auch ohne Namen lassen sich Kaufhistorie und Standortdaten aus Händler-Apps oft einer Person zuordnen und zu Bewegungsprofilen verdichten. Kunden- und Bonus-Apps sollten auf Datensparsamkeit, Löschfristen für Standortdaten und eine saubere Bewertung solcher Vorfälle geprüft werden.",
+   "source": "BleepingComputer",
+   "url": "https://www.bleepingcomputer.com/news/security/mcdonalds-japan-data-breach-exposes-customer-location-information/",
+   "id": "2026-11-26-mcdonalds-japan-app-standortdaten",
+   "topic": "Handel & Branche",
+   "impact": "mittel",
+   "published": "2026-11-24",
+   "tags": [
+    "Kunden-App",
+    "Standortdaten",
+    "Datenabfluss"
+   ],
+   "controls": [
+    "DSGVO Art. 25 – Datenschutz durch Technikgestaltung",
+    "DSGVO Art. 32 – Sicherheit der Verarbeitung"
+   ],
+   "roles": [
+    "Datenschutz",
+    "IT-Risiko"
+   ],
+   "countries": [
+    "JP"
+   ],
+   "dossier": null,
+   "priority": 4,
+   "primary": false,
+   "added": "2026-11-26T06:07:15Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Veröffentlicht am 24. November 2026. Die betroffenen und die nicht betroffenen Datenarten stimmen mit der Quelle überein."
+   }
+  },
+  {
    "title": "Update: Optimizely-Lücke und Drupal-Installer aktiv ausgenutzt, Behördenfrist 27. November",
    "summary": "Die amerikanische Cybersicherheitsbehörde hat am 24. November drei Lücken in ihren Katalog aktiv ausgenutzter Schwachstellen aufgenommen: CVE-2026-132165 im Drupal-Installer, CVE-2026-132224 in Optimizely Web Experimentation und CVE-2026-131914 in der nicht mehr gepflegten ASP.NET-Bibliothek Idunno AntiCsrf. Für Drupal gibt es die Versionen 10.6.22, 11.3.22 und 11.4.13. Optimizely hat die Lücke auf seinen Servern geschlossen, für AntiCsrf gibt es keinen Patch. Neu gegenüber dem bisherigen Stand: Die Optimizely-Lücke, über die Skimming-Code in Kundenskripte gelangte, hat jetzt eine Kennung und eine Frist. Diese endet laut Katalogdaten am 27. November.",
    "relevance": "Händler mit Drupal-Seiten oder Optimizely-Skripten auf Bezahlseiten sollten vor dem Black Friday patchen und den Zeitraum möglicher Datenabflüsse mit dem Zahlungsdienstleister klären. Alte Bibliotheken ohne Pflege lassen sich nur mit einer gepflegten Software-Stückliste finden.",
@@ -1706,6 +1858,39 @@
    "check": {
     "verdict": "ok",
     "note": "Veröffentlicht am 23. November 2026. Angriff in der Nacht zum 19. November, ausgefallene Dienste, Synchronisation, eigene Anmeldeserver bei Thalia, Aussage zu personenbezogenen Daten und Dauer von einigen Tagen stimmen mit der Quelle überein."
+   }
+  },
+  {
+   "title": "Omnibus IV: Verzeichnispflicht der Datenschutz-Grundverordnung erst ab 1.000 Beschäftigten",
+   "summary": "Im Paket Omnibus IV haben sich Parlament und Rat im Juni 2026 vorläufig geeinigt, die Ausnahme vom Verzeichnis der Verarbeitungstätigkeiten auf Unternehmen mit weniger als 1.000 Beschäftigten auszuweiten, bisher liegt die Grenze bei 250. Bei voraussichtlich hohem Risiko für Betroffene bleibt das Verzeichnis für die jeweilige Verarbeitung Pflicht. Laut Fachbericht war die Plenarabstimmung für den 23. November angesetzt, danach muss noch der Rat zustimmen.",
+   "relevance": "Für einen Konzern mit sehr vielen Beschäftigten ändert sich zunächst wenig, das Verzeichnis bleibt ein zentrales Steuerungs- und Nachweisinstrument. Ob einzelne Gesellschaften oder Dienstleister profitieren, hängt an der Zählweise und sollte geprüft werden. Zugleich zeigt der Fall, dass einzelne Erleichterungen schneller kommen als der Digital Omnibus.",
+   "source": "PPC Land",
+   "url": "https://ppc.land/firms-under-1-000-staff-win-gdpr-records-exemption-in-eu-deal/",
+   "id": "2026-11-26-omnibus-iv-verzeichnis-1000",
+   "topic": "Datenschutz & Datenrecht",
+   "impact": "info",
+   "published": "2026-11-22",
+   "tags": [
+    "Verarbeitungsverzeichnis",
+    "Entlastung",
+    "Gesetzgebung"
+   ],
+   "controls": [
+    "DSGVO Art. 30 – Verzeichnis von Verarbeitungstätigkeiten"
+   ],
+   "roles": [
+    "Datenschutz"
+   ],
+   "countries": [
+    "EU"
+   ],
+   "dossier": "dsgvo-reform-digital-omnibus",
+   "priority": 5,
+   "primary": false,
+   "added": "2026-11-26T06:07:15Z",
+   "check": {
+    "verdict": "ok",
+    "note": "Veröffentlicht am 22. November 2026. Die vorläufige Einigung stammt vom 9. Juni 2026, die Grenze steigt von 250 auf 1.000 Beschäftigte, die Ausnahme bei hohem Risiko ist belegt. Der 23. November ist laut Quelle der vorläufig angesetzte Plenartermin, danach muss der Rat noch zustimmen."
    }
   },
   {

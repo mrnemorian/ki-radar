@@ -1,11 +1,17 @@
 {
  "last_run": {
-  "start": "2026-11-25T07:00:01+01:00",
-  "end": "2026-11-25T07:07:29+01:00",
+  "start": "2026-11-26T07:00:01+01:00",
+  "end": "2026-11-26T07:07:15+01:00",
   "ok": true,
-  "summary": "6 neue Meldungen: P1 Update: Optimizely-Lücke und Drupal-Installer aktiv ausgenutzt, Behördenfrist 27. November; P2 Microsoft Entra Connect Health: Lücke machte Daten von Mandanten und Administrato"
+  "summary": "5 neue Meldungen: P1 Update: Kühlsteuerung Danfoss AK-SM 800A – drei Lücken offiziell als aktiv ausgenutzt gelistet; P2 Radware: Offene Schnittstelle legte Zugangsdaten für Log-Speicher von Cloud"
  },
  "history": [
+  {
+   "start": "2026-11-26T07:00:01+01:00",
+   "end": "2026-11-26T07:07:15+01:00",
+   "ok": true,
+   "summary": "5 neue Meldungen: P1 Update: Kühlsteuerung Danfoss AK-SM 800A – drei Lücken offiziell als aktiv ausgenutzt gelistet; P2 Radware: Offene Schnittstelle legte Zugangsdaten für Log-Speicher von Cloud"
+  },
   {
    "start": "2026-11-25T07:00:01+01:00",
    "end": "2026-11-25T07:07:29+01:00",
@@ -83,12 +89,6 @@
    "end": "2026-11-13T07:07:23+01:00",
    "ok": true,
    "summary": "4 neue Meldungen: P1 Webhoster Mittwald: Angriff über eigene Schnittstelle für Agenten, erneut im Krisenmodus; P2 Kassengesetz: Bundestag berät digitale Belege, Kassenpflicht und Nachschau ab 2028;"
-  },
-  {
-   "start": "2026-11-12T07:00:01+01:00",
-   "end": "2026-11-12T07:07:01+01:00",
-   "ok": true,
-   "summary": "6 neue Meldungen: P1 Update: Digital Fairness Act – Kommission legt Vorschlag mit Bußgeldern bis 6 Prozent vor; P2 Chrome: Update schließt bereits angegriffene Lücke CVE-2026-125350; P3 Casinos A"
   }
  ]
 }

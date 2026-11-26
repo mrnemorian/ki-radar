@@ -1,0 +1,173 @@
+{
+ "format": "tag",
+ "chapters": [
+  {
+   "title": "Begrüßung",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Guten Morgen, liebe IT-GRC-Kolleginnen und -Kollegen, willkommen beim IT-GRC Radar. Heute ist Donnerstag, der sechsundzwanzigste November 2026, und morgen ist [en]Black Friday[/en]."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Also der Tag, an dem die Kassen klingeln, hoffentlich nur die Kassen. Und die Kühltruhen bleiben bitte kalt."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Passt, denn genau damit fangen wir an."
+    }
+   ]
+  },
+  {
+   "title": "Danfoss offiziell angegriffen",
+   "news_id": "2026-11-26-danfoss-kev-aktiv-ausgenutzt",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Da gibt es Neues zu den Kühlsteuerungen. Die amerikanische Behörde für Cybersicherheit und Infrastruktursicherheit hat gestern drei Lücken im Systemmanager Danfoss AK-SM 800A in ihren Katalog aktiv ausgenutzter Schwachstellen aufgenommen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Moment, das sind aber nicht die sechs neuen Lücken von Mitte November, oder?"
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Nein, das sind ältere Lücken aus 2023 und 2025: Pfadmanipulation, fehlerhafte Eingabeprüfung, fehlerhafte Anmeldung. Die Behördenfristen enden am achtundzwanzigsten November und am neunten Dezember."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Ehrlich gesagt ist das fast die schlechtere Nachricht. Bei alten Lücken gibt es längst Updates, und trotzdem wird angegriffen. Die Frage ist also nicht mehr, ob Betriebstechnik in der Filiale ins Schwachstellen-Management gehört, sondern wie schnell man belegen kann, welcher Firmware-Stand wo läuft."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Und ob das jemand weiß, der nicht nur in der Gebäudetechnik sitzt."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Genau, das ewige Wer ist eigentlich [en]Owner[/en], diesmal mit Kühlkette. Wichtig ist aber: Die Behörde nennt keine Details zu den Angriffen. Ob es einen Zusammenhang mit den Vorfällen in europäischen Supermärkten gibt, steht da nicht."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "In derselben Liste stehen übrigens auch fünf Lücken in Mitel MiCollab, eine bei Juniper und eine in Xen Orchestra."
+    }
+   ]
+  },
+  {
+   "title": "Radware verliert Kundenschlüssel",
+   "news_id": "2026-11-26-radware-cloud-waf-schluessel",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Zweites Thema: Radware. Dort hat am neunzehnten November ein Unbefugter auf eine interne Verwaltungsschnittstelle der [en]Cloud Web Application Firewall[/en] zugegriffen, die ohne Anmeldung aus dem Internet erreichbar war."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Bei einem Sicherheitsanbieter. Man möchte es kaum aussprechen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Abgeflossen sind Kontaktdaten und bei einem Teil der Kunden die Zugangsdaten für den [en]Log[/en]-Export in eigene Speicher, also Amazon S3, Azure oder verschlüsselte Dateiübertragung. Radware rät, diese Schlüssel sofort zu tauschen und alle Zugriffe seit dem neunzehnten zu prüfen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Das ist ein Lehrstück fürs Drittparteien-Management. In den Lieferantenfragebögen steht meistens, ob der Dienstleister zertifiziert ist. Selten steht da: Welche unserer Schlüssel liegen bei dir, und wie schnell können wir sie tauschen? Diese Liste fehlt oft, oder sie steckt in einem Excel-Reiter, den keiner pflegt."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Einige Kunden haben schon Warnungen über Zugriffsversuche einer unbekannten Adresse auf ihre Speicher gemeldet. Ob die Schlüssel missbraucht wurden, untersucht Radware noch."
+    }
+   ]
+  },
+  {
+   "title": "Check-Point-Verwaltungsserver gekapert",
+   "news_id": "2026-11-26-check-point-management-server-kampagne",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Bleiben wir bei [en]Firewalls[/en]. Das Sicherheitsunternehmen GreyNoise hat beobachtet, wie Angreifer 24 [en]Management[/en]-Server von Check Point in 22 Organisationen übernommen haben, verteilt auf 17 Länder."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Über etwas Neues?"
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Eben nicht, sondern über eine Anmeldeumgehung, die Check Point schon im Juli veröffentlicht hat. Die Angreifer haben Firewall-Datenbanken, Zugangsdaten und Dateien interner Zertifizierungsstellen gestohlen und teilweise Sicherheitsrichtlinien entladen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Den Schutz also einfach ausgeschaltet. Die Verwaltungsebene ist das Kronjuwel, wird beim Patchen aber oft wie ein Hinterzimmer behandelt. Für die Steuerung heißt das: Patch-Fristen auch für die Systeme nachhalten, die die Geräte am Rand verwalten, nicht nur für die Geräte selbst."
+    }
+   ]
+  },
+  {
+   "title": "App-Daten bei McDonald's Japan",
+   "news_id": "2026-11-26-mcdonalds-japan-app-standortdaten",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Kurz nach Japan: Bei McDonald's Japan haben Angreifer auf die Datenbank hinter der App zugegriffen. Betroffen sind Kaufhistorie, Internetadressen, Standortdaten der Geräte und Kundenkennungen. Namen, Telefonnummern und Kartendaten sind nach Angaben des Unternehmens nicht betroffen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Klingt harmlos, ist es aber nicht. Kaufhistorie plus Standort ergibt ziemlich schnell ein Bewegungsprofil. Für Kunden- und Bonus-Apps heißt das: Standortdaten sparsam erheben und nicht länger aufbewahren als nötig."
+    }
+   ]
+  },
+  {
+   "title": "Verzeichnispflicht ab 1.000 Beschäftigten",
+   "news_id": "2026-11-26-omnibus-iv-verzeichnis-1000",
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Zum Schluss Datenschutz. Im Paket Omnibus vier soll die Ausnahme vom Verzeichnis der Verarbeitungstätigkeiten künftig für Unternehmen mit weniger als 1.000 Beschäftigten gelten, bisher liegt die Grenze bei 250."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Wir dürfen also unser Verzeichnis wegwerfen?"
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Netter Versuch. Bei hohem Risiko bleibt die Pflicht für die jeweilige Verarbeitung. Die Plenarabstimmung war für den dreiundzwanzigsten November angesetzt, danach muss noch der Rat zustimmen."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Für einen großen Konzern ändert sich erst einmal wenig, und ehrlich gesagt ist das Verzeichnis auch ohne Pflicht das beste Inventar, das man hat. Spannender finde ich: Die kleine Reform überholt gerade den großen Digital Omnibus."
+    }
+   ]
+  },
+  {
+   "title": "Auf dem Radar",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Auf dem Radar: die Normen zum [en]Cyber Resilience Act[/en]. Die ersten beiden Teile der Reihe EN 40000 haben laut einem Fachbericht die formale Zustimmung der europäischen Normungsorganisationen erhalten."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Daran wird man Hersteller vernetzter Produkte im Einkauf messen können. Nach der Geschichte mit den Kühlsteuerungen ist das kein ganz abstraktes Thema."
+    }
+   ]
+  },
+  {
+   "title": "Abschied",
+   "news_id": null,
+   "turns": [
+    {
+     "speaker": "Seraphina",
+     "text": "Das war das IT-GRC Radar für heute. Alle Quellen findet ihr wie immer auf der Webseite."
+    },
+    {
+     "speaker": "Florian",
+     "text": "Und falls ihr morgen einkaufen geht: erst die Firmware prüfen, dann den Warenkorb füllen."
+    },
+    {
+     "speaker": "Seraphina",
+     "text": "Bis morgen!"
+    }
+   ]
+  }
+ ]
+}
