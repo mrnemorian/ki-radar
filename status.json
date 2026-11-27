@@ -1,11 +1,17 @@
 {
  "last_run": {
-  "start": "2026-11-26T07:00:01+01:00",
-  "end": "2026-11-26T07:07:15+01:00",
-  "ok": true,
-  "summary": "5 neue Meldungen: P1 Update: Kühlsteuerung Danfoss AK-SM 800A – drei Lücken offiziell als aktiv ausgenutzt gelistet; P2 Radware: Offene Schnittstelle legte Zugangsdaten für Log-Speicher von Cloud"
+  "start": "2026-11-27T07:00:01+01:00",
+  "end": "2026-11-27T07:00:07+01:00",
+  "ok": false,
+  "summary": "Claude-Anmeldung auf dem Pi abgelaufen – per ssh auf dem Pi 'claude' starten und /login ausführen"
  },
  "history": [
+  {
+   "start": "2026-11-27T07:00:01+01:00",
+   "end": "2026-11-27T07:00:07+01:00",
+   "ok": false,
+   "summary": "Claude-Anmeldung auf dem Pi abgelaufen – per ssh auf dem Pi 'claude' starten und /login ausführen"
+  },
   {
    "start": "2026-11-26T07:00:01+01:00",
    "end": "2026-11-26T07:07:15+01:00",
@@ -83,12 +89,6 @@
    "end": "2026-11-14T07:05:54+01:00",
    "ok": true,
    "summary": "5 neue Meldungen: P1 Barracuda-Mail-Gateways: Verkettete Lücken werden für Root-Zugriff ausgenutzt; P2 Cloud and AI Development Act: Parlament legt Berichtsentwurf für mehr Unabhängigkeit vor; P3 "
-  },
-  {
-   "start": "2026-11-13T07:00:01+01:00",
-   "end": "2026-11-13T07:07:23+01:00",
-   "ok": true,
-   "summary": "4 neue Meldungen: P1 Webhoster Mittwald: Angriff über eigene Schnittstelle für Agenten, erneut im Krisenmodus; P2 Kassengesetz: Bundestag berät digitale Belege, Kassenpflicht und Nachschau ab 2028;"
   }
  ]
 }
